@@ -1,5 +1,16 @@
 [
   {
+    "image": "blog/cgm-skd-b2b-guide-images/cover.png",
+    "summary": "A complete B2B guide to CGM Semi-Knocked-Down manufacturing. What's in an SKD kit, who it's for, step-by-step process, key benefits, and how to choose a reliable manufacturer.",
+    "id": "what-is-cgm-skd",
+    "alt": "CGM SKD kit components including sensor, transmitter, adhesive patch, and applicator",
+    "url": "blog/what-is-cgm-skd.html",
+    "category": "Manufacturing",
+    "author": "EverChek Team",
+    "date": "July 3, 2026",
+    "title": "What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing"
+  },
+  {
     "id": "cgm-vs-bgm",
     "title": "CGM vs BGM: How to Choose for Your Healthcare Business",
     "category": "CGM Technology",
