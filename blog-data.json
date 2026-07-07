@@ -1,58 +1,68 @@
-﻿[
-  {
-    "image": "blog/cgm-skd-b2b-guide-images/cover.png",
-    "summary": "A complete B2B guide to CGM Semi-Knocked-Down manufacturing. What's in an SKD kit, who it's for, step-by-step process, key benefits, and how to choose a reliable manufacturer.",
-    "id": "what-is-cgm-skd",
-    "image": "blog/cgm-skd-b2b-guide-images/skd-concept-flat.png",
-    "alt": "CGM SKD kit components including sensor, transmitter, adhesive patch, and applicator",
-    "url": "blog/what-is-cgm-skd.html",
-    "category": "Manufacturing",
-    "author": "EverChek Team",
-    "date": "July 3, 2026",
-    "title": "What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing"
-  },
-  {
-    "id": "cgm-vs-bgm",
-    "title": "CGM vs BGM: How to Choose for Your Healthcare Business",
-    "category": "CGM Technology",
-    "date": "June 30, 2026",
-    "author": "EverChek Team",
-    "image": "blog/cgm-vs-bgm-images/01_hero_concept.png",
-    "alt": "CGM and BGM comparison concept illustration showing continuous vs discrete glucose monitoring",
-    "summary": "A complete comparison of CGM and BGM for healthcare brands. Accuracy, market data, regulatory pathways, digital health integration, and how to choose the right path for your business.",
-    "url": "blog/cgm-vs-bgm.html"
-  },
-  {
-    "id": "cgm-technology-guide-2026",
-    "title": "CGM Technology: A Complete Guide for Healthcare Brands in 2026",
-    "category": "CGM Technology",
-    "date": "June 2, 2026",
-    "author": "EverChek Team",
-    "image": "blog-cover-1.png",
-    "alt": "CGM sensor technology and digital health interface illustration",
-    "summary": "A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right system.",
-    "url": "cgm-technology-guide-2026.html"
-  },
-  {
-    "id": "cgm-manufacturing-models",
-    "title": "OEM vs. SKD vs. ODM: Which CGM Manufacturing Model Is Right for You?",
-    "category": "Manufacturing",
-    "date": "May 28, 2026",
-    "author": "EverChek Team",
-    "image": "blog-cover-2.png",
-    "alt": "Comparison of OEM, SKD, and ODM CGM manufacturing models",
-    "summary": "Compare OEM, SKD, CKD, and ODM models to find the right CGM partnership approach for your business.",
-    "url": "cgm-manufacturing-models.html"
-  },
-  {
-    "id": "cgm-skd-tenders",
-    "title": "How SKD Helps You Win Government Healthcare Tenders",
-    "category": "Healthcare Business",
-    "date": "May 14, 2026",
-    "author": "EverChek Team",
-    "image": "blog-cover-3.png",
-    "alt": "Government healthcare tender and SKD manufacturing partnership",
-    "summary": "Learn how the SKD model gives healthcare businesses a competitive edge in government tender bidding.",
-    "url": "cgm-skd-tenders.html"
-  }
+[
+    {
+        "url":  "blog/private-label-cgm.html",
+        "summary":  "Private label CGM guide for healthcare brands and distributors. Learn how to start a CGM brand fast at low cost via private label, OEM, or SKD manufacturing.",
+        "id":  "private-label-cgm",
+        "alt":  "Private label CGM brand concept",
+        "category":  "CGM Technology",
+        "author":  "EverChek Team",
+        "image":  "private-label-cgm-images/01-private label cgm.png",
+        "date":  "July 6, 2026",
+        "title":  "Private label CGM: How to start your own CGM brand fast and cost-effectively"
+    },
+    {
+        "image":  "blog/cgm-skd-b2b-guide-images/skd-concept-flat.png",
+        "summary":  "A complete B2B guide to CGM Semi-Knocked-Down manufacturing. What\u0027s in an SKD kit, who it\u0027s for, step-by-step process, key benefits, and how to choose a reliable manufacturer.",
+        "id":  "what-is-cgm-skd",
+        "alt":  "CGM SKD kit components including sensor, transmitter, adhesive patch, and applicator",
+        "url":  "blog/what-is-cgm-skd.html",
+        "category":  "Manufacturing",
+        "author":  "EverChek Team",
+        "date":  "July 3, 2026",
+        "title":  "What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing"
+    },
+    {
+        "id":  "cgm-vs-bgm",
+        "title":  "CGM vs BGM: How to Choose for Your Healthcare Business",
+        "category":  "CGM Technology",
+        "date":  "June 30, 2026",
+        "author":  "EverChek Team",
+        "image":  "blog/cgm-vs-bgm-images/01_hero_concept.png",
+        "alt":  "CGM and BGM comparison concept illustration showing continuous vs discrete glucose monitoring",
+        "summary":  "A complete comparison of CGM and BGM for healthcare brands. Accuracy, market data, regulatory pathways, digital health integration, and how to choose the right path for your business.",
+        "url":  "blog/cgm-vs-bgm.html"
+    },
+    {
+        "id":  "cgm-technology-guide-2026",
+        "title":  "CGM Technology: A Complete Guide for Healthcare Brands in 2026",
+        "category":  "CGM Technology",
+        "date":  "June 2, 2026",
+        "author":  "EverChek Team",
+        "image":  "blog-cover-1.png",
+        "alt":  "CGM sensor technology and digital health interface illustration",
+        "summary":  "A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right system.",
+        "url":  "cgm-technology-guide-2026.html"
+    },
+    {
+        "id":  "cgm-manufacturing-models",
+        "title":  "OEM vs. SKD vs. ODM: Which CGM Manufacturing Model Is Right for You?",
+        "category":  "Manufacturing",
+        "date":  "May 28, 2026",
+        "author":  "EverChek Team",
+        "image":  "blog-cover-2.png",
+        "alt":  "Comparison of OEM, SKD, and ODM CGM manufacturing models",
+        "summary":  "Compare OEM, SKD, CKD, and ODM models to find the right CGM partnership approach for your business.",
+        "url":  "cgm-manufacturing-models.html"
+    },
+    {
+        "id":  "cgm-skd-tenders",
+        "title":  "How SKD Helps You Win Government Healthcare Tenders",
+        "category":  "Healthcare Business",
+        "date":  "May 14, 2026",
+        "author":  "EverChek Team",
+        "image":  "blog-cover-3.png",
+        "alt":  "Government healthcare tender and SKD manufacturing partnership",
+        "summary":  "Learn how the SKD model gives healthcare businesses a competitive edge in government tender bidding.",
+        "url":  "cgm-skd-tenders.html"
+    }
 ]
