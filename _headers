@@ -1,0 +1,6 @@
+/*.html
+  Link: </.well-known/agent-skills/index.json>; rel="service-meta"; type="application/json"
+  X-Robots-Tag: all
+
+/*.json
+  Access-Control-Allow-Origin: *
