@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-skills.io/v0.2.0/schema.json",
+  "description": "EverChek CGM SKD & OEM Manufacturer - site capabilities",
+  "skills": [
+    {
+      "name": "browse-products",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Browse CGM SKD, OEM, and private label manufacturing solutions",
+      "url": "https://ever-chek.com/cgm-skd.html"
+    },
+    {
+      "name": "read-blog",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Read CGM industry articles and manufacturing guides",
+      "url": "https://ever-chek.com/cgm-blogs.html"
+    },
+    {
+      "name": "contact-sales",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Contact EverChek sales team for CGM manufacturing inquiries",
+      "url": "https://ever-chek.com/contact.html"
+    },
+    {
+      "name": "view-certifications",
+      "type": "application/vnd.agent-skills.web",
+      "description": "View ISO 13485 and other quality certifications",
+      "url": "https://ever-chek.com/certifications.html"
+    },
+    {
+      "name": "about-company",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Learn about EverChek and Refresh.cc manufacturing background",
+      "url": "https://ever-chek.com/about-us.html"
+    }
+  ]
+}
