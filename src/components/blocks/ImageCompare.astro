@@ -1,0 +1,127 @@
+---
+// 图片左右对比滑块 — drag the divider to wipe between two images.
+// Works with mouse, touch, and keyboard (arrow keys) for accessibility.
+import BlockImage from './BlockImage.astro';
+
+interface Props {
+  title?: string;
+  text?: string;
+  beforeImage?: string;
+  beforeLabel?: string;
+  beforeNote?: string;
+  afterImage?: string;
+  afterLabel?: string;
+  afterNote?: string;
+  ratio?: string;
+  start?: number;   // initial divider position, 0-100
+  tint?: boolean;
+}
+const {
+  title, text,
+  beforeImage, beforeLabel = 'Before', beforeNote,
+  afterImage, afterLabel = 'After', afterNote,
+  ratio = '16/9', start = 50, tint = false,
+} = Astro.props;
+---
+<section class:list={['section', { tint }]}>
+  <div class="container ic-wrap">
+    {title && <h2 class="ic-title">{title}</h2>}
+    {text && <p class="ic-text">{text}</p>}
+
+    <div class="ic-box" style={`aspect-ratio:${ratio}; --pos:${start}%`} data-ic>
+      <!-- After (full width, underneath) -->
+      <div class="ic-layer ic-after">
+        <BlockImage src={afterImage} alt={afterLabel} ratio={ratio} note={afterNote ?? `${afterLabel} 图`} rounded={false} />
+        <span class="ic-badge ic-badge-right">{afterLabel}</span>
+      </div>
+
+      <!-- Before (clipped to the divider) -->
+      <div class="ic-layer ic-before">
+        <BlockImage src={beforeImage} alt={beforeLabel} ratio={ratio} note={beforeNote ?? `${beforeLabel} 图`} rounded={false} />
+        <span class="ic-badge ic-badge-left">{beforeLabel}</span>
+      </div>
+
+      <div class="ic-divider" aria-hidden="true">
+        <div class="ic-handle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <path d="M9 6l-4 6 4 6M15 6l4 6-4 6" />
+          </svg>
+        </div>
+      </div>
+
+      <input
+        class="ic-range"
+        type="range" min="0" max="100" value={start}
+        aria-label={`Compare ${beforeLabel} with ${afterLabel}`}
+      />
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-ic]').forEach((box) => {
+    const range = box.querySelector<HTMLInputElement>('.ic-range');
+    range?.addEventListener('input', () => {
+      box.style.setProperty('--pos', `${range.value}%`);
+    });
+  });
+</script>
+
+<style>
+  .ic-wrap { max-width: 940px; }
+  .ic-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
+  .ic-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin-top: 12px; max-width: 640px; }
+
+  .ic-box {
+    position: relative;
+    margin-top: 28px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    user-select: none;
+    touch-action: pan-y;
+  }
+  .ic-layer { position: absolute; inset: 0; }
+  .ic-layer :global(img), .ic-layer :global(.bi-ph) { width: 100%; height: 100%; object-fit: cover; }
+  .ic-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+
+  .ic-badge {
+    position: absolute; bottom: 14px;
+    background: rgba(11, 26, 36, 0.78);
+    color: #fff; font-size: 12px; font-weight: 700;
+    padding: 5px 12px; border-radius: 999px;
+    backdrop-filter: blur(4px);
+  }
+  .ic-badge-left { left: 14px; }
+  .ic-badge-right { right: 14px; }
+
+  .ic-divider {
+    position: absolute; top: 0; bottom: 0;
+    left: var(--pos);
+    width: 3px;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.28);
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  .ic-handle {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px; height: 44px; border-radius: 50%;
+    background: #fff; color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+  }
+  .ic-handle svg { width: 22px; height: 22px; }
+
+  /* Invisible range input drives the wipe — gives us drag + keyboard for free. */
+  .ic-range {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    margin: 0; opacity: 0; cursor: ew-resize;
+    -webkit-appearance: none; appearance: none; background: transparent;
+  }
+  .ic-range::-webkit-slider-thumb { -webkit-appearance: none; width: 44px; height: 100%; cursor: ew-resize; }
+  .ic-range::-moz-range-thumb { width: 44px; height: 100%; border: 0; background: transparent; cursor: ew-resize; }
+  .ic-range:focus-visible { outline: 3px solid var(--blue-dark); outline-offset: 2px; }
+</style>

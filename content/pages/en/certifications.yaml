@@ -1,0 +1,174 @@
+title: CGM Certifications & Regulatory Documentation | EverChek
+description: Which CGM certifications we hold, which body issued them and what they cover. Certificate numbers and test reports go to partners under mutual NDA.
+path: /certifications/
+translationKey: certifications
+sections:
+  - type: hero
+    variant: standard
+    kicker: Regulatory documentation for CGM partners
+    title: Documentation, and how you get it
+    sub: We publish which certifications we hold, which body issued them, and what scope they cover. Certificate numbers, validity dates, test reports and clinical performance summaries are released in full to qualified partners under a mutual NDA — because your own registration file requires them.
+    buttons:
+      - label: Request the certification pack (mutual NDA)
+        href: /request-nda?src=certifications
+        style: primary
+      - label: View the Regulatory Dossier Index
+        href: /regulatory-dossier-index/
+        style: ghost
+
+  - type: richtext
+    eyebrow: Disclosure policy
+    title: Our disclosure policy, stated plainly
+    blocks:
+      - heading: What we publish, and what we do not
+        text: |
+          We publish which certifications we hold, which body issued them, and what scope they cover. We do
+          not publish certificate numbers, clinical datasets, production capacity, minimum order quantities,
+          lead times or pricing on this website.
+      - heading: A publication policy, not a partnership policy
+        text: |
+          Certificate numbers, validity dates and issuing-body references are provided in full to qualified
+          partners under a mutual NDA — and they have to be, because your own registration file requires
+          them. Algeria's homologation form, for example, has a mandatory field for the ISO 13485
+          certificate number and its issuing authority. We fill those fields in. We just don't put them on a
+          public web page for competitors to copy into their own dossiers.
+    tint: true
+
+  - type: card-grid
+    center: true
+    columns: 3
+    media: icon
+    title: Your compliance, simplified
+    text: Struggling to navigate local regulations? Our CGM system comes with a structured documentation package that helps you prepare submissions, reduce review cycles, and get to market faster.
+    items:
+      - icon: check
+        title: Prepare your filing faster
+        text: Structured validation documentation means your regulatory team assembles the dossier for your target market from an existing, indexed file rather than commissioning testing from scratch.
+      - icon: shield
+        title: Reduce compliance risk
+        text: Audit-ready test reports from a certified quality management system give you defensible evidence during regulatory reviews and partner audits.
+      - icon: doc
+        title: Build brand trust
+        text: Well-documented quality systems and a transparent performance-reporting method strengthen your brand's credibility with healthcare professionals and procurement committees.
+
+  - type: card-grid
+    columns: 2
+    media: icon
+    title: What we hold
+    text: Each item names the scheme, the issuing body and the scope. Numbers are withheld from this page and supplied under NDA.
+    items:
+      - icon: shield
+        title: Quality management system
+        text: |
+          Scheme: ISO 13485:2016 · Issuing body: [TODO: certification body name] ·
+          Scope: [TODO: exact scope wording from certificate] ·
+          Validity: [TODO: certificate validity years] · Certificate number: available under NDA.
+      - icon: globe
+        title: Market registrations
+        text: |
+          [TODO: regulator, country, class, status] · Registration number: available under NDA. (If no
+          registration is held in any market, delete this card entirely rather than softening it.)
+      - icon: heart
+        title: Biological safety
+        text: |
+          Evaluated under the ISO 10993 series: cytotoxicity, sensitisation, irritation, systemic toxicity,
+          chemical characterisation and leachables, performed by [TODO: named accredited laboratory].
+          Reports available under NDA.
+      - icon: alert
+        title: Risk management
+        text: File maintained to ISO 14971.
+      - icon: chart
+        title: Clinical performance
+        text: |
+          Evaluated against a laboratory reference method. We report the reference method, the comparator,
+          the wear-day and glucose-range breakdown alongside the headline figure. The summary is released to
+          qualified partners under NDA. Ask us for the protocol before you ask us for the number — the
+          protocol is what tells you whether the number means anything.
+      - icon: clock
+        title: Stability and shelf life
+        text: Real-time and accelerated ageing studies; protocol and pull-point schedule available under NDA.
+      - icon: cloud
+        title: Ingress protection
+        text: |
+          [TODO: IP rating — site currently says both IPX8 and IP28], tested at [TODO: depth] m for
+          [TODO: duration]. Under IEC 60529 an IPX8 rating is defined by the manufacturer's stated
+          conditions, so we state ours.
+
+  - type: checklist
+    title: Inside the technical documentation package
+    text: The index below is public. The contents are released under NDA, compiled against the dossier checklist your market actually uses.
+    columns: 2
+    panel: true
+    tint: true
+    items:
+      - ISO 13485 certificate — certification of our quality management system for the design, development and manufacturing of CGM systems.
+      - Cytotoxicity report — confirms that materials contacting the patient's skin do not cause cell death or toxic reactions.
+      - Sensitization report — evaluates whether any component of the CGM system may cause allergic reactions or skin sensitization after repeated contact.
+      - Systemic toxicity report — testing related to potential harmful biological effects after systemic exposure to product materials.
+      - Irritation report — determines whether the sensor, adhesive, or other skin-contacting materials cause redness, swelling, or tissue damage.
+      - Biocompatibility evaluation — assessment of biological safety and compatibility between the device and the human body.
+      - Chemical characterization report — analysis and identification of chemical substances associated with product materials.
+      - Leachables testing report — measures potential chemicals that may leach from sensor materials into the body under simulated use conditions, supporting biocompatibility.
+      - Clinical performance summary — reports the accuracy of our CGM system against a laboratory reference method, with the study design, comparator and per-range breakdown attached.
+      - Sterilization validation — documents that our sterilization process consistently achieves a sterility assurance level (SAL). [TODO: sterilization method]
+      - Factory calibration validation — proves that our in-house calibration process sets sensor accuracy before shipment, so users do not need fingerstick calibration.
+      - Stability & shelf-life validation — data from real-time and accelerated aging studies confirming sensor performance and battery life over the labeled shelf life.
+
+  - type: step-flow
+    columns: 3
+    center: true
+    title: How do we support your compliance preparation?
+    text: As a CGM manufacturer, we maintain structured documentation that is shared with qualified partners under NDA to support your regulatory filing.
+    items:
+      - icon: mail
+        title: You request the documents
+        desc: Tell us your market and your route — import registration, local SKD assembly, or a public tender. If you send us the tender notice or the regulator's dossier checklist, we work from that checklist rather than sending a generic pack.
+      - icon: doc
+        title: We compile and deliver
+        desc: We provide the technical file package — certificates with numbers and validity dates, test results and supporting study data — formatted for the submission you are actually making.
+      - icon: check
+        title: You submit to authorities
+        desc: Your team integrates the documentation into your own regulatory dossier and files with the relevant health authority in your market. We sign what your regulator needs us to sign.
+
+  - type: richtext
+    eyebrow: Limits
+    title: What we do not claim
+    blocks:
+      - heading: We do not hold certification in every market, and we say so
+        text: |
+          Ask us about a specific market and we will tell you what exists there today, what does not, and
+          what the realistic route is. A supplier who claims complete coverage of every jurisdiction is a
+          supplier who has not read the jurisdictions.
+      - heading: How we talk about accuracy
+        text: |
+          We report sensor accuracy the way regulators evaluate it — as agreement against a laboratory
+          reference method, with the study design disclosed — rather than as a single marketing number.
+          Published accuracy figures are not comparable between suppliers unless the study design is
+          disclosed, a point made repeatedly in the peer-reviewed literature. So we give you the method, and
+          we give you sensors to verify it yourself.
+
+  - type: banner-wide
+    align: center
+    height: short
+    title: Two ways to get the file
+    text: The index is free and ungated. The contents are released under a mutual NDA, compiled against your market's dossier checklist.
+    cta:
+      label: Request the certification pack (mutual NDA)
+      href: /request-nda?src=certifications
+    cta2:
+      label: View the Regulatory Dossier Index
+      href: /regulatory-dossier-index/
+
+  - type: link-pills
+    label: Where to go next
+    items:
+      - label: CGM OEM & private label
+        href: /cgm-oem/
+      - label: CGM SKD & local assembly
+        href: /cgm-skd/
+      - label: CGM distribution partnerships
+        href: /cgm-distribution/
+      - label: About EverChek
+        href: /about-us/
+
+  - type: cta-banner

@@ -1,0 +1,60 @@
+---
+// Image slot used by every block. With no `src` it renders a labelled placeholder
+// showing the recommended dimensions, so layouts can be built before photos exist.
+// Drop a real file in /public/images/ and set src="/images/foo.jpg" to replace it.
+interface Props {
+  src?: string;
+  alt?: string;
+  ratio?: string;   // e.g. "4/3", "16/9", "1/1"
+  note?: string;    // what this image should show — shown on the placeholder
+  rounded?: boolean;
+  fit?: 'cover' | 'contain';
+}
+const { src, alt = '', ratio = '4/3', note, rounded = true, fit = 'cover' } = Astro.props;
+const [w, h] = ratio.split('/').map(Number);
+const px = `${Math.round(w * 300)}×${Math.round(h * 300)}px`;
+---
+{src ? (
+  <img
+    class:list={['bi-img', { rounded, contain: fit === 'contain' }]}
+    src={src}
+    alt={alt}
+    loading="lazy"
+    decoding="async"
+    style={`aspect-ratio:${ratio}`}
+  />
+) : (
+  <div class:list={['bi-ph', { rounded }]} style={`aspect-ratio:${ratio}`}>
+    <svg class="bi-ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <rect x="3" y="4" width="18" height="16" rx="2" />
+      <circle cx="8.5" cy="9.5" r="1.6" />
+      <path d="M3 16.5l4.5-4.5 3.5 3.5 3-3L21 17" />
+    </svg>
+    <div class="bi-ph-label">配图位</div>
+    {note && <div class="bi-ph-note">{note}</div>}
+    <div class="bi-ph-size">建议 {px} · {ratio}</div>
+  </div>
+)}
+
+<style>
+  .bi-img { width: 100%; height: auto; object-fit: cover; display: block; }
+  .bi-img.contain { object-fit: contain; background: #fff; }
+  .rounded { border-radius: var(--radius); }
+
+  .bi-ph {
+    width: 100%;
+    background:
+      repeating-linear-gradient(45deg, var(--blue-faint) 0 10px, #fff 10px 20px);
+    border: 1.5px dashed var(--blue);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 5px;
+    color: var(--blue-deep);
+    text-align: center;
+    padding: 16px;
+  }
+  .bi-ph-icon { width: 30px; height: 30px; opacity: 0.75; margin-bottom: 2px; }
+  .bi-ph-label { font-size: 12.5px; font-weight: 700; letter-spacing: 0.06em; }
+  .bi-ph-note { font-size: 12px; color: var(--mid); line-height: 1.45; max-width: 85%; }
+  .bi-ph-size { font-size: 10.5px; color: var(--soft); font-variant-numeric: tabular-nums; }
+</style>

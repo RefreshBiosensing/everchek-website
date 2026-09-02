@@ -1,0 +1,123 @@
+---
+// The 3-field enquiry mini form. Used by the CTA banner on every page and by
+// the hero "form" variant. Labels come from the locale dictionary (ctaBanner).
+// Posts to /api/enquiry with a `source` field so sales can see which page
+// produced the lead.
+interface Props {
+  t: any; // dict.ctaBanner
+  email?: string; // fallback address shown in the error message
+}
+const { t, email = 'sales@scoreboards.com' } = Astro.props;
+---
+<form class="mini-form" novalidate>
+  <div class="mini-row">
+    <label class="field">
+      <span class="mf-label">{t.emailLabel}</span>
+      <input name="email" type="email" required autocomplete="email" placeholder={t.emailPlaceholder} />
+    </label>
+    <label class="field">
+      <span class="mf-label">{t.countryLabel}</span>
+      <input name="country" type="text" autocomplete="country-name" placeholder={t.countryPlaceholder} />
+    </label>
+  </div>
+  <label class="field">
+    <span class="mf-label">{t.messageLabel}</span>
+    <textarea name="message" rows="2" required placeholder={t.messagePlaceholder}></textarea>
+  </label>
+  <!-- Honeypot anti-spam field: hidden from humans, bots fill it in -->
+  <div class="hp-field" aria-hidden="true">
+    <label>Website</label>
+    <input name="website" type="text" tabindex="-1" autocomplete="off" />
+  </div>
+  <button class="btn primary mini-submit" type="submit" data-label={t.submit} data-sending={t.sending}>{t.submit}</button>
+  <p class="mini-privacy">{t.privacy}</p>
+  <div class="mini-status" hidden>
+    <p class="ms-success" hidden>{t.success}</p>
+    <p class="ms-error" hidden>{t.error} <a href={`mailto:${email}`}>{email}</a></p>
+  </div>
+</form>
+
+<script>
+  // Every page can carry more than one of these; scope each to its own form.
+  document.querySelectorAll<HTMLFormElement>('.mini-form').forEach((form) => {
+    if (form.dataset.bound) return;
+    form.dataset.bound = '1';
+    const status = form.querySelector('.mini-status');
+    const successEl = form.querySelector('.ms-success') as HTMLElement | null;
+    const errorEl = form.querySelector('.ms-error') as HTMLElement | null;
+    const btn = form.querySelector('.mini-submit') as HTMLButtonElement;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+
+      btn.disabled = true;
+      btn.textContent = btn.dataset.sending ?? '…';
+
+      const data = Object.fromEntries(new FormData(form).entries());
+      // Tells the sales team which page produced the lead.
+      data.source = window.location.pathname;
+
+      try {
+        const res = await fetch('/api/enquiry', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        status?.removeAttribute('hidden');
+        successEl?.removeAttribute('hidden');
+        errorEl?.setAttribute('hidden', '');
+        form.reset();
+      } catch {
+        status?.removeAttribute('hidden');
+        errorEl?.removeAttribute('hidden');
+        successEl?.setAttribute('hidden', '');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = btn.dataset.label ?? 'Send';
+      }
+    });
+  });
+</script>
+
+<style is:global>
+  /* Shared by CtaBanner + hero form variant; styled for dark panels. */
+  .mini-form {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(128, 188, 226, 0.22);
+    border-radius: 16px;
+    padding: clamp(22px, 2.6vw, 30px);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .mini-form .mini-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .mini-form .mf-label { color: #cfe2ed; font-size: 12.5px; font-weight: 600; }
+  .mini-form .field input,
+  .mini-form .field textarea {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(128, 188, 226, 0.28);
+    color: #fff;
+    font-size: 14.5px;
+    padding: 10px 13px;
+  }
+  .mini-form .field input::placeholder,
+  .mini-form .field textarea::placeholder { color: #6b8898; }
+  .mini-form .field input:focus,
+  .mini-form .field textarea:focus {
+    border-color: var(--blue);
+    background: rgba(255, 255, 255, 0.09);
+  }
+  .mini-form .field textarea { resize: vertical; min-height: 62px; }
+  .mini-form .mini-submit { align-self: flex-start; margin-top: 2px; }
+  .mini-form .mini-privacy { font-size: 11.5px; color: #6b8898; line-height: 1.5; }
+  .mini-form .mini-status p { padding: 11px 14px; border-radius: var(--radius-sm); font-size: 13.5px; font-weight: 600; }
+  .mini-form .ms-success { background: rgba(81, 199, 138, 0.14); border: 1px solid rgba(81, 199, 138, 0.35); color: #7fe0aa; }
+  .mini-form .ms-error { background: rgba(255, 107, 107, 0.12); border: 1px solid rgba(255, 107, 107, 0.32); color: #ff9a9a; }
+  .mini-form .ms-error a { text-decoration: underline; }
+  .mini-form .hp-field { position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden; }
+  @media (max-width: 460px) {
+    .mini-form .mini-row { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,110 @@
+---
+// 图文功能行 — alternating rows: visual tile one side, copy the other.
+// Visual per row: an icon tile, the app phone mock, or the terminal mock.
+import Icon from '../Icon.astro';
+import VisualPhone from '../VisualPhone.astro';
+import VisualTerminal from '../VisualTerminal.astro';
+import BlockImage from '../blocks/BlockImage.astro';
+
+interface Item {
+  id?: string;
+  tag?: string;
+  title: string;
+  desc?: string;
+  bullets?: string[];
+  visual?: string;      // icon name, or 'phone' | 'terminal' | 'image'
+  image?: string;
+  imageNote?: string;
+}
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  items: Item[];
+}
+const { eyebrow, title, items = [] } = Astro.props;
+
+const ICON_FOR: Record<string, string> = { curve: 'curve', bell: 'bell', blanket: 'bed' };
+---
+<section class="fr-section">
+  {(title || eyebrow) && (
+    <div class="container center fr-head">
+      {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+      {title && <h2 class="h2 center">{title}</h2>}
+    </div>
+  )}
+  {items.map((f, i) => (
+    <div class:list={['fr-row-wrap', { alt: i % 2 === 1 }]} id={f.id}>
+      <div class:list={['container', 'fr-row', { rev: i % 2 === 1 }]}>
+        <div class="fr-visual">
+          {f.visual === 'phone' ? (
+            <VisualPhone width={150} />
+          ) : f.visual === 'terminal' ? (
+            <VisualTerminal width={150} />
+          ) : f.visual === 'image' ? (
+            <div class="fr-img"><BlockImage src={f.image} alt={f.title} ratio="4/3" note={f.imageNote ?? f.title} /></div>
+          ) : (
+            <div class="fr-icon"><Icon name={ICON_FOR[f.visual ?? ''] ?? f.visual ?? 'sensor'} size={54} /></div>
+          )}
+        </div>
+        <div class="fr-content">
+          {f.tag && <span class="fr-tag">{f.tag}</span>}
+          <h3 class="fr-title">{f.title}</h3>
+          {f.desc && <p class="fr-desc">{f.desc}</p>}
+          {f.bullets && f.bullets.length > 0 && (
+            <ul class="checks">
+              {f.bullets.map((b) => <li>{b}</li>)}
+            </ul>
+          )}
+        </div>
+      </div>
+    </div>
+  ))}
+</section>
+
+<style>
+  .fr-section { padding: clamp(36px, 4vw, 58px) 0 0; }
+  .fr-head { margin-bottom: clamp(22px, 2.8vw, 38px); }
+  .fr-head :global(.h2) { max-width: none; white-space: normal; }
+  .fr-row-wrap { padding: clamp(38px, 4.6vw, 62px) 0; }
+  .fr-row-wrap.alt { background: var(--blue-faint); }
+  .fr-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .fr-row.rev .fr-visual { order: 2; }
+  .fr-visual {
+    background: var(--blue-light);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .fr-img { width: 100%; height: 100%; }
+  .fr-img :global(img), .fr-img :global(.bi-ph) { width: 100%; height: 100%; }
+  .fr-icon {
+    width: 110px; height: 110px;
+    border-radius: 28px;
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 18px 44px rgba(90, 157, 196, 0.2);
+  }
+  .fr-tag {
+    display: inline-block;
+    background: var(--blue-light);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 13px;
+    font-size: 11.5px; font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 14px;
+  }
+  .fr-title { font-size: clamp(19px, 2.1vw, 24px); font-weight: 700; letter-spacing: -0.015em; line-height: 1.3; margin-bottom: 10px; }
+  .fr-desc { font-size: 14.5px; color: var(--mid); line-height: 1.75; margin-bottom: 16px; }
+
+  @media (max-width: 820px) {
+    .fr-row { grid-template-columns: 1fr; }
+    .fr-row.rev .fr-visual { order: 0; }
+  }
+</style>

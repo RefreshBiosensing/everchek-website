@@ -1,0 +1,57 @@
+title: Contact the CGM OEM & Private Label Team | EverChek
+description: Talk to EverChek's B2B CGM team about OEM, ODM, SKD kits, private label or distribution. Tell us your market and we reply within one business day.
+path: /contact/
+translationKey: contact
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    kicker: B2B enquiries only · Reply within one business day
+    title: Let's talk about your CGM project
+    sub: Interested in our CGM solutions? Get in touch with our team to explore how we can support your business. Whether you are building a CGM brand, expanding into new healthcare markets, or integrating CGM into your system, we are ready to support your next stage of growth.
+    image: /images/contact-hero-factory.jpg
+    imageAlt: EverChek CGM factory and manufacturing facility in Shenzhen
+    ratio: 4/3
+
+  - type: card-grid
+    center: true
+    columns: 4
+    media: icon
+    title: What kind of project is it?
+    text: Tell us which route you are taking and the conversation starts in the right place. Every route below is handled by the same B2B team.
+    items:
+      - icon: box
+        title: OEM & private label
+        text: Your brand on our CGM platform — device, packaging and patient app under your own label.
+        href: /cgm-oem/
+        linkLabel: CGM OEM & private label
+      - icon: factory
+        title: SKD & local assembly
+        text: Semi-knocked-down kits assembled in your own market, for local-content and local-manufacture routes.
+        href: /cgm-skd/
+        linkLabel: CGM SKD & local assembly
+      - icon: handshake
+        title: Distribution
+        text: Territory supply for medical device distributors and importers building a CGM line.
+        href: /cgm-distribution/
+        linkLabel: CGM distribution
+      - icon: doc
+        title: Government tenders
+        text: Document sets prepared against the technical envelope of the tender you are bidding.
+        href: /cgm-skd-tenders/
+        linkLabel: CGM tenders & SKD
+
+  - type: checklist
+    title: What to include so we can answer properly
+    text: A first message with these five things in it gets a substantive reply instead of a request for more information.
+    columns: 2
+    panel: true
+    tint: true
+    items:
+      - Your target market or markets, and whether you already hold a licence to import or manufacture there
+      - Which model you have in mind — OEM, ODM, SKD kit, private label or distribution
+      - Who you intend to hold the market registration, you or us
+      - What documentation your regulator or tender requires, and by when
+      - Indicative annual volume, if you have one — a range is enough at this stage
+
+  - type: contact-form

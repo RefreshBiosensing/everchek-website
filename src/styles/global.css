@@ -1,0 +1,220 @@
+/* ============================================================
+   EverChek — Global design system
+   B2B CGM manufacturing · Shenzhen
+
+   Palette rule that drives everything below:
+   the old brand blue #80BCE2 is 2.06:1 on white. It is demoted to a
+   BACKGROUND/BORDER-only token (--blue-pale) and never carries text.
+   Every text-bearing colour below is checked against WCAG 2.x.
+   ============================================================ */
+
+:root {
+  /* ---- Brand blues (source of truth) ---- */
+  --ec-blue-900: #062f52;   /* deep panels, footer · white text 13.67:1 */
+  --ec-blue-700: #0a4c84;   /* hover / pressed · white 9.19:1 */
+  --ec-blue-600: #0b5fa5;   /* PRIMARY · on white 6.57:1 · CTAs, links, focus */
+  --ec-blue-300: #80bce2;   /* legacy brand tint · background/border ONLY */
+  --ec-blue-100: #e3f0fa;   /* icon plates — visible on white (1.16:1) */
+  --ec-blue-50:  #f2f8fc;   /* section tint */
+
+  /* ---- Neutrals ---- */
+  --ec-ink:       #12181f;  /* headings + body · 16.1:1 */
+  --ec-slate-700: #2d3748;
+  --ec-slate-600: #4a5568;  /* secondary body · 7.52:1 */
+  --ec-slate-400: #7a8a9a;  /* large text / icons / rules only · 3.54:1 */
+  --ec-border:    #dde3ea;
+  --ec-surface:   #f7f9fb;
+  --ec-white:     #ffffff;
+
+  /* ---- Semantic: gated-asset badges (Rung 0 / 1 / 2) ---- */
+  --ec-verified:    #0b7355;  /* "Public" badge text · 5.16:1 on its tint */
+  --ec-verified-50: #e6f4ef;
+  --ec-warn:        #b45309;  /* "Email-gated" / "NDA" badge · 4.57:1 */
+  --ec-warn-50:     #fdf3e3;
+
+  /* ---- Component aliases (kept so every existing component works) ---- */
+  --blue:       var(--ec-blue-600);   /* was #80bce2 — was failing as text 18× */
+  --blue-dark:  var(--ec-blue-700);
+  --blue-deep:  var(--ec-blue-700);   /* was #3f7ea6 (3.9:1) — used as text 26× */
+  --blue-light: var(--ec-blue-100);
+  --blue-faint: var(--ec-blue-50);
+  --blue-pale:  var(--ec-blue-300);   /* decorative only — never text */
+  --ink:   var(--ec-ink);
+  --mid:   var(--ec-slate-600);
+  --soft:  var(--ec-slate-400);
+  --border: var(--ec-border);
+  --white: var(--ec-white);
+  --navy:   var(--ec-blue-900);
+  --navy-2: #0b3a63;
+  --ok:   var(--ec-verified);
+  --warn: var(--ec-warn);
+  --bad:  #b3261e;                    /* was #cc4444 (3.4:1) → 5.9:1 */
+
+  /* ---- Type scale ---- */
+  --fs-hero:  clamp(34px, 4.4vw, 50px);
+  --fs-h2:    clamp(25px, 2.9vw, 34px);
+  --fs-h3:    clamp(19px, 1.9vw, 22px);
+  --fs-body:  16px;
+  --fs-small: 14px;
+  --fs-micro: 12.5px;
+
+  /* ---- Layout ---- */
+  --container: 1180px;
+  --radius: 14px;
+  --radius-sm: 9px;
+  --section-y: clamp(64px, 8vw, 104px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+  font-family: 'DM Sans Variable', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+
+/* ---------- Layout helpers ---------- */
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+.section { padding: var(--section-y) 0; }
+.section.tint { background: var(--blue-faint); }
+.section.dark { background: var(--navy); color: #fff; }
+
+/* ---------- Typography ---------- */
+/* Section labels removed site-wide per client decision (2026-07).
+   Elements remain in markup; re-enable by deleting display:none. */
+.eyebrow { display: none; }
+
+.h2 {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.h2.center { margin-left: auto; margin-right: auto; }
+
+.lede {
+  font-size: 17.5px;
+  color: var(--mid);
+  margin: 16px auto 0;
+  max-width: 620px;
+  line-height: 1.7;
+  text-align: center;
+}
+.section.dark .lede { color: #8aabb8; }
+
+.center { text-align: center; }
+.center .lede { margin-left: auto; margin-right: auto; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--radius-sm);
+  padding: 13px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+.btn.primary { background: var(--blue-dark); color: #fff; }
+.btn.primary:hover { background: var(--blue-deep); transform: translateY(-1px); }
+.btn.ghost { border-color: var(--border); color: var(--ink); background: var(--white); }
+.btn.ghost:hover { border-color: var(--blue-dark); color: var(--blue-dark); }
+.btn.on-dark { border-color: #3a5a6e; color: #d7e6ef; background: transparent; }
+.btn.on-dark:hover { border-color: var(--blue); color: var(--blue); }
+.btn.sm { padding: 9px 18px; font-size: 13.5px; }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card.hover:hover {
+  box-shadow: 0 14px 40px rgba(90, 157, 196, 0.14);
+  transform: translateY(-3px);
+}
+
+/* ---------- Check bullets ---------- */
+.checks { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.checks li { display: flex; gap: 11px; align-items: flex-start; color: var(--mid); font-size: 15px; line-height: 1.55; }
+.checks li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 19px; height: 19px;
+  margin-top: 3px;
+  border-radius: 50%;
+  background: var(--blue-light) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235a9dc4' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 13l4 4L19 7'/%3E%3C/svg%3E") center/11px no-repeat;
+}
+
+/* ---------- Badge pill ---------- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--blue-faint);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue-dark); }
+
+/* ---------- Grid helpers ---------- */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+@media (max-width: 960px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ---------- Forms ---------- */
+.field { display: flex; flex-direction: column; gap: 7px; }
+.field label { font-size: 13.5px; font-weight: 600; color: var(--ink); }
+.field label .req { color: var(--bad); }
+.field input, .field select, .field textarea {
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  background: var(--white);
+  transition: border-color 0.15s ease;
+  width: 100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--blue-dark);
+  box-shadow: 0 0 0 3px rgba(128, 188, 226, 0.22);
+}
+
+/* ---------- Misc ---------- */
+.divider { height: 1px; background: var(--border); border: none; }
+
+::selection { background: rgba(128, 188, 226, 0.35); }

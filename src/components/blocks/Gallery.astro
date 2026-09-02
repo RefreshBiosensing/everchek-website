@@ -1,0 +1,42 @@
+---
+// 图片画廊 — 2/3/4-up image grid with optional captions.
+import BlockImage from './BlockImage.astro';
+
+interface Item { image?: string; alt?: string; caption?: string; note?: string }
+interface Props {
+  title?: string;
+  text?: string;
+  items: Item[];
+  columns?: 2 | 3 | 4;
+  ratio?: string;
+  tint?: boolean;
+}
+const { title, text, items = [], columns = 3, ratio = '4/3', tint = false } = Astro.props;
+---
+<section class:list={['section', { tint }]}>
+  <div class="container">
+    {title && <h2 class="gl-title">{title}</h2>}
+    {text && <p class="gl-text">{text}</p>}
+    <div class:list={['gl-grid', `cols-${columns}`]}>
+      {items.map((it) => (
+        <figure class="gl-item">
+          <BlockImage src={it.image} alt={it.alt ?? it.caption ?? ''} ratio={ratio} note={it.note ?? it.caption} />
+          {it.caption && <figcaption class="gl-cap">{it.caption}</figcaption>}
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .gl-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; text-align: center; }
+  .gl-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin: 12px auto 0; max-width: 640px; text-align: center; }
+  .gl-grid { display: grid; gap: 18px; margin-top: 32px; }
+  .cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .gl-cap { font-size: 13px; color: var(--mid); margin-top: 10px; line-height: 1.5; }
+
+  @media (max-width: 900px) { .cols-3, .cols-4 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .gl-grid { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,42 @@
+---
+// 文字+清单双栏 — heading/body on one side, a tick-list panel on the other.
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+  points: string[];
+  flip?: boolean;   // panel on the left instead
+  tint?: boolean;
+}
+const { eyebrow, title, text, points = [], flip = false, tint = false } = Astro.props;
+---
+<section class:list={['section', { tint }]}>
+  <div class:list={['container', 'tc-grid', { flip }]}>
+    <div class="tc-copy">
+      {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+      {title && <h2 class="h2">{title}</h2>}
+      {text && <p class="lede">{text}</p>}
+    </div>
+    <ul class="checks tc-points">
+      {points.map((p) => <li>{p}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .tc-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .tc-grid.flip .tc-copy { order: 2; }
+  .tc-points {
+    background: var(--blue-faint);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px;
+    gap: 14px;
+  }
+  .tint .tc-points { background: #fff; }
+
+  @media (max-width: 900px) {
+    .tc-grid { grid-template-columns: 1fr; }
+    .tc-grid.flip .tc-copy { order: 0; }
+  }
+</style>

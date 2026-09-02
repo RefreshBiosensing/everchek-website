@@ -1,0 +1,127 @@
+---
+// Section renderer — maps each entry of a page's `sections` list to a component.
+// Every page is an ordered section list in content/pages/<locale>/<name>.yaml.
+//
+// Section types (use these exact strings in YAML / the CMS):
+//   hero             页首（variant: standard/centered/dark/split/form; visual 可选）
+//   trustbar         信任条
+//   image-text       图文（variant: top/left/right）
+//   banner-wide      横版通栏
+//   gallery          图片画廊
+//   card-grid        卡片网格
+//   stats-row        统计数字条（也用于规格条/案例概览条）
+//   checklist        打勾清单
+//   text-checks      文字+清单双栏
+//   step-flow        步骤流程条
+//   feature-rows     图文功能行（交替排列）
+//   compare-table    对比表格
+//   timeline         时间线
+//   image-compare    图片左右对比滑块
+//   quote            引用/客户证言
+//   logo-wall        Logo 墙
+//   video            视频区
+//   richtext         SEO 长文段落
+//   faq              FAQ 折叠（自带 FAQPage 结构化数据）
+//   link-pills       相关链接条
+//   contact-form     完整询盘表单 + 联系卡
+//   cta-banner       底部询盘横幅（迷你表单）
+//   custom-html      逃生口：原生 HTML
+import Hero from './sections/Hero.astro';
+import TrustBar from './sections/TrustBar.astro';
+import TextChecks from './sections/TextChecks.astro';
+import FeatureRows from './sections/FeatureRows.astro';
+import LinkPills from './sections/LinkPills.astro';
+import ContactBlock from './sections/ContactBlock.astro';
+import AppCapabilities from './sections/AppCapabilities.astro';
+import CustomHtml from './sections/CustomHtml.astro';
+import CtaBanner from './CtaBanner.astro';
+import ImageText from './blocks/ImageText.astro';
+import BannerWide from './blocks/BannerWide.astro';
+import Gallery from './blocks/Gallery.astro';
+import CardGrid from './blocks/CardGrid.astro';
+import StatsRow from './blocks/StatsRow.astro';
+import Checklist from './blocks/Checklist.astro';
+import Quote from './blocks/Quote.astro';
+import LogoWall from './blocks/LogoWall.astro';
+import VideoBlock from './blocks/VideoBlock.astro';
+import Timeline from './blocks/Timeline.astro';
+import CompareTable from './blocks/CompareTable.astro';
+import StepFlow from './blocks/StepFlow.astro';
+import ImageCompare from './blocks/ImageCompare.astro';
+import DeepSection from './DeepSection.astro';
+import Faq from './Faq.astro';
+
+interface Props {
+  sections?: any[];
+  locale?: string;
+}
+const { sections = [], locale = 'en' } = Astro.props;
+
+// image-text: canonical type + variant, with the old per-layout names still accepted.
+const IMAGE_TEXT_LAYOUT: Record<string, 'top' | 'left' | 'right'> = {
+  'image-text-top': 'top',
+  'image-text-left': 'left',
+  'image-text-right': 'right',
+};
+---
+{sections.map((s) => {
+  const { type, variant, ...props } = s ?? {};
+
+  if (type === 'image-text') {
+    return <ImageText {...props} layout={variant ?? 'left'} />;
+  }
+  if (type in IMAGE_TEXT_LAYOUT) {
+    return <ImageText {...props} layout={IMAGE_TEXT_LAYOUT[type]} />;
+  }
+
+  switch (type) {
+    case 'hero':          return <Hero {...props} variant={variant} locale={locale} />;
+    case 'app-capabilities': return <AppCapabilities {...props} />;
+    case 'trustbar':      return <TrustBar {...props} />;
+    case 'banner-wide':   return <BannerWide {...props} />;
+    case 'gallery':       return <Gallery {...props} />;
+    case 'card-grid':     return <CardGrid {...props} media={variant ?? props.media} />;
+    case 'stats-row':     return <StatsRow {...props} />;
+    case 'checklist':     return <Checklist {...props} variant={variant} />;
+    case 'text-checks':   return <TextChecks {...props} />;
+    case 'step-flow':     return <StepFlow {...props} />;
+    case 'feature-rows':  return <FeatureRows {...props} />;
+    case 'compare-table': return <CompareTable {...props} />;
+    case 'timeline':      return <Timeline {...props} />;
+    case 'image-compare': return <ImageCompare {...props} />;
+    case 'quote':         return <Quote {...props} />;
+    case 'logo-wall':     return <LogoWall {...props} />;
+    case 'video':         return <VideoBlock {...props} />;
+    case 'richtext':      return <DeepSection {...props} />;
+    case 'faq':           return <Faq {...props} />;
+    case 'link-pills':    return <LinkPills {...props} />;
+    case 'contact-form':  return <ContactBlock {...props} locale={locale} />;
+    case 'cta-banner':    return <CtaBanner {...props} locale={locale} />;
+    case 'custom-html':   return <CustomHtml {...props} />;
+    default:
+      // Unknown type: fail loudly in dev, stay silent in production builds.
+      if (import.meta.env.DEV) {
+        return (
+          <section class="section">
+            <div class="container">
+              <div class="sec-err">⚠ 未知板块类型：<code>{String(type)}</code> — 检查 YAML 里的 type 拼写</div>
+            </div>
+          </section>
+        );
+      }
+      return null;
+  }
+})}
+
+<style>
+  .sec-err {
+    background: rgba(204, 68, 68, 0.07);
+    border: 1px solid rgba(204, 68, 68, 0.3);
+    color: var(--bad);
+    border-radius: var(--radius-sm);
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .sec-err code { font-family: ui-monospace, monospace; background: rgba(204, 68, 68, 0.1); padding: 1px 6px; border-radius: 4px; }
+</style>

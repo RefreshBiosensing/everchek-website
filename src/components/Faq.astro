@@ -1,0 +1,74 @@
+---
+// FAQ accordion with FAQPage structured data (JSON-LD) for Google rich results.
+interface QA { q: string; a: string }
+interface Props { title?: string; eyebrow?: string; items: QA[] }
+const { title = 'Frequently asked questions', eyebrow = 'FAQ', items } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((i) => ({
+    '@type': 'Question',
+    name: i.q,
+    acceptedAnswer: { '@type': 'Answer', text: i.a },
+  })),
+};
+---
+<section class="section faq-section">
+  <div class="container faq-wrap">
+    <div class="eyebrow">{eyebrow}</div>
+    <h2 class="h2 center">{title}</h2>
+    <div class="faq-list">
+      {items.map((i) => (
+        <details class="faq-item">
+          <summary>
+            <h3 class="faq-q">{i.q}</h3>
+            <span class="faq-toggle" aria-hidden="true"></span>
+          </summary>
+          <p class="faq-a">{i.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+<style>
+  .faq-wrap { max-width: 860px; }
+  .faq-wrap .h2 { margin-left: auto; margin-right: auto; text-align: center; }
+  .faq-list { margin-top: 36px; display: flex; flex-direction: column; gap: 12px; }
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0 22px;
+    transition: border-color 0.15s ease;
+  }
+  .faq-item[open] { border-color: var(--blue-dark); }
+  .faq-item summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    padding: 18px 0;
+    cursor: pointer;
+    list-style: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-q { font-size: 15.5px; font-weight: 700; color: var(--ink); line-height: 1.45; margin: 0; }
+  .faq-toggle {
+    flex-shrink: 0;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--blue-light);
+    position: relative;
+  }
+  .faq-toggle::before, .faq-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 11px; height: 2px;
+    background: var(--blue-deep);
+    transform: translate(-50%, -50%);
+  }
+  .faq-toggle::after { transform: translate(-50%, -50%) rotate(90deg); transition: transform 0.18s ease; }
+  .faq-item[open] .faq-toggle::after { transform: translate(-50%, -50%) rotate(0deg); }
+  .faq-a { font-size: 14.5px; color: var(--mid); line-height: 1.75; padding: 0 0 20px; max-width: 92%; }
+</style>

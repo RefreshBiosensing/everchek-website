@@ -1,0 +1,18 @@
+{
+  "name": "p20-website",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/build-cms-config.mjs && astro build",
+    "preview": "astro preview",
+    "cms:config": "node scripts/build-cms-config.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@fontsource-variable/dm-sans": "^5.1.0",
+    "astro": "^5.1.1",
+    "yaml": "^2.9.0"
+  }
+}

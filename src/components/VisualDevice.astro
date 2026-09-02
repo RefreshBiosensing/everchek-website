@@ -1,0 +1,59 @@
+---
+// CSS-drawn P20 sensor mock. Replace with a real product photo when available:
+// drop the photo into /public/images/ and swap this component for an <img>.
+interface Props { size?: number; temp?: string }
+const { size = 170, temp = '36.8°' } = Astro.props;
+---
+<div class="device-blob" style={`--s:${size}px`}>
+  <div class="device-face">
+    <div class="d-ring"></div>
+    <div class="d-temp">{temp}</div>
+    <div class="d-unit">CELSIUS · LIVE</div>
+  </div>
+</div>
+
+<style>
+  .device-blob {
+    width: var(--s);
+    height: var(--s);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow:
+      0 24px 70px rgba(128, 188, 226, 0.45),
+      inset 0 -6px 16px rgba(128, 188, 226, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .device-face {
+    position: relative;
+    width: 68%;
+    height: 68%;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f2f9fd, #d5ecf8);
+    border: 2px solid rgba(128, 188, 226, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+  .d-ring {
+    position: absolute;
+    inset: 7%;
+    border-radius: 50%;
+    border: 1.5px dashed rgba(90, 157, 196, 0.3);
+  }
+  .d-temp {
+    font-size: calc(var(--s) * 0.16);
+    font-weight: 700;
+    color: var(--blue-deep);
+    letter-spacing: -0.02em;
+  }
+  .d-unit {
+    font-size: calc(var(--s) * 0.052);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--soft);
+  }
+</style>

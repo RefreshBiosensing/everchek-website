@@ -1,0 +1,132 @@
+---
+// 打勾清单 — a title plus tick bullets, optionally in a tinted panel.
+interface Props {
+  title?: string;
+  text?: string;
+  items: string[];
+  columns?: 1 | 2;
+  panel?: boolean;
+  tint?: boolean;
+  variant?: 'outcomes';
+}
+const {
+  title,
+  text,
+  items = [],
+  columns = 1,
+  panel = false,
+  tint = false,
+  variant,
+} = Astro.props;
+const isOutcomes = variant === 'outcomes';
+---
+<section class:list={['section', 'cl-section', { tint, 'is-outcomes': isOutcomes }]}>
+  <div class:list={['container', 'cl-wrap', { 'is-outcomes': isOutcomes }]}>
+    <div class="cl-header">
+      {title && <h2 class="cl-title">{title}</h2>}
+      {text && <p class="cl-text">{text}</p>}
+    </div>
+    <ul class:list={['checks', 'cl-list', `cols-${columns}`, { panel }]}>
+      {items.map((i) => <li>{i}</li>)}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .cl-wrap { max-width: 860px; }
+  .cl-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; text-align: center; }
+  .cl-text { font-size: 15.5px; color: var(--mid); line-height: 1.75; margin: 12px auto 0; text-align: center; max-width: 640px; }
+  .cl-list { margin-top: 26px; gap: 13px; }
+  .cl-list.cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 32px; }
+  .cl-list li { font-size: 15.5px; }
+  .panel {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 30px;
+  }
+
+  .cl-section.is-outcomes {
+    padding: clamp(54px, 6vw, 78px) 0;
+    background: #f5f9fb;
+    border-block: 1px solid #e4edf2;
+  }
+  .cl-wrap.is-outcomes {
+    max-width: var(--container);
+    display: grid;
+    grid-template-columns: minmax(260px, 0.82fr) minmax(0, 1.6fr);
+    gap: clamp(42px, 6vw, 84px);
+    align-items: start;
+  }
+  .cl-wrap.is-outcomes .cl-header { padding-top: 6px; }
+  .cl-wrap.is-outcomes .cl-title {
+    max-width: 390px;
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1.16;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .cl-wrap.is-outcomes .cl-text {
+    max-width: 410px;
+    margin: 17px 0 0;
+    font-size: 16px;
+    line-height: 1.68;
+    text-align: left;
+  }
+  .cl-wrap.is-outcomes .cl-list {
+    margin-top: 0;
+    gap: 14px;
+  }
+  .cl-wrap.is-outcomes .cl-list.cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .cl-wrap.is-outcomes .cl-list li {
+    min-height: 134px;
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    align-content: start;
+    gap: 14px;
+    padding: 22px;
+    border: 1px solid #dce7ed;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 15.5px;
+    line-height: 1.58;
+    box-shadow: 0 8px 24px rgba(43, 78, 99, 0.05);
+  }
+  .cl-wrap.is-outcomes .cl-list li::before {
+    width: 28px;
+    height: 28px;
+    margin-top: 0;
+    border: 1px solid #cbe1ee;
+    background-color: var(--blue-light);
+    background-size: 13px;
+  }
+
+  @media (max-width: 900px) {
+    .cl-wrap.is-outcomes {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .cl-wrap.is-outcomes .cl-header {
+      max-width: 680px;
+      padding-top: 0;
+    }
+    .cl-wrap.is-outcomes .cl-title,
+    .cl-wrap.is-outcomes .cl-text { max-width: 680px; }
+  }
+  @media (max-width: 640px) {
+    .cl-list.cols-2,
+    .cl-wrap.is-outcomes .cl-list.cols-2 { grid-template-columns: 1fr; }
+    .cl-section.is-outcomes { padding: 48px 0; }
+    .cl-wrap.is-outcomes { gap: 24px; }
+    .cl-wrap.is-outcomes .cl-title { font-size: 27px; }
+    .cl-wrap.is-outcomes .cl-text { margin-top: 13px; font-size: 15.5px; }
+    .cl-wrap.is-outcomes .cl-list li {
+      min-height: 0;
+      padding: 19px;
+    }
+  }
+</style>

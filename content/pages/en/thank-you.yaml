@@ -1,0 +1,83 @@
+title: Thank You | EverChek
+description: Your enquiry has reached the EverChek export team. We reply within one business day, Monday to Friday.
+path: /thank-you/
+translationKey: thank-you
+noindex: true
+sections:
+  - type: hero
+    variant: centered
+    kicker: Enquiry received
+    title: Thank you — your message is with our team
+    sub: |
+      A person reads every enquiry that arrives here; there is no autoresponder pretending to be one. We reply within one business day, Monday to Friday. If you are working to a tender deadline, say so in a reply to our first email and we will move you up the queue.
+    buttons:
+      - label: Back to the home page
+        href: /
+        style: ghost
+      - label: Message us on WhatsApp
+        href: https://wa.me/8619168598056
+        style: primary
+  - type: step-flow
+    title: What happens next
+    columns: 3
+    center: true
+    arrows: true
+    items:
+      - icon: mail
+        title: We read it and route it
+        desc: Your enquiry goes to the export team, not to a shared inbox nobody owns. If it concerns regulatory documentation or a tender file, it is routed to the person who handles that.
+      - icon: users
+        title: We come back with questions
+        desc: Usually about your market, your intended regulatory route and which manufacturing model fits — OEM, ODM, SKD kits for local assembly, or straight distribution.
+      - icon: shield
+        title: Documents follow under NDA
+        desc: Certificate numbers, validity dates, issuing-body references and the clinical performance summary are released to qualified partners under a mutual NDA, because your own registration file needs them.
+  - type: card-grid
+    title: While you wait
+    text: Three things worth reading before our reply lands.
+    columns: 3
+    media: icon
+    center: true
+    tint: true
+    items:
+      - icon: factory
+        title: Which manufacturing model fits you
+        text: OEM, ODM and SKD compared side by side — what each one changes, what it costs you in time, and what it demands of your own organisation.
+        href: /cgm-manufacturing-models/
+        linkLabel: Compare the models
+      - icon: doc
+        title: Documentation, and how you get it
+        text: What we publish, what we hold back, and why. Includes what a mutual NDA unlocks and what your registration file will ask us for.
+        href: /certifications/
+        linkLabel: Read the disclosure policy
+      - icon: globe
+        title: SKD kits and local content
+        text: How semi-knocked-down supply lets a product assembled in your country qualify as locally manufactured for public procurement.
+        href: /cgm-skd/
+        linkLabel: See the SKD programme
+  - type: link-pills
+    label: Explore
+    items:
+      - label: EverChek CGM system
+        href: /continuous-glucose-monitor/
+      - label: EverChek patient app
+        href: /cgm-patient-app/
+      - label: OEM / ODM and private label
+        href: /cgm-oem/
+      - label: Become a distributor
+        href: /cgm-distribution/
+      - label: What is a CGM system?
+        href: /what-is-cgms/
+      - label: All articles
+        href: /cgm-blogs/
+  - type: banner-wide
+    align: center
+    height: short
+    title: Need an answer before tomorrow?
+    text: If your enquiry is time-critical — a tender closing, a registration window, a shipment already planned — WhatsApp reaches the export team faster than email does.
+    cta:
+      label: Message us on WhatsApp
+      href: https://wa.me/8619168598056
+    cta2:
+      label: Send more detail on the full form
+      href: /contact/

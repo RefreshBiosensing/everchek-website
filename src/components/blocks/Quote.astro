@@ -1,0 +1,52 @@
+---
+// 引用 / 客户证言 — pull quote with optional attribution.
+import BlockImage from './BlockImage.astro';
+
+interface Props {
+  quote: string;
+  author?: string;
+  role?: string;
+  avatar?: string;
+  dark?: boolean;
+  tint?: boolean;
+}
+const { quote, author, role, avatar, dark = false, tint = false } = Astro.props;
+---
+<section class:list={['section', 'q-section', { dark, tint }]}>
+  <div class="container q-wrap">
+    <div class="q-mark" aria-hidden="true">"</div>
+    <blockquote class="q-text">{quote}</blockquote>
+    {(author || role) && (
+      <div class="q-by">
+        {avatar && <div class="q-avatar"><BlockImage src={avatar} alt={author ?? ''} ratio="1/1" /></div>}
+        <div>
+          {author && <div class="q-author">{author}</div>}
+          {role && <div class="q-role">{role}</div>}
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .q-section.dark { background: var(--navy); }
+  .q-wrap { max-width: 780px; text-align: center; }
+  .q-mark {
+    font-size: 64px; line-height: 1; font-weight: 700;
+    color: var(--blue); opacity: 0.4; margin-bottom: 8px;
+  }
+  .q-text {
+    font-size: clamp(19px, 2.2vw, 26px);
+    font-weight: 500; line-height: 1.5;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .dark .q-text { color: #fff; }
+  .q-by { display: inline-flex; align-items: center; gap: 12px; margin-top: 26px; text-align: left; }
+  .q-avatar { width: 44px; height: 44px; flex-shrink: 0; }
+  .q-avatar :global(.rounded), .q-avatar :global(.bi-ph) { border-radius: 50%; }
+  .q-author { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+  .dark .q-author { color: #fff; }
+  .q-role { font-size: 13px; color: var(--soft); margin-top: 2px; }
+  .dark .q-role { color: #8aabb8; }
+</style>

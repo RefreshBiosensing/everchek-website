@@ -1,0 +1,77 @@
+---
+// 对比表格 — generic N-column comparison. One column can be highlighted as "ours".
+// Each cell is { state, text } where state is yes | no | mid | plain.
+// Legacy ["state", "text"] tuples are still accepted so older content keeps working.
+interface Cell { state?: string; text?: string }
+interface Row { label: string; cells: (Cell | [string, string])[] }
+interface Props {
+  title?: string;
+  text?: string;
+  columns: string[];
+  rows: Row[];
+  highlight?: number;
+  tint?: boolean;
+}
+const { title, text, columns = [], rows = [], highlight = 0, tint = false } = Astro.props;
+
+const MARK: Record<string, string> = { yes: '✓', no: '✗', mid: '△', plain: '' };
+const readCell = (cell: Cell | [string, string]) =>
+  Array.isArray(cell) ? { state: cell[0], text: cell[1] } : { state: cell.state ?? 'plain', text: cell.text ?? '' };
+---
+<section class:list={['section', { tint }]}>
+  <div class="container">
+    {title && <h2 class="ct-title">{title}</h2>}
+    {text && <p class="ct-text">{text}</p>}
+    <div class="ct-scroll">
+      <table class="ct-table">
+        <thead>
+          <tr>
+            <th></th>
+            {columns.map((c, i) => (
+              <th class:list={[{ 'ct-hl': i === highlight }]}>{c}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row) => (
+            <tr>
+              <td class="ct-label">{row.label}</td>
+              {row.cells.map((cell, i) => {
+                const { state, text: txt } = readCell(cell);
+                return (
+                  <td class:list={[state, { 'ct-hl-col': i === highlight }]}>
+                    {MARK[state] ? `${MARK[state]} ` : ''}{txt}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ct-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; text-align: center; }
+  .ct-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin: 12px auto 0; max-width: 640px; text-align: center; }
+
+  .ct-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 30px; }
+  .ct-table { width: 100%; border-collapse: collapse; min-width: 720px; background: #fff; }
+  .ct-table th {
+    padding: 16px 20px; font-size: 13px; font-weight: 700;
+    text-align: center; background: var(--blue-faint); color: var(--mid);
+  }
+  .ct-table th.ct-hl { background: var(--blue-dark); color: #fff; }
+  .ct-table th:first-child { text-align: left; width: 24%; }
+  .ct-table td {
+    padding: 14px 20px; font-size: 13.5px;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .ct-table td.ct-label { text-align: left; font-weight: 600; color: var(--ink); background: var(--blue-faint); }
+  .ct-table td.ct-hl-col { background: rgba(128, 188, 226, 0.06); }
+  .ct-table td.yes { color: var(--ok); font-weight: 600; }
+  .ct-table td.no { color: var(--bad); }
+  .ct-table td.mid { color: var(--warn); }
+  .ct-table td.plain { color: var(--mid); }
+</style>

@@ -1,0 +1,242 @@
+---
+import { loadDict } from '../lib/content';
+
+interface Props { locale?: string }
+const { locale = 'en' } = Astro.props;
+
+const common = loadDict(locale);
+const { nav, cta, brand } = common;
+const menus = [nav.product, nav.solutions, nav.business, nav.resources];
+const currentPath = Astro.url.pathname;
+// Highlight the menu whose section root matches the current URL.
+// Roots come from the dictionary so localised URL prefixes still work.
+const sectionRoots: string[] = menus.map((m: any) => m.root ?? '');
+---
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="/" aria-label={`${brand} home`}>
+      <span class="brand-mark">{brand}</span>
+      <span class="brand-name">{brand}<em>{common.brandTagline}</em></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main">
+      {menus.map((menu, i) => {
+        const root = sectionRoots[i];
+        const active = root && currentPath.startsWith(root);
+        return (
+          <div class:list={['nav-item', { active }]}>
+            <button class="nav-trigger" type="button" aria-expanded="false">
+              {menu.label}
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
+            </button>
+            <div class="panel">
+              <div class="panel-cols">
+                {menu.columns.map((col) => (
+                  <div class="panel-col">
+                    <div class="panel-head">{col.heading}</div>
+                    {col.links.map((l) => (
+                      <a class="panel-link" href={l.href}>{l.label}</a>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </nav>
+
+    <div class="header-ctas">
+      <a class="btn primary sm" href="/contact/?type=quote">{cta.quote}</a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" hidden>
+    {menus.map((menu) => (
+      <details class="m-group">
+        <summary>{menu.label}</summary>
+        {menu.columns.map((col) => (
+          <div class="m-col">
+            <div class="m-head">{col.heading}</div>
+            {col.links.map((l) => (
+              <a class="m-link" href={l.href}>{l.label}</a>
+            ))}
+          </div>
+        ))}
+      </details>
+    ))}
+    <div class="m-ctas">
+      <a class="btn primary" href="/contact/?type=quote">{cta.quote}</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    height: 66px;
+    gap: 8px;
+  }
+
+  /* Brand */
+  .brand { display: flex; align-items: center; gap: 11px; margin-right: 20px; flex-shrink: 0; }
+  .brand-mark {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, var(--blue), var(--blue-dark));
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .brand-name { font-weight: 700; font-size: 17px; line-height: 1.1; letter-spacing: -0.01em; }
+  .brand-name em { display: block; font-style: normal; font-weight: 500; font-size: 10px; color: var(--soft); letter-spacing: 0.05em; }
+
+  /* Desktop nav */
+  .main-nav { display: flex; align-items: stretch; height: 100%; }
+  .nav-item { position: relative; display: flex; }
+  .nav-trigger {
+    display: flex; align-items: center; gap: 5px;
+    background: none; border: none; cursor: pointer;
+    padding: 0 15px;
+    font-size: 14.5px; font-weight: 600;
+    color: var(--mid);
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease;
+  }
+  .nav-item:hover .nav-trigger,
+  .nav-item:focus-within .nav-trigger { color: var(--blue-deep); }
+  .nav-item.active .nav-trigger { color: var(--blue-deep); border-bottom-color: var(--blue); }
+  .nav-trigger svg { transition: transform 0.18s ease; margin-top: 1px; }
+  .nav-item:hover .nav-trigger svg,
+  .nav-item:focus-within .nav-trigger svg { transform: rotate(180deg); }
+
+  .panel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    padding-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.16s ease, transform 0.16s ease;
+    pointer-events: none;
+  }
+  .nav-item:hover .panel,
+  .nav-item:focus-within .panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+  .panel-cols {
+    display: flex;
+    gap: 44px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 26px 30px 28px;
+    box-shadow: 0 24px 60px rgba(22, 36, 46, 0.13);
+  }
+  .panel-col { min-width: 190px; display: flex; flex-direction: column; }
+  .panel-head {
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--soft);
+    margin-bottom: 12px;
+  }
+  .panel-link {
+    font-size: 14px;
+    color: var(--mid);
+    padding: 6px 0;
+    white-space: nowrap;
+    transition: color 0.12s ease;
+  }
+  .panel-link:hover { color: var(--blue-deep); }
+
+  /* CTAs */
+  .header-ctas { margin-left: auto; display: flex; gap: 9px; align-items: center; flex-shrink: 0; }
+
+  /* Mobile */
+  .menu-toggle { display: none; }
+  .mobile-nav { display: none; }
+
+  @media (max-width: 1020px) {
+    .main-nav, .header-ctas { display: none; }
+    .menu-toggle {
+      display: flex; flex-direction: column; justify-content: center; gap: 5px;
+      margin-left: auto;
+      width: 42px; height: 42px;
+      background: none; border: 1px solid var(--border); border-radius: 9px;
+      cursor: pointer; align-items: center;
+    }
+    .menu-toggle span { display: block; width: 18px; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.2s ease; }
+    .menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: block;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+      padding: 10px 24px 26px;
+      max-height: calc(100vh - 66px);
+      overflow-y: auto;
+    }
+    .mobile-nav[hidden] { display: none; }
+    .m-group { border-bottom: 1px solid var(--border); }
+    .m-group summary {
+      list-style: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 15px 0;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .m-group summary::-webkit-details-marker { display: none; }
+    .m-group summary::after {
+      content: '';
+      width: 9px; height: 9px;
+      border-right: 2px solid var(--soft);
+      border-bottom: 2px solid var(--soft);
+      transform: rotate(45deg);
+      transition: transform 0.15s ease;
+    }
+    .m-group[open] summary::after { transform: rotate(-135deg); }
+    .m-col { padding: 2px 0 14px; }
+    .m-head { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--soft); margin: 8px 0 6px; }
+    .m-link { display: block; padding: 8px 0 8px 12px; color: var(--mid); font-size: 15px; border-left: 2px solid var(--border); margin-left: 2px; }
+    .m-ctas { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+  }
+</style>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  if (toggle && mobileNav) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      if (open) {
+        mobileNav.setAttribute('hidden', '');
+      } else {
+        mobileNav.removeAttribute('hidden');
+      }
+    });
+  }
+</script>

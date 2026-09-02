@@ -1,0 +1,240 @@
+title: "B2B CGM Manufacturer: OEM, ODM & SKD Supply | EverChek"
+description: EverChek is a B2B-only CGM manufacturer in Shenzhen supplying OEM, ODM, SKD kits and private-label continuous glucose monitoring programmes worldwide.
+path: /
+translationKey: home
+accuracyClaim: |
+  MARD is only meaningful with its method attached. We publish how we measure it — reference method,
+  comparator, wear-day and glucose-range breakdown — and we release the clinical performance summary
+  to qualified partners under NDA. Ask us for the protocol before you ask us for the number; the
+  protocol is what tells you whether the number means anything.
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    kicker: Shenzhen CGM manufacturer · Sub-brand of Refresh.cc · Founded 2016
+    title: B2B SKD & OEM continuous glucose monitoring system manufacturing
+    sub: |
+      A B2B-only CGM manufacturer. We supply OEM, ODM, SKD kit and private-label programmes — and we
+      run no consumer brand of our own, so we never compete with yours in your market.
+    buttons:
+      - label: Request the CGM specification sheet
+        href: /contact/?type=spec
+        style: primary
+      - label: Compare OEM, ODM and SKD
+        href: /cgm-manufacturing-models/
+        style: ghost
+    badges:
+      - OEM & private label
+      - ODM
+      - SKD kits
+      - Distribution
+      - Government tenders
+    note: Factory-calibrated 14-day sensor, no fingerstick · Bluetooth transmitter and patient app · API/SDK for your own platform.
+    image: /images/product-composite.png
+    imageAlt: EverChek CGM sensor applicator beside a smartphone showing the patient app with a live glucose reading and 12-hour trend curve
+    ratio: 4/3
+  - type: trustbar
+    label: What sits behind the product
+    items:
+      - Founded 2016 · Shenzhen, China
+      - Sensor chips, biosensors and algorithms developed in-house
+      - Manufacturing under ISO 13485 quality management
+      - B2B only — we run no consumer CGM brand
+  - type: card-grid
+    columns: 4
+    center: true
+    eyebrow: Cooperation models
+    title: Four ways to work with a B2B CGM manufacturer
+    text: Every partner starts from the same CGM platform. What changes is how much of it carries your brand, and where final assembly happens.
+    items:
+      - icon: box
+        title: CGM OEM & private label
+        text: Launch your own CGM brand on our hardware, firmware and patient app, without investing in sensor R&D or an assembly line of your own.
+        href: /cgm-oem/
+        linkLabel: OEM & private label
+      - icon: factory
+        title: CGM SKD kits & local assembly
+        text: Import semi-knocked-down kits and complete final assembly in your own market — the route used to support local-content rules, import duty relief and regional tender bids.
+        href: /cgm-skd/
+        linkLabel: SKD & local assembly
+      - icon: handshake
+        title: CGM distribution
+        text: Distribute the EverChek CGM system in your territory, with technical documentation and commercial support behind you.
+        href: /cgm-distribution/
+        linkLabel: Distribution partnership
+      - icon: doc
+        title: Certifications & documentation
+        text: Which certifications we hold, which body issued them and what scope they cover — plus how to request the full pack under a mutual NDA.
+        href: /certifications/
+        linkLabel: Documentation policy
+  - type: image-text
+    variant: left
+    title: "From biosensors to CGMs: Who we are"
+    text: Founded in 2016, we are a biosensing technology company focused on the R&D and commercialization of wearable, miniaturized, and portable intelligent biosensing solutions. Built on self-developed sensor chips, biosensors, and algorithm platforms, we help healthcare brands commercialize CGM products through flexible cooperation models covering everything from core components to end-user systems.
+    image: /images/about-factory-corridor.jpg
+    imageAlt: Cleanroom corridor inside the EverChek CGM factory in Shenzhen, with gowning and equipment rooms leading to the production hall
+    ratio: 16/9
+    cta:
+      label: More about EverChek
+      href: /about-us/
+  - type: card-grid
+    columns: 3
+    tint: true
+    center: true
+    title: Why healthcare partners choose our CGM system?
+    text: Engineered for reliability, accuracy, and seamless healthcare integration.
+    items:
+      - icon: curve
+        title: Accuracy, stated the way it should be
+        text: |
+          MARD is only meaningful with its method attached. We publish how we measure it — reference
+          method, comparator, wear-day and glucose-range breakdown — and we release the clinical
+          performance summary to qualified partners under NDA. Ask us for the protocol before you ask
+          us for the number; the protocol is what tells you whether the number means anything.
+      - icon: shield
+        title: Stable
+        text: Designed for 14-day continuous glucose monitoring across different storage and operating temperatures, our CGM system minimizes reliability concerns throughout logistics and daily use.
+      - icon: data
+        title: API/SDK integration
+        text: Integrate patients' CGM data directly into your own app or digital health platform. This helps you retain patient relationships, own the user experience, and scale your ecosystem freely.
+      - icon: check
+        title: Factory calibration
+        text: No fingerstick calibration needed. Your customers just apply it and go. Scale confidently with fewer support tickets and more happy customers.
+      - icon: cloud
+        title: Water resistance
+        text: "The sensor and transmitter are sealed for showering, swimming and exercise without removing the sensor. [TODO: IP rating — site currently says both IPX8 and IP28; state the rating and the tested depth and duration once engineering has settled it.]"
+      - icon: patch
+        title: Lightweight
+        text: Designed for comfortable long-term wear, our CGMS helps healthcare brands improve user adoption and overall product experience.
+  - type: card-grid
+    columns: 2
+    media: image
+    center: true
+    ratio: 4/3
+    title: A glance at EverChek continuous glucose monitor system
+    text: Our EverChek continuous glucose monitoring system combines cutting-edge biosensor technology with user-centric design, delivering accurate real-time glucose insights through an intuitive mobile app experience.
+    items:
+      - image: /images/continuous-glucose-monitor-device.jpg
+        title: EverChek continuous glucose monitor system
+        text: Ultra-compact, water-resistant sensor with 14-day wear time and factory calibration, paired with an intuitive mobile app for real-time glucose monitoring.
+        href: /continuous-glucose-monitor/
+        linkLabel: See the CGM system
+      - image: /images/cgm-app-phone.jpg
+        title: EverChek CGMS patient app
+        text: Real-time glucose tracking, customizable alerts, and trend analysis in an intuitive mobile interface for seamless diabetes management.
+        href: /cgm-patient-app/
+        linkLabel: See the patient app
+  - type: image-text
+    variant: right
+    title: Flexible CGM SKD solutions for regional healthcare markets
+    text: Our CGM SKD solution enables healthcare businesses to localize final assembly, support regional tender bidding, reduce import duties, and accelerate market entry through stable long-term CGM supply infrastructure. Launch your own CGM brand without the time, cost, and complexity of building the technology and production from scratch.
+    bullets:
+      - Final assembly completed in your own market
+      - Supports local-content requirements in public tenders
+      - Lower landed cost than importing finished devices
+      - Long-term kit supply from one manufacturer
+    image: /images/cgm-skd-cooperation.png
+    imageAlt: Three healthcare business partners reviewing CGM SKD kit components — sensor applicators, transmitter and sensor board — on a meeting table with tablets and technical drawings
+    ratio: 16/9
+    cta:
+      label: Start an SKD feasibility review
+      href: /cgm-skd/
+    tint: true
+  - type: checklist
+    columns: 2
+    panel: true
+    title: Built exclusively for B2B CGM partnerships
+    text: We focus exclusively on supporting healthcare partners launch and scale their own CGM businesses worldwide.
+    items:
+      - Vertically integrated development — we develop chips, biosensors, algorithms, hardware systems, and digital infrastructure all in-house to provide stronger technical control and long-term supply stability.
+      - Stable quality — we implement SPC-controlled manufacturing processes to reduce variations and maintain consistent batch quality. You receive reliable sensors that perform the same.
+      - Flexible cooperation pathways — with full ownership of R&D and manufacturing, we enable healthcare businesses to choose the CGM partnership model freely to fit their market goals.
+      - Dedicated technical collaboration — our engineering and operational teams work closely with partners throughout app integration, customization, production, and commercialization stages.
+      - Regulatory & compliance support — we support healthcare businesses with technical documentation, test reports, and compliance materials to simplify your regulatory preparation for faster commercialization.
+      - Long-term manufacturing scalability — our production infrastructure supports both early-stage deployment and future large-scale expansion, so you can grow without requalifying your supply chain.
+  - type: card-grid
+    columns: 3
+    center: true
+    eyebrow: Documentation
+    title: Certifications & validation
+    text: Our CGM systems are supported by regulatory testing and validation documentation, helping your business prepare its regulatory submission and commercialize confidently.
+    items:
+      - icon: shield
+        title: ISO 13485 certification
+        text: Our manufacturing systems operate under ISO 13485 quality management standards for medical device development and production. Certificate number and issuing body are provided to qualified partners under NDA.
+      - icon: doc
+        title: Cytotoxicity report
+        text: We have obtained cytotoxicity testing reports to support the biological safety evaluation of materials used in our CGM systems.
+      - icon: check
+        title: Sensitization report
+        text: Sensitization testing was performed to assess potential allergic or skin sensitization risks during product use.
+    note: We publish which certifications we hold, which body issued them and what scope they cover — not certificate numbers, clinical datasets, capacity, MOQ, lead times or pricing.
+    moreLink:
+      label: Read our disclosure policy
+      href: /certifications/
+  - type: card-grid
+    columns: 3
+    media: image
+    center: true
+    ratio: 16/9
+    title: CGM insight for healthcare brands
+    text: Discover insights on CGM development, healthcare manufacturing, commercialization strategies, and digital health innovation.
+    items:
+      - image: /blog/private-label-cgm-images/01-private-label-cgm.png
+        kicker: CGM Technology
+        title: "Private label CGM: how to start your own CGM brand fast and cost-effectively"
+        text: Private label CGM guide for healthcare brands and distributors. Learn how to start a CGM brand fast at low cost via private label, OEM, or SKD manufacturing.
+        href: /blog/private-label-cgm/
+        linkLabel: Read the guide
+      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.png
+        kicker: Manufacturing
+        title: "What is CGM SKD? A B2B guide to semi-knocked-down CGM manufacturing"
+        text: What is in an SKD kit, who it is for, the step-by-step process, the key benefits, and how to choose a reliable manufacturer.
+        href: /blog/what-is-cgm-skd/
+        linkLabel: Read the guide
+      - image: /blog/cgm-vs-bgm-images/01_hero_concept.png
+        kicker: CGM Technology
+        title: "CGM vs BGM: how to choose for your healthcare business"
+        text: A complete comparison of CGM and BGM for healthcare brands — accuracy, market data, regulatory pathways, digital health integration, and how to choose.
+        href: /blog/cgm-vs-bgm/
+        linkLabel: Read the comparison
+    moreLink:
+      label: All CGM articles
+      href: /cgm-blogs/
+  - type: faq
+    title: Working with EverChek — common questions
+    items:
+      - q: Does EverChek sell CGM systems directly to consumers?
+        a: No. EverChek is a B2B-only CGM manufacturer. We supply OEM, ODM, SKD kit, private-label and distribution partners, and we run no consumer brand of our own — so we never compete with our partners in their own markets.
+      - q: What CGM manufacturing models does EverChek offer?
+        a: Four. OEM and private label puts your brand on our existing CGM system. ODM adapts the platform to your specification. SKD supplies semi-knocked-down kits so final assembly happens in your market. Distribution supplies the EverChek-branded system for your territory.
+      - q: How long does the EverChek CGM sensor last, and does it need fingerstick calibration?
+        a: The system is designed for 14 days of continuous glucose monitoring on one sensor, and it is factory calibrated — end users do not need to perform fingerstick calibration. The sensor pairs with a Bluetooth transmitter and the EverChek patient app.
+      - q: What is your CGM accuracy, and what is your MARD?
+        a: MARD is only meaningful with its method attached. We publish how we measure it — reference method, comparator, wear-day and glucose-range breakdown — and we release the clinical performance summary to qualified partners under NDA. Ask us for the protocol before you ask us for the number.
+      - q: Can we integrate CGM data into our own app or digital health platform?
+        a: Yes. We provide API and SDK access so glucose data flows into your own app or platform. That keeps the patient relationship and the user experience with your brand rather than with a third-party app.
+      - q: Where is EverChek based, and who owns it?
+        a: EverChek is based in Shenzhen, China, and is a sub-brand of Refresh.cc. The company was founded in 2016 as a biosensing technology business developing wearable, miniaturized and portable intelligent biosensing solutions.
+      - q: Which markets does EverChek support?
+        a: We work with overseas medical device distributors, healthcare brands and government tender bidders. Algeria and the UAE are committed markets. Ask us about a specific country and we will tell you what registration exists there today and what the realistic route is.
+  - type: link-pills
+    label: Explore
+    items:
+      - label: CGM OEM & private label
+        href: /cgm-oem/
+      - label: CGM SKD kits
+        href: /cgm-skd/
+      - label: CGM distribution
+        href: /cgm-distribution/
+      - label: Certifications & documentation
+        href: /certifications/
+      - label: The CGM system
+        href: /continuous-glucose-monitor/
+      - label: CGM patient app
+        href: /cgm-patient-app/
+      - label: What is CGM?
+        href: /what-is-cgms/
+      - label: OEM vs ODM vs SKD
+        href: /cgm-manufacturing-models/
+  - type: cta-banner

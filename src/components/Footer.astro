@@ -1,0 +1,118 @@
+---
+import { loadDict } from '../lib/content';
+import Icon from './Icon.astro';
+
+interface Props { locale?: string }
+const { locale = 'en' } = Astro.props;
+
+const common = loadDict(locale);
+const { footer, brand } = common;
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-row">
+          <span class="fb-mark">{brand}</span>
+          <span class="fb-name">{brand}</span>
+        </div>
+        <p class="fb-blurb">{footer.blurb}</p>
+        {footer.operatorName && (
+          <p class="fb-operator">
+            <span>{footer.operatorLabel ?? 'Operated by'}</span>
+            <a href={footer.operatorUrl} target="_blank" rel="noopener">{footer.operatorName}</a>
+          </p>
+        )}
+      </div>
+
+      {footer.columns.map((col) => (
+        <div class="footer-col">
+          <div class="fc-head">{col.heading}</div>
+          {col.links.map((l) => (
+            <a class="fc-link" href={l.href}>{l.label}</a>
+          ))}
+        </div>
+      ))}
+
+      <div class="footer-col">
+        <div class="fc-head">{footer.contactHeading}</div>
+        <a class="fc-link email" href={`mailto:${footer.email}`}>
+          <Icon name="mail" size={15} />
+          {footer.email}
+        </a>
+        <a class="fc-link email" href={footer.whatsappLink} target="_blank" rel="noopener">
+          <Icon name="whatsapp" size={15} />
+          {footer.whatsapp}
+        </a>
+        <span class="fc-link address">
+          <Icon name="pin" size={15} />
+          {footer.address}
+        </span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>{footer.legal}</span>
+      <span class="disclaimer">{footer.disclaimer}</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--navy);
+    color: #9db4c0;
+    padding: 64px 0 36px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(4, 1fr);
+    gap: 36px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .fb-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  .fb-mark {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: linear-gradient(140deg, var(--blue), var(--blue-dark));
+    color: #fff; font-size: 11px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fb-name { color: #fff; font-weight: 700; font-size: 17px; }
+  .fb-blurb { line-height: 1.7; max-width: 300px; font-size: 13.5px; }
+  .fb-operator { margin-top: 16px; max-width: 300px; font-size: 12.5px; line-height: 1.6; }
+  .fb-operator span { display: block; color: #fff; font-weight: 700; margin-bottom: 3px; }
+  .fb-operator a { color: #9db4c0; text-decoration: none; }
+  .fb-operator a:hover { color: var(--blue); }
+
+  .fc-head {
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  .fc-link { display: block; padding: 5px 0; color: #9db4c0; font-size: 13.5px; transition: color 0.12s ease; }
+  .fc-link:hover { color: var(--blue); }
+  .fc-link.email { display: inline-flex; align-items: center; gap: 7px; }
+  .fc-link.address { display: flex; align-items: flex-start; gap: 7px; line-height: 1.55; margin-top: 4px; max-width: 260px; }
+  .fc-link.address :global(svg) { flex-shrink: 0; margin-top: 3px; }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 26px;
+    font-size: 12.5px;
+    color: #6d8494;
+    flex-wrap: wrap;
+  }
+  .disclaimer { max-width: 560px; }
+
+  @media (max-width: 960px) {
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-brand { grid-column: 1 / -1; }
+  }
+</style>

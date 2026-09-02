@@ -1,0 +1,139 @@
+---
+import Icon from '../Icon.astro';
+
+interface Feature {
+  icon: string;
+  title: string;
+  text: string;
+}
+interface Props {
+  eyebrow?: string;
+  title: string;
+  sub?: string;
+  features?: Feature[];
+}
+
+const { eyebrow, title, sub, features = [] } = Astro.props;
+---
+
+<section class="section app-capabilities">
+  <div class="container">
+    <div class="ac-head">
+      {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+      <h2>{title}</h2>
+      {sub && <p>{sub}</p>}
+    </div>
+
+    <div class="ac-layout">
+      <div class="ac-live-card">
+        <div class="ac-live-top">
+          <div>
+            <span class="ac-status"><i></i> Live body temperature</span>
+            <strong>38.2°C</strong>
+          </div>
+          <span class="ac-rate">Every 5 sec</span>
+        </div>
+
+        <div class="ac-chart" aria-hidden="true">
+          <span class="ac-threshold">Alert threshold&nbsp; 38.5°C</span>
+          <svg viewBox="0 0 520 190" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="curveFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#53b7df" stop-opacity=".38" />
+                <stop offset="100%" stop-color="#53b7df" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <path class="grid" d="M0 38H520M0 94H520M0 150H520" />
+            <path class="threshold" d="M0 56H520" />
+            <path class="area" d="M0 152 C55 149 80 134 119 137 S188 117 221 121 S277 86 312 96 S365 59 403 73 S463 40 520 46 V190 H0Z" />
+            <path class="curve" d="M0 152 C55 149 80 134 119 137 S188 117 221 121 S277 86 312 96 S365 59 403 73 S463 40 520 46" />
+            <circle cx="520" cy="46" r="6" />
+          </svg>
+        </div>
+
+        <div class="ac-live-bottom">
+          <span><Icon name="bell" size={17} /> Configurable alerts</span>
+          <span><Icon name="users" size={17} /> Shared live viewing</span>
+        </div>
+      </div>
+
+      <div class="ac-features">
+        {features.map((feature) => (
+          <article>
+            <div class="ac-icon"><Icon name={feature.icon} size={22} /></div>
+            <div>
+              <h3>{feature.title}</h3>
+              <p>{feature.text}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .app-capabilities {
+    background:
+      radial-gradient(circle at 12% 12%, rgba(91, 190, 226, .15), transparent 32%),
+      linear-gradient(180deg, #f8fcff 0%, #eef7fb 100%);
+  }
+  .ac-head { max-width: 790px; margin: 0 auto 44px; text-align: center; }
+  .ac-head h2 { font-size: clamp(30px, 4vw, 48px); line-height: 1.12; letter-spacing: -.035em; }
+  .ac-head p { max-width: 680px; margin: 16px auto 0; color: var(--mid); font-size: 16px; line-height: 1.75; }
+  .ac-layout { display: grid; grid-template-columns: 1.06fr .94fr; gap: 24px; align-items: stretch; }
+
+  .ac-live-card {
+    min-height: 410px;
+    padding: 30px;
+    border-radius: 26px;
+    color: #fff;
+    background: linear-gradient(145deg, #102f46 0%, #0c435d 58%, #135d78 100%);
+    box-shadow: 0 25px 70px rgba(13, 64, 88, .22);
+    overflow: hidden;
+  }
+  .ac-live-top { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+  .ac-status { display: flex; align-items: center; gap: 8px; color: #b9dce9; font-size: 13px; font-weight: 650; }
+  .ac-status i { width: 8px; height: 8px; border-radius: 50%; background: #5de3b7; box-shadow: 0 0 0 6px rgba(93, 227, 183, .12); }
+  .ac-live-top strong { display: block; margin-top: 9px; font-size: clamp(38px, 5vw, 58px); line-height: 1; letter-spacing: -.045em; }
+  .ac-rate { padding: 8px 12px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #d9edf5; font-size: 12px; background: rgba(255,255,255,.07); }
+
+  .ac-chart { position: relative; margin-top: 28px; height: 205px; }
+  .ac-chart svg { width: 100%; height: 100%; overflow: visible; }
+  .ac-chart .grid { fill: none; stroke: rgba(255,255,255,.08); stroke-width: 1; }
+  .ac-chart .threshold { fill: none; stroke: #ffbd63; stroke-width: 1.5; stroke-dasharray: 6 7; }
+  .ac-chart .area { fill: url(#curveFill); }
+  .ac-chart .curve { fill: none; stroke: #66c7eb; stroke-width: 4; stroke-linecap: round; }
+  .ac-chart circle { fill: #fff; stroke: #5bc0e6; stroke-width: 4; }
+  .ac-threshold { position: absolute; top: 20px; right: 0; z-index: 2; color: #ffd79e; font-size: 11px; }
+  .ac-live-bottom { display: flex; gap: 22px; border-top: 1px solid rgba(255,255,255,.11); padding-top: 18px; color: #c8e2ec; font-size: 12.5px; }
+  .ac-live-bottom span { display: flex; align-items: center; gap: 7px; }
+
+  .ac-features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .ac-features article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 194px;
+    padding: 24px;
+    border: 1px solid rgba(171, 207, 225, .7);
+    border-radius: 20px;
+    background: rgba(255,255,255,.86);
+    box-shadow: 0 12px 34px rgba(40, 101, 130, .08);
+  }
+  .ac-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; color: var(--blue-deep); background: #e7f5fb; }
+  .ac-features h3 { margin: 0; font-size: 17px; line-height: 1.25; letter-spacing: -.015em; }
+  .ac-features p { margin: 8px 0 0; color: var(--mid); font-size: 13.5px; line-height: 1.6; }
+
+  @media (max-width: 900px) {
+    .ac-layout { grid-template-columns: 1fr; }
+    .ac-live-card { min-height: 380px; }
+  }
+  @media (max-width: 580px) {
+    .ac-head { margin-bottom: 30px; }
+    .ac-live-card { min-height: 350px; padding: 22px 18px; border-radius: 20px; }
+    .ac-features { grid-template-columns: 1fr; }
+    .ac-features article { min-height: 0; flex-direction: row; }
+    .ac-live-bottom { gap: 12px; flex-direction: column; }
+  }
+</style>

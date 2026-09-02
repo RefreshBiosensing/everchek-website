@@ -1,0 +1,67 @@
+title: Terms of Service | EverChek
+description: The terms governing use of the EverChek website and our B2B CGM manufacturing relationships — OEM, ODM, SKD and CKD.
+path: /terms-of-service/
+translationKey: terms-of-service
+sections:
+  - type: hero
+    variant: centered
+    kicker: Legal
+    title: Terms of Service
+    sub: |
+      Last updated: June 18, 2026
+    note: |
+      Questions about these terms? Write to contact@ever-chek.com and a person will answer.
+  - type: richtext
+    eyebrow: Terms
+    title: Terms governing this website
+    blocks:
+      - text: |
+          These Terms of Service ("Terms") govern your access to and use of the EverChek website and any related services. By accessing or using our website, you agree to be bound by these Terms.
+      - heading: 1. Business Purpose
+        text: |
+          EverChek is a B2B-focused CGM (Continuous Glucose Monitoring) manufacturer, providing OEM, ODM, SKD, and CKD solutions to healthcare businesses worldwide. Our website is intended for business-to-business interactions and professional inquiries.
+      - heading: 2. Intellectual Property
+        text: |
+          All content on this website, including text, graphics, logos, images, product specifications, and software, is the property of EverChek or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works without our prior written consent.
+      - heading: 3. Use of Website
+        text: |
+          You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others. You may not use the website for any unauthorized commercial purpose; attempt to gain unauthorized access to our systems; transmit any harmful code or interfere with the website's operation; or misrepresent your identity or affiliation with any entity.
+      - heading: 4. Product Information
+        text: |
+          Product specifications, descriptions, and images on this website are for informational purposes and may be subject to change without notice. We strive to ensure accuracy but do not guarantee that all information is complete, current, or error-free. Formal product specifications will be provided in the context of our business agreements.
+      - heading: 5. Inquiries and Communications
+        text: |
+          When you submit inquiries through our website, you agree to provide accurate and complete information. We reserve the right to decline any business engagement at our discretion.
+      - heading: 6. Limitation of Liability
+        text: |
+          To the fullest extent permitted by law, EverChek shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of this website or any products or services described herein.
+      - heading: 7. Disclaimer
+        text: |
+          This website and its content are provided on an "as is" and "as available" basis. EverChek makes no warranties, express or implied, regarding the website's operation, accuracy, or reliability.
+      - heading: 8. Regulatory Compliance
+        text: |
+          Our CGM products are manufactured in compliance with applicable quality management standards. Customers and partners are responsible for ensuring compliance with local regulatory requirements for medical devices in their respective markets. Regulatory status and product availability differ from country to country; nothing on this website should be read as a claim that a given approval exists in your market.
+      - heading: 9. Confidentiality
+        text: |
+          Any information shared through business inquiries, including product specifications and pricing, is confidential and should not be disclosed to third parties without our written consent. Certificate numbers, clinical performance summaries and other documentation we release to qualified partners are provided under a mutual non-disclosure agreement and are covered by that agreement rather than by these Terms.
+      - heading: 10. Governing Law
+        text: |
+          These Terms shall be governed by and construed in accordance with the laws of China. Any disputes arising from these Terms shall be resolved through friendly negotiation or through the courts of competent jurisdiction in China.
+      - heading: 11. Changes to Terms
+        text: |
+          We reserve the right to modify these Terms at any time. Changes will be effective upon posting. Your continued use of the website after changes constitutes acceptance of the new Terms.
+      - heading: 12. Contact
+        text: |
+          For questions about these Terms, please contact us at contact@ever-chek.com.
+  - type: link-pills
+    label: Also on this site
+    items:
+      - label: Privacy Policy
+        href: /privacy-policy/
+      - label: Contact us
+        href: /contact/
+      - label: Documentation and how you get it
+        href: /certifications/
+      - label: Manufacturing models compared
+        href: /cgm-manufacturing-models/
+  - type: cta-banner

@@ -1,0 +1,38 @@
+---
+// 相关链接条 — keyword-anchor internal links in a slim strip.
+import Icon from '../Icon.astro';
+
+interface Props {
+  label?: string;
+  items: { label: string; href: string }[];
+}
+const { label = 'Explore', items = [] } = Astro.props;
+---
+<section class="related-strip">
+  <div class="container rel-row">
+    <span class="rel-label">{label}</span>
+    <div class="rel-links">
+      {items.map((r) => (
+        <a class="rel-pill" href={r.href}>{r.label} <Icon name="arrow" size={13} /></a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .related-strip { border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 26px 0; background: var(--blue-faint); }
+  .rel-row { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; text-align: center; }
+  .rel-label { font-size: 12px; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--soft); }
+  .rel-links { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .rel-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 13.5px; font-weight: 600;
+    color: var(--blue-deep);
+    transition: border-color 0.15s ease;
+  }
+  .rel-pill:hover { border-color: var(--blue-dark); }
+</style>

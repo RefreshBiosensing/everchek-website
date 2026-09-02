@@ -1,0 +1,79 @@
+---
+// Dark banner + 3-field enquiry form, shown at the foot of every page.
+// The full form lives on /contact/. Copy comes from the locale dictionary.
+import { loadDict } from '../lib/content';
+import MiniForm from './MiniForm.astro';
+
+interface Props {
+  locale?: string;
+  title?: string;
+  sub?: string;
+  fullFormLink?: string;
+  fullFormHref?: string;
+  messagePlaceholder?: string;
+}
+const {
+  locale = 'en',
+  title,
+  sub,
+  fullFormLink,
+  fullFormHref,
+  messagePlaceholder,
+} = Astro.props;
+
+const common = loadDict(locale);
+const { ctaBanner, footer } = common;
+const copy = {
+  ...ctaBanner,
+  ...(title ? { title } : {}),
+  ...(sub ? { sub } : {}),
+  ...(fullFormLink ? { fullFormLink } : {}),
+  ...(fullFormHref ? { fullFormHref } : {}),
+  ...(messagePlaceholder ? { messagePlaceholder } : {}),
+};
+---
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <div class="cta-copy">
+      <h2 class="cta-title">{copy.title}</h2>
+      <p class="cta-sub">{copy.sub}</p>
+      <a class="cta-full-link" href={copy.fullFormHref ?? '/contact/'}>{copy.fullFormLink} →</a>
+    </div>
+    <MiniForm t={copy} email={footer?.email} />
+  </div>
+</section>
+
+<style>
+  .cta-banner {
+    background: linear-gradient(135deg, var(--navy) 0%, #1d3a4d 100%);
+    padding: clamp(56px, 7vw, 88px) 0;
+  }
+  .cta-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 64px);
+    align-items: center;
+  }
+  .cta-title {
+    color: #fff;
+    font-size: clamp(23px, 2.6vw, 30px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    max-width: 460px;
+  }
+  .cta-sub { color: #8aabb8; margin-top: 12px; max-width: 460px; font-size: 15.5px; line-height: 1.65; }
+  .cta-full-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .cta-full-link:hover { text-decoration: underline; }
+
+  @media (max-width: 860px) {
+    .cta-inner { grid-template-columns: 1fr; }
+    .cta-title, .cta-sub { max-width: none; }
+  }
+</style>

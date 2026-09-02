@@ -1,0 +1,79 @@
+---
+// 统计数字条 — big numbers with labels. Works on light or dark background.
+interface Item { value: string; label: string }
+interface Props {
+  title?: string;
+  items: Item[];
+  dark?: boolean;
+  tint?: boolean;
+}
+const { title, items = [], dark = false, tint = false } = Astro.props;
+const noTitle = !title;
+---
+<section class:list={['section', 'sr-section', { dark, tint, 'no-title': noTitle }]}>
+  <div class="container">
+    {title && <h2 class="sr-title">{title}</h2>}
+    <div class="sr-grid" style={`--n:${items.length}`}>
+      {items.map((it) => (
+        <div class="sr-item">
+          <div class="sr-value">{it.value}</div>
+          <div class="sr-label">{it.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .sr-section.dark { background: var(--navy); }
+  .sr-section.no-title { padding: clamp(28px, 3.4vw, 46px) 0; }
+
+  .sr-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 36px; text-align: center; }
+  .dark .sr-title { color: #fff; }
+
+  .sr-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+    gap: clamp(14px, 2vw, 28px);
+    max-width: 900px;
+    margin: 0 auto;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+  }
+  .dark .sr-grid { background: transparent; border-color: transparent; }
+
+  .sr-item {
+    background: transparent;
+    padding: 8px 10px 10px;
+    text-align: center;
+    position: relative;
+  }
+  .sr-item + .sr-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * clamp(7px, 1vw, 14px));
+    top: 18%;
+    bottom: 18%;
+    width: 1px;
+    background: var(--border);
+  }
+  .dark .sr-item { background: transparent; }
+  .dark .sr-item + .sr-item::before { background: rgba(128, 188, 226, 0.24); }
+
+  .sr-value {
+    font-size: clamp(24px, 2.8vw, 34px); font-weight: 700;
+    color: var(--blue-deep); letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .dark .sr-value { color: var(--blue); }
+  .sr-label { font-size: 12.5px; color: var(--soft); margin-top: 4px; line-height: 1.45; }
+  .dark .sr-label { color: #8aabb8; }
+
+  @media (max-width: 760px) {
+    .sr-grid { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+    .sr-item + .sr-item::before { display: none; }
+  }
+  @media (max-width: 400px) { .sr-grid { grid-template-columns: 1fr; } }
+</style>

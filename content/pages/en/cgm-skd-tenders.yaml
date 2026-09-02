@@ -1,0 +1,78 @@
+title: How SKD Helps You Win Government Health Tenders | EverChek
+description: Learn how the SKD CGM manufacturing model gives healthcare businesses a competitive edge in government tender bidding — local value-add, duties and jobs.
+path: /cgm-skd-tenders/
+translationKey: cgm-skd-tenders
+schemaType: article
+sections:
+  - type: hero
+    variant: split
+    kicker: Healthcare Business
+    title: How SKD Helps You Win Government Healthcare Tenders
+    sub: Learn how the SKD model gives healthcare businesses a competitive edge in government tender bidding.
+    note: EverChek Team · May 14, 2026
+    visual: image
+    image: /images/blog-cover-3.png
+    imageAlt: Government healthcare tender documents alongside a local CGM assembly line, illustrating an SKD manufacturing partnership
+    ratio: 16/9
+  - type: richtext
+    eyebrow: Start here
+    title: The Government Tender Opportunity
+    blocks:
+      - text: Government healthcare tenders represent a significant opportunity for medical device companies. Many countries, particularly in Southeast Asia, the Middle East, Africa, and Latin America, are investing heavily in diabetes care infrastructure, including CGM systems.
+      - text: However, winning these tenders requires meeting specific qualification criteria, including local content requirements, technology transfer commitments, and after-sales service capabilities.
+  - type: card-grid
+    title: The SKD Advantage
+    text: The Semi-Knocked Down (SKD) manufacturing model offers a unique competitive edge in government tender bidding.
+    columns: 4
+    media: icon
+    items:
+      - icon: building
+        title: Local Value-Add Requirements
+        text: Many government tenders require a minimum percentage of local value-add. By importing CGM components through the SKD model and performing final assembly locally, you can meet these requirements without building a full manufacturing facility from scratch.
+      - icon: chart
+        title: Reduced Import Duties
+        text: Importing components rather than finished products typically qualifies for lower tariff rates. This cost advantage can be reflected in more competitive tender pricing, improving your bid position.
+      - icon: users
+        title: Local Job Creation
+        text: Government tender evaluation criteria often include local economic impact. SKD assembly operations create local jobs in manufacturing, quality control, and logistics, strengthening your tender application.
+      - icon: doc
+        title: Regulatory Pathway Support
+        text: EverChek provides comprehensive technical documentation and regulatory support for SKD partners, including quality management system documentation, test reports, and compliance materials that simplify local regulatory approval.
+    tint: true
+  - type: richtext
+    eyebrow: Evidence
+    title: SKD in a live tender
+    blocks:
+      - text: "[TODO: replace with a real, client-approved EverChek SKD tender reference — country, year, scope and contract value, with something we can point to. The previous version of this page described an unnamed Southeast Asian customer winning a three-year government contract worth over $5 million; that claim is unverified and has been removed rather than carried across.]"
+  - type: step-flow
+    title: Getting Started
+    text: Entering government tender markets with SKD is a structured process.
+    columns: 3
+    items:
+      - icon: pin
+        title: Assess the market
+        desc: Assess target market tender requirements.
+      - icon: factory
+        title: Build local assembly
+        desc: Develop local assembly infrastructure.
+      - icon: shield
+        title: Set up quality management
+        desc: Establish a quality management system.
+      - icon: doc
+        title: Prepare documentation
+        desc: Prepare tender documentation with manufacturer support.
+      - icon: handshake
+        title: Submit the bid
+        desc: Submit a competitive bid with the SKD cost advantage.
+  - type: link-pills
+    label: Keep reading
+    items:
+      - label: CGM SKD cooperation
+        href: /cgm-skd/
+      - label: OEM vs SKD vs ODM models
+        href: /cgm-manufacturing-models/
+      - label: What is CGM SKD?
+        href: /blog/what-is-cgm-skd/
+      - label: All CGM articles
+        href: /cgm-blogs/
+  - type: cta-banner

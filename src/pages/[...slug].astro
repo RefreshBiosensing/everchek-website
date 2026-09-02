@@ -1,0 +1,69 @@
+---
+// The only route. Every page on the site is a YAML section list in
+// content/pages/<locale>/, rendered here through SectionRenderer.
+// Localised slugs come from each page's own `path` field, so /es/... URLs
+// need no extra routing. hreflang comes from translationKey siblings.
+import Base from '../layouts/Base.astro';
+import SectionRenderer from '../components/SectionRenderer.astro';
+import { loadAllPages, alternatesFor, type PageEntry } from '../lib/content';
+
+export function getStaticPaths() {
+  return loadAllPages().map((page) => {
+    // "/products/x/" → "products/x"; the home page ("/") → undefined
+    const slug = page.path.replace(/^\/|\/$/g, '');
+    return {
+      params: { slug: slug === '' ? undefined : slug },
+      props: { page },
+    };
+  });
+}
+
+interface Props { page: PageEntry }
+const { page } = Astro.props;
+const alternates = alternatesFor(page);
+const hero = page.sections.find((section) => section?.type === 'hero');
+const heroTitle = hero?.title ?? page.title;
+const heroImagePath = hero?.image ?? hero?.backgroundImage;
+const heroImage = heroImagePath ? new URL(heroImagePath, Astro.site).toString() : undefined;
+const pageUrl = new URL(page.path, Astro.site).toString();
+
+const schema =
+  page.schemaType === 'product'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: page.title,
+        description: page.description,
+        brand: { '@type': 'Brand', name: 'P20' },
+        manufacturer: { '@type': 'Organization', name: 'P20' },
+        category: 'Medical Device / Wearable Thermometer',
+      }
+    : page.schemaType === 'article'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: heroTitle,
+          description: page.description,
+          ...(heroImage ? { image: heroImage } : {}),
+          mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
+          articleSection: 'Case Studies',
+          author: { '@type': 'Organization', name: 'P20' },
+          publisher: {
+            '@type': 'Organization',
+            name: 'P20',
+            legalName: 'Shenzhen Refresh AI Biosensor Technology Co., Ltd.',
+          },
+        }
+    : undefined;
+---
+<Base
+  title={page.title}
+  description={page.description}
+  image={heroImage}
+  locale={page.locale}
+  alternates={alternates}
+  noindex={page.noindex}
+  schema={schema}
+>
+  <SectionRenderer sections={page.sections} locale={page.locale} />
+</Base>

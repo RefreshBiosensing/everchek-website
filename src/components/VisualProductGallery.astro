@@ -1,0 +1,277 @@
+---
+interface Item {
+  label: string;
+  image?: string;
+  alt?: string;
+  view?: 'angle-front' | 'side-top' | 'back' | 'side-left' | 'front' | 'side-right' | 'angle-back' | 'side-bottom';
+}
+interface Props {
+  items?: Item[];
+}
+const fallbackItems: Item[] = [
+  { label: 'Angle front', view: 'angle-front' },
+  { label: 'Top side', view: 'side-top' },
+  { label: 'Back', view: 'back' },
+  { label: 'Left side', view: 'side-left' },
+  { label: 'Front', view: 'front' },
+  { label: 'Right side', view: 'side-right' },
+  { label: 'Angle back', view: 'angle-back' },
+  { label: 'Bottom side', view: 'side-bottom' },
+];
+const gallery = (Astro.props.items?.length ? Astro.props.items : fallbackItems).slice(0, 8);
+const main = gallery[0];
+const thumbs = gallery.slice(1);
+---
+<div class="pg-wrap" aria-label="P20 product views">
+  <div class="pg-main">
+    {main.image ? (
+      <img class="pg-main-image" src={main.image} alt={main.alt ?? main.label} loading="eager" decoding="async" />
+    ) : (
+      <div class:list={['pg-device', `view-${main.view ?? 'angle-front'}`]} aria-hidden="true">
+        <span class="device-btn"></span>
+      </div>
+    )}
+  </div>
+  <div class="pg-thumb-nav">
+    <button class="pg-arrow pg-prev" type="button" aria-label="View previous product images">
+      <span aria-hidden="true">‹</span>
+    </button>
+    <div class="pg-thumbs" aria-label="Choose a P20 product view">
+      {thumbs.map((item) => (
+        <button
+          class="pg-thumb"
+          type="button"
+          aria-label={`Show ${item.label}`}
+          data-image={item.image}
+          data-alt={item.alt ?? item.label}
+        >
+          {item.image ? (
+            <img src={item.image} alt="" loading="eager" decoding="async" />
+          ) : (
+            <div class:list={['pg-device', `view-${item.view ?? 'front'}`]}>
+              <span class="device-btn"></span>
+            </div>
+          )}
+        </button>
+      ))}
+    </div>
+    <button class="pg-arrow pg-next" type="button" aria-label="View next product images">
+      <span aria-hidden="true">›</span>
+    </button>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.pg-wrap').forEach((gallery) => {
+    if (gallery.dataset.ready) return;
+    gallery.dataset.ready = 'true';
+
+    const mainImage = gallery.querySelector<HTMLImageElement>('.pg-main-image');
+    const rail = gallery.querySelector<HTMLElement>('.pg-thumbs');
+    const thumbs = gallery.querySelectorAll<HTMLButtonElement>('.pg-thumb');
+    const hydrateEmbeddedImage = async (image: HTMLImageElement) => {
+      const source = image.getAttribute('src');
+      if (!source?.endsWith('.svg')) return;
+      try {
+        const svg = await fetch(source).then((response) => response.text());
+        const embeddedSource = svg.match(/<image[^>]+href=["']([^"']+)["']/)?.[1];
+        if (embeddedSource?.startsWith('data:image/')) image.src = embeddedSource;
+      } catch {
+        // Leave the original source in place if the enhancement cannot run.
+      }
+    };
+    const scrollRail = (direction: number) => {
+      rail?.scrollBy({ left: direction * Math.max(rail.clientWidth * 0.75, 180), behavior: 'smooth' });
+    };
+
+    gallery.querySelectorAll<HTMLImageElement>('.pg-main img, .pg-thumb img').forEach((image) => {
+      void hydrateEmbeddedImage(image);
+    });
+
+    gallery.querySelector<HTMLButtonElement>('.pg-prev')?.addEventListener('click', () => scrollRail(-1));
+    gallery.querySelector<HTMLButtonElement>('.pg-next')?.addEventListener('click', () => scrollRail(1));
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        if (!mainImage || !thumb.dataset.image) return;
+        mainImage.src = thumb.dataset.image;
+        mainImage.alt = thumb.dataset.alt ?? '';
+        void hydrateEmbeddedImage(mainImage);
+        thumbs.forEach((item) => item.removeAttribute('aria-current'));
+        thumb.setAttribute('aria-current', 'true');
+      });
+    });
+  });
+</script>
+
+<style>
+  .pg-wrap {
+    width: min(100%, 520px);
+    margin-inline: auto;
+  }
+  .pg-main {
+    aspect-ratio: 1 / 1;
+    border-radius: 28px;
+    border: 1px solid rgba(188, 218, 235, 0.9);
+    background:
+      radial-gradient(circle at 50% 34%, rgba(255,255,255,0.92), rgba(232, 247, 252, 0.64) 44%, rgba(217, 240, 249, 0.42) 72%, transparent 100%),
+      linear-gradient(180deg, #f8fcff 0%, #edf8fc 100%);
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    box-shadow: 0 28px 80px rgba(74, 136, 170, 0.18);
+    overflow: hidden;
+  }
+  .pg-main img,
+  .pg-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .pg-thumb-nav {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr) 34px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .pg-thumbs {
+    display: flex;
+    gap: 10px;
+    min-width: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+  }
+  .pg-thumbs::-webkit-scrollbar { display: none; }
+  .pg-thumb {
+    flex: 0 0 64px;
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    border: 1px solid rgba(188, 218, 235, 0.9);
+    background: rgba(255, 255, 255, 0.82);
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: border-color .2s ease, box-shadow .2s ease;
+  }
+  .pg-thumb:hover,
+  .pg-thumb:focus-visible,
+  .pg-thumb[aria-current="true"] {
+    border-color: #55a9cc;
+    box-shadow: 0 0 0 2px rgba(85, 169, 204, .18);
+    outline: none;
+  }
+  .pg-arrow {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(188, 218, 235, 0.95);
+    background: rgba(255,255,255,.92);
+    color: #287699;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 16px rgba(74, 136, 170, .12);
+  }
+  .pg-arrow span {
+    font-size: 27px;
+    line-height: 1;
+    transform: translateY(-1px);
+  }
+  .pg-arrow:hover,
+  .pg-arrow:focus-visible {
+    background: #fff;
+    border-color: #55a9cc;
+    outline: none;
+  }
+
+  .pg-device {
+    position: relative;
+    width: 78%;
+    aspect-ratio: 1 / 1;
+    border-radius: 48% 48% 44% 44%;
+    background:
+      radial-gradient(circle at 38% 28%, rgba(255,255,255,0.62), transparent 18%),
+      radial-gradient(circle at 55% 54%, rgba(103, 183, 181, 0.16), transparent 25%),
+      linear-gradient(135deg, #c9fbf7 0%, #9de4df 46%, #80c9c3 100%);
+    box-shadow:
+      inset -18px -22px 34px rgba(48, 131, 133, 0.18),
+      inset 14px 18px 30px rgba(255,255,255,0.42),
+      0 26px 42px rgba(60, 135, 145, 0.22);
+  }
+  .pg-device::before,
+  .pg-device::after {
+    content: '';
+    position: absolute;
+    width: 24%;
+    height: 24%;
+    top: 5%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #c9fbf7, #91dcd6);
+    box-shadow: inset -6px -8px 12px rgba(44, 123, 130, 0.13);
+    z-index: -1;
+  }
+  .pg-device::before { left: 8%; }
+  .pg-device::after { right: 8%; }
+  .device-btn {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    right: 29%;
+    top: 36%;
+    border-radius: 50%;
+    background:
+      radial-gradient(circle at 36% 30%, #fff, #cfd4d5 35%, #7b8385 62%, #f7f8f8 65%, #fff 100%);
+    box-shadow: 0 2px 8px rgba(20, 34, 46, 0.2);
+  }
+
+  .pg-thumb .pg-device { width: 86%; box-shadow: inset -7px -8px 12px rgba(48, 131, 133, 0.16), inset 6px 7px 12px rgba(255,255,255,0.34); }
+  .pg-thumb .device-btn { width: 17%; height: 17%; }
+
+  .view-side-top,
+  .view-side-bottom {
+    aspect-ratio: 2.8 / 1;
+    width: 92%;
+    border-radius: 999px;
+    transform: rotate(0deg);
+  }
+  .view-side-top::before,
+  .view-side-top::after,
+  .view-side-bottom::before,
+  .view-side-bottom::after { display: none; }
+  .view-side-top .device-btn,
+  .view-side-bottom .device-btn { width: 9%; height: 26%; top: -10%; right: 43%; }
+
+  .view-side-left,
+  .view-side-right {
+    aspect-ratio: 0.36 / 1;
+    width: 34%;
+    border-radius: 999px;
+  }
+  .view-side-left::before,
+  .view-side-left::after,
+  .view-side-right::before,
+  .view-side-right::after { display: none; }
+  .view-side-left .device-btn,
+  .view-side-right .device-btn { width: 32%; height: 12%; top: 48%; right: -14%; }
+
+  .view-front .device-btn { display: none; }
+  .view-front { transform: rotate(-2deg); }
+  .view-back { transform: rotate(1deg); }
+  .view-angle-front { transform: rotate(-12deg) skew(-3deg, 2deg); }
+  .view-angle-back { transform: rotate(28deg) skew(-6deg, 3deg); }
+  .view-angle-back .device-btn { top: 35%; right: 41%; }
+
+  @media (max-width: 620px) {
+    .pg-main { padding: 28px; border-radius: 22px; }
+    .pg-thumb-nav { grid-template-columns: 30px minmax(0, 1fr) 30px; gap: 7px; }
+    .pg-arrow { width: 30px; height: 30px; }
+    .pg-thumb { flex-basis: 58px; }
+  }
+</style>

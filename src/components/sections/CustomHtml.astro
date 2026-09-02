@@ -1,0 +1,18 @@
+---
+// custom-html 逃生口 — raw HTML for one-off designs the block library
+// can't express. Inline <style> tags inside the HTML work.
+// Structural edits should still be整段替换, never string surgery.
+interface Props {
+  html: string;
+  contained?: boolean;  // wrap in .container + section padding
+  tint?: boolean;
+}
+const { html = '', contained = true, tint = false } = Astro.props;
+---
+{contained ? (
+  <section class:list={['section', { tint }]}>
+    <div class="container" set:html={html} />
+  </section>
+) : (
+  <Fragment set:html={html} />
+)}

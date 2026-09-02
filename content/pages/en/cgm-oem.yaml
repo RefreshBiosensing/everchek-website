@@ -1,0 +1,196 @@
+title: CGM OEM Manufacturing for White-Label Brands | EverChek
+description: Looking to build your CGM brand without investing in R&D or assembly lines? Launch faster with EverChek's full CGM OEM solution.
+path: /cgm-oem/
+translationKey: cgm-oem
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    image: /images/product-composite.png
+    imageAlt: EverChek white-label CGM system — sensor applicator, body-worn transmitter and the companion app showing a live glucose curve
+    ratio: 4/3
+    kicker: OEM · ODM · private label
+    title: White-label CGM OEM and ODM manufacturing for healthcare brands
+    sub: Launch a continuous glucose monitoring system under your own brand without building sensor chemistry, firmware or an assembly line. We are B2B only — we run no consumer CGM brand of our own, so we never compete with yours in your market.
+    badges:
+      - 14-day continuous glucose monitoring via Bluetooth
+      - Glucose readings updated every 5 minutes
+      - Factory-calibrated CGM system, no fingerstick calibration
+      - White-label patient and physician applications
+      - SDK/API support for digital health platform integration
+      - Custom branding, packaging and app functionality
+    buttons:
+      - label: Request the CGM OEM specification sheet
+        href: /contact/?type=oem
+      - label: Explore our CGM system
+        href: /continuous-glucose-monitor/
+        style: ghost
+
+  - type: card-grid
+    media: image
+    columns: 3
+    ratio: 4/3
+    eyebrow: Why OEM with EverChek
+    title: Why choose CGM OEM with us?
+    text: Five reasons why healthcare brands choose EverChek as their OEM manufacturing partner for continuous glucose monitoring devices.
+    items:
+      - image: /images/oem-why-1-save-costs.jpg
+        title: Save big on CGM R&D
+        text: Building a factory-calibrated enzyme-based CGMS from scratch takes years and millions in investment, with no guarantee of hitting acceptable MARD targets. Skip the complexity of sensor chemistry, membrane formulation, algorithm development, PCBA, etc. Instead, build your CGM business on our proven tech stack.
+      - image: /images/oem-why-2-manufacturing.jpg
+        title: Scale confidently
+        text: From pilot runs to large-scale commercial manufacturing, our ISO 13485 certified production lines are built to maintain stable output. We allocate dedicated capacity for OEM partners and scale production alongside your growth.
+      - image: /images/oem-why-3-market-launch.jpg
+        title: Accelerate market entry
+        text: Enter the CGM market faster with our production-ready hardware, clinical-tested software, and active manufacturing lines. You can cut development cycles by months, reduce clinical preparation time, and launch while competitors are still designing their first sensor.
+      - image: /images/oem-why-4-regulatory.jpg
+        title: Reduce regulatory complexity
+        text: "Our system architecture and technical file are built to ISO 13485 requirements and structured for medical device registration dossiers. We provide a complete regulatory package, including biocompatibility reports, cytotoxicity testing data, and full technical documentation required for your local registration. [TODO: CE status]"
+      - image: /images/oem-why-5-data-security.jpg
+        title: Own your patient data completely
+        text: You retain full ownership and control of all patient-generated data, including real-time glucose readings, historical trends, and analytics outputs, while we provide the data pipeline and infrastructure.
+
+  - type: card-grid
+    media: icon
+    columns: 3
+    tint: true
+    title: Complete OEM manufacturing capabilities
+    text: From sensor fabrication to final packaging, every step is handled in-house for quality control and faster turnaround.
+    items:
+      - icon: sensor
+        title: Sensor fabrication
+        text: Precision-manufactured glucose biosensors with consistent accuracy. Our automated production lines deliver reliable sensors at scale, with rigorous quality testing at every batch.
+      - icon: phone
+        title: Transmitter & app platform
+        text: Bluetooth-enabled transmitters paired with a white-label mobile app. Real-time glucose data, trend charts, and customizable alerts — all branded with your logo and design language.
+        href: /cgm-patient-app/
+        linkLabel: See the patient app
+      - icon: box
+        title: Custom packaging & branding
+        text: Full design flexibility — custom retail boxes, user manuals in your language, branded applicators, and packaging that matches your brand identity from unboxing to daily use.
+      - icon: shield
+        title: ISO 13485 certified
+        text: Our quality management system is certified to ISO 13485:2016, covering the full lifecycle of medical device design, development, and manufacturing.
+        href: /certifications/
+        linkLabel: Our documentation policy
+      - icon: check
+        title: Batch-level QC testing
+        text: Every production batch undergoes accuracy validation, sterilization verification, and performance testing before shipment, ensuring consistent quality at scale.
+      - icon: globe
+        title: Multilingual support
+        text: App interfaces, user manuals, and packaging available in your language.
+
+  - type: step-flow
+    columns: 4
+    title: How to launch your CGM brand?
+    text: A straightforward 4-step journey from consultation to market launch.
+    items:
+      - icon: users
+        title: Consultation
+        desc: Discuss your target market, branding requirements, and order volume with our OEM team.
+      - icon: cog
+        title: Customization
+        desc: We configure the product — branding, packaging, app skin, and language localization.
+      - icon: factory
+        title: Production
+        desc: Full-scale manufacturing begins. Quality control at every stage with batch-level testing.
+      - icon: globe
+        title: Delivery
+        desc: Your branded CGMs are shipped globally. Ongoing support for app updates and reorders.
+
+  - type: banner-wide
+    align: center
+    height: short
+    title: Your long-term B2B CGM manufacturing partner
+    text: Launch a fully integrated CGM solution under your own brand with dedicated OEM support. Tell us your product requirements, branding goals and target market, and we will come back with a feasibility view and a documentation list.
+    cta:
+      label: Request the CGM OEM specification sheet
+      href: /contact/?type=oem
+    cta2:
+      label: Compare OEM, ODM and SKD
+      href: /cgm-manufacturing-models/
+
+  - type: card-grid
+    media: icon
+    columns: 2
+    dark: true
+    title: What sets us apart?
+    text: Our vertically integrated approach and deep technical expertise set us apart from traditional OEM suppliers.
+    items:
+      - icon: console
+        title: Seamless app integration
+        text: Whether to build a standalone CGM app or enhance an existing healthcare ecosystem, you can integrate our CGM system seamlessly to your infrastructure via APIs or SDKs, with minimal development effort.
+      - icon: chart
+        title: Favorable pricing
+        text: Our vertically integrated development strategy covers sensor chips, algorithm design, and core system components in-house. This allows stronger cost control, stable supply, and more competitive pricing for your CGM business.
+      - icon: check
+        title: Reliable product quality
+        text: We implement Statistical Process Control (SPC) throughout the manufacturing process to monitor, control, and optimize production quality in real time. This reduces batch variation in large-scale CGM production.
+      - icon: handshake
+        title: Consistent technical support
+        text: CGM OEM involves far more than manufacturing and labeling. From app integration and mold development to production scheduling and custom feature requests, our technical and operational teams work closely with your business to keep projects moving efficiently at every stage.
+
+  - type: card-grid
+    media: icon
+    columns: 4
+    title: Who do we build for?
+    text: From medical device manufacturers to clinical research organizations, our OEM model serves diverse healthcare stakeholders.
+    items:
+      - icon: factory
+        title: Medical device manufacturers
+        text: Expand product portfolios with CGM without developing new sensor technology and algorithms.
+      - icon: cloud
+        title: Digital health platforms
+        text: Embed real-time CGM data into telehealth and remote patient monitoring platforms for continuous care.
+      - icon: briefcase
+        title: Pharmaceutical companies
+        text: Integrate CGM into diabetes care programs and digital therapeutic ecosystems.
+      - icon: curve
+        title: Insulin pump & diabetes ecosystem companies
+        text: Enable closed-loop diabetes management by integrating CGM with insulin delivery systems.
+      - icon: box
+        title: Large-scale distributors building private labels
+        text: Transition from third-party resale to branded CGM products. Improve margins and long-term market positioning.
+        href: /cgm-distribution/
+        linkLabel: Distribution partnerships
+      - icon: chart
+        title: Healthcare investors & venture groups
+        text: Accelerate CGM commercialization with ready OEM infrastructure and faster deployment.
+      - icon: hospital
+        title: Hospitals & clinical networks
+        text: Deploy CGM for inpatient care, chronic disease management, and population health monitoring programs.
+      - icon: data
+        title: Clinical research & CRO organizations
+        text: Use CGM systems for clinical trials, metabolic research, and longitudinal patient monitoring to generate validated glucose datasets.
+
+  - type: faq
+    title: CGM OEM questions
+    items:
+      - q: Can we customize language of the CGM app?
+        a: Yes. We provide full multilingual support across the CGM app, packaging, and product documentation. We engineer everything; you only need to add your logo and branding.
+      - q: Can we modify glucose alert thresholds in the app?
+        a: Absolutely. You can define and adjust glucose alert thresholds, including hypo/hyper limits and trend-based alerts, within your app configuration.
+      - q: Do you offer custom adhesive shapes or sensor form factors?
+        a: Yes. Custom adhesive shapes and sensor form factors are available to support your product differentiation strategy.
+      - q: Can we export patients' glucose data for our own research or EHR integration?
+        a: Yes. We provide you access to patients' glucose values, trend data, and event logs via SDK and API, which can be exported for EHR integration or internal research use.
+      - q: What is the difference between CGM OEM and CGM SKD?
+        a: With OEM we build the finished, ready-to-sell CGM and you market it under your own brand as importer or distributor. With SKD you receive partially assembled kits and complete final assembly, packaging and labelling in your own country, which can qualify the product as locally manufactured. SKD gives you local-content advantages but adds local licensing and quality responsibilities.
+
+  - type: link-pills
+    label: Related
+    items:
+      - label: SKD kits and local assembly
+        href: /cgm-skd/
+      - label: OEM vs ODM vs SKD
+        href: /cgm-manufacturing-models/
+      - label: Private label CGM guide
+        href: /blog/private-label-cgm/
+      - label: The CGM system
+        href: /continuous-glucose-monitor/
+      - label: Patient app, SDK and API
+        href: /cgm-patient-app/
+      - label: Documentation and disclosure
+        href: /certifications/
+
+  - type: cta-banner

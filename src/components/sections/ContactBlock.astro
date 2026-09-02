@@ -1,0 +1,171 @@
+---
+// 完整询盘表单 + 直接联系卡 — the /contact/ page centrepiece.
+// All labels come from the locale dictionary (contactForm / direct),
+// so components never hardcode copy.
+import Icon from '../Icon.astro';
+import { loadDict } from '../../lib/content';
+
+interface Props { locale?: string }
+const { locale = 'en' } = Astro.props;
+
+const dict = loadDict(locale);
+const t = dict.contactForm;
+const d = dict.direct;
+---
+<section class="section" style="padding-top: 32px;">
+  <div class="container contact-grid">
+    <form class="enquiry-form" id="enquiry-form" novalidate>
+      <div class="form-row">
+        <label class="field">
+          <span class="cf-label">{t.name} <span class="req">*</span></span>
+          <input name="name" type="text" required autocomplete="name" />
+        </label>
+        <label class="field">
+          <span class="cf-label">{t.company} <span class="req">*</span></span>
+          <input name="company" type="text" required autocomplete="organization" />
+        </label>
+      </div>
+      <div class="form-row">
+        <label class="field">
+          <span class="cf-label">{t.email} <span class="req">*</span></span>
+          <input name="email" type="email" required autocomplete="email" />
+        </label>
+        <label class="field">
+          <span class="cf-label">{t.country} <span class="req">*</span></span>
+          <input name="country" type="text" required autocomplete="country-name" />
+        </label>
+      </div>
+      <label class="field">
+        <span class="cf-label">{t.quantity}</span>
+        <input name="quantity" type="text" inputmode="numeric" />
+      </label>
+      <label class="field">
+        <span class="cf-label">{t.message} <span class="req">*</span></span>
+        <textarea name="message" rows="6" required placeholder={t.messagePlaceholder}></textarea>
+      </label>
+      <!-- Honeypot anti-spam field: hidden from humans, bots fill it in -->
+      <div class="hp-field" aria-hidden="true">
+        <label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
+      </div>
+      <button class="btn primary submit-btn" type="submit" data-label={t.submit} data-sending={t.sending}>{t.submit}</button>
+      <p class="form-privacy">{t.privacy}</p>
+      <div class="form-status" id="form-status" hidden>
+        <p class="fs-success" hidden>{t.success}</p>
+        <p class="fs-error" hidden>{t.error} <a href={`mailto:${d.email}`}>{d.email}</a></p>
+      </div>
+    </form>
+
+    <aside class="direct-card">
+      <div class="dc-icon"><Icon name="mail" size={24} /></div>
+      <h2 class="dc-title">{d.title}</h2>
+      <p class="dc-desc">{d.desc}</p>
+      <div class="dc-label">{d.emailLabel}</div>
+      <a class="dc-email" href={`mailto:${d.email}`}>{d.email}</a>
+      <div class="dc-label" style="margin-top: 20px;">{d.whatsappLabel}</div>
+      <a class="dc-email" href={d.whatsappLink} target="_blank" rel="noopener">
+        <Icon name="whatsapp" size={17} /> {d.whatsapp}
+      </a>
+      <div class="dc-label" style="margin-top: 20px;">{d.addressLabel}</div>
+      <p class="dc-address">{d.address}</p>
+      {d.companyName && (
+        <>
+          <div class="dc-label" style="margin-top: 20px;">{d.companyLabel ?? 'Operating company'}</div>
+          <a class="dc-company" href={d.companyUrl} target="_blank" rel="noopener">{d.companyName}</a>
+        </>
+      )}
+      <p class="dc-note">{d.responseNote}</p>
+    </aside>
+  </div>
+</section>
+
+<script>
+  // Submit via the Cloudflare Pages Function; fall back to a mailto hint on failure
+  const form = document.getElementById('enquiry-form') as HTMLFormElement | null;
+  const status = document.getElementById('form-status');
+  const successEl = status?.querySelector('.fs-success') as HTMLElement | null;
+  const errorEl = status?.querySelector('.fs-error') as HTMLElement | null;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+
+    const btn = form.querySelector('.submit-btn') as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = btn.dataset.sending ?? '…';
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      status?.removeAttribute('hidden');
+      successEl?.removeAttribute('hidden');
+      errorEl?.setAttribute('hidden', '');
+      form.reset();
+    } catch {
+      status?.removeAttribute('hidden');
+      errorEl?.removeAttribute('hidden');
+      successEl?.setAttribute('hidden', '');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = btn.dataset.label ?? 'Send';
+    }
+  });
+</script>
+
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(28px, 4vw, 56px); align-items: start; }
+
+  .enquiry-form {
+    display: flex; flex-direction: column; gap: 20px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: clamp(26px, 3.5vw, 42px);
+    background: var(--white);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .cf-label { font-size: 13.5px; font-weight: 600; color: var(--ink); }
+  .req { color: var(--bad); }
+  .submit-btn { align-self: flex-start; min-width: 190px; }
+  .form-privacy { font-size: 12.5px; color: var(--soft); }
+  .form-status p { padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14.5px; font-weight: 600; }
+  .fs-success { background: rgba(42, 157, 92, 0.1); border: 1px solid rgba(42, 157, 92, 0.3); color: var(--ok); }
+  .fs-error { background: rgba(204, 68, 68, 0.07); border: 1px solid rgba(204, 68, 68, 0.25); color: var(--bad); }
+  .fs-error a { text-decoration: underline; font-weight: 700; }
+
+  .hp-field { position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden; }
+
+  .direct-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 34px;
+    background: var(--blue-faint);
+    position: sticky;
+    top: 96px;
+  }
+  .dc-icon {
+    width: 50px; height: 50px;
+    border-radius: 13px;
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px;
+  }
+  .dc-title { font-size: 19px; font-weight: 700; margin-bottom: 8px; }
+  .dc-desc { font-size: 14px; color: var(--mid); line-height: 1.65; margin-bottom: 22px; }
+  .dc-label { font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--soft); margin-bottom: 5px; }
+  .dc-email { font-size: 17px; font-weight: 700; color: var(--blue-deep); display: inline-flex; align-items: center; gap: 8px; }
+  .dc-address { font-size: 13.5px; color: var(--mid); line-height: 1.6; }
+  .dc-company { display: inline-block; max-width: 330px; font-size: 14px; color: var(--blue-deep); font-weight: 700; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; }
+  .dc-note { font-size: 12.5px; color: var(--soft); margin-top: 18px; }
+
+  @media (max-width: 860px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .direct-card { position: static; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>

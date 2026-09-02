@@ -1,0 +1,101 @@
+---
+// 视频区 — YouTube / Vimeo embed, or a self-hosted mp4 in /public/videos/.
+// YouTube uses the privacy-friendly nocookie host and only loads on click,
+// so it costs nothing on page load (keeps the site fast for SEO).
+import BlockImage from './BlockImage.astro';
+
+interface Props {
+  title?: string;
+  text?: string;
+  youtubeId?: string;
+  vimeoId?: string;
+  mp4?: string;
+  poster?: string;
+  ratio?: string;
+  tint?: boolean;
+}
+const { title, text, youtubeId, vimeoId, mp4, poster, ratio = '16/9', tint = false } = Astro.props;
+
+const embedSrc = youtubeId
+  ? `https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0`
+  : vimeoId
+    ? `https://player.vimeo.com/video/${vimeoId}?autoplay=1`
+    : null;
+---
+<section class:list={['section', { tint }]}>
+  <div class="container vb-wrap">
+    {title && <h2 class="vb-title">{title}</h2>}
+    {text && <p class="vb-text">{text}</p>}
+
+    <div class="vb-frame" style={`aspect-ratio:${ratio}`}>
+      {mp4 ? (
+        <video class="vb-media" controls preload="none" poster={poster} playsinline>
+          <source src={mp4} type="video/mp4" />
+        </video>
+      ) : embedSrc ? (
+        <button class="vb-lazy" data-src={embedSrc} type="button" aria-label={title ? `Play: ${title}` : 'Play video'}>
+          {poster
+            ? <img class="vb-poster" src={poster} alt="" loading="lazy" decoding="async" />
+            : <span class="vb-poster-ph"></span>}
+          <span class="vb-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </span>
+        </button>
+      ) : (
+        <div class="vb-empty">
+          <BlockImage ratio={ratio} note="视频位：填 YouTube ID / Vimeo ID，或上传 mp4 到 /public/videos/" />
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Swap the poster for the real iframe only when the user clicks play.
+  document.querySelectorAll<HTMLButtonElement>('.vb-lazy').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.src;
+      if (!src) return;
+      const iframe = document.createElement('iframe');
+      iframe.src = src;
+      iframe.className = 'vb-media';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.setAttribute('loading', 'lazy');
+      btn.replaceWith(iframe);
+    });
+  });
+</script>
+
+<style>
+  .vb-wrap { max-width: 940px; }
+  .vb-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
+  .vb-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin-top: 12px; max-width: 640px; }
+  .vb-frame {
+    margin-top: 28px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--navy);
+    position: relative;
+  }
+  .vb-media { width: 100%; height: 100%; border: 0; display: block; object-fit: cover; }
+  .vb-empty { position: absolute; inset: 0; }
+  .vb-empty :global(.bi-ph) { height: 100%; }
+
+  .vb-lazy {
+    width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer;
+    background: var(--navy); position: relative; display: block;
+  }
+  .vb-poster { width: 100%; height: 100%; object-fit: cover; }
+  .vb-poster-ph { position: absolute; inset: 0; background: linear-gradient(135deg, var(--navy), #1d3a4d); }
+  .vb-play {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 68px; height: 68px; border-radius: 50%;
+    background: var(--blue); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
+    transition: transform 0.18s ease;
+  }
+  .vb-play svg { width: 30px; height: 30px; margin-left: 2px; }
+  .vb-lazy:hover .vb-play { transform: translate(-50%, -50%) scale(1.08); }
+</style>

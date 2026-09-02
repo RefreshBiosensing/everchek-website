@@ -1,0 +1,73 @@
+title: "CGM Blog: Manufacturing & Market Insights | EverChek"
+description: Insights on CGM technology, manufacturing models, regulatory compliance and healthcare business strategy from EverChek's B2B CGM manufacturing team.
+path: /cgm-blogs/
+translationKey: cgm-blogs
+sections:
+  - type: hero
+    variant: centered
+    kicker: EverChek blog
+    title: CGM insights for healthcare brands and distributors
+    sub: Insights on CGM technology, manufacturing models, regulatory compliance, and healthcare business strategy.
+  - type: card-grid
+    title: All articles
+    columns: 3
+    media: image
+    ratio: 16/9
+    center: true
+    items:
+      - image: /blog/private-label-cgm-images/01-private-label-cgm.png
+        kicker: CGM Technology · July 6, 2026
+        title: "Private label CGM: How to start your own CGM brand fast and cost-effectively"
+        text: Private label CGM guide for healthcare brands and distributors. Learn how to start a CGM brand fast at low cost via private label, OEM, or SKD manufacturing.
+        href: /blog/private-label-cgm/
+        linkLabel: Read the guide
+      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.png
+        kicker: Manufacturing · July 3, 2026
+        title: What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing
+        text: A complete B2B guide to CGM Semi-Knocked-Down manufacturing. What's in an SKD kit, who it's for, step-by-step process, key benefits, and how to choose a reliable manufacturer.
+        href: /blog/what-is-cgm-skd/
+        linkLabel: Read the guide
+      - image: /blog/cgm-vs-bgm-images/01_hero_concept.png
+        kicker: CGM Technology · June 30, 2026
+        title: "CGM vs BGM: How to Choose for Your Healthcare Business"
+        text: A complete comparison of CGM and BGM for healthcare brands. Accuracy, market data, regulatory pathways, digital health integration, and how to choose the right path for your business.
+        href: /blog/cgm-vs-bgm/
+        linkLabel: Read the guide
+      - image: /images/blog-cover-1.png
+        kicker: CGM Technology · June 2, 2026
+        title: "CGM Technology: A Complete Guide for Healthcare Brands in 2026"
+        text: A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right system.
+        href: /cgm-technology-guide-2026/
+        linkLabel: Read the guide
+      - image: /images/blog-cover-2.png
+        kicker: Manufacturing · May 28, 2026
+        title: "OEM vs SKD vs ODM: Which CGM Manufacturing Model Is Right for You?"
+        text: Compare OEM, SKD, CKD, and ODM models to find the right CGM partnership approach for your business.
+        href: /cgm-manufacturing-models/
+        linkLabel: Read the guide
+      - image: /images/blog-cover-3.png
+        kicker: Healthcare Business · May 14, 2026
+        title: How SKD Helps You Win Government Healthcare Tenders
+        text: Learn how the SKD model gives healthcare businesses a competitive edge in government tender bidding.
+        href: /cgm-skd-tenders/
+        linkLabel: Read the guide
+    tint: true
+  - type: link-pills
+    label: Explore EverChek
+    items:
+      - label: CGM OEM manufacturing
+        href: /cgm-oem/
+      - label: CGM SKD cooperation
+        href: /cgm-skd/
+      - label: CGM distribution
+        href: /cgm-distribution/
+      - label: The EverChek CGM system
+        href: /continuous-glucose-monitor/
+  - type: banner-wide
+    title: Your long-term B2B CGM manufacturing partner
+    text: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands worldwide.
+    align: center
+    cta:
+      label: Contact us
+      href: /contact/
+  - type: cta-banner

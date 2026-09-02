@@ -1,0 +1,152 @@
+---
+// 卡片网格 — 2/3/4/5 columns. Each card takes an icon OR an image, plus title/text/link.
+import BlockImage from './BlockImage.astro';
+import Icon from '../Icon.astro';
+
+interface Item {
+  icon?: string;
+  image?: string;
+  imageNote?: string;
+  kicker?: string;
+  title?: string;
+  text?: string;
+  href?: string;
+  linkLabel?: string;
+}
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  text?: string;
+  items: Item[];
+  columns?: 2 | 3 | 4 | 5;
+  media?: 'icon' | 'image' | 'none';
+  ratio?: string;
+  tint?: boolean;
+  dark?: boolean;
+  center?: boolean;
+  note?: string;
+  noteLink?: { label: string; href: string };
+  moreLink?: { label: string; href: string };
+}
+const {
+  eyebrow, title, text, items = [], columns = 3,
+  media = 'icon', ratio = '4/3', tint = false, dark = false, center = true,
+  note, noteLink, moreLink,
+} = Astro.props;
+const noteParts = note && noteLink ? note.split(noteLink.label) : undefined;
+---
+<section class:list={['section', { tint, dark }]}>
+  <div class="container">
+    {(title || text) && (
+      <div class:list={['cg-head', { center }]}>
+        {eyebrow && <div class="eyebrow">{eyebrow}</div>}
+        {title && <h2 class="cg-title">{title}</h2>}
+        {text && <p class="cg-text">{text}</p>}
+      </div>
+    )}
+    <div class:list={['cg-grid', `cols-${columns}`]}>
+      {items.map((it) => {
+        const Tag = it.href ? 'a' : 'div';
+        return (
+          <Tag class="cg-card" href={it.href}>
+            {media === 'image' && (
+              <div class="cg-media">
+                <BlockImage src={it.image} alt={it.title ?? ''} ratio={ratio} note={it.imageNote ?? it.title} />
+              </div>
+            )}
+            {media === 'icon' && it.icon && (
+              <div class="cg-icon"><Icon name={it.icon} size={24} /></div>
+            )}
+            {it.kicker && <div class="cg-kicker">{it.kicker}</div>}
+            {it.title && <h3 class="cg-card-title">{it.title}</h3>}
+            {it.text && <p class="cg-card-text">{it.text}</p>}
+            {it.href && (
+              <span class="cg-link">{it.linkLabel ?? 'Learn more'} <Icon name="arrow" size={13} /></span>
+            )}
+          </Tag>
+        );
+      })}
+    </div>
+    {note && (
+      <p class="cg-note">
+        {noteLink && noteParts && noteParts.length > 1 ? (
+          <>
+            {noteParts[0]}<a href={noteLink.href}>{noteLink.label}</a>{noteParts.slice(1).join(noteLink.label)}
+          </>
+        ) : note}
+      </p>
+    )}
+    {moreLink && (
+      <div class="cg-more center">
+        <a class="cg-more-link" href={moreLink.href}>{moreLink.label} <Icon name="arrow" size={14} /></a>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .cg-head { margin-bottom: 40px; text-align: center; }
+  .cg-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
+  .cg-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin: 12px auto 0; max-width: 640px; }
+
+  .cg-grid { display: grid; gap: 20px; }
+  .cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .cols-5 { grid-template-columns: repeat(5, 1fr); }
+
+  .cg-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px;
+    display: block;
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+  }
+  a.cg-card:hover {
+    box-shadow: 0 14px 40px rgba(90, 157, 196, 0.14);
+    transform: translateY(-3px);
+    border-color: var(--blue-dark);
+  }
+  .cg-media { margin: -26px -26px 20px; }
+  .cg-media :global(.rounded) { border-radius: var(--radius) var(--radius) 0 0; }
+
+  .cg-icon {
+    width: 48px; height: 48px;
+    border-radius: 13px;
+    background: var(--blue-light);
+    border: 1px solid var(--border);
+    color: var(--blue-deep);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 16px;
+  }
+  .cg-kicker { font-size: 11px; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--blue-deep); margin-bottom: 7px; }
+  .cg-card-title { font-size: 16.5px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 8px; line-height: 1.3; }
+  .cg-card-text { font-size: 14px; color: var(--mid); line-height: 1.7; }
+  .cg-note { font-size: 13px; color: var(--soft); margin: 22px auto 0; line-height: 1.6; max-width: 720px; text-align: center; }
+  .cg-note a { color: var(--blue-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .cg-more { margin-top: 28px; text-align: center; }
+  .cg-more-link { display: inline-flex; align-items: center; gap: 7px; font-size: 14.5px; font-weight: 700; color: var(--blue-deep); }
+  .cg-more-link:hover { text-decoration: underline; }
+
+  .dark .cg-title { color: #fff; }
+  .dark .cg-text { color: #8aabb8; }
+  .dark .cg-card { background: rgba(255, 255, 255, 0.045); border-color: rgba(128, 188, 226, 0.22); }
+  .dark a.cg-card:hover { border-color: var(--blue); box-shadow: none; }
+  .dark .cg-icon { background: rgba(128, 188, 226, 0.14); border-color: rgba(128, 188, 226, 0.3); color: var(--blue); }
+  .dark .cg-kicker { color: var(--blue); }
+  .dark .cg-card-title { color: #fff; }
+  .dark .cg-card-text { color: #8aabb8; }
+  .dark .cg-link { color: var(--blue); }
+  .dark .cg-note { color: #6b8898; }
+  .dark .cg-note a { color: var(--blue); }
+  .dark .cg-more-link { color: var(--blue); }
+  .cg-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 14px; font-size: 13.5px; font-weight: 700; color: var(--blue-deep);
+  }
+
+  @media (max-width: 1100px) { .cols-5 { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 900px) { .cols-3, .cols-4, .cols-5 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .cg-grid { grid-template-columns: 1fr; } }
+</style>
