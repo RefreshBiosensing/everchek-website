@@ -1,0 +1,80 @@
+---
+// A real 404. The old site had a catch-all that served the home page with a 200
+// for every unmatched URL, so search engines could index unlimited duplicates of
+// the home page under invented paths.
+//
+// Cloudflare Pages serves this automatically for unmatched routes and returns a
+// genuine 404 status. Verify after deploy:
+//   curl -s -o /dev/null -w '%{http_code}' https://ever-chek.com/nonexistent-xyz
+//   -> must be 404, not 200
+import Base from '../layouts/Base.astro';
+import { loadDict } from '../lib/content';
+
+const dict = loadDict('en');
+const links = [
+  { href: '/cgm-oem/', label: 'OEM, ODM and private label', desc: 'Build a CGM under your own brand.' },
+  { href: '/cgm-skd/', label: 'SKD kits and local assembly', desc: 'Assemble in-country and qualify as locally manufactured.' },
+  { href: '/cgm-distribution/', label: 'Become a distributor', desc: 'Take the EverChek system into your market.' },
+  { href: '/certifications/', label: 'Documentation', desc: 'What we hold, who issued it, and how you get the files.' },
+  { href: '/what-is-cgms/', label: 'What is a CGM system?', desc: 'How continuous glucose monitoring works.' },
+  { href: '/contact/', label: 'Talk to the factory', desc: 'Tell us your market and your model.' },
+];
+---
+<Base
+  title="Page not found | EverChek"
+  description="That page does not exist. Here are the sections of the EverChek site most people are looking for."
+  locale="en"
+  noindex={true}
+>
+  <section class="nf">
+    <div class="container">
+      <p class="nf-code">404</p>
+      <h1 class="nf-title">That page does not exist.</h1>
+      <p class="nf-sub">
+        It may have moved, or the link may be wrong. If you followed a link from
+        somewhere on this site, tell us at <a href={`mailto:${dict.footer.email}`}>{dict.footer.email}</a> and we
+        will fix it.
+      </p>
+      <div class="nf-grid">
+        {links.map((l) => (
+          <a class="nf-card" href={l.href}>
+            <span class="nf-card-label">{l.label}</span>
+            <span class="nf-card-desc">{l.desc}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .nf { padding: clamp(64px, 9vw, 116px) 0; }
+  .nf-code {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.16em;
+    color: var(--ec-blue-600); margin-bottom: 14px;
+  }
+  .nf-title {
+    font-size: var(--fs-h2); font-weight: 700; letter-spacing: -0.02em;
+    line-height: 1.15; margin-bottom: 14px; max-width: 18ch;
+  }
+  .nf-sub { color: var(--mid); max-width: 56ch; margin-bottom: 40px; }
+  .nf-sub a { color: var(--ec-blue-600); text-decoration: underline; }
+  .nf-grid {
+    display: grid; gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  .nf-card {
+    display: block; padding: 18px 20px;
+    border: 1px solid var(--border); border-radius: var(--radius);
+    background: var(--white); transition: border-color 0.15s, transform 0.15s;
+  }
+  .nf-card:hover { border-color: var(--ec-blue-600); transform: translateY(-2px); }
+  .nf-card-label {
+    display: block; font-weight: 600; color: var(--ink); margin-bottom: 4px;
+  }
+  .nf-card-desc { display: block; font-size: var(--fs-small); color: var(--mid); }
+  @media (prefers-reduced-motion: reduce) {
+    .nf-card { transition: none; }
+    .nf-card:hover { transform: none; }
+  }
+</style>

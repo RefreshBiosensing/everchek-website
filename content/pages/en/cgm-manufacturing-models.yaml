@@ -11,7 +11,7 @@ sections:
     sub: Compare OEM, SKD, CKD, and ODM models to find the right CGM partnership approach for your business.
     note: EverChek Team · May 28, 2026
     visual: image
-    image: /images/blog-cover-2.png
+    image: /images/blog-cover-2.webp
     imageAlt: Diagram comparing the OEM, SKD and ODM CGM manufacturing models by how much assembly happens locally
     ratio: 16/9
   - type: richtext

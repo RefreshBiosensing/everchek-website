@@ -11,7 +11,7 @@ sections:
     sub: A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right continuous glucose monitoring system.
     note: EverChek Team · June 2, 2026
     visual: image
-    image: /images/blog-cover-1.png
+    image: /images/blog-cover-1.webp
     imageAlt: Illustration of a CGM sensor on the upper arm sending glucose readings to a smartphone dashboard
     ratio: 16/9
   - type: richtext

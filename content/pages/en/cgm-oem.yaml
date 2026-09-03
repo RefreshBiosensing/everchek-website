@@ -6,7 +6,7 @@ sections:
   - type: hero
     variant: split
     visual: image
-    image: /images/product-composite.png
+    image: /images/product-composite.webp
     imageAlt: EverChek white-label CGM system — sensor applicator, body-worn transmitter and the companion app showing a live glucose curve
     ratio: 4/3
     kicker: OEM · ODM · private label
@@ -34,19 +34,19 @@ sections:
     title: Why choose CGM OEM with us?
     text: Five reasons why healthcare brands choose EverChek as their OEM manufacturing partner for continuous glucose monitoring devices.
     items:
-      - image: /images/oem-why-1-save-costs.jpg
+      - image: /images/oem-why-1-save-costs.webp
         title: Save big on CGM R&D
         text: Building a factory-calibrated enzyme-based CGMS from scratch takes years and millions in investment, with no guarantee of hitting acceptable MARD targets. Skip the complexity of sensor chemistry, membrane formulation, algorithm development, PCBA, etc. Instead, build your CGM business on our proven tech stack.
-      - image: /images/oem-why-2-manufacturing.jpg
+      - image: /images/oem-why-2-manufacturing.webp
         title: Scale confidently
         text: From pilot runs to large-scale commercial manufacturing, our ISO 13485 certified production lines are built to maintain stable output. We allocate dedicated capacity for OEM partners and scale production alongside your growth.
-      - image: /images/oem-why-3-market-launch.jpg
+      - image: /images/oem-why-3-market-launch.webp
         title: Accelerate market entry
         text: Enter the CGM market faster with our production-ready hardware, clinical-tested software, and active manufacturing lines. You can cut development cycles by months, reduce clinical preparation time, and launch while competitors are still designing their first sensor.
-      - image: /images/oem-why-4-regulatory.jpg
+      - image: /images/oem-why-4-regulatory.webp
         title: Reduce regulatory complexity
         text: "Our system architecture and technical file are built to ISO 13485 requirements and structured for medical device registration dossiers. We provide a complete regulatory package, including biocompatibility reports, cytotoxicity testing data, and full technical documentation required for your local registration. [TODO: CE status]"
-      - image: /images/oem-why-5-data-security.jpg
+      - image: /images/oem-why-5-data-security.webp
         title: Own your patient data completely
         text: You retain full ownership and control of all patient-generated data, including real-time glucose readings, historical trends, and analytics outputs, while we provide the data pipeline and infrastructure.
 

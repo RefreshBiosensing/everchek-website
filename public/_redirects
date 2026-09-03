@@ -1,0 +1,43 @@
+# Cloudflare Pages redirects. One rule per line: <from> <to> <status>
+# The old site served every page at /<name>.html. Those URLs are indexed and
+# linked externally, so each one must keep working.
+
+/index.html                        /                                 301
+/about-us.html                     /about-us/                        301
+/certifications.html               /certifications/                  301
+/cgm-blogs.html                    /cgm-blogs/                       301
+/cgm-distribution.html             /cgm-distribution/                301
+/cgm-manufacturing-models.html     /cgm-manufacturing-models/        301
+/cgm-oem.html                      /cgm-oem/                         301
+/cgm-patient-app.html              /cgm-patient-app/                 301
+/cgm-skd.html                      /cgm-skd/                         301
+/cgm-skd-tenders.html              /cgm-skd-tenders/                 301
+/cgm-technology-guide-2026.html    /cgm-technology-guide-2026/       301
+/contact.html                      /contact/                         301
+/continuous-glucose-monitor.html   /continuous-glucose-monitor/      301
+/privacy-policy.html               /privacy-policy/                  301
+/terms-of-service.html             /terms-of-service/                301
+/thank-you.html                    /thank-you/                       301
+/what-is-cgms.html                 /what-is-cgms/                    301
+/blog/cgm-vs-bgm.html              /blog/cgm-vs-bgm/                 301
+/blog/private-label-cgm.html       /blog/private-label-cgm/          301
+/blog/what-is-cgm-skd.html         /blog/what-is-cgm-skd/            301
+
+# Duplicate article. /blog/cgm-skd-b2b-guide was live and crawlable but absent
+# from the sitemap and from blog-data.json, and overlaps what-is-cgm-skd almost
+# entirely. Consolidated rather than kept as a competing near-duplicate.
+/blog/cgm-skd-b2b-guide.html       /blog/what-is-cgm-skd/            301
+/blog/cgm-skd-b2b-guide            /blog/what-is-cgm-skd/            301
+
+# Bare paths that used to be served by the SPA catch-all.
+/oem                               /cgm-oem/                         301
+/skd                               /cgm-skd/                         301
+
+# Renamed image assets (the old names are in external links and in Google's
+# image index). "continous" was a permanent typo baked into the URL.
+/continous-glucose-monitor.jpg     /images/continuous-glucose-monitor-device.jpg  301
+/1.jpg                             /images/about-us-facility.jpg     301
+
+# Everything that used to sit at the repo root now lives under /images/.
+/*.jpg                             /images/:splat.jpg                301
+/*.png                             /images/:splat.png                301

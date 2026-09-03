@@ -15,37 +15,37 @@ sections:
     ratio: 16/9
     center: true
     items:
-      - image: /blog/private-label-cgm-images/01-private-label-cgm.png
+      - image: /blog/private-label-cgm-images/01-private-label-cgm.webp
         kicker: CGM Technology · July 6, 2026
         title: "Private label CGM: How to start your own CGM brand fast and cost-effectively"
         text: Private label CGM guide for healthcare brands and distributors. Learn how to start a CGM brand fast at low cost via private label, OEM, or SKD manufacturing.
         href: /blog/private-label-cgm/
         linkLabel: Read the guide
-      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.png
+      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
         kicker: Manufacturing · July 3, 2026
         title: What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing
         text: A complete B2B guide to CGM Semi-Knocked-Down manufacturing. What's in an SKD kit, who it's for, step-by-step process, key benefits, and how to choose a reliable manufacturer.
         href: /blog/what-is-cgm-skd/
         linkLabel: Read the guide
-      - image: /blog/cgm-vs-bgm-images/01_hero_concept.png
+      - image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
         kicker: CGM Technology · June 30, 2026
         title: "CGM vs BGM: How to Choose for Your Healthcare Business"
         text: A complete comparison of CGM and BGM for healthcare brands. Accuracy, market data, regulatory pathways, digital health integration, and how to choose the right path for your business.
         href: /blog/cgm-vs-bgm/
         linkLabel: Read the guide
-      - image: /images/blog-cover-1.png
+      - image: /images/blog-cover-1.webp
         kicker: CGM Technology · June 2, 2026
         title: "CGM Technology: A Complete Guide for Healthcare Brands in 2026"
         text: A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right system.
         href: /cgm-technology-guide-2026/
         linkLabel: Read the guide
-      - image: /images/blog-cover-2.png
+      - image: /images/blog-cover-2.webp
         kicker: Manufacturing · May 28, 2026
         title: "OEM vs SKD vs ODM: Which CGM Manufacturing Model Is Right for You?"
         text: Compare OEM, SKD, CKD, and ODM models to find the right CGM partnership approach for your business.
         href: /cgm-manufacturing-models/
         linkLabel: Read the guide
-      - image: /images/blog-cover-3.png
+      - image: /images/blog-cover-3.webp
         kicker: Healthcare Business · May 14, 2026
         title: How SKD Helps You Win Government Healthcare Tenders
         text: Learn how the SKD model gives healthcare businesses a competitive edge in government tender bidding.

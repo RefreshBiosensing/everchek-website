@@ -21,7 +21,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.png
+    image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
     imageAlt: >-
       Flat illustration of the CGM semi-knocked-down model — factory-built sensor, transmitter and applicator components shipped for local final assembly
     ratio: 16/9
@@ -79,7 +79,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-skd-b2b-guide-images/target-customers.png
+    image: /blog/cgm-skd-b2b-guide-images/target-customers.webp
     imageAlt: >-
       Four types of B2B healthcare business that use CGM SKD — pharmacy chains, telehealth platforms, hospital procurement teams and national health programme operators
     ratio: 16/9
@@ -121,7 +121,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-skd-b2b-guide-images/process-steps.png
+    image: /blog/cgm-skd-b2b-guide-images/process-steps.webp
     imageAlt: >-
       Five-step CGM SKD partnership timeline from requirement alignment and NDA through formal agreement and first shipment to local certification and ongoing supply
     ratio: 16/9
@@ -173,7 +173,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-skd-b2b-guide-images/key-benefits.png
+    image: /blog/cgm-skd-b2b-guide-images/key-benefits.webp
     imageAlt: >-
       Key benefits of the CGM SKD model for B2B healthcare businesses — flexible procurement, brand control, tariff advantages, full documentation support and territory exclusivity
     ratio: 16/9
@@ -205,7 +205,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-skd-b2b-guide-images/choose-manufacturer.png
+    image: /blog/cgm-skd-b2b-guide-images/choose-manufacturer.webp
     imageAlt: >-
       Engineers from a CGM manufacturer training a partner's assembly team on the factory floor as part of SKD technical support
     ratio: 16/9
@@ -228,7 +228,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-skd-b2b-guide-images/partnership-cta.png
+    image: /blog/cgm-skd-b2b-guide-images/partnership-cta.webp
     imageAlt: >-
       Healthcare business team and CGM manufacturer representatives reviewing an SKD partnership agreement together
     ratio: 16/9

@@ -15,7 +15,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/01-private-label-cgm.png
+    image: /blog/private-label-cgm-images/01-private-label-cgm.webp
     imageAlt: >-
       A manufacturer-built CGM sensor kit rebranded and boxed under a healthcare company's own private label
     ratio: 16/9
@@ -45,7 +45,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/03-market-growth.png
+    image: /blog/private-label-cgm-images/03-market-growth.webp
     imageAlt: >-
       Chart of global continuous glucose monitoring market growth pushing healthcare brands toward private label CGM
     ratio: 16/9
@@ -84,7 +84,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/02-what-is-private-label.png
+    image: /blog/private-label-cgm-images/02-what-is-private-label.webp
     imageAlt: >-
       Diagram showing an unbranded manufacturer CGM system becoming a branded private label product with custom box and app
     ratio: 16/9
@@ -125,7 +125,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/04-models-comparison.png
+    image: /blog/private-label-cgm-images/04-models-comparison.webp
     imageAlt: >-
       Side-by-side comparison of private label, OEM and SKD CGM manufacturing models and what each one lets a brand change
     ratio: 16/9
@@ -158,7 +158,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/05-who-uses.png
+    image: /blog/private-label-cgm-images/05-who-uses.webp
     imageAlt: >-
       Five types of B2B healthcare business that use private label CGM — distributors, diabetes brands, pharma, telehealth platforms and hospital groups
     ratio: 16/9
@@ -196,7 +196,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/06-customization.png
+    image: /blog/private-label-cgm-images/06-customization.webp
     imageAlt: >-
       Custom CGM retail packaging, a branded transmitter and a white-label patient app rendered in a partner brand's colours
     ratio: 16/9
@@ -233,7 +233,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/07-process-phases.png
+    image: /blog/private-label-cgm-images/07-process-phases.webp
     imageAlt: >-
       Six-phase private label CGM timeline running from regulatory discovery through sample sign-off to production and fulfilment
     ratio: 16/9
@@ -259,7 +259,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/private-label-cgm-images/08-manufacturer-selection.jpg
+    image: /blog/private-label-cgm-images/08-manufacturer-selection.webp
     imageAlt: >-
       ISO 13485 cleanroom production line where CGM sensors are assembled and tested before private label packaging
     ratio: 16/9

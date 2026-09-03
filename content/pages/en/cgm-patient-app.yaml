@@ -6,7 +6,7 @@ sections:
   - type: hero
     variant: split
     visual: image
-    image: /images/cgm-app-overview-final.jpg
+    image: /images/cgm-app-overview-final.webp
     imageAlt: >-
       Annotated screenshot of the EverChek CGM patient app on a smartphone, showing a real-time glucose
       value of 7.8 mmol/L with a trend arrow, sensor connection status, remaining sensor days, a
@@ -65,7 +65,7 @@ sections:
           your phone and smartwatch. Current reading, trend arrow, and 24-hour glucose chart are
           displayed clearly on one screen, making it easy to track glucose changes at a glance.
         visual: image
-        image: /images/cgm-app-phone-2.png
+        image: /images/cgm-app-phone-2.webp
         imageNote: App home screen showing the current glucose value, trend arrow and 24-hour chart
       - id: trend-visualization
         title: Glucose trend visualization & prediction
@@ -74,7 +74,7 @@ sections:
           arrows show where your glucose is heading, helping you make informed decisions about meals,
           exercise, and insulin.
         visual: image
-        image: /images/cgm-app-phone-3.png
+        image: /images/cgm-app-phone-3.webp
         imageNote: Glucose trend chart with 3, 6, 12 and 24 hour views and directional arrows
       - id: glucose-alerts
         title: High/low glucose alerts
@@ -82,7 +82,7 @@ sections:
           Set personalized high and low glucose thresholds and receive timely alerts when your glucose
           approaches or exceeds these limits, helping you take proactive action.
         visual: image
-        image: /images/cgm-app-phone-4.png
+        image: /images/cgm-app-phone-4.webp
         imageNote: Alert settings screen with configurable high and low glucose thresholds
       - id: event-logging
         title: Event logging
@@ -91,7 +91,7 @@ sections:
           timestamped and overlaid on your glucose trend chart, helping you connect daily activities
           with glucose changes.
         visual: image
-        image: /images/cgm-app-phone-1.png
+        image: /images/cgm-app-phone-1.webp
         imageNote: Event log screen for recording meals, exercise, insulin doses and medication
       - id: history-statistics
         title: History records & statistics
@@ -100,7 +100,7 @@ sections:
           time-in-range, average glucose, and estimated HbA1c. Generate detailed reports to share with
           your healthcare provider.
         visual: image
-        image: /images/cgm-app-phone-2.png
+        image: /images/cgm-app-phone-2.webp
         imageNote: Historical glucose statistics with time-in-range, average glucose and estimated HbA1c
 
   - type: feature-rows

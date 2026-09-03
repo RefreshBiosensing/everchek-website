@@ -1,0 +1,15 @@
+# EverChek — https://ever-chek.com
+# Search engines and AI answer engines are both welcome.
+#
+# NOTE FOR WHOEVER DEPLOYS THIS: this file only takes effect once Cloudflare's
+# managed robots.txt is turned off. Until then Cloudflare injects its own
+# version, which Disallows GPTBot, ClaudeBot, CCBot, Google-Extended,
+# Bytespider, Applebot-Extended, Amazonbot and meta-externalagent.
+# Dashboard > ever-chek.com > AI Crawl Control > turn off the managed robots.txt.
+# Verify afterwards:
+#   curl -s https://ever-chek.com/robots.txt | grep -ci disallow   # must be 0
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ever-chek.com/sitemap-index.xml

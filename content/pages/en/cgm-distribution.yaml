@@ -12,7 +12,7 @@ sections:
         href: /contact/
         style: primary
     visual: image
-    image: /images/distribution-hero.jpg
+    image: /images/distribution-hero.webp
     imageAlt: Abstract global distribution network with interconnected nodes, world maps, and logistics icons including cargo ship and airplane on dark blue background
     ratio: 4/3
 

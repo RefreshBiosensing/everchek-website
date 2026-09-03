@@ -9,7 +9,7 @@ sections:
     kicker: Founded 2016 · Shenzhen · B2B only
     title: A vertically integrated CGM manufacturer from China
     sub: Power your healthcare business with reliable CGM technologies, scalable manufacturing infrastructure, and flexible commercialization models tailored to regional healthcare markets. Start developing reliable glucose monitoring solutions more efficiently.
-    image: /images/about-factory.jpg
+    image: /images/about-factory.webp
     imageAlt: EverChek manufacturing facility and R&D centre building exterior in Shenzhen
     ratio: 4/3
     buttons:
@@ -30,7 +30,7 @@ sections:
       capabilities spanning from foundational technologies to end-user healthcare products. Our
       infrastructure includes Class 10,000 cleanrooms, biosynthesis laboratories, and medical device
       assembly workshops — all under one roof for integrated in-house R&D and scalable manufacturing.
-    image: /images/about-us-facility.jpg
+    image: /images/about-us-facility.webp
     imageAlt: EverChek biosensing technology research and development facility interior
     ratio: 4/3
 
@@ -67,7 +67,7 @@ sections:
       - Extensive publication record in top-tier journals on biosensing and electrochemistry
       - Deep expertise in enzyme-based sensor design and clinical diagnostic technologies
       - Led multiple national research programs in biomedical engineering and sensor development
-    image: /images/x-zhang-transparent.png
+    image: /images/x-zhang-transparent.webp
     imageAlt: Portrait of Professor Xueji Zhang, Chief Scientist and Co-founder of EverChek
     ratio: 1/1
 

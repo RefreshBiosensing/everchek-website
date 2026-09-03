@@ -15,7 +15,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/01_hero_concept.png
+    image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
     imageAlt: >-
       Concept illustration contrasting a body-worn continuous glucose monitor with a fingerstick blood glucose meter and test strips
     ratio: 16/9
@@ -48,7 +48,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/02_continuous_vs_point.png
+    image: /blog/cgm-vs-bgm-images/02_continuous_vs_point.webp
     imageAlt: >-
       Chart comparing a continuous CGM glucose curve against scattered single-point blood glucose meter readings across a day
     ratio: 16/9
@@ -69,7 +69,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/03_regulatory_timeline.png
+    image: /blog/cgm-vs-bgm-images/03_regulatory_timeline.webp
     imageAlt: >-
       Timeline comparing the longer FDA iCGM clearance pathway for continuous glucose monitors with the shorter 510(k) route for blood glucose meters
     ratio: 16/9
@@ -101,7 +101,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/04_data_ecosystem.png
+    image: /blog/cgm-vs-bgm-images/04_data_ecosystem.webp
     imageAlt: >-
       Diagram of continuous glucose data flowing through an API into EHR, remote patient monitoring and telehealth platforms
     ratio: 16/9
@@ -128,7 +128,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/05_market_growth.png
+    image: /blog/cgm-vs-bgm-images/05_market_growth.webp
     imageAlt: >-
       Bar chart of the global CGM device market growing from $13.4 billion in 2025 to $41.4 billion by 2033 alongside slower BGM market growth
     ratio: 16/9
@@ -185,7 +185,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/06_decision_framework.png
+    image: /blog/cgm-vs-bgm-images/06_decision_framework.webp
     imageAlt: >-
       Decision framework weighing technology readiness, capital investment, regulatory timeline, target market and profit margins for CGM versus BGM
     ratio: 16/9
@@ -206,7 +206,7 @@ sections:
 
   - type: image-text
     variant: top
-    image: /blog/cgm-vs-bgm-images/07_partnership_supply_chain.png
+    image: /blog/cgm-vs-bgm-images/07_partnership_supply_chain.webp
     imageAlt: >-
       EverChek CGM partnership supply chain from component manufacture and kit supply through local assembly to a launched partner-branded product line
     ratio: 16/9

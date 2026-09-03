@@ -24,7 +24,7 @@ sections:
   - type: image-text
     variant: left
     title: What is CGM SKD?
-    image: /images/skd-intro.png
+    image: /images/skd-intro.webp
     imageAlt: CGM SKD semi-knocked-down assembly kit laid out — biosensor core, Bluetooth transmitter, adhesive patch and single-use applicator
     ratio: 4/3
     paragraphs:
@@ -42,18 +42,18 @@ sections:
     title: Who is CGM SKD for?
     text: Four types of healthcare businesses that benefit most from the semi-knocked-down CGM manufacturing model.
     items:
-      - image: /images/skd-audience-1.png
+      - image: /images/skd-audience-1.webp
         title: Government tender bidders
         text: Deeply familiar with local regulations but blocked by strict local content rules for finished imports? Under SKD partnership model, we help you fulfill all local assembly requirements, giving you an immediate compliant path to qualify for and win public healthcare tenders.
         href: /cgm-skd-tenders/
         linkLabel: SKD for public tenders
-      - image: /images/skd-audience-2.png
+      - image: /images/skd-audience-2.webp
         title: Healthcare brands
         text: Equipped with strong brand power but trapped by the massive R&D costs of developing sensor technology from scratch? Our SKD model offers a ready-to-assemble shortcut to launch your own CGM brand while retaining full ownership of the final product.
-      - image: /images/skd-audience-3.png
+      - image: /images/skd-audience-3.webp
         title: Medical manufacturers
         text: Possessing advanced assembly lines or clean rooms but wanting to utilize this existing infrastructure to its fullest potential? Add CGM to your current pipeline through our SKD model and maximize your manufacturing advantages while lowering local operational and logistics costs.
-      - image: /images/skd-audience-4.png
+      - image: /images/skd-audience-4.webp
         title: Established distributors
         text: Armed with a mature sales network but tired of reselling third-party brands and fighting price wars that erode your margins? Switching to our SKD model empowers you to launch your own branding, cutting out upstream markups to regain absolute pricing control.
 
