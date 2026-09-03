@@ -427,13 +427,23 @@ const pagesCollection = (locale, label) => ({
   slug: '{{slug}}',
   summary: '{{title}} — {{path}}',
   editor: { preview: false },
+  // Blog articles live in content/pages/<locale>/blog/. A flat folder collection
+  // only lists the top level, which would hide every article from the editor —
+  // including the two that were previously orphaned. `nested` shows the tree and
+  // lets new entries be created inside a sub-folder.
+  nested: { depth: 2, summary: '{{title}}' },
+  meta: { path: { widget: 'string', label: 'File path', index_file: 'index' } },
   fields: [
     str('Title tag', 'title', { hint: '≤60 chars · keyword first · end with | EverChek' }),
     txt('Meta description', 'description', { hint: '140–160 chars · keyword + a reason to click' }),
     str('URL path (改了会断链，慎改)', 'path', { hint: `e.g. /products/x/ — localised slugs welcome` }),
     str('Translation key (links locales for hreflang)', 'translationKey', { required: false, hint: 'Same key across locales = same page in different languages' }),
     bool('Hide from search engines (noindex)', 'noindex'),
-    sel('Structured data', 'schemaType', [{ label: 'Product page', value: 'product' }]),
+    sel('Structured data', 'schemaType', [
+      { label: '— none —', value: '' },
+      { label: 'Product page', value: 'product' },
+      { label: 'Article / blog post', value: 'article' },
+    ]),
     sectionsField(),
   ],
 });
@@ -519,6 +529,11 @@ const config = {
   collections: [
     pagesCollection('en', 'Pages (EN)'),
     dictCollection('en', 'UI Dictionary (EN)'),
+    // French is the first translated locale: Algerian public procurement, the
+    // ANPP dossier and Maghreb B2B search all run in French, and one build also
+    // covers Morocco, Tunisia and francophone West Africa.
+    pagesCollection('fr', 'Pages (FR)'),
+    dictCollection('fr', 'UI Dictionary (FR)'),
   ],
 };
 

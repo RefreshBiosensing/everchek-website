@@ -13,8 +13,14 @@ const { footer, brand } = common;
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="fb-row">
-          <span class="fb-mark">{brand}</span>
-          <span class="fb-name">{brand}</span>
+          <img
+            class="fb-logo"
+            src="/images/everchek-logo-400.png"
+            alt={brand}
+            width="400"
+            height="93"
+            loading="lazy"
+          />
         </div>
         <p class="fb-blurb">{footer.blurb}</p>
         {footer.operatorName && (
@@ -73,13 +79,13 @@ const { footer, brand } = common;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
   .fb-row { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-  .fb-mark {
-    width: 36px; height: 36px; border-radius: 50%;
-    background: linear-gradient(140deg, var(--blue), var(--blue-dark));
-    color: #fff; font-size: 11px; font-weight: 700;
-    display: flex; align-items: center; justify-content: center;
+  /* The wordmark is dark-on-transparent, so it is knocked out to white for the
+     navy footer rather than shipping a second asset. */
+  .fb-logo {
+    width: 140px; height: auto; display: block;
+    filter: brightness(0) invert(1);
+    opacity: 0.94;
   }
-  .fb-name { color: #fff; font-weight: 700; font-size: 17px; }
   .fb-blurb { line-height: 1.7; max-width: 300px; font-size: 13.5px; }
   .fb-operator { margin-top: 16px; max-width: 300px; font-size: 12.5px; line-height: 1.6; }
   .fb-operator span { display: block; color: #fff; font-weight: 700; margin-bottom: 3px; }
