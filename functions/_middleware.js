@@ -1,107 +1,99 @@
-// Cloudflare Pages Function: Markdown for Agents + Link Headers
-// When Accept: text/markdown is sent, returns markdown version of HTML pages
+// Cloudflare Pages Function: serve a Markdown rendering of any page to clients
+// that ask for it with `Accept: text/markdown`.
+//
+// Why keep this: retrieval bots and LLM fetch tools do better with clean prose
+// than with a full HTML document, and this costs nothing to serve.
+//
+// The previous version hard-coded a Markdown copy of the home page. That copy
+// drifted: it still advertised a "<8% MARD" figure that has since been removed
+// from the site, and every link in it pointed at a /*.html URL that now 301s.
+// A hand-maintained second copy of the content is a claim-consistency risk on a
+// medical-device site, so this version derives the Markdown from the page that
+// was actually built. There is one source of truth.
 
-const HTML_TO_MD = {
-  'index.html': (
-`# EverChek China | CGM SKD & OEM Manufacturer
-
-EverChek is a B2B CGM (Continuous Glucose Monitor) SKD and OEM manufacturer from China, sub-brand of Refresh.cc.
-
-We supply semi-knocked-down and private-label CGM systems for healthcare brands, distributors, and medtech companies worldwide.
-
-- **Accuracy**: <8% MARD
-- **Facilities**: ISO 13485-certified
-- **Models**: SKD, OEM, Private Label
-- **Location**: Shenzhen, China
-
-## Key Pages
-
-- [Home](https://ever-chek.com/)
-- [CGM SKD](https://ever-chek.com/cgm-skd.html)
-- [CGM OEM](https://ever-chek.com/cgm-oem.html)
-- [Certifications](https://ever-chek.com/certifications.html)
-- [About Us](https://ever-chek.com/about-us.html)
-- [Contact](https://ever-chek.com/contact.html)
-- [Blog](https://ever-chek.com/cgm-blogs.html)
-
-## Contact
-
-Email: contact@ever-chek.com
-Website: https://ever-chek.com`
-  )
-};
+const BASE = 'https://ever-chek.com';
 
 export async function onRequest(context) {
   const { request, next } = context;
-  const accept = request.headers.get("Accept") || "";
-  const url = new URL(request.url);
-  let path = url.pathname;
-
-  // Handle / -> index.html
-  if (path === "/" || path === "") path = "/index.html";
-
-  // If agent requests markdown
-  if (accept.includes("text/markdown")) {
-    // Get the HTML page filename
-    const pageKey = path === "/" || path === "" ? "index.html" : path.substring(1);
-    
-    if (HTML_TO_MD[pageKey]) {
-      return new Response(HTML_TO_MD[pageKey], {
-        headers: {
-          "Content-Type": "text/markdown; charset=utf-8",
-          "X-Markdown-Tokens": "true"
-        }
-      });
-    }
-    
-    // For unknown pages, try to fetch and convert
-    const response = await next();
-    if (response.headers.get("Content-Type")?.includes("text/html")) {
-      const html = await response.text();
-      // Basic conversion - extract text content
-      const md = `# ${extractTitle(html)}\n\n${extractText(html)}`;
-      return new Response(md, {
-        headers: {
-          "Content-Type": "text/markdown; charset=utf-8",
-          "X-Markdown-Tokens": "true"
-        }
-      });
-    }
-    return response;
-  }
-
-  // For normal requests, add Link header
+  const accept = request.headers.get('Accept') || '';
   const response = await next();
-  if (response.headers.get("Content-Type")?.includes("text/html")) {
-    const newHeaders = new Headers(response.headers);
-    newHeaders.set("Link", '</.well-known/agent-skills/index.json>; rel="service-meta"; type="application/json"');
-    return new Response(response.body, {
+  const type = response.headers.get('Content-Type') || '';
+
+  if (!type.includes('text/html')) return response;
+
+  if (accept.includes('text/markdown')) {
+    const html = await response.text();
+    return new Response(htmlToMarkdown(html), {
       status: response.status,
-      statusText: response.statusText,
-      headers: newHeaders
+      headers: {
+        'Content-Type': 'text/markdown; charset=utf-8',
+        'X-Robots-Tag': response.headers.get('X-Robots-Tag') ?? 'all',
+        Link: serviceMetaLink(),
+      },
     });
   }
-  
-  return response;
+
+  const headers = new Headers(response.headers);
+  headers.set('Link', serviceMetaLink());
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
 }
 
-function extractTitle(html) {
-  const m = html.match(/<title>([^<]+)<\/title>/i);
-  return m ? m[1].trim() : "EverChek";
-}
+const serviceMetaLink = () =>
+  '</.well-known/agent-skills/index.json>; rel="service-meta"; type="application/json"';
 
-function extractText(html) {
-  // Remove scripts, styles, nav, footer
-  let text = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "");
-  text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "");
-  // Extract visible text
-  const body = text.match(/<body[^>]*>([\s\S]*)<\/body>/i);
-  if (!body) return "Content not available.";
-  text = body[1]
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .replace(/&[a-z]+;/g, " ")
+function htmlToMarkdown(html) {
+  // Drop everything that is chrome rather than content.
+  let body = html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<svg[\s\S]*?<\/svg>/gi, '')
+    .replace(/<header[\s\S]*?<\/header>/gi, '')
+    .replace(/<footer[\s\S]*?<\/footer>/gi, '')
+    .replace(/<nav[\s\S]*?<\/nav>/gi, '');
+
+  const main = body.match(/<main[^>]*>([\s\S]*)<\/main>/i);
+  body = main ? main[1] : body;
+
+  const md = body
+    // headings
+    .replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, (_, t) => `\n\n# ${strip(t)}\n`)
+    .replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, (_, t) => `\n\n## ${strip(t)}\n`)
+    .replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, (_, t) => `\n\n### ${strip(t)}\n`)
+    .replace(/<h4[^>]*>([\s\S]*?)<\/h4>/gi, (_, t) => `\n\n#### ${strip(t)}\n`)
+    // links, kept absolute so a bot can follow them
+    .replace(/<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, t) => {
+      const text = strip(t);
+      if (!text) return '';
+      const url = href.startsWith('/') ? BASE + href : href;
+      return `[${text}](${url})`;
+    })
+    .replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (_, t) => `\n- ${strip(t)}`)
+    .replace(/<(p|div|section|tr|br)[^>]*>/gi, '\n')
+    .replace(/<td[^>]*>([\s\S]*?)<\/td>/gi, (_, t) => `${strip(t)} | `)
+    .replace(/<[^>]+>/g, ' ');
+
+  return decode(md)
+    .replace(/[ \t]+/g, ' ')
+    .replace(/ *\n */g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
     .trim();
-  // Return first 500 chars as summary
-  return text.substring(0, 500) + (text.length > 500 ? "\n\n[Continue reading](https://ever-chek.com)" : "");
 }
+
+const strip = (s) => decode(s.replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
+
+const decode = (s) =>
+  s
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
+    .replace(/&mdash;/g, '—')
+    .replace(/&ndash;/g, '–')
+    .replace(/&hellip;/g, '…')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)));

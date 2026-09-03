@@ -1,36 +1,67 @@
 {
   "$schema": "https://agent-skills.io/v0.2.0/schema.json",
-  "description": "EverChek CGM SKD & OEM Manufacturer - site capabilities",
+  "name": "EverChek",
+  "description": "B2B manufacturer of continuous glucose monitoring (CGM) systems. OEM, ODM, SKD kit and private-label programmes for medical-device distributors, healthcare brands and government tender bidders. Shenzhen, China. Sub-brand of Refresh.cc.",
   "skills": [
     {
-      "name": "browse-products",
+      "name": "manufacturing-models",
       "type": "application/vnd.agent-skills.web",
-      "description": "Browse CGM SKD, OEM, and private label manufacturing solutions",
-      "url": "https://ever-chek.com/cgm-skd.html"
+      "description": "Compare OEM, ODM, SKD and private-label CGM manufacturing models and what each one requires of the buyer",
+      "url": "https://ever-chek.com/cgm-manufacturing-models/"
     },
     {
-      "name": "read-blog",
+      "name": "local-assembly-skd",
       "type": "application/vnd.agent-skills.web",
-      "description": "Read CGM industry articles and manufacturing guides",
-      "url": "https://ever-chek.com/cgm-blogs.html"
+      "description": "CGM SKD kits for in-country assembly: how semi-knocked-down supply lets a partner qualify as a local manufacturer for import-duty and local-content purposes",
+      "url": "https://ever-chek.com/cgm-skd/"
+    },
+    {
+      "name": "oem-private-label",
+      "type": "application/vnd.agent-skills.web",
+      "description": "White-label and OEM CGM manufacturing for healthcare brands",
+      "url": "https://ever-chek.com/cgm-oem/"
+    },
+    {
+      "name": "public-tenders",
+      "type": "application/vnd.agent-skills.web",
+      "description": "How local assembly and documentation support affect CGM public-tender and local-content requirements",
+      "url": "https://ever-chek.com/cgm-skd-tenders/"
+    },
+    {
+      "name": "distribution",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Regional distribution partnerships for the EverChek CGM system",
+      "url": "https://ever-chek.com/cgm-distribution/"
+    },
+    {
+      "name": "product-specification",
+      "type": "application/vnd.agent-skills.web",
+      "description": "EverChek CGM system: sensor, transmitter, patient app, wear time, factory calibration and integration specification",
+      "url": "https://ever-chek.com/continuous-glucose-monitor/"
+    },
+    {
+      "name": "documentation-policy",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Which certifications EverChek holds, which body issued them and what scope they cover; certificate numbers and test reports are released to qualified partners under NDA",
+      "url": "https://ever-chek.com/certifications/"
+    },
+    {
+      "name": "what-is-cgm",
+      "type": "application/vnd.agent-skills.web",
+      "description": "How continuous glucose monitoring works: sensor chemistry, factory calibration, MARD as a measure of accuracy, and how CGM differs from fingerstick BGM",
+      "url": "https://ever-chek.com/what-is-cgms/"
+    },
+    {
+      "name": "read-articles",
+      "type": "application/vnd.agent-skills.web",
+      "description": "Articles on CGM manufacturing, private labelling and CGM vs BGM",
+      "url": "https://ever-chek.com/cgm-blogs/"
     },
     {
       "name": "contact-sales",
       "type": "application/vnd.agent-skills.web",
-      "description": "Contact EverChek sales team for CGM manufacturing inquiries",
-      "url": "https://ever-chek.com/contact.html"
-    },
-    {
-      "name": "view-certifications",
-      "type": "application/vnd.agent-skills.web",
-      "description": "View ISO 13485 and other quality certifications",
-      "url": "https://ever-chek.com/certifications.html"
-    },
-    {
-      "name": "about-company",
-      "type": "application/vnd.agent-skills.web",
-      "description": "Learn about EverChek and Refresh.cc manufacturing background",
-      "url": "https://ever-chek.com/about-us.html"
+      "description": "Send a B2B enquiry: target market, manufacturing model and regulatory route",
+      "url": "https://ever-chek.com/contact/"
     }
   ]
 }
