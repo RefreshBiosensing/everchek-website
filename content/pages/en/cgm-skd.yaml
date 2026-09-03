@@ -26,7 +26,8 @@ sections:
     title: What is CGM SKD?
     image: /images/skd-intro.webp
     imageAlt: CGM SKD semi-knocked-down assembly kit laid out — biosensor core, Bluetooth transmitter, adhesive patch and single-use applicator
-    ratio: 4/3
+    ratio: 4/5
+    fit: contain
     paragraphs:
       - CGM SKD (Semi-Knocked-Down) is a manufacturing model beneficial for healthcare businesses looking to launch a CGM brand fast while meeting local assembly or manufacturing requirements.
       - Instead of importing fully finished products, you receive partially assembled kits from us, including the sensor core, transmitter, and applicator. Your team completes final assembly, packaging, and labeling locally for sale. We also provide technical support and guidance for manufacturing setup and regulatory preparation for your market.
@@ -34,28 +35,33 @@ sections:
       label: Read the plain-English guide to CGM SKD
       href: /blog/what-is-cgm-skd/
 
-  - type: card-grid
-    media: image
-    columns: 2
-    ratio: 4/3
-    tint: true
+  - type: feature-rows
+    ratio: 16/9
     title: Who is CGM SKD for?
     text: Four types of healthcare businesses that benefit most from the semi-knocked-down CGM manufacturing model.
     items:
-      - image: /images/skd-audience-1.webp
+      - visual: image
+        image: /images/skd-audience-1.webp
+        imageAlt: Government tender bidders qualifying for public procurement through local CGM assembly
         title: Government tender bidders
-        text: Deeply familiar with local regulations but blocked by strict local content rules for finished imports? Under SKD partnership model, we help you fulfill all local assembly requirements, giving you an immediate compliant path to qualify for and win public healthcare tenders.
+        desc: Deeply familiar with local regulations but blocked by strict local content rules for finished imports? Under SKD partnership model, we help you fulfill all local assembly requirements, giving you an immediate compliant path to qualify for and win public healthcare tenders.
         href: /cgm-skd-tenders/
         linkLabel: SKD for public tenders
-      - image: /images/skd-audience-2.webp
+      - visual: image
+        image: /images/skd-audience-2.webp
+        imageAlt: Healthcare brands launching own CGM products with SKD partnership
         title: Healthcare brands
-        text: Equipped with strong brand power but trapped by the massive R&D costs of developing sensor technology from scratch? Our SKD model offers a ready-to-assemble shortcut to launch your own CGM brand while retaining full ownership of the final product.
-      - image: /images/skd-audience-3.webp
+        desc: Equipped with strong brand power but trapped by the massive R&D costs of developing sensor technology from scratch? Our SKD model offers a ready-to-assemble shortcut to launch your own CGM brand while retaining full ownership of the final product.
+      - visual: image
+        image: /images/skd-audience-3.webp
+        imageAlt: Medical manufacturers assembling CGM components on local production line
         title: Medical manufacturers
-        text: Possessing advanced assembly lines or clean rooms but wanting to utilize this existing infrastructure to its fullest potential? Add CGM to your current pipeline through our SKD model and maximize your manufacturing advantages while lowering local operational and logistics costs.
-      - image: /images/skd-audience-4.webp
+        desc: Possessing advanced assembly lines or clean rooms but wanting to utilize this existing infrastructure to its fullest potential? Add CGM to your current pipeline through our SKD model and maximize your manufacturing advantages while lowering local operational and logistics costs.
+      - visual: image
+        image: /images/skd-audience-4.webp
+        imageAlt: Established distributors expanding margins with own CGM brand through SKD model
         title: Established distributors
-        text: Armed with a mature sales network but tired of reselling third-party brands and fighting price wars that erode your margins? Switching to our SKD model empowers you to launch your own branding, cutting out upstream markups to regain absolute pricing control.
+        desc: Armed with a mature sales network but tired of reselling third-party brands and fighting price wars that erode your margins? Switching to our SKD model empowers you to launch your own branding, cutting out upstream markups to regain absolute pricing control.
 
   - type: card-grid
     media: icon
@@ -88,7 +94,7 @@ sections:
 
   - type: card-grid
     media: icon
-    columns: 4
+    columns: 2
     dark: true
     title: Is SKD the right fit for your organization?
     text: SKD works best for organizations that already have, or are on a clear path to obtaining the following. If you're unsure, we're happy to assess your situation together.
@@ -107,7 +113,7 @@ sections:
         text: Access to standard medical device assembly facilities and a cleanroom for final integration and packaging.
 
   - type: step-flow
-    columns: 3
+    columns: 1
     title: How the SKD partnership process works
     text: From initial alignment to ongoing supply — a clear five-step path to launching your CGM business locally.
     items:
@@ -130,10 +136,12 @@ sections:
   - type: compare-table
     title: CGM SKD technical specifications
     text: Detailed bill of materials and hardware specifications for partners evaluating the CGM SKD model.
+    labelColumn: SKD module / component
     columns:
       - Description
       - Form factor
-    highlight: 0
+    highlight: -1
+    align: left
     rows:
       - label: Biosensor electrode filament
         cells:
@@ -176,9 +184,11 @@ sections:
     tint: true
     title: Manufacturing prerequisites
     text: What your site needs in place before the first SKD shipment. If something on this list is missing, tell us — several partners have built it during the feasibility phase.
+    labelColumn: Requirement
     columns:
       - Specification
-    highlight: 0
+    highlight: -1
+    align: left
     rows:
       - label: Cleanroom class
         cells:

@@ -12,7 +12,7 @@ sections:
       value of 7.8 mmol/L with a trend arrow, sensor connection status, remaining sensor days, a
       selectable 3h/6h/12h/24h glucose graph, custom high and low reminder limits, the target glucose
       range, the event log and historical glucose statistics.
-    ratio: 1/1
+    ratio: 1091/976
     title: EverChek CGM app for mobile
     sub: >-
       A patient-ready continuous glucose monitoring app built for your brand. Access real-time glucose
@@ -57,6 +57,12 @@ sections:
 
   - type: feature-rows
     title: EverChek patient app features
+    text: >-
+      A complete set of patient-focused glucose management features, ready for your brand.
+    # Phone screenshots are 300x620. Shown whole (contain) on the tinted panel, the way the
+    # original page did it — a 4/3 cover crop cut the top and bottom off every screen.
+    ratio: 1/1
+    fit: contain
     items:
       - id: real-time-glucose
         title: Real-time glucose monitoring
@@ -66,6 +72,7 @@ sections:
           displayed clearly on one screen, making it easy to track glucose changes at a glance.
         visual: image
         image: /images/cgm-app-phone-2.webp
+        imageAlt: Real-time glucose monitoring screen on the EverChek CGM app
         imageNote: App home screen showing the current glucose value, trend arrow and 24-hour chart
       - id: trend-visualization
         title: Glucose trend visualization & prediction
@@ -75,6 +82,7 @@ sections:
           exercise, and insulin.
         visual: image
         image: /images/cgm-app-phone-3.webp
+        imageAlt: Glucose trend visualization and prediction chart on the EverChek CGM app
         imageNote: Glucose trend chart with 3, 6, 12 and 24 hour views and directional arrows
       - id: glucose-alerts
         title: High/low glucose alerts
@@ -83,6 +91,7 @@ sections:
           approaches or exceeds these limits, helping you take proactive action.
         visual: image
         image: /images/cgm-app-phone-4.webp
+        imageAlt: High and low glucose alert configuration on the EverChek CGM app
         imageNote: Alert settings screen with configurable high and low glucose thresholds
       - id: event-logging
         title: Event logging
@@ -92,6 +101,7 @@ sections:
           with glucose changes.
         visual: image
         image: /images/cgm-app-phone-1.webp
+        imageAlt: Event logging screen for meals, exercise and insulin on the EverChek CGM app
         imageNote: Event log screen for recording meals, exercise, insulin doses and medication
       - id: history-statistics
         title: History records & statistics
@@ -101,14 +111,23 @@ sections:
           your healthcare provider.
         visual: image
         image: /images/cgm-app-phone-2.webp
+        imageAlt: Historical glucose statistics and analytics dashboard on the EverChek CGM app
         imageNote: Historical glucose statistics with time-in-range, average glucose and estimated HbA1c
 
-  - type: feature-rows
+  # Two deployment models sat side by side on the original page (.dual-grid, the
+  # white-label card highlighted). Alternating full-width rows broke the comparison.
+  - type: card-grid
     title: Choose your deployment model
+    text: >-
+      Two flexible paths to bring a CGM app to your market — pick the one that fits your
+      infrastructure.
+    columns: 2
+    media: icon
+    tint: true
     items:
-      - id: white-label-app
+      - icon: phone
         title: White-label app
-        desc: >-
+        text: >-
           A ready-to-launch CGM app with your brand identity. We handle the technology; you focus on
           go-to-market. Best for brands that want to launch quickly without building a software team.
         bullets:
@@ -117,10 +136,9 @@ sections:
           - App store submission support (iOS & Android)
           - Ongoing maintenance and OS compatibility updates
           - Patient onboarding materials available for co-branding
-        visual: phone
-      - id: api-sdk-access
+      - icon: terminal
         title: API & SDK access
-        desc: >-
+        text: >-
           Connect CGM data into your existing patient platform or build your own app on top of our SDK.
           Best for brands with an existing healthcare platform or in-house development team.
         bullets:
@@ -128,7 +146,6 @@ sections:
           - SDK documentation for building custom patient-facing features
           - Technical integration support from our engineering team
           - Sandbox environment for development and testing
-        visual: terminal
 
   - type: faq
     title: Frequently asked questions

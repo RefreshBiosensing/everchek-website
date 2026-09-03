@@ -18,7 +18,7 @@ sections:
     image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
     imageAlt: >-
       Concept illustration contrasting a body-worn continuous glucose monitor with a fingerstick blood glucose meter and test strips
-    ratio: 16/9
+    ratio: 1312/736
     text: >-
       In reality, it determines your R&D runway, regulatory budget, supply chain footprint, and the kind of revenue model you can sustain. In this guide, we will cover everything between CGM and BGM for business needs only, and help you find a way to add CGM into your pipeline with the lowest efforts. Let's get the ball rolling.
 
@@ -51,7 +51,91 @@ sections:
     image: /blog/cgm-vs-bgm-images/02_continuous_vs_point.webp
     imageAlt: >-
       Chart comparing a continuous CGM glucose curve against scattered single-point blood glucose meter readings across a day
-    ratio: 16/9
+    ratio: 1312/736
+
+  - type: compare-table
+    title: CGM vs BGM at a glance
+    text: >-
+      The two technologies side by side on the dimensions this guide works through. Every figure below is explained in the section it belongs to.
+    highlight: -1
+    align: left
+    labelColumn: Dimension
+    columns:
+      - CGM
+      - BGM
+    rows:
+      - label: What it measures
+        cells:
+          - state: plain
+            text: Interstitial fluid under the skin, via an embedded enzyme electrode
+          - state: plain
+            text: Capillary blood, via single-use test strips coated in glucose oxidase
+      - label: Readings per day
+        cells:
+          - state: plain
+            text: Roughly 288, continuous
+          - state: plain
+            text: 4–10, manually logged
+      - label: Wear and use
+        cells:
+          - state: plain
+            text: One sensor worn for 7–14 days
+          - state: plain
+            text: One test strip per reading
+      - label: Lag behind blood glucose
+        cells:
+          - state: plain
+            text: 5–15 minutes
+          - state: plain
+            text: Real time
+      - label: Typical MARD
+        cells:
+          - state: plain
+            text: 8–12%
+          - state: plain
+            text: 5–6%
+      - label: US regulatory pathway
+        cells:
+          - state: plain
+            text: FDA integrated continuous glucose monitor (iCGM) designation
+          - state: plain
+            text: Self-monitoring blood glucose, 510(k) benchmarked against ISO 15197
+      - label: EU classification
+        cells:
+          - state: plain
+            text: MDR Class IIb — Notified Body involvement and mandatory clinical investigation
+          - state: plain
+            text: IVDR Class B — self-declaration or Notified Body conformity route
+      - label: Cost to the end user
+        cells:
+          - state: plain
+            text: $30–$100 per sensor, replaced every 7–14 days
+          - state: plain
+            text: $0.20–$1.00 per test strip
+      - label: Revenue model
+        cells:
+          - state: plain
+            text: Recurring, structurally closer to a subscription; stronger margins behind higher barriers
+          - state: plain
+            text: One-off consumable; thinner margins under sustained price pressure
+      - label: Data integration
+        cells:
+          - state: plain
+            text: APIs push readings into EHRs, remote monitoring platforms and telehealth workflows
+          - state: plain
+            text: Often requires manual transcription, increasing error risk
+      - label: Market size in 2025
+        cells:
+          - state: plain
+            text: $13.4 billion, reaching $41.4 billion by 2033 (15.1% CAGR)
+          - state: plain
+            text: $15.53 billion, reaching $30.18 billion by 2033 (8.8% CAGR)
+      - label: Strongest channel
+        cells:
+          - state: plain
+            text: Retail, online and direct-to-consumer
+          - state: plain
+            text: Hospital and clinic tenders
 
   - type: richtext
     eyebrow: Accuracy and regulation
@@ -72,7 +156,7 @@ sections:
     image: /blog/cgm-vs-bgm-images/03_regulatory_timeline.webp
     imageAlt: >-
       Timeline comparing the longer FDA iCGM clearance pathway for continuous glucose monitors with the shorter 510(k) route for blood glucose meters
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: What users report
@@ -104,34 +188,41 @@ sections:
     image: /blog/cgm-vs-bgm-images/04_data_ecosystem.webp
     imageAlt: >-
       Diagram of continuous glucose data flowing through an API into EHR, remote patient monitoring and telehealth platforms
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Decision framework
-    title: "CGM vs BGM: a B2B decision framework"
+    title: "CGM vs BGM: a B2B decision framework for healthcare brands"
     blocks:
       - text: >-
           Choosing between CGM and BGM is a strategic bet on where your portfolio, margins, and channel fit are heading. This following framework cuts through the hype and breaks down the data, barriers, and business models to help you decide what's right for your brand.
       - heading: What the market data actually tells us
         text: >-
           Grand View Research values the global CGM device market at $13.4 billion in 2025, projecting growth to $41.4 billion by 2033 at a 15.1% CAGR, and estimates the global BGM device market at $15.53 billion in 2025, growing at a slower rate than CGM but still maintaining steady demand.
-      - heading: The trade-offs in technology and margins
-        text: >-
-          Faster growth doesn't come free. Here's what each side actually costs to build, and what it pays back.
-      - heading: "CGM: High growth, but a steep hill to climb"
+    tint: true
+
+  - type: card-grid
+    title: The trade-offs in technology and margins
+    text: >-
+      Faster growth doesn't come free. Here's what each side actually costs to build, and what it pays back.
+    columns: 2
+    media: icon
+    items:
+      - icon: curve
+        title: "CGM: High growth, but a steep hill to climb"
         text: >-
           CGM's growth potential comes with real barriers: biosensor R&D, wireless transmitter engineering, and an iCGM regulatory pathway that demands substantial clinical investment. Those same barriers, however, protect margins once overcome. One CGM unit typically costs end users $30 to $100 and requires replacement every 7 to 14 days. This makes the CGM business structurally closer to a subscription than a one-time device sale.
-      - heading: "BGM: Steady demand, but a race to the bottom on price"
+      - icon: chart
+        title: "BGM: Steady demand, but a race to the bottom on price"
         text: >-
           BGM remains essential in hospital tenders, low-resource markets, and price-sensitive consumer segments that do not need or cannot afford continuous monitoring. But the low barrier to entry invites heavy competition, and test strip pricing has been under sustained pressure for years. BGM test strips typically run $0.20 to $1.00 each, a fraction of CGM's per-unit cost, but also yield far thinner margins per sale.
-    tint: true
 
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/05_market_growth.webp
     imageAlt: >-
       Bar chart of the global CGM device market growing from $13.4 billion in 2025 to $41.4 billion by 2033 alongside slower BGM market growth
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: What to weigh before choosing your path
@@ -188,11 +279,11 @@ sections:
     image: /blog/cgm-vs-bgm-images/06_decision_framework.webp
     imageAlt: >-
       Decision framework weighing technology readiness, capital investment, regulatory timeline, target market and profit margins for CGM versus BGM
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Partner route
-    title: Launch your CGM pipeline with low effort
+    title: Launch your CGM pipeline with low effort using Refresh EverChek
     blocks:
       - text: >-
           Getting into CGM doesn't have to mean years of R&D and millions in upfront investment. Refresh EverChek is a factory-calibrated CGM system with a full 14-day wear time. On accuracy, we publish the method rather than a bare number: reference method, comparator, wear-day and glucose-range breakdown, with the clinical performance summary released to qualified partners under NDA.
@@ -209,7 +300,7 @@ sections:
     image: /blog/cgm-vs-bgm-images/07_partnership_supply_chain.webp
     imageAlt: >-
       EverChek CGM partnership supply chain from component manufacture and kit supply through local assembly to a launched partner-branded product line
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: link-pills
     label: Next steps

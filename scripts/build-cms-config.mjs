@@ -368,6 +368,28 @@ const SECTION_TYPES = [
     ],
   },
   {
+    label: '📰 Blog index (article cards)', name: 'blog-index', widget: 'object',
+    summary: 'Blog index: {{fields.title}}',
+    fields: [
+      EYEBROW,
+      str('Heading (H2)', 'title', { required: false }),
+      txt('Intro', 'text', { required: false }),
+      sel('Columns', 'columns', ['2', '3', '4'], { default: '3' }),
+      bool('Feature the first article as a wide lead card', 'featureFirst', false),
+      TINT,
+      list('Articles', 'posts', [
+        str('Title', 'title'),
+        str('Link', 'href'),
+        txt('Excerpt', 'excerpt', { required: false }),
+        img('Cover image', 'image'),
+        str('Cover alt text', 'imageAlt', { required: false }),
+        str('Category', 'category', { required: false }),
+        str('Author', 'author', { required: false }),
+        str('Date', 'date', { required: false, hint: 'e.g. July 6, 2026' }),
+      ]),
+    ],
+  },
+  {
     label: '🔗 Link pills', name: 'link-pills', widget: 'object',
     summary: 'Links: {{fields.label}}',
     fields: [

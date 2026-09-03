@@ -23,7 +23,7 @@ sections:
   - type: card-grid
     title: "L'avantage du SKD"
     text: "Le modèle de fabrication SKD, ou montage local semi-démonté, procure un avantage concurrentiel singulier lors de la soumission aux appels d'offres publics."
-    columns: 4
+    columns: 2
     media: icon
     items:
       - icon: building

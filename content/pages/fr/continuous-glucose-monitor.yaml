@@ -21,36 +21,39 @@ sections:
     visual: image
     image: /images/product-composite.webp
     imageAlt: Système EverChek de mesure continue du glucose — kit capteur et transmetteur présenté à côté de l’application compagnon affichant une courbe de glucose en temps réel
-    ratio: 4/3
+    ratio: 388/412
 
-  - type: card-grid
+  - type: feature-rows
     title: Tout ce qu’il faut pour une surveillance intelligente du glucose
     text: Du suivi en temps réel aux alertes prédictives, notre système CGM offre à l’utilisateur une visibilité complète sur son profil glycémique.
-    columns: 3
-    media: image
     ratio: 1/1
-    center: true
+    fit: contain
     items:
-      - image: /images/cgm-app-phone-1.webp
-        title: Suivi du glucose en temps réel
-        text: Les valeurs de glucose sont actualisées automatiquement toutes les 5 minutes. Observez sans délai la réaction de l’organisme à un repas, à une séance de sport, à un médicament ou à une variation d’humeur. Ajustez immédiatement, et non plusieurs heures plus tard.
-        imageNote: Écran de suivi du glucose en temps réel de l’application EverChek CGM
-      - image: /images/cgm-app-phone-2.webp
-        title: Génération de courbes glycémiques
-        text: Le système suit le glucose 24 h/24 et transforme des données continues en tendances claires que des piqûres au bout du doigt isolées ne peuvent pas restituer. Il offre une visibilité durable sur les rythmes glycémiques, au service d’une meilleure prise en charge du diabète.
-        imageNote: Écran de courbe glycémique de l’application EverChek CGM
-      - image: /images/cgm-app-phone-3.webp
-        title: Anticipation des épisodes d’hypo- et d’hyperglycémie
-        text: "Le système identifie les variations fines du glucose au fil du temps : montées rapides, baisses progressives, changements précoces entre les repas ou pendant la nuit. Il délivre des alertes précoces avant que la glycémie ne devienne trop élevée ou trop basse."
-        imageNote: Écran de prédiction des épisodes d’hypo- et d’hyperglycémie de l’application EverChek CGM
-      - image: /images/cgm-app-phone-4.webp
-        title: Personnalisation des alertes glycémiques
-        text: Définissez vos propres seuils glycémiques. Recevez une notification dès que la valeur dépasse la plage cible ou passe en dessous, pour rester informé et agir sans attendre.
-        imageNote: Écran de réglage des alertes personnalisées d’hyperglycémie et d’hypoglycémie de l’application EverChek CGM
-      - image: /images/cgm-app-phone.webp
-        title: Une liberté de mouvement au quotidien
-        text: Un capteur miniature se place juste sous la peau, pour une pose indolore et quasi imperceptible. Étanche et conçu pour un port continu de 14 jours, il reste confortable pendant le sommeil, le sport, la douche et les activités quotidiennes.
-        imageNote: Écran d’activités quotidiennes et de durée de port de l’application EverChek CGM
+      - title: Suivi du glucose en temps réel
+        desc: Les valeurs de glucose sont actualisées automatiquement toutes les 5 minutes. Observez sans délai la réaction de l’organisme à un repas, à une séance de sport, à un médicament ou à une variation d’humeur. Ajustez immédiatement, et non plusieurs heures plus tard.
+        visual: image
+        image: /images/cgm-app-phone-1.webp
+        imageAlt: Écran de suivi du glucose en temps réel de l’application EverChek CGM
+      - title: Génération de courbes glycémiques
+        desc: Le système suit le glucose 24 h/24 et transforme des données continues en tendances claires que des piqûres au bout du doigt isolées ne peuvent pas restituer. Il offre une visibilité durable sur les rythmes glycémiques, au service d’une meilleure prise en charge du diabète.
+        visual: image
+        image: /images/cgm-app-phone-2.webp
+        imageAlt: Écran de courbe glycémique de l’application EverChek CGM
+      - title: Anticipation des épisodes d’hypo- et d’hyperglycémie
+        desc: "Le système identifie les variations fines du glucose au fil du temps : montées rapides, baisses progressives, changements précoces entre les repas ou pendant la nuit. Il délivre des alertes précoces avant que la glycémie ne devienne trop élevée ou trop basse."
+        visual: image
+        image: /images/cgm-app-phone-3.webp
+        imageAlt: Écran de prédiction des épisodes d’hypo- et d’hyperglycémie de l’application EverChek CGM
+      - title: Personnalisation des alertes glycémiques
+        desc: Définissez vos propres seuils glycémiques. Recevez une notification dès que la valeur dépasse la plage cible ou passe en dessous, pour rester informé et agir sans attendre.
+        visual: image
+        image: /images/cgm-app-phone-4.webp
+        imageAlt: Écran de réglage des alertes personnalisées d’hyperglycémie et d’hypoglycémie de l’application EverChek CGM
+      - title: Une liberté de mouvement au quotidien
+        desc: Un capteur miniature se place juste sous la peau, pour une pose indolore et quasi imperceptible. Étanche et conçu pour un port continu de 14 jours, il reste confortable pendant le sommeil, le sport, la douche et les activités quotidiennes.
+        visual: image
+        image: /images/cgm-app-phone.webp
+        imageAlt: Écran d’activités quotidiennes et de durée de port de l’application EverChek CGM
 
   - type: card-grid
     title: Conçu pour une mesure continue du glucose exacte
@@ -103,7 +106,8 @@ sections:
     text: Chaque composant du CGM fonctionne en synergie pour assurer une mesure fiable du glucose.
     image: /images/p30-components.webp
     imageAlt: "Vue éclatée des composants du système EverChek de mesure continue du glucose : applicateur, transmetteur, capteur, aiguille d’insertion, patch adhésif et tube stérile, montrant comment chaque pièce du CGM contribue à une mesure fiable du glucose."
-    ratio: 16/9
+    ratio: 1200/788
+    fit: contain
 
   - type: compare-table
     title: Spécifications de notre kit intégré capteur et transmetteur

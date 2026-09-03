@@ -24,7 +24,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
     imageAlt: >-
       Flat illustration of the CGM semi-knocked-down model — factory-built sensor, transmitter and applicator components shipped for local final assembly
-    ratio: 16/9
+    ratio: 1024/572
     text: >-
       Having worked directly with a variety of healthcare providers and distributors worldwide on CGM SKD projects, we know the questions that matter most when you're evaluating this model. Let's get started.
 
@@ -58,31 +58,37 @@ sections:
           Picture ordering a bicycle online. It shows up with the frame, wheels, and handlebars already built and tested, but you still need to bolt them together before you can ride it. A CGM SKD kit works the same way. The tricky engineering is done at the factory — electrode fabrication, membrane coating, cytotoxicity testing, puncture needle loading, etc. — and your job is the final assembly of 2 to 5 major components.
       - text: >-
           We, as the CGM manufacturer, ship most of the pieces already made and tested. Your team — whether a distribution partner, a hospital's biomedical department, or a healthcare brand's operations team — then puts on the finishing touches: packaging, labeling, and paperwork, before the product reaches its final user.
-      - text: >-
-          The exact configuration depends on the regulatory needs of the regional market, and is often confirmed before a deal is signed. Here's what a typical CGM SKD kit looks like.
-      - heading: Sensor and transmitter
-        text: >-
-          The sensor and transmitter are the electronic heart of the device. They usually arrive pre-calibrated, meaning they're already tested to give accurate readings. But they still need final assembly. In most kits, snap-fit connections make this easy, with an audible click confirming each part is seated correctly.
-      - heading: Adhesive and insertion parts
-        text: >-
-          The adhesive patch and applicator are disposable. They're designed for one-time use, so a fresh set comes with every kit. Because these parts touch the skin directly, your local assembly area needs to stay clean and controlled — typically a cleanroom rated Class 10,000 (ISO 8) or higher.
-      - heading: Packaging and documentation
-        text: >-
-          Manuals and boxes often arrive in a generic, unbranded form. That's actually a good thing. It means your business can add its own language, logo, and instructions without starting from scratch.
     tint: true
 
-  - type: link-pills
-    label: Kit detail
+  - type: card-grid
+    title: What a typical CGM SKD kit contains
+    text: >-
+      The exact configuration depends on the regulatory needs of the regional market, and is often confirmed before a deal is signed. Here's what a typical CGM SKD kit looks like.
+    columns: 3
+    media: icon
     items:
-      - label: See the full SKD kit specification on our dedicated page
-        href: /cgm-skd/
+      - icon: sensor
+        title: Sensor and transmitter
+        text: >-
+          The sensor and transmitter are the electronic heart of the device. They usually arrive pre-calibrated, meaning they're already tested to give accurate readings. But they still need final assembly. In most kits, snap-fit connections make this easy, with an audible click confirming each part is seated correctly.
+      - icon: patch
+        title: Adhesive and insertion parts
+        text: >-
+          The adhesive patch and applicator are disposable. They're designed for one-time use, so a fresh set comes with every kit. Because these parts touch the skin directly, your local assembly area needs to stay clean and controlled — typically a cleanroom rated Class 10,000 (ISO 8) or higher.
+      - icon: box
+        title: Packaging and documentation
+        text: >-
+          Manuals and boxes often arrive in a generic, unbranded form. That's actually a good thing. It means your business can add its own language, logo, and instructions without starting from scratch.
+    moreLink:
+      label: See the full SKD kit specification on our dedicated page
+      href: /cgm-skd/
 
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/target-customers.webp
     imageAlt: >-
       Four types of B2B healthcare business that use CGM SKD — pharmacy chains, telehealth platforms, hospital procurement teams and national health programme operators
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: Who is CGM SKD for?
@@ -124,7 +130,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/process-steps.webp
     imageAlt: >-
       Five-step CGM SKD partnership timeline from requirement alignment and NDA through formal agreement and first shipment to local certification and ongoing supply
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Process
@@ -176,11 +182,11 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/key-benefits.webp
     imageAlt: >-
       Key benefits of the CGM SKD model for B2B healthcare businesses — flexible procurement, brand control, tariff advantages, full documentation support and territory exclusivity
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Benefits
-    title: Key benefits of the CGM SKD model
+    title: Key benefits of the CGM SKD model for B2B healthcare businesses
     blocks:
       - text: >-
           The CGM SKD model offers flexible procurement options, potentially shorter time-to-market, and may reduce total landed costs in markets where local assembly provides tariff advantages. If you prioritize brand control and local compliance, SKD is a strong choice. Results depend on your specific market and setup, so it's smart to run the numbers for your own situation.
@@ -208,7 +214,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/choose-manufacturer.webp
     imageAlt: >-
       Engineers from a CGM manufacturer training a partner's assembly team on the factory floor as part of SKD technical support
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Supplier selection
@@ -231,7 +237,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/partnership-cta.webp
     imageAlt: >-
       Healthcare business team and CGM manufacturer representatives reviewing an SKD partnership agreement together
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: checklist
     title: Are you ready to be an SKD partner?

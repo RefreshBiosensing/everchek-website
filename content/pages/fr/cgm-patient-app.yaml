@@ -13,7 +13,7 @@ sections:
       le nombre de jours de capteur restants, un graphique de glycémie sélectionnable sur 3 h/6 h/12 h/24 h,
       les seuils d’alerte haut et bas personnalisés, la plage cible de glycémie, le journal
       d’événements et les statistiques glycémiques historiques.
-    ratio: 1/1
+    ratio: 1091/976
     title: Application mobile CGM EverChek
     sub: >-
       Une application de mesure continue du glucose (CGM) prête pour le patient, conçue pour votre
@@ -61,6 +61,12 @@ sections:
 
   - type: feature-rows
     title: Fonctionnalités de l’application patient EverChek
+    text: >-
+      Un ensemble complet de fonctions de gestion du glucose pensées pour le patient, prêtes à porter votre marque.
+    # Captures 300x620 : affichées entières (contain) sur le panneau teinté, comme sur la
+    # page d’origine — un recadrage 4/3 coupait le haut et le bas de chaque écran.
+    ratio: 1/1
+    fit: contain
     items:
       - id: real-time-glucose
         title: Suivi de la glycémie en temps réel
@@ -109,12 +115,17 @@ sections:
         image: /images/cgm-app-phone-2.webp
         imageNote: Statistiques glycémiques historiques avec temps dans la cible, glycémie moyenne et HbA1c estimée
 
-  - type: feature-rows
+  - type: card-grid
     title: Choisissez votre modèle de déploiement
+    text: >-
+      Deux voies souples pour porter une application CGM sur votre marché — choisissez celle qui correspond à votre infrastructure.
+    columns: 2
+    media: icon
+    tint: true
     items:
-      - id: white-label-app
+      - icon: phone
         title: Application en marque blanche
-        desc: >-
+        text: >-
           Une application CGM prête à lancer sous votre identité de marque. Nous prenons en charge la
           technologie, vous vous concentrez sur la mise sur le marché. Idéal pour les marques qui
           veulent lancer rapidement sans constituer d’équipe logicielle.
@@ -124,10 +135,9 @@ sections:
           - Accompagnement pour la publication sur les stores (iOS et Android)
           - Maintenance continue et mises à jour de compatibilité système
           - Supports d’accompagnement patient disponibles en co-marquage
-        visual: phone
-      - id: api-sdk-access
+      - icon: terminal
         title: Accès API et SDK
-        desc: >-
+        text: >-
           Intégrez les données CGM à votre plateforme patient existante ou développez votre propre
           application sur notre SDK. Idéal pour les marques disposant déjà d’une plateforme de santé ou
           d’une équipe de développement interne.
@@ -136,7 +146,6 @@ sections:
           - Documentation SDK pour développer vos propres fonctionnalités destinées au patient
           - Accompagnement technique à l’intégration par notre équipe d’ingénierie
           - Environnement bac à sable (sandbox) pour le développement et les tests
-        visual: terminal
 
   - type: faq
     title: Questions fréquentes

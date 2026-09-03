@@ -4,14 +4,12 @@ path: /contact/
 translationKey: contact
 sections:
   - type: hero
-    variant: split
-    visual: image
+    variant: centered
+    backgroundImage: /images/contact-hero-factory.webp
     kicker: B2B enquiries only · Reply within one business day
     title: Let's talk about your CGM project
     sub: Interested in our CGM solutions? Get in touch with our team to explore how we can support your business. Whether you are building a CGM brand, expanding into new healthcare markets, or integrating CGM into your system, we are ready to support your next stage of growth.
-    image: /images/contact-hero-factory.webp
     imageAlt: EverChek CGM factory and manufacturing facility in Shenzhen
-    ratio: 4/3
 
   - type: card-grid
     center: true
@@ -55,3 +53,5 @@ sections:
       - Indicative annual volume, if you have one — a range is enough at this stage
 
   - type: contact-form
+    title: Send us a message
+    text: Fill out the form below and our team will get back to you within one business day.

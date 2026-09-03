@@ -4,7 +4,9 @@ path: /fr/documentation/
 translationKey: certifications
 sections:
   - type: hero
-    variant: standard
+    variant: centered
+    backgroundImage: /images/factory-hero.webp
+    imageAlt: Site de production CGM d'EverChek, où est appliqué le système qualité documenté
     kicker: Documentation réglementaire pour les partenaires CGM
     title: La documentation, et comment l'obtenir
     sub: Nous publions les certifications que nous détenons, l'organisme qui les a délivrées et le périmètre qu'elles couvrent. Les numéros de certificat, les dates de validité, les rapports d'essais et les synthèses de performance clinique sont communiqués intégralement aux partenaires qualifiés sous accord de confidentialité mutuel — parce que votre propre dossier d'homologation les exige.

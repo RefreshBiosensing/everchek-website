@@ -18,7 +18,7 @@ sections:
     image: /blog/private-label-cgm-images/01-private-label-cgm.webp
     imageAlt: >-
       Kit de capteur CGM fabriqué par un industriel, réétiqueté et conditionné sous la marque blanche d'une entreprise de santé
-    ratio: 16/9
+    ratio: 1418/752
     text: >-
       Ce n'est pourtant pas le cas. Peu importe que vous soyez un distributeur en quête d'une nouvelle catégorie à ajouter, une marque de diabétologie ou de santé métabolique qui veut enfin posséder son propre matériel au lieu de revendre celui d'un autre, un importateur qui déplace des produits de santé depuis des années mais jamais un dispositif médical, un laboratoire pharmaceutique qui complète sa gamme sur les maladies chroniques, ou un investisseur qui explore le marché du CGM avant d'engager des fonds. Vous pouvez lancer facilement votre propre marque de CGM avec un fabricant en marque blanche. Voici le guide complet.
 
@@ -48,7 +48,7 @@ sections:
     image: /blog/private-label-cgm-images/03-market-growth.webp
     imageAlt: >-
       Graphique de la croissance du marché mondial de la mesure continue du glucose, qui pousse les marques de santé vers le CGM en marque blanche
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Contexte de marché
@@ -87,7 +87,7 @@ sections:
     image: /blog/private-label-cgm-images/02-what-is-private-label.webp
     imageAlt: >-
       Schéma montrant un système CGM générique de fabricant devenant un produit en marque blanche, avec sa boîte et son application personnalisées
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Comparaison des modèles
@@ -128,7 +128,7 @@ sections:
     image: /blog/private-label-cgm-images/04-models-comparison.webp
     imageAlt: >-
       Comparaison côte à côte des modèles de fabrication CGM en marque blanche, OEM et SKD et de ce que chacun permet de modifier à une marque
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: Qui recourt réellement au modèle de la marque blanche ?
@@ -161,7 +161,7 @@ sections:
     image: /blog/private-label-cgm-images/05-who-uses.webp
     imageAlt: >-
       Cinq types d'entreprises de santé B2B qui utilisent le CGM en marque blanche — distributeurs, marques de diabétologie, laboratoires, plateformes de télémédecine et groupes hospitaliers
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: Que pouvez-vous réellement personnaliser ?
@@ -199,7 +199,7 @@ sections:
     image: /blog/private-label-cgm-images/06-customization.webp
     imageAlt: >-
       Conditionnement de vente CGM personnalisé, transmetteur à la marque du partenaire et application patient en marque blanche aux couleurs de la marque
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: step-flow
     title: Comment se déroule concrètement un projet de CGM en marque blanche
@@ -236,11 +236,11 @@ sections:
     image: /blog/private-label-cgm-images/07-process-phases.webp
     imageAlt: >-
       Calendrier en six phases d'un projet de CGM en marque blanche, de l'analyse réglementaire à la validation des échantillons, puis à la production et à la logistique
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Choix du fournisseur
-    title: Comment choisir un fabricant de CGM en marque blanche
+    title: Comment choisir le bon fabricant de CGM en marque blanche
     blocks:
       - text: >-
           Votre partenaire industriel est le poumon de votre marque. Lorsque vous évaluez des fournisseurs, dépassez la simple grille tarifaire et jugez-les sur ces piliers techniques et opérationnels.
@@ -262,7 +262,7 @@ sections:
     image: /blog/private-label-cgm-images/08-manufacturer-selection.webp
     imageAlt: >-
       Ligne de production en salle blanche certifiée ISO 13485 où les capteurs CGM sont assemblés et contrôlés avant le conditionnement en marque blanche
-    ratio: 16/9
+    ratio: 4/3
 
   - type: card-grid
     title: Pourquoi choisir EverChek pour votre CGM en marque blanche

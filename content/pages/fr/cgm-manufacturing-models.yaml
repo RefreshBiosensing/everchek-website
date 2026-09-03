@@ -52,6 +52,59 @@ sections:
         bullets:
           - "Pour qui : les organisations qui disposent déjà de capacités de fabrication de dispositifs médicaux et cherchent à les élargir."
         visual: factory
+  # La page d'origine n'avait aucun tableau — sur une page intitulée « OEM vs SKD vs ODM »
+  # c'est la pièce manquante. Chaque cellule reprend une phrase déjà présente sur la page.
+  - type: compare-table
+    title: "Les quatre modèles en un coup d'œil"
+    text: "Les mêmes quatre modèles côte à côte : ce que vous recevez, qui réalise l'assemblage final, ce que cela vous apporte et à qui cela s'adresse."
+    highlight: -1
+    columns:
+      - OEM
+      - ODM
+      - SKD
+      - CKD
+    rows:
+      - label: "Ce que vous recevez"
+        cells:
+          - state: plain
+            text: "Un produit fini, entièrement assemblé, à votre marque, avec conditionnement et étiquetage"
+          - state: plain
+            text: "Une conception existante déjà validée, adaptée à votre marque"
+          - state: plain
+            text: "Des composants CGM partiellement assemblés"
+          - state: plain
+            text: "Des composants unitaires"
+      - label: "Où se fait l'assemblage final"
+        cells:
+          - state: plain
+            text: "Chez le fabricant"
+          - state: plain
+            text: "Chez le fabricant"
+          - state: plain
+            text: "Sur place, par vos équipes"
+          - state: plain
+            text: "Sur place, par vos équipes — le produit complet"
+      - label: "Ce que cela vous apporte"
+        cells:
+          - state: plain
+            text: "Un lancement rapide, avec une complexité opérationnelle minimale"
+          - state: plain
+            text: "Un délai de mise sur le marché raccourci, la conception étant déjà validée"
+          - state: plain
+            text: "Droits d'importation réduits, éligibilité aux appels d'offres et transfert progressif de technologie"
+          - state: plain
+            text: "Le taux d'intégration locale le plus élevé et la maîtrise la plus étendue de la production"
+      - label: "Pour qui"
+        cells:
+          - state: plain
+            text: "Les marques de santé disposant de circuits de distribution établis"
+          - state: plain
+            text: "Les entreprises qui abordent le CGM pour la première fois"
+          - state: plain
+            text: "Les acteurs régionaux qui visent des marchés publics"
+          - state: plain
+            text: "Les organisations qui fabriquent déjà des dispositifs médicaux"
+
   - type: richtext
     eyebrow: "Décider"
     title: "Choisir le bon modèle"

@@ -52,6 +52,60 @@ sections:
         bullets:
           - "Best for: Organizations with existing medical device manufacturing capabilities looking to expand."
         visual: factory
+  # The original was four prose sections and no table at all — on a page titled
+  # "OEM vs SKD vs ODM" that is the missing piece. Every cell below is a restatement
+  # of a sentence already on this page; nothing new is claimed.
+  - type: compare-table
+    title: The four models at a glance
+    text: The same four models side by side — what you receive, who does the final assembly, what it gets you, and who it suits.
+    highlight: -1
+    columns:
+      - OEM
+      - ODM
+      - SKD
+      - CKD
+    rows:
+      - label: What you receive
+        cells:
+          - state: plain
+            text: A fully assembled, finished product with your branding, packaging and labeling
+          - state: plain
+            text: An existing, already-validated design, customized to your brand
+          - state: plain
+            text: Partially assembled CGM components
+          - state: plain
+            text: Individual components
+      - label: Where final assembly happens
+        cells:
+          - state: plain
+            text: At the manufacturer
+          - state: plain
+            text: At the manufacturer
+          - state: plain
+            text: Locally, by you
+          - state: plain
+            text: Locally, by you — the complete product
+      - label: What it gets you
+        cells:
+          - state: plain
+            text: A quick launch with minimal operational complexity
+          - state: plain
+            text: Faster time-to-market, since the design is already validated
+          - state: plain
+            text: Reduced import duties, tender eligibility and gradual technology transfer
+          - state: plain
+            text: The greatest local content and the most control over production
+      - label: Best for
+        cells:
+          - state: plain
+            text: Healthcare brands with established distribution channels
+          - state: plain
+            text: First-time entrants who need a proven, market-ready solution
+          - state: plain
+            text: Regional businesses targeting government contracts
+          - state: plain
+            text: Organizations that already manufacture medical devices
+
   - type: richtext
     eyebrow: Decide
     title: Choosing the Right Model

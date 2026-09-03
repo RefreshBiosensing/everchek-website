@@ -27,7 +27,8 @@ sections:
     title: Qu'est-ce que le CGM en SKD ?
     image: /images/skd-intro.webp
     imageAlt: Kit de montage semi-démonté (SKD) pour CGM présenté à plat — cœur du biocapteur, transmetteur Bluetooth, patch adhésif et applicateur à usage unique
-    ratio: 4/3
+    ratio: 4/5
+    fit: contain
     paragraphs:
       - >-
         Le CGM en SKD (Semi-Knocked-Down) est un modèle de fabrication utile aux entreprises de santé qui veulent lancer rapidement une marque de CGM tout en satisfaisant des exigences de montage ou de fabrication locale.
@@ -37,32 +38,37 @@ sections:
       label: Lire le guide du CGM en SKD en langage clair
       href: /fr/blog/qu-est-ce-que-le-cgm-skd/
 
-  - type: card-grid
-    media: image
-    columns: 2
-    ratio: 4/3
-    tint: true
-    title: À qui s'adresse le CGM en SKD ?
+  - type: feature-rows
+    ratio: 16/9
+    title: À qui s'adresse le CGM en SKD ?
     text: >-
       Quatre profils d'entreprises de santé qui tirent le meilleur parti du modèle de fabrication CGM semi-démonté.
     items:
-      - image: /images/skd-audience-1.webp
+      - visual: image
+        image: /images/skd-audience-1.webp
+        imageAlt: Candidats aux appels d'offres publics remplissant les critères d'intégration locale grâce au montage local de CGM
         title: Candidats aux appels d'offres publics
-        text: >-
+        desc: >-
           Vous maîtrisez la réglementation locale, mais les règles d'intégration locale bloquent vos produits finis importés ? Dans le cadre d'un partenariat SKD, nous vous aidons à satisfaire toutes les exigences de montage local et vous ouvrons immédiatement une voie conforme pour vous qualifier et remporter les appels d'offres de santé publique.
         href: /fr/appels-offres-cgm-skd/
         linkLabel: Le SKD pour les appels d'offres publics
-      - image: /images/skd-audience-2.webp
+      - visual: image
+        image: /images/skd-audience-2.webp
+        imageAlt: Marques de santé lançant leurs propres produits CGM dans le cadre d'un partenariat SKD
         title: Marques de santé
-        text: >-
+        desc: >-
           Vous disposez d'une marque forte, mais les coûts de R&D d'une technologie de capteur développée de zéro vous freinent ? Notre modèle SKD offre un raccourci prêt à assembler pour lancer votre propre marque de CGM tout en conservant la pleine propriété du produit fini.
-      - image: /images/skd-audience-3.webp
+      - visual: image
+        image: /images/skd-audience-3.webp
+        imageAlt: Fabricants de dispositifs médicaux assemblant des composants CGM sur une ligne de production locale
         title: Fabricants de dispositifs médicaux
-        text: >-
+        desc: >-
           Vous possédez des lignes d'assemblage ou des salles blanches et souhaitez exploiter pleinement cette infrastructure ? Ajoutez le CGM à votre gamme grâce à notre modèle SKD et valorisez vos atouts industriels, tout en réduisant vos coûts opérationnels et logistiques locaux.
-      - image: /images/skd-audience-4.webp
+      - visual: image
+        image: /images/skd-audience-4.webp
+        imageAlt: Distributeurs établis développant leurs marges avec leur propre marque de CGM grâce au modèle SKD
         title: Distributeurs établis
-        text: >-
+        desc: >-
           Vous avez un réseau commercial mature, mais vous êtes las de revendre des marques tierces et de subir des guerres de prix qui érodent vos marges ? Passer à notre modèle SKD vous permet de lancer votre propre marque, de supprimer les marges amont et de reprendre la maîtrise totale de vos prix.
 
   - type: card-grid
@@ -103,7 +109,7 @@ sections:
 
   - type: card-grid
     media: icon
-    columns: 4
+    columns: 2
     dark: true
     title: Le SKD est-il adapté à votre organisation ?
     text: >-
@@ -127,7 +133,7 @@ sections:
           L'accès à des installations d'assemblage conformes aux standards des dispositifs médicaux et à une salle blanche pour l'intégration finale et le conditionnement.
 
   - type: step-flow
-    columns: 3
+    columns: 1
     title: Comment se déroule un partenariat SKD
     text: >-
       Du premier cadrage à l'approvisionnement continu — un parcours clair en cinq étapes pour lancer votre activité CGM localement.
@@ -157,10 +163,12 @@ sections:
     title: Spécifications techniques du CGM en SKD
     text: >-
       Nomenclature détaillée et spécifications matérielles à l'usage des partenaires qui évaluent le modèle CGM en SKD.
+    labelColumn: Module / composant SKD
     columns:
       - Description
       - Format livré
-    highlight: 0
+    highlight: -1
+    align: left
     rows:
       - label: Filament d'électrode du biocapteur
         cells:
@@ -204,9 +212,11 @@ sections:
     title: Prérequis de fabrication
     text: >-
       Ce que votre site doit avoir en place avant la première expédition SKD. Si un élément de cette liste vous manque, dites-le nous : plusieurs partenaires l'ont mis en place pendant la phase de faisabilité.
+    labelColumn: Exigence
     columns:
       - Spécification
-    highlight: 0
+    highlight: -1
+    align: left
     rows:
       - label: Classe de salle blanche
         cells:

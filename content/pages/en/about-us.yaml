@@ -4,14 +4,12 @@ path: /about-us/
 translationKey: about-us
 sections:
   - type: hero
-    variant: split
-    visual: image
+    variant: centered
+    backgroundImage: /images/about-factory.webp
     kicker: Founded 2016 · Shenzhen · B2B only
     title: A vertically integrated CGM manufacturer from China
     sub: Power your healthcare business with reliable CGM technologies, scalable manufacturing infrastructure, and flexible commercialization models tailored to regional healthcare markets. Start developing reliable glucose monitoring solutions more efficiently.
-    image: /images/about-factory.webp
     imageAlt: EverChek manufacturing facility and R&D centre building exterior in Shenzhen
-    ratio: 4/3
     buttons:
       - label: Start a partnership conversation
         href: /contact/
@@ -55,13 +53,19 @@ sections:
 
   - type: image-text
     variant: left
+    eyebrow: Our leadership & scientific foundation
     title: Prof. Xueji Zhang — Chief Scientist and Co-founder
-    text: |
-      Professor Xueji Zhang is a world-renowned scientist in the field of biosensing and electrochemical
-      analysis. With decades of research experience spanning sensor design, biomolecular detection, and
-      clinical diagnostics, he has been instrumental in establishing EverChek's core technology platform
-      from the ground up. His research bridges fundamental science and practical healthcare applications,
-      driving the development of glucose monitoring systems that meet rigorous clinical standards.
+    paragraphs:
+      - A research-driven team guided by one of the most published scientists in electrochemical biosensing.
+      - >-
+        Professor Xueji Zhang is a world-renowned scientist in the field of biosensing and electrochemical
+        analysis. With decades of research experience spanning sensor design, biomolecular detection, and
+        clinical diagnostics, he has been instrumental in establishing EverChek's core technology platform
+        from the ground up.
+      - >-
+        His research bridges fundamental science and practical healthcare applications, driving the
+        development of glucose monitoring systems that meet rigorous clinical standards.
+    bulletsTitle: Key credentials
     bullets:
       - Fellow of the Royal Society of Chemistry (FRSC)
       - Extensive publication record in top-tier journals on biosensing and electrochemistry
@@ -69,7 +73,9 @@ sections:
       - Led multiple national research programs in biomedical engineering and sensor development
     image: /images/x-zhang-transparent.webp
     imageAlt: Portrait of Professor Xueji Zhang, Chief Scientist and Co-founder of EverChek
-    ratio: 1/1
+    ratio: 3/4
+    fit: contain
+    mediaSize: compact
 
   - type: timeline
     title: Our milestones
@@ -94,7 +100,7 @@ sections:
 
   - type: card-grid
     center: true
-    columns: 3
+    columns: 2
     media: icon
     tint: true
     title: Our core technologies

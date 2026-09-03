@@ -5,14 +5,20 @@
 import Icon from '../Icon.astro';
 import { loadDict } from '../../lib/content';
 
-interface Props { locale?: string }
-const { locale = 'en' } = Astro.props;
+interface Props { locale?: string; title?: string; text?: string }
+const { locale = 'en', title, text } = Astro.props;
 
 const dict = loadDict(locale);
 const t = dict.contactForm;
 const d = dict.direct;
 ---
 <section class="section" style="padding-top: 32px;">
+  {(title || text) && (
+    <div class="container cf-head">
+      {title && <h2 class="cf-head-title">{title}</h2>}
+      {text && <p class="cf-head-text">{text}</p>}
+    </div>
+  )}
   <div class="container contact-grid">
     <form class="enquiry-form" id="enquiry-form" novalidate>
       <div class="form-row">
@@ -158,6 +164,10 @@ const d = dict.direct;
 </script>
 
 <style>
+  .cf-head { text-align: center; margin-bottom: clamp(24px, 3vw, 38px); }
+  .cf-head-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
+  .cf-head-text { font-size: 15.5px; color: var(--mid); line-height: 1.75; margin: 12px auto 0; max-width: 640px; }
+
   .contact-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(28px, 4vw, 56px); align-items: start; }
 
   .enquiry-form {

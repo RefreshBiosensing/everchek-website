@@ -1,10 +1,10 @@
 ---
 // 图文功能行 — alternating rows: visual tile one side, copy the other.
 // Visual per row: an icon tile, the app phone mock, or the terminal mock.
-import Icon from '../Icon.astro';
 import VisualPhone from '../VisualPhone.astro';
 import VisualTerminal from '../VisualTerminal.astro';
 import BlockImage from '../blocks/BlockImage.astro';
+import Icon from '../Icon.astro';
 
 interface Item {
   id?: string;
@@ -14,34 +14,43 @@ interface Item {
   bullets?: string[];
   visual?: string;      // icon name, or 'phone' | 'terminal' | 'image'
   image?: string;
+  imageAlt?: string;
   imageNote?: string;
+  ratio?: string;       // per-row override of the section ratio
+  fit?: 'cover' | 'contain';
+  href?: string;
+  linkLabel?: string;
 }
 interface Props {
   eyebrow?: string;
   title?: string;
+  text?: string;
   items: Item[];
+  ratio?: string;       // aspect ratio of the image tile — match the real file so nothing is cropped
+  fit?: 'cover' | 'contain';
 }
-const { eyebrow, title, items = [] } = Astro.props;
+const { eyebrow, title, text, items = [], ratio = '4/3', fit = 'cover' } = Astro.props;
 
 const ICON_FOR: Record<string, string> = { curve: 'curve', bell: 'bell', blanket: 'bed' };
 ---
 <section class="fr-section">
-  {(title || eyebrow) && (
+  {(title || eyebrow || text) && (
     <div class="container center fr-head">
       {eyebrow && <div class="eyebrow">{eyebrow}</div>}
       {title && <h2 class="h2 center">{title}</h2>}
+      {text && <p class="fr-head-text">{text}</p>}
     </div>
   )}
   {items.map((f, i) => (
     <div class:list={['fr-row-wrap', { alt: i % 2 === 1 }]} id={f.id}>
       <div class:list={['container', 'fr-row', { rev: i % 2 === 1 }]}>
-        <div class="fr-visual">
+        <div class="fr-visual" style={`aspect-ratio:${(f.ratio ?? ratio).replace('/', ' / ')}`}>
           {f.visual === 'phone' ? (
             <VisualPhone width={150} />
           ) : f.visual === 'terminal' ? (
             <VisualTerminal width={150} />
           ) : f.visual === 'image' ? (
-            <div class="fr-img"><BlockImage src={f.image} alt={f.title} ratio="4/3" note={f.imageNote ?? f.title} /></div>
+            <div class="fr-img"><BlockImage src={f.image} alt={f.imageAlt ?? f.title} ratio={f.ratio ?? ratio} note={f.imageNote ?? f.title} fit={f.fit ?? fit} /></div>
           ) : (
             <div class="fr-icon"><Icon name={ICON_FOR[f.visual ?? ''] ?? f.visual ?? 'sensor'} size={54} /></div>
           )}
@@ -54,6 +63,9 @@ const ICON_FOR: Record<string, string> = { curve: 'curve', bell: 'bell', blanket
             <ul class="checks">
               {f.bullets.map((b) => <li>{b}</li>)}
             </ul>
+          )}
+          {f.href && (
+            <a class="fr-link" href={f.href}>{f.linkLabel ?? 'Learn more'} <Icon name="arrow" size={13} /></a>
           )}
         </div>
       </div>
@@ -73,14 +85,17 @@ const ICON_FOR: Record<string, string> = { curve: 'curve', bell: 'bell', blanket
     background: var(--blue-light);
     border: 1px solid var(--border);
     border-radius: 18px;
-    aspect-ratio: 4 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
   }
+  .fr-head-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin: 12px auto 0; max-width: 640px; }
   .fr-img { width: 100%; height: 100%; }
   .fr-img :global(img), .fr-img :global(.bi-ph) { width: 100%; height: 100%; }
+  /* fit: contain — tall art (phone screenshots) sits whole on the tinted panel
+     instead of being cropped or floating on a white slab. */
+  .fr-img :global(img.contain) { background: transparent; padding: clamp(14px, 2vw, 28px); }
   .fr-icon {
     width: 110px; height: 110px;
     border-radius: 28px;
@@ -102,6 +117,11 @@ const ICON_FOR: Record<string, string> = { curve: 'curve', bell: 'bell', blanket
   }
   .fr-title { font-size: clamp(19px, 2.1vw, 24px); font-weight: 700; letter-spacing: -0.015em; line-height: 1.3; margin-bottom: 10px; }
   .fr-desc { font-size: 14.5px; color: var(--mid); line-height: 1.75; margin-bottom: 16px; }
+  .fr-link {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 14px; font-weight: 700; color: var(--blue-deep);
+  }
+  .fr-link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
   @media (max-width: 820px) {
     .fr-row { grid-template-columns: 1fr; }

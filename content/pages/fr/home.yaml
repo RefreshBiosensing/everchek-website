@@ -34,7 +34,8 @@ sections:
     note: Capteur 14 jours étalonné en usine, sans piqûre au doigt · Transmetteur Bluetooth et application patient · API/SDK pour votre propre plateforme.
     image: /images/product-composite.webp
     imageAlt: Applicateur de capteur CGM EverChek à côté d’un smartphone affichant l’application patient avec une glycémie en temps réel et la courbe de tendance sur 12 heures
-    ratio: 4/3
+    # product-composite.webp fait 388×412 — ratio réel, rien n’est rogné
+    ratio: 97/103
   - type: trustbar
     label: Ce qui se trouve derrière le produit
     items:
@@ -75,7 +76,8 @@ sections:
     text: Créée en 2016, notre société est spécialisée dans les technologies de biodétection et se consacre à la R&D et à la commercialisation de solutions intelligentes de biodétection portables, miniaturisées et nomades. En nous appuyant sur nos propres puces capteurs, biocapteurs et plateformes algorithmiques, nous aidons les marques de santé à commercialiser des produits CGM à travers des modèles de coopération flexibles, qui vont du composant de base au système destiné à l’utilisateur final.
     image: /images/about-factory-corridor.webp
     imageAlt: Couloir de salle blanche dans l’usine CGM EverChek à Shenzhen, avec les sas d’habillage et les salles d’équipement menant au hall de production
-    ratio: 16/9
+    # about-factory-corridor.webp fait 1600×1200 — 4/3
+    ratio: 4/3
     cta:
       label: En savoir plus sur EverChek
       href: /fr/a-propos/
@@ -113,7 +115,8 @@ sections:
     columns: 2
     media: image
     center: true
-    ratio: 4/3
+    ratio: 16/9
+    fit: contain
     title: Un aperçu du système de mesure continue du glucose EverChek
     text: Notre système de mesure continue du glucose EverChek associe une technologie de biocapteur de pointe à une conception centrée sur l’utilisateur, et restitue des données glycémiques fiables en temps réel via une application mobile intuitive.
     items:
@@ -130,7 +133,9 @@ sections:
   - type: image-text
     variant: right
     title: Des solutions CGM en SKD adaptées aux marchés de santé régionaux
-    text: Notre solution CGM en SKD permet aux acteurs de santé de localiser l’assemblage final, de concourir aux appels d’offres régionaux, de réduire les droits d’importation et d’accélérer l’entrée sur le marché grâce à une infrastructure d’approvisionnement CGM stable et durable. Lancez votre propre marque de CGM sans le temps, le coût et la complexité qu’exige la construction de la technologie et de la production à partir de zéro.
+    paragraphs:
+      - Notre solution CGM en SKD permet aux acteurs de santé de localiser l’assemblage final, de concourir aux appels d’offres régionaux, de réduire les droits d’importation et d’accélérer l’entrée sur le marché grâce à une infrastructure d’approvisionnement CGM stable et durable.
+      - Lancez votre propre marque de CGM sans le temps, le coût et la complexité qu’exige la construction de la technologie et de la production à partir de zéro.
     bullets:
       - Assemblage final réalisé sur votre propre marché
       - Répond aux exigences de taux d’intégration locale dans les marchés publics
@@ -138,26 +143,40 @@ sections:
       - Approvisionnement en kits sur le long terme auprès d’un seul fabricant
     image: /images/cgm-skd-cooperation.webp
     imageAlt: Trois partenaires du secteur de la santé examinent les composants d’un kit CGM SKD — applicateurs de capteur, transmetteur et carte capteur — sur une table de réunion avec tablettes et plans techniques
-    ratio: 16/9
+    # cgm-skd-cooperation.webp fait 1338×718 — ratio réel
+    ratio: 669/359
     cta:
       label: Lancer une étude de faisabilité SKD
       href: /fr/montage-local-cgm/
     tint: true
-  - type: checklist
-    columns: 2
-    panel: true
-    title: Conçu exclusivement pour les partenariats CGM en B2B
-    text: Nous nous consacrons exclusivement à aider les partenaires de santé à lancer et développer leur propre activité CGM partout dans le monde.
-    items:
-      - Développement intégré verticalement — nous développons en interne les puces, les biocapteurs, les algorithmes, les systèmes matériels et l’infrastructure numérique, ce qui nous donne une meilleure maîtrise technique et une stabilité d’approvisionnement durable.
-      - Qualité stable — nos procédés de fabrication sont pilotés par MSP (maîtrise statistique des procédés) afin de réduire les variations et de maintenir une qualité constante d’un lot à l’autre. Vous recevez des capteurs fiables, au comportement identique.
-      - Voies de coopération flexibles — maîtrisant l’intégralité de la R&D et de la fabrication, nous laissons les acteurs de santé choisir librement le modèle de partenariat CGM correspondant à leurs objectifs de marché.
-      - "Collaboration technique dédiée — nos équipes d’ingénierie et d’exploitation travaillent étroitement avec les partenaires à chaque étape : intégration applicative, personnalisation, production et commercialisation."
-      - Appui réglementaire et conformité — nous accompagnons les acteurs de santé avec la documentation technique, les rapports d’essais et les éléments de conformité qui simplifient la préparation de votre dossier et accélèrent la mise sur le marché.
-      - Capacité de production évolutive — notre outil industriel accompagne aussi bien un déploiement initial qu’une montée en volume ultérieure, sans vous obliger à requalifier votre chaîne d’approvisionnement.
   - type: card-grid
     columns: 3
     center: true
+    title: Conçu exclusivement pour les partenariats CGM en B2B
+    text: Nous nous consacrons exclusivement à aider les partenaires de santé à lancer et développer leur propre activité CGM partout dans le monde.
+    items:
+      - icon: data
+        title: Développement intégré verticalement
+        text: Nous développons en interne les puces, les biocapteurs, les algorithmes, les systèmes matériels et l’infrastructure numérique, ce qui nous donne une meilleure maîtrise technique et une stabilité d’approvisionnement durable.
+      - icon: shield
+        title: Qualité stable
+        text: Nos procédés de fabrication sont pilotés par MSP (maîtrise statistique des procédés) afin de réduire les variations et de maintenir une qualité constante d’un lot à l’autre. Vous recevez des capteurs fiables, au comportement identique.
+      - icon: handshake
+        title: Voies de coopération flexibles
+        text: Maîtrisant l’intégralité de la R&D et de la fabrication, nous laissons les acteurs de santé choisir librement le modèle de partenariat CGM correspondant à leurs objectifs de marché.
+      - icon: users
+        title: Collaboration technique dédiée
+        text: "Nos équipes d’ingénierie et d’exploitation travaillent étroitement avec les partenaires à chaque étape : intégration applicative, personnalisation, production et commercialisation."
+      - icon: doc
+        title: Appui réglementaire et conformité
+        text: Nous accompagnons les acteurs de santé avec la documentation technique, les rapports d’essais et les éléments de conformité qui simplifient la préparation de votre dossier et accélèrent la mise sur le marché.
+      - icon: factory
+        title: Capacité de production évolutive
+        text: Notre outil industriel accompagne aussi bien un déploiement initial qu’une montée en volume ultérieure, sans vous obliger à requalifier votre chaîne d’approvisionnement.
+  - type: card-grid
+    columns: 3
+    center: true
+    tint: true
     eyebrow: Documentation
     title: Certifications et validation
     text: Nos systèmes CGM s’appuient sur des essais réglementaires et une documentation de validation qui aident votre entreprise à préparer son dossier d’homologation et à commercialiser en confiance.
@@ -175,32 +194,37 @@ sections:
     moreLink:
       label: Lire notre politique de communication
       href: /fr/documentation/
-  - type: card-grid
+  - type: blog-index
     columns: 3
-    media: image
+    featureFirst: false
     center: true
-    ratio: 16/9
     title: Analyses CGM pour les marques de santé
     text: Nos analyses sur le développement des CGM, la fabrication de dispositifs médicaux, les stratégies de commercialisation et l’innovation en santé numérique.
-    items:
-      - image: /blog/private-label-cgm-images/01-private-label-cgm.webp
-        kicker: Technologie CGM
-        title: "CGM en marque blanche : lancer sa propre marque de CGM vite et à moindre coût"
-        text: Guide du CGM en marque blanche pour les marques de santé et les distributeurs. Comment lancer une marque de CGM rapidement et à faible coût via la marque blanche, l’OEM ou la fabrication en SKD.
+    posts:
+      - title: "CGM en marque blanche : lancer sa propre marque de CGM vite et à moindre coût"
         href: /fr/blog/cgm-marque-blanche/
-        linkLabel: Lire le guide
-      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
-        kicker: Fabrication
-        title: "Qu’est-ce que le SKD en CGM ? Guide B2B de la fabrication semi-knocked-down"
-        text: Ce que contient un kit SKD, à qui il s’adresse, le déroulement étape par étape, les bénéfices clés et comment choisir un fabricant fiable.
+        excerpt: Guide du CGM en marque blanche pour les marques de santé et les distributeurs. Comment lancer une marque de CGM rapidement et à faible coût via la marque blanche, l’OEM ou la fabrication en SKD.
+        image: /blog/private-label-cgm-images/01-private-label-cgm.webp
+        imageAlt: Concept de marque de CGM en marque blanche
+        category: Technologie CGM
+        author: Équipe EverChek
+        date: 6 juillet 2026
+      - title: "Qu’est-ce que le SKD en CGM ? Guide B2B de la fabrication semi-knocked-down"
         href: /fr/blog/qu-est-ce-que-le-cgm-skd/
-        linkLabel: Lire le guide
-      - image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
-        kicker: Technologie CGM
-        title: "CGM ou BGM : comment choisir pour votre activité de santé"
-        text: Comparaison complète du CGM et du BGM pour les marques de santé — exactitude, données de marché, voies réglementaires, intégration en santé numérique et critères de choix.
+        excerpt: Ce que contient un kit SKD, à qui il s’adresse, le déroulement étape par étape, les bénéfices clés et comment choisir un fabricant fiable.
+        image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
+        imageAlt: "Composants d’un kit CGM SKD : capteur, transmetteur, patch adhésif et applicateur"
+        category: Fabrication
+        author: Équipe EverChek
+        date: 3 juillet 2026
+      - title: "CGM ou BGM : comment choisir pour votre activité de santé"
         href: /fr/blog/cgm-vs-bgm/
-        linkLabel: Lire la comparaison
+        excerpt: Comparaison complète du CGM et du BGM pour les marques de santé — exactitude, données de marché, voies réglementaires, intégration en santé numérique et critères de choix.
+        image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
+        imageAlt: "Illustration comparant le CGM et le BGM : mesure continue contre mesures ponctuelles"
+        category: Technologie CGM
+        author: Équipe EverChek
+        date: 30 juin 2026
     moreLink:
       label: Tous les articles CGM
       href: /fr/blog-cgm/

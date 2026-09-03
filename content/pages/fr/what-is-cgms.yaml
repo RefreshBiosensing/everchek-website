@@ -4,7 +4,8 @@ path: /fr/qu-est-ce-qu-un-cgm/
 translationKey: what-is-cgms
 sections:
   - type: hero
-    variant: standard
+    variant: centered
+    backgroundImage: /images/5.webp
     title: Qu’est-ce qu’un système de mesure continue du glucose (CGM) ?
     sub: >-
       Un système de mesure continue du glucose (CGM) est un dispositif médical qui suit les niveaux de
@@ -20,34 +21,35 @@ sections:
         href: /fr/systeme-mesure-continue-glucose/
         style: ghost
 
-  - type: step-flow
-    title: Comment fonctionne un système CGM ?
-    text: >-
-      Le glucose passe naturellement du sang vers le liquide interstitiel : les valeurs mesurées dans
-      le liquide interstitiel reflètent donc étroitement la glycémie sanguine.
-    columns: 4
-    items:
-      - icon: patch
-        title: Poser le capteur
-        desc: Une fois le CGM appliqué sur le bras, le capteur commence à fonctionner sous la peau.
-      - icon: sensor
-        title: Analyser le liquide interstitiel
-        desc: >-
-          Le capteur contient des biomatériaux qui réagissent avec le glucose du liquide interstitiel.
-          Ces réactions génèrent des signaux biochimiques, détectés puis convertis en valeurs de
-          glucose toutes les quelques minutes.
-      - icon: wifi
-        title: Transmettre les données
-        desc: Le transmetteur envoie ensuite ces données à votre application mobile ou à votre récepteur.
-      - icon: curve
-        title: Voir les tendances et les alertes
-        desc: >-
-          Vous pouvez ainsi consulter les tendances glycémiques, recevoir des alertes haute et basse et
-          suivre les variations tout au long de la journée.
+  - type: image-text
+    variant: left
+    title: Comment fonctionne un système CGM ?
+    image: /images/cgm-sensor-skin-diagram.svg
+    imageAlt: >-
+      Coupe de la peau montrant le filament du capteur CGM atteignant le liquide interstitiel sous
+      l’épiderme et le derme, le transmetteur restant à la surface de la peau
+    ratio: 4/3
+    fit: contain
+    steps:
+      - Une fois le CGM appliqué sur le bras, le capteur commence à fonctionner sous la peau.
+      - >-
+        Le capteur contient des biomatériaux qui réagissent avec le glucose du liquide interstitiel.
+        Ces réactions génèrent des signaux biochimiques, détectés puis convertis en valeurs de
+        glucose toutes les quelques minutes.
+      - Le transmetteur envoie ensuite ces données à votre application mobile ou à votre récepteur.
+      - >-
+        Vous pouvez ainsi consulter les tendances glycémiques, recevoir des alertes haute et basse et
+        suivre les variations tout au long de la journée.
+    note: >-
+      À noter : le glucose passe naturellement du sang vers le liquide interstitiel : les valeurs
+      mesurées dans le liquide interstitiel reflètent donc étroitement la glycémie sanguine.
+    tint: true
 
   - type: compare-table
     title: Mesure continue du glucose et test glycémique traditionnel
     highlight: 0
+    align: left
+    labelColumn: Ce que vous obtenez
     columns:
       - CGM
       - Test glycémique traditionnel
@@ -106,7 +108,6 @@ sections:
             text: Historique glycémique continu
           - state: "no"
             text: Résultats de tests isolés
-    tint: true
 
   - type: card-grid
     title: Les signaux de marché qui portent la croissance du CGM
@@ -114,8 +115,9 @@ sections:
       L’épidémie mondiale de diabète et la hausse des dépenses de santé accélèrent la demande de
       solutions de surveillance continue.
     columns: 4
-    media: none
+    media: stat
     center: true
+    tint: true
     items:
       - kicker: 589M+
         title: Adultes vivant avec le diabète dans le monde
@@ -123,64 +125,72 @@ sections:
           Le nombre d’adultes vivant avec le diabète a plus que triplé depuis 2000, sous l’effet du
           vieillissement des populations, de la progression de l’obésité et de modes de vie de plus en
           plus sédentaires, dans les pays développés comme dans les pays en développement.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source : IDF Diabetes Atlas"
+        source:
+          label: "Source : IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
       - kicker: $1T+
         title: Dépenses de santé annuelles mondiales liées au diabète
         text: >-
           Le diabète représente une part importante et croissante des dépenses de santé mondiales :
           médicaments, dispositifs, hospitalisations et gestion des complications de long terme, dans
           toutes les régions.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source : IDF Diabetes Atlas"
+        source:
+          label: "Source : IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
       - kicker: 853M+
         title: Adultes diabétiques projetés à l’horizon 2050
         text: >-
           Sans intervention significative, le nombre d’adultes diabétiques devrait continuer à
           progresser fortement, créant une demande durable en outils avancés de surveillance et de
           prise en charge.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source : IDF Diabetes Atlas"
+        source:
+          label: "Source : IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
       - kicker: $13.4B
         title: Taille du marché mondial du CGM en 2025
         text: >-
           Le marché des dispositifs CGM a atteint une valeur estimée à 13,38 milliards USD en 2025,
           dont 5,6 milliards USD pour les seuls États-Unis, portée par des politiques de remboursement
           favorables et par l’adoption croissante dans le diabète de type 2.
-        href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
-        linkLabel: "Source : Grand View Research"
+        source:
+          label: "Source : Grand View Research"
+          href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
       - kicker: 16.3%
         title: TCAC prévu 2026–2035
         text: >-
           Le marché du CGM devrait croître à un taux de croissance annuel composé de 16,3 % de 2026 à
           2035, dépassant la plupart des autres segments du dispositif médical et traduisant une
           adoption mondiale qui s’accélère.
-        href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
-        linkLabel: "Source : GM Insights"
+        source:
+          label: "Source : GM Insights"
+          href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
       - kicker: $41.4B
         title: Taille projetée du marché du CGM à l’horizon 2033
         text: >-
           Le marché mondial des dispositifs CGM devrait presque tripler par rapport à son niveau de
           2025 et atteindre 41,41 milliards USD en 2033, à mesure que les technologies non invasives et
           les analyses assistées par IA portent la génération suivante d’adoption.
-        href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
-        linkLabel: "Source : Grand View Research"
+        source:
+          label: "Source : Grand View Research"
+          href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
       - kicker: 50.5%
         title: Patients diabétiques n’atteignant pas les objectifs glycémiques
         text: >-
           Malgré les progrès thérapeutiques, seule la moitié environ des personnes diabétiques atteint
           les objectifs glycémiques recommandés — ce qui souligne le besoin urgent de meilleures
           solutions de surveillance continue.
-        href: https://diabetesjournals.org/clinical/article/43/3/399/158023
-        linkLabel: "Source : ADA Clinical Diabetes"
+        source:
+          label: "Source : ADA Clinical Diabetes"
+          href: https://diabetesjournals.org/clinical/article/43/3/399/158023
       - kicker: 4.2%
         title: Rythme de progression de la prévalence mondiale du diabète
         text: >-
           La prévalence du diabète continue de progresser d’environ 4,2 % par an dans les régions en
           développement, sous l’effet de l’urbanisation, des changements alimentaires et du
           vieillissement des populations — ce qui élargit le marché adressable du CGM.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source : IDF Diabetes Atlas"
+        source:
+          label: "Source : IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
 
   - type: card-grid
     title: Le CGM en vaut-il la peine pour les acteurs de santé ?

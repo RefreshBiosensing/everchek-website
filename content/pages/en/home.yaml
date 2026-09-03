@@ -32,7 +32,8 @@ sections:
     note: Factory-calibrated 14-day sensor, no fingerstick · Bluetooth transmitter and patient app · API/SDK for your own platform.
     image: /images/product-composite.webp
     imageAlt: EverChek CGM sensor applicator beside a smartphone showing the patient app with a live glucose reading and 12-hour trend curve
-    ratio: 4/3
+    # product-composite.webp is 388×412 — its true ratio, so the applicator and the phone are never cut off
+    ratio: 97/103
   - type: trustbar
     label: What sits behind the product
     items:
@@ -73,7 +74,8 @@ sections:
     text: Founded in 2016, we are a biosensing technology company focused on the R&D and commercialization of wearable, miniaturized, and portable intelligent biosensing solutions. Built on self-developed sensor chips, biosensors, and algorithm platforms, we help healthcare brands commercialize CGM products through flexible cooperation models covering everything from core components to end-user systems.
     image: /images/about-factory-corridor.webp
     imageAlt: Cleanroom corridor inside the EverChek CGM factory in Shenzhen, with gowning and equipment rooms leading to the production hall
-    ratio: 16/9
+    # about-factory-corridor.webp is 1600×1200 — 4/3, matching the tall image panel the original used
+    ratio: 4/3
     cta:
       label: More about EverChek
       href: /about-us/
@@ -110,7 +112,10 @@ sections:
     columns: 2
     media: image
     center: true
-    ratio: 4/3
+    # The original showed both product shots with object-fit: contain in a fixed frame, so neither
+    # the device photo nor the portrait phone screenshot was ever cut. Keep that.
+    ratio: 16/9
+    fit: contain
     title: A glance at EverChek continuous glucose monitor system
     text: Our EverChek continuous glucose monitoring system combines cutting-edge biosensor technology with user-centric design, delivering accurate real-time glucose insights through an intuitive mobile app experience.
     items:
@@ -127,7 +132,9 @@ sections:
   - type: image-text
     variant: right
     title: Flexible CGM SKD solutions for regional healthcare markets
-    text: Our CGM SKD solution enables healthcare businesses to localize final assembly, support regional tender bidding, reduce import duties, and accelerate market entry through stable long-term CGM supply infrastructure. Launch your own CGM brand without the time, cost, and complexity of building the technology and production from scratch.
+    paragraphs:
+      - Our CGM SKD solution enables healthcare businesses to localize final assembly, support regional tender bidding, reduce import duties, and accelerate market entry through stable long-term CGM supply infrastructure.
+      - Launch your own CGM brand without the time, cost, and complexity of building the technology and production from scratch.
     bullets:
       - Final assembly completed in your own market
       - Supports local-content requirements in public tenders
@@ -135,26 +142,40 @@ sections:
       - Long-term kit supply from one manufacturer
     image: /images/cgm-skd-cooperation.webp
     imageAlt: Three healthcare business partners reviewing CGM SKD kit components — sensor applicators, transmitter and sensor board — on a meeting table with tablets and technical drawings
-    ratio: 16/9
+    # cgm-skd-cooperation.webp is 1338×718 — its true ratio; 16/9 clipped the people at both edges
+    ratio: 669/359
     cta:
       label: Start an SKD feasibility review
       href: /cgm-skd/
     tint: true
-  - type: checklist
-    columns: 2
-    panel: true
-    title: Built exclusively for B2B CGM partnerships
-    text: We focus exclusively on supporting healthcare partners launch and scale their own CGM businesses worldwide.
-    items:
-      - Vertically integrated development — we develop chips, biosensors, algorithms, hardware systems, and digital infrastructure all in-house to provide stronger technical control and long-term supply stability.
-      - Stable quality — we implement SPC-controlled manufacturing processes to reduce variations and maintain consistent batch quality. You receive reliable sensors that perform the same.
-      - Flexible cooperation pathways — with full ownership of R&D and manufacturing, we enable healthcare businesses to choose the CGM partnership model freely to fit their market goals.
-      - Dedicated technical collaboration — our engineering and operational teams work closely with partners throughout app integration, customization, production, and commercialization stages.
-      - Regulatory & compliance support — we support healthcare businesses with technical documentation, test reports, and compliance materials to simplify your regulatory preparation for faster commercialization.
-      - Long-term manufacturing scalability — our production infrastructure supports both early-stage deployment and future large-scale expansion, so you can grow without requalifying your supply chain.
   - type: card-grid
     columns: 3
     center: true
+    title: Built exclusively for B2B CGM partnerships
+    text: We focus exclusively on supporting healthcare partners launch and scale their own CGM businesses worldwide.
+    items:
+      - icon: data
+        title: Vertically integrated development
+        text: We develop chips, biosensors, algorithms, hardware systems, and digital infrastructure all in-house to provide stronger technical control and long-term supply stability.
+      - icon: shield
+        title: Stable quality
+        text: We implement SPC-controlled manufacturing processes to reduce variations and maintain consistent batch quality. You receive reliable sensors that perform the same.
+      - icon: handshake
+        title: Flexible cooperation pathways
+        text: With full ownership of R&D and manufacturing, we enable healthcare businesses to choose the CGM partnership model freely to fit their market goals.
+      - icon: users
+        title: Dedicated technical collaboration
+        text: Our engineering and operational teams work closely with partners throughout app integration, customization, production, and commercialization stages.
+      - icon: doc
+        title: Regulatory & compliance support
+        text: We support healthcare businesses with technical documentation, test reports, and compliance materials to simplify your regulatory preparation for faster commercialization.
+      - icon: factory
+        title: Long-term manufacturing scalability
+        text: Our production infrastructure supports both early-stage deployment and future large-scale expansion. You can grow without requalifying your supply chain.
+  - type: card-grid
+    columns: 3
+    center: true
+    tint: true
     eyebrow: Documentation
     title: Certifications & validation
     text: Our CGM systems are supported by regulatory testing and validation documentation, helping your business prepare its regulatory submission and commercialize confidently.
@@ -172,32 +193,37 @@ sections:
     moreLink:
       label: Read our disclosure policy
       href: /certifications/
-  - type: card-grid
+  - type: blog-index
     columns: 3
-    media: image
+    featureFirst: false
     center: true
-    ratio: 16/9
     title: CGM insight for healthcare brands
     text: Discover insights on CGM development, healthcare manufacturing, commercialization strategies, and digital health innovation.
-    items:
-      - image: /blog/private-label-cgm-images/01-private-label-cgm.webp
-        kicker: CGM Technology
-        title: "Private label CGM: how to start your own CGM brand fast and cost-effectively"
-        text: Private label CGM guide for healthcare brands and distributors. Learn how to start a CGM brand fast at low cost via private label, OEM, or SKD manufacturing.
+    posts:
+      - title: "Private label CGM: how to start your own CGM brand fast and cost-effectively"
         href: /blog/private-label-cgm/
-        linkLabel: Read the guide
-      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
-        kicker: Manufacturing
-        title: "What is CGM SKD? A B2B guide to semi-knocked-down CGM manufacturing"
-        text: What is in an SKD kit, who it is for, the step-by-step process, the key benefits, and how to choose a reliable manufacturer.
+        excerpt: Private label CGM guide for healthcare brands and distributors. Learn how to start a CGM brand fast at low cost via private label, OEM, or SKD manufacturing.
+        image: /blog/private-label-cgm-images/01-private-label-cgm.webp
+        imageAlt: Private label CGM brand concept
+        category: CGM Technology
+        author: EverChek Team
+        date: July 6, 2026
+      - title: "What is CGM SKD? A B2B guide to semi-knocked-down CGM manufacturing"
         href: /blog/what-is-cgm-skd/
-        linkLabel: Read the guide
-      - image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
-        kicker: CGM Technology
-        title: "CGM vs BGM: how to choose for your healthcare business"
-        text: A complete comparison of CGM and BGM for healthcare brands — accuracy, market data, regulatory pathways, digital health integration, and how to choose.
+        excerpt: What is in an SKD kit, who it is for, the step-by-step process, the key benefits, and how to choose a reliable manufacturer.
+        image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
+        imageAlt: CGM SKD kit components including sensor, transmitter, adhesive patch, and applicator
+        category: Manufacturing
+        author: EverChek Team
+        date: July 3, 2026
+      - title: "CGM vs BGM: how to choose for your healthcare business"
         href: /blog/cgm-vs-bgm/
-        linkLabel: Read the comparison
+        excerpt: A complete comparison of CGM and BGM for healthcare brands — accuracy, market data, regulatory pathways, digital health integration, and how to choose.
+        image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
+        imageAlt: CGM and BGM comparison concept illustration showing continuous vs discrete glucose monitoring
+        category: CGM Technology
+        author: EverChek Team
+        date: June 30, 2026
     moreLink:
       label: All CGM articles
       href: /cgm-blogs/

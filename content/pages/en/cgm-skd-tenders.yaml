@@ -20,10 +20,12 @@ sections:
     blocks:
       - text: Government healthcare tenders represent a significant opportunity for medical device companies. Many countries, particularly in Southeast Asia, the Middle East, Africa, and Latin America, are investing heavily in diabetes care infrastructure, including CGM systems.
       - text: However, winning these tenders requires meeting specific qualification criteria, including local content requirements, technology transfer commitments, and after-sales service capabilities.
+  # Four H3 subsections of running prose in the original — 4 narrow columns squeezed
+  # 50-word paragraphs into slivers. Two columns give each one room to read.
   - type: card-grid
     title: The SKD Advantage
     text: The Semi-Knocked Down (SKD) manufacturing model offers a unique competitive edge in government tender bidding.
-    columns: 4
+    columns: 2
     media: icon
     items:
       - icon: building

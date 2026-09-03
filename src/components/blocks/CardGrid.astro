@@ -1,5 +1,8 @@
 ---
-// 卡片网格 — 2/3/4/5 columns. Each card takes an icon OR an image, plus title/text/link.
+// 卡片网格 — 2/3/4/5 columns. Each card takes an icon OR an image OR a big statistic,
+// plus title/text/link. media: 'stat' promotes `kicker` to a large figure (market-data cards),
+// and `source` ({ label, href }) renders a small cited-source link under the card — put the whole
+// visible string in `label` (e.g. "Source: IDF Diabetes Atlas") so it stays translatable.
 import BlockImage from './BlockImage.astro';
 import Icon from '../Icon.astro';
 
@@ -10,8 +13,12 @@ interface Item {
   kicker?: string;
   title?: string;
   text?: string;
+  bullets?: string[];          // tick list inside the card — for two-up "what you get" cards
   href?: string;
   linkLabel?: string;
+  source?: { label: string; href: string };
+  ratio?: string;              // per-card override — match the real file so nothing is cropped
+  fit?: 'cover' | 'contain';   // 'contain' for product shots that must not be cut
 }
 interface Props {
   eyebrow?: string;
@@ -19,8 +26,9 @@ interface Props {
   text?: string;
   items: Item[];
   columns?: 2 | 3 | 4 | 5;
-  media?: 'icon' | 'image' | 'none';
+  media?: 'icon' | 'image' | 'none' | 'stat';
   ratio?: string;
+  fit?: 'cover' | 'contain';
   tint?: boolean;
   dark?: boolean;
   center?: boolean;
@@ -30,7 +38,7 @@ interface Props {
 }
 const {
   eyebrow, title, text, items = [], columns = 3,
-  media = 'icon', ratio = '4/3', tint = false, dark = false, center = true,
+  media = 'icon', ratio = '4/3', fit = 'cover', tint = false, dark = false, center = true,
   note, noteLink, moreLink,
 } = Astro.props;
 const noteParts = note && noteLink ? note.split(noteLink.label) : undefined;
@@ -51,17 +59,28 @@ const noteParts = note && noteLink ? note.split(noteLink.label) : undefined;
           <Tag class="cg-card" href={it.href}>
             {media === 'image' && (
               <div class="cg-media">
-                <BlockImage src={it.image} alt={it.title ?? ''} ratio={ratio} note={it.imageNote ?? it.title} />
+                <BlockImage src={it.image} alt={it.title ?? ''} ratio={it.ratio ?? ratio} note={it.imageNote ?? it.title} fit={it.fit ?? fit} />
               </div>
             )}
             {media === 'icon' && it.icon && (
               <div class="cg-icon"><Icon name={it.icon} size={24} /></div>
             )}
-            {it.kicker && <div class="cg-kicker">{it.kicker}</div>}
+            {media === 'stat' && it.kicker && <div class="cg-stat">{it.kicker}</div>}
+            {media !== 'stat' && it.kicker && <div class="cg-kicker">{it.kicker}</div>}
             {it.title && <h3 class="cg-card-title">{it.title}</h3>}
             {it.text && <p class="cg-card-text">{it.text}</p>}
+            {it.bullets && it.bullets.length > 0 && (
+              <ul class="checks cg-bullets">
+                {it.bullets.map((b) => <li>{b}</li>)}
+              </ul>
+            )}
             {it.href && (
               <span class="cg-link">{it.linkLabel ?? 'Learn more'} <Icon name="arrow" size={13} /></span>
+            )}
+            {it.source && (
+              <p class="cg-source">
+                <a href={it.source.href} target="_blank" rel="noopener">{it.source.label}</a>
+              </p>
             )}
           </Tag>
         );
@@ -120,9 +139,21 @@ const noteParts = note && noteLink ? note.split(noteLink.label) : undefined;
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 16px;
   }
+  .cg-stat {
+    font-size: clamp(30px, 3.4vw, 40px); font-weight: 700; line-height: 1.05;
+    letter-spacing: -0.03em; color: var(--blue-deep);
+    font-variant-numeric: tabular-nums; margin-bottom: 10px;
+  }
+  .cg-source { font-size: 12px; color: var(--soft); margin-top: 14px; line-height: 1.5; }
+  .cg-source a { color: var(--soft); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+  .dark .cg-stat { color: var(--blue); }
+  .dark .cg-source { color: #6b8898; }
+  .dark .cg-source a { color: var(--blue); }
   .cg-kicker { font-size: 11px; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--blue-deep); margin-bottom: 7px; }
   .cg-card-title { font-size: 16.5px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 8px; line-height: 1.3; }
   .cg-card-text { font-size: 14px; color: var(--mid); line-height: 1.7; }
+  .cg-bullets { margin-top: 18px; gap: 11px; text-align: left; }
+  .cg-bullets :global(li) { font-size: 14px; }
   .cg-note { font-size: 13px; color: var(--soft); margin: 22px auto 0; line-height: 1.6; max-width: 720px; text-align: center; }
   .cg-note a { color: var(--blue-deep); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
   .cg-more { margin-top: 28px; text-align: center; }

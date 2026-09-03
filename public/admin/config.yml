@@ -1217,6 +1217,77 @@ collections:
                   - label: Answer (50–90 words)
                     name: a
                     widget: text
+          - label: 📰 Blog index (article cards)
+            name: blog-index
+            widget: object
+            summary: "Blog index: {{fields.title}}"
+            fields:
+              - label: Eyebrow (hidden site-wide)
+                name: eyebrow
+                widget: string
+                required: false
+              - label: Heading (H2)
+                name: title
+                widget: string
+                required: false
+              - label: Intro
+                name: text
+                widget: text
+                required: false
+              - label: Columns
+                name: columns
+                widget: select
+                options:
+                  - "2"
+                  - "3"
+                  - "4"
+                required: false
+                default: "3"
+              - label: Feature the first article as a wide lead card
+                name: featureFirst
+                widget: boolean
+                required: false
+                default: false
+              - label: Light blue background
+                name: tint
+                widget: boolean
+                required: false
+                default: false
+              - label: Articles
+                name: posts
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: href
+                    widget: string
+                  - label: Excerpt
+                    name: excerpt
+                    widget: text
+                    required: false
+                  - label: Cover image
+                    name: image
+                    widget: image
+                    required: false
+                  - label: Cover alt text
+                    name: imageAlt
+                    widget: string
+                    required: false
+                  - label: Category
+                    name: category
+                    widget: string
+                    required: false
+                  - label: Author
+                    name: author
+                    widget: string
+                    required: false
+                  - label: Date
+                    name: date
+                    widget: string
+                    required: false
+                    hint: e.g. July 6, 2026
           - label: 🔗 Link pills
             name: link-pills
             widget: object
@@ -2808,6 +2879,77 @@ collections:
                   - label: Answer (50–90 words)
                     name: a
                     widget: text
+          - label: 📰 Blog index (article cards)
+            name: blog-index
+            widget: object
+            summary: "Blog index: {{fields.title}}"
+            fields:
+              - label: Eyebrow (hidden site-wide)
+                name: eyebrow
+                widget: string
+                required: false
+              - label: Heading (H2)
+                name: title
+                widget: string
+                required: false
+              - label: Intro
+                name: text
+                widget: text
+                required: false
+              - label: Columns
+                name: columns
+                widget: select
+                options:
+                  - "2"
+                  - "3"
+                  - "4"
+                required: false
+                default: "3"
+              - label: Feature the first article as a wide lead card
+                name: featureFirst
+                widget: boolean
+                required: false
+                default: false
+              - label: Light blue background
+                name: tint
+                widget: boolean
+                required: false
+                default: false
+              - label: Articles
+                name: posts
+                widget: list
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - label: Link
+                    name: href
+                    widget: string
+                  - label: Excerpt
+                    name: excerpt
+                    widget: text
+                    required: false
+                  - label: Cover image
+                    name: image
+                    widget: image
+                    required: false
+                  - label: Cover alt text
+                    name: imageAlt
+                    widget: string
+                    required: false
+                  - label: Category
+                    name: category
+                    widget: string
+                    required: false
+                  - label: Author
+                    name: author
+                    widget: string
+                    required: false
+                  - label: Date
+                    name: date
+                    widget: string
+                    required: false
+                    hint: e.g. July 6, 2026
           - label: 🔗 Link pills
             name: link-pills
             widget: object

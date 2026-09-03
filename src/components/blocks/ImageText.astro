@@ -13,6 +13,9 @@ interface Props {
   text?: string;
   paragraphs?: string[];
   bullets?: string[];
+  bulletsTitle?: string;   // small label above the tick list (e.g. "Key credentials")
+  steps?: string[];   // numbered vertical sequence next to the image (how-it-works blocks)
+  note?: string;      // small callout under the copy
   image?: string;
   imageAlt?: string;
   imageNote?: string;
@@ -25,7 +28,7 @@ interface Props {
 }
 const {
   layout = 'left',
-  eyebrow, title, text, paragraphs = [], bullets = [],
+  eyebrow, title, text, paragraphs = [], bullets = [], bulletsTitle, steps = [], note,
   image, imageAlt, imageNote, ratio = '4/3', fit = 'cover',
   mediaSize = 'default', imageBrandPatch,
   cta, tint = false,
@@ -46,11 +49,20 @@ const bodyParagraphs = paragraphs.length > 0 ? paragraphs : (text ? [text] : [])
           {bodyParagraphs.map((paragraph) => <p class="it-text">{paragraph}</p>)}
         </div>
       )}
+      {steps.length > 0 && (
+        <ol class="it-steps">
+          {steps.map((st) => (
+            <li class="it-step"><span class="it-step-num" aria-hidden="true"></span><span class="it-step-text">{st}</span></li>
+          ))}
+        </ol>
+      )}
+      {bullets.length > 0 && bulletsTitle && <div class="it-bullets-title">{bulletsTitle}</div>}
       {bullets.length > 0 && (
         <ul class="checks it-bullets">
           {bullets.map((b) => <li>{b}</li>)}
         </ul>
       )}
+      {note && <p class="it-note">{note}</p>}
       {cta && (
         <a class="btn primary it-cta" href={cta.href}>{cta.label} <Icon name="arrow" size={15} /></a>
       )}
@@ -95,6 +107,42 @@ const bodyParagraphs = paragraphs.length > 0 ? paragraphs : (text ? [text] : [])
   .it-text { font-size: 15.5px; color: var(--mid); line-height: 1.75; max-width: 620px; }
   .it-copy { display: grid; gap: 12px; }
   .it-bullets { margin-top: 18px; }
+  .it-bullets-title {
+    margin-top: 22px;
+    font-size: 12.5px; font-weight: 700; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--blue-deep);
+  }
+  .it-bullets-title + .it-bullets { margin-top: 10px; }
+
+  .it-steps { counter-reset: it-step; list-style: none; margin: 20px 0 0; padding: 0; }
+  .it-step {
+    counter-increment: it-step;
+    position: relative;
+    display: flex; align-items: flex-start; gap: 16px;
+    padding-bottom: 22px;
+  }
+  .it-step:last-child { padding-bottom: 0; }
+  .it-step:not(:last-child)::before {
+    content: '';
+    position: absolute; left: 15px; top: 34px; bottom: 2px;
+    width: 2px; background: var(--blue-light);
+  }
+  .it-step-num {
+    flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%;
+    background: var(--blue-light); border: 1px solid var(--border);
+    color: var(--blue-deep); font-size: 14px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; z-index: 1;
+  }
+  .it-step-num::after { content: counter(it-step); }
+  .it-step-text { font-size: 15px; line-height: 1.65; color: var(--ink); padding-top: 4px; }
+
+  .it-note {
+    margin-top: 24px; padding: 13px 16px;
+    background: var(--blue-faint); border-left: 3px solid var(--blue);
+    border-radius: 0 8px 8px 0;
+    font-size: 13.5px; line-height: 1.65; color: var(--mid);
+  }
   .it-cta { margin-top: 24px; }
 
   @media (max-width: 820px) {

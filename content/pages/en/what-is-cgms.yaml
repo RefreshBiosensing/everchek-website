@@ -4,7 +4,8 @@ path: /what-is-cgms/
 translationKey: what-is-cgms
 sections:
   - type: hero
-    variant: standard
+    variant: centered
+    backgroundImage: /images/5.webp
     title: What is a continuous glucose monitoring system (CGMS)?
     sub: >-
       A Continuous Glucose Monitoring System (CGMS) is a medical device that tracks glucose levels in
@@ -19,34 +20,35 @@ sections:
         href: /continuous-glucose-monitor/
         style: ghost
 
-  - type: step-flow
+  - type: image-text
+    variant: left
     title: How does CGMS work?
-    text: >-
-      Since glucose naturally moves from the bloodstream into the interstitial fluid, interstitial
-      glucose readings closely reflect blood glucose levels.
-    columns: 4
-    items:
-      - icon: patch
-        title: Apply the sensor
-        desc: Once the CGM is applied to your arm, the sensor begins working beneath the skin.
-      - icon: sensor
-        title: Read the interstitial fluid
-        desc: >-
-          The sensor contains biomaterials that react with glucose in the interstitial fluid. These
-          reactions generate biochemical signals, which are detected and converted into glucose values
-          every few minutes.
-      - icon: wifi
-        title: Transmit the data
-        desc: The transmitter then sends this data to your phone app or receiver.
-      - icon: curve
-        title: See trends and alerts
-        desc: >-
-          Allowing you to view glucose trends, receive high and low alerts, and monitor changes
-          throughout the day.
+    image: /images/cgm-sensor-skin-diagram.svg
+    imageAlt: >-
+      Cross-section of skin showing the CGM sensor filament reaching the interstitial fluid below the
+      epidermis and dermis, with the transmitter sitting on the skin surface
+    ratio: 4/3
+    fit: contain
+    steps:
+      - Once the CGM is applied to your arm, the sensor begins working beneath the skin.
+      - >-
+        The sensor contains biomaterials that react with glucose in the interstitial fluid. These
+        reactions generate biochemical signals, which are detected and converted into glucose values
+        every few minutes.
+      - The transmitter then sends this data to your phone app or receiver.
+      - >-
+        Allowing you to view glucose trends, receive high and low alerts, and monitor changes
+        throughout the day.
+    note: >-
+      Note: Since glucose naturally moves from the bloodstream into the interstitial fluid,
+      interstitial glucose readings closely reflect blood glucose levels.
+    tint: true
 
   - type: compare-table
     title: Continuous glucose monitoring vs. traditional glucose testing
     highlight: 0
+    align: left
+    labelColumn: What you get
     columns:
       - CGMS
       - Traditional glucose testing
@@ -105,7 +107,6 @@ sections:
             text: Continuous glucose history
           - state: "no"
             text: Individual test results
-    tint: true
 
   - type: card-grid
     title: Market signals driving CGM growth
@@ -113,8 +114,9 @@ sections:
       The global diabetes epidemic and rising healthcare expenditure are accelerating demand for
       continuous monitoring solutions.
     columns: 4
-    media: none
+    media: stat
     center: true
+    tint: true
     items:
       - kicker: 589M+
         title: Adults worldwide living with diabetes
@@ -122,64 +124,72 @@ sections:
           The number of adults living with diabetes has more than tripled since 2000, driven by aging
           populations, rising obesity rates, and increasingly sedentary lifestyles across both
           developed and developing nations.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source: IDF Diabetes Atlas"
+        source:
+          label: "Source: IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
       - kicker: $1T+
         title: Annual global diabetes healthcare expenditure
         text: >-
           Diabetes accounts for a significant and growing share of global healthcare spending, covering
           medications, devices, hospitalizations, and long-term complication management across all
           regions.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source: IDF Diabetes Atlas"
+        source:
+          label: "Source: IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
       - kicker: 853M+
         title: Projected adults with diabetes by 2050
         text: >-
           Without significant intervention, the number of adults with diabetes is projected to continue
           rising sharply, creating sustained long-term demand for advanced monitoring and management
           tools.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source: IDF Diabetes Atlas"
+        source:
+          label: "Source: IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
       - kicker: $13.4B
         title: Global CGM market size in 2025
         text: >-
           The CGM devices market reached an estimated USD 13.38 billion in 2025, with the US alone
           accounting for USD 5.6 billion, driven by strong reimbursement policies and growing Type 2
           diabetes adoption.
-        href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
-        linkLabel: "Source: Grand View Research"
+        source:
+          label: "Source: Grand View Research"
+          href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
       - kicker: 16.3%
         title: CAGR forecast 2026–2035
         text: >-
           The CGM market is projected to grow at a compound annual growth rate of 16.3% from 2026 to
           2035, outpacing most other medical device segments and reflecting accelerating global
           adoption.
-        href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
-        linkLabel: "Source: GM Insights"
+        source:
+          label: "Source: GM Insights"
+          href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
       - kicker: $41.4B
         title: Projected CGM market size by 2033
         text: >-
           The global CGM devices market is forecast to nearly triple from 2025 levels, reaching USD
           41.41 billion by 2033 as non-invasive technologies and AI-powered analytics drive
           next-generation adoption.
-        href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
-        linkLabel: "Source: Grand View Research"
+        source:
+          label: "Source: Grand View Research"
+          href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
       - kicker: 50.5%
         title: Diabetes patients not achieving glycemic targets
         text: >-
           Despite advances in treatment, only about half of individuals with diabetes achieve
           recommended glycemic targets — highlighting the urgent need for better continuous monitoring
           solutions.
-        href: https://diabetesjournals.org/clinical/article/43/3/399/158023
-        linkLabel: "Source: ADA Clinical Diabetes"
+        source:
+          label: "Source: ADA Clinical Diabetes"
+          href: https://diabetesjournals.org/clinical/article/43/3/399/158023
       - kicker: 4.2%
         title: Global diabetes prevalence growth rate
         text: >-
           Diabetes prevalence continues to rise at approximately 4.2% annually in developing regions,
           driven by urbanization, dietary changes, and aging populations — expanding the addressable
           CGM market.
-        href: https://idf.org/about-diabetes/diabetes-facts-figures/
-        linkLabel: "Source: IDF Diabetes Atlas"
+        source:
+          label: "Source: IDF Diabetes Atlas"
+          href: https://idf.org/about-diabetes/diabetes-facts-figures/
 
   - type: card-grid
     title: Are CGMS worth it for healthcare providers?

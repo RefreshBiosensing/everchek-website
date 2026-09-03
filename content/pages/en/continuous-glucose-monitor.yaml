@@ -20,36 +20,39 @@ sections:
     visual: image
     image: /images/product-composite.webp
     imageAlt: EverChek continuous glucose monitoring system — sensor and transmitter kit shown beside the companion app displaying a real-time glucose curve
-    ratio: 4/3
+    ratio: 388/412
 
-  - type: card-grid
+  - type: feature-rows
     title: Everything you need for smart glucose monitoring
     text: From real-time tracking to predictive alerts, our CGMS empowers users with full visibility into their glucose health.
-    columns: 3
-    media: image
     ratio: 1/1
-    center: true
+    fit: contain
     items:
-      - image: /images/cgm-app-phone-1.webp
-        title: Real-time glucose tracking
-        text: Automatically updates your glucose readings every 5 minutes. See exactly how your body respond to a meal, workout, medication, or mood swing without delay. Make adjustments now, not hours later.
-        imageNote: EverChek CGM app real-time glucose tracking screen
-      - image: /images/cgm-app-phone-2.webp
-        title: Generate glucose curves
-        text: Tracks your glucose 24/7 and map continuous data into clear patterns that single fingersticks can't capture. Provides long-term visibility into your glucose rhythms for better diabetes management.
-        imageNote: EverChek CGM app glucose curve chart screen
-      - image: /images/cgm-app-phone-3.webp
-        title: Predict hypo- and hyperglycemic events
-        text: Identifies small, moment-to-moment glucose changes as they happen, including rapid rises, gentle drops, and early shifts between meals or overnight. Provides early warnings before your glucose levels become too high or too low.
-        imageNote: EverChek CGM app hypo- and hyperglycemic event prediction screen
-      - image: /images/cgm-app-phone-4.webp
-        title: Customize glucose alerts
-        text: Create your personalized glucose limits. Receive timely notifications when your glucose levels rise above or fall below the target range, helping you stay informed and take action right away.
-        imageNote: EverChek CGM app custom high and low glucose alert settings screen
-      - image: /images/cgm-app-phone.webp
-        title: Move freely throughout the day
-        text: A tiny sensor sits just beneath your skin for a pain-free, barely noticeable fit. Waterproof and designed for continuous 14-day wear, it stays comfortable through sleep, exercise, showering, and daily activities.
-        imageNote: EverChek CGM app daily activity and wear-time screen
+      - title: Real-time glucose tracking
+        desc: Automatically updates your glucose readings every 5 minutes. See exactly how your body respond to a meal, workout, medication, or mood swing without delay. Make adjustments now, not hours later.
+        visual: image
+        image: /images/cgm-app-phone-1.webp
+        imageAlt: EverChek CGM app real-time glucose tracking screen
+      - title: Generate glucose curves
+        desc: Tracks your glucose 24/7 and map continuous data into clear patterns that single fingersticks can't capture. Provides long-term visibility into your glucose rhythms for better diabetes management.
+        visual: image
+        image: /images/cgm-app-phone-2.webp
+        imageAlt: EverChek CGM app glucose curves chart screen
+      - title: Predict hypo- and hyperglycemic events
+        desc: Identifies small, moment-to-moment glucose changes as they happen, including rapid rises, gentle drops, and early shifts between meals or overnight. Provides early warnings before your glucose levels become too high or too low.
+        visual: image
+        image: /images/cgm-app-phone-3.webp
+        imageAlt: EverChek CGM app glucose event prediction screen
+      - title: Customize glucose alerts
+        desc: Create your personalized glucose limits. Receive timely notifications when your glucose levels rise above or fall below the target range, helping you stay informed and take action right away.
+        visual: image
+        image: /images/cgm-app-phone-4.webp
+        imageAlt: EverChek CGM app glucose alert customization screen
+      - title: Move freely throughout the day
+        desc: A tiny sensor sits just beneath your skin for a pain-free, barely noticeable fit. Waterproof and designed for continuous 14-day wear, it stays comfortable through sleep, exercise, showering, and daily activities.
+        visual: image
+        image: /images/cgm-app-phone.webp
+        imageAlt: EverChek CGM app daily activity monitoring screen
 
   - type: card-grid
     title: Built for accurate, continuous glucose monitoring
@@ -102,7 +105,8 @@ sections:
     text: Every CGM component works together to deliver reliable glucose monitoring.
     image: /images/p30-components.webp
     imageAlt: "Exploded view of the EverChek continuous glucose monitor system components: applicator, transmitter, sensor, puncture needle, adhesive patch, and sterile tube, showing how each CGM part works together for reliable glucose monitoring."
-    ratio: 16/9
+    ratio: 1200/788
+    fit: contain
 
   - type: compare-table
     title: Specifications of our sensor & transmitter integrated kit

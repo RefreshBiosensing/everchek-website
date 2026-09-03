@@ -3,18 +3,18 @@ description: "Distribute EverChek CGM systems in your territory: exclusivity ter
 path: /cgm-distribution/
 translationKey: cgm-distribution
 sections:
+  # The original hero was full-bleed: the network artwork behind a dark overlay with the
+  # headline centred on top. A split hero forced the 1424x747 artwork into a 4/3 tile and
+  # cut a third of it away.
   - type: hero
-    variant: split
+    variant: centered
+    backgroundImage: /images/distribution-hero.webp
     title: Partner with us for CGM distribution
     sub: Expand access to advanced CGM solutions by joining our global distribution network. We work with qualified distributors to bring wearable biosensing technologies to healthcare markets worldwide.
     buttons:
       - label: Contact us
         href: /contact/
         style: primary
-    visual: image
-    image: /images/distribution-hero.webp
-    imageAlt: Abstract global distribution network with interconnected nodes, world maps, and logistics icons including cargo ship and airplane on dark blue background
-    ratio: 4/3
 
   - type: card-grid
     title: Why partner with us?

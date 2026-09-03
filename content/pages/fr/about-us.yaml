@@ -4,14 +4,12 @@ path: /fr/a-propos/
 translationKey: about-us
 sections:
   - type: hero
-    variant: split
-    visual: image
+    variant: centered
+    backgroundImage: /images/about-factory.webp
     kicker: Fondée en 2016 · Shenzhen · B2B exclusivement
     title: Un fabricant de CGM intégré verticalement, basé en Chine
     sub: Développez votre activité santé avec des technologies CGM fiables, une infrastructure de production évolutive et des modèles de commercialisation souples, adaptés aux marchés de santé régionaux. Concevez plus efficacement des solutions fiables de mesure continue du glucose.
-    image: /images/about-factory.webp
     imageAlt: Extérieur du site de production et du centre de R&D EverChek à Shenzhen
-    ratio: 4/3
     buttons:
       - label: Engager une discussion de partenariat
         href: /fr/contact/
@@ -59,14 +57,21 @@ sections:
 
   - type: image-text
     variant: left
+    eyebrow: Notre direction et nos fondations scientifiques
     title: Prof. Xueji Zhang — Chief Scientist et cofondateur
-    text: |
-      Le professeur Xueji Zhang est un scientifique de renommée mondiale dans le domaine de la
-      biodétection et de l'analyse électrochimique. Fort de décennies de recherche couvrant la conception
-      de capteurs, la détection biomoléculaire et le diagnostic clinique, il a joué un rôle déterminant
-      dans la construction de la plateforme technologique d'EverChek, depuis ses fondations. Ses travaux
-      font le lien entre science fondamentale et applications concrètes en santé, et guident le
-      développement de systèmes de mesure du glucose répondant à des exigences cliniques rigoureuses.
+    paragraphs:
+      - >-
+        Une équipe orientée recherche, guidée par l'un des scientifiques les plus publiés en biodétection
+        électrochimique.
+      - >-
+        Le professeur Xueji Zhang est un scientifique de renommée mondiale dans le domaine de la
+        biodétection et de l'analyse électrochimique. Fort de décennies de recherche couvrant la conception
+        de capteurs, la détection biomoléculaire et le diagnostic clinique, il a joué un rôle déterminant
+        dans la construction de la plateforme technologique d'EverChek, depuis ses fondations.
+      - >-
+        Ses travaux font le lien entre science fondamentale et applications concrètes en santé, et guident
+        le développement de systèmes de mesure du glucose répondant à des exigences cliniques rigoureuses.
+    bulletsTitle: Références clés
     bullets:
       - Fellow of the Royal Society of Chemistry (FRSC)
       - Nombreuses publications dans des revues de premier plan en biodétection et en électrochimie
@@ -74,7 +79,9 @@ sections:
       - Direction de plusieurs programmes nationaux de recherche en génie biomédical et en développement de capteurs
     image: /images/x-zhang-transparent.webp
     imageAlt: Portrait du professeur Xueji Zhang, Chief Scientist et cofondateur d'EverChek
-    ratio: 1/1
+    ratio: 3/4
+    fit: contain
+    mediaSize: compact
 
   - type: timeline
     title: Nos étapes clés
@@ -99,7 +106,7 @@ sections:
 
   - type: card-grid
     center: true
-    columns: 3
+    columns: 2
     media: icon
     tint: true
     title: Nos technologies clés

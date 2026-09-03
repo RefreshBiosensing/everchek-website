@@ -1,0 +1,208 @@
+---
+// Blog listing. A blog card is not a feature card: it carries a cover image, a
+// category, a title, a byline with a date, and an excerpt, and the whole card is
+// the link. Rendering articles through the generic card-grid loses the category,
+// the author and the date, and the result stops reading as a blog.
+//
+// Cover images keep their own aspect ratio inside a fixed-height frame with
+// object-fit: cover, which is correct here — a blog thumbnail is meant to be a
+// crop. Diagrams and illustrations elsewhere on the site must NOT use cover;
+// they use their true ratio so nothing is cut off.
+interface Post {
+  href: string;
+  title: string;
+  excerpt?: string;
+  image?: string;
+  imageAlt?: string;
+  category?: string;
+  author?: string;
+  date?: string;
+}
+interface Props {
+  title?: string;
+  text?: string;
+  eyebrow?: string;
+  columns?: number;
+  tint?: boolean;
+  posts?: Post[];
+  featureFirst?: boolean;
+  center?: boolean;
+  moreLink?: { label: string; href: string };
+}
+const {
+  title,
+  text,
+  eyebrow,
+  columns = 3,
+  tint = false,
+  posts = [],
+  featureFirst = false,
+  center = false,
+  moreLink,
+} = Astro.props;
+
+const [lead, ...rest] = posts;
+const grid = featureFirst ? rest : posts;
+---
+<section class:list={['section', 'bx', { tint }]}>
+  <div class="container">
+    {(title || text) && (
+      <header class:list={['bx-head', { center }]}>
+        {eyebrow && <p class="bx-eyebrow">{eyebrow}</p>}
+        {title && <h2 class="bx-title">{title}</h2>}
+        {text && <p class="bx-text">{text}</p>}
+      </header>
+    )}
+
+    {featureFirst && lead && (
+      <a class="bx-lead" href={lead.href}>
+        {lead.image && (
+          <div class="bx-lead-img">
+            <img src={lead.image} alt={lead.imageAlt ?? lead.title} loading="lazy" />
+            {lead.category && <span class="bx-cat">{lead.category}</span>}
+          </div>
+        )}
+        <div class="bx-lead-body">
+          <h3 class="bx-lead-title">{lead.title}</h3>
+          {lead.excerpt && <p class="bx-excerpt">{lead.excerpt}</p>}
+          <p class="bx-meta">
+            {lead.author && <span>{lead.author}</span>}
+            {lead.author && lead.date && <span class="bx-dot" aria-hidden="true"></span>}
+            {lead.date && <time>{lead.date}</time>}
+          </p>
+        </div>
+      </a>
+    )}
+
+    <div class="bx-grid" style={`--cols:${columns}`}>
+      {grid.map((p) => (
+        <a class="bx-card" href={p.href}>
+          {p.image && (
+            <div class="bx-img">
+              <img src={p.image} alt={p.imageAlt ?? p.title} loading="lazy" />
+              {p.category && <span class="bx-cat">{p.category}</span>}
+            </div>
+          )}
+          <div class="bx-body">
+            <h3 class="bx-card-title">{p.title}</h3>
+            {p.excerpt && <p class="bx-excerpt">{p.excerpt}</p>}
+            <p class="bx-meta">
+              {p.author && <span>{p.author}</span>}
+              {p.author && p.date && <span class="bx-dot" aria-hidden="true"></span>}
+              {p.date && <time>{p.date}</time>}
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {moreLink && (
+      <div class="bx-more">
+        <a class="bx-more-link" href={moreLink.href}>{moreLink.label} →</a>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  .bx-head { max-width: 640px; margin: 0 0 34px; }
+  .bx-head.center { margin-inline: auto; text-align: center; }
+  .bx-eyebrow {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ec-blue-600); margin-bottom: 10px;
+  }
+  .bx-title {
+    font-size: var(--fs-h2); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2;
+  }
+  .bx-text { color: var(--mid); margin-top: 12px; font-size: 16px; line-height: 1.7; }
+
+  .bx-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 3), minmax(0, 1fr));
+    gap: 26px;
+  }
+
+  .bx-card,
+  .bx-lead {
+    display: block;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  }
+  .bx-card:hover,
+  .bx-lead:hover {
+    border-color: var(--ec-blue-600);
+    box-shadow: 0 18px 40px -28px rgba(6, 47, 82, 0.55);
+    transform: translateY(-3px);
+  }
+
+  /* Lead article: wide, image beside the copy. */
+  .bx-lead {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    align-items: stretch;
+    margin-bottom: 26px;
+  }
+  .bx-lead-img { position: relative; min-height: 100%; }
+  .bx-lead-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .bx-lead-body { padding: clamp(22px, 3vw, 38px); align-self: center; }
+  .bx-lead-title {
+    font-size: clamp(20px, 2.2vw, 26px); font-weight: 700; line-height: 1.28;
+    letter-spacing: -0.015em; margin-bottom: 12px;
+  }
+
+  .bx-img { position: relative; aspect-ratio: 16 / 10; background: var(--ec-blue-50); }
+  .bx-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* Category pill sits on the cover, as it did on the previous site. */
+  .bx-cat {
+    position: absolute; top: 12px; left: 12px;
+    background: var(--ec-blue-600); color: #fff;
+    padding: 4px 11px; border-radius: 999px;
+    font-size: 11.5px; font-weight: 700; letter-spacing: 0.03em;
+  }
+
+  .bx-body { padding: 20px 22px 22px; }
+  .bx-card-title {
+    font-size: 17px; font-weight: 700; line-height: 1.35;
+    letter-spacing: -0.01em; margin-bottom: 10px;
+  }
+  .bx-excerpt {
+    font-size: 14px; line-height: 1.65; color: var(--mid);
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .bx-meta {
+    margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border);
+    font-size: 13px; color: var(--soft);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .bx-more { margin-top: 30px; text-align: center; }
+  .bx-more-link {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 14.5px; font-weight: 700; color: var(--ec-blue-600);
+    text-decoration: none;
+  }
+  .bx-more-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .bx-dot {
+    width: 3px; height: 3px; border-radius: 50%;
+    background: currentColor; display: inline-block; flex: none;
+  }
+
+  @media (max-width: 900px) {
+    .bx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .bx-lead { grid-template-columns: 1fr; }
+    .bx-lead-img { aspect-ratio: 16 / 9; }
+  }
+  @media (max-width: 620px) {
+    .bx-grid { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bx-card, .bx-lead { transition: none; }
+    .bx-card:hover, .bx-lead:hover { transform: none; }
+  }
+</style>

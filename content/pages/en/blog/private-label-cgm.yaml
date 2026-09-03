@@ -18,7 +18,7 @@ sections:
     image: /blog/private-label-cgm-images/01-private-label-cgm.webp
     imageAlt: >-
       A manufacturer-built CGM sensor kit rebranded and boxed under a healthcare company's own private label
-    ratio: 16/9
+    ratio: 1418/752
     text: >-
       But it's not, actually. It doesn't matter if you're a distributor eyeing a new category to add, a diabetes or metabolic health brand that wants to finally own your own hardware instead of reselling someone else's, an importer who's moved health products for years but never a device, a pharma company filling out your chronic disease lineup, or an investor just poking around the CGM space before committing real money. You can launch your own CGM brand to market easily with a private label CGM manufacturer. Here's the complete guide.
 
@@ -48,7 +48,7 @@ sections:
     image: /blog/private-label-cgm-images/03-market-growth.webp
     imageAlt: >-
       Chart of global continuous glucose monitoring market growth pushing healthcare brands toward private label CGM
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Market context
@@ -87,7 +87,7 @@ sections:
     image: /blog/private-label-cgm-images/02-what-is-private-label.webp
     imageAlt: >-
       Diagram showing an unbranded manufacturer CGM system becoming a branded private label product with custom box and app
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Model comparison
@@ -128,7 +128,7 @@ sections:
     image: /blog/private-label-cgm-images/04-models-comparison.webp
     imageAlt: >-
       Side-by-side comparison of private label, OEM and SKD CGM manufacturing models and what each one lets a brand change
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: Who actually uses the private label model?
@@ -161,7 +161,7 @@ sections:
     image: /blog/private-label-cgm-images/05-who-uses.webp
     imageAlt: >-
       Five types of B2B healthcare business that use private label CGM — distributors, diabetes brands, pharma, telehealth platforms and hospital groups
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: What can you actually customize?
@@ -199,7 +199,7 @@ sections:
     image: /blog/private-label-cgm-images/06-customization.webp
     imageAlt: >-
       Custom CGM retail packaging, a branded transmitter and a white-label patient app rendered in a partner brand's colours
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: step-flow
     title: How the CGM private label process actually works
@@ -236,11 +236,11 @@ sections:
     image: /blog/private-label-cgm-images/07-process-phases.webp
     imageAlt: >-
       Six-phase private label CGM timeline running from regulatory discovery through sample sign-off to production and fulfilment
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Supplier selection
-    title: How to choose a private label CGM manufacturer
+    title: How to choose the right private label CGM manufacturer
     blocks:
       - text: >-
           Your manufacturing partner is the literal lifeblood of your brand. When vetting potential suppliers, move past basic price sheets and judge them on these critical technical and operational pillars.
@@ -262,7 +262,7 @@ sections:
     image: /blog/private-label-cgm-images/08-manufacturer-selection.webp
     imageAlt: >-
       ISO 13485 cleanroom production line where CGM sensors are assembled and tested before private label packaging
-    ratio: 16/9
+    ratio: 4/3
 
   - type: card-grid
     title: Why partner with EverChek for your private label CGM

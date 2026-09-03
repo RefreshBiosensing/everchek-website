@@ -7,7 +7,7 @@ interface Props {
   title?: string;
   text?: string;
   items: Item[];
-  columns?: 3 | 4;
+  columns?: 1 | 3 | 4;   // 1 = vertical stepped list (best for 5+ steps or long step titles)
   arrows?: boolean;
   center?: boolean;
   tint?: boolean;
@@ -46,6 +46,7 @@ const { title, text, items = [], columns = 4, arrows = true, center = true, tint
   .sf-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin: 12px auto 0; max-width: 640px; }
 
   .sf-grid { display: grid; gap: 18px; }
+  .cols-1 { grid-template-columns: 1fr; gap: 30px; max-width: 780px; margin: 0 auto; }
   .cols-3 { grid-template-columns: repeat(3, 1fr); }
   .cols-4 { grid-template-columns: repeat(4, 1fr); }
 
@@ -82,13 +83,22 @@ const { title, text, items = [], columns = 4, arrows = true, center = true, tint
     z-index: 2;
   }
 
+  /* Vertical stepped list: arrow drops below each card instead of pointing across. */
+  .cols-1 .sf-card { padding: 24px 28px; }
+  .cols-1 .sf-arrow {
+    right: auto; left: 50%; top: auto; bottom: -30px;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
   @media (max-width: 960px) {
     .cols-4 { grid-template-columns: repeat(2, 1fr); }
     .cols-3 { grid-template-columns: repeat(2, 1fr); }
-    .sf-card:nth-child(2n) .sf-arrow { display: none; }
+    .cols-3 .sf-card:nth-child(2n) .sf-arrow,
+    .cols-4 .sf-card:nth-child(2n) .sf-arrow { display: none; }
   }
   @media (max-width: 560px) {
     .sf-grid { grid-template-columns: 1fr; }
     .sf-arrow { display: none !important; }
+    .cols-1 .sf-arrow { display: flex !important; }
   }
 </style>

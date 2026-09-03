@@ -8,11 +8,16 @@ interface Props {
   title?: string;
   text?: string;
   columns: string[];
+  labelColumn?: string;   // header for the row-label column (spec tables name it, e.g. "Component")
   rows: Row[];
-  highlight?: number;
+  highlight?: number;     // -1 = no "ours" column (plain spec table)
+  align?: 'center' | 'left';  // left for prose cells, center for ✓/✗ comparisons
   tint?: boolean;
 }
-const { title, text, columns = [], rows = [], highlight = 0, tint = false } = Astro.props;
+const {
+  title, text, columns = [], labelColumn, rows = [],
+  highlight = 0, align = 'center', tint = false,
+} = Astro.props;
 
 const MARK: Record<string, string> = { yes: '✓', no: '✗', mid: '△', plain: '' };
 const readCell = (cell: Cell | [string, string]) =>
@@ -23,10 +28,10 @@ const readCell = (cell: Cell | [string, string]) =>
     {title && <h2 class="ct-title">{title}</h2>}
     {text && <p class="ct-text">{text}</p>}
     <div class="ct-scroll">
-      <table class="ct-table">
+      <table class:list={['ct-table', { 'ct-left': align === 'left' }]}>
         <thead>
           <tr>
-            <th></th>
+            <th>{labelColumn}</th>
             {columns.map((c, i) => (
               <th class:list={[{ 'ct-hl': i === highlight }]}>{c}</th>
             ))}
@@ -74,4 +79,8 @@ const readCell = (cell: Cell | [string, string]) =>
   .ct-table td.no { color: var(--bad); }
   .ct-table td.mid { color: var(--warn); }
   .ct-table td.plain { color: var(--mid); }
+
+  /* Spec tables: prose cells read far better left-aligned than centred. */
+  .ct-left th, .ct-left td { text-align: left; }
+  .ct-left th:first-child { width: 26%; }
 </style>

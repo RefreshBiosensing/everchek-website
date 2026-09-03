@@ -18,7 +18,7 @@ sections:
     image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
     imageAlt: >-
       Illustration conceptuelle opposant un capteur de mesure continue du glucose porté sur le corps à un lecteur de glycémie avec bandelettes et piqûre au doigt
-    ratio: 16/9
+    ratio: 1312/736
     text: >-
       En pratique, ce choix détermine votre calendrier de R&D, votre budget réglementaire, l'implantation de votre chaîne d'approvisionnement et le modèle de revenus que vous pourrez tenir dans la durée. Ce guide passe en revue tout ce qui sépare le CGM du BGM du point de vue strictement commercial, et vous montre comment ajouter le CGM à votre gamme avec le minimum d'efforts. Entrons dans le vif du sujet.
 
@@ -51,7 +51,117 @@ sections:
     image: /blog/cgm-vs-bgm-images/02_continuous_vs_point.webp
     imageAlt: >-
       Graphique comparant une courbe de glucose continue issue d'un CGM aux mesures ponctuelles dispersées d'un lecteur de glycémie sur une journée
-    ratio: 16/9
+    ratio: 1312/736
+
+  # Un article « CGM ou BGM » dont la comparaison n'existait qu'en prose : voici le
+  # tableau qui la rend lisible. Chaque cellule reprend un fait énoncé ailleurs sur la page.
+  - type: compare-table
+    title: Le CGM et le BGM en un coup d'œil
+    text: >-
+      Les deux technologies face à face sur les critères que ce guide détaille. Chaque chiffre ci-dessous est expliqué dans la section à laquelle il appartient.
+    highlight: -1
+    align: left
+    labelColumn: Critère
+    columns:
+      - CGM
+      - BGM
+    rows:
+      - label: Ce qui est mesuré
+        cells:
+          - state: plain
+            text: >-
+              Le glucose du liquide interstitiel sous la peau, via une électrode enzymatique implantée
+          - state: plain
+            text: >-
+              Le glucose du sang capillaire, via des bandelettes à usage unique enduites de glucose oxydase
+      - label: Mesures par jour
+        cells:
+          - state: plain
+            text: >-
+              Environ 288, en continu
+          - state: plain
+            text: >-
+              4 à 10, relevées manuellement
+      - label: Port et usage
+        cells:
+          - state: plain
+            text: >-
+              Un capteur porté 7 à 14 jours
+          - state: plain
+            text: >-
+              Une bandelette par mesure
+      - label: Décalage sur la glycémie
+        cells:
+          - state: plain
+            text: >-
+              5 à 15 minutes
+          - state: plain
+            text: >-
+              Temps réel
+      - label: MARD courant
+        cells:
+          - state: plain
+            text: >-
+              8 à 12 %
+          - state: plain
+            text: >-
+              5 à 6 %
+      - label: Voie réglementaire aux États-Unis
+        cells:
+          - state: plain
+            text: >-
+              Désignation FDA « integrated continuous glucose monitor » (iCGM)
+          - state: plain
+            text: >-
+              Autotest de glycémie, voie 510(k) évaluée au regard de l'ISO 15197
+      - label: Classification européenne
+        cells:
+          - state: plain
+            text: >-
+              MDR classe IIb — intervention d'un organisme notifié et investigation clinique obligatoire
+          - state: plain
+            text: >-
+              IVDR classe B — autodéclaration ou évaluation de conformité par organisme notifié
+      - label: Coût pour l'utilisateur final
+        cells:
+          - state: plain
+            text: >-
+              30 à 100 dollars par capteur, remplacé tous les 7 à 14 jours
+          - state: plain
+            text: >-
+              0,20 à 1,00 dollar par bandelette
+      - label: Modèle de revenus
+        cells:
+          - state: plain
+            text: >-
+              Récurrent, structurellement proche d'un abonnement ; marges supérieures derrière des barrières plus hautes
+          - state: plain
+            text: >-
+              Consommable ponctuel ; marges plus minces sous pression continue sur les prix
+      - label: Intégration des données
+        cells:
+          - state: plain
+            text: >-
+              Des API poussent les mesures vers les DPI, les plateformes de télésurveillance et les parcours de télémédecine
+          - state: plain
+            text: >-
+              Impose souvent une ressaisie manuelle, avec un risque d'erreur accru
+      - label: Taille du marché en 2025
+        cells:
+          - state: plain
+            text: >-
+              13,4 milliards de dollars, jusqu'à 41,4 milliards d'ici 2033 (TCAC 15,1 %)
+          - state: plain
+            text: >-
+              15,53 milliards de dollars, jusqu'à 30,18 milliards d'ici 2033 (TCAC 8,8 %)
+      - label: Circuit le plus porteur
+        cells:
+          - state: plain
+            text: >-
+              Officine, vente en ligne et vente directe au consommateur
+          - state: plain
+            text: >-
+              Appels d'offres des hôpitaux et des cliniques
 
   - type: richtext
     eyebrow: Exactitude et réglementation
@@ -72,7 +182,7 @@ sections:
     image: /blog/cgm-vs-bgm-images/03_regulatory_timeline.webp
     imageAlt: >-
       Frise comparant la voie d'autorisation FDA iCGM, plus longue, pour les capteurs de mesure continue du glucose avec la voie 510(k), plus courte, des lecteurs de glycémie
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Retours des utilisateurs
@@ -104,34 +214,42 @@ sections:
     image: /blog/cgm-vs-bgm-images/04_data_ecosystem.webp
     imageAlt: >-
       Schéma des données de glucose continues transitant par une API vers le dossier patient informatisé, la télésurveillance et les plateformes de télémédecine
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Cadre de décision
-    title: "CGM ou BGM : un cadre de décision B2B"
+    title: "CGM ou BGM : un cadre de décision B2B pour les marques de santé"
     blocks:
       - text: >-
           Choisir entre CGM et BGM, c'est faire un pari stratégique sur l'évolution de votre gamme, de vos marges et de vos circuits de distribution. Le cadre qui suit écarte les effets d'annonce et détaille les données, les barrières à l'entrée et les modèles économiques, pour vous aider à trancher pour votre marque.
       - heading: Ce que disent réellement les données de marché
         text: >-
           Grand View Research évalue le marché mondial des dispositifs CGM à 13,4 milliards de dollars en 2025 et prévoit une croissance jusqu'à 41,4 milliards de dollars d'ici 2033, soit un TCAC de 15,1 %. Le même cabinet estime le marché mondial des dispositifs BGM à 15,53 milliards de dollars en 2025, en croissance plus lente que le CGM mais avec une demande qui reste soutenue.
-      - heading: Les arbitrages entre technologie et marges
-        text: >-
-          Cette croissance plus rapide a un prix. Voici ce que coûte réellement chaque option, et ce qu'elle rapporte.
-      - heading: "CGM : forte croissance, mais une pente raide à gravir"
+    tint: true
+
+  # Deux sous-titres opposés dans l'original : une comparaison à deux, pas une suite de blocs.
+  - type: card-grid
+    title: Les arbitrages entre technologie et marges
+    text: >-
+      Cette croissance plus rapide a un prix. Voici ce que coûte réellement chaque option, et ce qu'elle rapporte.
+    columns: 2
+    media: icon
+    items:
+      - icon: curve
+        title: "CGM : forte croissance, mais une pente raide à gravir"
         text: >-
           Le potentiel de croissance du CGM s'accompagne de barrières bien réelles : R&D en biocapteurs, ingénierie du transmetteur sans fil et voie réglementaire iCGM qui exige un investissement clinique substantiel. Ces mêmes barrières protègent toutefois les marges une fois franchies. Un capteur CGM coûte généralement de 30 à 100 dollars à l'utilisateur final et doit être remplacé tous les 7 à 14 jours. Le modèle économique du CGM se rapproche donc structurellement d'un abonnement plutôt que d'une vente d'appareil unique.
-      - heading: "BGM : demande stable, mais une guerre des prix"
+      - icon: chart
+        title: "BGM : demande stable, mais une guerre des prix"
         text: >-
           Le BGM reste incontournable dans les appels d'offres hospitaliers, sur les marchés à faibles ressources et auprès des segments sensibles au prix qui n'ont pas besoin d'une surveillance continue ou ne peuvent se l'offrir. Mais la faible barrière à l'entrée attire une concurrence nombreuse, et le prix des bandelettes subit une pression continue depuis des années. Une bandelette BGM se négocie généralement entre 0,20 et 1,00 dollar, une fraction du coût unitaire d'un capteur CGM, mais dégage aussi des marges bien plus minces.
-    tint: true
 
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/05_market_growth.webp
     imageAlt: >-
       Histogramme du marché mondial des dispositifs CGM passant de 13,4 milliards de dollars en 2025 à 41,4 milliards d'ici 2033, face à une croissance plus lente du marché BGM
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: Les critères à peser avant de choisir votre voie
@@ -188,11 +306,11 @@ sections:
     image: /blog/cgm-vs-bgm-images/06_decision_framework.webp
     imageAlt: >-
       Cadre de décision pesant la maturité technologique, l'investissement, le calendrier réglementaire, le marché cible et les marges pour arbitrer entre CGM et BGM
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: La voie du partenariat
-    title: Lancez votre gamme CGM sans investissement lourd
+    title: Lancez votre gamme CGM sans investissement lourd avec Refresh EverChek
     blocks:
       - text: >-
           Se lancer dans le CGM n'impose ni des années de R&D ni des millions d'investissement initial. Refresh EverChek est un système CGM étalonné en usine offrant une durée de port complète de 14 jours. Sur l'exactitude, nous publions la méthode plutôt qu'un chiffre isolé : méthode de référence, comparateur, ventilation par jour de port et par plage de glucose, la synthèse des performances cliniques étant communiquée aux partenaires qualifiés sous accord de confidentialité.
@@ -209,7 +327,7 @@ sections:
     image: /blog/cgm-vs-bgm-images/07_partnership_supply_chain.webp
     imageAlt: >-
       Chaîne d'approvisionnement du partenariat CGM EverChek, de la fabrication des composants et de la fourniture des kits au montage local puis à la gamme lancée sous la marque du partenaire
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: link-pills
     label: Étapes suivantes

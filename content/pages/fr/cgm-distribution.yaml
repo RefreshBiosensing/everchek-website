@@ -3,18 +3,17 @@ description: "Distribuez les systèmes CGM EverChek sur votre territoire : excl
 path: /fr/distribution-cgm/
 translationKey: cgm-distribution
 sections:
+  # Bandeau plein cadre à l'origine : l'illustration réseau derrière un voile sombre.
+  # Le hero « split » la recadrait en 4/3 et en supprimait un tiers.
   - type: hero
-    variant: split
+    variant: centered
+    backgroundImage: /images/distribution-hero.webp
     title: Devenez notre partenaire de distribution CGM
     sub: Élargissez l’accès aux solutions CGM avancées en rejoignant notre réseau mondial de distribution. Nous travaillons avec des distributeurs qualifiés pour diffuser les technologies de biodétection portées sur les marchés de santé du monde entier.
     buttons:
       - label: Nous contacter
         href: /fr/contact/
         style: primary
-    visual: image
-    image: /images/distribution-hero.webp
-    imageAlt: "Réseau mondial de distribution abstrait avec nœuds interconnectés, cartes du monde et icônes logistiques dont un porte-conteneurs et un avion, sur fond bleu foncé"
-    ratio: 4/3
 
   - type: card-grid
     title: Pourquoi devenir notre partenaire ?

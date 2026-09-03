@@ -39,6 +39,7 @@ import ImageText from './blocks/ImageText.astro';
 import BannerWide from './blocks/BannerWide.astro';
 import Gallery from './blocks/Gallery.astro';
 import CardGrid from './blocks/CardGrid.astro';
+import BlogIndex from './blocks/BlogIndex.astro';
 import StatsRow from './blocks/StatsRow.astro';
 import Checklist from './blocks/Checklist.astro';
 import Quote from './blocks/Quote.astro';
@@ -77,6 +78,7 @@ const IMAGE_TEXT_LAYOUT: Record<string, 'top' | 'left' | 'right'> = {
   switch (type) {
     case 'hero':          return <Hero {...props} variant={variant} locale={locale} />;
     case 'app-capabilities': return <AppCapabilities {...props} />;
+    case 'blog-index':    return <BlogIndex {...props} />;
     case 'trustbar':      return <TrustBar {...props} />;
     case 'banner-wide':   return <BannerWide {...props} />;
     case 'gallery':       return <Gallery {...props} />;

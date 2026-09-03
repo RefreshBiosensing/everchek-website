@@ -24,7 +24,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
     imageAlt: >-
       Illustration à plat du modèle CGM semi-knocked-down — capteur, transmetteur et applicateur fabriqués en usine puis expédiés pour un montage final local
-    ratio: 16/9
+    ratio: 1024/572
     text: >-
       Ayant accompagné directement de nombreux acteurs de santé et distributeurs à travers le monde sur des projets CGM SKD, nous connaissons les questions qui comptent vraiment lorsqu'on évalue ce modèle. Entrons dans le vif du sujet.
 
@@ -58,31 +58,39 @@ sections:
           Imaginez que vous commandiez un vélo en ligne. Il arrive avec le cadre, les roues et le guidon déjà fabriqués et contrôlés, mais il vous reste à les assembler avant de pouvoir rouler. Un kit CGM SKD fonctionne de la même façon. L'ingénierie délicate est réalisée en usine — fabrication des électrodes, dépôt de la membrane, essais de cytotoxicité, chargement de l'aiguille de ponction, etc. — et votre travail se limite au montage final de 2 à 5 composants principaux.
       - text: >-
           En tant que fabricant de CGM, nous expédions la plupart des pièces déjà fabriquées et contrôlées. Votre équipe — qu'il s'agisse d'un partenaire distributeur, du service biomédical d'un hôpital ou de l'équipe des opérations d'une marque de santé — apporte ensuite la touche finale : conditionnement, étiquetage et documentation, avant que le produit n'atteigne son utilisateur final.
-      - text: >-
-          La configuration exacte dépend des exigences réglementaires du marché régional et se confirme généralement avant la signature du contrat. Voici à quoi ressemble un kit CGM SKD type.
-      - heading: Capteur et transmetteur
-        text: >-
-          Le capteur et le transmetteur constituent le cœur électronique du dispositif. Ils arrivent en général pré-étalonnés, c'est-à-dire déjà contrôlés pour délivrer des mesures exactes. Le montage final reste toutefois à réaliser. Dans la plupart des kits, des connexions par encliquetage le rendent aisé, un clic audible confirmant le bon positionnement de chaque pièce.
-      - heading: Adhésif et éléments d'insertion
-        text: >-
-          Le patch adhésif et l'applicateur sont à usage unique : un jeu neuf accompagne chaque kit. Comme ces pièces entrent en contact direct avec la peau, votre zone de montage local doit rester propre et maîtrisée — en général une salle blanche de classe 10 000 (ISO 8) ou supérieure.
-      - heading: Conditionnement et documentation
-        text: >-
-          Les notices et les boîtes arrivent souvent sous une forme générique, sans marque. C'est en réalité un avantage : votre entreprise peut y ajouter sa propre langue, son logo et ses instructions sans repartir de zéro.
     tint: true
 
-  - type: link-pills
-    label: Détail du kit
+  # Trois groupes de composants parallèles — présentés en grille, comme sur la page d'origine,
+  # au lieu d'être noyés au milieu de la prose.
+  - type: card-grid
+    title: Ce que contient un kit CGM SKD type
+    text: >-
+      La configuration exacte dépend des exigences réglementaires du marché régional et se confirme généralement avant la signature du contrat. Voici à quoi ressemble un kit CGM SKD type.
+    columns: 3
+    media: icon
     items:
-      - label: Voir la spécification complète du kit SKD sur notre page dédiée
-        href: /fr/montage-local-cgm/
+      - icon: sensor
+        title: Capteur et transmetteur
+        text: >-
+          Le capteur et le transmetteur constituent le cœur électronique du dispositif. Ils arrivent en général pré-étalonnés, c'est-à-dire déjà contrôlés pour délivrer des mesures exactes. Le montage final reste toutefois à réaliser. Dans la plupart des kits, des connexions par encliquetage le rendent aisé, un clic audible confirmant le bon positionnement de chaque pièce.
+      - icon: patch
+        title: Adhésif et éléments d'insertion
+        text: >-
+          Le patch adhésif et l'applicateur sont à usage unique : un jeu neuf accompagne chaque kit. Comme ces pièces entrent en contact direct avec la peau, votre zone de montage local doit rester propre et maîtrisée — en général une salle blanche de classe 10 000 (ISO 8) ou supérieure.
+      - icon: box
+        title: Conditionnement et documentation
+        text: >-
+          Les notices et les boîtes arrivent souvent sous une forme générique, sans marque. C'est en réalité un avantage : votre entreprise peut y ajouter sa propre langue, son logo et ses instructions sans repartir de zéro.
+    moreLink:
+      label: Voir la spécification complète du kit SKD sur notre page dédiée
+      href: /fr/montage-local-cgm/
 
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/target-customers.webp
     imageAlt: >-
       Quatre types d'entreprises de santé B2B qui utilisent le CGM SKD — chaînes de pharmacies, plateformes de télémédecine, services achats hospitaliers et opérateurs de programmes de santé nationaux
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: card-grid
     title: À qui s'adresse le CGM SKD ?
@@ -124,7 +132,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/process-steps.webp
     imageAlt: >-
       Partenariat CGM SKD en cinq étapes, du cadrage du besoin et de l'accord de confidentialité au contrat et à la première livraison, puis à l'homologation locale et à l'approvisionnement continu
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Déroulement
@@ -176,11 +184,11 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/key-benefits.webp
     imageAlt: >-
       Principaux avantages du modèle CGM SKD pour les entreprises de santé B2B — approvisionnement souple, maîtrise de la marque, avantage douanier, appui documentaire complet et exclusivité territoriale
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Avantages
-    title: Les principaux avantages du modèle CGM SKD
+    title: Les principaux avantages du modèle CGM SKD pour les entreprises de santé B2B
     blocks:
       - text: >-
           Le modèle CGM SKD offre des modalités d'approvisionnement souples, un délai de mise sur le marché potentiellement plus court, et peut réduire le coût de revient rendu total sur les marchés où le montage local procure un avantage douanier. Si la maîtrise de la marque et la conformité locale sont vos priorités, le SKD est un choix solide. Les résultats dépendent de votre marché et de votre organisation : il est donc prudent de refaire le calcul pour votre propre cas.
@@ -208,7 +216,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/choose-manufacturer.webp
     imageAlt: >-
       Ingénieurs d'un fabricant de CGM formant l'équipe de montage d'un partenaire sur le site de production, au titre du soutien technique SKD
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: richtext
     eyebrow: Choix du fournisseur
@@ -231,7 +239,7 @@ sections:
     image: /blog/cgm-skd-b2b-guide-images/partnership-cta.webp
     imageAlt: >-
       Équipe d'une entreprise de santé et représentants d'un fabricant de CGM examinant ensemble un contrat de partenariat SKD
-    ratio: 16/9
+    ratio: 1312/736
 
   - type: checklist
     title: Êtes-vous prêt à devenir partenaire SKD ?

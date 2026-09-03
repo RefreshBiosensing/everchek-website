@@ -8,7 +8,7 @@ sections:
     visual: image
     image: /images/product-composite.webp
     imageAlt: Système CGM EverChek en marque blanche — applicateur de capteur, transmetteur porté sur le corps et application compagnon affichant une courbe de glucose en direct
-    ratio: 4/3
+    ratio: 388/412
     kicker: OEM · ODM · marque blanche
     title: Fabrication CGM en OEM et ODM, en marque blanche, pour les marques de santé
     sub: >-
@@ -27,35 +27,48 @@ sections:
         href: /fr/systeme-mesure-continue-glucose/
         style: ghost
 
-  - type: card-grid
-    media: image
-    columns: 3
-    ratio: 4/3
+  - type: feature-rows
+    ratio: 16/9
     eyebrow: Pourquoi l'OEM avec EverChek
     title: Pourquoi choisir la fabrication CGM en OEM avec nous ?
     text: >-
       Cinq raisons pour lesquelles les marques de santé retiennent EverChek comme partenaire de fabrication OEM de leurs dispositifs de mesure continue du glucose.
     items:
-      - image: /images/oem-why-1-save-costs.webp
+      - id: save-big-on-cgm-r-d
         title: Économisez sur la R&D CGM
-        text: >-
+        desc: >-
           Développer de zéro un système CGM enzymatique étalonné en usine demande des années et des millions d'investissement, sans garantie d'atteindre un MARD acceptable. Faites l'économie de la chimie du capteur, de la formulation des membranes, du développement algorithmique, du PCBA, etc. Construisez plutôt votre activité CGM sur notre socle technologique éprouvé.
-      - image: /images/oem-why-2-manufacturing.webp
+        visual: image
+        image: /images/oem-why-1-save-costs.webp
+        imageAlt: Économisez sur la R&D CGM — réduisez l'investissement initial
+      - id: scale-confidently
         title: Montez en cadence sereinement
-        text: >-
+        desc: >-
           Des séries pilotes à la production commerciale à grande échelle, nos lignes certifiées ISO 13485 sont conçues pour maintenir une production stable. Nous réservons une capacité dédiée à nos partenaires OEM et faisons croître les volumes au rythme de votre développement.
-      - image: /images/oem-why-3-market-launch.webp
+        visual: image
+        image: /images/oem-why-2-manufacturing.webp
+        imageAlt: Montez en cadence sereinement grâce à une fabrication de bout en bout
+      - id: accelerate-market-entry
         title: Accélérez votre entrée sur le marché
-        text: >-
+        desc: >-
           Entrez plus vite sur le marché du CGM grâce à un matériel prêt pour la production, un logiciel éprouvé en clinique et des lignes de fabrication en activité. Vous raccourcissez vos cycles de développement de plusieurs mois, réduisez le temps de préparation clinique et lancez pendant que vos concurrents dessinent encore leur premier capteur.
-      - image: /images/oem-why-4-regulatory.webp
+        visual: image
+        image: /images/oem-why-3-market-launch.webp
+        imageAlt: Accélérez votre entrée sur le marché avec un lancement plus rapide
+      - id: reduce-regulatory-complexity
         title: Réduisez la complexité réglementaire
-        text: >-
+        desc: >-
           Notre architecture système et notre dossier technique sont construits selon les exigences de l'ISO 13485 et structurés pour les dossiers d'enregistrement de dispositifs médicaux. Nous fournissons un dossier réglementaire complet : rapports de biocompatibilité, données d'essais de cytotoxicité et documentation technique nécessaire à votre homologation locale. [TODO: CE status]
-      - image: /images/oem-why-5-data-security.webp
+        visual: image
+        image: /images/oem-why-4-regulatory.webp
+        imageAlt: Réduisez la complexité réglementaire grâce à une conformité pré-certifiée
+      - id: own-your-patient-data-completely
         title: Gardez la pleine propriété des données patients
-        text: >-
+        desc: >-
           Vous conservez la propriété et la maîtrise intégrales de toutes les données générées par les patients — valeurs de glucose en temps réel, historiques de tendance et résultats d'analyse — tandis que nous fournissons le pipeline de données et l'infrastructure.
+        visual: image
+        image: /images/oem-why-5-data-security.webp
+        imageAlt: Gardez la pleine propriété de vos données patients, en toute souveraineté
 
   - type: card-grid
     media: icon

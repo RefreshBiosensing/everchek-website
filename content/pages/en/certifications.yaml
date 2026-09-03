@@ -4,7 +4,9 @@ path: /certifications/
 translationKey: certifications
 sections:
   - type: hero
-    variant: standard
+    variant: centered
+    backgroundImage: /images/factory-hero.webp
+    imageAlt: EverChek CGM manufacturing facility, where the documented quality system is operated
     kicker: Regulatory documentation for CGM partners
     title: Documentation, and how you get it
     sub: We publish which certifications we hold, which body issued them, and what scope they cover. Certificate numbers, validity dates, test reports and clinical performance summaries are released in full to qualified partners under a mutual NDA — because your own registration file requires them.
