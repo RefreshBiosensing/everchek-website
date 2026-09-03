@@ -1,0 +1,233 @@
+title: Fabrication CGM en OEM et marque blanche | EverChek
+description: "Lancez votre marque de CGM sans R&D ni ligne d'assemblage : EverChek fabrique en OEM et ODM des systèmes de mesure continue du glucose."
+path: /fr/cgm-oem/
+translationKey: cgm-oem
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    image: /images/product-composite.webp
+    imageAlt: Système CGM EverChek en marque blanche — applicateur de capteur, transmetteur porté sur le corps et application compagnon affichant une courbe de glucose en direct
+    ratio: 4/3
+    kicker: OEM · ODM · marque blanche
+    title: Fabrication CGM en OEM et ODM, en marque blanche, pour les marques de santé
+    sub: >-
+      Lancez un système de mesure continue du glucose (CGM) sous votre propre marque, sans développer la chimie du capteur, le micrologiciel ni une ligne d'assemblage. Nous travaillons exclusivement en B2B : nous n'exploitons aucune marque CGM grand public et ne concurrençons donc jamais la vôtre sur votre marché.
+    badges:
+      - Mesure continue du glucose pendant 14 jours via Bluetooth
+      - Valeurs de glucose actualisées toutes les 5 minutes
+      - Système CGM étalonné en usine, sans étalonnage capillaire
+      - Applications patient et médecin en marque blanche
+      - SDK/API pour l'intégration à votre plateforme de santé numérique
+      - Personnalisation de la marque, de l'emballage et des fonctions de l'application
+    buttons:
+      - label: Demander la fiche technique CGM OEM
+        href: /fr/contact/?type=oem
+      - label: Découvrir notre système CGM
+        href: /fr/systeme-mesure-continue-glucose/
+        style: ghost
+
+  - type: card-grid
+    media: image
+    columns: 3
+    ratio: 4/3
+    eyebrow: Pourquoi l'OEM avec EverChek
+    title: Pourquoi choisir la fabrication CGM en OEM avec nous ?
+    text: >-
+      Cinq raisons pour lesquelles les marques de santé retiennent EverChek comme partenaire de fabrication OEM de leurs dispositifs de mesure continue du glucose.
+    items:
+      - image: /images/oem-why-1-save-costs.webp
+        title: Économisez sur la R&D CGM
+        text: >-
+          Développer de zéro un système CGM enzymatique étalonné en usine demande des années et des millions d'investissement, sans garantie d'atteindre un MARD acceptable. Faites l'économie de la chimie du capteur, de la formulation des membranes, du développement algorithmique, du PCBA, etc. Construisez plutôt votre activité CGM sur notre socle technologique éprouvé.
+      - image: /images/oem-why-2-manufacturing.webp
+        title: Montez en cadence sereinement
+        text: >-
+          Des séries pilotes à la production commerciale à grande échelle, nos lignes certifiées ISO 13485 sont conçues pour maintenir une production stable. Nous réservons une capacité dédiée à nos partenaires OEM et faisons croître les volumes au rythme de votre développement.
+      - image: /images/oem-why-3-market-launch.webp
+        title: Accélérez votre entrée sur le marché
+        text: >-
+          Entrez plus vite sur le marché du CGM grâce à un matériel prêt pour la production, un logiciel éprouvé en clinique et des lignes de fabrication en activité. Vous raccourcissez vos cycles de développement de plusieurs mois, réduisez le temps de préparation clinique et lancez pendant que vos concurrents dessinent encore leur premier capteur.
+      - image: /images/oem-why-4-regulatory.webp
+        title: Réduisez la complexité réglementaire
+        text: >-
+          Notre architecture système et notre dossier technique sont construits selon les exigences de l'ISO 13485 et structurés pour les dossiers d'enregistrement de dispositifs médicaux. Nous fournissons un dossier réglementaire complet : rapports de biocompatibilité, données d'essais de cytotoxicité et documentation technique nécessaire à votre homologation locale. [TODO: CE status]
+      - image: /images/oem-why-5-data-security.webp
+        title: Gardez la pleine propriété des données patients
+        text: >-
+          Vous conservez la propriété et la maîtrise intégrales de toutes les données générées par les patients — valeurs de glucose en temps réel, historiques de tendance et résultats d'analyse — tandis que nous fournissons le pipeline de données et l'infrastructure.
+
+  - type: card-grid
+    media: icon
+    columns: 3
+    tint: true
+    title: Des capacités de fabrication OEM complètes
+    text: >-
+      De la fabrication du capteur au conditionnement final, chaque étape est réalisée en interne, au bénéfice de la maîtrise qualité et des délais.
+    items:
+      - icon: sensor
+        title: Fabrication des capteurs
+        text: >-
+          Biocapteurs de glucose usinés avec précision et d'une exactitude constante. Nos lignes automatisées produisent des capteurs fiables à grande échelle, avec des contrôles qualité rigoureux à chaque lot.
+      - icon: phone
+        title: Transmetteur et plateforme applicative
+        text: >-
+          Transmetteurs Bluetooth associés à une application mobile en marque blanche. Données de glucose en temps réel, courbes de tendance et alertes paramétrables — le tout à votre logo et à votre charte graphique.
+        href: /fr/application-patient-cgm/
+        linkLabel: Voir l'application patient
+      - icon: box
+        title: Emballage et identité de marque sur mesure
+        text: >-
+          Liberté de conception totale : étuis de vente personnalisés, notices d'utilisation dans votre langue, applicateurs à votre marque et un conditionnement fidèle à votre identité, du déballage à l'usage quotidien.
+      - icon: shield
+        title: Certifié ISO 13485
+        text: >-
+          Notre système de management de la qualité est certifié ISO 13485:2016 et couvre l'ensemble du cycle de vie du dispositif médical : conception, développement et fabrication.
+        href: /fr/documentation/
+        linkLabel: Notre politique de documentation
+      - icon: check
+        title: Contrôle qualité par lot
+        text: >-
+          Chaque lot de production fait l'objet d'une validation de l'exactitude, d'une vérification de la stérilisation et d'essais de performance avant expédition, gage d'une qualité constante à grande échelle.
+      - icon: globe
+        title: Prise en charge multilingue
+        text: Interfaces de l'application, notices d'utilisation et emballages disponibles dans votre langue.
+
+  - type: step-flow
+    columns: 4
+    title: Comment lancer votre marque de CGM ?
+    text: Un parcours clair en 4 étapes, de la consultation au lancement commercial.
+    items:
+      - icon: users
+        title: Consultation
+        desc: >-
+          Vous exposez à notre équipe OEM votre marché cible, vos exigences de marque et vos volumes de commande.
+      - icon: cog
+        title: Personnalisation
+        desc: >-
+          Nous configurons le produit : marque, emballage, habillage de l'application et localisation linguistique.
+      - icon: factory
+        title: Production
+        desc: >-
+          La fabrication à pleine échelle démarre. Contrôle qualité à chaque étape, avec essais par lot.
+      - icon: globe
+        title: Livraison
+        desc: >-
+          Vos CGM à votre marque sont expédiés dans le monde entier. Accompagnement continu pour les mises à jour de l'application et les réapprovisionnements.
+
+  - type: banner-wide
+    align: center
+    height: short
+    title: Votre partenaire B2B de fabrication CGM sur le long terme
+    text: >-
+      Lancez une solution CGM entièrement intégrée sous votre propre marque, avec un accompagnement OEM dédié. Indiquez-nous vos exigences produit, vos objectifs de marque et votre marché cible : nous vous répondrons par une analyse de faisabilité et la liste des documents disponibles.
+    cta:
+      label: Demander la fiche technique CGM OEM
+      href: /fr/contact/?type=oem
+    cta2:
+      label: Comparer OEM, ODM et SKD
+      href: /fr/modeles-de-fabrication-cgm/
+
+  - type: card-grid
+    media: icon
+    columns: 2
+    dark: true
+    title: Ce qui nous distingue
+    text: >-
+      Notre intégration verticale et notre expertise technique nous distinguent des fournisseurs OEM traditionnels.
+    items:
+      - icon: console
+        title: Intégration applicative sans friction
+        text: >-
+          Que vous souhaitiez créer une application CGM autonome ou enrichir un écosystème de santé existant, notre système CGM s'intègre à votre infrastructure via API ou SDK, avec un effort de développement minimal.
+      - icon: chart
+        title: Une structure de coûts favorable
+        text: >-
+          Notre stratégie de développement verticalement intégrée couvre en interne les puces de capteur, la conception algorithmique et les composants clés du système. Elle permet une meilleure maîtrise des coûts, un approvisionnement stable et des conditions plus compétitives pour votre activité CGM.
+      - icon: check
+        title: Une qualité produit fiable
+        text: >-
+          Nous appliquons la maîtrise statistique des procédés (SPC) tout au long de la fabrication afin de surveiller, contrôler et optimiser la qualité en temps réel. Cela réduit la variabilité entre lots en production CGM à grande échelle.
+      - icon: handshake
+        title: Un support technique continu
+        text: >-
+          Le CGM en OEM ne se limite pas à fabriquer et étiqueter. De l'intégration applicative au développement des moules, en passant par l'ordonnancement de la production et les demandes de fonctions spécifiques, nos équipes techniques et opérationnelles travaillent au plus près des vôtres pour faire avancer le projet à chaque étape.
+
+  - type: card-grid
+    media: icon
+    columns: 4
+    title: Pour qui fabriquons-nous ?
+    text: >-
+      Du fabricant de dispositifs médicaux à l'organisme de recherche clinique, notre modèle OEM sert des acteurs de santé très divers.
+    items:
+      - icon: factory
+        title: Fabricants de dispositifs médicaux
+        text: >-
+          Élargir sa gamme au CGM sans développer une technologie de capteur ni des algorithmes propres.
+      - icon: cloud
+        title: Plateformes de santé numérique
+        text: >-
+          Intégrer les données CGM en temps réel aux plateformes de télésanté et de suivi à distance des patients, pour une prise en charge continue.
+      - icon: briefcase
+        title: Laboratoires pharmaceutiques
+        text: >-
+          Intégrer le CGM aux programmes de prise en charge du diabète et aux écosystèmes de thérapies numériques.
+      - icon: curve
+        title: Acteurs de la pompe à insuline et de l'écosystème du diabète
+        text: >-
+          Rendre possible la gestion du diabète en boucle fermée en associant le CGM aux systèmes d'administration d'insuline.
+      - icon: box
+        title: Grands distributeurs créant leur marque propre
+        text: >-
+          Passer de la revente de marques tierces à des produits CGM à votre marque. Vous améliorez vos marges et votre positionnement de long terme.
+        href: /fr/distribution-cgm/
+        linkLabel: Partenariats de distribution
+      - icon: chart
+        title: Investisseurs et fonds spécialisés en santé
+        text: >-
+          Accélérer la commercialisation du CGM grâce à une infrastructure OEM déjà en place et à un déploiement plus rapide.
+      - icon: hospital
+        title: Hôpitaux et réseaux de soins
+        text: >-
+          Déployer le CGM en hospitalisation, en gestion des maladies chroniques et dans les programmes de santé des populations.
+      - icon: data
+        title: Recherche clinique et CRO
+        text: >-
+          Utiliser des systèmes CGM pour les essais cliniques, la recherche métabolique et le suivi longitudinal des patients, afin de produire des jeux de données glucose validés.
+
+  - type: faq
+    title: Questions sur le CGM en OEM
+    items:
+      - q: Pouvons-nous personnaliser la langue de l'application CGM ?
+        a: >-
+          Oui. Nous assurons une prise en charge multilingue complète de l'application CGM, de l'emballage et de la documentation produit. Nous réalisons l'ensemble du travail technique ; vous n'avez qu'à ajouter votre logo et votre identité de marque.
+      - q: Pouvons-nous modifier les seuils d'alerte glycémique dans l'application ?
+        a: >-
+          Tout à fait. Vous pouvez définir et ajuster les seuils d'alerte glycémique — limites d'hypoglycémie et d'hyperglycémie, alertes fondées sur la tendance — dans la configuration de votre application.
+      - q: Proposez-vous des formes d'adhésif ou des formats de capteur sur mesure ?
+        a: >-
+          Oui. Des formes d'adhésif et des formats de capteur spécifiques sont possibles pour soutenir votre stratégie de différenciation produit.
+      - q: Pouvons-nous exporter les données de glucose des patients pour notre recherche ou notre DPI ?
+        a: >-
+          Oui. Nous vous donnons accès aux valeurs de glucose, aux données de tendance et aux journaux d'événements des patients via SDK et API ; ces données peuvent être exportées pour une intégration au dossier patient informatisé (DPI) ou pour un usage de recherche interne.
+      - q: Quelle est la différence entre le CGM en OEM et le CGM en SKD ?
+        a: >-
+          En OEM, nous fabriquons le CGM fini, prêt à la vente, que vous commercialisez sous votre propre marque en qualité d'importateur ou de distributeur. En SKD, vous recevez des kits partiellement assemblés et réalisez l'assemblage final, le conditionnement et l'étiquetage dans votre pays, ce qui peut permettre au produit d'être reconnu comme fabriqué localement. Le SKD offre des avantages en matière d'intégration locale, mais ajoute des obligations de licence et de qualité sur place.
+
+  - type: link-pills
+    label: À lire aussi
+    items:
+      - label: Kits SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: OEM, ODM ou SKD
+        href: /fr/modeles-de-fabrication-cgm/
+      - label: Guide du CGM en marque blanche
+        href: /fr/blog/cgm-marque-blanche/
+      - label: Le système CGM
+        href: /fr/systeme-mesure-continue-glucose/
+      - label: Application patient, SDK et API
+        href: /fr/application-patient-cgm/
+      - label: Documentation et transparence
+        href: /fr/documentation/
+
+  - type: cta-banner

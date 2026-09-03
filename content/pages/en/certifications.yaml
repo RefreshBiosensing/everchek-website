@@ -110,7 +110,7 @@ sections:
       - Chemical characterization report — analysis and identification of chemical substances associated with product materials.
       - Leachables testing report — measures potential chemicals that may leach from sensor materials into the body under simulated use conditions, supporting biocompatibility.
       - Clinical performance summary — reports the accuracy of our CGM system against a laboratory reference method, with the study design, comparator and per-range breakdown attached.
-      - Sterilization validation — documents that our sterilization process consistently achieves a sterility assurance level (SAL). [TODO: sterilization method]
+      - "Sterilization validation — documents that our sterilization process consistently achieves a sterility assurance level (SAL). [TODO: sterilization method]"
       - Factory calibration validation — proves that our in-house calibration process sets sensor accuracy before shipment, so users do not need fingerstick calibration.
       - Stability & shelf-life validation — data from real-time and accelerated aging studies confirming sensor performance and battery life over the labeled shelf life.
 

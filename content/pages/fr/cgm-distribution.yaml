@@ -1,0 +1,63 @@
+title: "Distribution CGM : partenariat et territoire | EverChek"
+description: "Distribuez les systèmes CGM EverChek sur votre territoire : exclusivité, titulaire de l’homologation, application patient et documents fournis."
+path: /fr/distribution-cgm/
+translationKey: cgm-distribution
+sections:
+  - type: hero
+    variant: split
+    title: Devenez notre partenaire de distribution CGM
+    sub: Élargissez l’accès aux solutions CGM avancées en rejoignant notre réseau mondial de distribution. Nous travaillons avec des distributeurs qualifiés pour diffuser les technologies de biodétection portées sur les marchés de santé du monde entier.
+    buttons:
+      - label: Nous contacter
+        href: /fr/contact/
+        style: primary
+    visual: image
+    image: /images/distribution-hero.webp
+    imageAlt: "Réseau mondial de distribution abstrait avec nœuds interconnectés, cartes du monde et icônes logistiques dont un porte-conteneurs et un avion, sur fond bleu foncé"
+    ratio: 4/3
+
+  - type: card-grid
+    title: Pourquoi devenir notre partenaire ?
+    text: Nous fournissons les produits, l’accompagnement réglementaire et l’expertise de marché nécessaires pour bâtir une activité de distribution CGM rentable.
+    columns: 4
+    media: icon
+    center: true
+    tint: true
+    items:
+      - icon: box
+        title: Élargissez votre gamme
+        text: Proposez à vos clients notre système CGM étalonné en usine, conçu pour un port de 14 jours. Ajoutez des solutions avancées de mesure continue du glucose à votre gamme existante de produits de santé ou de dispositifs médicaux.
+      - icon: clock
+        title: Mise sur le marché plus rapide
+        text: >-
+          Commencez à vendre plus tôt grâce à notre système CGM prêt à l’emploi. Nous fournissons le
+          matériel, l’application mobile et l’infrastructure cloud, ainsi que le dossier technique et
+          les rapports de validation qui raccourcissent votre propre homologation — communiqués sous
+          accord de confidentialité, généralement dans un jour ouvré chinois (lun.–ven., UTC+8)
+          suivant la signature de l’accord.
+      - icon: doc
+        title: Personnalisation de marque
+        text: "Si vous souhaitez vendre sous votre propre marque, nous prenons en charge une personnalisation complète : logo, conditionnement, étiquetage et identité produit localisée. Vous pouvez également distribuer sous notre marque existante, selon votre stratégie de marché et votre positionnement."
+      - icon: chart
+        title: Potentiel de marge supérieur
+        text: Notre CGM offre la même stabilité et la même exactitude que les marques de référence, à un coût plus compétitif. Vous disposez ainsi de plus de latitude pour vous positionner sur votre marché local et construire des marges plus solides.
+
+  - type: text-checks
+    title: Devenir partenaire distributeur
+    text: "Nous recherchons des distributeurs qualifiés qui partagent notre engagement en faveur d’une meilleure santé métabolique par un accès élargi à la technologie CGM. Présentez-nous votre marché et vos capacités de distribution : notre équipe vous recontactera pour étudier un partenariat."
+    points:
+      - Droits de territoire exclusifs pour les partenaires qualifiés
+      - Assistance technique dédiée
+      - Supports marketing et documentation réglementaire fournis
+      - Tarification compétitive avec incitations selon les volumes
+
+  - type: banner-wide
+    title: Votre partenaire B2B de fabrication CGM sur le long terme
+    text: Nous associons des technologies CGM développées en interne à une infrastructure de production évolutive pour accompagner les marques de santé du monde entier.
+    align: left
+    height: short
+    cta:
+      label: Nous contacter
+      href: /fr/contact/
+
+  - type: cta-banner

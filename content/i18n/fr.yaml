@@ -1,0 +1,179 @@
+brand: EverChek
+brandTagline: Fabrication CGM en B2B
+nav:
+  product:
+    label: Produit
+    root: /fr/systeme-mesure-continue-glucose/
+    columns:
+      - heading: Le système
+        links:
+          - label: Système CGM EverChek
+            href: /fr/systeme-mesure-continue-glucose/
+          - label: Application patient EverChek
+            href: /fr/application-patient-cgm/
+          - label: Qu’est-ce qu’un système CGM ?
+            href: /fr/qu-est-ce-qu-un-cgm/
+  solutions:
+    label: Solutions
+    root: /fr/modeles-de-fabrication-cgm/
+    columns:
+      - heading: Fabriquer avec nous
+        links:
+          - label: OEM / ODM et marque blanche
+            href: /fr/cgm-oem/
+          - label: Kits SKD et montage local
+            href: /fr/montage-local-cgm/
+          - label: OEM, ODM et SKD comparés
+            href: /fr/modeles-de-fabrication-cgm/
+      - heading: Commercialiser
+        links:
+          - label: Devenir distributeur
+            href: /fr/distribution-cgm/
+          - label: Appels d’offres publics et intégration locale
+            href: /fr/appels-offres-cgm-skd/
+  business:
+    label: Entreprise
+    root: /fr/a-propos/
+    columns:
+      - heading: À propos d’EverChek
+        links:
+          - label: Qui nous sommes
+            href: /fr/a-propos/
+          - label: La documentation et comment l’obtenir
+            href: /fr/documentation/
+          - label: Nous contacter
+            href: /fr/contact/
+  resources:
+    label: Ressources
+    root: /fr/blog/
+    columns:
+      - heading: Guides
+        links:
+          - label: Qu’est-ce qu’un système CGM ?
+            href: /fr/qu-est-ce-qu-un-cgm/
+          - label: Guide de la technologie CGM pour les marques de santé
+            href: /fr/guide-technologie-cgm-2026/
+          - label: OEM, ODM et SKD comparés
+            href: /fr/modeles-de-fabrication-cgm/
+          - label: Le SKD au service des appels d’offres de santé
+            href: /fr/appels-offres-cgm-skd/
+      - heading: Articles
+        links:
+          - label: Tous les articles
+            href: /fr/blog-cgm/
+          - label: CGM ou BGM — comment choisir
+            href: /fr/blog/cgm-vs-bgm/
+          - label: CGM en marque blanche — lancer votre marque
+            href: /fr/blog/cgm-marque-blanche/
+          - label: Qu’est-ce que le SKD en CGM ?
+            href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+cta:
+  enquiry: Parler à l’usine
+  quote: Demander la fiche technique CGM
+ctaBanner:
+  title: Dites-nous votre marché et votre modèle — nous répondons sous un jour ouvré en Chine.
+  sub: OEM, ODM, kits SKD pour montage local, marque blanche ou distribution. Décrivez ce que vous construisez et nous revenons vers vous avec un avis de faisabilité et la liste des documents qu’exigera votre dossier d’homologation.
+  emailLabel: E-mail professionnel
+  emailPlaceholder: vous@entreprise.com
+  countryLabel: Pays / marché
+  countryPlaceholder: ex. Algérie
+  messageLabel: Que recherchez-vous ?
+  messagePlaceholder: Programme en marque blanche, assemblage SKD dans le pays, droits de distribution pour mon marché…
+  submit: Envoyer la demande
+  sending: Envoi en cours…
+  success: Merci — votre demande est parvenue à notre équipe export. Nous répondons sous un jour ouvré en Chine (lun.–ven., UTC+8).
+  error: Une erreur est survenue. Merci de nous écrire directement à
+  privacy: Vos coordonnées servent uniquement à répondre à cette demande. Aucune newsletter, aucun partage.
+  fullFormLink: Besoin de donner plus de détails ? Utilisez le formulaire complet
+  fullFormHref: /fr/contact/
+footer:
+  blurb: EverChek est un fabricant de CGM exclusivement B2B établi à Shenzhen. Nous fournissons des programmes OEM, ODM, kits SKD et marque blanche aux distributeurs de dispositifs médicaux, aux marques de santé et aux soumissionnaires d’appels d’offres — et nous n’exploitons aucune marque grand public, donc nous ne concurrençons jamais la vôtre sur votre marché.
+  operatorLabel: Une marque du groupe
+  operatorName: Refresh.cc
+  operatorUrl: https://www.refresh.cc/
+  columns:
+    - heading: Produit et solutions
+      links:
+        - label: Système CGM EverChek
+          href: /fr/systeme-mesure-continue-glucose/
+        - label: Application patient EverChek
+          href: /fr/application-patient-cgm/
+        - label: OEM / ODM et marque blanche
+          href: /fr/cgm-oem/
+        - label: Kits SKD et montage local
+          href: /fr/montage-local-cgm/
+        - label: Devenir distributeur
+          href: /fr/distribution-cgm/
+    - heading: Guides
+      links:
+        - label: Qu’est-ce qu’un système CGM ?
+          href: /fr/qu-est-ce-qu-un-cgm/
+        - label: Guide de la technologie CGM
+          href: /fr/guide-technologie-cgm-2026/
+        - label: OEM, ODM et SKD comparés
+          href: /fr/modeles-de-fabrication-cgm/
+        - label: SKD et appels d’offres de santé
+          href: /fr/appels-offres-cgm-skd/
+        - label: CGM ou BGM
+          href: /fr/blog/cgm-vs-bgm/
+        - label: CGM en marque blanche
+          href: /fr/blog/cgm-marque-blanche/
+        - label: Qu’est-ce que le SKD en CGM ?
+          href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+        - label: Tous les articles
+          href: /fr/blog-cgm/
+    - heading: Entreprise
+      links:
+        - label: Qui nous sommes
+          href: /fr/a-propos/
+        - label: Documentation et certifications
+          href: /fr/documentation/
+        - label: Nous contacter
+          href: /fr/contact/
+        - label: Politique de confidentialité
+          href: /fr/politique-de-confidentialite/
+        - label: Conditions générales d’utilisation
+          href: /fr/conditions-generales/
+  contactHeading: Contact
+  email: contact@ever-chek.com
+  whatsapp: +86 191 6859 8056
+  whatsappLink: https://wa.me/8619168598056
+  address: Bureau 902, bâtiment 1, Hengtaiyu Building, communauté de Tangwei, rue Fenghuang, district de Guangming, Shenzhen, Chine
+  legal: © 2026 EverChek. Tous droits réservés.
+  disclaimer: EverChek ne fournit que des entreprises — nous n’exploitons aucun canal grand public. Le statut réglementaire et la disponibilité des produits varient selon les pays ; demandez-nous ce qui s’applique à votre marché avant de planifier un lancement.
+contactForm:
+  name: Nom et prénom
+  company: Société
+  email: E-mail professionnel
+  country: Pays / marché
+  type: Type de demande
+  types:
+    - Programme OEM / marque blanche
+    - ODM / développement sur mesure
+    - Kits SKD ou CKD et montage local
+    - Droits de distribution pour mon marché
+    - Appel d’offres ou marché public
+    - Documentation réglementaire / dossier de certification
+    - Autre
+  quantity: Volume annuel estimé (facultatif)
+  message: Votre message
+  messagePlaceholder: Marché visé, voie réglementaire envisagée, calendrier — tout ce qui nous permet de répondre utilement plutôt que de façon générique.
+  submit: Envoyer la demande
+  sending: Envoi en cours…
+  success: Merci — votre demande a bien été envoyée. Nous répondons sous un jour ouvré en Chine (lun.–ven., UTC+8).
+  error: Une erreur est survenue lors de l’envoi du formulaire. Merci de nous écrire directement à
+  privacy: Vos coordonnées servent uniquement à répondre à cette demande. Aucune newsletter, aucun partage.
+direct:
+  title: Vous préférez l’e-mail ou WhatsApp ?
+  desc: Écrivez-nous directement et nous prenons le relais. Indiquez-nous le marché que vous visez et le modèle que vous avez en tête, et la première réponse sera déjà utile.
+  emailLabel: Ventes et partenariats
+  email: contact@ever-chek.com
+  whatsappLabel: WhatsApp
+  whatsapp: +86 191 6859 8056
+  whatsappLink: https://wa.me/8619168598056
+  addressLabel: Bureau
+  address: Bureau 902, bâtiment 1, Hengtaiyu Building, communauté de Tangwei, rue Fenghuang, district de Guangming, Shenzhen, Chine
+  companyLabel: Exploité par
+  companyName: Refresh.cc
+  companyUrl: https://www.refresh.cc/
+  responseNote: Réponse sous un jour ouvré en Chine (lun.–ven., UTC+8).

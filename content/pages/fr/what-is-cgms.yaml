@@ -1,0 +1,372 @@
+title: Qu’est-ce qu’un CGM ? Mesure continue du glucose | EverChek
+description: "Comment fonctionne un système de mesure continue du glucose (CGM), en quoi il diffère du test capillaire, et les voies OEM, SKD et distribution."
+path: /fr/qu-est-ce-qu-un-cgm/
+translationKey: what-is-cgms
+sections:
+  - type: hero
+    variant: standard
+    title: Qu’est-ce qu’un système de mesure continue du glucose (CGM) ?
+    sub: >-
+      Un système de mesure continue du glucose (CGM) est un dispositif médical qui suit les niveaux de
+      glucose en temps réel au moyen d’un petit capteur porté sous la peau. Contrairement au test
+      capillaire traditionnel par piqûre au doigt, qui ne fournit qu’une valeur ponctuelle, le CGM
+      produit des données continues : il montre les tendances, les profils et les alertes en cas
+      d’hyperglycémie ou d’hypoglycémie — ce qui aide les professionnels de santé et les patients à
+      prendre des décisions thérapeutiques mieux informées et plus anticipatives.
+    buttons:
+      - label: Demandez quel modèle de partenariat CGM convient à votre marché
+        href: /fr/contact/
+      - label: Voir les spécifications du dispositif CGM
+        href: /fr/systeme-mesure-continue-glucose/
+        style: ghost
+
+  - type: step-flow
+    title: Comment fonctionne un système CGM ?
+    text: >-
+      Le glucose passe naturellement du sang vers le liquide interstitiel : les valeurs mesurées dans
+      le liquide interstitiel reflètent donc étroitement la glycémie sanguine.
+    columns: 4
+    items:
+      - icon: patch
+        title: Poser le capteur
+        desc: Une fois le CGM appliqué sur le bras, le capteur commence à fonctionner sous la peau.
+      - icon: sensor
+        title: Analyser le liquide interstitiel
+        desc: >-
+          Le capteur contient des biomatériaux qui réagissent avec le glucose du liquide interstitiel.
+          Ces réactions génèrent des signaux biochimiques, détectés puis convertis en valeurs de
+          glucose toutes les quelques minutes.
+      - icon: wifi
+        title: Transmettre les données
+        desc: Le transmetteur envoie ensuite ces données à votre application mobile ou à votre récepteur.
+      - icon: curve
+        title: Voir les tendances et les alertes
+        desc: >-
+          Vous pouvez ainsi consulter les tendances glycémiques, recevoir des alertes haute et basse et
+          suivre les variations tout au long de la journée.
+
+  - type: compare-table
+    title: Mesure continue du glucose et test glycémique traditionnel
+    highlight: 0
+    columns:
+      - CGM
+      - Test glycémique traditionnel
+    rows:
+      - label: Valeurs de glucose
+        cells:
+          - state: "yes"
+            text: Valeurs de glucose en temps réel
+          - state: "no"
+            text: Mesures ponctuelles
+      - label: Tendances
+        cells:
+          - state: "yes"
+            text: Tendances glycémiques
+          - state: "no"
+            text: Valeurs glycémiques isolées
+      - label: Alertes
+        cells:
+          - state: "yes"
+            text: Alertes d’hyperglycémie et d’hypoglycémie
+          - state: "no"
+            text: Contrôle manuel
+      - label: Prévention
+        cells:
+          - state: "yes"
+            text: Alertes prédictives et prévention
+          - state: "no"
+            text: Réaction tardive fondée sur les symptômes
+      - label: Rythme de surveillance
+        cells:
+          - state: "yes"
+            text: Surveillance continue
+          - state: "no"
+            text: Tests périodiques
+      - label: Historique des données
+        cells:
+          - state: "yes"
+            text: Visibilité des données sur le long terme
+          - state: "no"
+            text: Historique limité
+      - label: Lieu de la prise en charge
+        cells:
+          - state: "yes"
+            text: Télésurveillance des patients
+          - state: "no"
+            text: Suivi en établissement
+      - label: Décisions thérapeutiques
+        cells:
+          - state: "yes"
+            text: Décisions thérapeutiques fondées sur les données
+          - state: "no"
+            text: Décisions médicales fondées sur un instantané
+      - label: L’historique conservé
+        cells:
+          - state: "yes"
+            text: Historique glycémique continu
+          - state: "no"
+            text: Résultats de tests isolés
+    tint: true
+
+  - type: card-grid
+    title: Les signaux de marché qui portent la croissance du CGM
+    text: >-
+      L’épidémie mondiale de diabète et la hausse des dépenses de santé accélèrent la demande de
+      solutions de surveillance continue.
+    columns: 4
+    media: none
+    center: true
+    items:
+      - kicker: 589M+
+        title: Adultes vivant avec le diabète dans le monde
+        text: >-
+          Le nombre d’adultes vivant avec le diabète a plus que triplé depuis 2000, sous l’effet du
+          vieillissement des populations, de la progression de l’obésité et de modes de vie de plus en
+          plus sédentaires, dans les pays développés comme dans les pays en développement.
+        href: https://idf.org/about-diabetes/diabetes-facts-figures/
+        linkLabel: "Source : IDF Diabetes Atlas"
+      - kicker: $1T+
+        title: Dépenses de santé annuelles mondiales liées au diabète
+        text: >-
+          Le diabète représente une part importante et croissante des dépenses de santé mondiales :
+          médicaments, dispositifs, hospitalisations et gestion des complications de long terme, dans
+          toutes les régions.
+        href: https://idf.org/about-diabetes/diabetes-facts-figures/
+        linkLabel: "Source : IDF Diabetes Atlas"
+      - kicker: 853M+
+        title: Adultes diabétiques projetés à l’horizon 2050
+        text: >-
+          Sans intervention significative, le nombre d’adultes diabétiques devrait continuer à
+          progresser fortement, créant une demande durable en outils avancés de surveillance et de
+          prise en charge.
+        href: https://idf.org/about-diabetes/diabetes-facts-figures/
+        linkLabel: "Source : IDF Diabetes Atlas"
+      - kicker: $13.4B
+        title: Taille du marché mondial du CGM en 2025
+        text: >-
+          Le marché des dispositifs CGM a atteint une valeur estimée à 13,38 milliards USD en 2025,
+          dont 5,6 milliards USD pour les seuls États-Unis, portée par des politiques de remboursement
+          favorables et par l’adoption croissante dans le diabète de type 2.
+        href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
+        linkLabel: "Source : Grand View Research"
+      - kicker: 16.3%
+        title: TCAC prévu 2026–2035
+        text: >-
+          Le marché du CGM devrait croître à un taux de croissance annuel composé de 16,3 % de 2026 à
+          2035, dépassant la plupart des autres segments du dispositif médical et traduisant une
+          adoption mondiale qui s’accélère.
+        href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
+        linkLabel: "Source : GM Insights"
+      - kicker: $41.4B
+        title: Taille projetée du marché du CGM à l’horizon 2033
+        text: >-
+          Le marché mondial des dispositifs CGM devrait presque tripler par rapport à son niveau de
+          2025 et atteindre 41,41 milliards USD en 2033, à mesure que les technologies non invasives et
+          les analyses assistées par IA portent la génération suivante d’adoption.
+        href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
+        linkLabel: "Source : Grand View Research"
+      - kicker: 50.5%
+        title: Patients diabétiques n’atteignant pas les objectifs glycémiques
+        text: >-
+          Malgré les progrès thérapeutiques, seule la moitié environ des personnes diabétiques atteint
+          les objectifs glycémiques recommandés — ce qui souligne le besoin urgent de meilleures
+          solutions de surveillance continue.
+        href: https://diabetesjournals.org/clinical/article/43/3/399/158023
+        linkLabel: "Source : ADA Clinical Diabetes"
+      - kicker: 4.2%
+        title: Rythme de progression de la prévalence mondiale du diabète
+        text: >-
+          La prévalence du diabète continue de progresser d’environ 4,2 % par an dans les régions en
+          développement, sous l’effet de l’urbanisation, des changements alimentaires et du
+          vieillissement des populations — ce qui élargit le marché adressable du CGM.
+        href: https://idf.org/about-diabetes/diabetes-facts-figures/
+        linkLabel: "Source : IDF Diabetes Atlas"
+
+  - type: card-grid
+    title: Le CGM en vaut-il la peine pour les acteurs de santé ?
+    text: >-
+      Ajouter le CGM à votre portefeuille santé crée de la valeur clinique et commerciale sur
+      plusieurs plans.
+    columns: 3
+    media: icon
+    center: true
+    items:
+      - icon: shield
+        title: Conserver vos parts de marché
+        text: >-
+          À mesure que l’adoption du CGM progresse, proposer des solutions CGM aide votre activité à
+          rester compétitive sur un marché du diabète en pleine évolution et à répondre à des attentes
+          clients qui changent.
+      - icon: box
+        title: Élargir votre gamme
+        text: >-
+          Ajoutez le CGM à votre portefeuille existant en diabète, en diagnostic ou en maladies
+          chroniques, en créant de la valeur supplémentaire pour vos clients et de nouvelles
+          opportunités de croissance.
+      - icon: chart
+        title: Développer votre chiffre d’affaires
+        text: >-
+          Les systèmes CGM reposent sur des capteurs jetables généralement remplacés tous les 14 jours,
+          ce qui vous permet de bénéficier de commandes récurrentes continues plutôt que d’achats
+          ponctuels.
+      - icon: heart
+        title: Améliorer la prise en charge des patients
+        text: >-
+          Le CGM apporte des informations glycémiques fondées sur les tendances plutôt que sur des
+          mesures isolées, ce qui aide les médecins et les équipes soignantes à décider en connaissance
+          de cause.
+      - icon: hospital
+        title: Améliorer l’efficience clinique
+        text: >-
+          Vous pouvez réduire la dépendance à des contrôles glycémiques dispersés et intégrer les
+          données de glucose en continu dans les parcours de santé numériques, améliorant le suivi des
+          patients au-delà des consultations en présentiel.
+      - icon: curve
+        title: Soutenir la surveillance préventive
+        text: >-
+          Le CGM permet aux équipes soignantes de suivre en continu les variations glycémiques des
+          patients et d’identifier les profils anormaux avant qu’ils ne s’aggravent.
+
+  - type: card-grid
+    title: Comment développer rapidement votre activité CGM ?
+    text: Choisissez le modèle de partenariat adapté à votre stade de développement et à vos capacités.
+    columns: 3
+    media: icon
+    center: true
+    tint: true
+    items:
+      - icon: cog
+        title: CGM SKD (semi-knocked-down)
+        text: >-
+          Kits CGM partiellement assemblés qui vous permettent de réaliser localement le montage, le
+          conditionnement et l’étiquetage sous votre propre marque. Comprend un accompagnement
+          documentaire réglementaire pour vous aider à répondre aux exigences de conformité propres à
+          chaque pays.
+        href: /fr/montage-local-cgm/
+        linkLabel: Lancer une étude de faisabilité SKD
+      - icon: factory
+        title: CGM OEM (Original Equipment Manufacturing)
+        text: >-
+          Lancez votre propre CGM de marque, EverChek assurant la fabrication complète du système. De
+          la production du capteur au conditionnement final, nous fabriquons le produit complet selon
+          vos spécifications pendant que vous vous concentrez sur le développement de votre marché.
+        href: /fr/cgm-oem/
+        linkLabel: Découvrir la fabrication CGM en OEM
+      - icon: globe
+        title: Distribution CGM
+        text: >-
+          Devenez distributeur agréé des produits CGM EverChek dans votre région. Aucune ligne
+          d’assemblage ni salle blanche n’est nécessaire : appuyez-vous simplement sur nos produits
+          prêts à commercialiser et sur votre réseau de vente local.
+        href: /fr/distribution-cgm/
+        linkLabel: Nous interroger sur la distribution sur votre marché
+
+  - type: card-grid
+    title: Pourquoi travailler avec nous ?
+    text: >-
+      EverChek apporte une expertise CGM de bout en bout — de la R&D à la conformité réglementaire —
+      pour accélérer votre entrée sur le marché.
+    columns: 3
+    media: icon
+    center: true
+    items:
+      - icon: cog
+        title: Développement CGM en interne
+        text: >-
+          Nous développons notre technologie CGM en interne — de la conception du capteur aux
+          algorithmes et à l’intégration complète du système. Vous bénéficiez d’un support technique
+          direct, d’une meilleure maîtrise du produit et d’une chaîne d’approvisionnement plus stable.
+      - icon: factory
+        title: Capacité de fabrication
+        text: >-
+          Nos sites de production sont conçus pour une fabrication évolutive avec des standards de
+          qualité constants. Vous bénéficiez d’un approvisionnement fiable, de délais prévisibles et de
+          performances produit stables.
+      - icon: phone
+        title: Écosystème logiciel dédié
+        text: >-
+          Au-delà du matériel, nous fournissons à la fois une application patient et une application
+          médecin. Vous proposez une solution CGM complète, avec données connectées, surveillance et
+          visibilité clinique.
+      - icon: doc
+        title: Accompagnement réglementaire
+        text: >-
+          Nous accompagnons nos partenaires dans la préparation de l’enregistrement, la documentation
+          technique et les exigences de conformité, afin de simplifier l’entrée sur le marché local.
+      - icon: set
+        title: Modèles de coopération flexibles
+        text: >-
+          Que vous ayez besoin de SKD, d’OEM, de distribution ou d’une structure de partenariat sur
+          mesure, nous nous adaptons à vos objectifs de marché, à vos besoins réglementaires et à votre
+          stade de développement.
+      - icon: handshake
+        title: Conçu pour un partenariat de long terme
+        text: >-
+          Nous travaillons comme un partenaire de long terme et accompagnons votre croissance à mesure
+          que votre activité s’étend vers de nouveaux marchés et des opportunités plus importantes.
+
+  - type: faq
+    title: Questions sur la mesure continue du glucose
+    items:
+      - q: Qu’est-ce qu’un système de mesure continue du glucose (CGM) ?
+        a: >-
+          Un CGM est un dispositif médical qui suit les niveaux de glucose en temps réel au moyen d’un
+          petit capteur porté sous la peau. Au lieu d’une valeur unique à un instant donné, il produit
+          des données continues — tendances, profils et alertes en cas d’hyperglycémie ou
+          d’hypoglycémie — pour que cliniciens et patients prennent des décisions thérapeutiques mieux
+          informées et plus anticipatives.
+      - q: En quoi le CGM diffère-t-il du test glycémique traditionnel par piqûre au doigt ?
+        a: >-
+          Le test par piqûre au doigt donne des mesures ponctuelles isolées, réalisées manuellement et
+          relues en consultation. Un CGM fournit des valeurs en temps réel, des tendances glycémiques,
+          des alertes haute et basse, des alertes prédictives, une visibilité des données sur le long
+          terme et la télésurveillance des patients — les décisions thérapeutiques reposent ainsi sur
+          un historique glycémique continu plutôt que sur un instantané.
+      - q: Un capteur CGM mesure-t-il directement la glycémie sanguine ?
+        a: >-
+          Non. Le capteur est placé sous la peau et réagit avec le glucose du liquide interstitiel, en
+          convertissant le signal biochimique en valeur de glucose toutes les quelques minutes. Comme
+          le glucose passe naturellement du sang vers le liquide interstitiel, les valeurs
+          interstitielles reflètent étroitement la glycémie sanguine.
+      - q: À quelle fréquence remplace-t-on un capteur CGM ?
+        a: >-
+          Les systèmes CGM reposent sur des capteurs jetables généralement remplacés tous les 14 jours.
+          Pour un distributeur ou une marque de santé, c’est la caractéristique commerciale qui compte
+          le plus : l’activité repose sur des commandes récurrentes continues plutôt que sur des achats
+          d’appareils ponctuels.
+      - q: Comment une marque de santé peut-elle commencer à vendre du CGM ?
+        a: >-
+          Il existe trois voies habituelles. Le SKD fournit des kits partiellement assemblés pour le
+          montage, le conditionnement et l’étiquetage locaux sous votre propre marque. L’OEM confie à
+          EverChek la fabrication du système complet à votre marque et selon vos spécifications. La
+          distribution vous permet de vendre des produits EverChek prêts à commercialiser via votre
+          réseau de vente existant, sans aucune capacité d’assemblage requise.
+
+  - type: link-pills
+    label: Explorer
+    items:
+      - label: Spécifications du dispositif CGM
+        href: /fr/systeme-mesure-continue-glucose/
+      - label: Fabrication CGM en OEM
+        href: /fr/cgm-oem/
+      - label: Montage local CGM et kits SKD
+        href: /fr/montage-local-cgm/
+      - label: Distribution CGM
+        href: /fr/distribution-cgm/
+      - label: Application patient CGM en marque blanche
+        href: /fr/application-patient-cgm/
+
+  - type: banner-wide
+    title: Votre partenaire B2B de fabrication CGM sur le long terme
+    text: >-
+      Nous associons des technologies CGM développées en interne à une infrastructure de fabrication
+      évolutive pour accompagner les marques de santé du monde entier.
+    align: center
+    cta:
+      label: Demandez quel modèle de partenariat CGM convient à votre marché
+      href: /fr/contact/
+    cta2:
+      label: Voir les spécifications du dispositif CGM
+      href: /fr/systeme-mesure-continue-glucose/
+
+  - type: cta-banner

@@ -1,0 +1,73 @@
+title: "Blog CGM : fabrication, marché et conformité | EverChek"
+description: "Analyses sur la technologie CGM, les modèles de fabrication, la conformité réglementaire et la stratégie commerciale, par l'équipe B2B EverChek."
+path: /fr/blog-cgm/
+translationKey: cgm-blogs
+sections:
+  - type: hero
+    variant: centered
+    kicker: "Blog EverChek"
+    title: "Analyses CGM pour les marques de santé et les distributeurs"
+    sub: "Analyses sur la technologie CGM, les modèles de fabrication, la conformité réglementaire et la stratégie commerciale dans le secteur de la santé."
+  - type: card-grid
+    title: "Tous les articles"
+    columns: 3
+    media: image
+    ratio: 16/9
+    center: true
+    items:
+      - image: /blog/private-label-cgm-images/01-private-label-cgm.webp
+        kicker: "Technologie CGM · 6 juillet 2026"
+        title: "CGM en marque blanche : lancer rapidement votre propre marque de CGM, à moindre coût"
+        text: "Guide de la marque blanche CGM pour les marques de santé et les distributeurs. Comment lancer vite et à faible coût une marque de CGM, en marque blanche, en OEM ou en SKD."
+        href: /fr/blog/cgm-marque-blanche/
+        linkLabel: "Lire le guide"
+      - image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
+        kicker: "Fabrication · 3 juillet 2026"
+        title: "Qu'est-ce que le CGM SKD ? Guide B2B du montage local semi-démonté"
+        text: "Guide B2B complet de la fabrication CGM en semi-knocked-down : contenu d'un kit SKD, profils concernés, déroulé étape par étape, bénéfices clés et critères de choix d'un fabricant fiable."
+        href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+        linkLabel: "Lire le guide"
+      - image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
+        kicker: "Technologie CGM · 30 juin 2026"
+        title: "CGM ou BGM : comment choisir pour votre activité de santé"
+        text: "Comparaison complète du CGM et du BGM pour les marques de santé : exactitude, données de marché, voies réglementaires, intégration à la santé numérique et choix de la bonne approche."
+        href: /fr/blog/cgm-vs-bgm/
+        linkLabel: "Lire le guide"
+      - image: /images/blog-cover-1.webp
+        kicker: "Technologie CGM · 2 juin 2026"
+        title: "Technologie CGM : guide complet pour les marques de santé en 2026"
+        text: "Guide complet des tendances de la technologie CGM, des indicateurs d'exactitude et de la manière dont une marque de santé choisit le système adapté."
+        href: /fr/guide-technologie-cgm-2026/
+        linkLabel: "Lire le guide"
+      - image: /images/blog-cover-2.webp
+        kicker: "Fabrication · 28 mai 2026"
+        title: "OEM, SKD ou ODM : quel modèle de fabrication CGM vous convient ?"
+        text: "Comparez les modèles OEM, SKD, CKD et ODM pour identifier l'approche de partenariat CGM adaptée à votre activité."
+        href: /fr/modeles-de-fabrication-cgm/
+        linkLabel: "Lire le guide"
+      - image: /images/blog-cover-3.webp
+        kicker: "Secteur de la santé · 14 mai 2026"
+        title: "Comment le SKD vous aide à remporter les appels d'offres publics de santé"
+        text: "Comment le modèle SKD confère aux entreprises de santé un avantage concurrentiel lors de la soumission aux appels d'offres publics."
+        href: /fr/appels-offres-cgm-skd/
+        linkLabel: "Lire le guide"
+    tint: true
+  - type: link-pills
+    label: "Découvrir EverChek"
+    items:
+      - label: "Fabrication CGM en OEM"
+        href: /fr/cgm-oem/
+      - label: "Coopération CGM en SKD"
+        href: /fr/montage-local-cgm/
+      - label: "Distribution CGM"
+        href: /fr/distribution-cgm/
+      - label: "Le système CGM EverChek"
+        href: /fr/systeme-mesure-continue-glucose/
+  - type: banner-wide
+    title: "Votre partenaire B2B de fabrication CGM sur le long terme"
+    text: "Nous associons des technologies CGM développées en interne à une infrastructure de fabrication évolutive, au service des marques de santé du monde entier."
+    align: center
+    cta:
+      label: "Nous contacter"
+      href: /fr/contact/
+  - type: cta-banner

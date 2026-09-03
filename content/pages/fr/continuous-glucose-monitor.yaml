@@ -1,0 +1,271 @@
+title: Système CGM de mesure continue du glucose | EverChek
+description: "Spécifications complètes du système CGM EverChek : capteur 14 jours, étalonnage en usine, transmetteur Bluetooth et application patient."
+path: /fr/systeme-mesure-continue-glucose/
+translationKey: continuous-glucose-monitor
+schemaType: product
+sections:
+  - type: hero
+    variant: split
+    title: Système EverChek de mesure continue du glucose
+    sub: Exclusivement dédiés aux partenariats B2B, nous développons des solutions fiables de mesure continue du glucose (CGM) pour tous les acteurs de santé dans le monde. Souples et économiques, nos modèles OEM/SKD sont conçus pour soutenir et développer votre activité CGM.
+    buttons:
+      - label: Nous contacter
+        href: /fr/contact/
+        style: primary
+    note: |
+      Remarque : ce produit est destiné à la surveillance continue ou périodique de la concentration
+      de glucose dans le liquide interstitiel des patients diabétiques. Il n’a été évalué que chez
+      des patients adultes (18 ans et plus). Sa commercialisation dans les populations pédiatriques,
+      chez la femme enceinte ou dans d’autres populations particulières peut nécessiter des essais
+      locaux complémentaires selon la réglementation applicable.
+    visual: image
+    image: /images/product-composite.webp
+    imageAlt: Système EverChek de mesure continue du glucose — kit capteur et transmetteur présenté à côté de l’application compagnon affichant une courbe de glucose en temps réel
+    ratio: 4/3
+
+  - type: card-grid
+    title: Tout ce qu’il faut pour une surveillance intelligente du glucose
+    text: Du suivi en temps réel aux alertes prédictives, notre système CGM offre à l’utilisateur une visibilité complète sur son profil glycémique.
+    columns: 3
+    media: image
+    ratio: 1/1
+    center: true
+    items:
+      - image: /images/cgm-app-phone-1.webp
+        title: Suivi du glucose en temps réel
+        text: Les valeurs de glucose sont actualisées automatiquement toutes les 5 minutes. Observez sans délai la réaction de l’organisme à un repas, à une séance de sport, à un médicament ou à une variation d’humeur. Ajustez immédiatement, et non plusieurs heures plus tard.
+        imageNote: Écran de suivi du glucose en temps réel de l’application EverChek CGM
+      - image: /images/cgm-app-phone-2.webp
+        title: Génération de courbes glycémiques
+        text: Le système suit le glucose 24 h/24 et transforme des données continues en tendances claires que des piqûres au bout du doigt isolées ne peuvent pas restituer. Il offre une visibilité durable sur les rythmes glycémiques, au service d’une meilleure prise en charge du diabète.
+        imageNote: Écran de courbe glycémique de l’application EverChek CGM
+      - image: /images/cgm-app-phone-3.webp
+        title: Anticipation des épisodes d’hypo- et d’hyperglycémie
+        text: "Le système identifie les variations fines du glucose au fil du temps : montées rapides, baisses progressives, changements précoces entre les repas ou pendant la nuit. Il délivre des alertes précoces avant que la glycémie ne devienne trop élevée ou trop basse."
+        imageNote: Écran de prédiction des épisodes d’hypo- et d’hyperglycémie de l’application EverChek CGM
+      - image: /images/cgm-app-phone-4.webp
+        title: Personnalisation des alertes glycémiques
+        text: Définissez vos propres seuils glycémiques. Recevez une notification dès que la valeur dépasse la plage cible ou passe en dessous, pour rester informé et agir sans attendre.
+        imageNote: Écran de réglage des alertes personnalisées d’hyperglycémie et d’hypoglycémie de l’application EverChek CGM
+      - image: /images/cgm-app-phone.webp
+        title: Une liberté de mouvement au quotidien
+        text: Un capteur miniature se place juste sous la peau, pour une pose indolore et quasi imperceptible. Étanche et conçu pour un port continu de 14 jours, il reste confortable pendant le sommeil, le sport, la douche et les activités quotidiennes.
+        imageNote: Écran d’activités quotidiennes et de durée de port de l’application EverChek CGM
+
+  - type: card-grid
+    title: Conçu pour une mesure continue du glucose exacte
+    text: L’exactitude du capteur est caractérisée par le MARD par rapport à une méthode de référence de laboratoire, ce qui fournit des données fiables aux patients comme aux cliniciens.
+    columns: 3
+    media: icon
+    center: true
+    tint: true
+    items:
+      - icon: chart
+        kicker: MARD
+        title: Exactitude
+        text: L’exactitude est caractérisée par le MARD (Mean Absolute Relative Difference) par rapport à une méthode de référence de laboratoire. Notre synthèse de performance clinique est communiquée aux partenaires qualifiés sous accord de confidentialité réciproque.
+      - icon: box
+        kicker: Conception tout-en-un
+        title: Simplicité
+        text: Aucun assemblage requis avant utilisation.
+      - icon: clock
+        kicker: Surveillance 24 h/24, 7 j/7
+        title: Couverture continue
+        text: Restez informé de vos valeurs de glucose à toute heure.
+      - icon: sensor
+        kicker: 5,6 mm
+        title: Longueur du capteur
+        text: Conçu pour une pose stable du capteur.
+      - icon: patch
+        kicker: Port de 14 jours
+        title: Durée de port prolongée
+        text: Moins de remplacements, davantage de confort.
+      - icon: shield
+        kicker: IPX8
+        title: Étanche
+        text: Portez-le en toute confiance sous la douche ou à la piscine.
+      - icon: arrow
+        kicker: Préchauffage 60 min
+        title: Démarrage rapide
+        text: Prêt à fournir des valeurs après un court temps d’initialisation.
+      - icon: set
+        kicker: 24,8*4,8 mm
+        title: Format d’une pièce de monnaie
+        text: Encombrement réduit pour un port discret au quotidien.
+      - icon: curve
+        kicker: Intervalles de 5 min
+        title: Fréquence des données
+        text: Recevez plus de 1 000 valeurs de glucose au fil de la journée.
+
+  - type: image-text
+    variant: top
+    title: Au cœur de notre système EverChek de mesure continue du glucose
+    text: Chaque composant du CGM fonctionne en synergie pour assurer une mesure fiable du glucose.
+    image: /images/p30-components.webp
+    imageAlt: "Vue éclatée des composants du système EverChek de mesure continue du glucose : applicateur, transmetteur, capteur, aiguille d’insertion, patch adhésif et tube stérile, montrant comment chaque pièce du CGM contribue à une mesure fiable du glucose."
+    ratio: 16/9
+
+  - type: compare-table
+    title: Spécifications de notre kit intégré capteur et transmetteur
+    text: Paramètres techniques complets de notre ensemble capteur-transmetteur intégré, conçu pour répondre aux normes exigeantes applicables aux dispositifs médicaux.
+    columns:
+      - Kit capteur + transmetteur CGM EverChek
+    highlight: 1
+    rows:
+      - label: Plage de détection de la concentration de glucose
+        cells:
+          - state: plain
+            text: 2-25 mmol/L
+      - label: Dimensions du transmetteur (diamètre*hauteur)
+        cells:
+          - state: plain
+            text: Diamètre 24,8mm*4,8mm
+      - label: Profondeur d’implantation du capteur in vivo
+        cells:
+          - state: plain
+            text: 5,6 mm
+      - label: Alimentation du transmetteur
+        cells:
+          - state: plain
+            text: Une pile au lithium (3V) CR1025
+      - label: Durée de vie
+        cells:
+          - state: plain
+            text: 14 jours
+      - label: Mémoire du transmetteur
+        cells:
+          - state: plain
+            text: Peut conserver les données pendant 14 jours au maximum
+      - label: Température de fonctionnement
+        cells:
+          - state: plain
+            text: 5–40 °C
+      - label: Humidité relative de fonctionnement
+        cells:
+          - state: plain
+            text: 10%–90% HR
+      - label: Pression atmosphérique
+        cells:
+          - state: plain
+            text: 70–106 kPa
+      - label: Temps de démarrage
+        cells:
+          - state: plain
+            text: 60 min
+      - label: Portée de transmission sans fil
+        cells:
+          - state: plain
+            text: 10 m
+      - label: Indice d’étanchéité
+        cells:
+          - state: plain
+            text: IPX8
+      - label: Méthode de stérilisation
+        cells:
+          - state: plain
+            text: "[TODO: sterilisation method — the old site states two conflicting values (this page said Irradiation Sterilization, cgm-skd said Ethylene Oxide (EO) or E-beam). Do not publish a value until engineering confirms.]"
+      - label: Bande de fréquence de transmission
+        cells:
+          - state: plain
+            text: 2402 MHz–2480 MHz
+      - label: Type de modulation
+        cells:
+          - state: plain
+            text: GFSK
+      - label: Puissance apparente rayonnée (CMIIT ID)
+        cells:
+          - state: plain
+            text: 0 dBm
+      - label: Mémoire du transmetteur
+        cells:
+          - state: plain
+            text: "RAM : 96 KB · SiP Flash : 512 KB"
+
+  - type: step-flow
+    title: Comment poser et utiliser notre CGM EverChek ?
+    text: "Trois étapes simples pour démarrer : poser, appairer, puis suivre les données de glucose en temps réel sur votre smartphone."
+    columns: 3
+    arrows: true
+    center: true
+    tint: true
+    items:
+      - icon: patch
+        title: "Étape 1 : pose"
+        desc: Après avoir nettoyé la peau, retirez le capot inférieur du CGM EverChek et appliquez l’applicateur fermement et verticalement sur le bras. Le déclic indique que le capteur a été correctement posé.
+      - icon: phone
+        title: "Étape 2 : appairage et préchauffage"
+        desc: Téléchargez l’application EverChek, scannez le QR code et effectuez l’appairage Bluetooth. Patientez 1 heure, le temps du préchauffage du capteur, avant l’affichage des premières valeurs.
+      - icon: curve
+        title: "Étape 3 : surveillance"
+        desc: Consultez les données de glucose en temps réel sur votre téléphone et recevez les alertes haute et basse. Enregistrez vos activités quotidiennes, alimentation et exercice physique, pour mieux comprendre vos profils glycémiques. Retirez le transmetteur au bout de 14 jours.
+
+  - type: card-grid
+    title: Pourquoi choisir le CGM EverChek pour votre activité de santé ?
+    text: "R&D interne, modèles de partenariat souples et tarification compétitive : de quoi accompagner votre activité CGM à chaque étape de sa croissance."
+    columns: 3
+    media: icon
+    center: true
+    items:
+      - icon: factory
+        title: R&D et fabrication internes
+        text: Nous détenons des brevets sur les technologies CGM clés — puces, capteurs et systèmes biochimiques — et disposons d’une usine de 2 000 m² dotée d’une salle blanche de classe 10 000. Cela nous donne une maîtrise plus étroite de la performance des capteurs, de la constance des produits et de leurs évolutions futures.
+      - icon: chart
+        title: Coûts et stabilité de l’approvisionnement
+        text: En pilotant nous-mêmes les procédés de production essentiels, nous réduisons continuellement les coûts produit et maintenons une capacité de fabrication stable pour tous nos clients. Développez votre activité en confiance, avec une tarification compétitive, un approvisionnement CGM fiable et des délais de livraison tenus.
+      - icon: handshake
+        title: Modèles de coopération souples
+        text: Nous prenons en charge le SKD pour la production locale et l’enregistrement CE, la personnalisation OEM sous votre marque et les partenariats de distribution. Le développement technique, la production et le conditionnement étant gérés en interne, nous nous adaptons rapidement à différents objectifs commerciaux et stades de croissance.
+
+  - type: faq
+    title: Questions fréquentes
+    items:
+      - q: Qu’est-ce qu’un moniteur CGM ?
+        a: CGM signifie Continuous Glucose Monitor, c’est-à-dire mesure continue du glucose. Destiné à la prise en charge du diabète, il s’agit d’un dispositif médical porté sur le corps qui mesure en continu la concentration de glucose dans le liquide interstitiel. Il fournit aux patients comme aux professionnels de santé des tendances glycémiques en temps réel, au-delà des mesures ponctuelles.
+      - q: Les moniteurs CGM EverChek sont-ils douloureux ?
+        a: La plupart des utilisateurs rapportent une douleur minime, voire nulle. Notre capteur est en effet inséré au moyen d’un système d’application rapide, en 0,2 milliseconde seulement.
+      - q: Quelle est l’exactitude des moniteurs CGM EverChek ?
+        a: >-
+          L’exactitude est caractérisée par le MARD (Mean Absolute Relative Difference) par rapport à
+          une méthode de référence de laboratoire. Notre synthèse de performance clinique — plan
+          d’étude, méthode de référence, taille de l’échantillon et résultats par segments — est
+          communiquée aux partenaires qualifiés sous accord de confidentialité réciproque, sous la
+          forme qu’attendront votre organisme notifié ou votre autorité de santé.
+      - q: EverChek est-il invasif ou non invasif ?
+        a: Il est peu invasif. Un fin filament capteur est inséré juste sous la peau et peut être porté jusqu’à 14 jours. Le dispositif, léger et de la taille d’une pièce de monnaie, est conçu pour un port quotidien stable avec une sensation minimale.
+      - q: Où en est la certification CE de votre CGM ?
+        a: Nous sommes actuellement en cours d’obtention de la certification CE. Pour nos partenaires SKD, nous pouvons également fournir la documentation technique et un accompagnement pour les demandes d’homologation locales. N’hésitez pas à nous contacter pour discuter de votre projet.
+      - q: Quelle est votre quantité minimale de commande (MOQ) ?
+        a: Comme nous développons et fabriquons nos systèmes CGM en interne, nous sommes très souples dans la coopération et n’imposons pas de MOQ fixe. Quels que soient le volume de commande ou le besoin, nous pouvons nous adapter. Contactez-nous et voyons ensemble comment vous accompagner.
+      - q: Que mesure un CGM ?
+        a: Le CGM mesure la concentration de glucose dans le liquide interstitiel sous la peau, et non directement dans le sang. Son principal avantage est de fournir des valeurs de glucose continues et en temps réel, 24 h/24 et 7 j/7. L’utilisateur comprend ainsi l’évolution de sa glycémie dans le temps, en particulier après les repas, l’exercice et les activités quotidiennes, ce qui facilite aussi les décisions thérapeutiques.
+      - q: Quelles données peut-on consulter dans l’application ?
+        a: L’utilisateur peut consulter ses valeurs de glucose en temps réel et l’historique des tendances, saisir ses activités quotidiennes et recevoir des notifications d’alerte ainsi que des prédictions glycémiques.
+      - q: Le CGM peut-il remplacer les tests par piqûre au bout du doigt ?
+        a: Le CGM fournit des données de tendance glycémique en continu, mais un test par piqûre au bout du doigt peut rester nécessaire dans certaines situations, par exemple lorsque les symptômes ne correspondent pas aux valeurs affichées. Le CGM permet néanmoins de réduire fortement le recours global aux piqûres au bout du doigt.
+      - q: Quelle est la durée de vie du capteur ?
+        a: Le capteur est conçu pour une utilisation continue pouvant aller jusqu’à 14 jours.
+      - q: Le CGM peut-il être utilisé en milieu clinique ?
+        a: Oui. Il convient aussi bien à la surveillance hospitalière qu’aux programmes ambulatoires de prise en charge du diabète. Nous proposons également une application dédiée aux médecins et pouvons adapter notre système à différentes exigences cliniques. Contactez-nous pour évoquer vos besoins de surveillance glycémique hospitalière ou clinique.
+      - q: Où le capteur se pose-t-il ?
+        a: Le capteur se pose généralement à l’arrière du bras, entre le biceps et le triceps. Cette zone limite l’influence des mouvements musculaires et favorise des mesures stables et régulières pendant les activités quotidiennes.
+      - q: Puis-je personnaliser le produit ou le logiciel ?
+        a: Tout à fait. Nous pouvons personnaliser aussi bien le produit que le logiciel selon vos exigences. Envoyez-nous un message afin que nous puissions étudier votre projet en détail.
+      - q: Puis-je faire fabriquer le CGM sous ma propre marque ?
+        a: Oui. Nous prenons en charge le SKD, l’OEM et bien d’autres modèles de partenariat. Contactez-nous, parlons-en !
+      - q: À quelle fréquence la valeur de glucose est-elle actualisée ?
+        a: Les données de glucose sont actualisées toutes les 5 minutes et transmises à l’application en temps réel.
+      - q: La performance du capteur reste-t-elle fiable sur 14 jours ?
+        a: Le capteur est conçu pour conserver une performance stable pendant toute la durée de port, dans des conditions normales d’utilisation.
+      - q: Quelles alertes le système fournit-il ?
+        a: Le système fournit des alertes configurables d’hyperglycémie et d’hypoglycémie, ainsi que des prédictions fondées sur les tendances, afin d’aider l’utilisateur à réagir à temps.
+
+  - type: banner-wide
+    title: Votre partenaire B2B de fabrication CGM sur le long terme
+    text: Nous associons des technologies CGM développées en interne à une infrastructure de production évolutive pour accompagner les marques de santé du monde entier.
+    align: left
+    height: short
+    cta:
+      label: Nous contacter
+      href: /fr/contact/
+
+  - type: cta-banner

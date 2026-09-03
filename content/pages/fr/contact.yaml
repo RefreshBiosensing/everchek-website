@@ -1,0 +1,57 @@
+title: Contactez l'équipe CGM OEM et marque blanche | EverChek
+description: "Parlez à l'équipe B2B CGM d'EverChek : OEM, ODM, kits SKD, marque blanche ou distribution. Indiquez votre marché, réponse sous un jour ouvré."
+path: /fr/contact/
+translationKey: contact
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    kicker: Demandes B2B uniquement · Réponse sous un jour ouvré
+    title: Parlons de votre projet CGM
+    sub: Nos solutions CGM vous intéressent ? Contactez notre équipe pour étudier comment nous pouvons soutenir votre activité. Que vous construisiez une marque CGM, que vous vous développiez sur de nouveaux marchés de santé ou que vous intégriez le CGM à votre système, nous sommes prêts à accompagner votre prochaine étape de croissance.
+    image: /images/contact-hero-factory.webp
+    imageAlt: Usine et site de production de CGM EverChek à Shenzhen
+    ratio: 4/3
+
+  - type: card-grid
+    center: true
+    columns: 4
+    media: icon
+    title: De quel type de projet s'agit-il ?
+    text: Indiquez-nous la voie que vous empruntez et la discussion démarrera au bon endroit. Toutes les voies ci-dessous sont traitées par la même équipe B2B.
+    items:
+      - icon: box
+        title: OEM et marque blanche
+        text: "Votre marque sur notre plateforme CGM : dispositif, conditionnement et application patient sous votre propre marque."
+        href: /fr/cgm-oem/
+        linkLabel: CGM OEM et marque blanche
+      - icon: factory
+        title: SKD et montage local
+        text: Kits semi-knocked-down (SKD) assemblés sur votre propre marché, pour les voies d'intégration locale et de fabrication locale.
+        href: /fr/montage-local-cgm/
+        linkLabel: CGM SKD et montage local
+      - icon: handshake
+        title: Distribution
+        text: Approvisionnement d'un territoire pour les distributeurs et importateurs de dispositifs médicaux qui constituent une gamme CGM.
+        href: /fr/distribution-cgm/
+        linkLabel: Distribution CGM
+      - icon: doc
+        title: Appels d'offres publics
+        text: Dossiers documentaires constitués en fonction de l'enveloppe technique de l'appel d'offres auquel vous soumissionnez.
+        href: /fr/appels-offres-cgm-skd/
+        linkLabel: Appels d'offres CGM et SKD
+
+  - type: checklist
+    title: Ce qu'il faut nous indiquer pour obtenir une réponse utile
+    text: Un premier message contenant ces cinq éléments obtient une réponse de fond, plutôt qu'une demande de complément d'information.
+    columns: 2
+    panel: true
+    tint: true
+    items:
+      - Votre marché ou vos marchés cibles, et si vous y détenez déjà une autorisation d'importation ou de fabrication
+      - Le modèle que vous envisagez — OEM, ODM, kit SKD, marque blanche ou distribution
+      - "Qui doit détenir l'homologation sur le marché : vous ou nous"
+      - La documentation exigée par votre autorité de santé ou par votre appel d'offres, et pour quelle échéance
+      - Le volume annuel indicatif, si vous en avez un — une fourchette suffit à ce stade
+
+  - type: contact-form

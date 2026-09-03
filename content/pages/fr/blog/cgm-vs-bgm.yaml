@@ -1,0 +1,260 @@
+title: "CGM vs BGM : comment choisir pour votre activité | EverChek"
+description: >-
+  Comparatif CGM/BGM pour les acteurs de santé : exactitude, voies réglementaires, données de marché, intégration et critères de choix.
+path: /fr/blog/cgm-vs-bgm/
+translationKey: cgm-vs-bgm
+schemaType: article
+sections:
+  - type: hero
+    variant: dark
+    kicker: CGM vs BGM
+    title: "CGM vs BGM : comment choisir pour votre activité de santé"
+    sub: >-
+      Tout fabricant ou distributeur de dispositifs médicaux positionné sur la mesure du glucose arrive tôt ou tard au même carrefour : construire son offre autour du CGM, ou autour du BGM ? Les deux reposent sur la glucose oxydase ou la glucose déshydrogénase, mais l'ingénierie n'a rien à voir.
+    note: Équipe EverChek · 30 juin 2026
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
+    imageAlt: >-
+      Illustration conceptuelle opposant un capteur de mesure continue du glucose porté sur le corps à un lecteur de glycémie avec bandelettes et piqûre au doigt
+    ratio: 16/9
+    text: >-
+      En pratique, ce choix détermine votre calendrier de R&D, votre budget réglementaire, l'implantation de votre chaîne d'approvisionnement et le modèle de revenus que vous pourrez tenir dans la durée. Ce guide passe en revue tout ce qui sépare le CGM du BGM du point de vue strictement commercial, et vous montre comment ajouter le CGM à votre gamme avec le minimum d'efforts. Entrons dans le vif du sujet.
+
+  - type: link-pills
+    label: À lire aussi
+    items:
+      - label: Notre système CGM
+        href: /fr/systeme-mesure-continue-glucose/
+      - label: CGM OEM et ODM
+        href: /fr/cgm-oem/
+      - label: Kits CGM SKD
+        href: /fr/montage-local-cgm/
+      - label: Qu'est-ce qu'un CGM ?
+        href: /fr/qu-est-ce-qu-un-cgm/
+
+  - type: richtext
+    eyebrow: Ce que mesure chaque dispositif
+    title: La différence entre CGM et BGM
+    blocks:
+      - heading: Ce que mesurent réellement les valeurs CGM et BGM
+        text: >-
+          Le CGM mesure le glucose du liquide interstitiel sous la peau au moyen d'une électrode enzymatique implantée, et produit 288 mesures par jour sur une durée de port de 7 à 14 jours. Le BGM mesure le glucose du sang capillaire à l'aide de bandelettes à usage unique enduites de glucose oxydase, et ne fournit qu'un instantané isolé.
+      - text: >-
+          Le glucose met un certain temps à diffuser du sang vers le liquide interstitiel : la valeur du BGM est donc quasi instantanée, tandis que le CGM accuse généralement un décalage de 5 à 15 minutes. Un CGM affichera donc souvent une valeur inférieure à celle d'un BGM relevé au même instant juste après un repas, lorsque la glycémie monte vite, et une valeur supérieure après une injection d'insuline, lorsqu'elle redescend. Même patient, même instant, deux chiffres différents — et tous deux « corrects » au regard de ce qu'ils mesurent.
+      - text: >-
+          Si vous fabriquez un CGM, ce décalage doit être intégré à l'algorithme d'étalonnage. Si vous le commercialisez, il faut former le support client et rédiger la notice d'utilisation en conséquence, sous peine de voir votre service client saturé de réclamations du type « mon CGM se trompe ».
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/02_continuous_vs_point.webp
+    imageAlt: >-
+      Graphique comparant une courbe de glucose continue issue d'un CGM aux mesures ponctuelles dispersées d'un lecteur de glycémie sur une journée
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: Exactitude et réglementation
+    title: L'exactitude comparée du CGM et du BGM
+    blocks:
+      - heading: Lequel des deux facilite le plus l'homologation ?
+        text: >-
+          Le MARD (Mean Absolute Relative Difference, écart relatif absolu moyen) est l'une des références du secteur pour évaluer l'exactitude d'un lecteur de glucose. Cet indicateur exprime, en pourcentage, l'écart moyen entre les valeurs d'un dispositif et une valeur de référence obtenue en laboratoire. Un dispositif affichant un MARD de 10 % s'écarte donc en moyenne de 10 % d'une mesure de laboratoire précise. Plus le MARD est bas, meilleure est l'exactitude ponctuelle. Une bonne valeur de MARD est indispensable à tout dossier réglementaire, à toute étude clinique et à toute campagne commerciale.
+      - text: >-
+          Sur ce critère, les systèmes CGM annoncent généralement un MARD compris entre 8 et 12 %, contre 5 à 6 % pour le BGM. Sur le papier, le BGM est donc plus exact. Les autorités et les cliniciens ont pourtant fini par accepter cet écart : les données de tendance continues d'un CGM permettent de signaler une chute rapide avant qu'elle ne devienne une urgence, ce qui a plus de valeur clinique qu'une mesure isolée un peu plus précise. Le CGM prend tout son sens lorsque vos utilisateurs finaux ont besoin d'être alertés tôt des variations rapides du glucose, en particulier des chutes vers l'hypoglycémie.
+      - text: >-
+          Aux États-Unis, les systèmes CGM visent la désignation « integrated continuous glucose monitor » (iCGM) de la FDA, tandis que les systèmes BGM relèvent en général de la catégorie des autotests de glycémie, par la voie mieux balisée du 510(k), avec une exactitude évaluée au regard de la norme ISO 15197.
+      - text: >-
+          Cela étant, un produit BGM peut souvent atteindre le marché sur la base d'une étude clinique plus légère et d'un budget réglementaire plus modeste. Un produit CGM visant le statut iCGM doit prévoir un calendrier plus long et un investissement plus lourd dans son système qualité avant d'encaisser la moindre recette.
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/03_regulatory_timeline.webp
+    imageAlt: >-
+      Frise comparant la voie d'autorisation FDA iCGM, plus longue, pour les capteurs de mesure continue du glucose avec la voie 510(k), plus courte, des lecteurs de glycémie
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: Retours des utilisateurs
+    title: "CGM ou BGM : ce que disent Reddit et les utilisateurs réels"
+    blocks:
+      - text: >-
+          Cherchez « cgm vs bgm reddit » et vous retrouverez le même schéma d'un fil de discussion à l'autre, comme dans les avis produits. Les utilisateurs de CGM saluent les données de tendance et la possibilité de repérer une hypoglycémie avant qu'elle ne tourne à la crise. Ils se plaignent, tout aussi souvent, de capteurs qui se décollent trop tôt, d'une exactitude qui vacille pendant l'effort et du coût récurrent du réapprovisionnement en capteurs. Les utilisateurs de BGM décrivent leur appareil comme « ennuyeux mais fiable » : peu coûteux, suffisamment exact au quotidien, et exempt des modes de défaillance propres à un dispositif porté sur le corps.
+      - text: >-
+          Les études d'observance montrent généralement une satisfaction plus élevée chez les utilisateurs de CGM, portée par la réduction des piqûres au doigt et par le filet de sécurité que constituent les alertes haute et basse. L'abandon du CGM n'est pourtant pas rare. Le décollement de l'adhésif, les irritations cutanées et le coût de renouvellement des capteurs reviennent régulièrement parmi les motifs qui poussent les utilisateurs à revenir au BGM, voire à cesser toute surveillance. Pour un fabricant, cela se lit directement dans le taux d'attrition : un CGM doté d'un adhésif médiocre ou d'un applicateur inconfortable perdra des utilisateurs, même si la chimie du capteur qui se trouve dessous est excellente.
+      - text: >-
+          Si votre marché cible est constitué de patients diabétiques à l'aise avec la technologie, l'avenir appartient au CGM. Si vous vous adressez à des marchés sensibles au prix ou à faibles ressources, le BGM reste incontournable, et sa « fiabilité ennuyeuse » constitue en soi un argument de vente.
+
+  - type: richtext
+    eyebrow: Santé numérique
+    title: Le CGM et le BGM dans la santé numérique
+    blocks:
+      - heading: Comparaison de l'intégration des données
+        text: >-
+          La véritable ligne de partage entre CGM et BGM ne tient pas à l'exactitude clinique, mais à ce qui se passe une fois la mesure prise. Le BGM vous dit où en était votre glucose. Le CGM vous dit où il va.
+      - heading: Densité des données et modèle de prise en charge
+        text: >-
+          Le BGM produit de 4 à 10 valeurs par jour, relevées manuellement, ce qui n'autorise qu'une prise en charge réactive. Le CGM génère environ 288 mesures continues par jour, ce qui ouvre la voie à l'analyse de tendances, à la reconnaissance de profils, à des analyses assistées par IA et à des alertes de seuil en temps réel permettant aux structures de soins d'intervenir immédiatement plutôt qu'à la consultation suivante.
+      - heading: Intégration et valeur B2B
+        text: >-
+          Des systèmes CGM comme le Dexcom G7 proposent des API qui injectent les données de glucose directement dans les infrastructures de santé modernes — dossiers patients informatisés, plateformes de télésurveillance, parcours de télémédecine — alors que les données de BGM exigent souvent une saisie manuelle, source d'erreurs. Pour un acheteur B2B, une API CGM propre et bien documentée fait du dispositif un partenaire bien plus attractif pour les plateformes de télémédecine et de télésurveillance que n'importe quel BGM, quelle que soit l'exactitude du capteur.
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/04_data_ecosystem.webp
+    imageAlt: >-
+      Schéma des données de glucose continues transitant par une API vers le dossier patient informatisé, la télésurveillance et les plateformes de télémédecine
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: Cadre de décision
+    title: "CGM ou BGM : un cadre de décision B2B"
+    blocks:
+      - text: >-
+          Choisir entre CGM et BGM, c'est faire un pari stratégique sur l'évolution de votre gamme, de vos marges et de vos circuits de distribution. Le cadre qui suit écarte les effets d'annonce et détaille les données, les barrières à l'entrée et les modèles économiques, pour vous aider à trancher pour votre marque.
+      - heading: Ce que disent réellement les données de marché
+        text: >-
+          Grand View Research évalue le marché mondial des dispositifs CGM à 13,4 milliards de dollars en 2025 et prévoit une croissance jusqu'à 41,4 milliards de dollars d'ici 2033, soit un TCAC de 15,1 %. Le même cabinet estime le marché mondial des dispositifs BGM à 15,53 milliards de dollars en 2025, en croissance plus lente que le CGM mais avec une demande qui reste soutenue.
+      - heading: Les arbitrages entre technologie et marges
+        text: >-
+          Cette croissance plus rapide a un prix. Voici ce que coûte réellement chaque option, et ce qu'elle rapporte.
+      - heading: "CGM : forte croissance, mais une pente raide à gravir"
+        text: >-
+          Le potentiel de croissance du CGM s'accompagne de barrières bien réelles : R&D en biocapteurs, ingénierie du transmetteur sans fil et voie réglementaire iCGM qui exige un investissement clinique substantiel. Ces mêmes barrières protègent toutefois les marges une fois franchies. Un capteur CGM coûte généralement de 30 à 100 dollars à l'utilisateur final et doit être remplacé tous les 7 à 14 jours. Le modèle économique du CGM se rapproche donc structurellement d'un abonnement plutôt que d'une vente d'appareil unique.
+      - heading: "BGM : demande stable, mais une guerre des prix"
+        text: >-
+          Le BGM reste incontournable dans les appels d'offres hospitaliers, sur les marchés à faibles ressources et auprès des segments sensibles au prix qui n'ont pas besoin d'une surveillance continue ou ne peuvent se l'offrir. Mais la faible barrière à l'entrée attire une concurrence nombreuse, et le prix des bandelettes subit une pression continue depuis des années. Une bandelette BGM se négocie généralement entre 0,20 et 1,00 dollar, une fraction du coût unitaire d'un capteur CGM, mais dégage aussi des marges bien plus minces.
+    tint: true
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/05_market_growth.webp
+    imageAlt: >-
+      Histogramme du marché mondial des dispositifs CGM passant de 13,4 milliards de dollars en 2025 à 41,4 milliards d'ici 2033, face à une croissance plus lente du marché BGM
+    ratio: 16/9
+
+  - type: card-grid
+    title: Les critères à peser avant de choisir votre voie
+    text: >-
+      Alors, quelle voie prendre ? Pesez ces cinq critères au regard de la position réelle de votre organisation.
+    columns: 3
+    media: icon
+    items:
+      - icon: cog
+        title: Maturité technologique
+        text: >-
+          Le CGM suppose de construire un capteur, une application, une logique d'alertes et une infrastructure de partage de données, et non seulement un capteur et un lecteur. Si votre équipe n'a jamais mis sur le marché de logiciel réglementé, cela change votre calendrier et votre budget.
+      - icon: chart
+        title: Investissement
+        text: >-
+          Le développement d'un CGM, les études cliniques et la voie iCGM exigent en général un budget nettement supérieur à celui d'un lancement BGM comparable.
+      - icon: clock
+        title: Calendrier réglementaire
+        text: >-
+          Le BGM atteint le marché plus vite par la voie classique du 510(k). La voie iCGM du CGM est plus longue et réclame davantage de preuves cliniques.
+      - icon: globe
+        title: Marché cible
+        text: >-
+          Les hôpitaux privilégient la simplicité et l'antériorité du BGM. Le circuit officinal et les consommateurs technophiles se tournent de plus en plus vers le CGM.
+      - icon: curve
+        title: Marges
+        text: >-
+          Le CGM offre un modèle de revenus récurrents aux marges plus confortables, mais un coût d'entrée plus élevé. Le BGM offre des marges plus minces, mais un accès au chiffre d'affaires plus rapide et moins coûteux.
+    note: >-
+      Règle empirique : si votre budget de R&D dépasse environ 5 millions de dollars et que vous disposez d'une véritable expertise capteurs en interne, le CGM mérite d'être mené en direct. Sinon, le BGM — ou un partenariat donnant accès à la technologie CGM — reste plus raisonnable que de bâtir cette compétence à partir de rien. Pour de nombreux fabricants, la vraie réponse est : les deux. Une stratégie hybride qui sert les appels d'offres hospitaliers en BGM tout en captant le marché CGM, plus rémunérateur, sous la même marque.
+
+  - type: richtext
+    eyebrow: Circuits de distribution
+    title: Où ces produits se vendent et comment ils s'achètent
+    blocks:
+      - text: >-
+          Les appels d'offres des hôpitaux et des cliniques penchent encore vers le BGM. Le coût, l'existence de codes de remboursement établis et l'habitude des équipes soignantes jouent tous en sa faveur dans l'achat institutionnel, même si le CGM progresse ailleurs. Dans ce circuit, les cahiers des charges pondèrent fortement le coût d'acquisition et la fiabilité de l'approvisionnement — deux critères qui favorisent la chaîne logistique plus simple et plus banalisée du BGM.
+      - text: >-
+          C'est dans le circuit officinal et la vente en ligne que se concentre la croissance du CGM. L'élargissement de la prise en charge, les produits CGM vendus directement au consommateur ou sans ordonnance et le renouvellement des capteurs par abonnement tirent tous la demande vers le CGM sur ces canaux. Pour un distributeur, le signal stratégique est clair : le CGM offre des marges supérieures et un chiffre d'affaires récurrent lié au renouvellement des capteurs, tandis que le BGM reste indispensable pour les appels d'offres hospitaliers et les marchés sensibles au prix.
+
+  - type: richtext
+    eyebrow: Réglementation et appels d'offres
+    title: À quoi s'attendre côté réglementation et appels d'offres
+    blocks:
+      - text: >-
+          Le BGM suit généralement une voie réglementaire plus simple (classe II, 510(k)) et dispose de codes de remboursement établis sur la plupart des grands marchés, ce qui rend l'achat public et la qualification aux appels d'offres relativement directs. Le CGM exige davantage de données cliniques pour obtenir une désignation iCGM ou équivalente, mais sa prise en charge progresse régulièrement, à mesure que les assureurs et les systèmes de santé nationaux reconnaissent sa valeur clinique pour les patients insulinodépendants.
+      - text: >-
+          Le parcours d'Abbott illustre bien cette transition. Abbott a bâti son activité diabète en fabricant de BGM classique, sous la marque FreeStyle. Sa première véritable tentative en CGM, le FreeStyle Navigator, lancé aux États-Unis vers 2008, était techniquement en avance sur son temps mais n'a pas trouvé son marché.
+      - text: >-
+          Abbott a néanmoins continué d'investir et a lancé en 2016-2017 le FreeStyle Libre, un CGM étalonné en usine qui ne demande pas d'étalonnage de routine par piqûre au doigt. Le Libre est devenu le système CGM le plus utilisé au monde, avec environ six millions d'utilisateurs : la preuve qu'un investissement soutenu, malgré un premier revers, peut encore déboucher sur le leadership d'une catégorie.
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/06_decision_framework.webp
+    imageAlt: >-
+      Cadre de décision pesant la maturité technologique, l'investissement, le calendrier réglementaire, le marché cible et les marges pour arbitrer entre CGM et BGM
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: La voie du partenariat
+    title: Lancez votre gamme CGM sans investissement lourd
+    blocks:
+      - text: >-
+          Se lancer dans le CGM n'impose ni des années de R&D ni des millions d'investissement initial. Refresh EverChek est un système CGM étalonné en usine offrant une durée de port complète de 14 jours. Sur l'exactitude, nous publions la méthode plutôt qu'un chiffre isolé : méthode de référence, comparateur, ventilation par jour de port et par plage de glucose, la synthèse des performances cliniques étant communiquée aux partenaires qualifiés sous accord de confidentialité.
+      - text: >-
+          Plutôt que de bâtir cette compétence à partir de rien, vous pouvez vous appuyer sur nos cadres OEM/ODM souples ou déployer une solution SKD (semi-knocked-down). Ce modèle SKD permet aux marques régionales de localiser le montage, un atout décisif pour réduire les droits de douane à l'importation et satisfaire aux exigences des marchés publics locaux.
+      - text: >-
+          Nos clients à l'international sont généralement passés de la première prise de contact à une gamme CGM commercialisée en six à douze mois, bien en deçà des plusieurs années qu'exige habituellement un programme CGM développé de zéro.
+      - text: >-
+          Avec une intégration de données complète par API/SDK et une documentation réglementaire solide (conformité ISO 13485 et validations de biocompatibilité comprises), nous permettons aux marques de lancer en quelques mois, et non en quelques années, des produits CGM haut de gamme à leur propre marque.
+    tint: true
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-vs-bgm-images/07_partnership_supply_chain.webp
+    imageAlt: >-
+      Chaîne d'approvisionnement du partenariat CGM EverChek, de la fabrication des composants et de la fourniture des kits au montage local puis à la gamme lancée sous la marque du partenaire
+    ratio: 16/9
+
+  - type: link-pills
+    label: Étapes suivantes
+    items:
+      - label: Programmes CGM OEM et ODM
+        href: /fr/cgm-oem/
+      - label: Kits CGM SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: Comparer OEM, ODM et SKD
+        href: /fr/modeles-de-fabrication-cgm/
+      - label: Parler à notre équipe
+        href: /fr/contact/
+
+  - type: faq
+    title: Questions fréquentes
+    items:
+      - q: Quel est le décalage entre le BGM et le CGM ?
+        a: >-
+          Les valeurs du CGM accusent un retard de 5 à 15 minutes sur celles du BGM, car le glucose passe du sang vers le liquide interstitiel plus lentement qu'il ne varie dans la circulation sanguine.
+      - q: Qu'est-ce que le MARD et pourquoi est-il important ?
+        a: >-
+          Le MARD (Mean Absolute Relative Difference) mesure l'exactitude d'un CGM en calculant l'écart moyen, en pourcentage, par rapport à une valeur de référence de laboratoire : plus le pourcentage est faible, plus l'exactitude est élevée. Un MARD inférieur ou égal à 10 % constitue le seuil de l'usage non adjuvant, c'est-à-dire la possibilité pour le patient d'adapter sa dose d'insuline sur la seule base des valeurs du CGM, sans confirmation par piqûre au doigt. Un MARD de 8 % est considéré comme une excellente performance de niveau professionnel, et un MARD inférieur à 8 % représente l'état de l'art de l'étalonnage en usine. Pour une marque de santé, un bon MARD est la donnée déterminante qui emporte la confiance des cliniciens et qualifie le produit pour les appels d'offres institutionnels face aux leaders du marché.
+      - q: Quelles sont les classifications FDA du CGM et du BGM ?
+        a: >-
+          Le CGM relève de la catégorie iCGM (integrated CGM), qui suppose une approbation préalable à la mise sur le marché ; le BGM relève de l'autosurveillance glycémique (SBGM), soumise à des exigences moins strictes et généralement alignée sur la norme ISO 15197.
+      - q: Quels sont les principaux défis de fabrication du CGM par rapport au BGM ?
+        a: >-
+          Le CGM impose un dépôt enzymatique précis, une stérilisation, l'assemblage d'un transmetteur sans fil et un contrôle qualité serré. La fabrication du BGM se concentre sur la régularité des bandelettes, la production à bas coût et la stabilité du conditionnement.
+      - q: Quel marché croît le plus vite, celui du CGM ou celui du BGM ?
+        a: >-
+          Les deux progressent, mais le CGM plus vite. Grand View Research prévoit un marché des dispositifs CGM passant de 13,4 milliards de dollars en 2025 à 41,4 milliards d'ici 2033 (TCAC de 15,1 %), contre un marché BGM passant de 15,53 à 30,18 milliards de dollars sur la même période (TCAC de 8,8 %).
+      - q: Le CGM peut-il remplacer le BGM pour l'adaptation des doses d'insuline ?
+        a: >-
+          La plupart des systèmes CGM modernes sont approuvés pour un usage non adjuvant : le patient peut adapter sa dose d'insuline sur la seule base des valeurs du CGM. Cela dit, de nombreux cliniciens recommandent encore une mesure de confirmation au BGM pour les décisions critiques ou à fort enjeu.
+      - q: Comment le CGM et le BGM se comparent-ils en matière d'exploitation des données ?
+        a: >-
+          Le CGM génère environ 288 mesures par jour, ce qui rend possibles l'analyse de tendances et les analyses assistées par IA ; le BGM ne fournit généralement que 4 à 10 points de mesure par jour.
+      - q: À quelle voie réglementaire faut-il s'attendre pour le CGM et pour le BGM ?
+        a: >-
+          Dans l'Union européenne, l'écart est tout aussi réel : le CGM est classé dispositif de classe IIb au titre du règlement MDR, ce qui impose l'intervention d'un organisme notifié et une investigation clinique obligatoire, tandis que le BGM relève du règlement IVDR en classe B, de moindre risque, par autodéclaration ou par évaluation de conformité avec un organisme notifié. Pour les marques qui adoptent un modèle CGM SKD avec EverChek, nous fournissons la documentation technique et clinique dont votre propre dossier d'homologation locale a besoin, puisque c'est la marque qui assume in fine la responsabilité réglementaire du dispositif fini.
+      - q: Un fabricant peut-il produire à la fois du CGM et du BGM ?
+        a: >-
+          Oui, mais les deux exigent des lignes de production différentes, des compétences différentes et des dossiers réglementaires distincts. Le BGM est généralement plus simple à produire en interne ; le CGM, lui, réclame des capacités de R&D dont la plupart des entreprises ne disposent pas en propre. Un moyen de contourner cet obstacle est un modèle SKD comme celui d'EverChek : nous fournissons quelques composants CGM préassemblés — le cœur du capteur, le transmetteur, l'applicateur, le patch adhésif et la pile — et votre marque assure localement le montage final, le conditionnement et l'étiquetage, au lieu de développer de zéro la chimie du capteur ou les algorithmes d'étalonnage. Cette étape de montage local peut en outre ouvrir droit à des droits de douane réduits et satisfaire aux exigences de taux d'intégration locale dans les appels d'offres.
+      - q: Comment choisir entre CGM et BGM pour mon activité ?
+        a: >-
+          Tout dépend du circuit visé : les hôpitaux privilégient souvent le BGM pour son coût et sa familiarité, tandis que le circuit officinal et la vente en ligne se tournent vers le CGM, plus rémunérateur et porté par une demande croissante des patients. Cela dit, le CGM s'impose comme la nouvelle tendance et l'occasion mérite d'être saisie. Envisagez une approche hybride : conservez le BGM pour la stabilité institutionnelle, mais lancez un pilote CGM pour la croissance grand public. Avec les solutions SKD ou OEM d'EverChek, vous pouvez ajouter le CGM sans R&D lourde, tester rapidement le marché, monter en volume à votre rythme et faire du modèle hybride un véritable avantage concurrentiel plutôt qu'une position de repli.
+
+  - type: cta-banner

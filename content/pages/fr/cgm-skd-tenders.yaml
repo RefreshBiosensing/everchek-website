@@ -1,0 +1,78 @@
+title: "SKD et appels d'offres publics de santé | EverChek"
+description: "Comment le modèle de fabrication CGM en SKD renforce une offre en appel d'offres public : intégration locale, droits de douane et emplois créés."
+path: /fr/appels-offres-cgm-skd/
+translationKey: cgm-skd-tenders
+schemaType: article
+sections:
+  - type: hero
+    variant: split
+    kicker: "Secteur de la santé"
+    title: "Comment le SKD vous aide à remporter les appels d'offres publics de santé"
+    sub: "Comment le modèle SKD confère aux entreprises de santé un avantage concurrentiel lors de la soumission aux appels d'offres publics."
+    note: "Équipe EverChek · 14 mai 2026"
+    visual: image
+    image: /images/blog-cover-3.webp
+    imageAlt: "Dossier d'appel d'offres public de santé posé à côté d'une ligne d'assemblage CGM locale, illustrant un partenariat de fabrication en SKD"
+    ratio: 16/9
+  - type: richtext
+    eyebrow: "Commencer ici"
+    title: "L'opportunité des marchés publics"
+    blocks:
+      - text: "Les appels d'offres publics de santé représentent un débouché majeur pour les fabricants de dispositifs médicaux. De nombreux pays, en particulier en Asie du Sud-Est, au Moyen-Orient, en Afrique et en Amérique latine, investissent fortement dans les infrastructures de prise en charge du diabète, systèmes CGM compris."
+      - text: "Remporter ces marchés suppose toutefois de satisfaire des critères de qualification précis : exigences de taux d'intégration locale, engagements de transfert de technologie et capacité de service après-vente."
+  - type: card-grid
+    title: "L'avantage du SKD"
+    text: "Le modèle de fabrication SKD, ou montage local semi-démonté, procure un avantage concurrentiel singulier lors de la soumission aux appels d'offres publics."
+    columns: 4
+    media: icon
+    items:
+      - icon: building
+        title: "Exigences de valeur ajoutée locale"
+        text: "De nombreux appels d'offres publics imposent un pourcentage minimal de valeur ajoutée locale. En important les composants CGM selon le modèle SKD et en réalisant l'assemblage final sur place, vous répondez à cette exigence sans avoir à construire une usine complète en partant de zéro."
+      - icon: chart
+        title: "Droits de douane réduits"
+        text: "Importer des composants plutôt que des produits finis relève généralement de taux tarifaires plus faibles. Cet avantage de coût peut se répercuter sur un prix d'offre plus compétitif et améliorer votre position de soumissionnaire."
+      - icon: users
+        title: "Création d'emplois locaux"
+        text: "Les critères d'évaluation des offres publiques intègrent souvent l'impact économique local. Une activité d'assemblage SKD crée des emplois locaux en production, en contrôle qualité et en logistique, ce qui renforce votre dossier de soumission."
+      - icon: doc
+        title: "Appui au parcours réglementaire"
+        text: "EverChek fournit à ses partenaires SKD une documentation technique complète et un appui réglementaire : documentation du système de management de la qualité, rapports d'essais et éléments de conformité qui facilitent l'homologation locale."
+    tint: true
+  - type: richtext
+    eyebrow: "Références"
+    title: "Le SKD dans un appel d'offres réel"
+    blocks:
+      - text: "[TODO: replace with a real, client-approved EverChek SKD tender reference — country, year, scope and contract value, with something we can point to. The previous version of this page described an unnamed Southeast Asian customer winning a three-year government contract worth over $5 million; that claim is unverified and has been removed rather than carried across.]"
+  - type: step-flow
+    title: "Pour démarrer"
+    text: "Aborder les marchés publics avec le SKD relève d'une démarche structurée."
+    columns: 3
+    items:
+      - icon: pin
+        title: "Analyser le marché"
+        desc: "Analyser le cahier des charges des appels d'offres du marché visé."
+      - icon: factory
+        title: "Mettre en place le montage local"
+        desc: "Développer l'infrastructure de montage local."
+      - icon: shield
+        title: "Structurer la qualité"
+        desc: "Mettre en place un système de management de la qualité."
+      - icon: doc
+        title: "Préparer le dossier"
+        desc: "Préparer le dossier de soumission avec l'appui du fabricant."
+      - icon: handshake
+        title: "Déposer l'offre"
+        desc: "Déposer une offre compétitive appuyée sur l'avantage de coût du SKD."
+  - type: link-pills
+    label: "À lire ensuite"
+    items:
+      - label: "Coopération CGM en SKD"
+        href: /fr/montage-local-cgm/
+      - label: "Modèles OEM, SKD et ODM"
+        href: /fr/modeles-de-fabrication-cgm/
+      - label: "Qu'est-ce que le CGM SKD ?"
+        href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+      - label: "Tous les articles CGM"
+        href: /fr/blog-cgm/
+  - type: cta-banner

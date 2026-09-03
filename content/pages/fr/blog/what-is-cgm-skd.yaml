@@ -1,0 +1,323 @@
+title: "Qu'est-ce que le CGM SKD ? Le montage local | EverChek"
+description: >-
+  Ce que contient un kit CGM SKD, qui utilise le montage semi-knocked-down, le déroulé du partenariat étape par étape et comment choisir son fabricant.
+path: /fr/blog/qu-est-ce-que-le-cgm-skd/
+translationKey: what-is-cgm-skd
+schemaType: article
+sections:
+  - type: hero
+    variant: dark
+    kicker: CGM SKD
+    title: "Qu'est-ce que le CGM SKD ? Guide B2B de la fabrication semi-knocked-down"
+    sub: >-
+      Vous cherchez une voie plus souple et moins coûteuse pour entrer sur le marché de la mesure continue du glucose (CGM) ? Dans un secteur de la prise en charge du diabète de plus en plus concurrentiel, le modèle OEM classique s'accompagne souvent de droits de douane élevés et de quantités minimales de commande rigides. Développer soi-même son système de mesure continue du glucose demande des années et des investissements lourds. C'est là qu'intervient le modèle CGM SKD, qui vous permet de lancer votre propre marque de CGM avec un avantage fiscal et un coût réduit, en six à douze mois.
+    note: Équipe EverChek · 3 juillet 2026
+    buttons:
+      - label: Voir la spécification complète du kit SKD
+        href: /fr/montage-local-cgm/
+      - label: Comparer OEM, ODM et SKD
+        href: /fr/modeles-de-fabrication-cgm/
+        style: ghost
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
+    imageAlt: >-
+      Illustration à plat du modèle CGM semi-knocked-down — capteur, transmetteur et applicateur fabriqués en usine puis expédiés pour un montage final local
+    ratio: 16/9
+    text: >-
+      Ayant accompagné directement de nombreux acteurs de santé et distributeurs à travers le monde sur des projets CGM SKD, nous connaissons les questions qui comptent vraiment lorsqu'on évalue ce modèle. Entrons dans le vif du sujet.
+
+  - type: link-pills
+    label: À lire aussi
+    items:
+      - label: Kits CGM SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: CGM OEM et ODM
+        href: /fr/cgm-oem/
+      - label: Comparer OEM, ODM et SKD
+        href: /fr/modeles-de-fabrication-cgm/
+      - label: Documentation et certifications
+        href: /fr/documentation/
+
+  - type: richtext
+    eyebrow: Définition
+    title: Que signifie CGM SKD ?
+    blocks:
+      - text: >-
+          CGM SKD est l'abréviation de « Continuous Glucose Monitor Semi-Knocked-Down ». Le produit CGM quitte l'usine du fabricant d'origine partiellement assemblé plutôt qu'entièrement fini. Le fabricant construit et contrôle les composants essentiels, puis vous les expédie : vos équipes réalisent les dernières étapes — montage, conditionnement, marquage et formalités réglementaires — sur votre propre marché. Votre produit fini peut ainsi être considéré comme fabriqué localement, ce qui ouvre l'accès aux marchés publics, à des incitations fiscales et à des droits de douane réduits, tout en portant votre propre marque.
+      - text: >-
+          Cela diffère d'un CGM entièrement fini et prêt à l'emploi, comme d'un kit entièrement démonté (CKD) dont presque chaque pièce reste à assembler chez vous. Le SKD se situe entre les deux : suffisamment de travail est réalisé en usine pour que les choses restent simples, mais il en reste assez chez vous pour maîtriser votre marque et satisfaire à la réglementation locale.
+
+  - type: richtext
+    eyebrow: Contenu du kit
+    title: Qu'est-ce qu'un kit CGM SKD ?
+    blocks:
+      - heading: Définition et composants principaux
+        text: >-
+          Imaginez que vous commandiez un vélo en ligne. Il arrive avec le cadre, les roues et le guidon déjà fabriqués et contrôlés, mais il vous reste à les assembler avant de pouvoir rouler. Un kit CGM SKD fonctionne de la même façon. L'ingénierie délicate est réalisée en usine — fabrication des électrodes, dépôt de la membrane, essais de cytotoxicité, chargement de l'aiguille de ponction, etc. — et votre travail se limite au montage final de 2 à 5 composants principaux.
+      - text: >-
+          En tant que fabricant de CGM, nous expédions la plupart des pièces déjà fabriquées et contrôlées. Votre équipe — qu'il s'agisse d'un partenaire distributeur, du service biomédical d'un hôpital ou de l'équipe des opérations d'une marque de santé — apporte ensuite la touche finale : conditionnement, étiquetage et documentation, avant que le produit n'atteigne son utilisateur final.
+      - text: >-
+          La configuration exacte dépend des exigences réglementaires du marché régional et se confirme généralement avant la signature du contrat. Voici à quoi ressemble un kit CGM SKD type.
+      - heading: Capteur et transmetteur
+        text: >-
+          Le capteur et le transmetteur constituent le cœur électronique du dispositif. Ils arrivent en général pré-étalonnés, c'est-à-dire déjà contrôlés pour délivrer des mesures exactes. Le montage final reste toutefois à réaliser. Dans la plupart des kits, des connexions par encliquetage le rendent aisé, un clic audible confirmant le bon positionnement de chaque pièce.
+      - heading: Adhésif et éléments d'insertion
+        text: >-
+          Le patch adhésif et l'applicateur sont à usage unique : un jeu neuf accompagne chaque kit. Comme ces pièces entrent en contact direct avec la peau, votre zone de montage local doit rester propre et maîtrisée — en général une salle blanche de classe 10 000 (ISO 8) ou supérieure.
+      - heading: Conditionnement et documentation
+        text: >-
+          Les notices et les boîtes arrivent souvent sous une forme générique, sans marque. C'est en réalité un avantage : votre entreprise peut y ajouter sa propre langue, son logo et ses instructions sans repartir de zéro.
+    tint: true
+
+  - type: link-pills
+    label: Détail du kit
+    items:
+      - label: Voir la spécification complète du kit SKD sur notre page dédiée
+        href: /fr/montage-local-cgm/
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-skd-b2b-guide-images/target-customers.webp
+    imageAlt: >-
+      Quatre types d'entreprises de santé B2B qui utilisent le CGM SKD — chaînes de pharmacies, plateformes de télémédecine, services achats hospitaliers et opérateurs de programmes de santé nationaux
+    ratio: 16/9
+
+  - type: card-grid
+    title: À qui s'adresse le CGM SKD ?
+    text: >-
+      Les articles sur le CGM destinés au grand public supposent presque toujours que le lecteur est un distributeur. En réalité, au moins quatre types d'entreprises de santé B2B recourent au modèle SKD, chacune pour une raison différente.
+    columns: 2
+    media: icon
+    items:
+      - icon: home
+        title: Chaînes de pharmacies et réseaux de santé de détail
+        text: >-
+          L'officine est le premier circuit de distribution du CGM dans le monde et génère plus de chiffre d'affaires que tout autre canal. Si votre entreprise exploite déjà un réseau d'officines, se contenter de mettre en rayon la marque d'un autre revient à arrêter votre marge là où commence celle du fabricant. Le SKD vous permet au contraire de monter et de vendre votre propre gamme, afin que le chiffre d'affaires du CGM reste chez vous plutôt que de remonter vers une marque située en amont.
+        href: /fr/distribution-cgm/
+        linkLabel: Monter et vendre votre propre gamme de CGM
+      - icon: phone
+        title: Plateformes de télémédecine et de santé numérique
+        text: >-
+          Matériel et logiciel convergent dans le CGM : de plus en plus d'acteurs associent leurs capteurs à des applications par abonnement, à des tableaux de bord de télésurveillance et à des portails pour cliniciens, afin de créer des revenus récurrents. Si vous exploitez déjà une application de suivi des maladies chroniques ou une plateforme de soins à distance, revendre le matériel d'un concurrent revient à laisser un tiers posséder la couche matérielle de votre écosystème. Le SKD vous permet au contraire de commercialiser votre propre capteur CGM et de l'associer à votre pile logicielle existante.
+        href: /fr/application-patient-cgm/
+        linkLabel: Votre propre capteur CGM et votre application patient
+      - icon: hospital
+        title: Systèmes de santé et services achats hospitaliers
+        text: >-
+          Les acheteurs institutionnels pèsent de plus en plus dans la demande de CGM, à mesure que les financeurs nationaux et régionaux commencent à prendre en charge les capteurs dans le cadre de programmes maladies chroniques, à l'image de ce qui a été fait au Japon et en Allemagne. Si votre organisation gère des achats en gros pour les soins aux patients, un approvisionnement direct en SKD peut sécuriser des volumes et des prix plus stables dans la durée qu'un passage systématique par un revendeur tiers.
+      - icon: building
+        title: Opérateurs de programmes de santé nationaux et régionaux
+        text: >-
+          Plusieurs États investissent directement dans les infrastructures de prise en charge du diabète, dans le cadre de plans plus larges de modernisation du système de santé, en finançant notamment le déploiement du CGM dans les hôpitaux et les consultations externes. Le montage local en SKD peut aider à atteindre les objectifs de taux d'intégration locale tout en maîtrisant le coût unitaire à grande échelle.
+        href: /fr/appels-offres-cgm-skd/
+        linkLabel: Atteindre les objectifs d'intégration locale dans les appels d'offres
+    note: >-
+      Conseil pratique : si votre entreprise correspond à plusieurs de ces profils — par exemple un distributeur qui souhaite aussi soumissionner à des appels d'offres publics — le SKD répond en général aux deux objectifs à la fois, puisque le processus sous-jacent est identique. Nous avons accompagné de nombreux distributeurs régionaux dans leurs soumissions.
+    moreLink:
+      label: Parlez-nous des appels d'offres sur votre marché
+      href: /fr/contact/
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-skd-b2b-guide-images/process-steps.webp
+    imageAlt: >-
+      Partenariat CGM SKD en cinq étapes, du cadrage du besoin et de l'accord de confidentialité au contrat et à la première livraison, puis à l'homologation locale et à l'approvisionnement continu
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: Déroulement
+    title: Comment fonctionne le modèle CGM SKD ?
+    blocks:
+      - text: >-
+          Comprendre le déroulement d'un projet SKD aide toute entreprise de santé B2B à planifier son calendrier et son budget. Voici le processus, étape par étape.
+      - text: >-
+          Le modèle CGM SKD comprend la production des composants, le contrôle qualité, la préparation des kits, l'expédition, le montage local, le marquage et la distribution. Chaque étape compte, et en sauter une peut entraîner des retards ou des non-conformités. Le détail des étapes varie selon la réglementation de votre pays et selon le fabricant avec lequel vous travaillez.
+      - text: >-
+          Conseil pratique : si vous voulez maîtriser entièrement votre marque et votre conformité réglementaire locale, le SKD est préférable à l'OEM.
+
+  - type: step-flow
+    title: Le processus CGM SKD étape par étape
+    columns: 3
+    items:
+      - icon: pin
+        title: "Étape 1 : cadrage du besoin et étude de faisabilité"
+        desc: >-
+          Vous présentez votre entreprise, votre plan de marché et les ressources dont vous disposez. Le fabricant évalue si le SKD correspond réellement à votre situation.
+      - icon: doc
+        title: "Étape 2 : accord de confidentialité et évaluation approfondie"
+        desc: >-
+          Une fois l'accord de confidentialité signé par les deux parties, vous évaluez un kit d'échantillon et le fabricant vous aide à apprécier la faisabilité réglementaire locale.
+      - icon: handshake
+        title: "Étape 3 : contrat"
+        desc: >-
+          Vous définissez par écrit avec le fabricant la configuration du kit, les prix, la quantité minimale de commande, le périmètre de personnalisation de la marque, les normes de montage et les limites du soutien apporté.
+      - icon: box
+        title: "Étape 4 : première livraison et transfert de compétences"
+        desc: >-
+          Le fabricant expédie vos premiers kits SKD, accompagnés des supports de formation, de la documentation réglementaire et des modes opératoires normalisés de montage.
+      - icon: shield
+        title: "Étape 5 : homologation locale et approvisionnement continu"
+        desc: >-
+          Votre entreprise pilote la procédure d'homologation locale à l'aide de la documentation fournie, puis lance le produit. Le fabricant continue de vous approvisionner en composants à mesure que vous montez en volume.
+
+  - type: richtext
+    eyebrow: Réalité réglementaire
+    title: La réglementation varie d'un pays à l'autre
+    blocks:
+      - text: >-
+          Chaque pays a ses propres règles pour les dispositifs médicaux. Les exigences réglementaires diffèrent d'un pays à l'autre et doivent être confirmées auprès des autorités locales avant tout lancement. À titre de repère, la FDA publie des recommandations spécifiques sur la classification des dispositifs CGM et, dans l'Union européenne, les CGM sont classés dispositifs de classe IIb au titre du règlement MDR, ce qui impose l'intervention d'un organisme notifié.
+      - text: >-
+          Sur un projet réel, un acteur de santé a utilisé notre modèle SKD pour entrer sur un marché où les importations de produits finis subissaient de lourds droits de douane. En montant localement, il a réduit son coût de revient rendu d'environ 15 à 25 % et gagné près de deux mois sur son délai de mise sur le marché par rapport à l'importation de dispositifs finis.
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-skd-b2b-guide-images/key-benefits.webp
+    imageAlt: >-
+      Principaux avantages du modèle CGM SKD pour les entreprises de santé B2B — approvisionnement souple, maîtrise de la marque, avantage douanier, appui documentaire complet et exclusivité territoriale
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: Avantages
+    title: Les principaux avantages du modèle CGM SKD
+    blocks:
+      - text: >-
+          Le modèle CGM SKD offre des modalités d'approvisionnement souples, un délai de mise sur le marché potentiellement plus court, et peut réduire le coût de revient rendu total sur les marchés où le montage local procure un avantage douanier. Si la maîtrise de la marque et la conformité locale sont vos priorités, le SKD est un choix solide. Les résultats dépendent de votre marché et de votre organisation : il est donc prudent de refaire le calcul pour votre propre cas.
+      - heading: Approvisionnement souple et barrières à l'entrée plus basses
+        text: >-
+          Le SKD est conçu pour des partenariats engagés et durables. Le fabricant vous accompagne dans la mise en place d'une ligne de montage locale, dans la formation de vos équipes et dans la remise de la documentation nécessaire à l'homologation. En contrepartie, il attend un partenaire doté d'un plan clair, des moyens de l'exécuter et d'un volume d'achat annuel significatif.
+      - heading: Maîtrise de la marque et de la localisation
+        text: >-
+          Comme le conditionnement arrive sous une forme générique, votre entreprise peut adapter la boîte, l'application et la notice d'utilisation à votre marque et à la langue de vos patients.
+      - heading: Avantages réglementaires et douaniers
+        text: >-
+          Dans certains pays, le montage local peut faire reconnaître votre produit comme fabriqué localement, ce qui simplifie son enregistrement et réduit les droits de douane à l'importation. Votre produit final gagne ainsi en compétitivité tarifaire.
+      - heading: Un accompagnement complet, pas seulement des pièces
+        text: >-
+          Un bon partenariat SKD ne se limite pas à la fourniture de composants. Un fabricant de CGM fiable apporte aussi un appui documentaire (rapports de vérification des performances, certificats ISO 13485, données d'études cliniques), un accès logiciel (application patient ou médecin disponible par API ou SDK) et un cadre de contrôle qualité.
+      - heading: Exclusivité territoriale
+        text: >-
+          Parce qu'un partenariat SKD suppose un investissement réel des deux côtés, de nombreux fabricants assortissent leurs accords SKD d'une exclusivité régionale ou nationale — le plus souvent un partenaire par pays, parfois deux — afin de protéger la position de chacun sur son marché. Abordez ce point dès le départ.
+      - text: >-
+          Un acteur de santé que nous avons accompagné a nettement abaissé son coût de revient rendu en passant de l'importation de produits finis au modèle SKD. La preuve que les économies peuvent être réelles, et pas seulement théoriques.
+    tint: true
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-skd-b2b-guide-images/choose-manufacturer.webp
+    imageAlt: >-
+      Ingénieurs d'un fabricant de CGM formant l'équipe de montage d'un partenaire sur le site de production, au titre du soutien technique SKD
+    ratio: 16/9
+
+  - type: richtext
+    eyebrow: Choix du fournisseur
+    title: Comment choisir un fabricant de CGM SKD fiable ?
+    blocks:
+      - text: >-
+          Le choix du bon fournisseur CGM SKD peut faire ou défaire votre lancement. Voici ce qu'il faut regarder.
+      - heading: Capacité et outil industriels
+        text: >-
+          Le fabricant possède-t-il son usine ou sous-traite-t-il ? Cherchez un partenaire qui détient et exploite sa propre ligne de production et qui peut suivre votre montée en volume, afin qu'une rupture imprévue ne bloque pas votre développement.
+      - heading: Certifications qualité et conformité
+        text: >-
+          Recherchez des certifications comme l'ISO 13485, qui atteste d'une norme reconnue de management de la qualité. Le marquage CE se pose différemment en SKD : puisque le produit fini n'existe qu'une fois monté localement chez vous, le fabricant n'a pas nécessairement besoin de détenir un marquage CE au dossier. Ce qui compte davantage, c'est sa capacité à vous fournir les rapports cliniques et techniques dont votre propre homologation locale aura besoin.
+      - heading: Soutien technique et formation
+        text: >-
+          Un bon fabricant ne se contente pas de vous expédier un carton avant de disparaître. Privilégiez ceux qui forment votre équipe de montage et assurent un suivi dans la durée — ceux qui répondent vite quand un problème survient et acceptent de faire grandir la relation à mesure que vos volumes augmentent.
+
+  - type: image-text
+    variant: top
+    image: /blog/cgm-skd-b2b-guide-images/partnership-cta.webp
+    imageAlt: >-
+      Équipe d'une entreprise de santé et représentants d'un fabricant de CGM examinant ensemble un contrat de partenariat SKD
+    ratio: 16/9
+
+  - type: checklist
+    title: Êtes-vous prêt à devenir partenaire SKD ?
+    text: >-
+      Avant de vous engager, évaluez honnêtement votre propre organisation. Les fabricants de CGM recherchent en général des partenaires qui disposent, ou peuvent disposer à court terme, d'une licence locale de dispositif médical en cours de validité, de relations établies avec des cliniques ou des chaînes de pharmacies, d'une bonne connaissance de l'homologation locale des dispositifs et d'un accès à une salle blanche pour le montage final. Les prérequis industriels habituels sont les suivants :
+    items:
+      - Salle blanche — classe 10 000 (ISO 8) ou supérieure, pour le montage du boîtier du capteur
+      - Management de la qualité — certification ISO 13485 ou système qualité équivalent
+      - Personnel formé — une connaissance de base des protocoles de salle blanche suffit pour démarrer ; la formation complète au montage est assurée par le fabricant
+    columns: 1
+    panel: true
+
+  - type: checklist
+    title: Six questions à poser avant de signer
+    text: >-
+      Une fois votre propre maturité évaluée, posez ces six questions avant de signer quoi que ce soit. Cette liste est directement issue d'audits fournisseurs réels — c'est celle que nous parcourrions nous-mêmes avant de recommander un partenaire.
+    items:
+      - Que contient exactement le kit SKD ?
+      - Quelles certifications détenez-vous ?
+      - Assurez-vous une formation au montage ?
+      - Quelle documentation fournissez-vous pour l'homologation locale ?
+      - Pouvons-nous commencer par une commande pilote ?
+      - Limitez-vous le nombre de partenaires SKD dans un même pays ?
+    columns: 2
+    panel: true
+    tint: true
+
+  - type: banner-wide
+    title: Prêt à explorer un partenariat CGM SKD ?
+    text: >-
+      Si votre entreprise envisage le CGM SKD, contactez notre équipe pour demander un kit d'échantillon, exposer les exigences de votre marché ou étudier les modalités de partenariat. Que vous soyez soumissionnaire à des appels d'offres publics, marque de santé, fabricant de dispositifs médicaux ou distributeur, nous pouvons vous faire découvrir le produit, faire le point sur la réglementation de votre pays et vous mettre en relation avec notre équipe technique.
+    cta:
+      label: Demander un kit d'échantillon SKD
+      href: /fr/contact/?type=skd
+    cta2:
+      label: Lancer une étude de faisabilité SKD
+      href: /fr/montage-local-cgm/
+    align: left
+    height: short
+
+  - type: richtext
+    eyebrow: Pour conclure
+    title: Conclusion
+    blocks:
+      - text: >-
+          Le modèle CGM SKD offre aux entreprises de santé B2B une voie d'accès au marché souple et personnalisable, avec des barrières à l'entrée potentiellement plus basses, à condition de choisir un partenaire industriel fiable. Que vous soumissionniez à un appel d'offres public, lanciez une marque de santé, étendiez une ligne de production existante ou construisiez votre propre produit sur un réseau de distribution, le SKD laisse à votre organisation la possibilité de commencer petit sans supporter le coût lourd du développement d'un dispositif de toutes pièces. L'essentiel est de choisir un fabricant doté des bonnes capacités, des bonnes certifications et du bon accompagnement.
+      - text: >-
+          Si vous êtes prêt à discuter de votre marché, contactez notre équipe dès aujourd'hui.
+
+  - type: link-pills
+    label: Étapes suivantes
+    items:
+      - label: Kits CGM SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: Le SKD pour les appels d'offres publics
+        href: /fr/appels-offres-cgm-skd/
+      - label: Partenariats de distribution CGM
+        href: /fr/distribution-cgm/
+      - label: Documentation et certifications
+        href: /fr/documentation/
+      - label: Contactez notre équipe dès aujourd'hui
+        href: /fr/contact/
+
+  - type: faq
+    title: Questions fréquentes
+    items:
+      - q: Est-il difficile de monter un kit CGM SKD ?
+        a: >-
+          Avec EverChek, le montage peut être très simple. Nos composants s'emboîtent par encliquetage, avec un clic audible lorsqu'ils sont correctement positionnés, et nous fournissons des instructions détaillées, des consignes de salle blanche et une formation.
+      - q: Quelle est la différence entre CGM OEM et CGM SKD ?
+        a: >-
+          En OEM, le fabricant construit et certifie un dispositif entièrement fini que vous n'avez plus qu'à marquer à votre nom et à revendre. En SKD, vous recevez des composants séparés que vous montez localement. L'OEM est plus simple mais plus coûteux. Le SKD est plus souple et permet de satisfaire aux exigences de fabrication nationale. Comparez tous les modèles de fabrication sur notre page OEM, ODM et SKD.
+      - q: Puis-je personnaliser la marque sur un kit CGM SKD ?
+        a: >-
+          Oui, la plupart des fabricants vous permettent d'apposer votre propre marque, votre conditionnement et votre notice d'utilisation, sous réserve de l'approbation réglementaire.
+      - q: Le fabricant apporte-t-il un soutien réglementaire ?
+        a: >-
+          Oui. Les fabricants SKD fiables fournissent la documentation technique nécessaire à votre dossier d'homologation locale, par exemple pour un enregistrement CE.
+      - q: Que faut-il préparer avant de demander un devis ?
+        a: >-
+          Préparez votre marché cible, une estimation de volume, le niveau de personnalisation souhaité et vos exigences réglementaires.
+      - q: Puis-je commencer par une commande pilote ?
+        a: >-
+          De nombreux fabricants acceptent une commande pilote réduite, souvent de l'ordre de 100 à 500 unités, comme première étape pour valider le produit et votre processus de montage. Gardez à l'esprit qu'il s'agit en général de la porte d'entrée vers un accord de plus long terme, et non de son substitut. La plupart des fabricants attendent de votre entreprise un engagement sur un volume annuel significatif une fois le pilote réussi, et cette attente est généralement inscrite au contrat dès le départ.
+      - q: Puis-je obtenir l'exclusivité de marché sur un modèle CGM SKD ?
+        a: >-
+          Souvent, oui. De nombreux partenariats prévoient une exclusivité régionale ou nationale, le plus souvent un partenaire par pays.
+
+  - type: cta-banner

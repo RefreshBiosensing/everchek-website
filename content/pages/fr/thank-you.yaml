@@ -1,0 +1,83 @@
+title: Merci — demande reçue | EverChek
+description: Votre demande est parvenue à l’équipe export d’EverChek. Nous répondons sous un jour ouvré, du lundi au vendredi.
+path: /fr/merci/
+translationKey: thank-you
+noindex: true
+sections:
+  - type: hero
+    variant: centered
+    kicker: Demande reçue
+    title: Merci — votre message est entre les mains de notre équipe
+    sub: |
+      Chaque demande qui arrive ici est lue par une personne ; aucun répondeur automatique ne fait semblant d’en être une. Nous répondons sous un jour ouvré, du lundi au vendredi. Si vous travaillez sur une échéance d’appel d’offres, signalez-le en réponse à notre premier e-mail et nous vous ferons passer en priorité.
+    buttons:
+      - label: Retour à la page d’accueil
+        href: /fr/
+        style: ghost
+      - label: Nous écrire sur WhatsApp
+        href: https://wa.me/8619168598056
+        style: primary
+  - type: step-flow
+    title: Ce qui se passe ensuite
+    columns: 3
+    center: true
+    arrows: true
+    items:
+      - icon: mail
+        title: Nous la lisons et l’orientons
+        desc: Votre demande part vers l’équipe export, et non vers une boîte partagée dont personne n’a la charge. Si elle porte sur la documentation réglementaire ou sur un dossier d’appel d’offres, elle est transmise à la personne qui en a la responsabilité.
+      - icon: users
+        title: Nous revenons vers vous avec des questions
+        desc: Le plus souvent sur votre marché, la voie d’homologation envisagée et le modèle de fabrication le mieux adapté — OEM, ODM, kits SKD pour montage local, ou distribution simple.
+      - icon: shield
+        title: Les documents suivent sous accord de confidentialité
+        desc: Numéros de certificat, dates de validité, références de l’organisme certificateur et synthèse de performance clinique sont remis aux partenaires qualifiés sous accord de confidentialité mutuel, parce que votre propre dossier d’enregistrement en a besoin.
+  - type: card-grid
+    title: En attendant
+    text: Trois lectures utiles avant que notre réponse n’arrive.
+    columns: 3
+    media: icon
+    center: true
+    tint: true
+    items:
+      - icon: factory
+        title: Quel modèle de fabrication vous convient
+        text: OEM, ODM et SKD comparés point par point — ce que chacun change, ce qu’il vous coûte en temps et ce qu’il exige de votre propre organisation.
+        href: /fr/modeles-de-fabrication-cgm/
+        linkLabel: Comparer les modèles
+      - icon: doc
+        title: La documentation, et comment l’obtenir
+        text: Ce que nous publions, ce que nous gardons pour plus tard, et pourquoi. Y compris ce qu’un accord de confidentialité mutuel débloque et ce que votre dossier d’enregistrement nous demandera.
+        href: /fr/documentation/
+        linkLabel: Lire notre politique de divulgation
+      - icon: globe
+        title: Kits SKD et intégration locale
+        text: Comment la fourniture en semi-knocked-down permet à un produit assemblé dans votre pays d’être reconnu comme fabriqué localement dans les marchés publics.
+        href: /fr/montage-local-cgm/
+        linkLabel: Découvrir le programme SKD
+  - type: link-pills
+    label: Explorer
+    items:
+      - label: Système CGM EverChek
+        href: /fr/systeme-mesure-continue-glucose/
+      - label: Application patient EverChek
+        href: /fr/application-patient-cgm/
+      - label: OEM / ODM et marque blanche
+        href: /fr/cgm-oem/
+      - label: Devenir distributeur
+        href: /fr/distribution-cgm/
+      - label: Qu’est-ce qu’un système CGM ?
+        href: /fr/qu-est-ce-qu-un-cgm/
+      - label: Tous les articles
+        href: /fr/blog-cgm/
+  - type: banner-wide
+    align: center
+    height: short
+    title: Besoin d’une réponse avant demain ?
+    text: Si votre demande est urgente — un appel d’offres qui se clôture, une fenêtre d’enregistrement, une expédition déjà planifiée —, WhatsApp atteint l’équipe export plus vite que l’e-mail.
+    cta:
+      label: Nous écrire sur WhatsApp
+      href: https://wa.me/8619168598056
+    cta2:
+      label: Envoyer plus de détails via le formulaire complet
+      href: /fr/contact/

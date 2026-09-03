@@ -1,0 +1,156 @@
+title: Fabricant de CGM intégré verticalement | EverChek
+description: "EverChek, fabricant de CGM intégré verticalement à Shenzhen depuis 2016 : puces capteurs, biocapteurs et algorithmes internes, en B2B exclusivement."
+path: /fr/a-propos/
+translationKey: about-us
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    kicker: Fondée en 2016 · Shenzhen · B2B exclusivement
+    title: Un fabricant de CGM intégré verticalement, basé en Chine
+    sub: Développez votre activité santé avec des technologies CGM fiables, une infrastructure de production évolutive et des modèles de commercialisation souples, adaptés aux marchés de santé régionaux. Concevez plus efficacement des solutions fiables de mesure continue du glucose.
+    image: /images/about-factory.webp
+    imageAlt: Extérieur du site de production et du centre de R&D EverChek à Shenzhen
+    ratio: 4/3
+    buttons:
+      - label: Engager une discussion de partenariat
+        href: /fr/contact/
+        style: primary
+      - label: Voir la documentation dont nous disposons
+        href: /fr/documentation/
+        style: ghost
+
+  - type: image-text
+    variant: right
+    title: Qui sommes-nous ?
+    text: |
+      Fondée en 2016, notre société est spécialisée dans la recherche, le développement et la
+      commercialisation de technologies de biodétection électrochimique et de systèmes de traitement du
+      signal biomoléculaire. Sur la base de puces capteurs, de biocapteurs et de plateformes
+      algorithmiques développés en interne, nous avons bâti des capacités intégrées allant des
+      technologies fondamentales jusqu'aux produits de santé destinés à l'utilisateur final. Nos
+      installations comprennent des salles blanches de classe 10 000, des laboratoires de biosynthèse et
+      des ateliers d'assemblage de dispositifs médicaux — réunis sur un même site, pour une R&D interne
+      intégrée et une production industrialisable.
+    image: /images/about-us-facility.webp
+    imageAlt: Intérieur du centre de recherche et développement EverChek en technologies de biodétection
+    ratio: 4/3
+
+  - type: richtext
+    eyebrow: Positionnement
+    title: Conçu exclusivement pour des partenariats CGM en B2B
+    blocks:
+      - heading: À qui s'adresse notre technologie de mesure continue du glucose
+        text: |
+          Aujourd'hui, nos technologies de mesure continue du glucose (CGM) sont conçues exclusivement pour
+          des partenariats de commercialisation — OEM, SKD et bien d'autres formes — sur les marchés de
+          santé régionaux du monde entier. Nous travaillons avec des distributeurs de dispositifs
+          médicaux, des propriétaires de marques de santé, des groupes hospitaliers et des agents d'appels
+          d'offres qui ont besoin d'un fabricant derrière leur propre marque, plutôt que d'un produit
+          grand public fini à revendre.
+      - heading: "Un fabricant de CGM exclusivement B2B : ce que cela change pour votre marque"
+        text: |
+          Nous sommes un fabricant de CGM exclusivement B2B. Nous proposons des programmes OEM, ODM, kits
+          SKD et marque blanche — et nous n'exploitons aucune marque grand public, donc nous ne
+          concurrençons jamais la vôtre sur votre marché. La marque, la relation avec l'utilisateur final
+          et la stratégie d'homologation sur le marché restent entre les mains de notre partenaire. C'est
+          un engagement structurel, pas une promesse que l'on renouvelle chaque année.
+    tint: true
+
+  - type: image-text
+    variant: left
+    title: Prof. Xueji Zhang — Chief Scientist et cofondateur
+    text: |
+      Le professeur Xueji Zhang est un scientifique de renommée mondiale dans le domaine de la
+      biodétection et de l'analyse électrochimique. Fort de décennies de recherche couvrant la conception
+      de capteurs, la détection biomoléculaire et le diagnostic clinique, il a joué un rôle déterminant
+      dans la construction de la plateforme technologique d'EverChek, depuis ses fondations. Ses travaux
+      font le lien entre science fondamentale et applications concrètes en santé, et guident le
+      développement de systèmes de mesure du glucose répondant à des exigences cliniques rigoureuses.
+    bullets:
+      - Fellow of the Royal Society of Chemistry (FRSC)
+      - Nombreuses publications dans des revues de premier plan en biodétection et en électrochimie
+      - Expertise approfondie en conception de capteurs enzymatiques et en technologies de diagnostic clinique
+      - Direction de plusieurs programmes nationaux de recherche en génie biomédical et en développement de capteurs
+    image: /images/x-zhang-transparent.webp
+    imageAlt: Portrait du professeur Xueji Zhang, Chief Scientist et cofondateur d'EverChek
+    ratio: 1/1
+
+  - type: timeline
+    title: Nos étapes clés
+    sub: De la R&D initiale sur les biocapteurs à la fabrication de CGM à l'échelle industrielle.
+    dark: true
+    items:
+      - time: "2016"
+        event: Validation du concept
+        detail: Création de la société et lancement de la R&D sur nos propres puces capteurs et biocapteurs.
+      - time: 2017–2019
+        event: Développement pré-produit
+        detail: Le Prof. Xueji Zhang est nommé président et Chief Scientist. Obtention de la certification nationale d'entreprise de haute technologie (National High-Tech Enterprise).
+      - time: 2020–2021
+        event: Lancement du produit
+        detail: Réalisation du premier prototype de CGM.
+      - time: "2022"
+        event: Finalisation du système
+        detail: Conception du système CGM figée ; salle blanche achevée.
+      - time: 2023–2024
+        event: Commercialisation et montée en cadence
+        detail: Mise en service de la ligne de production automatisée de CGM. Production de masse du CGM atteinte. Gamme R&D entièrement itérée et ventes à l'échelle atteintes.
+
+  - type: card-grid
+    center: true
+    columns: 3
+    media: icon
+    tint: true
+    title: Nos technologies clés
+    text: Six piliers technologiques conçus et maîtrisés en interne, couvrant tout le parcours de la puce capteur au dispositif CGM fini.
+    items:
+      - icon: sensor
+        title: Puces capteurs propriétaires
+        text: Nous concevons et fabriquons nos propres puces capteurs électrochimiques en interne. Cela nous donne la maîtrise directe de la stabilité du signal, de la consommation d'énergie et du format. Cela supprime aussi toute dépendance à des chaînes d'approvisionnement de semi-conducteurs tierces.
+      - icon: flower
+        title: Biodétection enzymatique
+        text: Nos capteurs à glucose oxydase sont formulés, revêtus et étalonnés en interne. Chaque lot de production est libéré selon les mêmes critères d'acceptation analytiques, et les données de libération au niveau du lot sont mises à disposition des partenaires dans le cadre de notre accord qualité — et non les seules données d'un lot de référence.
+      - icon: console
+        title: Algorithmes développés en interne
+        text: Nous développons de A à Z nos propres algorithmes de calcul du glucose, de prédiction de tendance et de logique d'alerte. Cela nous permet d'adapter les plages pédiatriques, les seuils gestationnels ou les protocoles de communication avec les pompes à insuline sans dépendre des priorités de feuille de route d'un tiers.
+      - icon: data
+        title: Plateforme de traitement biochimique
+        text: L'immobilisation enzymatique, le dépôt de membrane et le réglage de la sensibilité sont réalisés sous un même toit. C'est cette maîtrise interne qui nous permet de contenir la variabilité d'un capteur à l'autre à l'intérieur de notre spécification de libération — et donc de rendre compte des performances au niveau du lot pour chaque série de production, et non pour un seul lot de référence.
+      - icon: factory
+        title: Fabrication intégrée
+        text: Du wafer de biocapteur au transmetteur scellé, chaque étape se déroule dans nos propres installations. Chaque unité reçoit un code QR unique assurant la traçabilité complète des composants, et les tests automatisés en ligne détectent les écarts avant la sortie de chaîne.
+      - icon: chart
+        title: Systèmes qualité pilotés par SPC
+        text: Nous appliquons la maîtrise statistique des procédés (SPC) à l'impression des électrodes, à la découpe laser, au dépôt et au revêtement. Nos propres équipements de contrôle réinjectent les données dans la ligne en temps réel, ce qui nous permet de corriger avant que les défauts ne s'accumulent, et non après.
+
+  - type: card-grid
+    center: true
+    columns: 3
+    media: icon
+    title: Qu'est-ce qui nous fait avancer ?
+    text: La vision, la mission et les valeurs qui guident chacune de nos décisions, de la conception des capteurs aux relations avec nos partenaires.
+    items:
+      - icon: globe
+        title: Notre vision
+        text: Devenir un acteur de premier plan mondial des systèmes de biodétection et des technologies de santé.
+      - icon: handshake
+        title: Notre mission
+        text: Accompagner les entreprises de santé avec des technologies de biodétection fiables et une infrastructure de commercialisation évolutive.
+      - icon: shield
+        title: Nos valeurs
+        text: Nous croyons à la discrétion, au pragmatisme et à une progression régulière, portée par une exécution efficace et un engagement technologique de long terme.
+
+  - type: link-pills
+    label: Où aller ensuite
+    items:
+      - label: CGM OEM et marque blanche
+        href: /fr/cgm-oem/
+      - label: CGM SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: Partenariats de distribution CGM
+        href: /fr/distribution-cgm/
+      - label: Certifications et documentation
+        href: /fr/documentation/
+
+  - type: cta-banner

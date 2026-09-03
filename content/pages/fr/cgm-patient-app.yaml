@@ -1,0 +1,191 @@
+title: Application patient CGM en marque blanche | EverChek
+description: "Application patient CGM en marque blanche pour marques de santé : glycémie en temps réel, courbes de tendance, alertes paramétrables, API et SDK."
+path: /fr/application-patient-cgm/
+translationKey: cgm-patient-app
+sections:
+  - type: hero
+    variant: split
+    visual: image
+    image: /images/cgm-app-overview-final.webp
+    imageAlt: >-
+      Capture d’écran annotée de l’application patient CGM EverChek sur smartphone, affichant une valeur
+      de glycémie en temps réel de 7,8 mmol/L avec flèche de tendance, l’état de connexion du capteur,
+      le nombre de jours de capteur restants, un graphique de glycémie sélectionnable sur 3 h/6 h/12 h/24 h,
+      les seuils d’alerte haut et bas personnalisés, la plage cible de glycémie, le journal
+      d’événements et les statistiques glycémiques historiques.
+    ratio: 1/1
+    title: Application mobile CGM EverChek
+    sub: >-
+      Une application de mesure continue du glucose (CGM) prête pour le patient, conçue pour votre
+      marque. Accédez aux valeurs de glycémie en temps réel, aux alertes prédictives et à la
+      visualisation des tendances, entièrement personnalisable selon vos besoins de commercialisation.
+    buttons:
+      - label: Demander une démo de l’application CGM en marque blanche
+        href: /fr/contact/
+      - label: Voir les spécifications du dispositif CGM
+        href: /fr/systeme-mesure-continue-glucose/
+        style: ghost
+
+  - type: card-grid
+    title: Conçue pour la commercialisation en santé
+    text: >-
+      Plus qu’une simple application de suivi du glucose. Une plateforme en marque blanche conçue pour
+      permettre aux marques de santé d’aller sur le marché sous leur propre identité.
+    columns: 2
+    media: icon
+    center: true
+    items:
+      - icon: globe
+        title: Personnalisation de la marque
+        text: >-
+          Personnalisez les logos, les couleurs, les paramètres de langue, les interfaces utilisateur
+          et les parcours localisés afin de mieux correspondre à votre marché de santé régional et à
+          votre stratégie de commercialisation.
+      - icon: terminal
+        title: Intégration API et SDK
+        text: >-
+          Connectez l’application à votre plateforme de gestion des patients, à votre dossier patient
+          informatisé (EMR) ou à votre système de télémédecine existants, au moyen d’API et de SDK
+          documentés.
+      - icon: shield
+        title: Accompagnement réglementaire
+        text: >-
+          Accompagnement dans les procédures d’homologation des applications-dispositifs médicaux sur
+          votre marché cible, avec des dossiers documentaires constitués pour le dépôt réglementaire.
+      - icon: check
+        title: Mises à jour continues
+        text: >-
+          Nous maintenons l’infrastructure applicative de base — corrections d’anomalies, mises à jour
+          de compatibilité avec les systèmes d’exploitation et évolutions fonctionnelles — pour que
+          votre marque exploite toujours la dernière version.
+
+  - type: feature-rows
+    title: Fonctionnalités de l’application patient EverChek
+    items:
+      - id: real-time-glucose
+        title: Suivi de la glycémie en temps réel
+        desc: >-
+          Restez informé grâce à des valeurs de glycémie actualisées en temps réel, synchronisées
+          automatiquement depuis votre capteur CGM vers votre téléphone et votre montre connectée. La
+          valeur en cours, la flèche de tendance et la courbe de glycémie sur 24 heures s’affichent
+          clairement sur un seul écran, ce qui permet de suivre les variations d’un coup d’œil.
+        visual: image
+        image: /images/cgm-app-phone-2.webp
+        imageNote: Écran d’accueil affichant la valeur de glycémie en cours, la flèche de tendance et la courbe sur 24 heures
+      - id: trend-visualization
+        title: Visualisation et prédiction des tendances glycémiques
+        desc: >-
+          Consultez les tendances glycémiques sur 3, 6, 12 et 24 heures grâce à une courbe intuitive.
+          Les flèches directionnelles indiquent l’évolution de votre glycémie et vous aident à décider
+          en connaissance de cause pour les repas, l’activité physique et l’insuline.
+        visual: image
+        image: /images/cgm-app-phone-3.webp
+        imageNote: Courbe de tendance glycémique avec vues sur 3, 6, 12 et 24 heures et flèches directionnelles
+      - id: glucose-alerts
+        title: Alertes d’hyperglycémie et d’hypoglycémie
+        desc: >-
+          Définissez des seuils glycémiques haut et bas personnalisés et recevez des alertes en temps
+          utile lorsque votre glycémie approche ou dépasse ces limites, ce qui vous permet d’agir de
+          manière préventive.
+        visual: image
+        image: /images/cgm-app-phone-4.webp
+        imageNote: Écran de réglage des alertes avec seuils glycémiques haut et bas configurables
+      - id: event-logging
+        title: Journal d’événements
+        desc: >-
+          Enregistrez repas, activité physique, doses d’insuline et médicaments en quelques appuis.
+          Chaque événement est horodaté et superposé à votre courbe de tendance glycémique, ce qui
+          permet de relier les activités quotidiennes aux variations du glucose.
+        visual: image
+        image: /images/cgm-app-phone-1.webp
+        imageNote: Écran du journal d’événements pour consigner repas, activité physique, doses d’insuline et médicaments
+      - id: history-statistics
+        title: Historique et statistiques
+        desc: >-
+          Consultez les synthèses glycémiques quotidiennes, hebdomadaires et mensuelles avec les
+          indicateurs clés : temps dans la cible, glycémie moyenne et HbA1c estimée. Générez des
+          rapports détaillés à partager avec votre professionnel de santé.
+        visual: image
+        image: /images/cgm-app-phone-2.webp
+        imageNote: Statistiques glycémiques historiques avec temps dans la cible, glycémie moyenne et HbA1c estimée
+
+  - type: feature-rows
+    title: Choisissez votre modèle de déploiement
+    items:
+      - id: white-label-app
+        title: Application en marque blanche
+        desc: >-
+          Une application CGM prête à lancer sous votre identité de marque. Nous prenons en charge la
+          technologie, vous vous concentrez sur la mise sur le marché. Idéal pour les marques qui
+          veulent lancer rapidement sans constituer d’équipe logicielle.
+        bullets:
+          - Application complète à votre nom de marque, avec votre logo et vos couleurs
+          - Appairage du capteur CGM et chaîne de données préconfigurés
+          - Accompagnement pour la publication sur les stores (iOS et Android)
+          - Maintenance continue et mises à jour de compatibilité système
+          - Supports d’accompagnement patient disponibles en co-marquage
+        visual: phone
+      - id: api-sdk-access
+        title: Accès API et SDK
+        desc: >-
+          Intégrez les données CGM à votre plateforme patient existante ou développez votre propre
+          application sur notre SDK. Idéal pour les marques disposant déjà d’une plateforme de santé ou
+          d’une équipe de développement interne.
+        bullets:
+          - API RESTful pour l’ingestion des données de glycémie dans votre système
+          - Documentation SDK pour développer vos propres fonctionnalités destinées au patient
+          - Accompagnement technique à l’intégration par notre équipe d’ingénierie
+          - Environnement bac à sable (sandbox) pour le développement et les tests
+        visual: terminal
+
+  - type: faq
+    title: Questions fréquentes
+    items:
+      - q: Pouvons-nous paramétrer les seuils d’alerte glycémique pour notre population de patients cible ?
+        a: >-
+          Oui. Les seuils d’alerte d’hyperglycémie, d’hypoglycémie ainsi que les alertes prédictives
+          sont entièrement configurables. Nous pouvons prérégler des seuils par défaut selon la
+          population visée — pédiatrique, adulte ou gestationnelle — et chaque patient peut ensuite
+          les personnaliser dans l’application.
+      - q: Comment se déroulent les mises à jour de l’application en déploiement marque blanche ?
+        a: >-
+          Nous gérons le cycle de publication de l’application de base. Lorsqu’une nouvelle version est
+          prête — corrections d’anomalies, mises à jour de compatibilité système ou nouvelles
+          fonctionnalités — nous la diffusons via votre fiche applicative sur l’App Store et Google
+          Play. Vos patients reçoivent la mise à jour comme n’importe quelle autre, votre identité de
+          marque restant intacte.
+      - q: Fournissez-vous des supports d’accompagnement patient que nous pouvons co-marquer ?
+        a: >-
+          Oui. Nous fournissons un ensemble complet de supports de prise en main — guides de démarrage
+          rapide, tutoriels vidéo et écrans de découverte intégrés à l’application — qui peuvent être
+          co-marqués avec votre logo et votre charte graphique. Ces supports sont disponibles dans
+          toutes les langues prises en charge.
+
+  - type: link-pills
+    label: Explorer
+    items:
+      - label: Qu’est-ce qu’un système CGM ?
+        href: /fr/qu-est-ce-qu-un-cgm/
+      - label: Spécifications du dispositif CGM
+        href: /fr/systeme-mesure-continue-glucose/
+      - label: Fabrication CGM en OEM
+        href: /fr/cgm-oem/
+      - label: Montage local CGM et kits SKD
+        href: /fr/montage-local-cgm/
+      - label: Distribution CGM
+        href: /fr/distribution-cgm/
+
+  - type: banner-wide
+    title: Prêt à lancer votre application CGM sous votre marque ?
+    text: >-
+      Parlez à notre équipe du déploiement en marque blanche, de l’intégration par API ou d’une démo
+      adaptée à votre marché.
+    align: center
+    cta:
+      label: Demander une démo de l’application CGM en marque blanche
+      href: /fr/contact/
+    cta2:
+      label: En savoir plus sur l’accès API et SDK
+      href: /fr/contact/
+
+  - type: cta-banner

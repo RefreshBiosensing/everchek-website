@@ -1,0 +1,72 @@
+title: "OEM, SKD ou ODM : modèles de fabrication CGM | EverChek"
+description: "Comparez les modèles de fabrication CGM OEM, ODM, SKD et CKD : ce que couvre chacun, à qui il convient et comment choisir votre partenariat."
+path: /fr/modeles-de-fabrication-cgm/
+translationKey: cgm-manufacturing-models
+schemaType: article
+sections:
+  - type: hero
+    variant: split
+    kicker: "Fabrication"
+    title: "OEM, SKD ou ODM : quel modèle de fabrication CGM vous convient ?"
+    sub: "Comparez les modèles OEM, SKD, CKD et ODM pour identifier l'approche de partenariat CGM adaptée à votre activité."
+    note: "Équipe EverChek · 28 mai 2026"
+    visual: image
+    image: /images/blog-cover-2.webp
+    imageAlt: "Schéma comparant les modèles de fabrication CGM OEM, SKD et ODM selon la part d'assemblage réalisée localement"
+    ratio: 16/9
+  - type: richtext
+    eyebrow: "Commencer ici"
+    title: "Bien comprendre vos options"
+    blocks:
+      - text: "À l'entrée sur le marché du CGM, une marque de santé doit trancher une question déterminante : quel modèle de fabrication et de partenariat sert le mieux ses objectifs. Les quatre grands modèles sont l'OEM, l'ODM, le SKD et le CKD, chacun supposant un degré différent d'implication, d'investissement et de contrôle."
+      - text: "Bien comprendre ces options permet de décider en connaissance de cause, en cohérence avec votre stratégie commerciale, votre approche réglementaire et vos objectifs de marché."
+  - type: feature-rows
+    eyebrow: "Les quatre modèles"
+    title: "OEM, ODM, SKD et CKD comparés"
+    items:
+      - id: oem
+        tag: OEM
+        title: "OEM (Original Equipment Manufacturing)"
+        desc: "Dans un modèle OEM, EverChek fabrique le produit CGM complet selon votre cahier des charges. Vous recevez un produit fini, entièrement assemblé, à votre marque, avec votre conditionnement et votre étiquetage. C'est la voie idéale pour une entreprise qui veut lancer rapidement avec une complexité opérationnelle minimale."
+        bullets:
+          - "Pour qui : les marques de santé disposant de circuits de distribution établis, qui veulent ajouter le CGM à leur gamme sans investir dans un outil industriel."
+        visual: box
+      - id: odm
+        tag: ODM
+        title: "ODM (Original Design Manufacturing)"
+        desc: "L'ODM va un cran plus loin : le fabricant prend en charge à la fois la conception et la production. Vous choisissez parmi des conceptions existantes et les adaptez à votre marque. Ce modèle raccourcit le délai de mise sur le marché, la conception du produit étant déjà validée."
+        bullets:
+          - "Pour qui : les entreprises qui abordent le marché du CGM pour la première fois et cherchent une solution éprouvée, prête à commercialiser, avec des adaptations mineures."
+        visual: cog
+      - id: skd
+        tag: SKD
+        title: "SKD (Semi-Knocked Down)"
+        desc: "Dans le modèle SKD, ou montage local semi-démonté, vous recevez des composants CGM partiellement assemblés et réalisez l'assemblage final sur place. Cette approche offre plusieurs avantages stratégiques : droits d'importation réduits, éligibilité aux appels d'offres publics locaux, coût unitaire plus bas à l'échelle et transfert progressif de technologie."
+        bullets:
+          - "Pour qui : les acteurs de santé régionaux qui visent des marchés publics ou construisent une capacité de production locale sur le long terme."
+        visual: set
+      - id: ckd
+        tag: CKD
+        title: "CKD (Completely Knocked Down)"
+        desc: "Le CKD correspond au plus haut degré de fabrication locale. Vous recevez les composants unitaires et assemblez le produit complet sur place. Ce modèle maximise le taux d'intégration locale et offre la maîtrise la plus étendue du processus de production."
+        bullets:
+          - "Pour qui : les organisations qui disposent déjà de capacités de fabrication de dispositifs médicaux et cherchent à les élargir."
+        visual: factory
+  - type: richtext
+    eyebrow: "Décider"
+    title: "Choisir le bon modèle"
+    blocks:
+      - text: "Votre choix dépend de plusieurs facteurs : taille du marché, exigences réglementaires, règles de taux d'intégration locale, capacité d'investissement et stratégie à long terme. EverChek propose des modèles de partenariat souples, qui peuvent évoluer avec votre activité."
+    tint: true
+  - type: link-pills
+    label: "À lire ensuite"
+    items:
+      - label: "Le SKD face aux appels d'offres publics"
+        href: /fr/appels-offres-cgm-skd/
+      - label: "Fabrication CGM en OEM"
+        href: /fr/cgm-oem/
+      - label: "Coopération CGM en SKD"
+        href: /fr/montage-local-cgm/
+      - label: "Tous les articles CGM"
+        href: /fr/blog-cgm/
+  - type: cta-banner

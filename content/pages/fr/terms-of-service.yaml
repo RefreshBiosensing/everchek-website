@@ -1,0 +1,67 @@
+title: Conditions générales d’utilisation | EverChek
+description: "Les conditions régissant l’usage du site EverChek et nos relations B2B de fabrication CGM : OEM, ODM, SKD et CKD."
+path: /fr/conditions-generales/
+translationKey: terms-of-service
+sections:
+  - type: hero
+    variant: centered
+    kicker: Mentions légales
+    title: Conditions générales d’utilisation
+    sub: |
+      Dernière mise à jour : 18 juin 2026
+    note: |
+      Une question sur ces conditions ? Écrivez à contact@ever-chek.com : une personne vous répondra.
+  - type: richtext
+    eyebrow: Conditions
+    title: Conditions régissant l’utilisation de ce site
+    blocks:
+      - text: |
+          Les présentes conditions générales d’utilisation (les « Conditions ») régissent votre accès au site web d’EverChek et aux services associés, ainsi que leur utilisation. En accédant à notre site ou en l’utilisant, vous acceptez d’être lié par les présentes Conditions.
+      - heading: 1. Objet commercial
+        text: |
+          EverChek est un fabricant de systèmes CGM (mesure continue du glucose) exclusivement orienté B2B, qui propose des solutions OEM, ODM, SKD et CKD aux acteurs de la santé du monde entier. Notre site web est destiné aux échanges interentreprises et aux demandes professionnelles.
+      - heading: 2. Propriété intellectuelle
+        text: |
+          L’ensemble des contenus de ce site — textes, graphismes, logos, images, spécifications produits et logiciels — est la propriété d’EverChek ou de ses concédants de licence et se trouve protégé par les lois applicables en matière de propriété intellectuelle. Vous ne pouvez ni les reproduire, ni les diffuser, ni les modifier, ni en tirer des œuvres dérivées sans notre accord écrit préalable.
+      - heading: 3. Utilisation du site
+        text: |
+          Vous vous engagez à n’utiliser ce site qu’à des fins licites et d’une manière qui ne porte pas atteinte aux droits d’autrui. Vous ne pouvez pas utiliser le site à des fins commerciales non autorisées ; tenter d’accéder sans autorisation à nos systèmes ; transmettre un code malveillant ou perturber le fonctionnement du site ; ni dissimuler votre identité ou votre rattachement à une entité.
+      - heading: 4. Informations produits
+        text: |
+          Les spécifications, descriptions et images de produits figurant sur ce site sont fournies à titre informatif et peuvent être modifiées sans préavis. Nous nous efforçons d’en garantir l’exactitude, sans pouvoir garantir que l’ensemble des informations est complet, à jour ou exempt d’erreur. Les spécifications produits formelles sont communiquées dans le cadre de nos accords commerciaux.
+      - heading: 5. Demandes et communications
+        text: |
+          Lorsque vous nous adressez une demande via notre site, vous vous engagez à fournir des informations exactes et complètes. Nous nous réservons le droit de refuser toute relation commerciale, à notre seule appréciation.
+      - heading: 6. Limitation de responsabilité
+        text: |
+          Dans toute la mesure permise par la loi, EverChek ne saurait être tenue responsable d’un quelconque dommage indirect, accessoire, spécial, consécutif ou punitif résultant de votre utilisation de ce site ou des produits et services qui y sont décrits.
+      - heading: 7. Exclusion de garantie
+        text: |
+          Ce site et son contenu sont fournis « en l’état » et « selon disponibilité ». EverChek n’accorde aucune garantie, expresse ou implicite, quant au fonctionnement, à l’exactitude ou à la fiabilité du site.
+      - heading: 8. Conformité réglementaire
+        text: |
+          Nos produits CGM sont fabriqués conformément aux normes applicables de management de la qualité. Il appartient à nos clients et partenaires de veiller au respect des exigences réglementaires locales applicables aux dispositifs médicaux sur leurs marchés respectifs. Le statut réglementaire et la disponibilité des produits varient d’un pays à l’autre ; rien sur ce site ne doit être lu comme l’affirmation qu’une homologation donnée existe sur votre marché.
+      - heading: 9. Confidentialité
+        text: |
+          Toute information échangée dans le cadre de demandes commerciales, y compris les spécifications produits et les tarifs, est confidentielle et ne doit pas être communiquée à des tiers sans notre accord écrit. Les numéros de certificat, les synthèses de performance clinique et les autres documents que nous transmettons aux partenaires qualifiés sont communiqués sous accord de confidentialité mutuel et relèvent de cet accord, et non des présentes Conditions.
+      - heading: 10. Droit applicable
+        text: |
+          Les présentes Conditions sont régies par le droit chinois et interprétées conformément à celui-ci. Tout litige né des présentes Conditions sera réglé par voie de négociation amiable ou devant les tribunaux compétents en Chine.
+      - heading: 11. Modification des Conditions
+        text: |
+          Nous nous réservons le droit de modifier les présentes Conditions à tout moment. Les modifications prennent effet dès leur publication. La poursuite de votre utilisation du site après ces modifications vaut acceptation des nouvelles Conditions.
+      - heading: 12. Contact
+        text: |
+          Pour toute question relative aux présentes Conditions, écrivez-nous à contact@ever-chek.com.
+  - type: link-pills
+    label: Également sur ce site
+    items:
+      - label: Politique de confidentialité
+        href: /fr/politique-de-confidentialite/
+      - label: Nous contacter
+        href: /fr/contact/
+      - label: La documentation et comment l’obtenir
+        href: /fr/documentation/
+      - label: Comparatif des modèles de fabrication
+        href: /fr/modeles-de-fabrication-cgm/
+  - type: cta-banner

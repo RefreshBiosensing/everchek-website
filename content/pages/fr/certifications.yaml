@@ -1,0 +1,181 @@
+title: Certifications CGM et dossier réglementaire | EverChek
+description: "Quelles certifications CGM nous détenons, quel organisme les a délivrées et leur périmètre. Numéros et rapports d'essais sous accord de confidentialité."
+path: /fr/documentation/
+translationKey: certifications
+sections:
+  - type: hero
+    variant: standard
+    kicker: Documentation réglementaire pour les partenaires CGM
+    title: La documentation, et comment l'obtenir
+    sub: Nous publions les certifications que nous détenons, l'organisme qui les a délivrées et le périmètre qu'elles couvrent. Les numéros de certificat, les dates de validité, les rapports d'essais et les synthèses de performance clinique sont communiqués intégralement aux partenaires qualifiés sous accord de confidentialité mutuel — parce que votre propre dossier d'homologation les exige.
+    buttons:
+      - label: Demander le dossier de certification (accord de confidentialité mutuel)
+        href: /fr/accord-de-confidentialite/?src=certifications
+        style: primary
+      - label: Consulter l'index du dossier réglementaire
+        href: /fr/index-dossier-reglementaire/
+        style: ghost
+
+  - type: richtext
+    eyebrow: Politique de publication
+    title: Notre politique de publication, énoncée clairement
+    blocks:
+      - heading: Ce que nous publions, et ce que nous ne publions pas
+        text: |
+          Nous publions les certifications que nous détenons, l'organisme qui les a délivrées et le
+          périmètre qu'elles couvrent. Nous ne publions pas sur ce site les numéros de certificat, les jeux
+          de données cliniques, la capacité de production, les quantités minimales de commande, les délais
+          de livraison ni les prix.
+      - heading: Une politique de publication, pas une politique de partenariat
+        text: |
+          Les numéros de certificat, les dates de validité et les références de l'organisme certificateur
+          sont fournis intégralement aux partenaires qualifiés sous accord de confidentialité mutuel — et
+          ils doivent l'être, parce que votre propre dossier d'homologation les exige. Le formulaire
+          d'homologation algérien, par exemple, comporte un champ obligatoire pour le numéro de certificat
+          ISO 13485 et son autorité de délivrance. Nous renseignons ces champs. Nous refusons simplement de
+          les afficher sur une page web publique, où des concurrents pourraient les recopier dans leurs
+          propres dossiers.
+    tint: true
+
+  - type: card-grid
+    center: true
+    columns: 3
+    media: icon
+    title: Votre conformité, simplifiée
+    text: Difficile de vous repérer dans la réglementation locale ? Notre système CGM est livré avec un ensemble documentaire structuré qui vous aide à préparer vos dépôts, à réduire les cycles d'instruction et à accéder plus vite au marché.
+    items:
+      - icon: check
+        title: Préparez votre dépôt plus vite
+        text: Une documentation de validation structurée permet à votre équipe réglementaire de constituer le dossier de votre marché cible à partir d'un fonds documentaire existant et indexé, plutôt que de commander des essais depuis zéro.
+      - icon: shield
+        title: Réduisez le risque de non-conformité
+        text: Des rapports d'essais auditables, issus d'un système de management de la qualité certifié, vous donnent des preuves défendables lors des évaluations réglementaires et des audits de partenaires.
+      - icon: doc
+        title: Renforcez la confiance dans votre marque
+        text: Des systèmes qualité bien documentés et une méthode transparente de restitution des performances renforcent la crédibilité de votre marque auprès des professionnels de santé et des commissions d'achat.
+
+  - type: card-grid
+    columns: 2
+    media: icon
+    title: Ce que nous détenons
+    text: Chaque élément indique le référentiel, l'organisme certificateur et le périmètre. Les numéros ne figurent pas sur cette page et sont communiqués sous accord de confidentialité.
+    items:
+      - icon: shield
+        title: Système de management de la qualité
+        text: |
+          Référentiel : ISO 13485:2016 · Organisme certificateur : [TODO: certification body name] ·
+          Périmètre : [TODO: exact scope wording from certificate] ·
+          Validité : [TODO: certificate validity years] · Numéro de certificat : disponible sous accord de
+          confidentialité.
+      - icon: globe
+        title: Enregistrements sur les marchés
+        text: |
+          [TODO: regulator, country, class, status] · Numéro d'enregistrement : disponible sous accord de
+          confidentialité. (Si aucun enregistrement n'est détenu sur aucun marché, supprimer entièrement
+          cette carte plutôt que d'en atténuer la formulation.)
+      - icon: heart
+        title: Sécurité biologique
+        text: |
+          Évaluée selon la série ISO 10993 : cytotoxicité, sensibilisation, irritation, toxicité
+          systémique, caractérisation chimique et substances relargables, essais réalisés par
+          [TODO: named accredited laboratory]. Rapports disponibles sous accord de confidentialité.
+      - icon: alert
+        title: Gestion des risques
+        text: Dossier tenu à jour conformément à l'ISO 14971.
+      - icon: chart
+        title: Performance clinique
+        text: |
+          Évaluée par rapport à une méthode de référence de laboratoire. Nous indiquons la méthode de
+          référence, le comparateur, ainsi que la répartition par jour de port et par plage glycémique, en
+          regard du chiffre global. La synthèse est communiquée aux partenaires qualifiés sous accord de
+          confidentialité. Demandez-nous le protocole avant de nous demander le chiffre : c'est le
+          protocole qui vous dit si le chiffre veut dire quelque chose.
+      - icon: clock
+        title: Stabilité et durée de conservation
+        text: Études de vieillissement en temps réel et accéléré ; protocole et calendrier des points de prélèvement disponibles sous accord de confidentialité.
+      - icon: cloud
+        title: Indice de protection
+        text: |
+          [TODO: IP rating — site currently says both IPX8 and IP28], testé à [TODO: depth] m pendant
+          [TODO: duration]. Selon l'IEC 60529, un indice IPX8 est défini par les conditions déclarées par
+          le fabricant : nous déclarons donc les nôtres.
+
+  - type: checklist
+    title: Contenu du dossier technique
+    text: L'index ci-dessous est public. Les contenus sont communiqués sous accord de confidentialité, compilés selon la liste de pièces exigée par le marché que vous visez.
+    columns: 2
+    panel: true
+    tint: true
+    items:
+      - Certificat ISO 13485 — certification de notre système de management de la qualité pour la conception, le développement et la fabrication de systèmes CGM.
+      - Rapport de cytotoxicité — confirme que les matériaux en contact avec la peau du patient ne provoquent ni mort cellulaire ni réaction toxique.
+      - Rapport de sensibilisation — évalue si un composant du système CGM peut provoquer des réactions allergiques ou une sensibilisation cutanée après contacts répétés.
+      - Rapport de toxicité systémique — essais portant sur les effets biologiques nocifs potentiels après exposition systémique aux matériaux du produit.
+      - Rapport d'irritation — détermine si le capteur, l'adhésif ou les autres matériaux en contact avec la peau provoquent rougeurs, gonflements ou lésions tissulaires.
+      - Évaluation de la biocompatibilité — appréciation de la sécurité biologique et de la compatibilité entre le dispositif et le corps humain.
+      - Rapport de caractérisation chimique — analyse et identification des substances chimiques associées aux matériaux du produit.
+      - Rapport d'essais de relargage — mesure les substances chimiques susceptibles de migrer des matériaux du capteur vers l'organisme dans des conditions d'usage simulées, à l'appui de la biocompatibilité.
+      - Synthèse de performance clinique — rend compte de l'exactitude de notre système CGM par rapport à une méthode de référence de laboratoire, avec le plan d'étude, le comparateur et la répartition par plage en pièces jointes.
+      - "Validation de la stérilisation — documente que notre procédé de stérilisation atteint de manière constante un niveau d'assurance de stérilité (SAL). [TODO: sterilization method]"
+      - Validation de l'étalonnage en usine — démontre que notre procédé d'étalonnage interne fixe l'exactitude du capteur avant expédition, de sorte que les utilisateurs n'ont pas besoin d'étalonnage par piqûre au doigt.
+      - Validation de la stabilité et de la durée de conservation — données issues d'études de vieillissement en temps réel et accéléré, confirmant la performance du capteur et l'autonomie de la pile sur toute la durée de conservation indiquée sur l'étiquetage.
+
+  - type: step-flow
+    columns: 3
+    center: true
+    title: Comment accompagnons-nous votre préparation réglementaire ?
+    text: En tant que fabricant de CGM, nous tenons à jour une documentation structurée, partagée avec les partenaires qualifiés sous accord de confidentialité, à l'appui de votre dépôt réglementaire.
+    items:
+      - icon: mail
+        title: Vous demandez les documents
+        desc: "Indiquez-nous votre marché et votre voie d'accès : enregistrement à l'importation, montage local SKD ou appel d'offres public. Si vous nous transmettez l'avis d'appel d'offres ou la liste de pièces exigée par l'autorité, nous travaillons à partir de cette liste plutôt que d'envoyer un dossier générique."
+      - icon: doc
+        title: Nous compilons et livrons
+        desc: Nous fournissons le dossier technique — certificats avec numéros et dates de validité, résultats d'essais et données d'étude à l'appui — mis en forme pour le dépôt que vous préparez réellement.
+      - icon: check
+        title: Vous déposez auprès des autorités
+        desc: Vos équipes intègrent la documentation à votre propre dossier réglementaire et déposent auprès de l'autorité de santé compétente sur votre marché. Nous signons ce que votre autorité exige que nous signions.
+
+  - type: richtext
+    eyebrow: Limites
+    title: Ce que nous ne prétendons pas
+    blocks:
+      - heading: Nous ne détenons pas de certification sur tous les marchés, et nous le disons
+        text: |
+          Interrogez-nous sur un marché précis et nous vous dirons ce qui existe aujourd'hui, ce qui
+          n'existe pas et quelle est la voie réaliste. Un fournisseur qui annonce une couverture complète
+          de toutes les juridictions est un fournisseur qui n'a pas lu les juridictions.
+      - heading: Comment nous parlons de l'exactitude
+        text: |
+          Nous rendons compte de l'exactitude du capteur comme les autorités l'évaluent — comme une
+          concordance avec une méthode de référence de laboratoire, plan d'étude divulgué — et non comme un
+          chiffre marketing unique. Les chiffres d'exactitude publiés ne sont pas comparables d'un
+          fournisseur à l'autre sans divulgation du plan d'étude, un point rappelé à maintes reprises dans
+          la littérature à comité de lecture. Nous vous donnons donc la méthode, et nous vous donnons des
+          capteurs pour la vérifier vous-même.
+
+  - type: banner-wide
+    align: center
+    height: short
+    title: Deux façons d'obtenir le dossier
+    text: L'index est gratuit et en accès libre. Les contenus sont communiqués sous accord de confidentialité mutuel, compilés selon la liste de pièces de votre marché.
+    cta:
+      label: Demander le dossier de certification (accord de confidentialité mutuel)
+      href: /fr/accord-de-confidentialite/?src=certifications
+    cta2:
+      label: Consulter l'index du dossier réglementaire
+      href: /fr/index-dossier-reglementaire/
+
+  - type: link-pills
+    label: Où aller ensuite
+    items:
+      - label: CGM OEM et marque blanche
+        href: /fr/cgm-oem/
+      - label: CGM SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: Partenariats de distribution CGM
+        href: /fr/distribution-cgm/
+      - label: À propos d'EverChek
+        href: /fr/a-propos/
+
+  - type: cta-banner

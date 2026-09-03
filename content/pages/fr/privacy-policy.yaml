@@ -1,0 +1,64 @@
+title: Politique de confidentialité | EverChek
+description: Comment EverChek collecte, utilise, partage et protège les informations que vous nous transmettez via ce site et vos demandes commerciales.
+path: /fr/politique-de-confidentialite/
+translationKey: privacy-policy
+sections:
+  - type: hero
+    variant: centered
+    kicker: Mentions légales
+    title: Politique de confidentialité
+    sub: |
+      Dernière mise à jour : 18 juin 2026
+    note: |
+      Une question sur cette politique ? Écrivez à contact@ever-chek.com : une personne vous répondra.
+  - type: richtext
+    eyebrow: Confidentialité
+    title: Comment nous traitons vos informations
+    blocks:
+      - text: |
+          EverChek (« nous », « notre » ou « nos ») s’engage à protéger votre vie privée. La présente politique de confidentialité explique comment nous collectons, utilisons, communiquons et protégeons vos informations lorsque vous consultez notre site web ou entrez en relation d’affaires avec nous.
+      - heading: 1. Informations que nous collectons
+        text: |
+          Nous collectons les informations que vous nous transmettez volontairement lorsque vous nous contactez, remplissez un formulaire ou vous renseignez sur nos produits et services. Coordonnées — nom, adresse e-mail, numéro de téléphone, raison sociale et fonction. Informations professionnelles — données sur votre entreprise, votre secteur d’activité et la nature de votre intérêt pour nos produits et services CGM. Données de correspondance — l’historique de nos échanges avec vous, e-mails et demandes compris.
+      - heading: 2. Utilisation de vos informations
+        text: |
+          Nous utilisons les informations collectées pour répondre à vos demandes et vous renseigner sur nos produits et services CGM ; pour évaluer des partenariats commerciaux, des collaborations OEM/ODM et des relations de distribution ; pour améliorer notre site web, nos produits et notre service client ; pour vous adresser des communications professionnelles pertinentes, y compris des actualités produits et des analyses sectorielles ; et pour respecter nos obligations légales et protéger nos droits.
+      - heading: 3. Communication des informations
+        text: |
+          Nous ne vendons pas vos données personnelles. Nous ne les communiquons que dans les cas suivants : à nos filiales et sociétés affiliées pour les besoins de nos opérations ; à des prestataires de confiance qui nous assistent dans l’exploitation de notre site et de notre activité, dans le cadre d’accords de confidentialité ; lorsque la loi l’exige, pour répondre à une procédure judiciaire ou pour protéger nos droits ; et dans le cadre d’une opération sur l’entreprise, telle qu’une fusion ou une acquisition.
+      - heading: 4. Sécurité des données
+        text: |
+          Nous mettons en œuvre des mesures techniques et organisationnelles appropriées afin de protéger vos informations contre tout accès, toute modification, toute divulgation ou toute destruction non autorisés.
+      - heading: 5. Durée de conservation
+        text: |
+          Nous conservons vos informations aussi longtemps que nécessaire aux finalités décrites dans la présente politique, ou pendant la durée imposée par la législation applicable.
+      - heading: 6. Vos droits
+        text: |
+          Selon la juridiction dont vous relevez, vous pouvez disposer du droit d’accéder à vos données personnelles, de les rectifier ou de les effacer ; de vous opposer à leur traitement ou d’en demander la limitation ; de retirer votre consentement à tout moment lorsque le traitement repose sur celui-ci ; et d’en demander une copie dans un format portable. Pour exercer ces droits, contactez-nous aux coordonnées figurant à la fin de la présente politique.
+      - heading: 7. Cookies
+        text: |
+          Notre site web peut utiliser des cookies et des technologies de suivi similaires afin d’améliorer votre expérience de navigation.
+      - heading: 8. Liens vers des sites tiers
+        text: |
+          Notre site web peut contenir des liens vers des sites tiers. Nous ne sommes pas responsables de leurs pratiques en matière de confidentialité.
+      - heading: 9. Transferts internationaux de données
+        text: |
+          EverChek étant une entreprise présente à l’international, vos informations peuvent être transférées et traitées dans des pays autres que le vôtre. Nous veillons à ce que des garanties appropriées encadrent ces transferts.
+      - heading: 10. Modifications de la présente politique
+        text: |
+          Nous pouvons faire évoluer la présente politique de confidentialité. Toute modification sera publiée sur cette page, accompagnée d’une date de mise à jour actualisée.
+      - heading: 11. Nous contacter
+        text: |
+          Pour toute question relative à la présente politique de confidentialité, ou pour exercer l’un des droits décrits ci-dessus, écrivez-nous à contact@ever-chek.com. Nous sommes un fournisseur interentreprises : les demandes qui nous parviennent émanent presque toujours d’entreprises et non de patients à titre individuel ; dans un cas comme dans l’autre, la même politique s’applique.
+  - type: link-pills
+    label: Également sur ce site
+    items:
+      - label: Conditions générales d’utilisation
+        href: /fr/conditions-generales/
+      - label: Nous contacter
+        href: /fr/contact/
+      - label: La documentation et comment l’obtenir
+        href: /fr/documentation/
+      - label: À propos d’EverChek
+        href: /fr/a-propos/
+  - type: cta-banner
