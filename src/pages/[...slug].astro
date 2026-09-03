@@ -34,9 +34,9 @@ const schema =
         '@type': 'Product',
         name: page.title,
         description: page.description,
-        brand: { '@type': 'Brand', name: 'P20' },
-        manufacturer: { '@type': 'Organization', name: 'P20' },
-        category: 'Medical Device / Wearable Thermometer',
+        brand: { '@type': 'Brand', name: 'EverChek' },
+        manufacturer: { '@id': new URL('/#organization', Astro.site).toString() },
+        category: 'Medical Device / Continuous Glucose Monitoring System',
       }
     : page.schemaType === 'article'
       ? {
@@ -46,12 +46,11 @@ const schema =
           description: page.description,
           ...(heroImage ? { image: heroImage } : {}),
           mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
-          articleSection: 'Case Studies',
-          author: { '@type': 'Organization', name: 'P20' },
+          articleSection: 'CGM Manufacturing',
+          author: { '@id': new URL('/#organization', Astro.site).toString() },
           publisher: {
             '@type': 'Organization',
-            name: 'P20',
-            legalName: 'Shenzhen Refresh AI Biosensor Technology Co., Ltd.',
+            name: 'EverChek',
           },
         }
     : undefined;

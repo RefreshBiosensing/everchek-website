@@ -22,7 +22,7 @@ const gallery = (Astro.props.items?.length ? Astro.props.items : fallbackItems).
 const main = gallery[0];
 const thumbs = gallery.slice(1);
 ---
-<div class="pg-wrap" aria-label="P20 product views">
+<div class="pg-wrap" aria-label="EverChek CGM product views">
   <div class="pg-main">
     {main.image ? (
       <img class="pg-main-image" src={main.image} alt={main.alt ?? main.label} loading="eager" decoding="async" />
@@ -36,7 +36,7 @@ const thumbs = gallery.slice(1);
     <button class="pg-arrow pg-prev" type="button" aria-label="View previous product images">
       <span aria-hidden="true">‹</span>
     </button>
-    <div class="pg-thumbs" aria-label="Choose a P20 product view">
+    <div class="pg-thumbs" aria-label="Choose an EverChek CGM product view">
       {thumbs.map((item) => (
         <button
           class="pg-thumb"

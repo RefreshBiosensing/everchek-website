@@ -428,7 +428,7 @@ const pagesCollection = (locale, label) => ({
   summary: '{{title}} — {{path}}',
   editor: { preview: false },
   fields: [
-    str('Title tag', 'title', { hint: '≤62 chars · keyword first · end with | P20' }),
+    str('Title tag', 'title', { hint: '≤60 chars · keyword first · end with | EverChek' }),
     txt('Meta description', 'description', { hint: '140–160 chars · keyword + a reason to click' }),
     str('URL path (改了会断链，慎改)', 'path', { hint: `e.g. /products/x/ — localised slugs welcome` }),
     str('Translation key (links locales for hreflang)', 'translationKey', { required: false, hint: 'Same key across locales = same page in different languages' }),
@@ -504,7 +504,7 @@ const dictCollection = (locale, label) => ({
 const config = {
   backend: {
     name: 'github',
-    repo: 'RefreshBiosensing/p20-website',
+    repo: 'RefreshBiosensing/everchek-website',
     branch: 'main',
     base_url: 'https://sveltia-cms-auth.yanhuarong.workers.dev',
   },

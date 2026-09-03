@@ -15,8 +15,14 @@ const sectionRoots: string[] = menus.map((m: any) => m.root ?? '');
 <header class="site-header">
   <div class="header-inner container">
     <a class="brand" href="/" aria-label={`${brand} home`}>
-      <span class="brand-mark">{brand}</span>
-      <span class="brand-name">{brand}<em>{common.brandTagline}</em></span>
+      <img
+        class="brand-logo"
+        src="/images/everchek-logo-400.png"
+        alt={`${brand} — ${common.brandTagline}`}
+        width="400"
+        height="93"
+      />
+      <span class="brand-name"><em>{common.brandTagline}</em></span>
     </a>
 
     <nav class="main-nav" aria-label="Main">
@@ -93,19 +99,25 @@ const sectionRoots: string[] = menus.map((m: any) => m.root ?? '');
   }
 
   /* Brand */
-  .brand { display: flex; align-items: center; gap: 11px; margin-right: 20px; flex-shrink: 0; }
-  .brand-mark {
-    width: 38px; height: 38px;
-    border-radius: 50%;
-    background: linear-gradient(140deg, var(--blue), var(--blue-dark));
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    display: flex; align-items: center; justify-content: center;
+  .brand { display: flex; align-items: center; gap: 10px; margin-right: 20px; flex-shrink: 0; }
+  /* The real wordmark, served at 400px wide for retina and drawn at 128px.
+     The source file is 8697x2029 (173 KB) — never reference it directly. */
+  .brand-logo { width: 128px; height: auto; display: block; }
+  /* The tagline sits beside the wordmark as a rule-separated descriptor rather
+     than under it, so the lockup stays one optical unit at 40px header height. */
+  .brand-name {
+    padding-left: 10px;
+    border-left: 1px solid var(--border);
+    line-height: 1.15;
   }
-  .brand-name { font-weight: 700; font-size: 17px; line-height: 1.1; letter-spacing: -0.01em; }
-  .brand-name em { display: block; font-style: normal; font-weight: 500; font-size: 10px; color: var(--soft); letter-spacing: 0.05em; }
+  .brand-name em {
+    display: block; font-style: normal; font-weight: 500;
+    font-size: 10.5px; color: var(--mid); letter-spacing: 0.04em; max-width: 76px;
+  }
+  @media (max-width: 900px) {
+    .brand-name { display: none; }
+    .brand-logo { width: 112px; }
+  }
 
   /* Desktop nav */
   .main-nav { display: flex; align-items: stretch; height: 100%; }

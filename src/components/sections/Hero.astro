@@ -207,6 +207,20 @@ const wardCells: [string, string, string][] = [
 </section>
 
 <style>
+  /* CGM hardware is white plastic, so a product shot on a white page floats
+     with no edge. Give the split-hero image a tinted, inset panel to sit on. */
+  .hv-image {
+    position: relative;
+    padding: clamp(14px, 2.4vw, 30px);
+    border-radius: calc(var(--radius) + 6px);
+    background: linear-gradient(160deg, var(--ec-blue-100) 0%, var(--ec-white) 78%);
+    border: 1px solid var(--border);
+    box-shadow: 0 22px 46px -30px rgba(6, 47, 82, 0.5);
+  }
+  .hv-image :global(img) {
+    filter: drop-shadow(0 12px 22px rgba(6, 47, 82, 0.13));
+  }
+
   .hero-sec {
     background:
       radial-gradient(900px 480px at 85% 10%, rgba(128, 188, 226, 0.18), transparent 65%),
