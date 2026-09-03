@@ -12,10 +12,10 @@ sections:
     sub: Nous publions les certifications que nous détenons, l'organisme qui les a délivrées et le périmètre qu'elles couvrent. Les numéros de certificat, les dates de validité, les rapports d'essais et les synthèses de performance clinique sont communiqués intégralement aux partenaires qualifiés sous accord de confidentialité mutuel — parce que votre propre dossier d'homologation les exige.
     buttons:
       - label: Demander le dossier de certification (accord de confidentialité mutuel)
-        href: /fr/accord-de-confidentialite/?src=certifications
+        href: /fr/contact/
         style: primary
       - label: Consulter l'index du dossier réglementaire
-        href: /fr/index-dossier-reglementaire/
+        href: /fr/contact/
         style: ghost
 
   - type: richtext
@@ -163,10 +163,10 @@ sections:
     text: L'index est gratuit et en accès libre. Les contenus sont communiqués sous accord de confidentialité mutuel, compilés selon la liste de pièces de votre marché.
     cta:
       label: Demander le dossier de certification (accord de confidentialité mutuel)
-      href: /fr/accord-de-confidentialite/?src=certifications
+      href: /fr/contact/
     cta2:
       label: Consulter l'index du dossier réglementaire
-      href: /fr/index-dossier-reglementaire/
+      href: /fr/contact/
 
   - type: link-pills
     label: Où aller ensuite

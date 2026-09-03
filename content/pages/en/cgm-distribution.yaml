@@ -1,5 +1,5 @@
-title: CGM Distributor Partnership & Territory Rights | EverChek
-description: "Distribute EverChek CGM systems in your territory: exclusivity terms, who holds the registration, patient-app support and the documents you receive."
+title: CGM Distribution Partnership —EverChek
+description: Partner with EverChek to distribute advanced CGM solutions worldwide. Expand your healthcare portfolio, accelerate market entry, and build stronger margins.
 path: /cgm-distribution/
 translationKey: cgm-distribution
 sections:
@@ -9,6 +9,7 @@ sections:
   - type: hero
     variant: centered
     backgroundImage: /images/distribution-hero.webp
+    imageAlt: Abstract global distribution network with interconnected nodes, world maps, and logistics icons including cargo ship and airplane on dark blue background
     title: Partner with us for CGM distribution
     sub: Expand access to advanced CGM solutions by joining our global distribution network. We work with qualified distributors to bring wearable biosensing technologies to healthcare markets worldwide.
     buttons:
@@ -26,14 +27,10 @@ sections:
     items:
       - icon: box
         title: Expand your portfolio
-        text: Offer your customers our factory-calibrated 14-day CGM system. Add advanced continuous glucose monitoring solutions to your existing healthcare or medical device product portfolio.
+        text: Offer your customers our factory-calibrated 14-day CGM system with clinically validated accuracy (MARD <8%). Add advanced continuous glucose monitoring solutions to your existing healthcare or medical device product portfolio.
       - icon: clock
         title: Faster market entry
-        text: >-
-          Start selling sooner with our ready-to-go CGM system. We provide the hardware, mobile app
-          and cloud infrastructure, plus the technical file and validation reports that shorten your
-          own registration — released under NDA, usually within one China business day (Mon–Fri,
-          UTC+8) of a signed NDA.
+        text: Start selling sooner with our ready-to-go CGM system. We provide the hardware, mobile app, and cloud infrastructure and regulatory certificates, so you don't waste time on sensor tech and regulatory approval.
       - icon: doc
         title: Brand customization
         text: If you want to sell under your own brand, we support full customization including logo, packaging, labeling, and localized product identity. You can also choose to distribute under our existing brand, depending on your market strategy and positioning.

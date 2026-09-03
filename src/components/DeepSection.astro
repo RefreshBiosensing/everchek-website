@@ -5,7 +5,7 @@ import Icon from './Icon.astro';
 interface Block { heading?: string; text: string }
 interface Props {
   eyebrow?: string;
-  title: string;
+  title?: string;
   sub?: string;
   blocks: Block[];
   tint?: boolean;
@@ -15,11 +15,13 @@ const visualIcons = ['curve', 'bell', 'sensor', 'hospital', 'data', 'cloud'];
 ---
 <section class:list={['section', 'deep-section', { tint }]}>
   <div class="container deep-wrap">
-    <div class="deep-head">
-      <div class="eyebrow">{eyebrow}</div>
-      <h2 class="h2 center">{title}</h2>
-      {sub && <p class="deep-sub">{sub}</p>}
-    </div>
+    {title && (
+      <div class="deep-head">
+        <div class="eyebrow">{eyebrow}</div>
+        <h2 class="h2 center">{title}</h2>
+        {sub && <p class="deep-sub">{sub}</p>}
+      </div>
+    )}
     <div class="deep-body">
       {blocks.map((b, i) => (
         <article class:list={['deep-row', { rev: i % 2 === 1 }]}>

@@ -37,8 +37,8 @@ const {
         {cta2 && <a class="btn on-dark" href={cta2.href}>{cta2.label}</a>}
       </div>
     )}
-    {!image && (
-      <div class="bw-ph">配图位：横版通栏背景{imageNote ? ` — ${imageNote}` : ''} · 建议 2400×900px · 16/6</div>
+    {!image && import.meta.env.DEV && (
+      <div class="bw-ph">缺图占位（仅开发环境可见）：横版通栏背景{imageNote ? ` — ${imageNote}` : ''} · 建议 2400×900px · 16/6</div>
     )}
   </div>
 </section>

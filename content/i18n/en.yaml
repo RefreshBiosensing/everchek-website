@@ -68,11 +68,11 @@ nav:
           - label: What is CGM SKD?
             href: /blog/what-is-cgm-skd/
 cta:
-  enquiry: Talk to the factory
-  quote: Request the CGM spec sheet
+  enquiry: Contact us
+  quote: Contact us
 ctaBanner:
-  title: Tell us your market and your model — we reply within one China business day.
-  sub: OEM, ODM, SKD kits for local assembly, private label or distribution. Describe what you are building and we come back with a feasibility view and the documents your registration file will need.
+  title: Your long-term B2B CGM manufacturing partner
+  sub: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands worldwide.
   emailLabel: Work email
   emailPlaceholder: you@company.com
   countryLabel: Country / market
@@ -81,13 +81,13 @@ ctaBanner:
   messagePlaceholder: Private-label programme, SKD assembly in-country, distribution rights for my market…
   submit: Send enquiry
   sending: Sending…
-  success: Thank you — your enquiry is with our export team. We reply within one China business day (Mon–Fri, UTC+8).
+  success: Thank you — your enquiry is with our export team. We reply within 24 hours.
   error: Something went wrong. Please email us directly at
   privacy: We use your details only to answer this enquiry. No newsletters, no sharing.
   fullFormLink: Need to send more detail? Use the full enquiry form
   fullFormHref: /contact/
 footer:
-  blurb: EverChek is a B2B-only CGM manufacturer in Shenzhen. We supply OEM, ODM, SKD kit and private-label programmes to medical-device distributors, healthcare brands and tender bidders — and we run no consumer brand of our own, so we never compete with yours in your market.
+  blurb: A trusted CGM technology partner for healthcare brands worldwide, delivering high-accuracy sensors, regulatory support, and long-term supply.
   operatorLabel: A sub-brand of
   operatorName: Refresh.cc
   operatorUrl: https://www.refresh.cc/
@@ -139,12 +139,11 @@ footer:
   whatsapp: +86 191 6859 8056
   whatsappLink: https://wa.me/8619168598056
   address: Room 902, Building 1, Hengtaiyu Building, Tangwei Community, Fenghuang Street, Guangming District, Shenzhen, China
-  legal: © 2026 EverChek. All rights reserved.
-  disclaimer: EverChek supplies businesses only — we operate no consumer channel. Regulatory status and product availability vary by country; ask us what applies in your market before you plan a launch.
+  legal: © EverChek. All rights reserved.
 contactForm:
-  name: Full name
+  name: Full Name
   company: Company
-  email: Work email
+  email: Email Address
   country: Country / market
   type: Enquiry type
   types:
@@ -156,24 +155,23 @@ contactForm:
     - Regulatory documentation / certification pack
     - Other
   quantity: Estimated annual volume (optional)
-  message: Your message
-  messagePlaceholder: Target market, intended regulatory route, timeline — anything that helps us respond usefully rather than generically.
-  submit: Send enquiry
+  message: Message
+  messagePlaceholder: Tell us about your project, requirements, or questions...
+  submit: Send
   sending: Sending…
-  success: Thank you — your enquiry has been sent. We reply within one China business day (Mon–Fri, UTC+8).
+  success: Thank you — your enquiry has been sent. We reply within 24 hours.
   error: Something went wrong sending the form. Please email us directly at
-  privacy: We use your details only to answer this enquiry. No newsletters, no sharing.
+  privacy: We respect your privacy and will never share your information.
 direct:
-  title: Prefer email or WhatsApp?
-  desc: Write to us directly and we will take it from there. Tell us the market you are selling into and the model you have in mind, and the first reply will already be useful.
-  emailLabel: Sales & partnerships
+  title: Contact Information
+  emailLabel: Email
   email: contact@ever-chek.com
   whatsappLabel: WhatsApp
   whatsapp: +86 191 6859 8056
   whatsappLink: https://wa.me/8619168598056
-  addressLabel: Office
-  address: Room 902, Building 1, Hengtaiyu Building, Tangwei Community, Fenghuang Street, Guangming District, Shenzhen, China
+  addressLabel: Location
+  address: Room 902, Building 1, Hengtaiyu Building, Tangwei Community, Fenghuang Street, Guangming District, Shenzhen
   companyLabel: Operated by
   companyName: Refresh.cc
   companyUrl: https://www.refresh.cc/
-  responseNote: Response within one China business day (Mon–Fri, UTC+8).
+  responseNote: You can expect a thoughtful reply within 24 hours. We treat every inquiry as the start of a partnership.

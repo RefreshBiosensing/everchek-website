@@ -1,24 +1,21 @@
-title: What Is a Continuous Glucose Monitoring System? | EverChek
-description: How a continuous glucose monitoring system (CGMS) works, how it compares with fingerprick testing, and the OEM, SKD and distribution routes to market.
+title: What is Continuous Glucose Monitoring System (CGMS) for Healthcare?
+description: Understand what a Continuous Glucose Monitoring System (CGMS) is for healthcare businesses, and learn how to enter the market faster with EverChek CGM solutions.
 path: /what-is-cgms/
 translationKey: what-is-cgms
 sections:
   - type: hero
     variant: centered
     backgroundImage: /images/5.webp
-    title: What is a continuous glucose monitoring system (CGMS)?
+    title: What is continuous glucose monitoring system (CGMS)?
     sub: >-
       A Continuous Glucose Monitoring System (CGMS) is a medical device that tracks glucose levels in
       real time through a small wearable sensor placed under the skin. Unlike traditional fingerprick
       testing, which provides a single glucose reading at one moment, CGMS offers continuous data,
-      showing trends, patterns, and alerts for high or low glucose levels — helping healthcare
+      showing trends, patterns, and alerts for high or low glucose levels —helping healthcare
       providers and patients make more informed, proactive treatment decisions.
     buttons:
-      - label: Ask which CGM partnership model fits your market
+      - label: Contact us
         href: /contact/
-      - label: See the CGM device specification
-        href: /continuous-glucose-monitor/
-        style: ghost
 
   - type: image-text
     variant: left
@@ -45,7 +42,7 @@ sections:
     tint: true
 
   - type: compare-table
-    title: Continuous glucose monitoring vs. traditional glucose testing
+    title: Continuous glucose monitoring VERSUS Traditional glucose testing
     highlight: 0
     align: left
     labelColumn: What you get
@@ -176,7 +173,7 @@ sections:
         title: Diabetes patients not achieving glycemic targets
         text: >-
           Despite advances in treatment, only about half of individuals with diabetes achieve
-          recommended glycemic targets — highlighting the urgent need for better continuous monitoring
+          recommended glycemic targets —highlighting the urgent need for better continuous monitoring
           solutions.
         source:
           label: "Source: ADA Clinical Diabetes"
@@ -185,7 +182,7 @@ sections:
         title: Global diabetes prevalence growth rate
         text: >-
           Diabetes prevalence continues to rise at approximately 4.2% annually in developing regions,
-          driven by urbanization, dietary changes, and aging populations — expanding the addressable
+          driven by urbanization, dietary changes, and aging populations —expanding the addressable
           CGM market.
         source:
           label: "Source: IDF Diabetes Atlas"
@@ -245,24 +242,18 @@ sections:
           Partially assembled CGM kits that allow you to complete local assembly, packaging, and
           labeling under your own brand. Includes regulatory documentation support to help you navigate
           country-specific compliance requirements.
-        href: /cgm-skd/
-        linkLabel: Start an SKD feasibility review
       - icon: factory
         title: CGM OEM (Original Equipment Manufacturing)
         text: >-
           Launch your own branded CGM with full system manufacturing handled by EverChek. From sensor
           production to final packaging, we build the complete product to your specifications while you
           focus on market development.
-        href: /cgm-oem/
-        linkLabel: Explore CGM OEM manufacturing
       - icon: globe
         title: CGM distribution
         text: >-
           Become an authorized distributor of EverChek CGM products in your region. No assembly lines
-          or clean rooms needed — simply leverage our ready-to-market products and your local sales
+          or clean rooms needed —simply leverage our ready-to-market products and your local sales
           network.
-        href: /cgm-distribution/
-        linkLabel: Ask about distribution in your market
 
   - type: card-grid
     title: Why work with us?
@@ -276,7 +267,7 @@ sections:
       - icon: cog
         title: In-house CGM development
         text: >-
-          We develop our CGM technology in-house — from sensor design to algorithms and full system
+          We develop our CGM technology in-house—from sensor design to algorithms and full system
           integration. This gives you direct technical support, better product control, and a more
           stable supply chain.
       - icon: factory
@@ -305,39 +296,6 @@ sections:
           We work as a long-term partner, supporting your growth as your business expands into new
           markets and larger opportunities.
 
-  - type: faq
-    title: Continuous glucose monitoring questions
-    items:
-      - q: What is a continuous glucose monitoring system (CGMS)?
-        a: >-
-          A CGMS is a medical device that tracks glucose levels in real time through a small wearable
-          sensor placed under the skin. Instead of a single reading at one moment, it produces
-          continuous data — showing trends, patterns, and alerts for high or low glucose levels so
-          clinicians and patients can make more informed, proactive treatment decisions.
-      - q: How is CGM different from traditional fingerprick glucose testing?
-        a: >-
-          Fingerprick testing gives isolated, single-point measurements taken manually and reviewed in
-          clinic. A CGMS gives real-time values, glucose trends, high and low alerts, predictive alerts,
-          long-term data visibility and remote patient monitoring — so treatment decisions are based on
-          a continuous glucose history rather than a snapshot.
-      - q: Does a CGM sensor measure blood glucose directly?
-        a: >-
-          No. The sensor sits beneath the skin and reacts with glucose in the interstitial fluid,
-          converting the biochemical signal into a glucose value every few minutes. Because glucose
-          naturally moves from the bloodstream into the interstitial fluid, interstitial readings
-          closely reflect blood glucose levels.
-      - q: How often is a CGM sensor replaced?
-        a: >-
-          CGM systems rely on disposable sensors that are typically replaced every 14 days. For a
-          distributor or healthcare brand this is the commercial characteristic that matters most: the
-          business runs on continuous repeat orders rather than one-time device purchases.
-      - q: How can a healthcare brand start selling CGM?
-        a: >-
-          There are three usual routes. SKD supplies partially assembled kits for local assembly,
-          packaging and labeling under your own brand. OEM has EverChek manufacture the complete
-          branded system to your specification. Distribution lets you sell ready-to-market EverChek
-          products through your existing sales network with no assembly capability required.
-
   - type: link-pills
     label: Explore
     items:
@@ -359,10 +317,7 @@ sections:
       healthcare brands worldwide.
     align: center
     cta:
-      label: Ask which CGM partnership model fits your market
+      label: Contact us
       href: /contact/
-    cta2:
-      label: See the CGM device specification
-      href: /continuous-glucose-monitor/
 
   - type: cta-banner

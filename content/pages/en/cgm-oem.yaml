@@ -1,4 +1,4 @@
-title: CGM OEM Manufacturing for White-Label Brands | EverChek
+title: CGM OEM Manufacturing Solution
 description: Looking to build your CGM brand without investing in R&D or assembly lines? Launch faster with EverChek's
   full CGM OEM solution.
 path: /cgm-oem/
@@ -8,30 +8,25 @@ sections:
   variant: split
   visual: image
   image: /images/product-composite.webp
-  imageAlt: EverChek white-label CGM system — sensor applicator, body-worn transmitter and the companion app showing
-    a live glucose curve
+  imageAlt: CGM Product
   ratio: 388/412
-  kicker: OEM · ODM · private label
-  title: White-label CGM OEM and ODM manufacturing for healthcare brands
-  sub: Launch a continuous glucose monitoring system under your own brand without building sensor chemistry, firmware
-    or an assembly line. We are B2B only — we run no consumer CGM brand of our own, so we never compete with yours
-    in your market.
+  title: Best white-label CGM OEM/ODM B2B manufacturer
   badges:
-  - 14-day continuous glucose monitoring via Bluetooth
+  - MARD values below 8.00%
+  - 14-Day continuous glucose monitoring via Bluetooth
   - Glucose readings updated every 5 minutes
-  - Factory-calibrated CGM system, no fingerstick calibration
-  - White-label patient and physician applications
+  - Factory-calibrated CGM system with high accuracy
+  - White-label patient & physician applications
   - SDK/API support for digital health platform integration
-  - Custom branding, packaging and app functionality
+  - Custom branding, packaging, and app functionalities
   buttons:
-  - label: Request the CGM OEM specification sheet
-    href: /contact/?type=oem
-  - label: Explore our CGM system
+  - label: Contact us
+    href: /contact/
+  - label: Explore our CGM
     href: /continuous-glucose-monitor/
     style: ghost
 - type: feature-rows
   ratio: 16/9
-  eyebrow: Why OEM with EverChek
   title: Why choose CGM OEM with us?
   text: Five reasons why healthcare brands choose EverChek as their OEM manufacturing partner for continuous glucose
     monitoring devices.
@@ -62,10 +57,9 @@ sections:
     imageAlt: Accelerate market entry with faster go-to-market strategy
   - id: reduce-regulatory-complexity
     title: Reduce regulatory complexity
-    desc: 'Our system architecture and technical file are built to ISO 13485 requirements and structured for medical
-      device registration dossiers. We provide a complete regulatory package, including biocompatibility reports,
-      cytotoxicity testing data, and full technical documentation required for your local registration. [TODO: CE
-      status]'
+    desc: Our system architecture is designed with CE MDR and ISO 13485 requirements in mind. We provide a complete
+      regulatory package, including biocompatibility reports, cytotoxicity testing data, and full technical documentation
+      required for your local registration.
     visual: image
     image: /images/oem-why-4-regulatory.webp
     imageAlt: Reduce regulatory complexity with pre-certified compliance
@@ -91,19 +85,15 @@ sections:
   - icon: phone
     title: Transmitter & app platform
     text: Bluetooth-enabled transmitters paired with a white-label mobile app. Real-time glucose data, trend charts,
-      and customizable alerts — all branded with your logo and design language.
-    href: /cgm-patient-app/
-    linkLabel: See the patient app
+      and customizable alerts —all branded with your logo and design language.
   - icon: box
     title: Custom packaging & branding
-    text: Full design flexibility — custom retail boxes, user manuals in your language, branded applicators, and
+    text: Full design flexibility —custom retail boxes, user manuals in your language, branded applicators, and
       packaging that matches your brand identity from unboxing to daily use.
   - icon: shield
     title: ISO 13485 certified
     text: Our quality management system is certified to ISO 13485:2016, covering the full lifecycle of medical device
       design, development, and manufacturing.
-    href: /certifications/
-    linkLabel: Our documentation policy
   - icon: check
     title: Batch-level QC testing
     text: Every production batch undergoes accuracy validation, sterilization verification, and performance testing
@@ -121,7 +111,7 @@ sections:
     desc: Discuss your target market, branding requirements, and order volume with our OEM team.
   - icon: cog
     title: Customization
-    desc: We configure the product — branding, packaging, app skin, and language localization.
+    desc: We configure the product —branding, packaging, app skin, and language localization.
   - icon: factory
     title: Production
     desc: Full-scale manufacturing begins. Quality control at every stage with batch-level testing.
@@ -132,15 +122,11 @@ sections:
   align: center
   height: short
   title: Your long-term B2B CGM manufacturing partner
-  text: Launch a fully integrated CGM solution under your own brand with dedicated OEM support. Tell us your product
-    requirements, branding goals and target market, and we will come back with a feasibility view and a documentation
-    list.
+  text: Launch a fully integrated CGM solution under your own brand with dedicated OEM support. Discuss your product
+    requirements, branding goals, and commercialization plans with us right away!
   cta:
-    label: Request the CGM OEM specification sheet
-    href: /contact/?type=oem
-  cta2:
-    label: Compare OEM, ODM and SKD
-    href: /cgm-manufacturing-models/
+    label: Contact us
+    href: /contact/
 - type: card-grid
   media: icon
   columns: 2
@@ -160,7 +146,8 @@ sections:
   - icon: check
     title: Reliable product quality
     text: We implement Statistical Process Control (SPC) throughout the manufacturing process to monitor, control,
-      and optimize production quality in real time. This reduces batch variation in large-scale CGM production.
+      and optimize production quality in real time. This enables 80%+ yield rates, and reduces batch variation
+      in large-scale CGM production.
   - icon: handshake
     title: Consistent technical support
     text: CGM OEM involves far more than manufacturing and labeling. From app integration and mold development to
@@ -175,7 +162,7 @@ sections:
   items:
   - icon: factory
     title: Medical device manufacturers
-    text: Expand product portfolios with CGM without developing new sensor technology and algorithms.
+    text: Expand product portfolios with CGM without developing new sensor technology and algorithms
   - icon: cloud
     title: Digital health platforms
     text: Embed real-time CGM data into telehealth and remote patient monitoring platforms for continuous care.
@@ -188,8 +175,6 @@ sections:
   - icon: box
     title: Large-scale distributors building private labels
     text: Transition from third-party resale to branded CGM products. Improve margins and long-term market positioning.
-    href: /cgm-distribution/
-    linkLabel: Distribution partnerships
   - icon: chart
     title: Healthcare investors & venture groups
     text: Accelerate CGM commercialization with ready OEM infrastructure and faster deployment.
@@ -201,7 +186,7 @@ sections:
     text: Use CGM systems for clinical trials, metabolic research, and longitudinal patient monitoring to generate
       validated glucose datasets.
 - type: faq
-  title: CGM OEM questions
+  title: FAQs
   items:
   - q: Can we customize language of the CGM app?
     a: Yes. We provide full multilingual support across the CGM app, packaging, and product documentation. We engineer
@@ -215,11 +200,6 @@ sections:
   - q: Can we export patients' glucose data for our own research or EHR integration?
     a: Yes. We provide you access to patients' glucose values, trend data, and event logs via SDK and API, which
       can be exported for EHR integration or internal research use.
-  - q: What is the difference between CGM OEM and CGM SKD?
-    a: With OEM we build the finished, ready-to-sell CGM and you market it under your own brand as importer or distributor.
-      With SKD you receive partially assembled kits and complete final assembly, packaging and labelling in your
-      own country, which can qualify the product as locally manufactured. SKD gives you local-content advantages
-      but adds local licensing and quality responsibilities.
 - type: link-pills
   label: Related
   items:

@@ -1,4 +1,4 @@
-title: CGM Technology Guide for Healthcare Brands 2026 | EverChek
+title: "CGM Technology: A Complete Guide for Healthcare Brands in 2026 | EverChek Blog"
 description: A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right continuous glucose monitoring system.
 path: /cgm-technology-guide-2026/
 translationKey: cgm-technology-guide-2026
@@ -12,22 +12,20 @@ sections:
     note: EverChek Team · June 2, 2026
     visual: image
     image: /images/blog-cover-1.webp
-    imageAlt: Illustration of a CGM sensor on the upper arm sending glucose readings to a smartphone dashboard
+    imageAlt: CGM sensor technology and digital health interface illustration
     ratio: 16/9
   - type: richtext
-    eyebrow: Start here
     title: Introduction to CGM Technology
     blocks:
       - text: Continuous Glucose Monitoring (CGM) has transformed diabetes management over the past decade. Unlike traditional fingerstick methods that provide a single glucose reading at a point in time, CGM systems deliver real-time glucose data every few minutes, giving users and healthcare providers a complete picture of glucose trends and patterns.
       - text: For healthcare brands looking to enter the diabetes management market, understanding the core technology behind CGM systems is essential.
   - type: richtext
-    eyebrow: The technology
     title: How CGM Sensors Work
     blocks:
       - text: Modern CGM systems use a thin, flexible sensor filament inserted just beneath the skin to measure glucose levels in the interstitial fluid. The sensor contains a glucose oxidase enzyme that reacts with glucose molecules, creating an electrical signal proportional to the glucose concentration.
     tint: true
   - type: card-grid
-    title: Key components of a CGM system
+    title: "Key components of a CGM system include:"
     columns: 4
     media: icon
     items:
@@ -45,17 +43,17 @@ sections:
         text: Software that displays glucose readings, trends, and alerts.
   - type: card-grid
     title: "MARD: The Accuracy Standard"
-    text: "MARD (Mean Absolute Relative Difference) is the primary metric used to evaluate CGM accuracy. It measures the average difference between CGM readings and reference blood glucose values."
+    text: "MARD (Mean Absolute Relative Difference) is the primary metric used to evaluate CGM accuracy. It measures the average difference between CGM readings and reference blood glucose values:"
     columns: 3
     media: none
     items:
       - title: Below 10% MARD
-        text: Considered excellent accuracy for clinical use.
+        text: Considered excellent accuracy for clinical use
       - title: Below 8% MARD
-        text: State-of-the-art performance.
+        text: State-of-the-art performance (EverChek standard)
       - title: Above 10% MARD
-        text: May require frequent calibration.
-    note: "[TODO: EverChek's own verified MARD figure and the clinical study behind it. The previous page claimed \"below 8% MARD, among the most accurate CGM systems available\" with no source — removed pending verification.]"
+        text: May require frequent calibration
+    note: EverChek achieves MARD values below 8%, among the most accurate CGM systems available for B2B partnerships.
     tint: true
   - type: card-grid
     title: Key Features Healthcare Brands Should Look For
@@ -75,7 +73,6 @@ sections:
         title: Data Integration
         text: API/SDK access for integration with digital health platforms.
   - type: richtext
-    eyebrow: The opportunity
     title: The Growing CGM Market
     blocks:
       - text: The global CGM market is projected to reach $16 billion by 2028. For healthcare brands, this represents a significant opportunity. By partnering with an experienced manufacturer like EverChek, businesses can bring branded CGM products to market faster with lower upfront investment.

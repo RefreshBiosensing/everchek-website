@@ -1,16 +1,14 @@
-title: 'CGM Blog: Manufacturing & Market Insights | EverChek'
-description: Insights on CGM technology, manufacturing models, regulatory compliance and healthcare business strategy
-  from EverChek's B2B CGM manufacturing team.
+title: Blog —EverChek
+description: Latest insights on CGM technology, manufacturing models, regulatory compliance, and healthcare business
+  strategy from EverChek.
 path: /cgm-blogs/
 translationKey: cgm-blogs
 sections:
 - type: hero
   variant: centered
-  kicker: EverChek blog
-  title: CGM insights for healthcare brands and distributors
+  title: Blog
   sub: Insights on CGM technology, manufacturing models, regulatory compliance, and healthcare business strategy.
 - type: blog-index
-  title: All articles
   columns: 3
   featureFirst: true
   posts:

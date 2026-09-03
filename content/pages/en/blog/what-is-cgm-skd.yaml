@@ -1,6 +1,6 @@
-title: "What Is CGM SKD? Semi-Knocked-Down Kits Explained | EverChek"
+title: "What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing | EverChek Blog"
 description: >-
-  What a CGM SKD kit contains, who uses semi-knocked-down assembly, the step-by-step partnership process, and how to choose a manufacturer.
+  What is CGM SKD? A complete B2B guide covering kit components, benefits, manufacturer selection, and step-by-step process for healthcare businesses.
 path: /blog/what-is-cgm-skd/
 translationKey: what-is-cgm-skd
 schemaType: article
@@ -12,18 +12,11 @@ sections:
     sub: >-
       Are you looking for a more flexible, lower-cost way to enter the Continuous Glucose Monitor (CGM) market? In an increasingly competitive diabetes management landscape, the traditional OEM model often comes with heavy import tariffs and rigid Minimum Order Quantities (MOQs). Building your own continuous glucose monitor from the ground up takes years and significant investment. That's where the CGM SKD model comes in, allowing you to launch your own CGM brand with tax advantages and lower cost within 6 to 12 months.
     note: EverChek Team · July 3, 2026
-    buttons:
-      - label: See the full SKD kit specification
-        href: /cgm-skd/
-      - label: Compare OEM, ODM and SKD
-        href: /cgm-manufacturing-models/
-        style: ghost
 
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp
-    imageAlt: >-
-      Flat illustration of the CGM semi-knocked-down model — factory-built sensor, transmitter and applicator components shipped for local final assembly
+    imageAlt: CGM SKD semi-knocked-down manufacturing concept
     ratio: 1024/572
     text: >-
       Having worked directly with a variety of healthcare providers and distributors worldwide on CGM SKD projects, we know the questions that matter most when you're evaluating this model. Let's get started.
@@ -51,17 +44,15 @@ sections:
 
   - type: richtext
     eyebrow: Kit contents
-    title: What is a CGM SKD kit?
+    title: "What is a CGM SKD kit? Definition and core components"
     blocks:
-      - heading: Definition and core components
-        text: >-
+      - text: >-
           Picture ordering a bicycle online. It shows up with the frame, wheels, and handlebars already built and tested, but you still need to bolt them together before you can ride it. A CGM SKD kit works the same way. The tricky engineering is done at the factory — electrode fabrication, membrane coating, cytotoxicity testing, puncture needle loading, etc. — and your job is the final assembly of 2 to 5 major components.
       - text: >-
           We, as the CGM manufacturer, ship most of the pieces already made and tested. Your team — whether a distribution partner, a hospital's biomedical department, or a healthcare brand's operations team — then puts on the finishing touches: packaging, labeling, and paperwork, before the product reaches its final user.
     tint: true
 
   - type: card-grid
-    title: What a typical CGM SKD kit contains
     text: >-
       The exact configuration depends on the regulatory needs of the regional market, and is often confirmed before a deal is signed. Here's what a typical CGM SKD kit looks like.
     columns: 3
@@ -86,8 +77,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/target-customers.webp
-    imageAlt: >-
-      Four types of B2B healthcare business that use CGM SKD — pharmacy chains, telehealth platforms, hospital procurement teams and national health programme operators
+    imageAlt: Four types of B2B healthcare businesses that use CGM SKD
     ratio: 1312/736
 
   - type: card-grid
@@ -102,13 +92,13 @@ sections:
         text: >-
           Pharmacies are the single largest CGM distribution channel worldwide, generating more revenue than any other sales route. If your business already runs a pharmacy network, simply stocking someone else's CGM brand on the shelf means your margin ends where the manufacturer's begins. SKD lets you assemble and sell your own branded line instead, so the CGM revenue stays inside your business rather than passing through to an upstream brand.
         href: /cgm-distribution/
-        linkLabel: SKD lets you assemble and sell your own branded line
+        linkLabel: SKD lets you assemble and sell your own branded line instead
       - icon: phone
         title: Telehealth and digital health platforms
         text: >-
           Hardware and software are converging in the CGM space, with more companies pairing sensors to subscription apps, remote monitoring dashboards, and clinician portals to create recurring revenue. If your business already runs a chronic-disease app or virtual care platform, reselling a competitor's hardware means someone else owns the device layer of your ecosystem. SKD lets you brand your own CGM sensor and pair it to your existing software stack instead.
         href: /cgm-patient-app/
-        linkLabel: Brand your own CGM sensor and patient app
+        linkLabel: brand your own CGM sensor
       - icon: hospital
         title: Health systems and hospital procurement teams
         text: >-
@@ -118,23 +108,22 @@ sections:
         text: >-
           Governments in several markets are investing directly in diabetes care infrastructure as part of broader healthcare modernization plans, including funding CGM adoption across hospitals and outpatient clinics. Local assembly through SKD can help meet local-content goals while keeping per-unit costs manageable at scale.
         href: /cgm-skd-tenders/
-        linkLabel: Meet local-content goals in tenders
+        linkLabel: meet local-content goals
     note: >-
       Decision tip: If your business fits more than one of these profiles — say a distributor that also wants to bid on government tenders — SKD can usually support both goals at once, since the underlying process is the same. We have worked with many regional distributors to support their tender bidding.
     moreLink:
-      label: Ask us about tender bidding in your market
+      label: Contact us for details
       href: /contact/
 
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/process-steps.webp
-    imageAlt: >-
-      Five-step CGM SKD partnership timeline from requirement alignment and NDA through formal agreement and first shipment to local certification and ongoing supply
+    imageAlt: Five-step CGM SKD partnership process timeline
     ratio: 1312/736
 
   - type: richtext
     eyebrow: Process
-    title: How does the CGM SKD model work?
+    title: "How does the CGM SKD model work? A step-by-step process"
     blocks:
       - text: >-
           Understanding the SKD workflow helps any B2B healthcare business plan its timeline and budget. Here's the process, step by step.
@@ -144,7 +133,6 @@ sections:
           Decision tip: If you want full control over branding and local regulatory compliance, SKD is preferable to OEM.
 
   - type: step-flow
-    title: A step-by-step CGM SKD process
     columns: 3
     items:
       - icon: pin
@@ -169,19 +157,16 @@ sections:
           Your business leads the local regulatory approval process using the documentation provided, then launches. The manufacturer continues to supply components on an ongoing basis as you scale.
 
   - type: richtext
-    eyebrow: Regulatory reality
-    title: Regulations vary by country
     blocks:
       - text: >-
           Every country has its own rules for medical devices. Regulatory requirements vary by country and must be confirmed with local authorities before you launch. For reference, the FDA provides specific guidance for CGM device classification, and in the EU, CGMs are classified under MDR as Class IIb devices requiring Notified Body involvement.
       - text: >-
-          In one real project, a healthcare business used our SKD model to enter a new market where full imports faced heavy tariffs. By assembling locally, they cut their landed cost by an estimated 15 to 25 percent and shaved roughly two months off their time-to-market compared to importing finished devices.
+          In one real project, a healthcare business used our SKD model to enter a new market where full imports faced heavy tariffs. By assembling locally, they cut their landed cost by an estimated 15 to 25 percent and shaved roughly two months off their time-to-market compared to importing finished devices. Contact us to discuss how SKD could work for your market.
 
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/key-benefits.webp
-    imageAlt: >-
-      Key benefits of the CGM SKD model for B2B healthcare businesses — flexible procurement, brand control, tariff advantages, full documentation support and territory exclusivity
+    imageAlt: Key benefits of CGM SKD model for B2B healthcare businesses
     ratio: 1312/736
 
   - type: richtext
@@ -212,8 +197,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/choose-manufacturer.webp
-    imageAlt: >-
-      Engineers from a CGM manufacturer training a partner's assembly team on the factory floor as part of SKD technical support
+    imageAlt: Factory training and technical support from CGM SKD manufacturer
     ratio: 1312/736
 
   - type: richtext
@@ -224,7 +208,7 @@ sections:
           Picking the right CGM SKD supplier can make or break your launch. Here's what to look for.
       - heading: Manufacturing capability and capacity
         text: >-
-          Does the manufacturer own its factory, or do they outsource? Look for a partner that owns and runs its own production line and can scale with your volume, so unexpected shortages don't stall your business as you grow.
+          Does the manufacturer own its factory, or do they outsource? Look for a partner with large-scale production capacity, ideally able to produce millions of units a year, so unexpected shortages don't stall your business as you grow.
       - heading: Quality certifications and compliance
         text: >-
           Look for certifications like ISO 13485, which demonstrates a recognized quality management standard. CE marking is different with SKD: since the finished product isn't complete until you assemble it locally, the manufacturer itself doesn't necessarily need a CE mark on file. What matters more is whether they can provide the clinical and technical reports you'll need for your own local registration.
@@ -235,8 +219,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-skd-b2b-guide-images/partnership-cta.webp
-    imageAlt: >-
-      Healthcare business team and CGM manufacturer representatives reviewing an SKD partnership agreement together
+    imageAlt: Healthcare business team collaborating on CGM SKD partnership
     ratio: 1312/736
 
   - type: checklist
@@ -251,9 +234,8 @@ sections:
     panel: true
 
   - type: checklist
-    title: Six questions to put on the table before you sign
     text: >-
-      Once you've sized up your own readiness, put these six questions on the table before you sign anything. This checklist comes straight from real supplier audits — it's the same list we'd run through before recommending any partner.
+      Once you've sized up your own readiness, put these six questions on the table before you sign anything:
     items:
       - What exactly is included in the SKD kit?
       - What certifications do you hold?
@@ -265,16 +247,18 @@ sections:
     panel: true
     tint: true
 
+  - type: richtext
+    blocks:
+      - text: >-
+          This checklist comes straight from real supplier audits. It's the same list we'd run through before recommending any partner.
+
   - type: banner-wide
     title: Ready to explore CGM SKD partnerships?
     text: >-
       If your business is considering CGM SKD, contact our team to request a sample kit, discuss your market requirements, or explore partnership options. Whether you're a government tender bidder, a healthcare brand, a medical manufacturer, or a distributor, we can help you see the product firsthand, talk through your country's regulations, and connect with our technical team.
     cta:
-      label: Request an SKD sample kit
-      href: /contact/?type=skd
-    cta2:
-      label: Start an SKD feasibility review
-      href: /cgm-skd/
+      label: contact our team
+      href: /contact/
     align: left
     height: short
 
@@ -309,7 +293,7 @@ sections:
           With EverChek, assembly can be very straightforward. Our components use snap-fit mechanisms with an audible click when correctly seated, and we provide detailed instructions, cleanroom guidelines, and training.
       - q: What's the difference between CGM OEM and CGM SKD?
         a: >-
-          With OEM, the manufacturer builds and certifies a fully finished device for you to brand and resell. With SKD, you receive separate components and assemble them locally. OEM is simpler but costs more. SKD is more flexible and can meet Made in Country requirements. Compare all manufacturing models on our OEM vs ODM vs SKD page.
+          With OEM, the manufacturer builds and certifies a fully finished device for you to brand and resell. With SKD, you receive separate components and assemble them locally. OEM is simpler but costs more. SKD is more flexible and can meet Made in Country requirements. Compare all manufacturing models.
       - q: Can I customize the branding on a CGM SKD kit?
         a: >-
           Yes, most manufacturers allow you to apply your own brand, packaging, and user manual, subject to regulatory approval.

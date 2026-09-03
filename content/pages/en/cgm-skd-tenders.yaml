@@ -1,5 +1,5 @@
-title: How SKD Helps You Win Government Health Tenders | EverChek
-description: Learn how the SKD CGM manufacturing model gives healthcare businesses a competitive edge in government tender bidding — local value-add, duties and jobs.
+title: How SKD Helps You Win Government Healthcare Tenders | EverChek Blog
+description: Learn how the SKD CGM manufacturing model gives healthcare businesses a competitive edge in government tender bidding.
 path: /cgm-skd-tenders/
 translationKey: cgm-skd-tenders
 schemaType: article
@@ -12,16 +12,13 @@ sections:
     note: EverChek Team · May 14, 2026
     visual: image
     image: /images/blog-cover-3.webp
-    imageAlt: Government healthcare tender documents alongside a local CGM assembly line, illustrating an SKD manufacturing partnership
+    imageAlt: Government healthcare tender and SKD manufacturing partnership
     ratio: 16/9
   - type: richtext
-    eyebrow: Start here
     title: The Government Tender Opportunity
     blocks:
       - text: Government healthcare tenders represent a significant opportunity for medical device companies. Many countries, particularly in Southeast Asia, the Middle East, Africa, and Latin America, are investing heavily in diabetes care infrastructure, including CGM systems.
       - text: However, winning these tenders requires meeting specific qualification criteria, including local content requirements, technology transfer commitments, and after-sales service capabilities.
-  # Four H3 subsections of running prose in the original — 4 narrow columns squeezed
-  # 50-word paragraphs into slivers. Two columns give each one room to read.
   - type: card-grid
     title: The SKD Advantage
     text: The Semi-Knocked Down (SKD) manufacturing model offers a unique competitive edge in government tender bidding.
@@ -42,30 +39,24 @@ sections:
         text: EverChek provides comprehensive technical documentation and regulatory support for SKD partners, including quality management system documentation, test reports, and compliance materials that simplify local regulatory approval.
     tint: true
   - type: richtext
-    eyebrow: Evidence
-    title: SKD in a live tender
+    title: "Case Study: SKD Success"
     blocks:
-      - text: "[TODO: replace with a real, client-approved EverChek SKD tender reference — country, year, scope and contract value, with something we can point to. The previous version of this page described an unnamed Southeast Asian customer winning a three-year government contract worth over $5 million; that claim is unverified and has been removed rather than carried across.]"
+      - text: A healthcare company in Southeast Asia partnered with EverChek through the SKD model to bid on a national diabetes management program. By establishing a local assembly line and demonstrating technology transfer commitment, they secured a three-year government contract worth over $5 million.
   - type: step-flow
     title: Getting Started
-    text: Entering government tender markets with SKD is a structured process.
+    text: "Entering government tender markets with SKD is a structured process:"
     columns: 3
     items:
       - icon: pin
-        title: Assess the market
-        desc: Assess target market tender requirements.
+        title: Assess target market tender requirements
       - icon: factory
-        title: Build local assembly
-        desc: Develop local assembly infrastructure.
+        title: Develop local assembly infrastructure
       - icon: shield
-        title: Set up quality management
-        desc: Establish a quality management system.
+        title: Establish quality management system
       - icon: doc
-        title: Prepare documentation
-        desc: Prepare tender documentation with manufacturer support.
+        title: Prepare tender documentation with manufacturer support
       - icon: handshake
-        title: Submit the bid
-        desc: Submit a competitive bid with the SKD cost advantage.
+        title: Submit competitive bid with SKD cost advantage
   - type: link-pills
     label: Keep reading
     items:

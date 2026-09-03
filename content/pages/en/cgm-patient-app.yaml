@@ -1,5 +1,5 @@
-title: White-Label CGM Patient App | EverChek
-description: A white-label CGM patient app for healthcare brands — real-time glucose, trend charts, custom alerts and event logs, plus API and SDK access.
+title: White-label CGM patient app for healthcare brands
+description: Discover the EverChek CGM app with real-time glucose readings, trend visualization, predictive alerts, historical analytics, and healthcare platform integration support.
 path: /cgm-patient-app/
 translationKey: cgm-patient-app
 sections:
@@ -8,10 +8,12 @@ sections:
     visual: image
     image: /images/cgm-app-overview-final.webp
     imageAlt: >-
-      Annotated screenshot of the EverChek CGM patient app on a smartphone, showing a real-time glucose
-      value of 7.8 mmol/L with a trend arrow, sensor connection status, remaining sensor days, a
-      selectable 3h/6h/12h/24h glucose graph, custom high and low reminder limits, the target glucose
-      range, the event log and historical glucose statistics.
+      Annotated overview of the EverChek CGM patient app on a smartphone. Labels highlight: real-time
+      glucose value (updated every 5 minutes) showing 7.8 mmol/L with trend arrow; sensor component
+      connection status; glucose change indicator arrow; remaining sensor duration and details;
+      optional display of 3h/6h/12h/24h data graphs (3h by default); custom upper and lower reminder
+      limits; glucose target range; event log; historical records; and glucose data analysis and
+      statistics.
     ratio: 1091/976
     title: EverChek CGM app for mobile
     sub: >-
@@ -19,11 +21,9 @@ sections:
       readings, predictive alerts, and trend visualization, fully customizable for various healthcare
       commercialization needs.
     buttons:
-      - label: Request a white-label CGM app demo
+      - label: Contact us
         href: /contact/
-      - label: See the CGM device specification
-        href: /continuous-glucose-monitor/
-        style: ghost
+        style: primary
 
   - type: card-grid
     title: Built for healthcare commercialization
@@ -72,8 +72,7 @@ sections:
           displayed clearly on one screen, making it easy to track glucose changes at a glance.
         visual: image
         image: /images/cgm-app-phone-2.webp
-        imageAlt: Real-time glucose monitoring screen on the EverChek CGM app
-        imageNote: App home screen showing the current glucose value, trend arrow and 24-hour chart
+        imageAlt: Real-time glucose monitoring screen on EverChek CGM app
       - id: trend-visualization
         title: Glucose trend visualization & prediction
         desc: >-
@@ -82,8 +81,7 @@ sections:
           exercise, and insulin.
         visual: image
         image: /images/cgm-app-phone-3.webp
-        imageAlt: Glucose trend visualization and prediction chart on the EverChek CGM app
-        imageNote: Glucose trend chart with 3, 6, 12 and 24 hour views and directional arrows
+        imageAlt: Glucose trend visualization and prediction chart on EverChek CGM app
       - id: glucose-alerts
         title: High/low glucose alerts
         desc: >-
@@ -91,8 +89,7 @@ sections:
           approaches or exceeds these limits, helping you take proactive action.
         visual: image
         image: /images/cgm-app-phone-4.webp
-        imageAlt: High and low glucose alert configuration on the EverChek CGM app
-        imageNote: Alert settings screen with configurable high and low glucose thresholds
+        imageAlt: High and low glucose alert configuration on EverChek CGM app
       - id: event-logging
         title: Event logging
         desc: >-
@@ -101,8 +98,7 @@ sections:
           with glucose changes.
         visual: image
         image: /images/cgm-app-phone-1.webp
-        imageAlt: Event logging screen for meals, exercise and insulin on the EverChek CGM app
-        imageNote: Event log screen for recording meals, exercise, insulin doses and medication
+        imageAlt: Event logging screen for meals, exercise and insulin on EverChek CGM app
       - id: history-statistics
         title: History records & statistics
         desc: >-
@@ -111,8 +107,7 @@ sections:
           your healthcare provider.
         visual: image
         image: /images/cgm-app-phone-2.webp
-        imageAlt: Historical glucose statistics and analytics dashboard on the EverChek CGM app
-        imageNote: Historical glucose statistics with time-in-range, average glucose and estimated HbA1c
+        imageAlt: Historical glucose statistics and analytics dashboard on EverChek CGM app
 
   # Two deployment models sat side by side on the original page (.dual-grid, the
   # white-label card highlighted). Alternating full-width rows broke the comparison.
@@ -129,7 +124,7 @@ sections:
         title: White-label app
         text: >-
           A ready-to-launch CGM app with your brand identity. We handle the technology; you focus on
-          go-to-market. Best for brands that want to launch quickly without building a software team.
+          go-to-market. Best for: Brands that want to launch quickly without building a software team
         bullets:
           - Full app with your brand name, logo, and colors
           - Pre-configured CGM sensor pairing and data pipeline
@@ -140,7 +135,7 @@ sections:
         title: API & SDK access
         text: >-
           Connect CGM data into your existing patient platform or build your own app on top of our SDK.
-          Best for brands with an existing healthcare platform or in-house development team.
+          Best for: Brands with an existing healthcare platform or in-house development team
         bullets:
           - RESTful API for glucose data ingestion into your system
           - SDK documentation for building custom patient-facing features
@@ -189,10 +184,7 @@ sections:
       market.
     align: center
     cta:
-      label: Request a white-label CGM app demo
-      href: /contact/
-    cta2:
-      label: Ask about API & SDK access
+      label: Contact us
       href: /contact/
 
   - type: cta-banner

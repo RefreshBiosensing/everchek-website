@@ -1,6 +1,6 @@
-title: "CGM vs BGM: How to Choose for Your Business | EverChek"
+title: "CGM vs BGM: How to Choose for Your Healthcare Business | EverChek Blog"
 description: >-
-  A CGM vs BGM comparison for healthcare brands — accuracy, regulatory pathways, market data, data integration, and how to choose the right path.
+  A complete CGM vs BGM comparison for healthcare brands. Accuracy, market data, regulatory pathways, digital health integration, and how to choose the right path for your business.
 path: /blog/cgm-vs-bgm/
 translationKey: cgm-vs-bgm
 schemaType: article
@@ -16,11 +16,13 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/01_hero_concept.webp
-    imageAlt: >-
-      Concept illustration contrasting a body-worn continuous glucose monitor with a fingerstick blood glucose meter and test strips
+    imageAlt: ""
     ratio: 1312/736
-    text: >-
-      In reality, it determines your R&D runway, regulatory budget, supply chain footprint, and the kind of revenue model you can sustain. In this guide, we will cover everything between CGM and BGM for business needs only, and help you find a way to add CGM into your pipeline with the lowest efforts. Let's get the ball rolling.
+    paragraphs:
+      - >-
+        In reality, it determines your R&D runway, regulatory budget, supply chain footprint, and the kind of revenue model you can sustain.
+      - >-
+        In this guide, we will cover everything between CGM and BGM for business needs only, and help you find a way to add CGM into your pipeline with the lowest efforts. Let’s get the ball rolling.
 
   - type: link-pills
     label: Related
@@ -36,113 +38,26 @@ sections:
 
   - type: richtext
     eyebrow: What each device measures
-    title: CGM and BGM difference
+    title: "CGM and BGM difference: what CGM vs BGM readings actually measure"
     blocks:
-      - heading: What CGM vs BGM readings actually measure
-        text: >-
+      - text: >-
           CGM measures interstitial fluid under the skin via an embedded enzyme electrode, generating 288 readings/day over a 7–14 day wear period. BGM measures capillary blood via single-use test strips coated in glucose oxidase, providing a single snapshot in time.
       - text: >-
-          As glucose takes time to diffuse from blood into interstitial fluid, BGM's reading is often in real time, and CGMS would usually have a 5-15 minute lag. Therefore, a CGM will often read lower than a same-moment BGM taken right after a meal, when the blood sugar is climbing fast, and read higher after a dose of insulin, when the blood sugar is dropping. Same person, same instant, two different numbers — and both are "correct" for what they're measuring.
+          As glucose takes time to diffuse from blood into interstitial fluid, BGM’s reading is often in real time, and CGMS would usually have a 5-15 minute lag. Therefore, a CGM will often read lower than a same-moment BGM taken right after a meal, when the blood sugar is climbing fast, and read higher after a dose of insulin, when the blood sugar is dropping. Same person, same instant, two different numbers — and both are "correct" for what they're measuring.
       - text: >-
           If you're manufacturing a CGM, you have to bake the lag into the calibration algorithm. If you're selling one, you have to train support staff and write user instructions in case of a support queue full of "my CGM is wrong" complaints.
 
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/02_continuous_vs_point.webp
-    imageAlt: >-
-      Chart comparing a continuous CGM glucose curve against scattered single-point blood glucose meter readings across a day
+    imageAlt: ""
     ratio: 1312/736
-
-  - type: compare-table
-    title: CGM vs BGM at a glance
-    text: >-
-      The two technologies side by side on the dimensions this guide works through. Every figure below is explained in the section it belongs to.
-    highlight: -1
-    align: left
-    labelColumn: Dimension
-    columns:
-      - CGM
-      - BGM
-    rows:
-      - label: What it measures
-        cells:
-          - state: plain
-            text: Interstitial fluid under the skin, via an embedded enzyme electrode
-          - state: plain
-            text: Capillary blood, via single-use test strips coated in glucose oxidase
-      - label: Readings per day
-        cells:
-          - state: plain
-            text: Roughly 288, continuous
-          - state: plain
-            text: 4–10, manually logged
-      - label: Wear and use
-        cells:
-          - state: plain
-            text: One sensor worn for 7–14 days
-          - state: plain
-            text: One test strip per reading
-      - label: Lag behind blood glucose
-        cells:
-          - state: plain
-            text: 5–15 minutes
-          - state: plain
-            text: Real time
-      - label: Typical MARD
-        cells:
-          - state: plain
-            text: 8–12%
-          - state: plain
-            text: 5–6%
-      - label: US regulatory pathway
-        cells:
-          - state: plain
-            text: FDA integrated continuous glucose monitor (iCGM) designation
-          - state: plain
-            text: Self-monitoring blood glucose, 510(k) benchmarked against ISO 15197
-      - label: EU classification
-        cells:
-          - state: plain
-            text: MDR Class IIb — Notified Body involvement and mandatory clinical investigation
-          - state: plain
-            text: IVDR Class B — self-declaration or Notified Body conformity route
-      - label: Cost to the end user
-        cells:
-          - state: plain
-            text: $30–$100 per sensor, replaced every 7–14 days
-          - state: plain
-            text: $0.20–$1.00 per test strip
-      - label: Revenue model
-        cells:
-          - state: plain
-            text: Recurring, structurally closer to a subscription; stronger margins behind higher barriers
-          - state: plain
-            text: One-off consumable; thinner margins under sustained price pressure
-      - label: Data integration
-        cells:
-          - state: plain
-            text: APIs push readings into EHRs, remote monitoring platforms and telehealth workflows
-          - state: plain
-            text: Often requires manual transcription, increasing error risk
-      - label: Market size in 2025
-        cells:
-          - state: plain
-            text: $13.4 billion, reaching $41.4 billion by 2033 (15.1% CAGR)
-          - state: plain
-            text: $15.53 billion, reaching $30.18 billion by 2033 (8.8% CAGR)
-      - label: Strongest channel
-        cells:
-          - state: plain
-            text: Retail, online and direct-to-consumer
-          - state: plain
-            text: Hospital and clinic tenders
 
   - type: richtext
     eyebrow: Accuracy and regulation
-    title: CGM vs BGM accuracy
+    title: "CGM vs BGM accuracy: which is better for regulatory approval?"
     blocks:
-      - heading: Which is better for regulatory approval?
-        text: >-
+      - text: >-
           One industry standard for measuring glucose monitor accuracy is MARD, Mean Absolute Relative Difference. This is a metric that measures, on average, how far a device's readings deviate from a laboratory reference value, expressed as a percentage. If a device has a MARD of 10%, its readings are off by 10% on average compared to a precise lab measurement. Lower MARD means higher point accuracy. A good MARD value is essential to every regulatory filing, clinical study, and marketing campaign.
       - text: >-
           By that measure, CGM systems typically report a MARD between 8-12%, compared with 5-6% for BGM. On paper, BGM is more accurate. However, regulators and clinicians have grown to accept the gap anyway. This is because continuous trend data from CGM can flag a rapid drop before it becomes an emergency, and that's worth more clinically than a single BGM reading being slightly more precise. CGM works best when your end users need early warning of rapid glucose swings, particularly drops into hypoglycemia.
@@ -154,8 +69,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/03_regulatory_timeline.webp
-    imageAlt: >-
-      Timeline comparing the longer FDA iCGM clearance pathway for continuous glucose monitors with the shorter 510(k) route for blood glucose meters
+    imageAlt: ""
     ratio: 1312/736
 
   - type: richtext
@@ -171,10 +85,9 @@ sections:
 
   - type: richtext
     eyebrow: Digital health
-    title: CGM and BGM devices in digital health
+    title: "CGM and BGM devices in digital health: data integration compared"
     blocks:
-      - heading: Data integration compared
-        text: >-
+      - text: >-
           The real divide between CGM and BGM isn't clinical accuracy, but what happens after the reading is taken. BGM tells you what your glucose was. CGM tells you where it's going.
       - heading: Data density and care model
         text: >-
@@ -186,8 +99,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/04_data_ecosystem.webp
-    imageAlt: >-
-      Diagram of continuous glucose data flowing through an API into EHR, remote patient monitoring and telehealth platforms
+    imageAlt: ""
     ratio: 1312/736
 
   - type: richtext
@@ -211,7 +123,7 @@ sections:
       - icon: curve
         title: "CGM: High growth, but a steep hill to climb"
         text: >-
-          CGM's growth potential comes with real barriers: biosensor R&D, wireless transmitter engineering, and an iCGM regulatory pathway that demands substantial clinical investment. Those same barriers, however, protect margins once overcome. One CGM unit typically costs end users $30 to $100 and requires replacement every 7 to 14 days. This makes the CGM business structurally closer to a subscription than a one-time device sale.
+          CGM's growth potential comes with real barriers: biosensor R&D, wireless transmitter engineering, and an iCGM regulatory pathway that demands substantial clinical investment. Those same barriers, however, protect margins once overcome. One CGM unit typically cost end users $30 to $100 and requires replacement every 7 to 14 days. This makes the CGM business structurally closer to a subscription than a one-time device sale.
       - icon: chart
         title: "BGM: Steady demand, but a race to the bottom on price"
         text: >-
@@ -220,8 +132,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/05_market_growth.webp
-    imageAlt: >-
-      Bar chart of the global CGM device market growing from $13.4 billion in 2025 to $41.4 billion by 2033 alongside slower BGM market growth
+    imageAlt: ""
     ratio: 1312/736
 
   - type: card-grid
@@ -277,8 +188,7 @@ sections:
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/06_decision_framework.webp
-    imageAlt: >-
-      Decision framework weighing technology readiness, capital investment, regulatory timeline, target market and profit margins for CGM versus BGM
+    imageAlt: ""
     ratio: 1312/736
 
   - type: richtext
@@ -286,20 +196,19 @@ sections:
     title: Launch your CGM pipeline with low effort using Refresh EverChek
     blocks:
       - text: >-
-          Getting into CGM doesn't have to mean years of R&D and millions in upfront investment. Refresh EverChek is a factory-calibrated CGM system with a full 14-day wear time. On accuracy, we publish the method rather than a bare number: reference method, comparator, wear-day and glucose-range breakdown, with the clinical performance summary released to qualified partners under NDA.
+          Getting into CGM doesn't have to mean years of R&D and millions in upfront investment. Refresh EverChek comes with a sub-8% MARD accuracy profile and a full 14-day wear time.
       - text: >-
           Instead of building capability from zero, you can leverage our flexible OEM/ODM frameworks or deploy Semi-Knocked Down (SKD) solutions. This SKD model allows regional brands to localize assembly, a critical advantage for lowering import duties and meeting local procurement requirements.
       - text: >-
           Our global clients typically went from initial inquiry to a launched CGM product line in six to twelve months, well short of the multi-year build a from-scratch CGM program typically requires.
       - text: >-
-          Backed by full API/SDK data integration and robust regulatory documentation (including ISO 13485 compliance and biocompatibility validations), we enable brands to launch high-tier, custom-branded CGM products in months rather than years.
+          Backed by full API/SDK data integration and robust regulatory documentation (including ISO 13485 compliance and biocompatibility validations), we enables brand to launch high-tier, custom-branded CGM products in months rather than years.
     tint: true
 
   - type: image-text
     variant: top
     image: /blog/cgm-vs-bgm-images/07_partnership_supply_chain.webp
-    imageAlt: >-
-      EverChek CGM partnership supply chain from component manufacture and kit supply through local assembly to a launched partner-branded product line
+    imageAlt: ""
     ratio: 1312/736
 
   - type: link-pills
@@ -322,7 +231,7 @@ sections:
           CGM readings lag behind BGM by 5-15 minutes because glucose moves from blood into interstitial fluid more slowly than it changes in the bloodstream.
       - q: What is MARD and why does it matter?
         a: >-
-          MARD (Mean Absolute Relative Difference) measures CGM accuracy by calculating the average percentage variance from a laboratory reference — the lower the percentage, the higher the accuracy. A MARD of 10% or lower is the threshold for non-adjunctive use, meaning patients can dose insulin based on CGM readings alone without fingerstick confirmation. An 8% MARD is considered excellent professional-tier performance, and sub-8% represents the cutting edge of modern factory-calibrated accuracy. For a healthcare brand, a strong MARD is the critical data point that wins clinician trust and qualifies for institutional tenders against market leaders.
+          MARD (Mean Absolute Relative Difference) measures CGM accuracy by calculating the average percentage variance from a laboratory reference—the lower the percentage, the higher the accuracy. A MARD of 10% or lower is the threshold for non-adjunctive use, meaning patients can dose insulin based on CGM readings alone without fingerstick confirmation. An 8% MARD is considered excellent professional-tier performance, and sub-8% represents the cutting edge of modern factory-calibrated accuracy. For a healthcare brand, a strong MARD is the critical data point that wins clinician trust and qualifies for institutional tenders against market leaders.
       - q: What are the FDA classifications for CGM and BGM?
         a: >-
           CGM is classified under iCGM (integrated CGM), requiring premarket approval; BGM falls under SBGM (self-monitoring blood glucose) with less stringent requirements, generally following ISO 15197.
@@ -331,7 +240,7 @@ sections:
           CGM requires precise enzyme coating, sterilization, wireless transmitter assembly, and tight quality control. BGM manufacturing focuses on test strip consistency, low-cost production, and packaging stability.
       - q: Which market is growing faster, CGM or BGM?
         a: >-
-          Both are growing, but CGM faster. Grand View Research projects the CGM device market expanding from $13.4 billion in 2025 to $41.4 billion by 2033 (15.1% CAGR), versus BGM growing from $15.53 billion to $30.18 billion over the same period (8.8% CAGR).
+          Both are growing, but CGM faster: Grand View Research projects the CGM device market expanding from $13.4 billion in 2025 to $41.4 billion by 2033 (15.1% CAGR), versus BGM growing from $15.53 billion to $30.18 billion over the same period (8.8% CAGR).
       - q: Can CGM replace BGM for insulin dosing?
         a: >-
           Most modern CGM systems are approved for non-adjunctive dosing, meaning patients can dose insulin based on CGM readings alone. That said, many clinicians still recommend a BGM confirmation reading for critical or high-stakes decisions.
@@ -340,10 +249,10 @@ sections:
           CGM generates roughly 288 readings per day, enabling trend analysis and AI-driven insights; BGM typically provides only 4-10 data points per day.
       - q: What regulatory pathway should I expect for CGM vs BGM?
         a: >-
-          In the EU, the gap is similarly real: CGM is classified under MDR as a Class IIb device, requiring Notified Body involvement and mandatory clinical investigation, while BGM falls under IVDR as a lower-risk Class B, following a self-declaration or Notified Body conformity route. For brands using a CGM SKD model with EverChek, we supply the technical and clinical documentation your own local registration file needs, since the brand ultimately takes on regulatory responsibility for the finished device.
+          In the EU, the gap is similarly real: CGM is classified under MDR as a Class IIb device, requiring Notified Body involvement and mandatory clinical investigation, while BGM falls under IVDR as a lower-risk Class B, following a self-declaration or Notified Body conformity route. For brands using a CGM SKD model with Refresh EverChek, CE registration support is typically part of the package, since the brand ultimately takes on regulatory responsibility for the finished device.
       - q: Can a manufacturer produce both CGM and BGM?
         a: >-
-          Yes, but the two require different production lines, different expertise, and separate regulatory filings. BGM is generally easier to build in-house; CGM, by contrast, calls for R&D capabilities most companies don't have in-house. One way around that gap is an SKD model like EverChek's, where it supplies a handful of pre-built CGM components — the sensor core, transmitter, applicator, adhesive patch, and battery unit — and your brand handles final assembly, packaging, and labeling locally, instead of developing sensor chemistry or calibration algorithms from scratch. That local-assembly step can also qualify the product for reduced import duties and local-content requirements in tenders.
+          Yes, but the two require different production lines, different expertise, and separate regulatory filings. BGM is generally easier to build in-house; CGM, by contrast, calls for R&D capabilities most companies don't have in-house. One way around that gap is an SKD model like EverChek's, where it supplies a handful of pre-built CGM components, the sensor core, transmitter, applicator, adhesive patch, and battery unit, and your brand handles final assembly, packaging, and labeling locally, instead of developing sensor chemistry or calibration algorithms from scratch. That local-assembly step can also qualify the product for reduced import duties and local-content requirements in tenders.
       - q: How do I choose between CGM and BGM for my business?
         a: >-
           It depends on your target channel: hospitals often favor BGM for cost and familiarity, while retail and online channels are shifting toward CGM for higher margins and growing patient demand. That said, CGM is catching on as the new trend, and you shouldn't miss the chance. Consider going hybrid: keep BGM for institutional stability, but pilot CGM for consumer growth. With EverChek's SKD or OEM solutions, you can add CGM without heavy R&D, and test the CGM market quickly, scale at your own pace, and turn the hybrid model into a real competitive advantage, not a fallback.

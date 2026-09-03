@@ -30,9 +30,9 @@ const px = `${Math.round(w * 300)}×${Math.round(h * 300)}px`;
       <circle cx="8.5" cy="9.5" r="1.6" />
       <path d="M3 16.5l4.5-4.5 3.5 3.5 3-3L21 17" />
     </svg>
-    <div class="bi-ph-label">配图位</div>
-    {note && <div class="bi-ph-note">{note}</div>}
-    <div class="bi-ph-size">建议 {px} · {ratio}</div>
+    {import.meta.env.DEV && <div class="bi-ph-label">缺图占位（仅开发环境可见）</div>}
+    {import.meta.env.DEV && note && <div class="bi-ph-note">{note}</div>}
+    {import.meta.env.DEV && <div class="bi-ph-size">建议 {px} · {ratio}</div>}
   </div>
 )}
 

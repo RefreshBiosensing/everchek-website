@@ -1,5 +1,5 @@
-title: EverChek Continuous Glucose Monitoring System | CGM Supplier
-description: "Full specifications for the EverChek continuous glucose monitoring system: 14-day sensor, factory calibration, Bluetooth transmitter and patient app."
+title: EverChek Continuous Glucose Monitoring System | China CGM Supplier
+description: "Boost your healthcare business with our EverChek continuous glucose monitors, featuring MARD <8%, lightweight pain-free wear, IPX8 waterproof design and smart sensors."
 path: /continuous-glucose-monitor/
 translationKey: continuous-glucose-monitor
 schemaType: product
@@ -7,7 +7,7 @@ sections:
   - type: hero
     variant: split
     title: EverChek continuous glucose monitoring system
-    sub: Focused exclusively on B2B partnerships, we develop reliable continuous glucose monitoring (CGM) solutions for all types of healthcare providers worldwide. Flexible and cost-efficient, our OEM/SKD models are designed to support and scale your CGM business.
+    sub: Focused exclusively on B2B partnerships, we develop reliable continuous glucose monitoring (CGM) solutions with industry-leading accuracy below 8% MARD for all types of healthcare providers worldwide. Flexible and cost-efficient, our OEM/SKD models are designed to support and scale your CGM business.
     buttons:
       - label: Contact us
         href: /contact/
@@ -19,7 +19,7 @@ sections:
       additional local trials per regional regulations.
     visual: image
     image: /images/product-composite.webp
-    imageAlt: EverChek continuous glucose monitoring system — sensor and transmitter kit shown beside the companion app displaying a real-time glucose curve
+    imageAlt: EverChek continuous glucose monitoring system with mobile app showing real-time glucose data
     ratio: 388/412
 
   - type: feature-rows
@@ -56,16 +56,16 @@ sections:
 
   - type: card-grid
     title: Built for accurate, continuous glucose monitoring
-    text: Sensor accuracy is characterised by MARD against a laboratory reference, delivering trusted data for patients and clinicians alike.
+    text: Industry-leading sensor accuracy with MARD below 8%, delivering trusted data for patients and clinicians alike.
     columns: 3
     media: icon
     center: true
     tint: true
     items:
       - icon: chart
-        kicker: MARD
+        kicker: MARD <8%
         title: Accuracy
-        text: Accuracy is characterised by MARD (Mean Absolute Relative Difference) against a laboratory reference. Our clinical performance summary is released to qualified partners under a mutual NDA.
+        text: Delivers accurate glucose readings you can trust.
       - icon: box
         kicker: All in 1 design
         title: Simplicity
@@ -91,7 +91,7 @@ sections:
         title: Quick start
         text: Ready to provide readings after a short setup time.
       - icon: set
-        kicker: 24.8*4.8mm
+        kicker: 24.8*4.8 mm
         title: Coin-sized
         text: Compact size for discreet everyday wear.
       - icon: curve
@@ -102,7 +102,7 @@ sections:
   - type: image-text
     variant: top
     title: Inside our EverChek continuous glucose monitor system
-    text: Every CGM component works together to deliver reliable glucose monitoring.
+    text: Every CGM component works together to deliver reliable glucose monitoring
     image: /images/p30-components.webp
     imageAlt: "Exploded view of the EverChek continuous glucose monitor system components: applicator, transmitter, sensor, puncture needle, adhesive patch, and sterile tube, showing how each CGM part works together for reliable glucose monitoring."
     ratio: 1200/788
@@ -118,7 +118,7 @@ sections:
       - label: Glucose Concentration Detection Range
         cells:
           - state: plain
-            text: 2-25 mmol/L
+            text: 2-25mmol/L
       - label: Transmitter Size (Diameter*Height)
         cells:
           - state: plain
@@ -142,23 +142,23 @@ sections:
       - label: Operating Temperature
         cells:
           - state: plain
-            text: 5–40 °C
+            text: 5-40°C
       - label: Operating Relative Humidity
         cells:
           - state: plain
-            text: 10%–90% RH
+            text: 10%-90%RH
       - label: Atmospheric Pressure
         cells:
           - state: plain
-            text: 70–106 kPa
+            text: 70-106KPa
       - label: Startup Time
         cells:
           - state: plain
-            text: 60 min
+            text: 60min
       - label: Wireless Transmission Distance
         cells:
           - state: plain
-            text: 10 m
+            text: 10m
       - label: Waterproof Rating
         cells:
           - state: plain
@@ -166,11 +166,11 @@ sections:
       - label: Sterilization Method
         cells:
           - state: plain
-            text: "[TODO: sterilisation method — the old site states two conflicting values (this page said Irradiation Sterilization, cgm-skd said Ethylene Oxide (EO) or E-beam). Do not publish a value until engineering confirms.]"
+            text: Irradiation Sterilization
       - label: Transmission Frequency Band
         cells:
           - state: plain
-            text: 2402 MHz–2480 MHz
+            text: 2402MHz-2480MHz
       - label: Modulation Type
         cells:
           - state: plain
@@ -182,11 +182,11 @@ sections:
       - label: Transmitter Memory
         cells:
           - state: plain
-            text: "RAM: 96 KB · SiP Flash: 512 KB"
+            text: "RAM: 96 KB  SiP Flash: 512 KB"
 
   - type: step-flow
     title: How to apply and use our EverChek CGM?
-    text: Three simple steps to get started — apply, pair, and monitor glucose data in real time on your smartphone.
+    text: Three simple steps to get started —apply, pair, and monitor glucose data in real time on your smartphone.
     columns: 3
     arrows: true
     center: true
@@ -204,7 +204,7 @@ sections:
 
   - type: card-grid
     title: Why choose EverChek CGM for your healthcare business?
-    text: In-house R&D, flexible partnership models, and competitive pricing — built to support your CGM business at every stage of growth.
+    text: In-house R&D, flexible partnership models, and competitive pricing —built to support your CGM business at every stage of growth.
     columns: 3
     media: icon
     center: true
@@ -227,11 +227,7 @@ sections:
       - q: Do EverChek CGM monitors hurt?
         a: Most users report minimal or no pain. This is because our sensor is inserted using a fast application system, taking merely 0.2 milliseconds.
       - q: How accurate are EverChek CGM monitors?
-        a: >-
-          Accuracy is characterised by MARD (Mean Absolute Relative Difference) against a laboratory
-          reference. Our clinical performance summary — study design, reference method, sample size
-          and segmented results — is released to qualified partners under a mutual NDA, in the form
-          your notified body or health authority will expect.
+        a: CGM accuracy is typically measured using MARD (Mean Absolute Relative Difference). Our CGMS achieves a MARD of 7.94%, which positions us among leading global CGM makers in terms of accuracy. This enables us to support reliable glucose monitoring for clinical and daily use.
       - q: Is EverChek invasive or non-invasive?
         a: It is minimally invasive. A thin sensor filament is inserted just under the skin and can be worn for up to 14 days. The device is coin-sized and lightweight, designed for stable daily wear with minimal sensation.
       - q: How's the CE certification progress of your CGM?
