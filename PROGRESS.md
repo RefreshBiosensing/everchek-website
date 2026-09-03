@@ -60,21 +60,28 @@
 - [x] Sveltia CMS 锁版本 `@0.205.2`（原来无版本号；我先写的 0.111.1 不存在，已修）
 - [x] CMS 后台实测可加载，仓库识别为 `everchek-website`
 
-## 进行中
+## 已完成（第三批）
 
-- [ ] **法语翻译工作流运行中**（8 组并行 + 一轮跨文件复核：hreflang key 一致性、链接完整性、术语统一、字数上限、声明不越界）
+- [x] **法语站上线**：22 个页面 + `content/i18n/fr.yaml`，slug 用法语需求侧词（`/fr/montage-local-cgm/` 而不是音译 SKD）
+- [x] hreflang 44 页成对；实测 20/20 `translationKey` 与英文兄弟页一致、无 path 冲突
+- [x] **全站 0 断链**（45 条路由逐链校验）
+- [x] 新建两个门控资产页（英法双语）：`/regulatory-dossier-index/` 与 `/request-nda/` —— certifications 页早就链过去了，但页面从来不存在
+- [x] 删除旧的扁平 HTML（23 个 .html + site.css/js + nav/footer/blog-data.json + 手写 robots/sitemap）
+- [x] `llms.txt`（开头做品牌消歧：现在搜 EverChek 出来的是 Senseonics 的 Eversense 和罗氏的 Accu-Chek）
+- [x] `.well-known/agent-skills/index.json` 重写：5 条 `.html` URL → 10 条真实 URL
+- [x] `functions/_middleware.js` 重写：原来硬编码了一份首页 Markdown 副本，内容已漂移（还在宣称已撤下的 `<8% MARD`，链接全是会 301 的 `.html`）。现在从实际构建产物提取，只有一个事实来源
+- [x] **修好询盘表单**：移植过来的表单 POST 到 `/api/enquiry`，但这个 endpoint 在本项目里根本不存在——线上会静默失效。已实现，默认走现成的 Web3Forms key（零配置可用），配了 `RESEND_API_KEY` 就自动切 Resend
+- [x] **归因字段**：`source_page` / `landing_page` / `referrer` / `utm` / `locale`。`landing_page` 在访客进站时存入 sessionStorage，所以从 `/contact/` 发出的询盘仍能记录他其实是从法语招标页进来的
+- [x] **GA4**：`PUBLIC_GA_ID` 配了才加载，提交成功触发 `generate_lead`（带 inquiry_type / country / page_path）
+- [x] 响应式实测：820px（旧站导航死区）有导航、0 横向溢出；390px 汉堡菜单**点得开**（旧站点不开）、20 个链接、0 溢出
 
 ## 待做
 
-- [ ] 法语翻译回来后：构建验证 hreflang 成对出现、`/fr/` 路由可访问
-- [ ] 删除旧的扁平 HTML 文件（`git rm *.html site.css site.js nav.html footer.html blog-data.json`）——构建已验证通过，可以删了
-- [ ] 逐页视觉走查，对照旧站确认无内容丢失
-- [ ] `llms.txt`
-- [ ] `.well-known/agent-skills/index.json` 里的 URL 还是 `.html` 形式（会 308），要更新
-- [ ] GA4 埋点 + 表单归因字段（`source_page`/`referrer`/`landing_page`/`utm`）
-- [ ] 询盘表单：国家下拉换完整 ISO 列表；`/request-nda` 页
+- [ ] 逐页视觉走查，对照旧站确认无内容丢失（已抽查首页 EN/FR、404、admin）
+- [ ] 询盘表单国家下拉换完整 ISO 列表（现在是自由文本输入，可用但不便于筛选）
 - [ ] `accuracyClaim` 字段要加进 `pagesCollection()`，否则 Sveltia 存盘会丢（见「已知问题」）
-- [ ] `functions/_middleware.js` 里硬编码的首页 Markdown 还是旧文案（含 `<8% MARD`、`.html` 链接），要么更新要么删掉这个 function
+- [ ] 自动回复邮件（提交后给对方发一封，附规格表链接 + 「我们下一步会问你哪几个问题」）
+- [ ] 阿拉伯语（第二批语言，只做核心 8 页）
 
 ## 已知问题 / 需要业主拍板
 
