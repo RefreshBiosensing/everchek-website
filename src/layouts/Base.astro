@@ -90,6 +90,13 @@ const breadcrumbSchema =
       }
     : undefined;
 
+// Analytics. Set PUBLIC_GA_ID in Cloudflare Pages > Settings > Environment
+// variables (e.g. G-XXXXXXXXXX) and the tag ships; leave it unset and nothing
+// loads at all, so local builds and previews stay clean.
+// The site previously had no analytics of any kind, which meant a silent form
+// failure would have been invisible and the whole exercise unmeasurable.
+const GA_ID = import.meta.env.PUBLIC_GA_ID;
+
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -133,6 +140,25 @@ const orgSchema = {
     {hreflangs.map((h) => (
       <link rel="alternate" hreflang={h.lang} href={h.href} />
     ))}
+    {GA_ID && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+        <script is:inline define:vars={{ GA_ID }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', GA_ID);
+          // First page of the visit, so an enquiry sent later from /contact/
+          // still records where the visitor actually arrived.
+          try {
+            if (!sessionStorage.getItem('ec_landing')) {
+              sessionStorage.setItem('ec_landing', location.pathname + location.search);
+            }
+          } catch (e) {}
+        </script>
+      </>
+    )}
     <link rel="icon" href="/images/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" href="/images/favicon-32.png" sizes="32x32" />
     <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />

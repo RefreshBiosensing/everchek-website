@@ -47,6 +47,16 @@ const d = dict.direct;
       <div class="hp-field" aria-hidden="true">
         <label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
       </div>
+      <!--
+        Attribution. Filled by script on submit, so an enquiry can be traced to
+        the page, the campaign and the market it came from. Field names are
+        referenced by functions/api/enquiry.js — do not rename them casually.
+      -->
+      <input type="hidden" name="source_page" />
+      <input type="hidden" name="landing_page" />
+      <input type="hidden" name="referrer" />
+      <input type="hidden" name="utm" />
+      <input type="hidden" name="locale" value={locale} />
       <button class="btn primary submit-btn" type="submit" data-label={t.submit} data-sending={t.sending}>{t.submit}</button>
       <p class="form-privacy">{t.privacy}</p>
       <div class="form-status" id="form-status" hidden>
@@ -93,6 +103,29 @@ const d = dict.direct;
     btn.disabled = true;
     btn.textContent = btn.dataset.sending ?? '…';
 
+    // Fill attribution at submit time. `landing_page` is the first page of the
+    // visit, stored on arrival, so an enquiry sent from /contact/ still records
+    // that the visitor came in on, say, a French tender page.
+    const params = new URLSearchParams(location.search);
+    const set = (n: string, v: string) => {
+      const el = form.querySelector(`[name="${n}"]`) as HTMLInputElement | null;
+      if (el) el.value = v;
+    };
+    let landing = '';
+    try {
+      landing = sessionStorage.getItem('ec_landing') || '';
+    } catch {}
+    set('source_page', location.pathname + location.search);
+    set('landing_page', landing || location.pathname);
+    set('referrer', document.referrer || 'direct');
+    set(
+      'utm',
+      ['utm_source', 'utm_medium', 'utm_campaign', 'src', 'inquiry']
+        .map((k) => (params.get(k) ? `${k}=${params.get(k)}` : ''))
+        .filter(Boolean)
+        .join(' · '),
+    );
+
     const data = Object.fromEntries(new FormData(form).entries());
     try {
       const res = await fetch('/api/enquiry', {
@@ -101,6 +134,14 @@ const d = dict.direct;
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error(String(res.status));
+      // Conversion event. This is the only thing on the site worth measuring:
+      // mark it as a Key Event in GA4 so the report is about enquiries, not sessions.
+      (window as any).gtag?.('event', 'generate_lead', {
+        form_source: 'contact',
+        inquiry_type: (data as any).inquiry_type ?? (data as any).type ?? 'unspecified',
+        country: (data as any).country ?? '',
+        page_path: location.pathname,
+      });
       status?.removeAttribute('hidden');
       successEl?.removeAttribute('hidden');
       errorEl?.setAttribute('hidden', '');
