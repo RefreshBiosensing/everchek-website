@@ -132,7 +132,7 @@ h2/h3/h4/p/ul/ol/figure/hr；用 `scripts/article-from-original.py` 直接从原
 
 **预览**：https://everchek-preview.pages.dev  ·  提交：`4b332f7`（分支 `astro-rebuild`，仍未 push）
 
-### 仍待办
+### 仍待办（此版已作废 —— 见文末最新一节）
 1. **法语内容重新同步** —— 法语是从我改过的英文翻的，英文已还原，法语正文还没跟上（导航已修）。
 2. **URL 形式**（`.html` vs 结尾斜杠）—— 等 `site:ever-chek.com` 的收录数。
 3. **push `astro-rebuild` 到 GitHub** —— 11 个提交仍只在本地。
