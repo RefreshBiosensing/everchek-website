@@ -55,6 +55,7 @@ articleNav:
   label: Article navigation
   previous: ← Previous
   next: Next →
+thankYouPath: /thank-you/
 cta:
   enquiry: Contact us
   quote: Contact us

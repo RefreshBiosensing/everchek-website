@@ -177,3 +177,23 @@ Obfuscation，会在边缘把 `mailto:` 重写成 `[email protected]` + 一段�
    任何改动都必须校验 `success === true`。详见 `src/lib/enquiry.ts`。
 4. Google Search Console 重新提交 `sitemap-index.xml`。
 5. 上线稳定后删除临时项目 `everchek-preview`。
+
+## 2026-09-04 — 表单：确认提示 + 送达兜底
+
+站长实测时遇到一次「红色报错，但邮件其实收到了」。原因是 `fetch` 打的是第三方域名
+`api.web3forms.com`：请求发出去了、邮件送达了，但响应没能读回来（拦截插件 / 代理 /
+网络抖动都会造成这个），代码于是判定失败。这是最糟的结果——询盘到了，访客以为没到。
+
+改法（三个表单一致）：
+1. **原生 POST 兜底**。表单本身带上 `action` / `method` / `access_key` / `redirect`，
+   和原站一样。`fetch` 一旦失败就退回原生提交，浏览器直接跳到 `/thank-you/`（法语
+   `/fr/merci/`，按 `thankYouPath` 字典取），访客看到的是一整页确认，而不是红框。
+   代价是极端情况下可能重复发一封——重复的成本远低于丢单。
+   归因字段在兜底路径里由 `submitNatively()` 注入，不会丢。
+2. **确认提示做强**：绿色对勾徽章 + 更大字号，提交后 `revealStatus()` 把状态面板滚到
+   视口中央，并加 `role="status"` / `aria-live="polite"`。
+3. 同源接口 `/api/enquiry` 默认不再探测（否则每次提交都白跑一次并在控制台留 501），
+   改由 `PUBLIC_ENQUIRY_API=1` 开启——配好 Resend 后设这一个变量即可切换，届时询盘
+   完全不经过第三方域名，也就不会被拦截插件掐掉。
+
+已在 ever-chek.com 实测：确认面板正常，控制台干净，无多余请求。

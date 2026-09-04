@@ -54,7 +54,7 @@ const copy = {
         <a class="cta-full-link" href={copy.fullFormHref ?? '/contact/'}>{copy.fullFormLink} →</a>
       )}
     </div>
-    {variant === 'form' && <MiniForm t={copy} email={footer?.email} />}
+    {variant === 'form' && <MiniForm t={copy} email={footer?.email} locale={locale} />}
   </div>
 </section>
 

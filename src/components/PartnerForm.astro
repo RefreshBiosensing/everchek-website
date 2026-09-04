@@ -6,13 +6,16 @@
 //
 // Posts to the same Pages Function as every other form, so attribution and the
 // GA4 conversion event behave identically.
+import { loadDict } from '../lib/content';
+
 interface Props {
   heading?: string;
   locale?: string;
 }
 const { heading = 'Get in touch', locale = 'en' } = Astro.props;
+const thankYouPath = loadDict(locale).thankYouPath ?? '/thank-you/';
 ---
-<form class="pf" id="partner-form" novalidate>
+<form class="pf" id="partner-form" method="POST" action="https://api.web3forms.com/submit" novalidate>
   <h3 class="pf-title">{heading}</h3>
 
   <div class="pf-row">
@@ -46,6 +49,17 @@ const { heading = 'Get in touch', locale = 'en' } = Astro.props;
   <div class="pf-hp" aria-hidden="true">
     <label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
   </div>
+  <!--
+    The form posts natively as well as through fetch. Web3Forms is a
+    third-party origin, so a content blocker or proxy can drop the fetch —
+    sometimes after the enquiry has already been delivered. When that
+    happens the script falls back to this native POST, which lands the
+    visitor on the thank-you page instead of a red error.
+  -->
+  <input type="hidden" name="access_key" value="efeceb0a-a931-4c23-a3c6-e92b4bac78c5" />
+  <input type="hidden" name="subject" value="New distribution enquiry from the EverChek website" />
+  <input type="hidden" name="from_name" value="EverChek Website" />
+  <input type="hidden" name="redirect" data-path={thankYouPath} value={`https://ever-chek.com${thankYouPath}`} />
   <input type="hidden" name="inquiry_type" value="Distribution" />
   <!-- Attribution is added at submit time by src/lib/enquiry.ts. -->
   <input type="hidden" name="locale" value={locale} />
@@ -58,7 +72,7 @@ const { heading = 'Get in touch', locale = 'en' } = Astro.props;
 </form>
 
 <script>
-  import { submitEnquiry } from '../lib/enquiry';
+  import { submitEnquiry, submitNatively, revealStatus } from '../lib/enquiry';
 
   const form = document.getElementById('partner-form') as HTMLFormElement | null;
   const status = form?.querySelector('.pf-status') as HTMLElement | null;
@@ -77,13 +91,20 @@ const { heading = 'Get in touch', locale = 'en' } = Astro.props;
       await submitEnquiry(data, { kind: 'Distribution', formSource: 'distribution' });
       status?.removeAttribute('hidden');
       okEl?.removeAttribute('hidden');
+      revealStatus(status);
       errEl?.setAttribute('hidden', '');
       form.reset();
     } catch (err) {
-      console.error('Enquiry not delivered:', err);
-      status?.removeAttribute('hidden');
-      errEl?.removeAttribute('hidden');
-      okEl?.setAttribute('hidden', '');
+      console.error('Enquiry fetch failed, falling back to a native POST:', err);
+      try {
+        submitNatively(form);
+        return;
+      } catch (err2) {
+        console.error('Native POST failed too:', err2);
+        status?.removeAttribute('hidden');
+        errEl?.removeAttribute('hidden');
+        okEl?.setAttribute('hidden', '');
+      }
     } finally {
       btn.disabled = false;
       btn.textContent = btn.dataset.label ?? 'Send';
