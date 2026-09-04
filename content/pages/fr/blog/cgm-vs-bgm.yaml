@@ -5,13 +5,11 @@ path: /fr/blog/cgm-vs-bgm/
 translationKey: cgm-vs-bgm
 schemaType: article
 sections:
-  - type: hero
-    variant: dark
-    kicker: CGM vs BGM
+  - type: article-hero
     title: "CGM vs BGM : comment choisir pour votre activité de santé"
-    sub: >-
-      Tout fabricant ou distributeur de dispositifs médicaux positionné sur la mesure du glucose arrive tôt ou tard au même carrefour : construire son offre autour du CGM, ou autour du BGM ? Les deux reposent sur la glucose oxydase ou la glucose déshydrogénase, mais l'ingénierie n'a rien à voir.
-    note: Équipe EverChek · 30 juin 2026
+    author: Équipe EverChek
+    date: 30 juin 2026
+    image: /blog/cgm-vs-bgm-images/01_hero_concept.webp   # og:image only — not rendered
 
   - type: image-text
     variant: top

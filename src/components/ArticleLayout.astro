@@ -198,7 +198,37 @@ const { headings = [], tocLabel = 'On this page' } = Astro.props;
     margin: 48px 0 16px !important;
     scroll-margin-top: 90px;
   }
-  .article-body :global(.rel-row) { text-align: left !important; justify-content: flex-start !important; }
+  /* Two columns is a landing-page shape. In a 720px reading column it leaves
+     ~220px per question, so a short question wraps to four lines and the panel
+     stands taller than the answer it hides. The original article template used
+     one column of compact rows — restore that here. */
+  .article-body :global(.faq-list) {
+    grid-template-columns: 1fr !important;
+    margin-top: 8px !important;
+    row-gap: 10px !important;
+  }
+  .article-body :global(.faq-item) {
+    background: var(--ec-blue-50) !important;
+    border-radius: 8px !important;
+    padding: 0 20px !important;
+  }
+  .article-body :global(.faq-item summary) { padding: 15px 0 !important; gap: 14px !important; }
+  /* The article's own h3 rule would otherwise enlarge the question text. */
+  .article-body :global(.faq-q) {
+    font-size: 15.5px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    font-weight: 600 !important;
+  }
+  .article-body :global(.faq-a) {
+    font-size: 15px !important;
+    padding: 0 0 16px !important;
+    max-width: 100% !important;
+  }
+  .article-body :global(.faq-toggle) { width: 22px !important; height: 22px !important; }
+
+  .article-body :global(.rel-row),
+  .article-body :global(.rel-links) { text-align: left !important; justify-content: flex-start !important; }
 
   /* Section components centre their intro copy because that suits a marketing
      page. In an article every paragraph is body text and must be left-aligned. */

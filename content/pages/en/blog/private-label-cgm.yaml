@@ -5,13 +5,11 @@ path: /blog/private-label-cgm/
 translationKey: private-label-cgm
 schemaType: article
 sections:
-  - type: hero
-    variant: dark
-    kicker: Private label CGM
+  - type: article-hero
     title: "Private label CGM: How to start your own CGM brand fast and cost-effectively"
-    sub: >-
-      Thinking about starting your own CGM brand? You've probably already called a few manufacturers. Two of them hit you with MOQs in the hundreds of thousands. Another one says give it a year, maybe more, before you see a real product. So you hang up and think, okay, this is a Dexcom and Abbott game, not mine.
-    note: EverChek Team · July 6, 2026
+    author: EverChek Team
+    date: July 6, 2026
+    image: /blog/private-label-cgm-images/01-private-label-cgm.webp   # og:image only — not rendered
 
   - type: prose
     blocks:

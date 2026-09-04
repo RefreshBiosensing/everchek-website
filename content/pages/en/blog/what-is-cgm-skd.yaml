@@ -5,13 +5,11 @@ path: /blog/what-is-cgm-skd/
 translationKey: what-is-cgm-skd
 schemaType: article
 sections:
-  - type: hero
-    variant: dark
-    kicker: CGM SKD
+  - type: article-hero
     title: "What Is CGM SKD? A B2B Guide to Semi-Knocked-Down CGM Manufacturing"
-    sub: >-
-      Are you looking for a more flexible, lower-cost way to enter the Continuous Glucose Monitor (CGM) market? In an increasingly competitive diabetes management landscape, the traditional OEM model often comes with heavy import tariffs and rigid Minimum Order Quantities (MOQs). Building your own continuous glucose monitor from the ground up takes years and significant investment. That's where the CGM SKD model comes in, allowing you to launch your own CGM brand with tax advantages and lower cost within 6 to 12 months.
-    note: EverChek Team · July 3, 2026
+    author: EverChek Team
+    date: July 3, 2026
+    image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp   # og:image only — not rendered
 
   - type: prose
     blocks:

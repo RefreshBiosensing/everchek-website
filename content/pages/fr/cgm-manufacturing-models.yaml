@@ -4,16 +4,12 @@ path: /fr/modeles-de-fabrication-cgm/
 translationKey: cgm-manufacturing-models
 schemaType: article
 sections:
-  - type: hero
-    variant: split
-    kicker: "Fabrication"
+  - type: article-hero
     title: "OEM, SKD ou ODM : quel modèle de fabrication CGM vous convient ?"
-    sub: "Comparez les modèles OEM, SKD, CKD et ODM pour identifier l'approche de partenariat CGM adaptée à votre activité."
-    note: "Équipe EverChek · 28 mai 2026"
-    visual: image
-    image: /images/blog-cover-2.webp
-    imageAlt: "Schéma comparant les modèles de fabrication CGM OEM, SKD et ODM selon la part d'assemblage réalisée localement"
-    ratio: 16/9
+    author: Équipe EverChek
+    date: 28 mai 2026
+    image: /images/blog-cover-2.webp   # og:image only — not rendered
+
   - type: richtext
     eyebrow: "Commencer ici"
     title: "Bien comprendre vos options"

@@ -4,6 +4,7 @@
 //
 // Section types (use these exact strings in YAML / the CMS):
 //   hero             页首（variant: standard/centered/dark/split/form; visual 可选）
+//   article-hero     长文页首（居中标题 + 作者·日期 + 面包屑，原站文章版式）
 //   trustbar         信任条
 //   image-text       图文（variant: top/left/right）
 //   banner-wide      横版通栏
@@ -28,6 +29,7 @@
 //   cta-banner       底部询盘横幅（迷你表单）
 //   custom-html      逃生口：原生 HTML
 import Hero from './sections/Hero.astro';
+import ArticleHero from './sections/ArticleHero.astro';
 import TrustBar from './sections/TrustBar.astro';
 import TextChecks from './sections/TextChecks.astro';
 import FeatureRows from './sections/FeatureRows.astro';
@@ -79,6 +81,7 @@ const IMAGE_TEXT_LAYOUT: Record<string, 'top' | 'left' | 'right'> = {
 
   switch (type) {
     case 'hero':          return <Hero {...props} variant={variant} locale={locale} />;
+    case 'article-hero':  return <ArticleHero {...props} locale={locale} />;
     case 'app-capabilities': return <AppCapabilities {...props} />;
     case 'blog-index':    return <BlogIndex {...props} />;
     case 'trustbar':      return <TrustBar {...props} />;

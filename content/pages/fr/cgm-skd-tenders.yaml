@@ -4,16 +4,12 @@ path: /fr/appels-offres-cgm-skd/
 translationKey: cgm-skd-tenders
 schemaType: article
 sections:
-  - type: hero
-    variant: split
-    kicker: "Secteur de la santé"
+  - type: article-hero
     title: "Comment le SKD vous aide à remporter les appels d'offres publics de santé"
-    sub: "Comment le modèle SKD confère aux entreprises de santé un avantage concurrentiel lors de la soumission aux appels d'offres publics."
-    note: "Équipe EverChek · 14 mai 2026"
-    visual: image
-    image: /images/blog-cover-3.webp
-    imageAlt: "Dossier d'appel d'offres public de santé posé à côté d'une ligne d'assemblage CGM locale, illustrant un partenariat de fabrication en SKD"
-    ratio: 16/9
+    author: Équipe EverChek
+    date: 14 mai 2026
+    image: /images/blog-cover-3.webp   # og:image only — not rendered
+
   - type: richtext
     eyebrow: "Commencer ici"
     title: "L'opportunité des marchés publics"

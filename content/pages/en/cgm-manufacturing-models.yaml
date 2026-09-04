@@ -4,16 +4,12 @@ path: /cgm-manufacturing-models/
 translationKey: cgm-manufacturing-models
 schemaType: article
 sections:
-  - type: hero
-    variant: split
-    kicker: Manufacturing
+  - type: article-hero
     title: "OEM vs SKD vs ODM: Which CGM Manufacturing Model Is Right for You?"
-    sub: Compare OEM, SKD, CKD, and ODM models to find the right CGM partnership approach for your business.
-    note: EverChek Team · May 28, 2026
-    visual: image
-    image: /images/blog-cover-2.webp
-    imageAlt: Comparison of OEM, SKD, and ODM CGM manufacturing models
-    ratio: 16/9
+    author: EverChek Team
+    date: May 28, 2026
+    image: /images/blog-cover-2.webp   # og:image only — not rendered
+
   - type: prose
     blocks:
       - h2: "Understanding Your Options"

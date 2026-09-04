@@ -4,16 +4,12 @@ path: /cgm-skd-tenders/
 translationKey: cgm-skd-tenders
 schemaType: article
 sections:
-  - type: hero
-    variant: split
-    kicker: Healthcare Business
+  - type: article-hero
     title: How SKD Helps You Win Government Healthcare Tenders
-    sub: Learn how the SKD model gives healthcare businesses a competitive edge in government tender bidding.
-    note: EverChek Team · May 14, 2026
-    visual: image
-    image: /images/blog-cover-3.webp
-    imageAlt: Government healthcare tender and SKD manufacturing partnership
-    ratio: 16/9
+    author: EverChek Team
+    date: May 14, 2026
+    image: /images/blog-cover-3.webp   # og:image only — not rendered
+
   - type: prose
     blocks:
       - h2: "The Government Tender Opportunity"

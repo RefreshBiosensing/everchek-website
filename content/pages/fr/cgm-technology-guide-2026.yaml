@@ -4,16 +4,12 @@ path: /fr/guide-technologie-cgm-2026/
 translationKey: cgm-technology-guide-2026
 schemaType: article
 sections:
-  - type: hero
-    variant: split
-    kicker: "Technologie CGM"
+  - type: article-hero
     title: "Technologie CGM : guide complet pour les marques de santé en 2026"
-    sub: "Guide complet des tendances de la technologie CGM, des indicateurs d'exactitude et de la manière dont une marque de santé choisit le système de mesure continue du glucose adapté."
-    note: "Équipe EverChek · 2 juin 2026"
-    visual: image
-    image: /images/blog-cover-1.webp
-    imageAlt: "Illustration d'un capteur CGM porté sur le haut du bras et transmettant les mesures de glucose vers un tableau de bord sur smartphone"
-    ratio: 16/9
+    author: Équipe EverChek
+    date: 2 juin 2026
+    image: /images/blog-cover-1.webp   # og:image only — not rendered
+
   - type: richtext
     eyebrow: "Commencer ici"
     title: "Introduction à la technologie CGM"

@@ -45,6 +45,12 @@ nav:
             href: /cgm-blogs/
           - label: Certifications & Validations
             href: /certifications/
+breadcrumb:
+  label: Breadcrumb
+  home: Home
+  homeHref: /
+  blog: Blog
+  blogHref: /cgm-blogs/
 cta:
   enquiry: Contact us
   quote: Contact us

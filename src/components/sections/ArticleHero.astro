@@ -1,0 +1,81 @@
+---
+// Article hero — reproduces the original ever-chek.com article template:
+// a centred blue banner holding the H1 and a one-line byline, followed by a
+// breadcrumb. Deliberately different from the marketing Hero: an article has no
+// kicker pill, no lead paragraph in the banner (that is the article's own first
+// paragraph, in the body) and no side visual.
+import { loadDict } from '../../lib/content';
+
+interface Props {
+  locale?: string;
+  title: string;
+  author?: string;
+  date?: string;
+  /** Not rendered — read by the page for og:image. */
+  image?: string;
+}
+const { locale = 'en', title, author, date } = Astro.props;
+const { breadcrumb } = loadDict(locale);
+---
+<section class="article-hero">
+  <div class="article-hero-inner">
+    <h1>{title}</h1>
+    {(author || date) && (
+      <div class="meta">
+        {author && <span>{author}</span>}
+        {author && date && <span class="dot" aria-hidden="true"></span>}
+        {date && <span>{date}</span>}
+      </div>
+    )}
+  </div>
+</section>
+
+<nav class="breadcrumb" aria-label={breadcrumb.label}>
+  <a href={breadcrumb.homeHref}>{breadcrumb.home}</a>
+  <span class="sep" aria-hidden="true">›</span>
+  <a href={breadcrumb.blogHref}>{breadcrumb.blog}</a>
+  <span class="sep" aria-hidden="true">›</span>
+  <span class="current" aria-current="page">{title}</span>
+</nav>
+
+<style>
+  /* The original used #80bce2 → #5a9fd0, which puts white text at 2.1:1.
+     Same blue, deepened until the byline passes contrast as well as the H1. */
+  .article-hero {
+    background: linear-gradient(135deg, #2274b4 0%, #0a4c84 100%);
+    padding: clamp(72px, 9vw, 116px) 0 clamp(56px, 7vw, 80px);
+    text-align: center;
+    position: relative;
+  }
+  .article-hero::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .article-hero-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+  .article-hero h1 {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700; line-height: 1.2; letter-spacing: -0.02em;
+    margin-bottom: 28px; color: #fff;
+    text-wrap: balance;
+  }
+  .meta {
+    font-size: 14px; color: rgba(255, 255, 255, 0.88);
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255, 255, 255, 0.6); }
+
+  .breadcrumb {
+    max-width: 1100px; margin: 0 auto;
+    padding: 24px 24px 8px;
+    font-size: 13px; color: var(--mid);
+    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  }
+  .breadcrumb a { color: var(--mid); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--ec-blue-600); text-decoration: underline; }
+  .breadcrumb .sep { color: var(--soft); font-size: 11px; }
+  .breadcrumb .current {
+    color: var(--soft);
+    max-width: 60ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+</style>

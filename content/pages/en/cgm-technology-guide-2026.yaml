@@ -4,16 +4,12 @@ path: /cgm-technology-guide-2026/
 translationKey: cgm-technology-guide-2026
 schemaType: article
 sections:
-  - type: hero
-    variant: split
-    kicker: CGM Technology
+  - type: article-hero
     title: "CGM Technology: A Complete Guide for Healthcare Brands in 2026"
-    sub: A comprehensive guide to CGM technology trends, accuracy metrics, and how healthcare brands can select the right continuous glucose monitoring system.
-    note: EverChek Team · June 2, 2026
-    visual: image
-    image: /images/blog-cover-1.webp
-    imageAlt: CGM sensor technology and digital health interface illustration
-    ratio: 16/9
+    author: EverChek Team
+    date: June 2, 2026
+    image: /images/blog-cover-1.webp   # og:image only — not rendered
+
   - type: prose
     blocks:
       - h2: "Introduction to CGM Technology"

@@ -22,7 +22,8 @@ export function getStaticPaths() {
 interface Props { page: PageEntry }
 const { page } = Astro.props;
 const alternates = alternatesFor(page);
-const hero = page.sections.find((section) => section?.type === 'hero');
+const HERO_TYPES = ['hero', 'article-hero'];
+const hero = page.sections.find((section) => HERO_TYPES.includes(section?.type));
 const heroTitle = hero?.title ?? page.title;
 const heroImagePath = hero?.image ?? hero?.backgroundImage;
 const heroImage = heroImagePath ? new URL(heroImagePath, Astro.site).toString() : undefined;
@@ -38,7 +39,7 @@ const plain = (t: string) =>
   String(t).replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
 const slugify = (t: string) =>
   plain(t).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
-const heroIndex = page.sections.findIndex((s: any) => s?.type === 'hero');
+const heroIndex = page.sections.findIndex((s: any) => HERO_TYPES.includes(s?.type));
 const bodySections = isArticle
   ? page.sections.filter((_: any, i: number) => i !== heroIndex)
   : page.sections;

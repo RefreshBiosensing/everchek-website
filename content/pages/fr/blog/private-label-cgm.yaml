@@ -5,13 +5,11 @@ path: /fr/blog/cgm-marque-blanche/
 translationKey: private-label-cgm
 schemaType: article
 sections:
-  - type: hero
-    variant: dark
-    kicker: CGM en marque blanche
+  - type: article-hero
     title: "CGM en marque blanche : lancez votre propre marque vite et à moindre coût"
-    sub: >-
-      Vous songez à lancer votre propre marque de CGM ? Vous avez sans doute déjà appelé quelques fabricants. Deux d'entre eux vous ont annoncé des quantités minimales de commande à plusieurs centaines de milliers d'unités. Un autre vous a demandé de compter un an, voire davantage, avant de voir un produit réel. Vous avez raccroché en vous disant que c'était une affaire réservée à Dexcom et Abbott, pas à vous.
-    note: Équipe EverChek · 6 juillet 2026
+    author: Équipe EverChek
+    date: 6 juillet 2026
+    image: /blog/private-label-cgm-images/01-private-label-cgm.webp   # og:image only — not rendered
 
   - type: image-text
     variant: top

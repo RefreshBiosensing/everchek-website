@@ -5,19 +5,11 @@ path: /fr/blog/qu-est-ce-que-le-cgm-skd/
 translationKey: what-is-cgm-skd
 schemaType: article
 sections:
-  - type: hero
-    variant: dark
-    kicker: CGM SKD
+  - type: article-hero
     title: "Qu'est-ce que le CGM SKD ? Guide B2B de la fabrication semi-knocked-down"
-    sub: >-
-      Vous cherchez une voie plus souple et moins coûteuse pour entrer sur le marché de la mesure continue du glucose (CGM) ? Dans un secteur de la prise en charge du diabète de plus en plus concurrentiel, le modèle OEM classique s'accompagne souvent de droits de douane élevés et de quantités minimales de commande rigides. Développer soi-même son système de mesure continue du glucose demande des années et des investissements lourds. C'est là qu'intervient le modèle CGM SKD, qui vous permet de lancer votre propre marque de CGM avec un avantage fiscal et un coût réduit, en six à douze mois.
-    note: Équipe EverChek · 3 juillet 2026
-    buttons:
-      - label: Voir la spécification complète du kit SKD
-        href: /fr/montage-local-cgm/
-      - label: Comparer OEM, ODM et SKD
-        href: /fr/modeles-de-fabrication-cgm/
-        style: ghost
+    author: Équipe EverChek
+    date: 3 juillet 2026
+    image: /blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp   # og:image only — not rendered
 
   - type: image-text
     variant: top
