@@ -170,6 +170,10 @@ Obfuscation，会在边缘把 `mailto:` 重写成 `[email protected]` + 一段�
 ### 仍待办
 1. **Production 构建配置**（见上）——否则 Git 自动构建不生效。
 2. **法语正文重新同步** —— 除 cgm-patient-app、thank-you 外，法语页面结构仍与还原后的英文不一致。
-3. **站长发一封真实表单测试** —— 投递链路仍未实测。
+3. ~~站长发一封真实表单测试~~ —— **已实测通过（2026-09-04）**。三个表单（联系页 /
+   经销商 / 底部 CTA）在预览站和 ever-chek.com 上均确认送达，站长已收到测试邮件。
+   注意：Web3Forms 免费版**禁止服务端调用**（403 + 人机验证），必须从浏览器直接提交；
+   且它拒绝提交时返回 HTTP 200 + `{"success": false}`，所以**只看状态码会谎报成功**。
+   任何改动都必须校验 `success === true`。详见 `src/lib/enquiry.ts`。
 4. Google Search Console 重新提交 `sitemap-index.xml`。
 5. 上线稳定后删除临时项目 `everchek-preview`。
