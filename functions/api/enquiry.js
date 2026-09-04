@@ -1,29 +1,33 @@
-// Cloudflare Pages Function: receives enquiry forms and delivers them by email.
+// Cloudflare Pages Function: optional server-side delivery for enquiry forms.
 //
-// The form component posts JSON here. Two shapes arrive:
-//   - the full form on /contact/ and /request-nda/
-//   - the short form in the CTA banner at the foot of every page
-// Only email + message are required; every other field is reported when present.
+// NOT the default path. The forms submit to Web3Forms straight from the browser
+// (src/lib/enquiry.ts) because the Web3Forms free plan refuses server-to-server
+// calls — it answers 403 "Use our API in client side … Pro plan is required"
+// and puts a bot challenge in front of the endpoint. A Function calling it can
+// never deliver anything, so that path is gone rather than left looking alive.
 //
-// Delivery: Web3Forms by default, because the site already has a working
-// Web3Forms key and that means enquiries keep arriving with zero new setup.
-// Resend is used instead when RESEND_API_KEY and ENQUIRY_TO are configured,
-// which is worth doing later — it gives a real From address on the company
-// domain and better deliverability than a shared relay.
+// This endpoint exists for the upgrade: Resend gives a real From address on the
+// company domain and better deliverability than a shared relay. To switch:
 //
-// Optional environment variables (Cloudflare Pages > Settings > Environment):
-//   WEB3FORMS_KEY  override the built-in access key
-//   RESEND_API_KEY + ENQUIRY_TO   switch to Resend
-//   ENQUIRY_FROM   e.g. "EverChek <sales@ever-chek.com>" (Resend only)
+//   1. Create a Resend account and verify ever-chek.com.
+//   2. Set in Cloudflare Pages > Settings > Variables and secrets:
+//        RESEND_API_KEY   the API key
+//        ENQUIRY_TO       where enquiries should land
+//        ENQUIRY_FROM     optional, e.g. "EverChek <sales@ever-chek.com>"
+//   3. Point the forms here instead of Web3Forms.
 //
-// NOTE: whichever path is used, send one real test submission after deploying
-// and confirm it arrives. An enquiry form that fails silently is indistinguishable
-// from having no visitors, and this site went a long time without anyone checking.
-
-const WEB3FORMS_KEY_DEFAULT = 'efeceb0a-a931-4c23-a3c6-e92b4bac78c5';
+// Until then it answers 501, so nothing can mistake it for a working endpoint.
+//
+// Rule for any future change: only report success when the provider confirms
+// delivery. A form that says "sent" without sending is worse than no form —
+// it looks exactly like having no visitors.
 
 export async function onRequestPost(context) {
   const { request, env } = context;
+
+  if (!env.RESEND_API_KEY || !env.ENQUIRY_TO) {
+    return json({ error: 'Server-side delivery is not configured' }, 501);
+  }
 
   let data;
   try {
@@ -42,8 +46,16 @@ export async function onRequestPost(context) {
     }
   }
 
-  // Attribution. Without these an enquiry cannot be traced to a page, a market
-  // or a campaign, which is what made the previous setup impossible to optimise.
+  const details = [
+    ['Name', data.name],
+    ['Company', data.company],
+    ['Email', data.email],
+    ['Country / market', data.country],
+    ['Phone', data.phone],
+    ['Enquiry type', data.inquiry_type || data.type],
+    ['Estimated annual volume', data.quantity],
+  ];
+  // Without these an enquiry cannot be traced to a page, a market or a campaign.
   const attribution = [
     ['Submitted from', data.source_page],
     ['Landing page', data.landing_page],
@@ -51,21 +63,10 @@ export async function onRequestPost(context) {
     ['Campaign', data.utm],
     ['Locale', data.locale],
   ];
-
-  const details = [
-    ['Name', data.name],
-    ['Company', data.company],
-    ['Email', data.email],
-    ['Country / market', data.country],
-    ['Enquiry type', data.inquiry_type || data.type],
-    ['Estimated annual volume', data.quantity],
-  ];
-
   const present = (pairs) => pairs.filter(([, v]) => v && String(v).trim() !== '');
 
   const who = data.company || data.country || data.email;
   const kind = data.inquiry_type || data.type || 'Website';
-  const subject = `[EverChek] ${kind} — ${who}`;
 
   const html = `
     <h2 style="font-family:sans-serif">${esc(kind)} enquiry</h2>
@@ -78,46 +79,30 @@ export async function onRequestPost(context) {
       ${rows(present(attribution))}
     </table>`;
 
-  const text =
-    present(details).map(([k, v]) => `${k}: ${v}`).join('\n') +
-    `\n\nMessage:\n${data.message}\n\n--\n` +
-    present(attribution).map(([k, v]) => `${k}: ${v}`).join('\n');
-
   try {
-    if (env.RESEND_API_KEY && env.ENQUIRY_TO) {
-      const res = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${env.RESEND_API_KEY}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          from: env.ENQUIRY_FROM || 'EverChek Website <onboarding@resend.dev>',
-          to: [env.ENQUIRY_TO],
-          reply_to: data.email,
-          subject,
-          html,
-        }),
-      });
-      if (!res.ok) return json({ error: 'Send failed' }, 502);
-      return json({ ok: true });
-    }
-
-    const res = await fetch('https://api.web3forms.com/submit', {
+    const res = await fetch('https://api.resend.com/emails', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify({
-        access_key: env.WEB3FORMS_KEY || WEB3FORMS_KEY_DEFAULT,
-        subject,
-        from_name: 'EverChek Website',
-        replyto: data.email,
-        message: text,
+        from: env.ENQUIRY_FROM || 'EverChek Website <onboarding@resend.dev>',
+        to: [env.ENQUIRY_TO],
+        reply_to: data.email,
+        subject: `[EverChek] ${kind} — ${who}`,
+        html,
       }),
     });
-    if (!res.ok) return json({ error: 'Send failed' }, 502);
-    return json({ ok: true });
-  } catch {
-    return json({ error: 'Send failed' }, 502);
+    // Resend returns the message id on success; anything else is a failure,
+    // whatever the status code says.
+    const body = await res.json().catch(() => null);
+    if (!res.ok || !body?.id) {
+      return json({ error: body?.message || `Delivery failed (${res.status})` }, 502);
+    }
+    return json({ ok: true, id: body.id });
+  } catch (err) {
+    return json({ error: `Delivery failed: ${err}` }, 502);
   }
 }
 

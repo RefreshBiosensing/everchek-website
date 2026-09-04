@@ -47,10 +47,7 @@ const { heading = 'Get in touch', locale = 'en' } = Astro.props;
     <label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
   </div>
   <input type="hidden" name="inquiry_type" value="Distribution" />
-  <input type="hidden" name="source_page" />
-  <input type="hidden" name="landing_page" />
-  <input type="hidden" name="referrer" />
-  <input type="hidden" name="utm" />
+  <!-- Attribution is added at submit time by src/lib/enquiry.ts. -->
   <input type="hidden" name="locale" value={locale} />
 
   <button class="btn primary pf-submit" type="submit" data-label="Send" data-sending="Sending…">Send</button>
@@ -61,6 +58,8 @@ const { heading = 'Get in touch', locale = 'en' } = Astro.props;
 </form>
 
 <script>
+  import { submitEnquiry } from '../lib/enquiry';
+
   const form = document.getElementById('partner-form') as HTMLFormElement | null;
   const status = form?.querySelector('.pf-status') as HTMLElement | null;
   const okEl = form?.querySelector('.pf-ok') as HTMLElement | null;
@@ -73,38 +72,15 @@ const { heading = 'Get in touch', locale = 'en' } = Astro.props;
     btn.disabled = true;
     btn.textContent = btn.dataset.sending ?? '…';
 
-    const params = new URLSearchParams(location.search);
-    const set = (n: string, v: string) => {
-      const el = form.querySelector(`[name="${n}"]`) as HTMLInputElement | null;
-      if (el) el.value = v;
-    };
-    let landing = '';
-    try { landing = sessionStorage.getItem('ec_landing') || ''; } catch {}
-    set('source_page', location.pathname + location.search);
-    set('landing_page', landing || location.pathname);
-    set('referrer', document.referrer || 'direct');
-    set('utm', ['utm_source', 'utm_medium', 'utm_campaign', 'src', 'inquiry']
-      .map((k) => (params.get(k) ? `${k}=${params.get(k)}` : '')).filter(Boolean).join(' · '));
-
     const data = Object.fromEntries(new FormData(form).entries());
     try {
-      const res = await fetch('/api/enquiry', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      if (!res.ok) throw new Error(String(res.status));
-      (window as any).gtag?.('event', 'generate_lead', {
-        form_source: 'distribution',
-        inquiry_type: 'Distribution',
-        country: (data as any).country ?? '',
-        page_path: location.pathname,
-      });
+      await submitEnquiry(data, { kind: 'Distribution', formSource: 'distribution' });
       status?.removeAttribute('hidden');
       okEl?.removeAttribute('hidden');
       errEl?.setAttribute('hidden', '');
       form.reset();
-    } catch {
+    } catch (err) {
+      console.error('Enquiry not delivered:', err);
       status?.removeAttribute('hidden');
       errEl?.removeAttribute('hidden');
       okEl?.setAttribute('hidden', '');

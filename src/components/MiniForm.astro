@@ -1,8 +1,7 @@
 ---
 // The 3-field enquiry mini form. Used by the CTA banner on every page and by
 // the hero "form" variant. Labels come from the locale dictionary (ctaBanner).
-// Posts to /api/enquiry with a `source` field so sales can see which page
-// produced the lead.
+// Submits through src/lib/enquiry.ts, like every other form on the site.
 interface Props {
   t: any; // dict.ctaBanner
   email?: string; // fallback address shown in the error message
@@ -38,6 +37,8 @@ const { t, email = 'sales@scoreboards.com' } = Astro.props;
 </form>
 
 <script>
+  import { submitEnquiry } from '../lib/enquiry';
+
   // Every page can carry more than one of these; scope each to its own form.
   document.querySelectorAll<HTMLFormElement>('.mini-form').forEach((form) => {
     if (form.dataset.bound) return;
@@ -59,17 +60,14 @@ const { t, email = 'sales@scoreboards.com' } = Astro.props;
       data.source = window.location.pathname;
 
       try {
-        const res = await fetch('/api/enquiry', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data),
-        });
-        if (!res.ok) throw new Error(String(res.status));
+        await submitEnquiry(data, { formSource: 'cta-banner' });
         status?.removeAttribute('hidden');
         successEl?.removeAttribute('hidden');
         errorEl?.setAttribute('hidden', '');
         form.reset();
-      } catch {
+      } catch (err) {
+        // Never claim success we cannot prove — show the fallback address.
+        console.error('Enquiry not delivered:', err);
         status?.removeAttribute('hidden');
         errorEl?.removeAttribute('hidden');
         successEl?.setAttribute('hidden', '');
