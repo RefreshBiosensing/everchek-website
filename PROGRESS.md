@@ -101,3 +101,40 @@
 | Node version | — | 建议设 `NODE_VERSION=20` 或更高 |
 
 **建议流程**：先在 Cloudflare Pages 给 `astro-rebuild` 分支开一个 preview 部署，确认无误再合 `main`。
+
+## 2026-09-04 — 长文文章结构还原（第 6 轮，已完成）
+
+**问题根因（同一个问题的第四面）**：HTML → sections 转换时，把 6 篇长文当成营销落地页
+处理。原文的段落被拆成 card-grid / step-flow / checklist，图片被拆成左图右文。前三轮
+（假图形 187 处、左图右文、营销卡片）都是在用 CSS 补症状。
+
+**这次的做法**：新增 `prose` 板块类型（`src/components/blocks/Prose.astro`），只渲染
+h2/h3/h4/p/ul/ol/figure/hr；用 `scripts/article-from-original.py` 直接从原站 HTML
+重新生成 6 篇正文，然后逐块比对（标签顺序 + 文字 + 列表项 + 图片）——6 篇全部一致。
+
+涉及页面：
+- `blog/private-label-cgm`、`blog/what-is-cgm-skd`、`blog/cgm-vs-bgm`
+- `cgm-manufacturing-models`、`cgm-skd-tenders`、`cgm-technology-guide-2026`
+  （这三篇在原站同样用 article 模板，问题一样）
+
+顺带修复：
+- 目录（TOC）改为取正文 H2，和原站模板一致（含 FAQ 标题）；标题里带链接时只取纯文本；
+  原站 H2 自带的 id（#oem / #mard 等）保留，旧锚点仍可用。
+- 文章内 FAQ 标题左对齐、去掉 eyebrow；末尾 CTA 横幅移到阅读栏之外。
+- 首图 eager 加载，其余 lazy。
+- **法语字典还停留在旧的五菜单导航** → FR 页头少渲染一个菜单。现已与英文结构完全对齐，
+  并删掉英文没有的两条法语文案。
+- footer disclaimer / 联系页描述改为有值才渲染，不再留空元素。
+- 文内两个失效链接 /oem/ 、/skd/ 修正。
+- 新增 `public/_headers`（静态资源不可变缓存 + 基础安全头）、
+  `scripts/check-i18n-parity.mjs`（字典键对齐检查，现为 0 缺 0 多）；删除临时的
+  diagrams-review.html。
+
+**预览**：https://everchek-preview.pages.dev  ·  提交：`4b332f7`（分支 `astro-rebuild`，仍未 push）
+
+### 仍待办
+1. **法语内容重新同步** —— 法语是从我改过的英文翻的，英文已还原，法语正文还没跟上（导航已修）。
+2. **URL 形式**（`.html` vs 结尾斜杠）—— 等 `site:ever-chek.com` 的收录数。
+3. **push `astro-rebuild` 到 GitHub** —— 11 个提交仍只在本地。
+4. **Cloudflare Pages 正式项目构建设置** —— Build command `npm run build`，输出 `dist`。
+5. **上线前站长发一封真实表单测试** —— 投递链路从未实测过。
