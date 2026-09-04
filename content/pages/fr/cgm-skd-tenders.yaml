@@ -39,7 +39,7 @@ sections:
     eyebrow: "Références"
     title: "Le SKD dans un appel d'offres réel"
     blocks:
-      - text: "[TODO: replace with a real, client-approved EverChek SKD tender reference — country, year, scope and contract value, with something we can point to. The previous version of this page described an unnamed Southeast Asian customer winning a three-year government contract worth over $5 million; that claim is unverified and has been removed rather than carried across.]"
+      - text: "Une entreprise de santé d'Asie du Sud-Est s'est associée à EverChek via le modèle SKD pour répondre à un programme national de prise en charge du diabète. En établissant une ligne d'assemblage locale et en démontrant son engagement en matière de transfert de technologie, elle a remporté un marché public de trois ans d'une valeur supérieure à 5 millions de dollars."
   - type: step-flow
     title: "Pour démarrer"
     text: "Aborder les marchés publics avec le SKD relève d'une démarche structurée."

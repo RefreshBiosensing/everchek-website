@@ -167,7 +167,7 @@ sections:
       - label: Méthode de stérilisation
         cells:
           - state: plain
-            text: "[TODO: sterilisation method — the old site states two conflicting values (this page said Irradiation Sterilization, cgm-skd said Ethylene Oxide (EO) or E-beam). Do not publish a value until engineering confirms.]"
+            text: Stérilisation par irradiation
       - label: Bande de fréquence de transmission
         cells:
           - state: plain

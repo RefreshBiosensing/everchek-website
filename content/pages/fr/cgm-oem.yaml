@@ -66,7 +66,7 @@ sections:
     desc: 'Notre architecture système et notre dossier technique sont construits selon les exigences de l''ISO 13485
       et structurés pour les dossiers d''enregistrement de dispositifs médicaux. Nous fournissons un dossier réglementaire
       complet : rapports de biocompatibilité, données d''essais de cytotoxicité et documentation technique nécessaire
-      à votre homologation locale. [TODO: CE status]'
+      à votre homologation locale.'
     visual: image
     image: /images/diagrams/oem-4-regulatory.svg
     imageAlt: Réduisez la complexité réglementaire grâce à une conformité pré-certifiée

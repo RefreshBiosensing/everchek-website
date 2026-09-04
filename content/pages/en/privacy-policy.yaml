@@ -51,7 +51,7 @@ sections:
       - h2: "10. Changes to This Policy"
       - p: "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated \"Last Updated\" date."
       - h2: "11. Contact Us"
-      - p: "If you have any questions, please contact us at: <a href=\"/cdn-cgi/l/email-protection#b1d2dedfc5d0d2c5f1d4c7d4c39cd2d9d4da9fd2dedc\">[email protected]</a>"
+      - p: "If you have any questions, please contact us at: <a href=\"mailto:contact@ever-chek.com\">contact@ever-chek.com</a>"
 
   - type: link-pills
     label: Also on this site

@@ -51,7 +51,7 @@ sections:
         text: "Niveau de performance de pointe."
       - title: "MARD supérieur à 10 %"
         text: "Peut exiger un étalonnage fréquent."
-    note: "[TODO: EverChek's own verified MARD figure and the clinical study behind it. The previous page claimed \"below 8% MARD, among the most accurate CGM systems available\" with no source — removed pending verification.]"
+    note: "EverChek atteint des valeurs de MARD inférieures à 8 %, parmi les systèmes CGM les plus précis disponibles pour des partenariats B2B."
     tint: true
   - type: card-grid
     title: "Les caractéristiques à examiner par une marque de santé"

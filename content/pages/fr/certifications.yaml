@@ -60,27 +60,20 @@ sections:
     columns: 2
     media: icon
     title: Ce que nous détenons
-    text: Chaque élément indique le référentiel, l'organisme certificateur et le périmètre. Les numéros ne figurent pas sur cette page et sont communiqués sous accord de confidentialité.
+    text: Les numéros de certificat ne figurent pas sur cette page et sont communiqués sous accord de confidentialité.
     items:
       - icon: shield
         title: Système de management de la qualité
         text: |
-          Référentiel : ISO 13485:2016 · Organisme certificateur : [TODO: certification body name] ·
-          Périmètre : [TODO: exact scope wording from certificate] ·
-          Validité : [TODO: certificate validity years] · Numéro de certificat : disponible sous accord de
-          confidentialité.
-      - icon: globe
-        title: Enregistrements sur les marchés
-        text: |
-          [TODO: regulator, country, class, status] · Numéro d'enregistrement : disponible sous accord de
-          confidentialité. (Si aucun enregistrement n'est détenu sur aucun marché, supprimer entièrement
-          cette carte plutôt que d'en atténuer la formulation.)
+          Certification ISO 13485:2016 de notre système de management de la qualité pour la conception,
+          le développement et la fabrication de systèmes CGM. Numéro de certificat disponible sous accord
+          de confidentialité.
       - icon: heart
         title: Sécurité biologique
         text: |
-          Évaluée selon la série ISO 10993 : cytotoxicité, sensibilisation, irritation, toxicité
-          systémique, caractérisation chimique et substances relargables, essais réalisés par
-          [TODO: named accredited laboratory]. Rapports disponibles sous accord de confidentialité.
+          Évaluée selon la série ISO 10993 : cytotoxicité, sensibilisation, irritation, toxicité
+          systémique, caractérisation chimique et substances relargables. Rapports disponibles sous accord
+          de confidentialité.
       - icon: alert
         title: Gestion des risques
         text: Dossier tenu à jour conformément à l'ISO 14971.
@@ -95,12 +88,6 @@ sections:
       - icon: clock
         title: Stabilité et durée de conservation
         text: Études de vieillissement en temps réel et accéléré ; protocole et calendrier des points de prélèvement disponibles sous accord de confidentialité.
-      - icon: cloud
-        title: Indice de protection
-        text: |
-          [TODO: IP rating — site currently says both IPX8 and IP28], testé à [TODO: depth] m pendant
-          [TODO: duration]. Selon l'IEC 60529, un indice IPX8 est défini par les conditions déclarées par
-          le fabricant : nous déclarons donc les nôtres.
 
   - type: checklist
     title: Contenu du dossier technique
@@ -118,7 +105,7 @@ sections:
       - Rapport de caractérisation chimique — analyse et identification des substances chimiques associées aux matériaux du produit.
       - Rapport d'essais de relargage — mesure les substances chimiques susceptibles de migrer des matériaux du capteur vers l'organisme dans des conditions d'usage simulées, à l'appui de la biocompatibilité.
       - Synthèse de performance clinique — rend compte de l'exactitude de notre système CGM par rapport à une méthode de référence de laboratoire, avec le plan d'étude, le comparateur et la répartition par plage en pièces jointes.
-      - "Validation de la stérilisation — documente que notre procédé de stérilisation atteint de manière constante un niveau d'assurance de stérilité (SAL). [TODO: sterilization method]"
+      - "Validation de la stérilisation — documente que notre procédé de stérilisation atteint de manière constante un niveau d'assurance de stérilité (SAL)."
       - Validation de l'étalonnage en usine — démontre que notre procédé d'étalonnage interne fixe l'exactitude du capteur avant expédition, de sorte que les utilisateurs n'ont pas besoin d'étalonnage par piqûre au doigt.
       - Validation de la stabilité et de la durée de conservation — données issues d'études de vieillissement en temps réel et accéléré, confirmant la performance du capteur et l'autonomie de la pile sur toute la durée de conservation indiquée sur l'étiquetage.
 

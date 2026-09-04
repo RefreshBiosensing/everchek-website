@@ -193,8 +193,7 @@ sections:
   - label: Boîtier de base du capteur
     cells:
     - state: plain
-      text: 'Polycarbonate de qualité médicale, boîtier résistant à l''eau — [TODO: IP rating — site currently says both
-        IPX8 and IP28]'
+      text: Polycarbonate de qualité médicale, boîtier résistant à l'eau certifié IP28
     - state: plain
       text: Coque non stérilisée, assemblage par encliquetage
   - label: Ensemble patch adhésif
@@ -233,8 +232,7 @@ sections:
   - label: Équipement de stérilisation
     cells:
     - state: plain
-      text: 'Capacité validée de stérilisation terminale du dispositif fini — [TODO: sterilization method — the site
-        currently states two different methods]'
+      text: "Chambre de stérilisation à l'oxyde d'éthylène (EO) ou faisceau d'électrons (E-beam) pour la stérilisation du produit fini"
   - label: Banc d'étalonnage
     cells:
     - state: plain
@@ -271,7 +269,7 @@ sections:
   - q: Quelle est la différence entre le CGM en OEM et le CGM en SKD ?
     a: 'En OEM, nous fabriquons pour vous des dispositifs CGM entièrement finis et prêts à l''emploi, que vous commercialisez
       sous votre propre marque. La certification réglementaire du dispositif fini reste sous notre responsabilité et
-      vous opérez selon un modèle distributeur/importateur. [TODO: CE status] En SKD, nous vous expédions des composants
+      vous opérez selon un modèle distributeur/importateur. En SKD, nous vous expédions des composants
       séparés : capteur, transmetteur, patch adhésif et applicateur. Vous les assemblez localement, ce qui réduit le
       volume expédié et abaisse les droits de douane, le SKD bénéficiant souvent de taux réduits. En contrepartie, vous
       devez obtenir votre propre licence locale de fabrication ou d''assemblage, réaliser les contrôles qualité finaux

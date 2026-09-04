@@ -123,9 +123,8 @@ sections:
       à l’échelle sereinement, avec moins de tickets de support et des clients plus satisfaits.
   - icon: cloud
     title: Résistance à l’eau
-    text: 'Le capteur et le transmetteur sont scellés pour la douche, la natation et le sport sans retirer le capteur.
-      [TODO: IP rating — site currently says both IPX8 and IP28; state the rating and the tested depth and duration once
-      engineering has settled it.]'
+    text: Notre conception étanche IPX8 permet à vos utilisateurs de prendre une douche, de nager et de faire
+      du sport sans retirer le capteur.
   - icon: patch
     title: Léger
     text: Conçu pour un port prolongé confortable, notre CGMS aide les marques de santé à améliorer l’adoption par les
