@@ -146,16 +146,4 @@ sections:
         a: >-
           Prioritize clinical accuracy metrics (MARD data under 9%), a verified track record of manufacturing consistency, the depth and organization of their regulatory technical files, and their willingness to provide long-term technical and software support.
 
-  - type: link-pills
-    label: Next steps
-    items:
-      - label: CGM OEM and ODM programmes
-        href: /cgm-oem/
-      - label: CGM SKD kits and local assembly
-        href: /cgm-skd/
-      - label: Our CGM system
-        href: /continuous-glucose-monitor/
-      - label: Documentation and certifications
-        href: /certifications/
-
   - type: cta-banner

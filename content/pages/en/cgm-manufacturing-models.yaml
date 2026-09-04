@@ -39,15 +39,4 @@ sections:
         id: "choosing"
       - p: "Your choice depends on several factors: market size, regulatory requirements, local content rules, available investment, and long-term strategy. EverChek offers flexible partnership models that can evolve as your business grows."
 
-  - type: link-pills
-    label: Keep reading
-    items:
-      - label: How SKD wins government tenders
-        href: /cgm-skd-tenders/
-      - label: CGM OEM manufacturing
-        href: /cgm-oem/
-      - label: CGM SKD cooperation
-        href: /cgm-skd/
-      - label: All CGM articles
-        href: /cgm-blogs/
   - type: cta-banner

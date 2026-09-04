@@ -107,15 +107,4 @@ sections:
     blocks:
       - text: "Votre choix dépend de plusieurs facteurs : taille du marché, exigences réglementaires, règles de taux d'intégration locale, capacité d'investissement et stratégie à long terme. EverChek propose des modèles de partenariat souples, qui peuvent évoluer avec votre activité."
     tint: true
-  - type: link-pills
-    label: "À lire ensuite"
-    items:
-      - label: "Le SKD face aux appels d'offres publics"
-        href: /fr/appels-offres-cgm-skd/
-      - label: "Fabrication CGM en OEM"
-        href: /fr/cgm-oem/
-      - label: "Coopération CGM en SKD"
-        href: /fr/montage-local-cgm/
-      - label: "Tous les articles CGM"
-        href: /fr/blog-cgm/
   - type: cta-banner

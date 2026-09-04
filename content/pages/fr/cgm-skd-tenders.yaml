@@ -60,15 +60,4 @@ sections:
       - icon: handshake
         title: "Déposer l'offre"
         desc: "Déposer une offre compétitive appuyée sur l'avantage de coût du SKD."
-  - type: link-pills
-    label: "À lire ensuite"
-    items:
-      - label: "Coopération CGM en SKD"
-        href: /fr/montage-local-cgm/
-      - label: "Modèles OEM, SKD et ODM"
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: "Qu'est-ce que le CGM SKD ?"
-        href: /fr/blog/qu-est-ce-que-le-cgm-skd/
-      - label: "Tous les articles CGM"
-        href: /fr/blog-cgm/
   - type: cta-banner

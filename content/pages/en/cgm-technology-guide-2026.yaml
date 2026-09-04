@@ -47,15 +47,4 @@ sections:
         id: "market"
       - p: "The global CGM market is projected to reach $16 billion by 2028. For healthcare brands, this represents a significant opportunity. By partnering with an experienced manufacturer like EverChek, businesses can bring branded CGM products to market faster with lower upfront investment."
 
-  - type: link-pills
-    label: Keep reading
-    items:
-      - label: OEM vs SKD vs ODM manufacturing models
-        href: /cgm-manufacturing-models/
-      - label: CGM vs BGM for your business
-        href: /blog/cgm-vs-bgm/
-      - label: The EverChek CGM system
-        href: /continuous-glucose-monitor/
-      - label: All CGM articles
-        href: /cgm-blogs/
   - type: cta-banner

@@ -312,16 +312,4 @@ sections:
         a: >-
           Privilégiez les indicateurs d'exactitude clinique (un MARD inférieur à 9 %, publié avec le protocole utilisé pour le mesurer), un historique avéré de régularité de fabrication, la profondeur et l'organisation du dossier technique réglementaire, ainsi que la volonté d'assurer un soutien technique et logiciel dans la durée.
 
-  - type: link-pills
-    label: À lire aussi
-    items:
-      - label: CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Kits CGM SKD
-        href: /fr/montage-local-cgm/
-      - label: Comparer tous les modèles
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: Application patient en marque blanche
-        href: /fr/application-patient-cgm/
-
   - type: cta-banner

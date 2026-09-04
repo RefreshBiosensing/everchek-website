@@ -349,16 +349,4 @@ sections:
         a: >-
           Tout dépend du circuit visé : les hôpitaux privilégient souvent le BGM pour son coût et sa familiarité, tandis que le circuit officinal et la vente en ligne se tournent vers le CGM, plus rémunérateur et porté par une demande croissante des patients. Cela dit, le CGM s'impose comme la nouvelle tendance et l'occasion mérite d'être saisie. Envisagez une approche hybride : conservez le BGM pour la stabilité institutionnelle, mais lancez un pilote CGM pour la croissance grand public. Avec les solutions SKD ou OEM d'EverChek, vous pouvez ajouter le CGM sans R&D lourde, tester rapidement le marché, monter en volume à votre rythme et faire du modèle hybride un véritable avantage concurrentiel plutôt qu'une position de repli.
 
-  - type: link-pills
-    label: À lire aussi
-    items:
-      - label: Notre système CGM
-        href: /fr/systeme-mesure-continue-glucose/
-      - label: CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Kits CGM SKD
-        href: /fr/montage-local-cgm/
-      - label: Qu'est-ce qu'un CGM ?
-        href: /fr/qu-est-ce-qu-un-cgm/
-
   - type: cta-banner

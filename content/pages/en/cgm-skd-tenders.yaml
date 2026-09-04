@@ -37,15 +37,4 @@ sections:
         id: "getting-started"
       - p: "Entering government tender markets with SKD is a structured process: assess target market tender requirements, develop local assembly infrastructure, establish quality management system, prepare tender documentation with manufacturer support, and submit competitive bid with SKD cost advantage."
 
-  - type: link-pills
-    label: Keep reading
-    items:
-      - label: CGM SKD cooperation
-        href: /cgm-skd/
-      - label: OEM vs SKD vs ODM models
-        href: /cgm-manufacturing-models/
-      - label: What is CGM SKD?
-        href: /blog/what-is-cgm-skd/
-      - label: All CGM articles
-        href: /cgm-blogs/
   - type: cta-banner

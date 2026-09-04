@@ -75,15 +75,4 @@ sections:
     title: "Un marché du CGM en croissance"
     blocks:
       - text: "Le marché mondial du CGM devrait atteindre 16 milliards de dollars d'ici 2028. Pour les marques de santé, c'est une opportunité considérable. En s'associant à un fabricant expérimenté comme EverChek, une entreprise peut mettre sur le marché des produits CGM à sa propre marque plus rapidement et avec un investissement initial réduit."
-  - type: link-pills
-    label: "À lire ensuite"
-    items:
-      - label: "Modèles de fabrication OEM, SKD et ODM"
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: "CGM ou BGM pour votre activité"
-        href: /fr/blog/cgm-vs-bgm/
-      - label: "Le système CGM EverChek"
-        href: /fr/systeme-mesure-continue-glucose/
-      - label: "Tous les articles CGM"
-        href: /fr/blog-cgm/
   - type: cta-banner
