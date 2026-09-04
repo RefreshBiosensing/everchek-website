@@ -38,6 +38,42 @@
 /continous-glucose-monitor.jpg     /images/continuous-glucose-monitor-device.jpg  301
 /1.jpg                             /images/about-us-facility.jpg     301
 
-# Everything that used to sit at the repo root now lives under /images/.
-/*.jpg                             /images/:splat.jpg                301
-/*.png                             /images/:splat.png                301
+# Images used to sit at the repo root and now live under /images/.
+# One rule per file: a /*.png catch-all also matches /images/*.png and would
+# redirect the site's own images into /images/images/.
+
+/5.jpg                                        /images/5.webp                                       301
+/about-factory-corridor.jpg                   /images/about-factory-corridor.webp                  301
+/about-factory.jpg                            /images/about-factory.webp                           301
+/apple-touch-icon.png                         /images/apple-touch-icon.png                         301
+/blog-cover-1.png                             /images/blog-cover-1.webp                            301
+/blog-cover-2.png                             /images/blog-cover-2.webp                            301
+/blog-cover-3.png                             /images/blog-cover-3.webp                            301
+/cgm-app-overview-final.jpg                   /images/cgm-app-overview-final.webp                  301
+/cgm-app-phone-1.png                          /images/cgm-app-phone-1.webp                         301
+/cgm-app-phone-2.png                          /images/cgm-app-phone-2.webp                         301
+/cgm-app-phone-3.png                          /images/cgm-app-phone-3.webp                         301
+/cgm-app-phone-4.png                          /images/cgm-app-phone-4.webp                         301
+/cgm-app-phone.jpg                            /images/cgm-app-phone.webp                           301
+/cgm-app-phone.png                            /images/cgm-app-phone.webp                           301
+/cgm-skd-cooperation.png                      /images/cgm-skd-cooperation.webp                     301
+/contact-hero-factory.jpg                     /images/contact-hero-factory.webp                    301
+/distribution-hero.jpg                        /images/distribution-hero.webp                       301
+/everchek-logo.png                            /images/everchek-logo.webp                           301
+/factory-bg.jpg                               /images/factory-bg.webp                              301
+/factory-hero.jpg                             /images/factory-hero.webp                            301
+/favicon-32.png                               /images/favicon-32.png                               301
+/favicon.ico                                  /images/favicon.ico                                  301
+/oem-why-1-save-costs.jpg                     /images/oem-why-1-save-costs.webp                    301
+/oem-why-2-manufacturing.jpg                  /images/oem-why-2-manufacturing.webp                 301
+/oem-why-3-market-launch.jpg                  /images/oem-why-3-market-launch.webp                 301
+/oem-why-4-regulatory.jpg                     /images/oem-why-4-regulatory.webp                    301
+/oem-why-5-data-security.jpg                  /images/oem-why-5-data-security.webp                 301
+/p30-components.png                           /images/p30-components.webp                          301
+/product-composite.png                        /images/product-composite.webp                       301
+/skd-audience-1.png                           /images/skd-audience-1.webp                          301
+/skd-audience-2.png                           /images/skd-audience-2.webp                          301
+/skd-audience-3.png                           /images/skd-audience-3.webp                          301
+/skd-audience-4.png                           /images/skd-audience-4.webp                          301
+/skd-intro.png                                /images/skd-intro.webp                               301
+/x-zhang-transparent.png                      /images/x-zhang-transparent.webp                     301

@@ -59,7 +59,7 @@ const { footer, brand } = common;
 
     <div class="footer-bottom">
       <span>{footer.legal}</span>
-      <span class="disclaimer">{footer.disclaimer}</span>
+      {footer.disclaimer && <span class="disclaimer">{footer.disclaimer}</span>}
     </div>
   </div>
 </footer>

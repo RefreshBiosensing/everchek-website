@@ -1,269 +1,300 @@
 title: EverChek Continuous Glucose Monitoring System | China CGM Supplier
-description: "Boost your healthcare business with our EverChek continuous glucose monitors, featuring MARD <8%, lightweight pain-free wear, IPX8 waterproof design and smart sensors."
+description: Boost your healthcare business with our EverChek continuous glucose monitors, featuring MARD <8%, lightweight
+  pain-free wear, IPX8 waterproof design and smart sensors.
 path: /continuous-glucose-monitor/
 translationKey: continuous-glucose-monitor
 schemaType: product
 sections:
-  - type: hero
-    variant: split
-    title: EverChek continuous glucose monitoring system
-    sub: Focused exclusively on B2B partnerships, we develop reliable continuous glucose monitoring (CGM) solutions with industry-leading accuracy below 8% MARD for all types of healthcare providers worldwide. Flexible and cost-efficient, our OEM/SKD models are designed to support and scale your CGM business.
-    buttons:
-      - label: Contact us
-        href: /contact/
-        style: primary
-    note: |
-      Note: This product is designed for continuous or periodic monitoring of glucose levels in the
-      interstitial fluid of patients with diabetes. It has been tested in adult patients (18 years and
-      older) only. Commercialization in pediatric, pregnant, or other special populations may require
-      additional local trials per regional regulations.
+- type: hero
+  variant: split
+  title: EverChek continuous glucose monitoring system
+  sub: Focused exclusively on B2B partnerships, we develop reliable continuous glucose monitoring (CGM) solutions with
+    industry-leading accuracy below 8% MARD for all types of healthcare providers worldwide. Flexible and cost-efficient,
+    our OEM/SKD models are designed to support and scale your CGM business.
+  buttons:
+  - label: Contact us
+    href: /contact/
+    style: primary
+  note: 'Note: This product is designed for continuous or periodic monitoring of glucose levels in the
+
+    interstitial fluid of patients with diabetes. It has been tested in adult patients (18 years and
+
+    older) only. Commercialization in pediatric, pregnant, or other special populations may require
+
+    additional local trials per regional regulations.
+
+    '
+  visual: image
+  image: /images/product-composite.webp
+  imageAlt: EverChek continuous glucose monitoring system with mobile app showing real-time glucose data
+  ratio: 388/412
+- type: feature-rows
+  title: Everything you need for smart glucose monitoring
+  text: From real-time tracking to predictive alerts, our CGMS empowers users with full visibility into their glucose
+    health.
+  ratio: 1/1
+  fit: contain
+  items:
+  - title: Real-time glucose tracking
+    desc: Automatically updates your glucose readings every 5 minutes. See exactly how your body respond to a meal, workout,
+      medication, or mood swing without delay. Make adjustments now, not hours later.
     visual: image
-    image: /images/product-composite.webp
-    imageAlt: EverChek continuous glucose monitoring system with mobile app showing real-time glucose data
-    ratio: 388/412
-
-  - type: feature-rows
-    title: Everything you need for smart glucose monitoring
-    text: From real-time tracking to predictive alerts, our CGMS empowers users with full visibility into their glucose health.
-    ratio: 1/1
-    fit: contain
-    items:
-      - title: Real-time glucose tracking
-        desc: Automatically updates your glucose readings every 5 minutes. See exactly how your body respond to a meal, workout, medication, or mood swing without delay. Make adjustments now, not hours later.
-        visual: image
-        image: /images/cgm-app-phone-1.webp
-        imageAlt: EverChek CGM app real-time glucose tracking screen
-      - title: Generate glucose curves
-        desc: Tracks your glucose 24/7 and map continuous data into clear patterns that single fingersticks can't capture. Provides long-term visibility into your glucose rhythms for better diabetes management.
-        visual: image
-        image: /images/cgm-app-phone-2.webp
-        imageAlt: EverChek CGM app glucose curves chart screen
-      - title: Predict hypo- and hyperglycemic events
-        desc: Identifies small, moment-to-moment glucose changes as they happen, including rapid rises, gentle drops, and early shifts between meals or overnight. Provides early warnings before your glucose levels become too high or too low.
-        visual: image
-        image: /images/cgm-app-phone-3.webp
-        imageAlt: EverChek CGM app glucose event prediction screen
-      - title: Customize glucose alerts
-        desc: Create your personalized glucose limits. Receive timely notifications when your glucose levels rise above or fall below the target range, helping you stay informed and take action right away.
-        visual: image
-        image: /images/cgm-app-phone-4.webp
-        imageAlt: EverChek CGM app glucose alert customization screen
-      - title: Move freely throughout the day
-        desc: A tiny sensor sits just beneath your skin for a pain-free, barely noticeable fit. Waterproof and designed for continuous 14-day wear, it stays comfortable through sleep, exercise, showering, and daily activities.
-        visual: image
-        image: /images/cgm-app-phone.webp
-        imageAlt: EverChek CGM app daily activity monitoring screen
-
-  - type: card-grid
-    title: Built for accurate, continuous glucose monitoring
-    text: Industry-leading sensor accuracy with MARD below 8%, delivering trusted data for patients and clinicians alike.
-    columns: 3
-    media: icon
-    center: true
-    tint: true
-    items:
-      - icon: chart
-        kicker: MARD <8%
-        title: Accuracy
-        text: Delivers accurate glucose readings you can trust.
-      - icon: box
-        kicker: All in 1 design
-        title: Simplicity
-        text: No assembly required before use.
-      - icon: clock
-        kicker: 7/24 monitoring
-        title: Continuous coverage
-        text: Stay informed of your glucose levels around the clock.
-      - icon: sensor
-        kicker: 5.6 mm
-        title: Sensor length
-        text: Built for stable sensor placement.
-      - icon: patch
-        kicker: 14 day use
-        title: Long wear time
-        text: Fewer replacements for added convenience.
-      - icon: shield
-        kicker: IPX8
-        title: Waterproof
-        text: Wear confidently while showering or swimming.
-      - icon: arrow
-        kicker: 60 min warmup
-        title: Quick start
-        text: Ready to provide readings after a short setup time.
-      - icon: set
-        kicker: 24.8*4.8 mm
-        title: Coin-sized
-        text: Compact size for discreet everyday wear.
-      - icon: curve
-        kicker: 5 min intervals
-        title: Data frequency
-        text: Receive 1000+ glucose updates throughout the day.
-
-  - type: image-text
-    variant: top
-    title: Inside our EverChek continuous glucose monitor system
-    text: Every CGM component works together to deliver reliable glucose monitoring
-    image: /images/p30-components.webp
-    imageAlt: "Exploded view of the EverChek continuous glucose monitor system components: applicator, transmitter, sensor, puncture needle, adhesive patch, and sterile tube, showing how each CGM part works together for reliable glucose monitoring."
-    ratio: 1200/788
-    fit: contain
-
-  - type: compare-table
-    title: Specifications of our sensor & transmitter integrated kit
-    text: Complete technical parameters for our integrated sensor and transmitter, built to meet rigorous medical device standards.
-    columns:
-      - EverChek CGM sensor + transmitter kit
-    highlight: 1
-    rows:
-      - label: Glucose Concentration Detection Range
-        cells:
-          - state: plain
-            text: 2-25mmol/L
-      - label: Transmitter Size (Diameter*Height)
-        cells:
-          - state: plain
-            text: Diameter 24.8mm*4.8mm
-      - label: Sensor Implantation Depth in Vivo
-        cells:
-          - state: plain
-            text: 5.6 mm
-      - label: Transmitter Power Supply
-        cells:
-          - state: plain
-            text: One lithium battery (3V) CR1025
-      - label: Service Life
-        cells:
-          - state: plain
-            text: 14 days
-      - label: Transmitter Memory
-        cells:
-          - state: plain
-            text: It can store data for up to 14 days
-      - label: Operating Temperature
-        cells:
-          - state: plain
-            text: 5-40°C
-      - label: Operating Relative Humidity
-        cells:
-          - state: plain
-            text: 10%-90%RH
-      - label: Atmospheric Pressure
-        cells:
-          - state: plain
-            text: 70-106KPa
-      - label: Startup Time
-        cells:
-          - state: plain
-            text: 60min
-      - label: Wireless Transmission Distance
-        cells:
-          - state: plain
-            text: 10m
-      - label: Waterproof Rating
-        cells:
-          - state: plain
-            text: IPX8
-      - label: Sterilization Method
-        cells:
-          - state: plain
-            text: Irradiation Sterilization
-      - label: Transmission Frequency Band
-        cells:
-          - state: plain
-            text: 2402MHz-2480MHz
-      - label: Modulation Type
-        cells:
-          - state: plain
-            text: GFSK
-      - label: Effective Radiated Power (CMIIT ID)
-        cells:
-          - state: plain
-            text: 0 dBm
-      - label: Transmitter Memory
-        cells:
-          - state: plain
-            text: "RAM: 96 KB  SiP Flash: 512 KB"
-
-  - type: step-flow
-    title: How to apply and use our EverChek CGM?
-    text: Three simple steps to get started —apply, pair, and monitor glucose data in real time on your smartphone.
-    columns: 3
-    arrows: true
-    center: true
-    tint: true
-    items:
-      - icon: patch
-        title: "Step 1: Apply"
-        desc: After cleaning your skin, remove the lower cover of the EverChek CGM and place the applicator firmly and vertically on your arm. When you hear a click, the sensor has been successfully applied.
-      - icon: phone
-        title: "Step 2: Pair & warm-up"
-        desc: Download the EverChek app, scan the QR code, and complete Bluetooth pairing. Wait 1 hour for the sensor warm-up to complete before readings begin.
-      - icon: curve
-        title: "Step 3: Monitor"
-        desc: View real-time glucose data on your phone and receive high/low alerts. Log daily activities such as diet and exercise and gain clearer insights into your glucose patterns. Remove the transmitter after 14 days.
-
-  - type: card-grid
-    title: Why choose EverChek CGM for your healthcare business?
-    text: In-house R&D, flexible partnership models, and competitive pricing —built to support your CGM business at every stage of growth.
-    columns: 3
-    media: icon
-    center: true
-    items:
-      - icon: factory
-        title: In-house R&D and manufacturing
-        text: We own patents across key CGM technologies, including chips, sensors, and biochemical systems, backed by our 2,000 m² factory with a 10,000-class sterile cleanroom. This allows us tighter control over sensor performance, product consistency, and future optimization.
-      - icon: chart
-        title: Cost & supply stability
-        text: By managing core production processes ourselves, we continuously reduce product costs and maintain stable manufacturing capacity for all clients. Scale your business confidently with our competitive pricing, reliable CGM supply and delivery timelines.
-      - icon: handshake
-        title: Flexible cooperation models
-        text: We support SKD for local production and CE registration, OEM rebranding, and distribution partnerships. With technical development, production, and packaging managed internally, we can adapt to different business goals and growth stages rapidly.
-
-  - type: faq
-    title: Frequently asked questions
-    items:
-      - q: What is a CGM monitor?
-        a: CGM stands for Continuous Glucose Monitor. Designed for diabetes management, it is a wearable medical device that continuously measures glucose levels in interstitial fluid. It provides real-time glucose trends for both patients and healthcare providers, beyond single-point measurements.
-      - q: Do EverChek CGM monitors hurt?
-        a: Most users report minimal or no pain. This is because our sensor is inserted using a fast application system, taking merely 0.2 milliseconds.
-      - q: How accurate are EverChek CGM monitors?
-        a: CGM accuracy is typically measured using MARD (Mean Absolute Relative Difference). Our CGMS achieves a MARD of 7.94%, which positions us among leading global CGM makers in terms of accuracy. This enables us to support reliable glucose monitoring for clinical and daily use.
-      - q: Is EverChek invasive or non-invasive?
-        a: It is minimally invasive. A thin sensor filament is inserted just under the skin and can be worn for up to 14 days. The device is coin-sized and lightweight, designed for stable daily wear with minimal sensation.
-      - q: How's the CE certification progress of your CGM?
-        a: We are currently in the process of obtaining CE certification. For SKD partners, we can also provide technical documentation and support for local regulatory applications. Please feel free to contact us to discuss your project!
-      - q: What is your minimum order quantity (MOQ)?
-        a: Since we develop and manufacture our CGM systems in-house, we're very flexible in cooperation and have no fixed MOQ. For any order size or business need, we can accommodate. Just reach out and let's see how we can support you.
-      - q: What does CGM measure?
-        a: CGM measures glucose levels in the interstitial fluid under the skin, rather than directly from blood. The main advantage is that it provides continuous, real-time glucose readings 24/7. This helps users understand how their glucose changes over time, especially after meals, exercise, and daily activities, also assists in better treatment decisions.
-      - q: What data can be viewed in the app?
-        a: Users can view real-time glucose levels, historical trends, input daily activities, and receive alert notifications and glucose predictions.
-      - q: Can CGM replace fingerstick testing?
-        a: CGM provides continuous glucose trend data, but fingerstick testing may still be needed in certain situations, such as when your symptoms do not match the glucose readings. However, CGMs can greatly reduce the overall need for fingerstick testing.
-      - q: How long does the sensor last?
-        a: The sensor is designed for up to 14 days of continuous use.
-      - q: Can CGM be used in clinical settings?
-        a: Yes. It is suitable for both clinical monitoring and outpatient diabetes management programs. We also offer a dedicated physician app and can adapt our system to different clinical requirements. Contact us to discuss hospital or clinical glucose monitoring needs.
-      - q: Where is the sensor applied?
-        a: The sensor is typically applied to the back of the upper arm, between the biceps and triceps. This area helps reduce the impact of muscle movement and supports stable, consistent readings during daily activities.
-      - q: Can I customize the product or software?
-        a: Surely. We can customize both the product and software based on your specific requirements. Please send us a message so we can discuss your project in detail.
-      - q: Can I customize the CGM under my own brand?
-        a: Yes. We support SKD, OEM and many other partnership models. Contact us and let's talk!
-      - q: How often is glucose reading updated?
-        a: Glucose data is updated every 5 minutes and transmitted to the app in real time.
-      - q: How reliable is the sensor performance over 14 days?
-        a: The sensor is designed to maintain stable performance throughout the full wear period under normal usage conditions.
-      - q: What alerts does the system provide?
-        a: The system provides configurable high and low glucose alerts, as well as trend-based predictions, to help users respond in time.
-
-  - type: banner-wide
-    title: Your long-term B2B CGM manufacturing partner
-    text: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands worldwide.
-    align: left
-    height: short
-    cta:
-      label: Contact us
-      href: /contact/
-
-  - type: cta-banner
+    image: /images/cgm-app-phone-1.webp
+    imageAlt: EverChek CGM app real-time glucose tracking screen
+  - title: Generate glucose curves
+    desc: Tracks your glucose 24/7 and map continuous data into clear patterns that single fingersticks can't capture.
+      Provides long-term visibility into your glucose rhythms for better diabetes management.
+    visual: image
+    image: /images/cgm-app-phone-2.webp
+    imageAlt: EverChek CGM app glucose curves chart screen
+  - title: Predict hypo- and hyperglycemic events
+    desc: Identifies small, moment-to-moment glucose changes as they happen, including rapid rises, gentle drops, and
+      early shifts between meals or overnight. Provides early warnings before your glucose levels become too high or
+      too low.
+    visual: image
+    image: /images/cgm-app-phone-3.webp
+    imageAlt: EverChek CGM app glucose event prediction screen
+  - title: Customize glucose alerts
+    desc: Create your personalized glucose limits. Receive timely notifications when your glucose levels rise above or
+      fall below the target range, helping you stay informed and take action right away.
+    visual: image
+    image: /images/cgm-app-phone-4.webp
+    imageAlt: EverChek CGM app glucose alert customization screen
+  - title: Move freely throughout the day
+    desc: A tiny sensor sits just beneath your skin for a pain-free, barely noticeable fit. Waterproof and designed for
+      continuous 14-day wear, it stays comfortable through sleep, exercise, showering, and daily activities.
+    visual: image
+    image: /images/cgm-app-phone.webp
+    imageAlt: EverChek CGM app daily activity monitoring screen
+- type: card-grid
+  title: Built for accurate, continuous glucose monitoring
+  text: Industry-leading sensor accuracy with MARD below 8%, delivering trusted data for patients and clinicians alike.
+  columns: 3
+  media: stat
+  center: true
+  tint: true
+  items:
+  - icon: chart
+    kicker: MARD <8%
+    title: Accuracy
+    text: Delivers accurate glucose readings you can trust.
+  - icon: box
+    kicker: All in 1 design
+    title: Simplicity
+    text: No assembly required before use.
+  - icon: clock
+    kicker: 7/24 monitoring
+    title: Continuous coverage
+    text: Stay informed of your glucose levels around the clock.
+  - icon: sensor
+    kicker: 5.6 mm
+    title: Sensor length
+    text: Built for stable sensor placement.
+  - icon: patch
+    kicker: 14 day use
+    title: Long wear time
+    text: Fewer replacements for added convenience.
+  - icon: shield
+    kicker: IPX8
+    title: Waterproof
+    text: Wear confidently while showering or swimming.
+  - icon: arrow
+    kicker: 60 min warmup
+    title: Quick start
+    text: Ready to provide readings after a short setup time.
+  - icon: set
+    kicker: 24.8*4.8 mm
+    title: Coin-sized
+    text: Compact size for discreet everyday wear.
+  - icon: curve
+    kicker: 5 min intervals
+    title: Data frequency
+    text: Receive 1000+ glucose updates throughout the day.
+- type: image-text
+  variant: top
+  headingFirst: true
+  figureBg: '#F5F7FA'
+  title: Inside our EverChek continuous glucose monitor system
+  text: Every CGM component works together to deliver reliable glucose monitoring
+  image: /images/p30-components.webp
+  imageAlt: 'Exploded view of the EverChek continuous glucose monitor system components: applicator, transmitter, sensor,
+    puncture needle, adhesive patch, and sterile tube, showing how each CGM part works together for reliable glucose
+    monitoring.'
+  ratio: 1200/788
+  fit: contain
+- type: compare-table
+  title: Specifications of our sensor & transmitter integrated kit
+  text: Complete technical parameters for our integrated sensor and transmitter, built to meet rigorous medical device
+    standards.
+  columns:
+  - EverChek CGM sensor + transmitter kit
+  highlight: 1
+  rows:
+  - label: Glucose Concentration Detection Range
+    cells:
+    - state: plain
+      text: 2-25mmol/L
+  - label: Transmitter Size (Diameter*Height)
+    cells:
+    - state: plain
+      text: Diameter 24.8mm*4.8mm
+  - label: Sensor Implantation Depth in Vivo
+    cells:
+    - state: plain
+      text: 5.6 mm
+  - label: Transmitter Power Supply
+    cells:
+    - state: plain
+      text: One lithium battery (3V) CR1025
+  - label: Service Life
+    cells:
+    - state: plain
+      text: 14 days
+  - label: Transmitter Memory
+    cells:
+    - state: plain
+      text: It can store data for up to 14 days
+  - label: Operating Temperature
+    cells:
+    - state: plain
+      text: 5-40°C
+  - label: Operating Relative Humidity
+    cells:
+    - state: plain
+      text: 10%-90%RH
+  - label: Atmospheric Pressure
+    cells:
+    - state: plain
+      text: 70-106KPa
+  - label: Startup Time
+    cells:
+    - state: plain
+      text: 60min
+  - label: Wireless Transmission Distance
+    cells:
+    - state: plain
+      text: 10m
+  - label: Waterproof Rating
+    cells:
+    - state: plain
+      text: IPX8
+  - label: Sterilization Method
+    cells:
+    - state: plain
+      text: Irradiation Sterilization
+  - label: Transmission Frequency Band
+    cells:
+    - state: plain
+      text: 2402MHz-2480MHz
+  - label: Modulation Type
+    cells:
+    - state: plain
+      text: GFSK
+  - label: Effective Radiated Power (CMIIT ID)
+    cells:
+    - state: plain
+      text: 0 dBm
+  - label: Transmitter Memory
+    cells:
+    - state: plain
+      text: 'RAM: 96 KB  SiP Flash: 512 KB'
+- type: step-flow
+  title: How to apply and use our EverChek CGM?
+  text: Three simple steps to get started —apply, pair, and monitor glucose data in real time on your smartphone.
+  columns: 3
+  arrows: true
+  center: true
+  tint: true
+  items:
+  - icon: patch
+    title: 'Step 1: Apply'
+    desc: After cleaning your skin, remove the lower cover of the EverChek CGM and place the applicator firmly and vertically
+      on your arm. When you hear a click, the sensor has been successfully applied.
+  - icon: phone
+    title: 'Step 2: Pair & warm-up'
+    desc: Download the EverChek app, scan the QR code, and complete Bluetooth pairing. Wait 1 hour for the sensor warm-up
+      to complete before readings begin.
+  - icon: curve
+    title: 'Step 3: Monitor'
+    desc: View real-time glucose data on your phone and receive high/low alerts. Log daily activities such as diet and
+      exercise and gain clearer insights into your glucose patterns. Remove the transmitter after 14 days.
+- type: card-grid
+  title: Why choose EverChek CGM for your healthcare business?
+  text: In-house R&D, flexible partnership models, and competitive pricing —built to support your CGM business at every
+    stage of growth.
+  columns: 3
+  media: icon
+  center: true
+  items:
+  - icon: factory
+    title: In-house R&D and manufacturing
+    text: We own patents across key CGM technologies, including chips, sensors, and biochemical systems, backed by our
+      2,000 m² factory with a 10,000-class sterile cleanroom. This allows us tighter control over sensor performance,
+      product consistency, and future optimization.
+  - icon: chart
+    title: Cost & supply stability
+    text: By managing core production processes ourselves, we continuously reduce product costs and maintain stable manufacturing
+      capacity for all clients. Scale your business confidently with our competitive pricing, reliable CGM supply and
+      delivery timelines.
+  - icon: handshake
+    title: Flexible cooperation models
+    text: We support SKD for local production and CE registration, OEM rebranding, and distribution partnerships. With
+      technical development, production, and packaging managed internally, we can adapt to different business goals and
+      growth stages rapidly.
+- type: faq
+  title: Frequently asked questions
+  items:
+  - q: What is a CGM monitor?
+    a: CGM stands for Continuous Glucose Monitor. Designed for diabetes management, it is a wearable medical device that
+      continuously measures glucose levels in interstitial fluid. It provides real-time glucose trends for both patients
+      and healthcare providers, beyond single-point measurements.
+  - q: Do EverChek CGM monitors hurt?
+    a: Most users report minimal or no pain. This is because our sensor is inserted using a fast application system,
+      taking merely 0.2 milliseconds.
+  - q: How accurate are EverChek CGM monitors?
+    a: CGM accuracy is typically measured using MARD (Mean Absolute Relative Difference). Our CGMS achieves a MARD of
+      7.94%, which positions us among leading global CGM makers in terms of accuracy. This enables us to support reliable
+      glucose monitoring for clinical and daily use.
+  - q: Is EverChek invasive or non-invasive?
+    a: It is minimally invasive. A thin sensor filament is inserted just under the skin and can be worn for up to 14
+      days. The device is coin-sized and lightweight, designed for stable daily wear with minimal sensation.
+  - q: How's the CE certification progress of your CGM?
+    a: We are currently in the process of obtaining CE certification. For SKD partners, we can also provide technical
+      documentation and support for local regulatory applications. Please feel free to contact us to discuss your project!
+  - q: What is your minimum order quantity (MOQ)?
+    a: Since we develop and manufacture our CGM systems in-house, we're very flexible in cooperation and have no fixed
+      MOQ. For any order size or business need, we can accommodate. Just reach out and let's see how we can support you.
+  - q: What does CGM measure?
+    a: CGM measures glucose levels in the interstitial fluid under the skin, rather than directly from blood. The main
+      advantage is that it provides continuous, real-time glucose readings 24/7. This helps users understand how their
+      glucose changes over time, especially after meals, exercise, and daily activities, also assists in better treatment
+      decisions.
+  - q: What data can be viewed in the app?
+    a: Users can view real-time glucose levels, historical trends, input daily activities, and receive alert notifications
+      and glucose predictions.
+  - q: Can CGM replace fingerstick testing?
+    a: CGM provides continuous glucose trend data, but fingerstick testing may still be needed in certain situations,
+      such as when your symptoms do not match the glucose readings. However, CGMs can greatly reduce the overall need
+      for fingerstick testing.
+  - q: How long does the sensor last?
+    a: The sensor is designed for up to 14 days of continuous use.
+  - q: Can CGM be used in clinical settings?
+    a: Yes. It is suitable for both clinical monitoring and outpatient diabetes management programs. We also offer a
+      dedicated physician app and can adapt our system to different clinical requirements. Contact us to discuss hospital
+      or clinical glucose monitoring needs.
+  - q: Where is the sensor applied?
+    a: The sensor is typically applied to the back of the upper arm, between the biceps and triceps. This area helps
+      reduce the impact of muscle movement and supports stable, consistent readings during daily activities.
+  - q: Can I customize the product or software?
+    a: Surely. We can customize both the product and software based on your specific requirements. Please send us a message
+      so we can discuss your project in detail.
+  - q: Can I customize the CGM under my own brand?
+    a: Yes. We support SKD, OEM and many other partnership models. Contact us and let's talk!
+  - q: How often is glucose reading updated?
+    a: Glucose data is updated every 5 minutes and transmitted to the app in real time.
+  - q: How reliable is the sensor performance over 14 days?
+    a: The sensor is designed to maintain stable performance throughout the full wear period under normal usage conditions.
+  - q: What alerts does the system provide?
+    a: The system provides configurable high and low glucose alerts, as well as trend-based predictions, to help users
+      respond in time.
+- type: cta-banner

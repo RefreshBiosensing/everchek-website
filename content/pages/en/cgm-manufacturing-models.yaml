@@ -14,46 +14,35 @@ sections:
     image: /images/blog-cover-2.webp
     imageAlt: Comparison of OEM, SKD, and ODM CGM manufacturing models
     ratio: 16/9
-  - type: richtext
-    title: Understanding Your Options
+  - type: prose
     blocks:
-      - text: "When entering the CGM market, healthcare brands face an important decision: which manufacturing and partnership model best suits their goals. The four primary models are OEM, ODM, SKD, and CKD, each offering different levels of involvement, investment, and control."
-      - text: Understanding these options helps you make an informed decision that aligns with your business strategy, regulatory approach, and market goals.
-  - type: feature-rows
-    items:
-      - id: oem
-        tag: OEM
-        title: OEM (Original Equipment Manufacturing)
-        desc: In an OEM model, EverChek manufactures the complete CGM product to your specifications. You receive a fully assembled, finished product with your branding, packaging, and labeling. This is ideal for companies that want to launch quickly with minimal operational complexity.
-        bullets:
-          - "Best for: Healthcare brands with established distribution channels who want to add CGM to their product line without investing in manufacturing infrastructure."
-        visual: box
-      - id: odm
-        tag: ODM
-        title: ODM (Original Design Manufacturing)
-        desc: ODM goes a step further, where the manufacturer handles both design and production. You select from existing designs and customize them to your brand. This model offers faster time-to-market since the product design is already validated.
-        bullets:
-          - "Best for: Companies entering the CGM market for the first time who need a proven, market-ready solution with minor customization."
-        visual: cog
-      - id: skd
-        tag: SKD
-        title: SKD (Semi-Knocked Down)
-        desc: In the SKD model, you receive partially assembled CGM components and perform final assembly locally. This approach offers several strategic advantages including reduced import duties, qualification for local government tenders, lower per-unit costs at scale, and gradual technology transfer.
-        bullets:
-          - "Best for: Regional healthcare businesses targeting government contracts or building long-term local manufacturing capacity."
-        visual: set
-      - id: ckd
-        tag: CKD
-        title: CKD (Completely Knocked Down)
-        desc: CKD provides the highest level of local manufacturing. You receive individual components and assemble the complete product locally. This model maximizes local content and offers the greatest control over the production process.
-        bullets:
-          - "Best for: Organizations with existing medical device manufacturing capabilities looking to expand."
-        visual: factory
-  - type: richtext
-    title: Choosing the Right Model
-    blocks:
-      - text: "Your choice depends on several factors: market size, regulatory requirements, local content rules, available investment, and long-term strategy. EverChek offers flexible partnership models that can evolve as your business grows."
-    tint: true
+      - h2: "Understanding Your Options"
+        id: "understanding"
+      - p: "When entering the CGM market, healthcare brands face an important decision: which manufacturing and partnership model best suits their goals. The four primary models are OEM, ODM, SKD, and CKD, each offering different levels of involvement, investment, and control."
+      - p: "Understanding these options helps you make an informed decision that aligns with your business strategy, regulatory approach, and market goals."
+      - figure: "/images/blog-cover-2.webp"
+        alt: "Comparison of OEM, SKD, and ODM CGM manufacturing models"
+        cover: true
+      - h2: "OEM (Original Equipment Manufacturing)"
+        id: "oem"
+      - p: "In an OEM model, EverChek manufactures the complete CGM product to your specifications. You receive a fully assembled, finished product with your branding, packaging, and labeling. This is ideal for companies that want to launch quickly with minimal operational complexity."
+      - p: "<strong>Best for:</strong> Healthcare brands with established distribution channels who want to add CGM to their product line without investing in manufacturing infrastructure."
+      - h2: "ODM (Original Design Manufacturing)"
+        id: "odm"
+      - p: "ODM goes a step further, where the manufacturer handles both design and production. You select from existing designs and customize them to your brand. This model offers faster time-to-market since the product design is already validated."
+      - p: "<strong>Best for:</strong> Companies entering the CGM market for the first time who need a proven, market-ready solution with minor customization."
+      - h2: "SKD (Semi-Knocked Down)"
+        id: "skd"
+      - p: "In the SKD model, you receive partially assembled CGM components and perform final assembly locally. This approach offers several strategic advantages including reduced import duties, qualification for local government tenders, lower per-unit costs at scale, and gradual technology transfer."
+      - p: "<strong>Best for:</strong> Regional healthcare businesses targeting government contracts or building long-term local manufacturing capacity."
+      - h2: "CKD (Completely Knocked Down)"
+        id: "ckd"
+      - p: "CKD provides the highest level of local manufacturing. You receive individual components and assemble the complete product locally. This model maximizes local content and offers the greatest control over the production process."
+      - p: "<strong>Best for:</strong> Organizations with existing medical device manufacturing capabilities looking to expand."
+      - h2: "Choosing the Right Model"
+        id: "choosing"
+      - p: "Your choice depends on several factors: market size, regulatory requirements, local content rules, available investment, and long-term strategy. EverChek offers flexible partnership models that can evolve as your business grows."
+
   - type: link-pills
     label: Keep reading
     items:

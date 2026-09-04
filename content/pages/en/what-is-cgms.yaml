@@ -1,323 +1,258 @@
 title: What is Continuous Glucose Monitoring System (CGMS) for Healthcare?
-description: Understand what a Continuous Glucose Monitoring System (CGMS) is for healthcare businesses, and learn how to enter the market faster with EverChek CGM solutions.
+description: Understand what a Continuous Glucose Monitoring System (CGMS) is for healthcare businesses, and learn how
+  to enter the market faster with EverChek CGM solutions.
 path: /what-is-cgms/
 translationKey: what-is-cgms
 sections:
-  - type: hero
-    variant: centered
-    backgroundImage: /images/5.webp
-    title: What is continuous glucose monitoring system (CGMS)?
-    sub: >-
-      A Continuous Glucose Monitoring System (CGMS) is a medical device that tracks glucose levels in
-      real time through a small wearable sensor placed under the skin. Unlike traditional fingerprick
-      testing, which provides a single glucose reading at one moment, CGMS offers continuous data,
-      showing trends, patterns, and alerts for high or low glucose levels —helping healthcare
-      providers and patients make more informed, proactive treatment decisions.
-    buttons:
-      - label: Contact us
-        href: /contact/
-
-  - type: image-text
-    variant: left
-    title: How does CGMS work?
-    image: /images/cgm-sensor-skin-diagram.svg
-    imageAlt: >-
-      Cross-section of skin showing the CGM sensor filament reaching the interstitial fluid below the
-      epidermis and dermis, with the transmitter sitting on the skin surface
-    ratio: 4/3
-    fit: contain
-    steps:
-      - Once the CGM is applied to your arm, the sensor begins working beneath the skin.
-      - >-
-        The sensor contains biomaterials that react with glucose in the interstitial fluid. These
-        reactions generate biochemical signals, which are detected and converted into glucose values
-        every few minutes.
-      - The transmitter then sends this data to your phone app or receiver.
-      - >-
-        Allowing you to view glucose trends, receive high and low alerts, and monitor changes
-        throughout the day.
-    note: >-
-      Note: Since glucose naturally moves from the bloodstream into the interstitial fluid,
-      interstitial glucose readings closely reflect blood glucose levels.
-    tint: true
-
-  - type: compare-table
-    title: Continuous glucose monitoring VERSUS Traditional glucose testing
-    highlight: 0
-    align: left
-    labelColumn: What you get
-    columns:
-      - CGMS
-      - Traditional glucose testing
-    rows:
-      - label: Glucose values
-        cells:
-          - state: "yes"
-            text: Real-time glucose values
-          - state: "no"
-            text: Single-point measurements
-      - label: Trends
-        cells:
-          - state: "yes"
-            text: Glucose trends
-          - state: "no"
-            text: Isolated glucose readings
-      - label: Alerts
-        cells:
-          - state: "yes"
-            text: High & low glucose alerts
-          - state: "no"
-            text: Manual checking
-      - label: Prevention
-        cells:
-          - state: "yes"
-            text: Predictive alerts & prevention
-          - state: "no"
-            text: Delayed symptom-based response
-      - label: Monitoring cadence
-        cells:
-          - state: "yes"
-            text: Continuous monitoring
-          - state: "no"
-            text: Periodic testing
-      - label: Data history
-        cells:
-          - state: "yes"
-            text: Long-term data visibility
-          - state: "no"
-            text: Limited history
-      - label: Where care happens
-        cells:
-          - state: "yes"
-            text: Remote patient monitoring
-          - state: "no"
-            text: In-clinic tracking
-      - label: Treatment decisions
-        cells:
-          - state: "yes"
-            text: Data-driven treatment decisions
-          - state: "no"
-            text: Snapshot-based medical decisions
-      - label: The record you keep
-        cells:
-          - state: "yes"
-            text: Continuous glucose history
-          - state: "no"
-            text: Individual test results
-
-  - type: card-grid
-    title: Market signals driving CGM growth
-    text: >-
-      The global diabetes epidemic and rising healthcare expenditure are accelerating demand for
-      continuous monitoring solutions.
-    columns: 4
-    media: stat
-    center: true
-    tint: true
-    items:
-      - kicker: 589M+
-        title: Adults worldwide living with diabetes
-        text: >-
-          The number of adults living with diabetes has more than tripled since 2000, driven by aging
-          populations, rising obesity rates, and increasingly sedentary lifestyles across both
-          developed and developing nations.
-        source:
-          label: "Source: IDF Diabetes Atlas"
-          href: https://idf.org/about-diabetes/diabetes-facts-figures/
-      - kicker: $1T+
-        title: Annual global diabetes healthcare expenditure
-        text: >-
-          Diabetes accounts for a significant and growing share of global healthcare spending, covering
-          medications, devices, hospitalizations, and long-term complication management across all
-          regions.
-        source:
-          label: "Source: IDF Diabetes Atlas"
-          href: https://idf.org/about-diabetes/diabetes-facts-figures/
-      - kicker: 853M+
-        title: Projected adults with diabetes by 2050
-        text: >-
-          Without significant intervention, the number of adults with diabetes is projected to continue
-          rising sharply, creating sustained long-term demand for advanced monitoring and management
-          tools.
-        source:
-          label: "Source: IDF Diabetes Atlas"
-          href: https://idf.org/about-diabetes/diabetes-facts-figures/
-      - kicker: $13.4B
-        title: Global CGM market size in 2025
-        text: >-
-          The CGM devices market reached an estimated USD 13.38 billion in 2025, with the US alone
-          accounting for USD 5.6 billion, driven by strong reimbursement policies and growing Type 2
-          diabetes adoption.
-        source:
-          label: "Source: Grand View Research"
-          href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
-      - kicker: 16.3%
-        title: CAGR forecast 2026–2035
-        text: >-
-          The CGM market is projected to grow at a compound annual growth rate of 16.3% from 2026 to
-          2035, outpacing most other medical device segments and reflecting accelerating global
-          adoption.
-        source:
-          label: "Source: GM Insights"
-          href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
-      - kicker: $41.4B
-        title: Projected CGM market size by 2033
-        text: >-
-          The global CGM devices market is forecast to nearly triple from 2025 levels, reaching USD
-          41.41 billion by 2033 as non-invasive technologies and AI-powered analytics drive
-          next-generation adoption.
-        source:
-          label: "Source: Grand View Research"
-          href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
-      - kicker: 50.5%
-        title: Diabetes patients not achieving glycemic targets
-        text: >-
-          Despite advances in treatment, only about half of individuals with diabetes achieve
-          recommended glycemic targets —highlighting the urgent need for better continuous monitoring
-          solutions.
-        source:
-          label: "Source: ADA Clinical Diabetes"
-          href: https://diabetesjournals.org/clinical/article/43/3/399/158023
-      - kicker: 4.2%
-        title: Global diabetes prevalence growth rate
-        text: >-
-          Diabetes prevalence continues to rise at approximately 4.2% annually in developing regions,
-          driven by urbanization, dietary changes, and aging populations —expanding the addressable
-          CGM market.
-        source:
-          label: "Source: IDF Diabetes Atlas"
-          href: https://idf.org/about-diabetes/diabetes-facts-figures/
-
-  - type: card-grid
-    title: Are CGMS worth it for healthcare providers?
-    text: >-
-      Adding CGM to your healthcare portfolio creates clinical and commercial value across multiple
-      dimensions.
-    columns: 3
-    media: icon
-    center: true
-    items:
-      - icon: shield
-        title: Retain market share
-        text: >-
-          As CGM adoption grows, offering CGM solutions helps your business stay competitive in an
-          evolving diabetes care market and meet changing customer expectations.
-      - icon: box
-        title: Expand product category
-        text: >-
-          Add CGM to your existing diabetes, diagnostic, or chronic care portfolio, creating extra
-          value for clients and new opportunities for growth.
-      - icon: chart
-        title: Grow revenue
-        text: >-
-          CGM systems rely on disposable sensors that are typically replaced every 14 days, allowing
-          you to benefit from continuous repeat orders rather than one-time purchases.
-      - icon: heart
-        title: Improve patient treatment
-        text: >-
-          CGM gives you trend-based glucose insights instead of isolated measurements, helping doctors
-          and healthcare teams make informed treatment decisions.
-      - icon: hospital
-        title: Improve clinical efficiency
-        text: >-
-          You can reduce reliance on scattered glucose checks and integrate continuous glucose data
-          into digital health workflows, improving patient monitoring beyond in-person visits.
-      - icon: curve
-        title: Support preventive monitoring
-        text: >-
-          CGM allows care teams to monitor patients' glucose changes continuously, helping identify
-          abnormal patterns before they become more serious.
-
-  - type: card-grid
-    title: How to build your CGM business in no time?
-    text: Choose the partnership model that fits your business stage and capabilities.
-    columns: 3
-    media: icon
-    center: true
-    tint: true
-    items:
-      - icon: cog
-        title: CGM SKD (Semi-Knocked Down)
-        text: >-
-          Partially assembled CGM kits that allow you to complete local assembly, packaging, and
-          labeling under your own brand. Includes regulatory documentation support to help you navigate
-          country-specific compliance requirements.
-      - icon: factory
-        title: CGM OEM (Original Equipment Manufacturing)
-        text: >-
-          Launch your own branded CGM with full system manufacturing handled by EverChek. From sensor
-          production to final packaging, we build the complete product to your specifications while you
-          focus on market development.
-      - icon: globe
-        title: CGM distribution
-        text: >-
-          Become an authorized distributor of EverChek CGM products in your region. No assembly lines
-          or clean rooms needed —simply leverage our ready-to-market products and your local sales
-          network.
-
-  - type: card-grid
-    title: Why work with us?
-    text: >-
-      EverChek brings end-to-end CGM expertise — from R&D to regulatory compliance — to accelerate your
-      market entry.
-    columns: 3
-    media: icon
-    center: true
-    items:
-      - icon: cog
-        title: In-house CGM development
-        text: >-
-          We develop our CGM technology in-house—from sensor design to algorithms and full system
-          integration. This gives you direct technical support, better product control, and a more
-          stable supply chain.
-      - icon: factory
-        title: Manufacturing capability
-        text: >-
-          Our production facilities are built for scalable manufacturing with consistent quality
-          standards. You get reliable supply, predictable lead times, and stable product performance.
-      - icon: phone
-        title: Dedicated software ecosystem
-        text: >-
-          Beyond hardware, we provide both patient and physician applications. You offer a complete CGM
-          solution with connected data, monitoring, and clinical visibility.
-      - icon: doc
-        title: Regulatory support
-        text: >-
-          We support partners with registration preparation, technical documentation, and compliance
-          requirements to simplify local market entry.
-      - icon: set
-        title: Flexible cooperation models
-        text: >-
-          Whether you need SKD, OEM, distribution, or a customized partnership structure, we adapt
-          based on your market goals, regulatory needs, and business stage.
-      - icon: handshake
-        title: Built for long-term partnership
-        text: >-
-          We work as a long-term partner, supporting your growth as your business expands into new
-          markets and larger opportunities.
-
-  - type: link-pills
-    label: Explore
-    items:
-      - label: CGM device specification
-        href: /continuous-glucose-monitor/
-      - label: CGM OEM manufacturing
-        href: /cgm-oem/
-      - label: CGM local assembly & SKD kits
-        href: /cgm-skd/
-      - label: CGM distribution
-        href: /cgm-distribution/
-      - label: White-label CGM patient app
-        href: /cgm-patient-app/
-
-  - type: banner-wide
-    title: Your long-term B2B CGM manufacturing partner
-    text: >-
-      We combine self-developed CGM technologies with scalable manufacturing infrastructure to support
-      healthcare brands worldwide.
-    align: center
-    cta:
-      label: Contact us
-      href: /contact/
-
-  - type: cta-banner
+- type: hero
+  variant: centered
+  backgroundImage: /images/5.webp
+  title: What is continuous glucose monitoring system (CGMS)?
+  sub: A Continuous Glucose Monitoring System (CGMS) is a medical device that tracks glucose levels in real time through
+    a small wearable sensor placed under the skin. Unlike traditional fingerprick testing, which provides a single glucose
+    reading at one moment, CGMS offers continuous data, showing trends, patterns, and alerts for high or low glucose
+    levels —helping healthcare providers and patients make more informed, proactive treatment decisions.
+  buttons:
+  - label: Contact us
+    href: /contact/
+- type: image-text
+  variant: left
+  title: How does CGMS work?
+  image: /images/cgm-sensor-skin-diagram.svg
+  imageAlt: Cross-section of skin showing the CGM sensor filament reaching the interstitial fluid below the epidermis
+    and dermis, with the transmitter sitting on the skin surface
+  ratio: 4/3
+  fit: contain
+  steps:
+  - Once the CGM is applied to your arm, the sensor begins working beneath the skin.
+  - The sensor contains biomaterials that react with glucose in the interstitial fluid. These reactions generate biochemical
+    signals, which are detected and converted into glucose values every few minutes.
+  - The transmitter then sends this data to your phone app or receiver.
+  - Allowing you to view glucose trends, receive high and low alerts, and monitor changes throughout the day.
+  note: 'Note: Since glucose naturally moves from the bloodstream into the interstitial fluid, interstitial glucose readings
+    closely reflect blood glucose levels.'
+  tint: true
+- type: compare-table
+  title: Continuous glucose monitoring VERSUS Traditional glucose testing
+  highlight: 0
+  align: left
+  labelColumn: What you get
+  columns:
+  - CGMS
+  - Traditional glucose testing
+  rows:
+  - label: Glucose values
+    cells:
+    - state: 'yes'
+      text: Real-time glucose values
+    - state: 'no'
+      text: Single-point measurements
+  - label: Trends
+    cells:
+    - state: 'yes'
+      text: Glucose trends
+    - state: 'no'
+      text: Isolated glucose readings
+  - label: Alerts
+    cells:
+    - state: 'yes'
+      text: High & low glucose alerts
+    - state: 'no'
+      text: Manual checking
+  - label: Prevention
+    cells:
+    - state: 'yes'
+      text: Predictive alerts & prevention
+    - state: 'no'
+      text: Delayed symptom-based response
+  - label: Monitoring cadence
+    cells:
+    - state: 'yes'
+      text: Continuous monitoring
+    - state: 'no'
+      text: Periodic testing
+  - label: Data history
+    cells:
+    - state: 'yes'
+      text: Long-term data visibility
+    - state: 'no'
+      text: Limited history
+  - label: Where care happens
+    cells:
+    - state: 'yes'
+      text: Remote patient monitoring
+    - state: 'no'
+      text: In-clinic tracking
+  - label: Treatment decisions
+    cells:
+    - state: 'yes'
+      text: Data-driven treatment decisions
+    - state: 'no'
+      text: Snapshot-based medical decisions
+  - label: The record you keep
+    cells:
+    - state: 'yes'
+      text: Continuous glucose history
+    - state: 'no'
+      text: Individual test results
+- type: card-grid
+  title: Market signals driving CGM growth
+  text: The global diabetes epidemic and rising healthcare expenditure are accelerating demand for continuous monitoring
+    solutions.
+  columns: 4
+  media: stat
+  center: true
+  tint: true
+  items:
+  - kicker: 589M+
+    title: Adults worldwide living with diabetes
+    text: The number of adults living with diabetes has more than tripled since 2000, driven by aging populations, rising
+      obesity rates, and increasingly sedentary lifestyles across both developed and developing nations.
+    source:
+      label: 'Source: IDF Diabetes Atlas'
+      href: https://idf.org/about-diabetes/diabetes-facts-figures/
+  - kicker: $1T+
+    title: Annual global diabetes healthcare expenditure
+    text: Diabetes accounts for a significant and growing share of global healthcare spending, covering medications,
+      devices, hospitalizations, and long-term complication management across all regions.
+    source:
+      label: 'Source: IDF Diabetes Atlas'
+      href: https://idf.org/about-diabetes/diabetes-facts-figures/
+  - kicker: 853M+
+    title: Projected adults with diabetes by 2050
+    text: Without significant intervention, the number of adults with diabetes is projected to continue rising sharply,
+      creating sustained long-term demand for advanced monitoring and management tools.
+    source:
+      label: 'Source: IDF Diabetes Atlas'
+      href: https://idf.org/about-diabetes/diabetes-facts-figures/
+  - kicker: $13.4B
+    title: Global CGM market size in 2025
+    text: The CGM devices market reached an estimated USD 13.38 billion in 2025, with the US alone accounting for USD
+      5.6 billion, driven by strong reimbursement policies and growing Type 2 diabetes adoption.
+    source:
+      label: 'Source: Grand View Research'
+      href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
+  - kicker: 16.3%
+    title: CAGR forecast 2026–2035
+    text: The CGM market is projected to grow at a compound annual growth rate of 16.3% from 2026 to 2035, outpacing
+      most other medical device segments and reflecting accelerating global adoption.
+    source:
+      label: 'Source: GM Insights'
+      href: https://www.gminsights.com/industry-analysis/continuous-glucose-monitoring-market
+  - kicker: $41.4B
+    title: Projected CGM market size by 2033
+    text: The global CGM devices market is forecast to nearly triple from 2025 levels, reaching USD 41.41 billion by
+      2033 as non-invasive technologies and AI-powered analytics drive next-generation adoption.
+    source:
+      label: 'Source: Grand View Research'
+      href: https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market
+  - kicker: 50.5%
+    title: Diabetes patients not achieving glycemic targets
+    text: Despite advances in treatment, only about half of individuals with diabetes achieve recommended glycemic targets
+      —highlighting the urgent need for better continuous monitoring solutions.
+    source:
+      label: 'Source: ADA Clinical Diabetes'
+      href: https://diabetesjournals.org/clinical/article/43/3/399/158023
+  - kicker: 4.2%
+    title: Global diabetes prevalence growth rate
+    text: Diabetes prevalence continues to rise at approximately 4.2% annually in developing regions, driven by urbanization,
+      dietary changes, and aging populations —expanding the addressable CGM market.
+    source:
+      label: 'Source: IDF Diabetes Atlas'
+      href: https://idf.org/about-diabetes/diabetes-facts-figures/
+- type: card-grid
+  title: Are CGMS worth it for healthcare providers?
+  text: Adding CGM to your healthcare portfolio creates clinical and commercial value across multiple dimensions.
+  columns: 3
+  media: icon
+  center: true
+  items:
+  - icon: shield
+    title: Retain market share
+    text: As CGM adoption grows, offering CGM solutions helps your business stay competitive in an evolving diabetes
+      care market and meet changing customer expectations.
+  - icon: box
+    title: Expand product category
+    text: Add CGM to your existing diabetes, diagnostic, or chronic care portfolio, creating extra value for clients
+      and new opportunities for growth.
+  - icon: chart
+    title: Grow revenue
+    text: CGM systems rely on disposable sensors that are typically replaced every 14 days, allowing you to benefit from
+      continuous repeat orders rather than one-time purchases.
+  - icon: heart
+    title: Improve patient treatment
+    text: CGM gives you trend-based glucose insights instead of isolated measurements, helping doctors and healthcare
+      teams make informed treatment decisions.
+  - icon: hospital
+    title: Improve clinical efficiency
+    text: You can reduce reliance on scattered glucose checks and integrate continuous glucose data into digital health
+      workflows, improving patient monitoring beyond in-person visits.
+  - icon: curve
+    title: Support preventive monitoring
+    text: CGM allows care teams to monitor patients' glucose changes continuously, helping identify abnormal patterns
+      before they become more serious.
+- type: card-grid
+  title: How to build your CGM business in no time?
+  text: Choose the partnership model that fits your business stage and capabilities.
+  columns: 3
+  media: icon
+  center: true
+  tint: true
+  items:
+  - icon: cog
+    title: CGM SKD (Semi-Knocked Down)
+    text: Partially assembled CGM kits that allow you to complete local assembly, packaging, and labeling under your
+      own brand. Includes regulatory documentation support to help you navigate country-specific compliance requirements.
+  - icon: factory
+    title: CGM OEM (Original Equipment Manufacturing)
+    text: Launch your own branded CGM with full system manufacturing handled by EverChek. From sensor production to final
+      packaging, we build the complete product to your specifications while you focus on market development.
+  - icon: globe
+    title: CGM distribution
+    text: Become an authorized distributor of EverChek CGM products in your region. No assembly lines or clean rooms
+      needed —simply leverage our ready-to-market products and your local sales network.
+- type: card-grid
+  title: Why work with us?
+  text: EverChek brings end-to-end CGM expertise — from R&D to regulatory compliance — to accelerate your market entry.
+  columns: 3
+  media: icon
+  center: true
+  items:
+  - icon: cog
+    title: In-house CGM development
+    text: We develop our CGM technology in-house—from sensor design to algorithms and full system integration. This gives
+      you direct technical support, better product control, and a more stable supply chain.
+  - icon: factory
+    title: Manufacturing capability
+    text: Our production facilities are built for scalable manufacturing with consistent quality standards. You get reliable
+      supply, predictable lead times, and stable product performance.
+  - icon: phone
+    title: Dedicated software ecosystem
+    text: Beyond hardware, we provide both patient and physician applications. You offer a complete CGM solution with
+      connected data, monitoring, and clinical visibility.
+  - icon: doc
+    title: Regulatory support
+    text: We support partners with registration preparation, technical documentation, and compliance requirements to
+      simplify local market entry.
+  - icon: set
+    title: Flexible cooperation models
+    text: Whether you need SKD, OEM, distribution, or a customized partnership structure, we adapt based on your market
+      goals, regulatory needs, and business stage.
+  - icon: handshake
+    title: Built for long-term partnership
+    text: We work as a long-term partner, supporting your growth as your business expands into new markets and larger
+      opportunities.
+- type: link-pills
+  label: Explore
+  items:
+  - label: CGM device specification
+    href: /continuous-glucose-monitor/
+  - label: CGM OEM manufacturing
+    href: /cgm-oem/
+  - label: CGM local assembly & SKD kits
+    href: /cgm-skd/
+  - label: CGM distribution
+    href: /cgm-distribution/
+  - label: White-label CGM patient app
+    href: /cgm-patient-app/
+- type: cta-banner

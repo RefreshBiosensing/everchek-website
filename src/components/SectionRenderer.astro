@@ -12,7 +12,7 @@
 //   stats-row        统计数字条（也用于规格条/案例概览条）
 //   checklist        打勾清单
 //   text-checks      文字+清单双栏
-//   step-flow        步骤流程条
+//   step-flow        步骤流程条（variant: cards 卡片栅格 / rail 竖向编号轨，原站 process 版式）
 //   feature-rows     图文功能行（交替排列）
 //   compare-table    对比表格
 //   timeline         时间线
@@ -20,6 +20,7 @@
 //   quote            引用/客户证言
 //   logo-wall        Logo 墙
 //   video            视频区
+//   prose            长文正文（h2/h3/h4/p/ul/figure，博客文章用）
 //   richtext         SEO 长文段落
 //   faq              FAQ 折叠（自带 FAQPage 结构化数据）
 //   link-pills       相关链接条
@@ -49,6 +50,7 @@ import Timeline from './blocks/Timeline.astro';
 import CompareTable from './blocks/CompareTable.astro';
 import StepFlow from './blocks/StepFlow.astro';
 import ImageCompare from './blocks/ImageCompare.astro';
+import Prose from './blocks/Prose.astro';
 import DeepSection from './DeepSection.astro';
 import Faq from './Faq.astro';
 
@@ -85,8 +87,8 @@ const IMAGE_TEXT_LAYOUT: Record<string, 'top' | 'left' | 'right'> = {
     case 'card-grid':     return <CardGrid {...props} media={variant ?? props.media} />;
     case 'stats-row':     return <StatsRow {...props} />;
     case 'checklist':     return <Checklist {...props} variant={variant} />;
-    case 'text-checks':   return <TextChecks {...props} />;
-    case 'step-flow':     return <StepFlow {...props} />;
+    case 'text-checks':   return <TextChecks {...props} locale={locale} />;
+    case 'step-flow':     return <StepFlow {...props} variant={variant} />;
     case 'feature-rows':  return <FeatureRows {...props} />;
     case 'compare-table': return <CompareTable {...props} />;
     case 'timeline':      return <Timeline {...props} />;
@@ -94,6 +96,7 @@ const IMAGE_TEXT_LAYOUT: Record<string, 'top' | 'left' | 'right'> = {
     case 'quote':         return <Quote {...props} />;
     case 'logo-wall':     return <LogoWall {...props} />;
     case 'video':         return <VideoBlock {...props} />;
+    case 'prose':         return <Prose {...props} />;
     case 'richtext':      return <DeepSection {...props} />;
     case 'faq':           return <Faq {...props} />;
     case 'link-pills':    return <LinkPills {...props} />;

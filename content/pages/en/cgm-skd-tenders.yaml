@@ -14,49 +14,33 @@ sections:
     image: /images/blog-cover-3.webp
     imageAlt: Government healthcare tender and SKD manufacturing partnership
     ratio: 16/9
-  - type: richtext
-    title: The Government Tender Opportunity
+  - type: prose
     blocks:
-      - text: Government healthcare tenders represent a significant opportunity for medical device companies. Many countries, particularly in Southeast Asia, the Middle East, Africa, and Latin America, are investing heavily in diabetes care infrastructure, including CGM systems.
-      - text: However, winning these tenders requires meeting specific qualification criteria, including local content requirements, technology transfer commitments, and after-sales service capabilities.
-  - type: card-grid
-    title: The SKD Advantage
-    text: The Semi-Knocked Down (SKD) manufacturing model offers a unique competitive edge in government tender bidding.
-    columns: 2
-    media: icon
-    items:
-      - icon: building
-        title: Local Value-Add Requirements
-        text: Many government tenders require a minimum percentage of local value-add. By importing CGM components through the SKD model and performing final assembly locally, you can meet these requirements without building a full manufacturing facility from scratch.
-      - icon: chart
-        title: Reduced Import Duties
-        text: Importing components rather than finished products typically qualifies for lower tariff rates. This cost advantage can be reflected in more competitive tender pricing, improving your bid position.
-      - icon: users
-        title: Local Job Creation
-        text: Government tender evaluation criteria often include local economic impact. SKD assembly operations create local jobs in manufacturing, quality control, and logistics, strengthening your tender application.
-      - icon: doc
-        title: Regulatory Pathway Support
-        text: EverChek provides comprehensive technical documentation and regulatory support for SKD partners, including quality management system documentation, test reports, and compliance materials that simplify local regulatory approval.
-    tint: true
-  - type: richtext
-    title: "Case Study: SKD Success"
-    blocks:
-      - text: A healthcare company in Southeast Asia partnered with EverChek through the SKD model to bid on a national diabetes management program. By establishing a local assembly line and demonstrating technology transfer commitment, they secured a three-year government contract worth over $5 million.
-  - type: step-flow
-    title: Getting Started
-    text: "Entering government tender markets with SKD is a structured process:"
-    columns: 3
-    items:
-      - icon: pin
-        title: Assess target market tender requirements
-      - icon: factory
-        title: Develop local assembly infrastructure
-      - icon: shield
-        title: Establish quality management system
-      - icon: doc
-        title: Prepare tender documentation with manufacturer support
-      - icon: handshake
-        title: Submit competitive bid with SKD cost advantage
+      - h2: "The Government Tender Opportunity"
+        id: "opportunity"
+      - p: "Government healthcare tenders represent a significant opportunity for medical device companies. Many countries, particularly in Southeast Asia, the Middle East, Africa, and Latin America, are investing heavily in diabetes care infrastructure, including CGM systems."
+      - p: "However, winning these tenders requires meeting specific qualification criteria, including local content requirements, technology transfer commitments, and after-sales service capabilities."
+      - figure: "/images/blog-cover-3.webp"
+        alt: "Government healthcare tender and SKD manufacturing partnership"
+        cover: true
+      - h2: "The SKD Advantage"
+        id: "skd-advantage"
+      - p: "The Semi-Knocked Down (SKD) manufacturing model offers a unique competitive edge in government tender bidding."
+      - h3: "Local Value-Add Requirements"
+      - p: "Many government tenders require a minimum percentage of local value-add. By importing CGM components through the SKD model and performing final assembly locally, you can meet these requirements without building a full manufacturing facility from scratch."
+      - h3: "Reduced Import Duties"
+      - p: "Importing components rather than finished products typically qualifies for lower tariff rates. This cost advantage can be reflected in more competitive tender pricing, improving your bid position."
+      - h3: "Local Job Creation"
+      - p: "Government tender evaluation criteria often include local economic impact. SKD assembly operations create local jobs in manufacturing, quality control, and logistics, strengthening your tender application."
+      - h3: "Regulatory Pathway Support"
+      - p: "EverChek provides comprehensive technical documentation and regulatory support for SKD partners, including quality management system documentation, test reports, and compliance materials that simplify local regulatory approval."
+      - h2: "Case Study: SKD Success"
+        id: "success"
+      - p: "A healthcare company in Southeast Asia partnered with EverChek through the SKD model to bid on a national diabetes management program. By establishing a local assembly line and demonstrating technology transfer commitment, they secured a three-year government contract worth over $5 million."
+      - h2: "Getting Started"
+        id: "getting-started"
+      - p: "Entering government tender markets with SKD is a structured process: assess target market tender requirements, develop local assembly infrastructure, establish quality management system, prepare tender documentation with manufacturer support, and submit competitive bid with SKD cost advantage."
+
   - type: link-pills
     label: Keep reading
     items:

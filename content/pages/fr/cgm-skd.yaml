@@ -1,287 +1,304 @@
 title: Montage local de CGM et kits SKD | EverChek
-description: "Kits SKD et appui au montage local pour que votre CGM soit reconnu comme fabriqué localement : appels d'offres, intégration locale, marque propre."
+description: 'Kits SKD et appui au montage local pour que votre CGM soit reconnu comme fabriqué localement : appels d''offres,
+  intégration locale, marque propre.'
 path: /fr/montage-local-cgm/
 translationKey: cgm-skd
 sections:
-  - type: hero
-    variant: standard
-    kicker: SKD · kits CGM semi-démontés
-    title: "Partenaire de montage local de CGM : des kits SKD qui qualifient votre produit comme fabriqué localement"
-    sub: >-
-      Vous voulez bâtir une activité CGM locale sans développer la technologie de zéro ? Un partenariat SKD vous en donne les moyens : votre produit peut être reconnu comme fabriqué localement, ce qui ouvre l'accès aux appels d'offres publics, aux incitations fiscales et à des droits de douane réduits, le tout sous votre propre marque.
-    badges:
-      - Modèle de montage local
-      - Avantages fiscaux et douaniers
-      - Documentation réglementaire
-      - Votre propre marque
-      - Approvisionnement stable en composants
-    buttons:
-      - label: Demander une étude de faisabilité SKD
-        href: /fr/contact/?type=skd
-      - label: Découvrir notre système CGM
-        href: /fr/systeme-mesure-continue-glucose/
-        style: ghost
-
-  - type: image-text
-    variant: left
-    title: Qu'est-ce que le CGM en SKD ?
-    image: /images/skd-intro.webp
-    imageAlt: Kit de montage semi-démonté (SKD) pour CGM présenté à plat — cœur du biocapteur, transmetteur Bluetooth, patch adhésif et applicateur à usage unique
-    ratio: 4/5
-    fit: contain
-    paragraphs:
-      - >-
-        Le CGM en SKD (Semi-Knocked-Down) est un modèle de fabrication utile aux entreprises de santé qui veulent lancer rapidement une marque de CGM tout en satisfaisant des exigences de montage ou de fabrication locale.
-      - >-
-        Au lieu d'importer des produits entièrement finis, vous recevez de notre part des kits partiellement assemblés comprenant le cœur du capteur, le transmetteur et l'applicateur. Vos équipes réalisent localement l'assemblage final, le conditionnement et l'étiquetage avant la mise sur le marché. Nous apportons également un appui technique pour la mise en place de la production et la préparation réglementaire de votre marché.
-    cta:
-      label: Lire le guide du CGM en SKD en langage clair
-      href: /fr/blog/qu-est-ce-que-le-cgm-skd/
-
-  - type: feature-rows
-    ratio: 16/9
-    title: À qui s'adresse le CGM en SKD ?
-    text: >-
-      Quatre profils d'entreprises de santé qui tirent le meilleur parti du modèle de fabrication CGM semi-démonté.
-    items:
-      - visual: image
-        image: /images/skd-audience-1.webp
-        imageAlt: Candidats aux appels d'offres publics remplissant les critères d'intégration locale grâce au montage local de CGM
-        title: Candidats aux appels d'offres publics
-        desc: >-
-          Vous maîtrisez la réglementation locale, mais les règles d'intégration locale bloquent vos produits finis importés ? Dans le cadre d'un partenariat SKD, nous vous aidons à satisfaire toutes les exigences de montage local et vous ouvrons immédiatement une voie conforme pour vous qualifier et remporter les appels d'offres de santé publique.
-        href: /fr/appels-offres-cgm-skd/
-        linkLabel: Le SKD pour les appels d'offres publics
-      - visual: image
-        image: /images/skd-audience-2.webp
-        imageAlt: Marques de santé lançant leurs propres produits CGM dans le cadre d'un partenariat SKD
-        title: Marques de santé
-        desc: >-
-          Vous disposez d'une marque forte, mais les coûts de R&D d'une technologie de capteur développée de zéro vous freinent ? Notre modèle SKD offre un raccourci prêt à assembler pour lancer votre propre marque de CGM tout en conservant la pleine propriété du produit fini.
-      - visual: image
-        image: /images/skd-audience-3.webp
-        imageAlt: Fabricants de dispositifs médicaux assemblant des composants CGM sur une ligne de production locale
-        title: Fabricants de dispositifs médicaux
-        desc: >-
-          Vous possédez des lignes d'assemblage ou des salles blanches et souhaitez exploiter pleinement cette infrastructure ? Ajoutez le CGM à votre gamme grâce à notre modèle SKD et valorisez vos atouts industriels, tout en réduisant vos coûts opérationnels et logistiques locaux.
-      - visual: image
-        image: /images/skd-audience-4.webp
-        imageAlt: Distributeurs établis développant leurs marges avec leur propre marque de CGM grâce au modèle SKD
-        title: Distributeurs établis
-        desc: >-
-          Vous avez un réseau commercial mature, mais vous êtes las de revendre des marques tierces et de subir des guerres de prix qui érodent vos marges ? Passer à notre modèle SKD vous permet de lancer votre propre marque, de supprimer les marges amont et de reprendre la maîtrise totale de vos prix.
-
-  - type: card-grid
-    media: icon
-    columns: 3
-    title: Que comprend notre solution CGM en SKD ?
-    text: >-
-      Tout ce qu'il faut pour assembler, faire homologuer et commercialiser des produits CGM sous votre propre marque — des composants à la documentation.
-    items:
-      - icon: set
-        title: Kits CGM partiellement assemblés
-        text: >-
-          Nous vous fournissons nos puces de capteur haute précision, le PCBA du transmetteur sans fil, les boîtiers, les patchs adhésifs et les blocs batterie, pré-assemblés et prêts pour votre intégration finale.
-      - icon: doc
-        title: Appui documentaire
-        text: >-
-          Vous recevez les documents qui simplifient l'enregistrement réglementaire local : rapports de vérification des performances électroniques, évaluation de la biocompatibilité, ISO 13485, rapports de données d'études cliniques, rapports d'essais aux normes IEC, etc.
-        href: /fr/documentation/
-        linkLabel: Ce que nous publions, et ce qui exige un accord de confidentialité
-      - icon: console
-        title: Accès à l'écosystème logiciel
-        text: >-
-          Une application dédiée au patient ou au médecin est disponible via une connexion API ou SDK, pour le suivi du glucose et l'édition de rapports. Vous pouvez également l'intégrer à votre plateforme de santé numérique.
-        href: /fr/application-patient-cgm/
-        linkLabel: Voir l'application, le SDK et l'API
-      - icon: check
-        title: Cadre de contrôle qualité
-        text: >-
-          Vous recevez les critères d'inspection, les procédures de vérification et les équipements d'essai automatisés nécessaires à une qualité d'assemblage stable. Ils aident vos équipes à valider la performance des composants, à réduire la variabilité d'assemblage et à maintenir une qualité fiable avant libération du produit fini.
-      - icon: box
-        title: Approvisionnement stable en composants CGM
-        text: >-
-          À mesure que votre activité grandit, nous grandissons avec vous. Les livraisons de kits sont planifiées sur la base de vos prévisions glissantes, afin que les composants arrivent aux dates prévues, sans rupture imprévue ni retard de production chez vous. Les données de capacité sont communiquées aux partenaires qualifiés sous accord de confidentialité.
-      - icon: cog
-        title: Consignes d'assemblage et d'étalonnage
-        text: >-
-          Vous recevez les spécifications complètes des kits, les nomenclatures de composants, les recommandations d'équipement de ligne et les procédures opératoires normalisées (SOP) permettant une mise en place efficace de l'assemblage et des flux d'étalonnage constants.
-
-  - type: card-grid
-    media: icon
-    columns: 2
-    dark: true
-    title: Le SKD est-il adapté à votre organisation ?
-    text: >-
-      Le SKD convient le mieux aux organisations qui réunissent déjà les éléments suivants, ou qui sont en voie claire de les obtenir. En cas de doute, nous évaluons volontiers votre situation avec vous.
-    items:
-      - icon: shield
-        title: Une voie vers l'autorisation réglementaire
-        text: >-
-          Une licence locale valide de fabrication ou de distribution de dispositifs médicaux, ou un plan clair pour l'obtenir.
-      - icon: users
-        title: Des circuits de distribution établis
-        text: >-
-          Des relations existantes avec des cliniques, des chaînes de pharmacies ou des plateformes qui servent les patients diabétiques.
-      - icon: doc
-        title: Une capacité d'exécution réglementaire
-        text: >-
-          Une bonne connaissance de l'enregistrement local des dispositifs médicaux : vous pilotez la démarche, nous fournissons la documentation.
-      - icon: building
-        title: Un site d'assemblage
-        text: >-
-          L'accès à des installations d'assemblage conformes aux standards des dispositifs médicaux et à une salle blanche pour l'intégration finale et le conditionnement.
-
-  - type: step-flow
-    columns: 1
-    title: Comment se déroule un partenariat SKD
-    text: >-
-      Du premier cadrage à l'approvisionnement continu — un parcours clair en cinq étapes pour lancer votre activité CGM localement.
-    items:
-      - icon: doc
-        title: Cadrage du besoin et étude de faisabilité
-        desc: >-
-          Vous transmettez votre présentation d'entreprise, votre plan de marché cible et vos ressources disponibles, en vue d'une évaluation de faisabilité commune.
-      - icon: shield
-        title: Signature de l'accord de confidentialité et évaluation approfondie
-        desc: >-
-          Signature de l'accord de confidentialité, puis évaluation d'un kit d'échantillon et analyse de faisabilité réglementaire locale.
-      - icon: handshake
-        title: Conclusion du contrat
-        desc: >-
-          Définition de la configuration des kits, des prix, du MOQ, du périmètre de marque, des standards d'assemblage et des limites du support.
-      - icon: box
-        title: Première expédition et montée en compétence
-        desc: >-
-          Livraison des kits SKD accompagnés des supports de formation, de la documentation réglementaire et des SOP d'assemblage.
-      - icon: globe
-        title: Homologation locale et approvisionnement continu
-        desc: >-
-          Le partenaire pilote l'homologation et le lancement commercial ; nous assurons un approvisionnement continu.
-
-  - type: compare-table
-    title: Spécifications techniques du CGM en SKD
-    text: >-
-      Nomenclature détaillée et spécifications matérielles à l'usage des partenaires qui évaluent le modèle CGM en SKD.
-    labelColumn: Module / composant SKD
-    columns:
-      - Description
-      - Format livré
-    highlight: -1
-    align: left
-    rows:
-      - label: Filament d'électrode du biocapteur
-        cells:
-          - state: plain
-            text: Électrode revêtue de glucose oxydase, étalonnée en usine avec un code propre au lot
-          - state: plain
-            text: Ensemble filament pré-stérilisé, à usage unique
-      - label: PCBA Bluetooth Low Energy
-        cells:
-          - state: plain
-            text: Puce Bluetooth Low Energy intégrée, transmission de données à très faible consommation, antenne embarquée
-          - state: plain
-            text: Carte PCB pré-assemblée avec micrologiciel
-      - label: Boîtier de base du capteur
-        cells:
-          - state: plain
-            text: "Polycarbonate de qualité médicale, boîtier résistant à l'eau — [TODO: IP rating — site currently says both IPX8 and IP28]"
-          - state: plain
-            text: Coque non stérilisée, assemblage par encliquetage
-      - label: Ensemble patch adhésif
-        cells:
-          - state: plain
-            text: Adhésif silicone de qualité médicale, respirant, port de 14 jours
-          - state: plain
-            text: Prédécoupé, conditionné à l'unité
-      - label: Applicateur / mécanisme d'insertion
-        cells:
-          - state: plain
-            text: Insertion à ressort, profondeur maîtrisée pour une pose sous-cutanée
-          - state: plain
-            text: Mécanisme pré-assemblé, à usage unique
-      - label: Bloc batterie
-        cells:
-          - state: plain
-            text: Pile CR, fils pré-soudés
-          - state: plain
-            text: Pile bouton standard
-
-  - type: compare-table
-    tint: true
-    title: Prérequis de fabrication
-    text: >-
-      Ce que votre site doit avoir en place avant la première expédition SKD. Si un élément de cette liste vous manque, dites-le nous : plusieurs partenaires l'ont mis en place pendant la phase de faisabilité.
-    labelColumn: Exigence
-    columns:
-      - Spécification
-    highlight: -1
-    align: left
-    rows:
-      - label: Classe de salle blanche
-        cells:
-          - state: plain
-            text: Classe 10 000 (ISO 8) ou supérieure recommandée pour l'assemblage du boîtier de capteur
-      - label: Équipement de stérilisation
-        cells:
-          - state: plain
-            text: "Capacité validée de stérilisation terminale du dispositif fini — [TODO: sterilization method — the site currently states two different methods]"
-      - label: Banc d'étalonnage
-        cells:
-          - state: plain
-            text: Station de flashage d'étalonnage par lot, fournie par EverChek
-      - label: Management de la qualité
-        cells:
-          - state: plain
-            text: Certification ISO 13485 ou système qualité équivalent
-      - label: Personnel formé
-        cells:
-          - state: plain
-            text: Formation de base aux protocoles de salle blanche ; la SOP d'assemblage complète est fournie
-
-  - type: banner-wide
-    align: center
-    height: short
-    title: Votre partenaire B2B de fabrication CGM sur le long terme
-    text: >-
-      Nous associons des technologies CGM développées en interne à une infrastructure de fabrication évolutive, au service des marques de santé du monde entier. Indiquez-nous votre marché, votre situation en matière de licence et votre site d'assemblage : nous vous dirons si le SKD y est réaliste.
-    cta:
-      label: Demander une étude de faisabilité SKD
-      href: /fr/contact/?type=skd
-    cta2:
-      label: Comparer OEM, ODM et SKD
-      href: /fr/modeles-de-fabrication-cgm/
-
-  - type: faq
-    title: Questions fréquentes
-    items:
-      - q: Est-il difficile d'assembler un kit CGM en SKD ?
-        a: >-
-          L'assemblage est très simple. Chaque composant est doté d'un système d'encliquetage et un clic audible confirme la bonne mise en place de chaque pièce. Nous fournissons par ailleurs des instructions détaillées, des consignes de salle blanche, des procédures d'assurance qualité et une formation, pour un assemblage fluide et une performance fiable du dispositif.
-      - q: Quelle est la différence entre le CGM en OEM et le CGM en SKD ?
-        a: >-
-          En OEM, nous fabriquons pour vous des dispositifs CGM entièrement finis et prêts à l'emploi, que vous commercialisez sous votre propre marque. La certification réglementaire du dispositif fini reste sous notre responsabilité et vous opérez selon un modèle distributeur/importateur. [TODO: CE status] En SKD, nous vous expédions des composants séparés : capteur, transmetteur, patch adhésif et applicateur. Vous les assemblez localement, ce qui réduit le volume expédié et abaisse les droits de douane, le SKD bénéficiant souvent de taux réduits. En contrepartie, vous devez obtenir votre propre licence locale de fabrication ou d'assemblage, réaliser les contrôles qualité finaux et assumer l'entière responsabilité réglementaire des produits CGM finis sur votre marché. L'OEM est plus simple, mais relativement plus coûteux. Le SKD est plus souple et peut réduire les droits d'importation ou satisfaire aux exigences de « fabriqué dans le pays », mais il ajoute des obligations réglementaires et de contrôle qualité.
-      - q: Proposez-vous un accompagnement réglementaire pour le SKD ?
-        a: >-
-          Oui. Pour nos partenaires SKD, nous fournissons la documentation technique et l'appui nécessaires à votre demande d'homologation locale : rapports de vérification des performances, évaluation de la biocompatibilité, preuves ISO 13485 et rapports d'essais aux normes IEC. Vous pilotez le dépôt sur votre marché ; nous fournissons le dossier qui le soutient.
-      - q: Puis-je obtenir l'exclusivité du marché sur un modèle CGM en SKD ?
-        a: >-
-          Oui, les partenariats CGM en SKD sont structurés avec une exclusivité régionale ou nationale, afin de protéger votre position sur le marché.
-
-  - type: link-pills
-    label: À lire aussi
-    items:
-      - label: Fabrication CGM en OEM
-        href: /fr/cgm-oem/
-      - label: Le SKD pour les appels d'offres publics
-        href: /fr/appels-offres-cgm-skd/
-      - label: Qu'est-ce que le CGM en SKD ?
-        href: /fr/blog/qu-est-ce-que-le-cgm-skd/
-      - label: OEM, ODM ou SKD
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: Le système CGM
-        href: /fr/systeme-mesure-continue-glucose/
-      - label: Documentation et transparence
-        href: /fr/documentation/
-
-  - type: cta-banner
+- type: hero
+  variant: standard
+  kicker: SKD · kits CGM semi-démontés
+  title: 'Partenaire de montage local de CGM : des kits SKD qui qualifient votre produit comme fabriqué localement'
+  sub: 'Vous voulez bâtir une activité CGM locale sans développer la technologie de zéro ? Un partenariat SKD vous en
+    donne les moyens : votre produit peut être reconnu comme fabriqué localement, ce qui ouvre l''accès aux appels d''offres
+    publics, aux incitations fiscales et à des droits de douane réduits, le tout sous votre propre marque.'
+  badges:
+  - Modèle de montage local
+  - Avantages fiscaux et douaniers
+  - Documentation réglementaire
+  - Votre propre marque
+  - Approvisionnement stable en composants
+  buttons:
+  - label: Demander une étude de faisabilité SKD
+    href: /fr/contact/?type=skd
+  - label: Découvrir notre système CGM
+    href: /fr/systeme-mesure-continue-glucose/
+    style: ghost
+- type: image-text
+  variant: left
+  title: Qu'est-ce que le CGM en SKD ?
+  image: /images/skd-intro.webp
+  imageAlt: Kit de montage semi-démonté (SKD) pour CGM présenté à plat — cœur du biocapteur, transmetteur Bluetooth,
+    patch adhésif et applicateur à usage unique
+  ratio: 4/5
+  fit: contain
+  paragraphs:
+  - Le CGM en SKD (Semi-Knocked-Down) est un modèle de fabrication utile aux entreprises de santé qui veulent lancer
+    rapidement une marque de CGM tout en satisfaisant des exigences de montage ou de fabrication locale.
+  - Au lieu d'importer des produits entièrement finis, vous recevez de notre part des kits partiellement assemblés comprenant
+    le cœur du capteur, le transmetteur et l'applicateur. Vos équipes réalisent localement l'assemblage final, le conditionnement
+    et l'étiquetage avant la mise sur le marché. Nous apportons également un appui technique pour la mise en place de
+    la production et la préparation réglementaire de votre marché.
+  cta:
+    label: Lire le guide du CGM en SKD en langage clair
+    href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+- type: feature-rows
+  ratio: 16/9
+  title: À qui s'adresse le CGM en SKD ?
+  text: Quatre profils d'entreprises de santé qui tirent le meilleur parti du modèle de fabrication CGM semi-démonté.
+  items:
+  - visual: image
+    image: /images/diagrams/skd-1-tenders.svg
+    imageAlt: Candidats aux appels d'offres publics remplissant les critères d'intégration locale grâce au montage local
+      de CGM
+    title: Candidats aux appels d'offres publics
+    desc: Vous maîtrisez la réglementation locale, mais les règles d'intégration locale bloquent vos produits finis importés ?
+      Dans le cadre d'un partenariat SKD, nous vous aidons à satisfaire toutes les exigences de montage local et vous
+      ouvrons immédiatement une voie conforme pour vous qualifier et remporter les appels d'offres de santé publique.
+    href: /fr/appels-offres-cgm-skd/
+    linkLabel: Le SKD pour les appels d'offres publics
+  - visual: image
+    image: /images/diagrams/skd-2-brands.svg
+    imageAlt: Marques de santé lançant leurs propres produits CGM dans le cadre d'un partenariat SKD
+    title: Marques de santé
+    desc: Vous disposez d'une marque forte, mais les coûts de R&D d'une technologie de capteur développée de zéro vous
+      freinent ? Notre modèle SKD offre un raccourci prêt à assembler pour lancer votre propre marque de CGM tout en
+      conservant la pleine propriété du produit fini.
+  - visual: image
+    image: /images/diagrams/skd-3-manufacturers.svg
+    imageAlt: Fabricants de dispositifs médicaux assemblant des composants CGM sur une ligne de production locale
+    title: Fabricants de dispositifs médicaux
+    desc: Vous possédez des lignes d'assemblage ou des salles blanches et souhaitez exploiter pleinement cette infrastructure ?
+      Ajoutez le CGM à votre gamme grâce à notre modèle SKD et valorisez vos atouts industriels, tout en réduisant vos
+      coûts opérationnels et logistiques locaux.
+  - visual: image
+    image: /images/diagrams/skd-4-distributors.svg
+    imageAlt: Distributeurs établis développant leurs marges avec leur propre marque de CGM grâce au modèle SKD
+    title: Distributeurs établis
+    desc: Vous avez un réseau commercial mature, mais vous êtes las de revendre des marques tierces et de subir des guerres
+      de prix qui érodent vos marges ? Passer à notre modèle SKD vous permet de lancer votre propre marque, de supprimer
+      les marges amont et de reprendre la maîtrise totale de vos prix.
+  fit: contain
+- type: card-grid
+  media: icon
+  columns: 3
+  title: Que comprend notre solution CGM en SKD ?
+  text: Tout ce qu'il faut pour assembler, faire homologuer et commercialiser des produits CGM sous votre propre marque
+    — des composants à la documentation.
+  items:
+  - icon: set
+    title: Kits CGM partiellement assemblés
+    text: Nous vous fournissons nos puces de capteur haute précision, le PCBA du transmetteur sans fil, les boîtiers,
+      les patchs adhésifs et les blocs batterie, pré-assemblés et prêts pour votre intégration finale.
+  - icon: doc
+    title: Appui documentaire
+    text: 'Vous recevez les documents qui simplifient l''enregistrement réglementaire local : rapports de vérification
+      des performances électroniques, évaluation de la biocompatibilité, ISO 13485, rapports de données d''études cliniques,
+      rapports d''essais aux normes IEC, etc.'
+    href: /fr/documentation/
+    linkLabel: Ce que nous publions, et ce qui exige un accord de confidentialité
+  - icon: console
+    title: Accès à l'écosystème logiciel
+    text: Une application dédiée au patient ou au médecin est disponible via une connexion API ou SDK, pour le suivi
+      du glucose et l'édition de rapports. Vous pouvez également l'intégrer à votre plateforme de santé numérique.
+    href: /fr/application-patient-cgm/
+    linkLabel: Voir l'application, le SDK et l'API
+  - icon: check
+    title: Cadre de contrôle qualité
+    text: Vous recevez les critères d'inspection, les procédures de vérification et les équipements d'essai automatisés
+      nécessaires à une qualité d'assemblage stable. Ils aident vos équipes à valider la performance des composants,
+      à réduire la variabilité d'assemblage et à maintenir une qualité fiable avant libération du produit fini.
+  - icon: box
+    title: Approvisionnement stable en composants CGM
+    text: À mesure que votre activité grandit, nous grandissons avec vous. Les livraisons de kits sont planifiées sur
+      la base de vos prévisions glissantes, afin que les composants arrivent aux dates prévues, sans rupture imprévue
+      ni retard de production chez vous. Les données de capacité sont communiquées aux partenaires qualifiés sous accord
+      de confidentialité.
+  - icon: cog
+    title: Consignes d'assemblage et d'étalonnage
+    text: Vous recevez les spécifications complètes des kits, les nomenclatures de composants, les recommandations d'équipement
+      de ligne et les procédures opératoires normalisées (SOP) permettant une mise en place efficace de l'assemblage
+      et des flux d'étalonnage constants.
+- type: card-grid
+  media: icon
+  columns: 2
+  dark: true
+  title: Le SKD est-il adapté à votre organisation ?
+  text: Le SKD convient le mieux aux organisations qui réunissent déjà les éléments suivants, ou qui sont en voie claire
+    de les obtenir. En cas de doute, nous évaluons volontiers votre situation avec vous.
+  items:
+  - icon: shield
+    title: Une voie vers l'autorisation réglementaire
+    text: Une licence locale valide de fabrication ou de distribution de dispositifs médicaux, ou un plan clair pour
+      l'obtenir.
+  - icon: users
+    title: Des circuits de distribution établis
+    text: Des relations existantes avec des cliniques, des chaînes de pharmacies ou des plateformes qui servent les patients
+      diabétiques.
+  - icon: doc
+    title: Une capacité d'exécution réglementaire
+    text: 'Une bonne connaissance de l''enregistrement local des dispositifs médicaux : vous pilotez la démarche, nous
+      fournissons la documentation.'
+  - icon: building
+    title: Un site d'assemblage
+    text: L'accès à des installations d'assemblage conformes aux standards des dispositifs médicaux et à une salle blanche
+      pour l'intégration finale et le conditionnement.
+- type: step-flow
+  variant: rail
+  title: Comment se déroule un partenariat SKD
+  text: Du premier cadrage à l'approvisionnement continu — un parcours clair en cinq étapes pour lancer votre activité
+    CGM localement.
+  items:
+  - icon: doc
+    title: Cadrage du besoin et étude de faisabilité
+    desc: Vous transmettez votre présentation d'entreprise, votre plan de marché cible et vos ressources disponibles,
+      en vue d'une évaluation de faisabilité commune.
+  - icon: shield
+    title: Signature de l'accord de confidentialité et évaluation approfondie
+    desc: Signature de l'accord de confidentialité, puis évaluation d'un kit d'échantillon et analyse de faisabilité
+      réglementaire locale.
+  - icon: handshake
+    title: Conclusion du contrat
+    desc: Définition de la configuration des kits, des prix, du MOQ, du périmètre de marque, des standards d'assemblage
+      et des limites du support.
+  - icon: box
+    title: Première expédition et montée en compétence
+    desc: Livraison des kits SKD accompagnés des supports de formation, de la documentation réglementaire et des SOP
+      d'assemblage.
+  - icon: globe
+    title: Homologation locale et approvisionnement continu
+    desc: Le partenaire pilote l'homologation et le lancement commercial ; nous assurons un approvisionnement continu.
+- type: compare-table
+  title: Spécifications techniques du CGM en SKD
+  text: Nomenclature détaillée et spécifications matérielles à l'usage des partenaires qui évaluent le modèle CGM en
+    SKD.
+  labelColumn: Module / composant SKD
+  columns:
+  - Description
+  - Format livré
+  highlight: -1
+  align: left
+  rows:
+  - label: Filament d'électrode du biocapteur
+    cells:
+    - state: plain
+      text: Électrode revêtue de glucose oxydase, étalonnée en usine avec un code propre au lot
+    - state: plain
+      text: Ensemble filament pré-stérilisé, à usage unique
+  - label: PCBA Bluetooth Low Energy
+    cells:
+    - state: plain
+      text: Puce Bluetooth Low Energy intégrée, transmission de données à très faible consommation, antenne embarquée
+    - state: plain
+      text: Carte PCB pré-assemblée avec micrologiciel
+  - label: Boîtier de base du capteur
+    cells:
+    - state: plain
+      text: 'Polycarbonate de qualité médicale, boîtier résistant à l''eau — [TODO: IP rating — site currently says both
+        IPX8 and IP28]'
+    - state: plain
+      text: Coque non stérilisée, assemblage par encliquetage
+  - label: Ensemble patch adhésif
+    cells:
+    - state: plain
+      text: Adhésif silicone de qualité médicale, respirant, port de 14 jours
+    - state: plain
+      text: Prédécoupé, conditionné à l'unité
+  - label: Applicateur / mécanisme d'insertion
+    cells:
+    - state: plain
+      text: Insertion à ressort, profondeur maîtrisée pour une pose sous-cutanée
+    - state: plain
+      text: Mécanisme pré-assemblé, à usage unique
+  - label: Bloc batterie
+    cells:
+    - state: plain
+      text: Pile CR, fils pré-soudés
+    - state: plain
+      text: Pile bouton standard
+- type: compare-table
+  tint: true
+  title: Prérequis de fabrication
+  text: 'Ce que votre site doit avoir en place avant la première expédition SKD. Si un élément de cette liste vous manque,
+    dites-le nous : plusieurs partenaires l''ont mis en place pendant la phase de faisabilité.'
+  labelColumn: Exigence
+  columns:
+  - Spécification
+  highlight: -1
+  align: left
+  rows:
+  - label: Classe de salle blanche
+    cells:
+    - state: plain
+      text: Classe 10 000 (ISO 8) ou supérieure recommandée pour l'assemblage du boîtier de capteur
+  - label: Équipement de stérilisation
+    cells:
+    - state: plain
+      text: 'Capacité validée de stérilisation terminale du dispositif fini — [TODO: sterilization method — the site
+        currently states two different methods]'
+  - label: Banc d'étalonnage
+    cells:
+    - state: plain
+      text: Station de flashage d'étalonnage par lot, fournie par EverChek
+  - label: Management de la qualité
+    cells:
+    - state: plain
+      text: Certification ISO 13485 ou système qualité équivalent
+  - label: Personnel formé
+    cells:
+    - state: plain
+      text: Formation de base aux protocoles de salle blanche ; la SOP d'assemblage complète est fournie
+- type: banner-wide
+  align: center
+  height: short
+  title: Votre partenaire B2B de fabrication CGM sur le long terme
+  text: 'Nous associons des technologies CGM développées en interne à une infrastructure de fabrication évolutive, au
+    service des marques de santé du monde entier. Indiquez-nous votre marché, votre situation en matière de licence et
+    votre site d''assemblage : nous vous dirons si le SKD y est réaliste.'
+  cta:
+    label: Demander une étude de faisabilité SKD
+    href: /fr/contact/?type=skd
+  cta2:
+    label: Comparer OEM, ODM et SKD
+    href: /fr/modeles-de-fabrication-cgm/
+- type: faq
+  title: Questions fréquentes
+  items:
+  - q: Est-il difficile d'assembler un kit CGM en SKD ?
+    a: L'assemblage est très simple. Chaque composant est doté d'un système d'encliquetage et un clic audible confirme
+      la bonne mise en place de chaque pièce. Nous fournissons par ailleurs des instructions détaillées, des consignes
+      de salle blanche, des procédures d'assurance qualité et une formation, pour un assemblage fluide et une performance
+      fiable du dispositif.
+  - q: Quelle est la différence entre le CGM en OEM et le CGM en SKD ?
+    a: 'En OEM, nous fabriquons pour vous des dispositifs CGM entièrement finis et prêts à l''emploi, que vous commercialisez
+      sous votre propre marque. La certification réglementaire du dispositif fini reste sous notre responsabilité et
+      vous opérez selon un modèle distributeur/importateur. [TODO: CE status] En SKD, nous vous expédions des composants
+      séparés : capteur, transmetteur, patch adhésif et applicateur. Vous les assemblez localement, ce qui réduit le
+      volume expédié et abaisse les droits de douane, le SKD bénéficiant souvent de taux réduits. En contrepartie, vous
+      devez obtenir votre propre licence locale de fabrication ou d''assemblage, réaliser les contrôles qualité finaux
+      et assumer l''entière responsabilité réglementaire des produits CGM finis sur votre marché. L''OEM est plus simple,
+      mais relativement plus coûteux. Le SKD est plus souple et peut réduire les droits d''importation ou satisfaire
+      aux exigences de « fabriqué dans le pays », mais il ajoute des obligations réglementaires et de contrôle qualité.'
+  - q: Proposez-vous un accompagnement réglementaire pour le SKD ?
+    a: 'Oui. Pour nos partenaires SKD, nous fournissons la documentation technique et l''appui nécessaires à votre demande
+      d''homologation locale : rapports de vérification des performances, évaluation de la biocompatibilité, preuves
+      ISO 13485 et rapports d''essais aux normes IEC. Vous pilotez le dépôt sur votre marché ; nous fournissons le dossier
+      qui le soutient.'
+  - q: Puis-je obtenir l'exclusivité du marché sur un modèle CGM en SKD ?
+    a: Oui, les partenariats CGM en SKD sont structurés avec une exclusivité régionale ou nationale, afin de protéger
+      votre position sur le marché.
+- type: link-pills
+  label: À lire aussi
+  items:
+  - label: Fabrication CGM en OEM
+    href: /fr/cgm-oem/
+  - label: Le SKD pour les appels d'offres publics
+    href: /fr/appels-offres-cgm-skd/
+  - label: Qu'est-ce que le CGM en SKD ?
+    href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+  - label: OEM, ODM ou SKD
+    href: /fr/modeles-de-fabrication-cgm/
+  - label: Le système CGM
+    href: /fr/systeme-mesure-continue-glucose/
+  - label: Documentation et transparence
+    href: /fr/documentation/
+- type: cta-banner

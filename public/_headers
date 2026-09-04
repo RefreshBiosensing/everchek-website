@@ -1,6 +1,21 @@
-/*.html
-  Link: </.well-known/agent-skills/index.json>; rel="service-meta"; type="application/json"
-  X-Robots-Tag: all
+# Cloudflare Pages response headers.
 
-/*.json
-  Access-Control-Allow-Origin: *
+# Hashed build output and images never change under the same URL.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/blog/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/diagrams/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pages themselves are cheap to rebuild and must not go stale after a deploy.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()

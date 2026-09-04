@@ -1,0 +1,147 @@
+---
+// Distributor enquiry form — the "Get in touch" panel from the original
+// /cgm-distribution page. Its field set is deliberately different from the main
+// contact form: a distributor conversation starts with a phone number, and it
+// does not ask for volumes or an enquiry type at this stage.
+//
+// Posts to the same Pages Function as every other form, so attribution and the
+// GA4 conversion event behave identically.
+interface Props {
+  heading?: string;
+  locale?: string;
+}
+const { heading = 'Get in touch', locale = 'en' } = Astro.props;
+---
+<form class="pf" id="partner-form" novalidate>
+  <h3 class="pf-title">{heading}</h3>
+
+  <div class="pf-row">
+    <label class="pf-field">
+      <span class="pf-label">Name</span>
+      <input name="name" type="text" required autocomplete="name" />
+    </label>
+    <label class="pf-field">
+      <span class="pf-label">E-mail</span>
+      <input name="email" type="email" required autocomplete="email" />
+    </label>
+  </div>
+
+  <div class="pf-row">
+    <label class="pf-field">
+      <span class="pf-label">Country</span>
+      <input name="country" type="text" required autocomplete="country-name" />
+    </label>
+    <label class="pf-field">
+      <span class="pf-label">Phone</span>
+      <input name="phone" type="tel" autocomplete="tel" />
+    </label>
+  </div>
+
+  <label class="pf-field">
+    <span class="pf-label">Message</span>
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <!-- Honeypot: humans never fill this in -->
+  <div class="pf-hp" aria-hidden="true">
+    <label>Website<input name="website" type="text" tabindex="-1" autocomplete="off" /></label>
+  </div>
+  <input type="hidden" name="inquiry_type" value="Distribution" />
+  <input type="hidden" name="source_page" />
+  <input type="hidden" name="landing_page" />
+  <input type="hidden" name="referrer" />
+  <input type="hidden" name="utm" />
+  <input type="hidden" name="locale" value={locale} />
+
+  <button class="btn primary pf-submit" type="submit" data-label="Send" data-sending="Sending…">Send</button>
+  <div class="pf-status" hidden>
+    <p class="pf-ok" hidden>Thank you — your enquiry has been sent. We reply within 24 hours.</p>
+    <p class="pf-err" hidden>Something went wrong. Please email us directly at <a href="mailto:contact@ever-chek.com">contact@ever-chek.com</a></p>
+  </div>
+</form>
+
+<script>
+  const form = document.getElementById('partner-form') as HTMLFormElement | null;
+  const status = form?.querySelector('.pf-status') as HTMLElement | null;
+  const okEl = form?.querySelector('.pf-ok') as HTMLElement | null;
+  const errEl = form?.querySelector('.pf-err') as HTMLElement | null;
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const btn = form.querySelector('.pf-submit') as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = btn.dataset.sending ?? '…';
+
+    const params = new URLSearchParams(location.search);
+    const set = (n: string, v: string) => {
+      const el = form.querySelector(`[name="${n}"]`) as HTMLInputElement | null;
+      if (el) el.value = v;
+    };
+    let landing = '';
+    try { landing = sessionStorage.getItem('ec_landing') || ''; } catch {}
+    set('source_page', location.pathname + location.search);
+    set('landing_page', landing || location.pathname);
+    set('referrer', document.referrer || 'direct');
+    set('utm', ['utm_source', 'utm_medium', 'utm_campaign', 'src', 'inquiry']
+      .map((k) => (params.get(k) ? `${k}=${params.get(k)}` : '')).filter(Boolean).join(' · '));
+
+    const data = Object.fromEntries(new FormData(form).entries());
+    try {
+      const res = await fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      (window as any).gtag?.('event', 'generate_lead', {
+        form_source: 'distribution',
+        inquiry_type: 'Distribution',
+        country: (data as any).country ?? '',
+        page_path: location.pathname,
+      });
+      status?.removeAttribute('hidden');
+      okEl?.removeAttribute('hidden');
+      errEl?.setAttribute('hidden', '');
+      form.reset();
+    } catch {
+      status?.removeAttribute('hidden');
+      errEl?.removeAttribute('hidden');
+      okEl?.setAttribute('hidden', '');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = btn.dataset.label ?? 'Send';
+    }
+  });
+</script>
+
+<style>
+  .pf {
+    display: flex; flex-direction: column; gap: 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(24px, 3vw, 34px);
+  }
+  .pf-title { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 2px; }
+  .pf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pf-field { display: flex; flex-direction: column; gap: 6px; }
+  .pf-label { font-size: 13px; font-weight: 600; color: var(--mid); }
+  .pf input, .pf textarea {
+    font: inherit; font-size: 14.5px; color: var(--ink);
+    padding: 11px 13px;
+    border: 1px solid var(--border); border-radius: var(--radius-sm);
+    background: var(--white); width: 100%;
+  }
+  .pf input:focus-visible, .pf textarea:focus-visible {
+    outline: 2px solid var(--ec-blue-600); outline-offset: 1px; border-color: transparent;
+  }
+  .pf textarea { resize: vertical; min-height: 110px; }
+  .pf-submit { align-self: flex-start; }
+  .pf-hp { position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden; }
+  .pf-status p { font-size: 14px; margin-top: 4px; }
+  .pf-ok { color: var(--ok); }
+  .pf-err { color: var(--bad); }
+  .pf-err a { color: inherit; text-decoration: underline; }
+  @media (max-width: 620px) { .pf-row { grid-template-columns: 1fr; } }
+</style>

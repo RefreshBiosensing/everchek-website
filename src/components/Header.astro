@@ -6,7 +6,8 @@ const { locale = 'en' } = Astro.props;
 
 const common = loadDict(locale);
 const { nav, cta, brand } = common;
-const menus = [nav.product, nav.solutions, nav.business, nav.resources];
+// Same four menus, in the same order, as the original nav.html
+const menus = [nav.cgms, nav.product, nav.solutions, nav.business].filter(Boolean);
 const currentPath = Astro.url.pathname;
 // Highlight the menu whose section root matches the current URL.
 // Roots come from the dictionary so localised URL prefixes still work.
@@ -112,9 +113,9 @@ const sectionRoots: string[] = menus.map((m: any) => m.root ?? '');
   }
   .brand-name em {
     display: block; font-style: normal; font-weight: 500;
-    font-size: 10.5px; color: var(--mid); letter-spacing: 0.04em; max-width: 76px;
+    font-size: 10.5px; color: var(--mid); letter-spacing: 0.02em; max-width: 124px;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     .brand-name { display: none; }
     .brand-logo { width: 112px; }
   }

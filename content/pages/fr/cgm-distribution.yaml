@@ -42,6 +42,10 @@ sections:
         text: Notre CGM offre la même stabilité et la même exactitude que les marques de référence, à un coût plus compétitif. Vous disposez ainsi de plus de latitude pour vous positionner sur votre marché local et construire des marges plus solides.
 
   - type: text-checks
+
+    form: true
+
+    formHeading: Contactez-nous
     title: Devenir partenaire distributeur
     text: "Nous recherchons des distributeurs qualifiés qui partagent notre engagement en faveur d’une meilleure santé métabolique par un accès élargi à la technologie CGM. Présentez-nous votre marché et vos capacités de distribution : notre équipe vous recontactera pour étudier un partenariat."
     points:

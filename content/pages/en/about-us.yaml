@@ -1,140 +1,140 @@
 title: About us | EverChek - CGM Manufacturer
-description: EverChek is a vertically integrated CGM manufacturer from China, specializing in biosensing technologies, scalable manufacturing, and flexible B2B partnerships.
+description: EverChek is a vertically integrated CGM manufacturer from China, specializing in biosensing technologies,
+  scalable manufacturing, and flexible B2B partnerships.
 path: /about-us/
 translationKey: about-us
 sections:
-  - type: hero
-    variant: centered
-    backgroundImage: /images/about-factory.webp
-    title: A vertically integrated CGM manufacturer from China
-    sub: Power your healthcare business with reliable CGM technologies, scalable manufacturing infrastructure, and flexible commercialization models tailored to regional healthcare markets. Start developing reliable glucose monitoring solutions more efficiently.
-    imageAlt: EverChek manufacturing facility and R&D center building exterior
-    buttons:
-      - label: Contact us
-        href: /contact/
-        style: primary
-
-  - type: image-text
-    variant: right
-    title: Who are we?
-    paragraphs:
-      - >-
-        Founded in 2016, we specialize in the research, development, and commercialization of
-        electrochemical biosensing technologies and biomolecular signal processing systems. Built on
-        self-developed sensor chips, biosensors, and algorithm platforms, we have established integrated
-        capabilities spanning from foundational technologies to end-user healthcare products. Our
-        infrastructure includes Class 10,000 cleanrooms, biosynthesis laboratories, and medical device
-        assembly workshops — all under one roof for integrated in-house R&D and scalable manufacturing.
-      - >-
-        Today, our continuous glucose monitoring technologies are built exclusively for OEM, SKD, and
-        many other types of healthcare commercialization partnerships across regional healthcare markets
-        worldwide.
-    image: /images/about-us-facility.webp
-    imageAlt: EverChek biosensing technology research and development facility
-    ratio: 4/3
-
-  - type: image-text
-    variant: left
-    eyebrow: Our leadership & scientific foundation
-    title: Prof. Xueji Zhang
-    paragraphs:
-      - A research-driven team guided by one of the most published scientists in electrochemical biosensing.
-      - Chief Scientist & Co-founder
-      - >-
-        Professor Xueji Zhang is a world-renowned scientist in the field of biosensing and electrochemical
-        analysis. With decades of research experience spanning sensor design, biomolecular detection, and
-        clinical diagnostics, he has been instrumental in establishing EverChek's core technology platform
-        from the ground up.
-      - >-
-        His research bridges fundamental science and practical healthcare applications, driving the
-        development of high-accuracy glucose monitoring systems that meet rigorous clinical standards.
-    bulletsTitle: Key credentials
-    bullets:
-      - Fellow of the Royal Society of Chemistry (FRSC)
-      - Extensive publication record in top-tier journals on biosensing and electrochemistry
-      - Deep expertise in enzyme-based sensor design and clinical diagnostic technologies
-      - Led multiple national research programs in biomedical engineering and sensor development
-    image: /images/x-zhang-transparent.webp
-    imageAlt: Professor Xueji Zhang
-    ratio: 3/4
-    fit: contain
-    mediaSize: compact
-
-  - type: timeline
-    title: Our milestones
-    sub: From early-stage biosensor R&D to commercial-scale CGM manufacturing.
-    dark: true
-    items:
-      - time: "2016"
-        event: Concept validation
-        detail: Founded and started R&D on proprietary sensor chips and biosensors.
-      - time: 2017–2019
-        event: Pre-product development
-        detail: Prof. Xueji Zhang appointed as Chairman & Chief Scientist. Obtained National High-Tech Enterprise certification.
-      - time: 2020–2021
-        event: Product launch
-        detail: Completed first-generation CGM prototype.
-      - time: "2022"
-        event: System finalization
-        detail: CGM system design finalized; cleanroom completed.
-      - time: 2023–2024
-        event: Commercialization & scale
-        detail: CGM automated production line launched. Mass production of CGM achieved. R&D product line fully iterated and achieved scaled sales.
-
-  - type: card-grid
-    center: true
-    columns: 2
-    media: icon
-    tint: true
-    title: Our core technologies
-    text: Six technology pillars built and controlled in house, covering the full journey from sensor chip to finished CGM device.
-    items:
-      - icon: sensor
-        title: Proprietary sensor chips
-        text: We design and fabricate our own electrochemical sensor chips in-house. This gives us direct control over signal stability, power consumption, and form factor. It also removes dependency on third-party semiconductor supply chains.
-      - icon: flower
-        title: Enzyme-based biosensing
-        text: Our glucose oxidase sensors are formulated, coated, and calibrated internally. Batch-level MARD validation ensures consistent accuracy across every production run, not just the reference batch.
-      - icon: console
-        title: Self-developed algorithms
-        text: We build our own glucose calculation, trend prediction, and alert logic from the ground up. This lets us customize for pediatric ranges, gestational thresholds, or insulin pump communication protocols without waiting on external roadmap priorities.
-      - icon: data
-        title: Biochemical processing platform
-        text: Enzyme immobilization, membrane deposition, and sensitivity tuning are handled under one roof. Controlling these steps internally is what lets us maintain sub-8% MARD consistency at scale.
-      - icon: factory
-        title: Integrated manufacturing
-        text: From biosensor wafer to sealed transmitter, every stage happens in our own facilities. Each unit gets a unique QR code for full component traceability, and automated in-line testing catches deviations before they leave the line.
-      - icon: chart
-        title: SPC-controlled quality systems
-        text: We run Statistical Process Control across electrode printing, laser cutting, dispensing, and coating. Our own inspection equipment feeds data back into the line in real time, so we adjust before defects accumulate, not after.
-
-  - type: card-grid
-    center: true
-    columns: 3
-    media: icon
-    title: What drives us forward?
-    text: The vision, mission, and values that guide every decision we make, from sensor design to partner relationships.
-    items:
-      - icon: globe
-        title: Our vision
-        text: To become a world-leading provider of biosensing systems and healthcare technologies.
-      - icon: handshake
-        title: Our mission
-        text: To support healthcare businesses with reliable biosensing technologies and scalable commercialization infrastructure.
-      - icon: shield
-        title: Values
-        text: We believe in staying low-profile, working pragmatically, and advancing steadily through efficient execution and long-term technological commitment.
-
-  - type: link-pills
-    label: Where to go next
-    items:
-      - label: CGM OEM & private label
-        href: /cgm-oem/
-      - label: CGM SKD & local assembly
-        href: /cgm-skd/
-      - label: CGM distribution partnerships
-        href: /cgm-distribution/
-      - label: Certifications & documentation
-        href: /certifications/
-
-  - type: cta-banner
+- type: hero
+  variant: centered
+  backgroundImage: /images/about-factory.webp
+  title: A vertically integrated CGM manufacturer from China
+  sub: Power your healthcare business with reliable CGM technologies, scalable manufacturing infrastructure, and flexible
+    commercialization models tailored to regional healthcare markets. Start developing reliable glucose monitoring solutions
+    more efficiently.
+  imageAlt: EverChek manufacturing facility and R&D center building exterior
+  buttons:
+  - label: Contact us
+    href: /contact/
+    style: primary
+- type: image-text
+  variant: right
+  title: Who are we?
+  paragraphs:
+  - Founded in 2016, we specialize in the research, development, and commercialization of electrochemical biosensing
+    technologies and biomolecular signal processing systems. Built on self-developed sensor chips, biosensors, and algorithm
+    platforms, we have established integrated capabilities spanning from foundational technologies to end-user healthcare
+    products. Our infrastructure includes Class 10,000 cleanrooms, biosynthesis laboratories, and medical device assembly
+    workshops — all under one roof for integrated in-house R&D and scalable manufacturing.
+  - Today, our continuous glucose monitoring technologies are built exclusively for OEM, SKD, and many other types of
+    healthcare commercialization partnerships across regional healthcare markets worldwide.
+  image: /images/about-us-facility.webp
+  imageAlt: EverChek biosensing technology research and development facility
+  ratio: 4/3
+- type: image-text
+  variant: left
+  title: Prof. Xueji Zhang
+  paragraphs:
+  - Professor Xueji Zhang is a world-renowned scientist in the field of biosensing and electrochemical analysis. With
+    decades of research experience spanning sensor design, biomolecular detection, and clinical diagnostics, he has been
+    instrumental in establishing EverChek's core technology platform from the ground up.
+  - His research bridges fundamental science and practical healthcare applications, driving the development of high-accuracy
+    glucose monitoring systems that meet rigorous clinical standards.
+  bulletsTitle: Key credentials
+  bullets:
+  - Fellow of the Royal Society of Chemistry (FRSC)
+  - Extensive publication record in top-tier journals on biosensing and electrochemistry
+  - Deep expertise in enzyme-based sensor design and clinical diagnostic technologies
+  - Led multiple national research programs in biomedical engineering and sensor development
+  image: /images/x-zhang-transparent.webp
+  imageAlt: Professor Xueji Zhang
+  ratio: 3/4
+  fit: contain
+  mediaSize: compact
+  sectionTitle: Our leadership & scientific foundation
+  sectionText: A research-driven team guided by one of the most published scientists in electrochemical biosensing.
+  role: Chief Scientist & Co-founder
+- type: timeline
+  title: Our milestones
+  sub: From early-stage biosensor R&D to commercial-scale CGM manufacturing.
+  dark: true
+  items:
+  - time: '2016'
+    event: Concept validation
+    detail: Founded and started R&D on proprietary sensor chips and biosensors.
+  - time: 2017–2019
+    event: Pre-product development
+    detail: Prof. Xueji Zhang appointed as Chairman & Chief Scientist. Obtained National High-Tech Enterprise certification.
+  - time: 2020–2021
+    event: Product launch
+    detail: Completed first-generation CGM prototype.
+  - time: '2022'
+    event: System finalization
+    detail: CGM system design finalized; cleanroom completed.
+  - time: 2023–2024
+    event: Commercialization & scale
+    detail: CGM automated production line launched. Mass production of CGM achieved. R&D product line fully iterated
+      and achieved scaled sales.
+- type: card-grid
+  center: true
+  columns: 2
+  media: icon
+  tint: true
+  title: Our core technologies
+  text: Six technology pillars built and controlled in house, covering the full journey from sensor chip to finished
+    CGM device.
+  items:
+  - icon: sensor
+    title: Proprietary sensor chips
+    text: We design and fabricate our own electrochemical sensor chips in-house. This gives us direct control over signal
+      stability, power consumption, and form factor. It also removes dependency on third-party semiconductor supply chains.
+  - icon: flower
+    title: Enzyme-based biosensing
+    text: Our glucose oxidase sensors are formulated, coated, and calibrated internally. Batch-level MARD validation
+      ensures consistent accuracy across every production run, not just the reference batch.
+  - icon: console
+    title: Self-developed algorithms
+    text: We build our own glucose calculation, trend prediction, and alert logic from the ground up. This lets us customize
+      for pediatric ranges, gestational thresholds, or insulin pump communication protocols without waiting on external
+      roadmap priorities.
+  - icon: data
+    title: Biochemical processing platform
+    text: Enzyme immobilization, membrane deposition, and sensitivity tuning are handled under one roof. Controlling
+      these steps internally is what lets us maintain sub-8% MARD consistency at scale.
+  - icon: factory
+    title: Integrated manufacturing
+    text: From biosensor wafer to sealed transmitter, every stage happens in our own facilities. Each unit gets a unique
+      QR code for full component traceability, and automated in-line testing catches deviations before they leave the
+      line.
+  - icon: chart
+    title: SPC-controlled quality systems
+    text: We run Statistical Process Control across electrode printing, laser cutting, dispensing, and coating. Our own
+      inspection equipment feeds data back into the line in real time, so we adjust before defects accumulate, not after.
+- type: card-grid
+  center: true
+  columns: 3
+  media: icon
+  title: What drives us forward?
+  text: The vision, mission, and values that guide every decision we make, from sensor design to partner relationships.
+  items:
+  - icon: globe
+    title: Our vision
+    text: To become a world-leading provider of biosensing systems and healthcare technologies.
+  - icon: handshake
+    title: Our mission
+    text: To support healthcare businesses with reliable biosensing technologies and scalable commercialization infrastructure.
+  - icon: shield
+    title: Values
+    text: We believe in staying low-profile, working pragmatically, and advancing steadily through efficient execution
+      and long-term technological commitment.
+- type: link-pills
+  label: Where to go next
+  items:
+  - label: CGM OEM & private label
+    href: /cgm-oem/
+  - label: CGM SKD & local assembly
+    href: /cgm-skd/
+  - label: CGM distribution partnerships
+    href: /cgm-distribution/
+  - label: Certifications & documentation
+    href: /certifications/
+- type: cta-banner

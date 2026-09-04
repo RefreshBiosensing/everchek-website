@@ -1,0 +1,92 @@
+---
+// Long-form prose — the body of a blog article.
+//
+// An article is a document, not a landing page: the original ever-chek.com
+// articles are a flat run of headings, paragraphs, lists and full-width
+// figures. This renders exactly that, in order, so the rebuilt article has the
+// same structure as the original instead of marketing cards and split figures.
+//
+// A block is one key: h2 / h3 / h4 / p / ul / ol / figure / hr.
+//   - { h2: "…" }
+//   - { p: "… <strong>bold</strong> …" }        inline HTML kept
+//   - { ul: ["item", "item"] }
+//   - { figure: "/blog/x/y.webp", alt: "…", width: 1418, height: 752 }
+interface Props {
+  blocks?: any[];
+}
+const { blocks = [] } = Astro.props;
+
+// Matches the id the contents list builds in [...slug].astro — a heading may
+// contain a link, and the anchor must come from its plain text.
+// The first figure is usually above the fold; lazy-loading it delays the LCP.
+const firstFigure = blocks.find((b: any) => b?.figure);
+
+const slugify = (t: string) =>
+  String(t)
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 60);
+---
+<div class="prose">
+  {blocks.map((b: any) => {
+    if (b.h2) return <h2 id={b.id ?? slugify(b.h2)} set:html={b.h2} />;
+    if (b.h3) return <h3 set:html={b.h3} />;
+    if (b.h4) return <h4 set:html={b.h4} />;
+    if (b.p) return <p set:html={b.p} />;
+    if (b.ul) return <ul>{b.ul.map((i: string) => <li set:html={i} />)}</ul>;
+    if (b.ol) return <ol>{b.ol.map((i: string) => <li set:html={i} />)}</ol>;
+    if (b.hr) return <hr />;
+    if (b.figure)
+      return (
+        <figure class:list={{ cover: b.cover }}>
+          <img
+            src={b.figure}
+            alt={b.alt ?? ''}
+            width={b.width}
+            height={b.height}
+            loading={b === firstFigure ? 'eager' : 'lazy'}
+            fetchpriority={b === firstFigure ? 'high' : undefined}
+            decoding="async"
+          />
+          {b.caption && <figcaption set:html={b.caption} />}
+        </figure>
+      );
+    return null;
+  })}
+</div>
+
+<style>
+  /* Typography matches the original article template; the reading measure and
+     colours come from .article-body in ArticleLayout. */
+  .prose { display: block; }
+  .prose h2 {
+    font-size: 24px; font-weight: 600; margin: 48px 0 16px;
+    color: var(--ink); scroll-margin-top: 90px; letter-spacing: -0.01em;
+  }
+  .prose h2:first-child { margin-top: 0; }
+  .prose h3 { font-size: 19px; font-weight: 600; margin: 32px 0 12px; color: var(--ink); }
+  .prose h4 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; color: var(--ink); }
+  .prose p { font-size: 16px; line-height: 1.8; color: var(--mid); margin-bottom: 16px; }
+  .prose ul, .prose ol { padding-left: 20px; margin-bottom: 16px; }
+  .prose ul { list-style: disc; }
+  .prose ol { list-style: decimal; }
+  .prose li { font-size: 16px; line-height: 1.8; color: var(--mid); margin-bottom: 8px; }
+  .prose :global(strong) { color: var(--ink); font-weight: 700; }
+  .prose :global(mark) { background: var(--ec-blue-50); color: var(--ink); padding: 0 3px; }
+  .prose :global(a) { color: var(--ec-blue-600); text-decoration: underline; text-underline-offset: 2px; }
+  .prose :global(a:hover) { text-decoration: none; }
+  .prose hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  /* A figure is full width in the reading column, never beside the text. */
+  .prose figure { margin: 32px 0 40px; }
+  /* A cover image was cropped to 16:9 in a 680px frame on the original pages. */
+  .prose figure.cover { max-width: 680px; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06); }
+  .prose figure.cover img { aspect-ratio: 16 / 9; object-fit: cover; border-radius: 16px; box-shadow: none; }
+  .prose figure img {
+    width: 100%; height: auto; display: block;
+    border-radius: 12px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  .prose figcaption { font-size: 13.5px; color: var(--soft); margin-top: 10px; text-align: center; }
+</style>

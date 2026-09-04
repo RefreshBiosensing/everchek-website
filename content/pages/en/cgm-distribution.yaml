@@ -1,59 +1,57 @@
 title: CGM Distribution Partnership —EverChek
-description: Partner with EverChek to distribute advanced CGM solutions worldwide. Expand your healthcare portfolio, accelerate market entry, and build stronger margins.
+description: Partner with EverChek to distribute advanced CGM solutions worldwide. Expand your healthcare portfolio,
+  accelerate market entry, and build stronger margins.
 path: /cgm-distribution/
 translationKey: cgm-distribution
 sections:
-  # The original hero was full-bleed: the network artwork behind a dark overlay with the
-  # headline centred on top. A split hero forced the 1424x747 artwork into a 4/3 tile and
-  # cut a third of it away.
-  - type: hero
-    variant: centered
-    backgroundImage: /images/distribution-hero.webp
-    imageAlt: Abstract global distribution network with interconnected nodes, world maps, and logistics icons including cargo ship and airplane on dark blue background
-    title: Partner with us for CGM distribution
-    sub: Expand access to advanced CGM solutions by joining our global distribution network. We work with qualified distributors to bring wearable biosensing technologies to healthcare markets worldwide.
-    buttons:
-      - label: Contact us
-        href: /contact/
-        style: primary
-
-  - type: card-grid
-    title: Why partner with us?
-    text: We provide the products, regulatory support, and market expertise you need to build a profitable CGM distribution business.
-    columns: 4
-    media: icon
-    center: true
-    tint: true
-    items:
-      - icon: box
-        title: Expand your portfolio
-        text: Offer your customers our factory-calibrated 14-day CGM system with clinically validated accuracy (MARD <8%). Add advanced continuous glucose monitoring solutions to your existing healthcare or medical device product portfolio.
-      - icon: clock
-        title: Faster market entry
-        text: Start selling sooner with our ready-to-go CGM system. We provide the hardware, mobile app, and cloud infrastructure and regulatory certificates, so you don't waste time on sensor tech and regulatory approval.
-      - icon: doc
-        title: Brand customization
-        text: If you want to sell under your own brand, we support full customization including logo, packaging, labeling, and localized product identity. You can also choose to distribute under our existing brand, depending on your market strategy and positioning.
-      - icon: chart
-        title: Higher margin potential
-        text: Our CGM delivers the same stability and accuracy as leading brands, yet at a more competitive cost. This gives you more room to compete in your local market and build stronger margins.
-
-  - type: text-checks
-    title: Become a distribution partner
-    text: We're looking for qualified distributors who share our commitment to improving metabolic health through accessible CGM technology. Tell us about your market and distribution capabilities, and our team will reach out to explore a partnership.
-    points:
-      - Exclusive territory rights for qualified partners
-      - Dedicated technical support
-      - Marketing materials and regulatory documentation provided
-      - Competitive pricing with volume-based incentives
-
-  - type: banner-wide
-    title: Your long-term B2B CGM manufacturing partner
-    text: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands worldwide.
-    align: left
-    height: short
-    cta:
-      label: Contact us
-      href: /contact/
-
-  - type: cta-banner
+- type: hero
+  variant: centered
+  backgroundImage: /images/distribution-hero.webp
+  imageAlt: Abstract global distribution network with interconnected nodes, world maps, and logistics icons including
+    cargo ship and airplane on dark blue background
+  title: Partner with us for CGM distribution
+  sub: Expand access to advanced CGM solutions by joining our global distribution network. We work with qualified distributors
+    to bring wearable biosensing technologies to healthcare markets worldwide.
+  buttons:
+  - label: Contact us
+    href: /contact/
+    style: primary
+- type: card-grid
+  title: Why partner with us?
+  text: We provide the products, regulatory support, and market expertise you need to build a profitable CGM distribution
+    business.
+  columns: 4
+  media: icon
+  center: true
+  tint: true
+  items:
+  - icon: box
+    title: Expand your portfolio
+    text: Offer your customers our factory-calibrated 14-day CGM system with clinically validated accuracy (MARD <8%).
+      Add advanced continuous glucose monitoring solutions to your existing healthcare or medical device product portfolio.
+  - icon: clock
+    title: Faster market entry
+    text: Start selling sooner with our ready-to-go CGM system. We provide the hardware, mobile app, and cloud infrastructure
+      and regulatory certificates, so you don't waste time on sensor tech and regulatory approval.
+  - icon: doc
+    title: Brand customization
+    text: If you want to sell under your own brand, we support full customization including logo, packaging, labeling,
+      and localized product identity. You can also choose to distribute under our existing brand, depending on your market
+      strategy and positioning.
+  - icon: chart
+    title: Higher margin potential
+    text: Our CGM delivers the same stability and accuracy as leading brands, yet at a more competitive cost. This gives
+      you more room to compete in your local market and build stronger margins.
+- type: text-checks
+  form: true
+  formHeading: Get in touch
+  title: Become a distribution partner
+  text: We're looking for qualified distributors who share our commitment to improving metabolic health through accessible
+    CGM technology. Tell us about your market and distribution capabilities, and our team will reach out to explore a
+    partnership.
+  points:
+  - Exclusive territory rights for qualified partners
+  - Dedicated technical support
+  - Marketing materials and regulatory documentation provided
+  - Competitive pricing with volume-based incentives
+- type: cta-banner

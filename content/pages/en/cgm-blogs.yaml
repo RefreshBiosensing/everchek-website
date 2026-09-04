@@ -75,12 +75,4 @@ sections:
     href: /cgm-distribution/
   - label: The EverChek CGM system
     href: /continuous-glucose-monitor/
-- type: banner-wide
-  title: Your long-term B2B CGM manufacturing partner
-  text: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands
-    worldwide.
-  align: center
-  cta:
-    label: Contact us
-    href: /contact/
 - type: cta-banner

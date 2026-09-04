@@ -25,26 +25,51 @@ interface Props {
   imageBrandPatch?: string;
   cta?: { label: string; href: string };
   tint?: boolean;
+  /** layout 'top': render the heading above the image, as a section header */
+  headingFirst?: boolean;
+  /** Ground colour behind a figure whose own background is baked into the file.
+      Sample the image's edge pixel and pass it here so the two blend seamlessly. */
+  figureBg?: string;
+  /** Section heading rendered above the whole block (its own H2), separate from
+      `title`, which stays with the copy beside the image. */
+  sectionTitle?: string;
+  sectionText?: string;
+  /** Role / subtitle line directly under `title`. */
+  role?: string;
 }
 const {
   layout = 'left',
   eyebrow, title, text, paragraphs = [], bullets = [], bulletsTitle, steps = [], note,
   image, imageAlt, imageNote, ratio = '4/3', fit = 'cover',
   mediaSize = 'default', imageBrandPatch,
-  cta, tint = false,
+  cta, tint = false, headingFirst = false, figureBg, sectionTitle, sectionText, role,
 } = Astro.props;
 const bodyParagraphs = paragraphs.length > 0 ? paragraphs : (text ? [text] : []);
 ---
-<section class:list={['section', 'it-section', { tint }]}>
-  <div class:list={['container', 'it-grid', `is-${layout}`]}>
-    <div class:list={['it-media', { compact: mediaSize === 'compact' }]}>
+<section class:list={['section', 'it-section', { tint }]} style={figureBg ? `background:${figureBg}` : undefined}>
+  {sectionTitle && (
+    <div class="container it-header">
+      <h2 class="it-title">{sectionTitle}</h2>
+      {sectionText && <p class="it-header-text">{sectionText}</p>}
+    </div>
+  )}
+  {headingFirst && !sectionTitle && (title || bodyParagraphs.length > 0) && (
+    <div class="container it-header">
+      {eyebrow && <div class="it-eyebrow">{eyebrow}</div>}
+      {title && <h2 class="it-title">{title}</h2>}
+      {bodyParagraphs.map((paragraph) => <p class="it-header-text">{paragraph}</p>)}
+    </div>
+  )}
+  <div class:list={['container', 'it-grid', `is-${layout}`, { 'has-header': headingFirst || Boolean(sectionTitle) }]}>
+    <div class:list={['it-media', { compact: mediaSize === 'compact', blend: Boolean(figureBg) }]} style={figureBg ? `background:${figureBg}` : undefined}>
       <BlockImage src={image} alt={imageAlt ?? title ?? ''} ratio={ratio} note={imageNote} fit={fit} />
       {imageBrandPatch && <span class="it-image-brand" aria-hidden="true">{imageBrandPatch}</span>}
     </div>
     <div class="it-body">
-      {eyebrow && <div class="it-eyebrow">{eyebrow}</div>}
-      {title && <h2 class="it-title">{title}</h2>}
-      {bodyParagraphs.length > 0 && (
+      {(!headingFirst || sectionTitle) && eyebrow && <div class="it-eyebrow">{eyebrow}</div>}
+      {(!headingFirst || sectionTitle) && title && <h2 class="it-title">{title}</h2>}
+      {role && <p class="it-role">{role}</p>}
+      {(!headingFirst || sectionTitle) && bodyParagraphs.length > 0 && (
         <div class="it-copy">
           {bodyParagraphs.map((paragraph) => <p class="it-text">{paragraph}</p>)}
         </div>
@@ -72,6 +97,31 @@ const bodyParagraphs = paragraphs.length > 0 ? paragraphs : (text ? [text] : [])
 
 <style>
   .it-grid { display: grid; gap: clamp(28px, 4vw, 60px); align-items: center; }
+  /* Section-header layout: heading and intro centred above a full-width figure,
+     matching the original .section-header + .anatomy-single-image pattern. */
+  .it-header { text-align: center; max-width: 720px; margin: 0 auto clamp(28px, 4vw, 44px); }
+  .it-header .it-title { margin-bottom: 12px; }
+  .it-header-text { font-size: 16.5px; line-height: 1.7; color: var(--mid); }
+
+  /* A diagram with its own baked ground never matches a flat section colour
+     exactly — this file's edges range from #F1F3F7 to #F9FAFD. Rather than
+     chase the colour, feather the figure's edges so there is no boundary to
+     see, and drop the corner radius that would otherwise cut a visible arc. */
+  .it-media.blend :global(img) {
+    border-radius: 0;
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0, #000 34px, #000 calc(100% - 34px), transparent 100%),
+      linear-gradient(to bottom, transparent 0, #000 26px, #000 calc(100% - 26px), transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(to right, transparent 0, #000 34px, #000 calc(100% - 34px), transparent 100%),
+      linear-gradient(to bottom, transparent 0, #000 26px, #000 calc(100% - 26px), transparent 100%);
+    mask-composite: intersect;
+  }
+  .it-role { font-size: 15.5px; font-weight: 600; color: var(--ec-blue-600); margin: -4px 0 16px; }
+  .it-grid.has-header.is-top { grid-template-columns: 1fr !important; }
+  .it-grid.has-header .it-body:empty { display: none; }
+  .it-grid.has-header .it-media { max-width: 980px; margin: 0 auto; }
   .it-media { position: relative; width: 100%; }
   .it-media.compact { max-width: 390px; justify-self: center; }
   .it-image-brand {

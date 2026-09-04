@@ -62,7 +62,7 @@ const noteParts = note && noteLink ? note.split(noteLink.label) : undefined;
                 <BlockImage src={it.image} alt={it.title ?? ''} ratio={it.ratio ?? ratio} note={it.imageNote ?? it.title} fit={it.fit ?? fit} />
               </div>
             )}
-            {media === 'icon' && it.icon && (
+            {(media === 'icon' || media === 'stat') && it.icon && (
               <div class="cg-icon"><Icon name={it.icon} size={24} /></div>
             )}
             {media === 'stat' && it.kicker && <div class="cg-stat">{it.kicker}</div>}

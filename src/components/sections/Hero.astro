@@ -50,6 +50,10 @@ interface Props {
   imageNote?: string;
   ratio?: string;
   backgroundImage?: string;
+  /** Ground colour for a figure whose own background is baked into the file.
+      Set it and the decorative panel is dropped, so the image does not sit on a
+      second, slightly different shade of the same colour. */
+  figureBg?: string;
 }
 const {
   locale = 'en',
@@ -58,7 +62,7 @@ const {
   buttons = [], stats = [], badges = [],
   kit, note,
   visual, visualLabels = {}, gallery,
-  image, imageAlt, imageNote, ratio = '4/3', backgroundImage,
+  image, imageAlt, imageNote, ratio = '4/3', backgroundImage, figureBg,
 } = Astro.props;
 
 const dict = loadDict(locale);
@@ -200,8 +204,11 @@ const wardCells: [string, string, string][] = [
     )}
 
     {variant === 'split' && visual === 'image' && (
-      <div class="hv-image">
-        <BlockImage src={image} alt={imageAlt ?? title} ratio={ratio} note={imageNote} />
+      <div
+        class:list={['hv-image', { flat: Boolean(figureBg) }]}
+        style={figureBg ? `background:${figureBg}` : undefined}
+      >
+        <BlockImage src={image} alt={imageAlt ?? title} ratio={ratio} note={imageNote} fit={figureBg ? 'contain' : 'cover'} />
       </div>
     )}
   </div>
@@ -221,6 +228,16 @@ const wardCells: [string, string, string][] = [
   .hv-image :global(img) {
     filter: drop-shadow(0 12px 22px rgba(6, 47, 82, 0.13));
   }
+  /* The image brings its own ground, so the panel would show as a second,
+     slightly different shade behind it. */
+  .hv-image.flat {
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  .hv-image.flat :global(img) { filter: none; }
 
   .hero-sec {
     background:
@@ -234,22 +251,28 @@ const wardCells: [string, string, string][] = [
   .hero-bg-layer { position: absolute; width: 0; height: 0; overflow: hidden; }
   .hero-sec { position: relative; }
   .hero-sec.hero-bg {
-    min-height: 560px;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     background-image:
       linear-gradient(90deg, rgba(9, 29, 43, 0.7), rgba(9, 29, 43, 0.42)),
       var(--hero-bg-image);
     background-size: cover;
-    background-position: center;
+    /* 50% 75% keeps the factory floor, not the ceiling, behind the copy */
+    background-position: 50% 75%;
   }
   /* Centred copy sits over the middle of the photo, so the left-to-right scrim
      that suits a left-aligned hero is replaced by an even vertical one. */
   .hero-sec.hero-bg.hv-centered {
     background-image:
-      linear-gradient(180deg, rgba(9, 29, 43, 0.62), rgba(9, 29, 43, 0.74)),
+      linear-gradient(135deg, rgba(20, 40, 70, 0.72) 0%, rgba(30, 50, 80, 0.55) 50%, rgba(20, 40, 70, 0.72) 100%),
       var(--hero-bg-image);
+    text-align: center;
   }
+  /* The original hero measured 800px and ran 100px of padding top and bottom. */
+  .hero-sec.hero-bg.hv-centered .hero-copy { max-width: 800px; padding: 100px 0; }
+  .hero-sec.hero-bg.hv-centered .hero-sub { max-width: 640px; }
+  .hero-sec.hero-bg.hv-centered .hero-btns { justify-content: center; }
   .hero-bg .hero-copy { max-width: 900px; margin-inline: auto; }
   .hero-bg .hero-title { max-width: 900px; color: #fff; }
   .hero-bg .hero-sub { max-width: 760px; margin-inline: auto; color: rgba(255, 255, 255, 0.88); }

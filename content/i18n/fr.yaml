@@ -1,72 +1,51 @@
 brand: EverChek
-brandTagline: Fabrication CGM en B2B
+brandTagline: CGM B2B OEM/SKD/Distribution
 nav:
+  # Same four menus, in the same order, as the English nav.
+  cgms:
+    label: CGMS
+    root: /fr/qu-est-ce-qu-un-cgm/
+    columns:
+      - heading: CGMS
+        links:
+          - label: Qu’est-ce qu’un système CGM ?
+            href: /fr/qu-est-ce-qu-un-cgm/
   product:
     label: Produit
     root: /fr/systeme-mesure-continue-glucose/
     columns:
-      - heading: Le système
+      - heading: Produit
         links:
           - label: Système CGM EverChek
             href: /fr/systeme-mesure-continue-glucose/
           - label: Application patient EverChek
             href: /fr/application-patient-cgm/
-          - label: Qu’est-ce qu’un système CGM ?
-            href: /fr/qu-est-ce-qu-un-cgm/
   solutions:
     label: Solutions
-    root: /fr/modeles-de-fabrication-cgm/
+    root: /fr/montage-local-cgm/
     columns:
-      - heading: Fabriquer avec nous
+      - heading: Solutions
         links:
-          - label: OEM / ODM et marque blanche
-            href: /fr/cgm-oem/
-          - label: Kits SKD et montage local
+          - label: SKD / CKD
             href: /fr/montage-local-cgm/
-          - label: OEM, ODM et SKD comparés
-            href: /fr/modeles-de-fabrication-cgm/
-      - heading: Commercialiser
-        links:
+          - label: OEM / ODM
+            href: /fr/cgm-oem/
           - label: Devenir distributeur
             href: /fr/distribution-cgm/
-          - label: Appels d’offres publics et intégration locale
-            href: /fr/appels-offres-cgm-skd/
   business:
     label: Entreprise
     root: /fr/a-propos/
     columns:
-      - heading: À propos d’EverChek
+      - heading: Entreprise
         links:
           - label: Qui nous sommes
             href: /fr/a-propos/
-          - label: La documentation et comment l’obtenir
-            href: /fr/documentation/
           - label: Nous contacter
             href: /fr/contact/
-  resources:
-    label: Ressources
-    root: /fr/blog/
-    columns:
-      - heading: Guides
-        links:
-          - label: Qu’est-ce qu’un système CGM ?
-            href: /fr/qu-est-ce-qu-un-cgm/
-          - label: Guide de la technologie CGM pour les marques de santé
-            href: /fr/guide-technologie-cgm-2026/
-          - label: OEM, ODM et SKD comparés
-            href: /fr/modeles-de-fabrication-cgm/
-          - label: Le SKD au service des appels d’offres de santé
-            href: /fr/appels-offres-cgm-skd/
-      - heading: Articles
-        links:
-          - label: Tous les articles
+          - label: Blog
             href: /fr/blog-cgm/
-          - label: CGM ou BGM — comment choisir
-            href: /fr/blog/cgm-vs-bgm/
-          - label: CGM en marque blanche — lancer votre marque
-            href: /fr/blog/cgm-marque-blanche/
-          - label: Qu’est-ce que le SKD en CGM ?
-            href: /fr/blog/qu-est-ce-que-le-cgm-skd/
+          - label: Certifications et validations
+            href: /fr/documentation/
 cta:
   enquiry: Parler à l’usine
   quote: Demander la fiche technique CGM
@@ -140,7 +119,6 @@ footer:
   whatsappLink: https://wa.me/8619168598056
   address: Bureau 902, bâtiment 1, Hengtaiyu Building, communauté de Tangwei, rue Fenghuang, district de Guangming, Shenzhen, Chine
   legal: © 2026 EverChek. Tous droits réservés.
-  disclaimer: EverChek ne fournit que des entreprises — nous n’exploitons aucun canal grand public. Le statut réglementaire et la disponibilité des produits varient selon les pays ; demandez-nous ce qui s’applique à votre marché avant de planifier un lancement.
 contactForm:
   name: Nom et prénom
   company: Société
@@ -165,7 +143,6 @@ contactForm:
   privacy: Vos coordonnées servent uniquement à répondre à cette demande. Aucune newsletter, aucun partage.
 direct:
   title: Vous préférez l’e-mail ou WhatsApp ?
-  desc: Écrivez-nous directement et nous prenons le relais. Indiquez-nous le marché que vous visez et le modèle que vous avez en tête, et la première réponse sera déjà utile.
   emailLabel: Ventes et partenariats
   email: contact@ever-chek.com
   whatsappLabel: WhatsApp

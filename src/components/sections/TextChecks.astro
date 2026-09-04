@@ -1,4 +1,5 @@
 ---
+import PartnerForm from '../PartnerForm.astro';
 // 文字+清单双栏 — heading/body on one side, a tick-list panel on the other.
 interface Props {
   eyebrow?: string;
@@ -7,24 +8,42 @@ interface Props {
   points: string[];
   flip?: boolean;   // panel on the left instead
   tint?: boolean;
+  /** Render the distributor enquiry form beside the copy, as the original
+      /cgm-distribution page did. The tick list then sits under the copy. */
+  form?: boolean;
+  formHeading?: string;
+  locale?: string;
 }
-const { eyebrow, title, text, points = [], flip = false, tint = false } = Astro.props;
+const { eyebrow, title, text, points = [], flip = false, tint = false, form = false, formHeading, locale = 'en' } = Astro.props;
 ---
 <section class:list={['section', { tint }]}>
-  <div class:list={['container', 'tc-grid', { flip }]}>
+  <div class:list={['container', 'tc-grid', { flip, 'with-form': form }]}>
     <div class="tc-copy">
       {eyebrow && <div class="eyebrow">{eyebrow}</div>}
       {title && <h2 class="h2">{title}</h2>}
       {text && <p class="lede">{text}</p>}
+      {form && points.length > 0 && (
+        <ul class="checks tc-inline-points">
+          {points.map((p) => <li>{p}</li>)}
+        </ul>
+      )}
     </div>
-    <ul class="checks tc-points">
-      {points.map((p) => <li>{p}</li>)}
-    </ul>
+    {form ? (
+      <PartnerForm heading={formHeading} locale={locale} />
+    ) : (
+      <ul class="checks tc-points">
+        {points.map((p) => <li>{p}</li>)}
+      </ul>
+    )}
   </div>
 </section>
 
 <style>
   .tc-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+  /* With a form the two columns carry equal weight and align to the top. */
+  .tc-grid.with-form { grid-template-columns: 1fr 1fr; align-items: start; }
+  .tc-inline-points { margin-top: 22px; }
+  @media (max-width: 860px) { .tc-grid.with-form { grid-template-columns: 1fr; } }
   .tc-grid.flip .tc-copy { order: 2; }
   .tc-points {
     background: var(--blue-faint);

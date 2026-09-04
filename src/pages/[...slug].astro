@@ -5,6 +5,7 @@
 // need no extra routing. hreflang comes from translationKey siblings.
 import Base from '../layouts/Base.astro';
 import SectionRenderer from '../components/SectionRenderer.astro';
+import ArticleLayout from '../components/ArticleLayout.astro';
 import { loadAllPages, alternatesFor, type PageEntry } from '../lib/content';
 
 export function getStaticPaths() {
@@ -26,6 +27,58 @@ const heroTitle = hero?.title ?? page.title;
 const heroImagePath = hero?.image ?? hero?.backgroundImage;
 const heroImage = heroImagePath ? new URL(heroImagePath, Astro.site).toString() : undefined;
 const pageUrl = new URL(page.path, Astro.site).toString();
+
+// Articles use the long-form template: hero, then a sticky contents list beside
+// a single reading column. Everything after the hero goes inside that column.
+const isArticle = page.schemaType === 'article';
+// A heading may contain inline markup (the original articles link out of an H2).
+// The contents list wants the plain text of it, exactly as the original's
+// `h.textContent` produced.
+const plain = (t: string) =>
+  String(t).replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+const slugify = (t: string) =>
+  plain(t).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+const heroIndex = page.sections.findIndex((s: any) => s?.type === 'hero');
+const bodySections = isArticle
+  ? page.sections.filter((_: any, i: number) => i !== heroIndex)
+  : page.sections;
+const heroSection = isArticle && heroIndex >= 0 ? [page.sections[heroIndex]] : [];
+// A full-bleed banner cannot live inside a 720px reading column, so trailing
+// banners render after the article rather than in it.
+const TAIL_TYPES = new Set(['cta-banner']);
+const tailStart = isArticle
+  ? (() => {
+      let i = bodySections.length;
+      while (i > 0 && TAIL_TYPES.has(bodySections[i - 1]?.type)) i--;
+      return i;
+    })()
+  : bodySections.length;
+const articleSections = isArticle ? bodySections.slice(0, tailStart) : bodySections;
+const tailSections = isArticle ? bodySections.slice(tailStart) : [];
+
+// The contents list comes from the body's own H2s, exactly as the original
+// article template built it — so it cannot drift from what is on the page.
+const tocHeadings = isArticle
+  ? articleSections.flatMap((s: any) => {
+      if (s?.type === 'prose') {
+        return (s.blocks ?? [])
+          .filter((b: any) => b?.h2)
+          .map((b: any) => ({ id: b.id ?? slugify(String(b.h2)), label: plain(b.h2) }));
+      }
+      if (s?.title && String(s.title).trim().length > 3) {
+        return [{ id: slugify(String(s.title)), label: plain(s.title) }];
+      }
+      return [];
+    })
+  : [];
+// Give each titled section the id its contents entry points at.
+if (isArticle) {
+  for (const s of articleSections as any[]) {
+    if (s?.type !== 'prose' && s?.title && String(s.title).trim().length > 3 && !s.id) {
+      s.id = slugify(String(s.title));
+    }
+  }
+}
 
 const schema =
   page.schemaType === 'product'
@@ -64,5 +117,15 @@ const schema =
   noindex={page.noindex}
   schema={schema}
 >
-  <SectionRenderer sections={page.sections} locale={page.locale} />
+  {isArticle ? (
+    <>
+      <SectionRenderer sections={heroSection} locale={page.locale} />
+      <ArticleLayout headings={tocHeadings}>
+        <SectionRenderer sections={articleSections} locale={page.locale} />
+      </ArticleLayout>
+      <SectionRenderer sections={tailSections} locale={page.locale} />
+    </>
+  ) : (
+    <SectionRenderer sections={page.sections} locale={page.locale} />
+  )}
 </Base>

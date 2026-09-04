@@ -8,11 +8,16 @@ interface Props {
   text?: string;
   items: Item[];
   columns?: 1 | 3 | 4;   // 1 = vertical stepped list (best for 5+ steps or long step titles)
+  /** 'rail' = compact numbered rail inside a narrow panel: a small numbered
+      circle beside a light card, no arrows. Best for a 5-step process where
+      full-width cards would dominate the page. */
+  variant?: 'cards' | 'rail';
   arrows?: boolean;
   center?: boolean;
   tint?: boolean;
 }
-const { title, text, items = [], columns = 4, arrows = true, center = true, tint = false } = Astro.props;
+const { title, text, items = [], columns = 4, arrows = true, center = true, tint = false, variant = 'cards' } = Astro.props;
+const isRail = variant === 'rail';
 ---
 <section class:list={['section', { tint }]}>
   <div class="container">
@@ -22,6 +27,19 @@ const { title, text, items = [], columns = 4, arrows = true, center = true, tint
         {text && <p class="sf-text">{text}</p>}
       </div>
     )}
+    {isRail ? (
+      <div class="sf-rail-panel">
+        {items.map((it, i) => (
+          <div class="sf-rail-step">
+            <div class="sf-rail-num">{i + 1}</div>
+            <div class="sf-rail-card">
+              <h3 class="sf-rail-title">{it.title}</h3>
+              {it.desc && <p class="sf-rail-desc">{it.desc}</p>}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
     <div class:list={['sf-grid', `cols-${columns}`, { 'has-arrows': arrows }]}>
       {items.map((it, i) => (
         <div class="sf-card">
@@ -37,10 +55,46 @@ const { title, text, items = [], columns = 4, arrows = true, center = true, tint
         </div>
       ))}
     </div>
+    )}
   </div>
 </section>
 
 <style>
+  /* Rail variant — reproduces the original .process-wrap / .process-step:
+     a narrow white panel holding a numbered circle beside a tinted card. */
+  .sf-rail-panel {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: clamp(26px, 3.4vw, 48px);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .sf-rail-step { position: relative; display: flex; align-items: flex-start; gap: 20px; padding-bottom: 32px; }
+  .sf-rail-step:last-child { padding-bottom: 0; }
+  /* connecting rail behind the numbers */
+  .sf-rail-step:not(:last-child)::before {
+    content: '';
+    position: absolute; left: 15px; top: 32px; bottom: 0;
+    width: 2px; background: var(--border);
+  }
+  .sf-rail-num {
+    position: relative; z-index: 1;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--ec-blue-600); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; flex-shrink: 0;
+  }
+  .sf-rail-card {
+    flex: 1;
+    background: var(--ec-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 20px 24px;
+  }
+  .sf-rail-title { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--ink); }
+  .sf-rail-desc { font-size: 14px; line-height: 1.7; color: var(--mid); }
+
   .sf-head { margin-bottom: 40px; text-align: center; }
   .sf-title { font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
   .sf-text { font-size: 15.5px; color: var(--mid); line-height: 1.7; margin: 12px auto 0; max-width: 640px; }

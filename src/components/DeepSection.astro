@@ -1,6 +1,5 @@
 ---
 // Long-form SEO content section rendered as alternating visual rows.
-import Icon from './Icon.astro';
 
 interface Block { heading?: string; text: string }
 interface Props {
@@ -11,7 +10,6 @@ interface Props {
   tint?: boolean;
 }
 const { eyebrow = 'In depth', title, sub, blocks, tint = false } = Astro.props;
-const visualIcons = ['curve', 'bell', 'sensor', 'hospital', 'data', 'cloud'];
 ---
 <section class:list={['section', 'deep-section', { tint }]}>
   <div class="container deep-wrap">
@@ -23,16 +21,8 @@ const visualIcons = ['curve', 'bell', 'sensor', 'hospital', 'data', 'cloud'];
       </div>
     )}
     <div class="deep-body">
-      {blocks.map((b, i) => (
-        <article class:list={['deep-row', { rev: i % 2 === 1 }]}>
-          <div class="deep-visual" aria-hidden="true">
-            <div class="deep-orbit">
-              <Icon name={visualIcons[i % visualIcons.length]} size={58} />
-            </div>
-            <div class="deep-lines">
-              <span></span><span></span><span></span>
-            </div>
-          </div>
+      {blocks.map((b) => (
+        <article class="deep-row">
           <div class="deep-copy">
             {b.heading && <h3 class="deep-h3">{b.heading}</h3>}
             <p class="deep-text">{b.text}</p>
@@ -47,15 +37,8 @@ const visualIcons = ['curve', 'bell', 'sensor', 'hospital', 'data', 'cloud'];
   .deep-head { text-align: center; margin-bottom: clamp(34px, 5vw, 58px); }
   .deep-head .h2 { margin-left: auto; margin-right: auto; max-width: none; white-space: nowrap; font-size: clamp(22px, 3vw, 42px); }
   .deep-sub { max-width: 680px; margin: 14px auto 0; color: var(--mid); font-size: 15.5px; line-height: 1.7; }
-  .deep-body { display: flex; flex-direction: column; gap: clamp(34px, 5vw, 64px); }
-  .deep-row {
-    display: grid;
-    grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
-    gap: clamp(28px, 5vw, 64px);
-    align-items: center;
-  }
-  .deep-row.rev { grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr); }
-  .deep-row.rev .deep-visual { order: 2; }
+  .deep-body { display: flex; flex-direction: column; gap: 26px; max-width: 760px; }
+  .deep-row { display: block; }
 
   .deep-visual {
     min-height: 260px;

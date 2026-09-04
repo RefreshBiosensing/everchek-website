@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img"
+     aria-label="Cross-section of skin showing a CGM sensor filament in the interstitial fluid, with the transmitter above the skin">
+  <title>How a CGM sensor reads glucose beneath the skin</title>
+  <style>
+    .lbl  { font: 600 15px 'DM Sans', system-ui, -apple-system, sans-serif; fill: #4a5568; }
+    .lbl-b{ font: 700 15px 'DM Sans', system-ui, -apple-system, sans-serif; fill: #0a4c84; }
+    .pill { font: 700 14px 'DM Sans', system-ui, -apple-system, sans-serif; fill: #ffffff; }
+  </style>
+
+  <rect x="0" y="0" width="640" height="480" fill="#ffffff"/>
+
+  <!-- ===== Skin cross-section: epidermis / dermis / interstitial fluid ===== -->
+  <g>
+    <path d="M40 144 a16 16 0 0 1 16 -16 h528 a16 16 0 0 1 16 16 v52 h-560 z" fill="#80bce2" fill-opacity="0.22"/>
+    <rect x="40" y="196" width="560" height="110" fill="#80bce2" fill-opacity="0.12"/>
+    <path d="M40 306 h560 v130 a16 16 0 0 1 -16 16 h-528 a16 16 0 0 1 -16 -16 z" fill="#80bce2" fill-opacity="0.06"/>
+    <line x1="40" y1="196" x2="600" y2="196" stroke="#dde3ea" stroke-width="1.5"/>
+    <line x1="40" y1="306" x2="600" y2="306" stroke="#dde3ea" stroke-width="1.5"/>
+  </g>
+
+  <text class="lbl" x="64" y="168">Epidermis</text>
+  <text class="lbl" x="64" y="256">Dermis</text>
+  <text class="lbl" x="64" y="342">Interstitial fluid</text>
+
+  <!-- ===== Sensor filament, reaching the interstitial fluid ===== -->
+  <rect x="252" y="96" width="5" height="290" rx="2.5" fill="#0b5fa5"/>
+  <circle cx="254.5" cy="388" r="15" fill="#0b5fa5" fill-opacity="0.16"/>
+  <circle cx="254.5" cy="388" r="8" fill="#0b5fa5"/>
+
+  <!-- Sensor body, sitting on the skin surface -->
+  <rect x="188" y="58" width="133" height="38" rx="9" fill="#0b5fa5"/>
+  <text class="pill" x="254.5" y="82" text-anchor="middle">Sensor</text>
+
+  <!-- Transmitter + wireless link -->
+  <rect x="381" y="58" width="163" height="38" rx="9" fill="#12181f"/>
+  <text class="pill" x="462.5" y="82" text-anchor="middle">Transmitter</text>
+  <line x1="325" y1="77" x2="377" y2="77" stroke="#7a8a9a" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <!-- ===== Cells in the dermis ===== -->
+  <text class="lbl" x="512" y="232" text-anchor="middle">Cells</text>
+  <g fill="none" stroke="#a7b3c0" stroke-width="2.5">
+    <circle cx="478" cy="262" r="11"/>
+    <circle cx="512" cy="262" r="11"/>
+    <circle cx="546" cy="262" r="11"/>
+  </g>
+
+  <!-- ===== Glucose diffusing toward the sensor tip ===== -->
+  <text class="lbl-b" x="512" y="356" text-anchor="middle">Glucose</text>
+  <g fill="#0b5fa5" fill-opacity="0.7">
+    <circle cx="466" cy="388" r="9"/>
+    <circle cx="497" cy="388" r="9"/>
+    <circle cx="528" cy="388" r="9"/>
+    <circle cx="559" cy="388" r="9"/>
+  </g>
+  <path d="M446 388 H300" stroke="#0b5fa5" stroke-width="2" stroke-dasharray="5 6" stroke-opacity="0.5"/>
+  <path d="M300 388 l14 -6 v12 z" fill="#0b5fa5" fill-opacity="0.5"/>
+
+  <!-- ===== Capillary ===== -->
+  <g>
+    <path d="M96 420 Q136 396 176 420 Q216 444 256 420" fill="none" stroke="#e88888" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="136" cy="403" r="7" fill="#e88888" fill-opacity="0.35"/>
+    <circle cx="216" cy="437" r="7" fill="#e88888" fill-opacity="0.35"/>
+  </g>
+  <text class="lbl" x="276" y="426">Capillary</text>
+</svg>

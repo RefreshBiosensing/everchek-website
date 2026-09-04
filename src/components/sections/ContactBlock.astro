@@ -5,8 +5,16 @@
 import Icon from '../Icon.astro';
 import { loadDict } from '../../lib/content';
 
-interface Props { locale?: string; title?: string; text?: string }
-const { locale = 'en', title, text } = Astro.props;
+interface Props {
+  locale?: string;
+  title?: string;
+  text?: string;
+  /** 'full' = name/company/email/country/volume/message.
+      'simple' = the original contact page's name/email/message. */
+  fields?: 'full' | 'simple';
+}
+const { locale = 'en', title, text, fields = 'full' } = Astro.props;
+const simple = fields === 'simple';
 
 const dict = loadDict(locale);
 const t = dict.contactForm;
@@ -21,30 +29,45 @@ const d = dict.direct;
   )}
   <div class="container contact-grid">
     <form class="enquiry-form" id="enquiry-form" novalidate>
-      <div class="form-row">
-        <label class="field">
-          <span class="cf-label">{t.name} <span class="req">*</span></span>
-          <input name="name" type="text" required autocomplete="name" />
-        </label>
-        <label class="field">
-          <span class="cf-label">{t.company} <span class="req">*</span></span>
-          <input name="company" type="text" required autocomplete="organization" />
-        </label>
-      </div>
-      <div class="form-row">
-        <label class="field">
-          <span class="cf-label">{t.email} <span class="req">*</span></span>
-          <input name="email" type="email" required autocomplete="email" />
-        </label>
-        <label class="field">
-          <span class="cf-label">{t.country} <span class="req">*</span></span>
-          <input name="country" type="text" required autocomplete="country-name" />
-        </label>
-      </div>
-      <label class="field">
-        <span class="cf-label">{t.quantity}</span>
-        <input name="quantity" type="text" inputmode="numeric" />
-      </label>
+      {simple ? (
+        <>
+          <label class="field">
+            <span class="cf-label">{t.name} <span class="req">*</span></span>
+            <input name="name" type="text" required autocomplete="name" />
+          </label>
+          <label class="field">
+            <span class="cf-label">{t.email} <span class="req">*</span></span>
+            <input name="email" type="email" required autocomplete="email" />
+          </label>
+        </>
+      ) : (
+        <>
+          <div class="form-row">
+            <label class="field">
+              <span class="cf-label">{t.name} <span class="req">*</span></span>
+              <input name="name" type="text" required autocomplete="name" />
+            </label>
+            <label class="field">
+              <span class="cf-label">{t.company} <span class="req">*</span></span>
+              <input name="company" type="text" required autocomplete="organization" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="field">
+              <span class="cf-label">{t.email} <span class="req">*</span></span>
+              <input name="email" type="email" required autocomplete="email" />
+            </label>
+            <label class="field">
+              <span class="cf-label">{t.country} <span class="req">*</span></span>
+              <input name="country" type="text" required autocomplete="country-name" />
+            </label>
+          </div>
+          <label class="field">
+            <span class="cf-label">{t.quantity}</span>
+            <input name="quantity" type="text" inputmode="numeric" />
+          </label>
+        </>
+      )}
       <label class="field">
         <span class="cf-label">{t.message} <span class="req">*</span></span>
         <textarea name="message" rows="6" required placeholder={t.messagePlaceholder}></textarea>
@@ -74,7 +97,7 @@ const d = dict.direct;
     <aside class="direct-card">
       <div class="dc-icon"><Icon name="mail" size={24} /></div>
       <h2 class="dc-title">{d.title}</h2>
-      <p class="dc-desc">{d.desc}</p>
+      {d.desc && <p class="dc-desc">{d.desc}</p>}
       <div class="dc-label">{d.emailLabel}</div>
       <a class="dc-email" href={`mailto:${d.email}`}>{d.email}</a>
       <div class="dc-label" style="margin-top: 20px;">{d.whatsappLabel}</div>

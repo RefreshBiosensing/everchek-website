@@ -6,6 +6,7 @@ sections:
   - type: hero
     variant: split
     visual: image
+    figureBg: "#EDF5FC"
     image: /images/cgm-app-overview-final.webp
     imageAlt: >-
       Annotated overview of the EverChek CGM patient app on a smartphone. Labels highlight: real-time

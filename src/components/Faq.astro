@@ -1,8 +1,8 @@
 ---
 // FAQ accordion with FAQPage structured data (JSON-LD) for Google rich results.
 interface QA { q: string; a: string }
-interface Props { title?: string; eyebrow?: string; items: QA[] }
-const { title = 'Frequently asked questions', eyebrow = 'FAQ', items } = Astro.props;
+interface Props { title?: string; eyebrow?: string; items: QA[]; id?: string }
+const { title = 'Frequently asked questions', eyebrow = 'FAQ', items, id } = Astro.props;
 
 const schema = {
   '@context': 'https://schema.org',
@@ -14,7 +14,7 @@ const schema = {
   })),
 };
 ---
-<section class="section faq-section">
+<section class="section faq-section" id={id}>
   <div class="container faq-wrap">
     <div class="eyebrow">{eyebrow}</div>
     <h2 class="h2 center">{title}</h2>
@@ -34,9 +34,25 @@ const schema = {
 <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
 <style>
-  .faq-wrap { max-width: 860px; }
+  /* Full container width: the two-column grid needs it, and a narrower block
+     here made the FAQ look inset compared with the sections above it. */
+  .faq-wrap { max-width: var(--container); }
   .faq-wrap .h2 { margin-left: auto; margin-right: auto; text-align: center; }
-  .faq-list { margin-top: 36px; display: flex; flex-direction: column; gap: 12px; }
+  /* Two-column accordion. FAQ blocks on this site run to 17 items; a single
+     column pushed the rest of the page a long way down. `align-items: start`
+     keeps each item's height independent, so opening one does not shift its
+     neighbour in the other column. */
+  .faq-list {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    column-gap: 22px;
+    row-gap: 12px;
+  }
+  @media (max-width: 860px) {
+    .faq-list { grid-template-columns: 1fr; }
+  }
   .faq-item {
     background: #fff;
     border: 1px solid var(--border);
@@ -47,12 +63,12 @@ const schema = {
   .faq-item[open] { border-color: var(--blue-dark); }
   .faq-item summary {
     display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    padding: 18px 0;
+    padding: 22px 0;
     cursor: pointer;
     list-style: none;
   }
   .faq-item summary::-webkit-details-marker { display: none; }
-  .faq-q { font-size: 15.5px; font-weight: 700; color: var(--ink); line-height: 1.45; margin: 0; }
+  .faq-q { font-size: 16px; font-weight: 700; color: var(--ink); line-height: 1.45; margin: 0; }
   .faq-toggle {
     flex-shrink: 0;
     width: 26px; height: 26px;

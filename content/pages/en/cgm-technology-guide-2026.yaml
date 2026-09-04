@@ -14,68 +14,43 @@ sections:
     image: /images/blog-cover-1.webp
     imageAlt: CGM sensor technology and digital health interface illustration
     ratio: 16/9
-  - type: richtext
-    title: Introduction to CGM Technology
+  - type: prose
     blocks:
-      - text: Continuous Glucose Monitoring (CGM) has transformed diabetes management over the past decade. Unlike traditional fingerstick methods that provide a single glucose reading at a point in time, CGM systems deliver real-time glucose data every few minutes, giving users and healthcare providers a complete picture of glucose trends and patterns.
-      - text: For healthcare brands looking to enter the diabetes management market, understanding the core technology behind CGM systems is essential.
-  - type: richtext
-    title: How CGM Sensors Work
-    blocks:
-      - text: Modern CGM systems use a thin, flexible sensor filament inserted just beneath the skin to measure glucose levels in the interstitial fluid. The sensor contains a glucose oxidase enzyme that reacts with glucose molecules, creating an electrical signal proportional to the glucose concentration.
-    tint: true
-  - type: card-grid
-    title: "Key components of a CGM system include:"
-    columns: 4
-    media: icon
-    items:
-      - icon: sensor
-        title: Sensor
-        text: The disposable component worn for 7-14 days, containing the glucose-sensing element.
-      - icon: wifi
-        title: Transmitter
-        text: A reusable electronic module that powers the sensor and transmits data wirelessly.
-      - icon: set
-        title: Applicator
-        text: A device that inserts the sensor consistently and painlessly.
-      - icon: phone
-        title: Mobile App
-        text: Software that displays glucose readings, trends, and alerts.
-  - type: card-grid
-    title: "MARD: The Accuracy Standard"
-    text: "MARD (Mean Absolute Relative Difference) is the primary metric used to evaluate CGM accuracy. It measures the average difference between CGM readings and reference blood glucose values:"
-    columns: 3
-    media: none
-    items:
-      - title: Below 10% MARD
-        text: Considered excellent accuracy for clinical use
-      - title: Below 8% MARD
-        text: State-of-the-art performance (EverChek standard)
-      - title: Above 10% MARD
-        text: May require frequent calibration
-    note: EverChek achieves MARD values below 8%, among the most accurate CGM systems available for B2B partnerships.
-    tint: true
-  - type: card-grid
-    title: Key Features Healthcare Brands Should Look For
-    columns: 4
-    media: icon
-    items:
-      - icon: cog
-        title: Factory Calibration
-        text: No fingerstick calibration needed, improving user experience.
-      - icon: shield
-        title: Waterproof (IPX8)
-        text: Allows showering, swimming, and exercise without removal.
-      - icon: clock
-        title: Wear Duration
-        text: 14-day wear time reduces sensor changes.
-      - icon: data
-        title: Data Integration
-        text: API/SDK access for integration with digital health platforms.
-  - type: richtext
-    title: The Growing CGM Market
-    blocks:
-      - text: The global CGM market is projected to reach $16 billion by 2028. For healthcare brands, this represents a significant opportunity. By partnering with an experienced manufacturer like EverChek, businesses can bring branded CGM products to market faster with lower upfront investment.
+      - h2: "Introduction to CGM Technology"
+        id: "intro"
+      - p: "Continuous Glucose Monitoring (CGM) has transformed diabetes management over the past decade. Unlike traditional fingerstick methods that provide a single glucose reading at a point in time, CGM systems deliver real-time glucose data every few minutes, giving users and healthcare providers a complete picture of glucose trends and patterns."
+      - p: "For healthcare brands looking to enter the diabetes management market, understanding the core technology behind CGM systems is essential."
+      - figure: "/images/blog-cover-1.webp"
+        alt: "CGM sensor technology and digital health interface illustration"
+        cover: true
+      - h2: "How CGM Sensors Work"
+        id: "how-it-works"
+      - p: "Modern CGM systems use a thin, flexible sensor filament inserted just beneath the skin to measure glucose levels in the interstitial fluid. The sensor contains a glucose oxidase enzyme that reacts with glucose molecules, creating an electrical signal proportional to the glucose concentration."
+      - p: "Key components of a CGM system include:"
+      - ul:
+          - "<strong>Sensor:</strong> The disposable component worn for 7-14 days, containing the glucose-sensing element."
+          - "<strong>Transmitter:</strong> A reusable electronic module that powers the sensor and transmits data wirelessly."
+          - "<strong>Applicator:</strong> A device that inserts the sensor consistently and painlessly."
+          - "<strong>Mobile App:</strong> Software that displays glucose readings, trends, and alerts."
+      - h2: "MARD: The Accuracy Standard"
+        id: "mard"
+      - p: "MARD (Mean Absolute Relative Difference) is the primary metric used to evaluate CGM accuracy. It measures the average difference between CGM readings and reference blood glucose values:"
+      - ul:
+          - "<strong>Below 10% MARD:</strong> Considered excellent accuracy for clinical use"
+          - "<strong>Below 8% MARD:</strong> State-of-the-art performance (EverChek standard)"
+          - "<strong>Above 10% MARD:</strong> May require frequent calibration"
+      - p: "EverChek achieves MARD values below 8%, among the most accurate CGM systems available for B2B partnerships."
+      - h2: "Key Features Healthcare Brands Should Look For"
+        id: "features"
+      - ul:
+          - "<strong>Factory Calibration:</strong> No fingerstick calibration needed, improving user experience."
+          - "<strong>Waterproof (IPX8):</strong> Allows showering, swimming, and exercise without removal."
+          - "<strong>Wear Duration:</strong> 14-day wear time reduces sensor changes."
+          - "<strong>Data Integration:</strong> API/SDK access for integration with digital health platforms."
+      - h2: "The Growing CGM Market"
+        id: "market"
+      - p: "The global CGM market is projected to reach $16 billion by 2028. For healthcare brands, this represents a significant opportunity. By partnering with an experienced manufacturer like EverChek, businesses can bring branded CGM products to market faster with lower upfront investment."
+
   - type: link-pills
     label: Keep reading
     items:

@@ -53,5 +53,7 @@ sections:
       - Le volume annuel indicatif, si vous en avez un — une fourchette suffit à ce stade
 
   - type: contact-form
+
+    fields: simple
     title: Envoyez-nous un message
     text: "Remplissez le formulaire ci-dessous : notre équipe vous répond sous un jour ouvré."

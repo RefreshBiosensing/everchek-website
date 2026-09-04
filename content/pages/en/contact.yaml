@@ -1,21 +1,22 @@
 title: Contact Us —EverChek
-description: Get in touch with EverChek's CGM OEM team. Discuss your white-label continuous glucose monitoring project, request samples, or ask about partnership opportunities.
+description: Get in touch with EverChek's CGM OEM team. Discuss your white-label continuous glucose monitoring project,
+  request samples, or ask about partnership opportunities.
 path: /contact/
 translationKey: contact
 sections:
-  - type: hero
-    variant: centered
-    backgroundImage: /images/contact-hero-factory.webp
-    title: Let's talk about your CGM project
-    sub: Interested in our CGM solutions? Get in touch with our team to explore how we can support your business. Whether you are building a CGM brand, expanding into new healthcare markets, or integrating CGM into your system, we are ready to support your next stage of growth.
-    imageAlt: EverChek factory and manufacturing facility
-    buttons:
-      - label: Contact us
-        href: /contact/
-        style: primary
-
-  - type: contact-form
-    title: Send us a message
-    text: Fill out the form below and our team will get back to you within one business day.
-
-  - type: cta-banner
+- type: hero
+  variant: centered
+  backgroundImage: /images/contact-hero-factory.webp
+  title: Let's talk about your CGM project
+  sub: Interested in our CGM solutions? Get in touch with our team to explore how we can support your business. Whether
+    you are building a CGM brand, expanding into new healthcare markets, or integrating CGM into your system, we are
+    ready to support your next stage of growth.
+  imageAlt: EverChek factory and manufacturing facility
+  buttons:
+  - label: Contact us
+    href: /contact/
+    style: primary
+- type: contact-form
+  fields: simple
+  title: Send us a message
+  text: Fill out the form below and our team will get back to you within one business day.

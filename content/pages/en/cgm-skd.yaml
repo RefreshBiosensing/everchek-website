@@ -1,249 +1,258 @@
 title: CGM SKD Manufacturing Solution | Faster Market Entry for CGM Brands
-description: Launch your CGM brand faster with a professional CGM SKD manufacturer. Benefit from local assembly, tax advantages, regulatory support, and quality supply.
+description: Launch your CGM brand faster with a professional CGM SKD manufacturer. Benefit from local assembly, tax
+  advantages, regulatory support, and quality supply.
 path: /cgm-skd/
 translationKey: cgm-skd
 sections:
-  - type: hero
-    variant: standard
-    title: Professional CGM SKD manufacturer for healthcare brands worldwide
-    sub: Want to build a local CGM business without the complexity of developing CGM technology from scratch? Let us help with an SKD partnership. This allows your product to qualify as locally manufactured, helping you access government tenders, claim tax incentives, and qualify for reduced import duties, all under your own brand.
-    badges:
-      - Local assembly model
-      - Tax & duty advantages
-      - Regulatory documentation
-      - Your own brand
-      - Stable component supply
-    buttons:
-      - label: Contact us
-        href: /contact/
-      - label: Explore our CGM
-        href: /continuous-glucose-monitor/
-        style: ghost
-
-  - type: image-text
-    variant: left
-    title: What is CGM SKD?
-    image: /images/skd-intro.webp
-    imageAlt: CGM SKD semi-knocked-down assembly kit showing sensor core,transmitter, and applicator components
-    ratio: 4/5
-    fit: contain
-    paragraphs:
-      - CGM SKD (Semi-Knocked-Down) is a manufacturing model beneficial for healthcare businesses looking to launch a CGM brand fast while meeting local assembly or manufacturing requirements.
-      - Instead of importing fully finished products, you receive partially assembled kits from us, including the sensor core, transmitter, and applicator. Your team completes final assembly, packaging, and labeling locally for sale. We also provide technical support and guidance for manufacturing setup and regulatory preparation such as CE registration.
-
-  - type: feature-rows
-    ratio: 16/9
-    title: Who is CGM SKD for?
-    text: Four types of healthcare businesses that benefit most from the semi-knocked-down CGM manufacturing model.
-    items:
-      - visual: image
-        image: /images/skd-audience-1.webp
-        imageAlt: Government tender bidders qualifying for public procurement through local CGM assembly
-        title: Government tender bidders
-        desc: Deeply familiar with local regulations but blocked by strict local content rules for finished imports? Under SKD partnership model, we help you fulfill all local assembly requirements, giving you an immediate compliant path to qualify for and win public healthcare tenders.
-      - visual: image
-        image: /images/skd-audience-2.webp
-        imageAlt: Healthcare brands launching own CGM products with SKD partnership
-        title: Healthcare brands
-        desc: Equipped with strong brand power but trapped by the massive R&D costs of developing sensor technology from scratch? Our SKD model offers a ready-to-assemble shortcut to launch your own CGM brand while retaining full ownership of the final product.
-      - visual: image
-        image: /images/skd-audience-3.webp
-        imageAlt: Medical manufacturers assembling CGM components on local production line
-        title: Medical manufacturers
-        desc: Possessing advanced assembly lines or clean rooms but wanting to utilize this existing infrastructure to its fullest potential? Add CGM to your current pipeline through our SKD model and maximize your manufacturing advantages while lowering local operational and logistics costs.
-      - visual: image
-        image: /images/skd-audience-4.webp
-        imageAlt: Established distributors expanding margins with own CGM brand through SKD model
-        title: Established distributors
-        desc: Armed with a mature sales network but tired of reselling third-party brands and fighting price wars that erode your margins? Switching to our SKD model empowers you to launch your own branding, cutting out upstream markups to regain absolute pricing control.
-
-  - type: card-grid
-    media: icon
-    columns: 3
-    title: What do you receive with our CGM SKD solution?
-    text: Everything you need to assemble, certify, and commercialize CGM products under your own brand —from components to documentation.
-    items:
-      - icon: set
-        title: Partially assembled CGM kits
-        text: We supply you with proprietary high-precision sensor chips, wireless transmitter PCBA, housings, adhesive patches and battery units pre-assembled and ready for your final integration.
-      - icon: doc
-        title: Documentation support
-        text: You receive supporting documentation that simplify local regulatory registration, such as electronic performance verification reports, biocompatibility assessment, ISO13485, clinical study data reports, and IEC standard test reports, etc.
-      - icon: console
-        title: Software ecosystem access
-        text: A dedicated patient or doctor app is available via API or SDK connection that supports glucose monitoring and reporting. You can also integrate it into your digital healthcare platform.
-      - icon: check
-        title: Quality control framework
-        text: You receive inspection standards, verification procedures, and automated testing equipment to support stable assembly quality. These help your team validate component performance, reduce assembly variation, and maintain reliable quality before final product release.
-      - icon: box
-        title: Stable CGM components supply
-        text: We possess large-scale manufacturing capacity, able to produce millions of CGM units annually. As your business grows, we scale with you. No unexpected shortages. No production delays on your end.
-      - icon: cog
-        title: Assembly and calibration guidelines
-        text: You receive comprehensive kit specifications, component lists, production line equipment recommendations, and standardized operating procedures (SOPs) to support efficient assembly setup and consistent calibration workflows.
-
-  - type: card-grid
-    media: icon
-    columns: 2
-    dark: true
-    title: Is SKD the right fit for your organization?
-    text: SKD works best for organizations that already have, or are on a clear path to obtaining the following. If you're unsure, we're happy to assess your situation together.
-    items:
-      - icon: shield
-        title: A path to regulatory licensing
-        text: A valid local medical device manufacturing or distribution license, or a clear plan to obtain one.
-      - icon: users
-        title: Established market channels
-        text: Existing relationships with clinics, pharmacy chains, or platforms that serve diabetes patients.
-      - icon: doc
-        title: Regulatory execution capability
-        text: Familiarity with local medical device registration —you lead the process, we provide the documentation.
-      - icon: building
-        title: Assembly facility
-        text: Access to standard medical device assembly facilities and a cleanroom for final integration and packaging.
-
-  - type: step-flow
-    columns: 1
-    title: How the SKD partnership process works
-    text: From initial alignment to ongoing supply —a clear five-step path to launching your CGM business locally.
-    items:
-      - icon: doc
-        title: Requirement alignment and feasibility assessment
-        desc: Submit company profile, target market plan, and available resources for mutual feasibility evaluation.
-      - icon: shield
-        title: NDA execution and in-depth assessment
-        desc: NDA signing followed by sample kit evaluation and local regulatory feasibility analysis.
-      - icon: handshake
-        title: Formal agreement execution
-        desc: Define kit configuration, pricing, MOQ, branding scope, assembly standards, and support boundaries.
-      - icon: box
-        title: Initial shipment and capability enablement
-        desc: Delivery of SKD kits with training materials, regulatory documentation, and assembly SOPs.
-      - icon: globe
-        title: Local certification and ongoing supply
-        desc: Partner-led regulatory approval and market launch, with continuous supply from us.
-
-  - type: compare-table
-    title: CGM SKD technical specifications
-    text: Detailed bill of materials, hardware specifications, and manufacturing prerequisites for partners evaluating the CGM SKD model.
-    labelColumn: SKD module / component
-    columns:
-      - Description
-      - Form factor
-    highlight: -1
-    align: left
-    rows:
-      - label: Biosensor electrode filament
-        cells:
-          - state: plain
-            text: Glucose oxidase enzyme-coated electrode, factory-calibrated with lot-specific code
-          - state: plain
-            text: Pre-sterilized, single-use filament assembly
-      - label: Bluetooth Low Energy PCBA
-        cells:
-          - state: plain
-            text: Integrated Bluetooth Low Energy chip, ultra-low-power data transmission with onboard antenna
-          - state: plain
-            text: Pre-assembled PCB with firmware
-      - label: Sensor base housing
-        cells:
-          - state: plain
-            text: Medical-grade polycarbonate, IP28-rated water-resistant enclosure
-          - state: plain
-            text: Unsterilized shell, snap-fit assembly
-      - label: Adhesive patch assembly
-        cells:
-          - state: plain
-            text: Medical-grade silicone adhesive, breathable, 14-day wear
-          - state: plain
-            text: Pre-cut, individually packaged
-      - label: Applicator / inserter mechanism
-        cells:
-          - state: plain
-            text: Spring-loaded insertion, depth-controlled for subcutaneous placement
-          - state: plain
-            text: Pre-assembled, single-use mechanism
-      - label: Battery unit
-        cells:
-          - state: plain
-            text: CR battery cell, pre-soldered leads
-          - state: plain
-            text: Standard coin cell
-
-  - type: compare-table
-    tint: true
-    title: Manufacturing prerequisites
-    labelColumn: Requirement
-    columns:
-      - Specification
-    highlight: -1
-    align: left
-    rows:
-      - label: Cleanroom class
-        cells:
-          - state: plain
-            text: Class 10,000 (ISO 8) or higher recommended for sensor housing assembly
-      - label: Sterilization equipment
-        cells:
-          - state: plain
-            text: Ethylene Oxide (EO) sterilization chamber or E-beam for final product sterilization
-      - label: Calibration rig
-        cells:
-          - state: plain
-            text: Lot-specific calibration flashing station provided by EverChek
-      - label: Quality management
-        cells:
-          - state: plain
-            text: ISO 13485 certification or equivalent quality system
-      - label: Trained personnel
-        cells:
-          - state: plain
-            text: Basic cleanroom protocol training; full assembly SOP provided
-
-  - type: banner-wide
-    align: center
-    height: short
-    title: Your long-term B2B CGM manufacturing partner
-    text: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands worldwide.
-    cta:
-      label: Contact us
-      href: /contact/
-
-  - type: faq
-    title: Frequently asked questions
-    items:
-      - q: How difficult is it to assemble a CGM SKD kit?
-        a: Assembly is extremely straightforward. Every component features snap-fit mechanisms, and you will hear an audible click when each part is correctly in place. Also, we provide detailed instructions, cleanroom guidelines, quality assurance procedures, and training to ensure smooth assembly and reliable device performance.
-      - q: What is the difference between CGM OEM and SKD?
-        a: >-
-          OEM means we manufacture fully finished, ready-to-use CGM devices for you to brand and sell directly.
-          Regulatory certifications such as CE or FDA remain under our responsibility, and you operate under a
-          distributor/importer model. With CGM SKD, we send you separate components including sensor, transmitter,
-          adhesive patch, and applicator. You assemble them locally, which reduces shipping volume and lowers import
-          tariffs since SKD often qualifies for lower duties. However, you must obtain your own local manufacturing
-          or assembly license, complete final quality checks, and take full regulatory responsibility for the
-          finished CGM products in your market. OEM is simpler but relatively more costly. SKD is more flexible,
-          and can often reduce import duties, or meet "Made in Country" requirements but adds regulatory and
-          quality control duties.
-      - q: Do you provide regulatory support for SKD?
-        a: Yes. For SKD partners, we can provide technical documentation and support needed for local regulatory applications such as CE registration.
-      - q: Can I get market exclusivity on a CGM SKD model?
-        a: Yes, CGM SKD partnerships are structured with regional or country-level exclusivity to protect your market position.
-
-  - type: link-pills
-    label: Related
-    items:
-      - label: CGM OEM manufacturing
-        href: /cgm-oem/
-      - label: SKD for government tenders
-        href: /cgm-skd-tenders/
-      - label: What is CGM SKD?
-        href: /blog/what-is-cgm-skd/
-      - label: OEM vs ODM vs SKD
-        href: /cgm-manufacturing-models/
-      - label: The CGM system
-        href: /continuous-glucose-monitor/
-      - label: Documentation and disclosure
-        href: /certifications/
-
-  - type: cta-banner
+- type: hero
+  variant: standard
+  title: Professional CGM SKD manufacturer for healthcare brands worldwide
+  sub: Want to build a local CGM business without the complexity of developing CGM technology from scratch? Let us help
+    with an SKD partnership. This allows your product to qualify as locally manufactured, helping you access government
+    tenders, claim tax incentives, and qualify for reduced import duties, all under your own brand.
+  badges:
+  - Local assembly model
+  - Tax & duty advantages
+  - Regulatory documentation
+  - Your own brand
+  - Stable component supply
+  buttons:
+  - label: Contact us
+    href: /contact/
+  - label: Explore our CGM
+    href: /continuous-glucose-monitor/
+    style: ghost
+- type: image-text
+  variant: left
+  title: What is CGM SKD?
+  figureBg: '#E8F1F9'
+  image: /images/skd-intro.webp
+  imageAlt: CGM SKD semi-knocked-down assembly kit showing sensor core,transmitter, and applicator components
+  ratio: 4/5
+  fit: contain
+  paragraphs:
+  - CGM SKD (Semi-Knocked-Down) is a manufacturing model beneficial for healthcare businesses looking to launch a CGM
+    brand fast while meeting local assembly or manufacturing requirements.
+  - Instead of importing fully finished products, you receive partially assembled kits from us, including the sensor
+    core, transmitter, and applicator. Your team completes final assembly, packaging, and labeling locally for sale.
+    We also provide technical support and guidance for manufacturing setup and regulatory preparation such as CE registration.
+- type: feature-rows
+  ratio: 16/9
+  title: Who is CGM SKD for?
+  text: Four types of healthcare businesses that benefit most from the semi-knocked-down CGM manufacturing model.
+  items:
+  - visual: image
+    image: /images/diagrams/skd-1-tenders.svg
+    imageAlt: Government tender bidders qualifying for public procurement through local CGM assembly
+    title: Government tender bidders
+    desc: Deeply familiar with local regulations but blocked by strict local content rules for finished imports? Under
+      SKD partnership model, we help you fulfill all local assembly requirements, giving you an immediate compliant path
+      to qualify for and win public healthcare tenders.
+  - visual: image
+    image: /images/diagrams/skd-2-brands.svg
+    imageAlt: Healthcare brands launching own CGM products with SKD partnership
+    title: Healthcare brands
+    desc: Equipped with strong brand power but trapped by the massive R&D costs of developing sensor technology from
+      scratch? Our SKD model offers a ready-to-assemble shortcut to launch your own CGM brand while retaining full ownership
+      of the final product.
+  - visual: image
+    image: /images/diagrams/skd-3-manufacturers.svg
+    imageAlt: Medical manufacturers assembling CGM components on local production line
+    title: Medical manufacturers
+    desc: Possessing advanced assembly lines or clean rooms but wanting to utilize this existing infrastructure to its
+      fullest potential? Add CGM to your current pipeline through our SKD model and maximize your manufacturing advantages
+      while lowering local operational and logistics costs.
+  - visual: image
+    image: /images/diagrams/skd-4-distributors.svg
+    imageAlt: Established distributors expanding margins with own CGM brand through SKD model
+    title: Established distributors
+    desc: Armed with a mature sales network but tired of reselling third-party brands and fighting price wars that erode
+      your margins? Switching to our SKD model empowers you to launch your own branding, cutting out upstream markups
+      to regain absolute pricing control.
+  fit: contain
+- type: card-grid
+  media: icon
+  columns: 3
+  title: What do you receive with our CGM SKD solution?
+  text: Everything you need to assemble, certify, and commercialize CGM products under your own brand —from components
+    to documentation.
+  items:
+  - icon: set
+    title: Partially assembled CGM kits
+    text: We supply you with proprietary high-precision sensor chips, wireless transmitter PCBA, housings, adhesive patches
+      and battery units pre-assembled and ready for your final integration.
+  - icon: doc
+    title: Documentation support
+    text: You receive supporting documentation that simplify local regulatory registration, such as electronic performance
+      verification reports, biocompatibility assessment, ISO13485, clinical study data reports, and IEC standard test
+      reports, etc.
+  - icon: console
+    title: Software ecosystem access
+    text: A dedicated patient or doctor app is available via API or SDK connection that supports glucose monitoring and
+      reporting. You can also integrate it into your digital healthcare platform.
+  - icon: check
+    title: Quality control framework
+    text: You receive inspection standards, verification procedures, and automated testing equipment to support stable
+      assembly quality. These help your team validate component performance, reduce assembly variation, and maintain
+      reliable quality before final product release.
+  - icon: box
+    title: Stable CGM components supply
+    text: We possess large-scale manufacturing capacity, able to produce millions of CGM units annually. As your business
+      grows, we scale with you. No unexpected shortages. No production delays on your end.
+  - icon: cog
+    title: Assembly and calibration guidelines
+    text: You receive comprehensive kit specifications, component lists, production line equipment recommendations, and
+      standardized operating procedures (SOPs) to support efficient assembly setup and consistent calibration workflows.
+- type: card-grid
+  media: icon
+  columns: 2
+  dark: true
+  title: Is SKD the right fit for your organization?
+  text: SKD works best for organizations that already have, or are on a clear path to obtaining the following. If you're
+    unsure, we're happy to assess your situation together.
+  items:
+  - icon: shield
+    title: A path to regulatory licensing
+    text: A valid local medical device manufacturing or distribution license, or a clear plan to obtain one.
+  - icon: users
+    title: Established market channels
+    text: Existing relationships with clinics, pharmacy chains, or platforms that serve diabetes patients.
+  - icon: doc
+    title: Regulatory execution capability
+    text: Familiarity with local medical device registration —you lead the process, we provide the documentation.
+  - icon: building
+    title: Assembly facility
+    text: Access to standard medical device assembly facilities and a cleanroom for final integration and packaging.
+- type: step-flow
+  variant: rail
+  title: How the SKD partnership process works
+  text: From initial alignment to ongoing supply —a clear five-step path to launching your CGM business locally.
+  items:
+  - icon: doc
+    title: Requirement alignment and feasibility assessment
+    desc: Submit company profile, target market plan, and available resources for mutual feasibility evaluation.
+  - icon: shield
+    title: NDA execution and in-depth assessment
+    desc: NDA signing followed by sample kit evaluation and local regulatory feasibility analysis.
+  - icon: handshake
+    title: Formal agreement execution
+    desc: Define kit configuration, pricing, MOQ, branding scope, assembly standards, and support boundaries.
+  - icon: box
+    title: Initial shipment and capability enablement
+    desc: Delivery of SKD kits with training materials, regulatory documentation, and assembly SOPs.
+  - icon: globe
+    title: Local certification and ongoing supply
+    desc: Partner-led regulatory approval and market launch, with continuous supply from us.
+- type: compare-table
+  title: CGM SKD technical specifications
+  text: Detailed bill of materials, hardware specifications, and manufacturing prerequisites for partners evaluating
+    the CGM SKD model.
+  labelColumn: SKD module / component
+  columns:
+  - Description
+  - Form factor
+  highlight: -1
+  align: left
+  rows:
+  - label: Biosensor electrode filament
+    cells:
+    - state: plain
+      text: Glucose oxidase enzyme-coated electrode, factory-calibrated with lot-specific code
+    - state: plain
+      text: Pre-sterilized, single-use filament assembly
+  - label: Bluetooth Low Energy PCBA
+    cells:
+    - state: plain
+      text: Integrated Bluetooth Low Energy chip, ultra-low-power data transmission with onboard antenna
+    - state: plain
+      text: Pre-assembled PCB with firmware
+  - label: Sensor base housing
+    cells:
+    - state: plain
+      text: Medical-grade polycarbonate, IP28-rated water-resistant enclosure
+    - state: plain
+      text: Unsterilized shell, snap-fit assembly
+  - label: Adhesive patch assembly
+    cells:
+    - state: plain
+      text: Medical-grade silicone adhesive, breathable, 14-day wear
+    - state: plain
+      text: Pre-cut, individually packaged
+  - label: Applicator / inserter mechanism
+    cells:
+    - state: plain
+      text: Spring-loaded insertion, depth-controlled for subcutaneous placement
+    - state: plain
+      text: Pre-assembled, single-use mechanism
+  - label: Battery unit
+    cells:
+    - state: plain
+      text: CR battery cell, pre-soldered leads
+    - state: plain
+      text: Standard coin cell
+- type: compare-table
+  tint: true
+  title: Manufacturing prerequisites
+  labelColumn: Requirement
+  columns:
+  - Specification
+  highlight: -1
+  align: left
+  rows:
+  - label: Cleanroom class
+    cells:
+    - state: plain
+      text: Class 10,000 (ISO 8) or higher recommended for sensor housing assembly
+  - label: Sterilization equipment
+    cells:
+    - state: plain
+      text: Ethylene Oxide (EO) sterilization chamber or E-beam for final product sterilization
+  - label: Calibration rig
+    cells:
+    - state: plain
+      text: Lot-specific calibration flashing station provided by EverChek
+  - label: Quality management
+    cells:
+    - state: plain
+      text: ISO 13485 certification or equivalent quality system
+  - label: Trained personnel
+    cells:
+    - state: plain
+      text: Basic cleanroom protocol training; full assembly SOP provided
+- type: faq
+  title: Frequently asked questions
+  items:
+  - q: How difficult is it to assemble a CGM SKD kit?
+    a: Assembly is extremely straightforward. Every component features snap-fit mechanisms, and you will hear an audible
+      click when each part is correctly in place. Also, we provide detailed instructions, cleanroom guidelines, quality
+      assurance procedures, and training to ensure smooth assembly and reliable device performance.
+  - q: What is the difference between CGM OEM and SKD?
+    a: OEM means we manufacture fully finished, ready-to-use CGM devices for you to brand and sell directly. Regulatory
+      certifications such as CE or FDA remain under our responsibility, and you operate under a distributor/importer
+      model. With CGM SKD, we send you separate components including sensor, transmitter, adhesive patch, and applicator.
+      You assemble them locally, which reduces shipping volume and lowers import tariffs since SKD often qualifies for
+      lower duties. However, you must obtain your own local manufacturing or assembly license, complete final quality
+      checks, and take full regulatory responsibility for the finished CGM products in your market. OEM is simpler but
+      relatively more costly. SKD is more flexible, and can often reduce import duties, or meet "Made in Country" requirements
+      but adds regulatory and quality control duties.
+  - q: Do you provide regulatory support for SKD?
+    a: Yes. For SKD partners, we can provide technical documentation and support needed for local regulatory applications
+      such as CE registration.
+  - q: Can I get market exclusivity on a CGM SKD model?
+    a: Yes, CGM SKD partnerships are structured with regional or country-level exclusivity to protect your market position.
+- type: link-pills
+  label: Related
+  items:
+  - label: CGM OEM manufacturing
+    href: /cgm-oem/
+  - label: SKD for government tenders
+    href: /cgm-skd-tenders/
+  - label: What is CGM SKD?
+    href: /blog/what-is-cgm-skd/
+  - label: OEM vs ODM vs SKD
+    href: /cgm-manufacturing-models/
+  - label: The CGM system
+    href: /continuous-glucose-monitor/
+  - label: Documentation and disclosure
+    href: /certifications/
+- type: cta-banner

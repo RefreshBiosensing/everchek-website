@@ -1,72 +1,50 @@
 brand: EverChek
-brandTagline: B2B CGM Manufacturing
+brandTagline: B2B CGM OEM/SKD/Distribution
 nav:
+  cgms:
+    label: CGMS
+    root: /what-is-cgms/
+    columns:
+      - heading: CGMS
+        links:
+          - label: What is CGMS?
+            href: /what-is-cgms/
   product:
     label: Product
     root: /continuous-glucose-monitor/
     columns:
-      - heading: The system
+      - heading: Product
         links:
-          - label: EverChek CGM system
+          - label: EverChek CGMS
             href: /continuous-glucose-monitor/
           - label: EverChek patient app
             href: /cgm-patient-app/
-          - label: What is a CGM system?
-            href: /what-is-cgms/
   solutions:
     label: Solutions
-    root: /cgm-manufacturing-models/
+    root: /cgm-skd/
     columns:
-      - heading: Manufacture with us
+      - heading: Solutions
         links:
-          - label: OEM / ODM and private label
-            href: /cgm-oem/
-          - label: SKD kits and local assembly
+          - label: SKD/CKD
             href: /cgm-skd/
-          - label: OEM vs ODM vs SKD compared
-            href: /cgm-manufacturing-models/
-      - heading: Take it to market
-        links:
+          - label: OEM/ODM
+            href: /cgm-oem/
           - label: Become a distributor
             href: /cgm-distribution/
-          - label: Government tenders and local content
-            href: /cgm-skd-tenders/
   business:
     label: Company
     root: /about-us/
     columns:
-      - heading: About EverChek
+      - heading: Company
         links:
           - label: About us
             href: /about-us/
-          - label: Documentation and how you get it
-            href: /certifications/
           - label: Contact us
             href: /contact/
-  resources:
-    label: Resources
-    root: /blog/
-    columns:
-      - heading: Guides
-        links:
-          - label: What is a CGM system?
-            href: /what-is-cgms/
-          - label: CGM technology guide for healthcare brands
-            href: /cgm-technology-guide-2026/
-          - label: OEM vs ODM vs SKD compared
-            href: /cgm-manufacturing-models/
-          - label: How SKD helps you win healthcare tenders
-            href: /cgm-skd-tenders/
-      - heading: Articles
-        links:
-          - label: All articles
+          - label: Blog
             href: /cgm-blogs/
-          - label: CGM vs BGM — how to choose
-            href: /blog/cgm-vs-bgm/
-          - label: Private label CGM — launching your own brand
-            href: /blog/private-label-cgm/
-          - label: What is CGM SKD?
-            href: /blog/what-is-cgm-skd/
+          - label: Certifications & Validations
+            href: /certifications/
 cta:
   enquiry: Contact us
   quote: Contact us
@@ -88,8 +66,8 @@ ctaBanner:
   fullFormHref: /contact/
 footer:
   blurb: A trusted CGM technology partner for healthcare brands worldwide, delivering high-accuracy sensors, regulatory support, and long-term supply.
-  operatorLabel: A sub-brand of
-  operatorName: Refresh.cc
+  operatorLabel: Operated by
+  operatorName: Shenzhen Refresh Biosensing Technology Co., Ltd.
   operatorUrl: https://www.refresh.cc/
   columns:
     - heading: Product & solutions
@@ -172,6 +150,6 @@ direct:
   addressLabel: Location
   address: Room 902, Building 1, Hengtaiyu Building, Tangwei Community, Fenghuang Street, Guangming District, Shenzhen
   companyLabel: Operated by
-  companyName: Refresh.cc
+  companyName: Shenzhen Refresh Biosensing Technology Co., Ltd.
   companyUrl: https://www.refresh.cc/
   responseNote: You can expect a thoughtful reply within 24 hours. We treat every inquiry as the start of a partnership.
