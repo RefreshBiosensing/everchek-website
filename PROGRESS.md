@@ -138,3 +138,38 @@ h2/h3/h4/p/ul/ol/figure/hr；用 `scripts/article-from-original.py` 直接从原
 3. **push `astro-rebuild` 到 GitHub** —— 11 个提交仍只在本地。
 4. **Cloudflare Pages 正式项目构建设置** —— Build command `npm run build`，输出 `dist`。
 5. **上线前站长发一封真实表单测试** —— 投递链路从未实测过。
+
+## 2026-09-04 — 上线 ever-chek.com（已完成）
+
+`astro-rebuild` 已快进合并进 `main` 并推送（18 个提交）。生产站现为新版。
+
+**上线方式的坑（重要，下次改动前必读）**：
+Cloudflare Pages 的 Build configuration 是**按环境分开存的**。Preview 环境的配置设好了
+（`npm run build` / `dist`），Production 环境的**没设上**——所以 `main` 的自动构建
+`5630dcd8` 产出了一个空目录，该部署自身 404。Cloudflare 没有把域名切过去，
+ever-chek.com 全程保持在上一个正常的部署上，**没有出现过故障**。
+
+当前生产内容是用 `npx wrangler pages deploy dist --project-name=everchek-website
+--branch=main` 直接上传的（本地构建 + `npm run check` 验证过的产物）。
+
+**待办**：到 Dashboard → everchek-website → Settings，把 **Choose Environment 切到
+Production**，重新保存 Build configuration（Framework: Astro / Build command:
+`npm run build` / Build output directory: `dist` / Root directory 留空）。
+在此之前，push 到 main 的自动构建仍会产出空部署——不会顶掉线上（Cloudflare 不会把域名
+切到失败的部署），但也不会更新线上。修好之前，发布请继续用上面那条 wrangler 命令。
+
+**上线验收（全部通过）**：41 条路由全 200；旧 `.html` 全部 301 到新地址（单跳）；
+canonical 指向新 URL；hreflang en/fr/x-default 正常；`/api/enquiry` Functions 已部署并响应；
+`npm run check` 无字典缺项、无构建痕迹。
+
+**Cloudflare 邮箱混淆**：ever-chek.com 这个 zone 开着 Scrape Shield → Email Address
+Obfuscation，会在边缘把 `mailto:` 重写成 `[email protected]` + 一段解码 JS。真人浏览器里
+会正常还原成 contact@ever-chek.com（已实测），但不执行 JS 的抓取方（含部分 AI 抓取）
+看到的是占位符。要让地址对所有人可见，需在 Dashboard 关掉这个开关。
+
+### 仍待办
+1. **Production 构建配置**（见上）——否则 Git 自动构建不生效。
+2. **法语正文重新同步** —— 除 cgm-patient-app、thank-you 外，法语页面结构仍与还原后的英文不一致。
+3. **站长发一封真实表单测试** —— 投递链路仍未实测。
+4. Google Search Console 重新提交 `sitemap-index.xml`。
+5. 上线稳定后删除临时项目 `everchek-preview`。
