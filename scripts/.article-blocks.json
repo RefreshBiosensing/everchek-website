@@ -1,0 +1,1088 @@
+{
+ "private-label-cgm": [
+  {
+   "p": "Thinking about starting your own CGM brand? You've probably already called a few manufacturers. Two of them hit you with MOQs in the hundreds of thousands. Another one says give it a year, maybe more, before you see a real product. So you hang up and think, okay, this is a Dexcom and Abbott game, not mine."
+  },
+  {
+   "p": "But it's not, actually. It doesn't matter if you're a distributor eyeing a new category to add, a diabetes or metabolic health brand that wants to finally own your own hardware instead of reselling someone else's, an importer who's moved health products for years but never a device, a pharma company filling out your chronic disease lineup, or an investor just poking around the CGM space before committing real money. You can launch your own CGM brand to market easily with a private label CGM manufacturer. Here's the complete guide."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/01-private-label-cgm.webp",
+   "alt": "Private label CGM brand concept",
+   "width": 1418,
+   "height": 752
+  },
+  {
+   "h2": "What is a private label CGM?"
+  },
+  {
+   "p": "To put it simply, a private label CGM is a complete system — the sensor, the transmitter, the app — that a manufacturer already designed, validated, and put into production. You put your brand on it and sell it as yours. The manufacturer keeps ownership of the platform and the regulatory paperwork behind it. You own everything the customer actually sees and feels: the name on the box, the packaging, the app they open every day, the marketing around the whole thing."
+  },
+  {
+   "p": "That's a completely different game from inventing a CGM yourself, which usually means years of biosensor R&D, clinical trials, and a regulatory submission built from nothing. Private label skips all of them. You're not proving if the glucose-sensing technology works — someone already did that. Instead, your job is only making the product look and feel like its yours."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/03-market-growth.webp",
+   "alt": "CGM market growth driving private label adoption",
+   "width": 1312,
+   "height": 736
+  },
+  {
+   "h2": "Why more companies are going private label"
+  },
+  {
+   "p": "The global market for continuous glucose monitoring is expanding rapidly. According to market data from firms like Grand View Research and Fortune Business Insights, the global CGM market size surpassed $8 billion recently and is projected to maintain a compound annual growth rate (CAGR) of over 15% through the turn of the decade. This growth is driven by expanding clinical adoption for type 1 and type 2 diabetes, alongside a massive new wave of consumer demand for metabolic health, longevity, and athletic performance optimization."
+  },
+  {
+   "p": "Here is what is driving the shift toward private label:"
+  },
+  {
+   "ul": [
+    "<strong>Accelerated speed to market:</strong> Developing a native CGM from scratch typically takes 3 to 5 years from initial bench testing through clinical validation and regulatory clearance. A private label approach compresses this timeline to months.",
+    "<strong>Massive capital efficiency:</strong> You eliminate the need to fund internal biosensor laboratories, recruit specialized cleanroom engineers, or purchase expensive automated micro-assembly lines. Capital stays liquid and can be deployed toward customer acquisition and marketing.",
+    "<strong>De-risked technology assets:</strong> Technical failure rates in early-stage medical hardware development are high. By adopting an existing platform, you inherit a product that has already proven its accuracy, manufacturing consistency, and safety profile across thousands of real-world patient days.",
+    "<strong>Strategic focus:</strong> Your team does not get bogged down in technical troubleshooting or raw material supply chain snarls. You focus entirely on onboarding clinics, optimizing digital marketing funnels, and managing distribution logistics."
+   ]
+  },
+  {
+   "p": "Generally speaking, it just lets you stay in your lane. If you've built your business on marketing, community, and distribution, you don't need to suddenly become a biosensor engineering company to get into CGM. You keep doing what you're good at, and you get a compliant, working product to sell."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/02-what-is-private-label.webp",
+   "alt": "Private label concept: generic product transformed into branded product",
+   "width": 1312,
+   "height": 736
+  },
+  {
+   "h2": "Private label vs. OEM vs. SKD: What is the difference"
+  },
+  {
+   "p": "When exploring manufacturing partnerships, you will encounter three primary terms: Private Label, OEM, and SKD. It is vital to understand that these are not merely different names for the same service; they represent completely different operational and regulatory commitments."
+  },
+  {
+   "h3": "1. Private label (white label)"
+  },
+  {
+   "p": "This is the fastest, lowest-barrier entry point available. You utilize the manufacturer's existing, fully realized product line — including the physical sensor casing, transmitter electronics, and standard app layout. The manufacturer applies your logo to the hardware, customizes the packaging graphics, and pushes your branded version of the app to the app stores. It is ideal for rapid market entry and agile validation."
+  },
+  {
+   "h3": "2. OEM (Original equipment manufacturer)"
+  },
+  {
+   "p": "An OEM partnership represents a deeper tier of technical collaboration. While you still utilize the manufacturer's underlying, validated biosensor technology and chip architecture, you introduce custom modifications. This might include a unique physical shape for the sensor housing, a customized transmitter enclosure, or specific hardware-level feature adjustments. Because it requires custom molding, engineering hours, and potentially updated design verification testing, it demands higher upfront investment and a longer timeline than standard private labeling. Learn more about OEM partnerships."
+  },
+  {
+   "h3": "3. SKD (Semi-knocked-down)"
+  },
+  {
+   "p": "Semi-knocked-down means the manufacturer ships you components (such as the functional biosensor elements or PCBA electronic boards) for local assembly in your own market. This model only makes sense once you've already proven demand and you're ready to commit to serious, sustained volume for the long haul, because local assembly and the inventory it requires only pays off at scale. Also, your manufacturer doesn't need to hold the CE mark or registration for your specific market. Instead, they supply you with complete technical documentation to help you file for local medical registration. Read our full SKD guide."
+  },
+  {
+   "p": "If you are validating a new market, launching a pilot program, or looking to get a brand off the ground with minimal capital friction, stick to Private Label or light OEM. If you are an established player with an existing local assembly infrastructure, looking to win large-scale government tenders that mandate domestic production, only then should you consider the SKD pathway."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/04-models-comparison.webp",
+   "alt": "Private Label vs OEM vs SKD manufacturing models comparison",
+   "width": 1312,
+   "height": 736
+  },
+  {
+   "h2": "Who actually uses the private label model?"
+  },
+  {
+   "ul": [
+    "<strong>Medical device distributors and regional agents:</strong> Companies that already have deep relationships with hospital networks, pharmacies, and endocrinology clinics, allowing them to instantly monetize their existing sales channels.",
+    "<strong>Diabetes care and digital health brands:</strong> Existing brands offering test strips, blood glucose meters (BGMs), or digital coaching services that want to modernize their product portfolio and increase user retention.",
+    "<strong>Pharmaceutical companies:</strong> Drug manufacturers looking to package continuous glucose monitoring alongside therapeutic regimens to create unified digital therapies that improve patient compliance and clinical outcomes.",
+    "<strong>Telehealth and remote patient monitoring (RPM) platforms:</strong> Modern clinics and health-tech startups that use real-time glucose data to power personalized nutrition, weight loss, or metabolic health programs.",
+    "<strong>Large hospital networks and procurement groups:</strong> High-volume healthcare providers looking to reduce systemic procurement costs by introducing a high-quality, reliable house-branded CGM across their facilities."
+   ]
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/05-who-uses.webp",
+   "alt": "Five types of B2B healthcare businesses using private label CGM",
+   "width": 1312,
+   "height": 736
+  },
+  {
+   "h2": "What can you actually customize?"
+  },
+  {
+   "p": "A common misconception is that private labeling forces you into a generic, rigid product. In reality, a mature manufacturing partner can customize a wide range of touchpoints."
+  },
+  {
+   "ul": [
+    "<strong>Visual and structural packaging:</strong> Complete control over external box design, branded user manuals, and warning labels.",
+    "<strong>Hardware identity:</strong> Branded logos on the sensor inserter and transmitter body.",
+    "<strong>Software ecosystem and UI/UX:</strong> Full app localization with brand colors, typography, and language strings.",
+    "<strong>Clinical configurations:</strong> Fine-tuning alert thresholds, notifications, and data-sharing intervals.",
+    "<strong>Enterprise integrations:</strong> API and SDK for EHR connectivity and cloud data pipelines."
+   ]
+  },
+  {
+   "p": "Explore our white-label patient app capabilities."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/06-customization.webp",
+   "alt": "Custom CGM packaging and branding options",
+   "width": 1312,
+   "height": 736
+  },
+  {
+   "h2": "How the CGM private label process actually works"
+  },
+  {
+   "h3": "Phase 1: alignment and regulatory discovery"
+  },
+  {
+   "p": "The project begins by mapping out your target geographic markets, identifying the required local medical device classifications, and assessing the volume expectations for the initial launch phases."
+  },
+  {
+   "h3": "Phase 2: configuration and selection"
+  },
+  {
+   "p": "You review the manufacturer's underlying technology portfolio to choose your baseline hardware features (e.g., sensor wear duration, calibration requirements) and establish the software integration scope."
+  },
+  {
+   "h3": "Phase 3: brand integration and asset design"
+  },
+  {
+   "p": "Your design team works alongside the manufacturer's engineering team to finalize packaging die-lines, insert text, regulatory labels, and the localized asset files for the iOS and Android applications."
+  },
+  {
+   "h3": "Phase 4: evaluation and sample sign-off"
+  },
+  {
+   "p": "The manufacturer produces a run of physical, branded engineering samples and provides the accompanying technical documentation files. Your team evaluates the physical kit and signs off on the final golden sample."
+  },
+  {
+   "h3": "Phase 5: production and quality assurance"
+  },
+  {
+   "p": "The order moves into mass manufacturing inside a certified, cleanroom medical facility operating under strict ISO 13485 quality management guidelines. Every batch undergoes rigorous electrochemical and wireless performance validation."
+  },
+  {
+   "h3": "Phase 6: fulfillment and logistics"
+  },
+  {
+   "p": "Finished, sterile, retail-ready products are packed, cleared through export quality gates, and shipped to your designated regional fulfillment centers or distribution hubs."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/07-process-phases.webp",
+   "alt": "Six-phase private label CGM process timeline",
+   "width": 1312,
+   "height": 736
+  },
+  {
+   "h2": "How to choose the right private label CGM manufacturer"
+  },
+  {
+   "p": "Your manufacturing partner is the literal lifeblood of your brand. When vetting potential suppliers, move past basic price sheets and judge them on these critical technical and operational pillars:"
+  },
+  {
+   "h3": "Clinical accuracy (MARD)"
+  },
+  {
+   "p": "The gold standard metric for CGM accuracy is MARD (Mean Absolute Relative Difference). It measures the average percentage deviation between the CGM reading and a laboratory reference glucose value. Lower numbers are superior. A reliable, clinically viable CGM platform should consistently demonstrate a MARD below 9%. Demand to see peer-reviewed clinical trial data or formal evaluation reports."
+  },
+  {
+   "h3": "Manufacturing stability & capacity"
+  },
+  {
+   "p": "An interrupted supply chain can destroy a consumer brand overnight. Audit the manufacturer's cleanroom classifications, their daily production capacity, and their component sourcing agreements. Ensure they have the scaling capacity to support your brand when your sales volume triples."
+  },
+  {
+   "h3": "Regulatory documentation depth"
+  },
+  {
+   "p": "Can the manufacturer provide a complete, well-organized technical file? Look for a partner who can hand you complete ISO 13485 certificates, comprehensive biocompatibility data, sterilization validation reports, and robust software verification files. If their documentation is sparse, your local regulatory approval process will become a lengthy nightmare."
+  },
+  {
+   "h3": "Long-term R&D commitment"
+  },
+  {
+   "p": "The CGM landscape changes rapidly. You do not want to partner with a manufacturer whose technology will be obsolete in two years. Choose a partner with an active internal R&D roadmap who is consistently innovating in longer sensor wear times, smaller form factors, multi-analyte tracking (e.g., lactate or ketones), and advanced algorithmic accuracy."
+  },
+  {
+   "figure": "/blog/private-label-cgm-images/08-manufacturer-selection.webp",
+   "alt": "Cleanroom manufacturing facility for CGM production",
+   "width": 4032,
+   "height": 3024
+  },
+  {
+   "h2": "Why partner with EverChek for your private label CGM"
+  },
+  {
+   "p": "At EverChek, we provide a streamlined, deeply reliable turnkey solution designed to take your brand from concept to commercial launch with absolute confidence."
+  },
+  {
+   "ul": [
+    "<strong>Clinically validated accuracy:</strong> The EverChek CGM platform is built upon advanced, proven electrochemical biosensor technology, delivering under 8% MARD performance metrics that meet the strictest international clinical standards.",
+    "<strong>Agile, multi-tier cooperation:</strong> Whether you need a rapid, cost-effective Private Label rollout to validate a market, a customized OEM design to differentiate your brand, or a highly structured SKD industrial component delivery framework for domestic assembly, our teams adapt completely to your operational model.",
+    "<strong>End-to-end customization depth:</strong> We do not just paste logos. We offer deeply integrated localization across retail packaging, local language documentation, customized alert logic, and complete, production-ready white-label mobile app frameworks.",
+    "<strong>Advanced scale and stability:</strong> Our state-of-the-art, ISO 13485-certified manufacturing facilities utilize advanced automation to guarantee stable lead times, rigorous quality control, and the continuous volume scalability your business demands.",
+    "<strong>Uncompromising regulatory support:</strong> We provide our global partners with deeply professional documentation packages, technical data transfers, and dedicated engineering consultation to ensure your local regulatory approval process moves forward smoothly and efficiently."
+   ]
+  },
+  {
+   "p": "If you are weighing private label against OEM or SKD for your specific market and volume, just tell us where you are at. We will walk through it with you directly. Contact our team today."
+  },
+  {
+   "hr": true
+  }
+ ],
+ "what-is-cgm-skd": [
+  {
+   "p": "Are you looking for a more flexible, lower-cost way to enter the Continuous Glucose Monitor (CGM) market? In an increasingly competitive diabetes management landscape, the traditional <a href=\"/cgm-oem/\">OEM model</a> often comes with heavy import tariffs and rigid Minimum Order Quantities (MOQs). Building your own continuous glucose monitor from the ground up takes years and significant investment. That's where the CGM SKD model comes in, allowing you to launch your own CGM brand with tax advantages and lower cost within 6 to 12 months."
+  },
+  {
+   "p": "Having worked directly with a variety of healthcare providers and distributors worldwide on CGM SKD projects, we know the questions that matter most when you're evaluating this model. Let's get started."
+  },
+  {
+   "figure": "/blog/cgm-skd-b2b-guide-images/skd-concept-flat.webp",
+   "alt": "CGM SKD semi-knocked-down manufacturing concept"
+  },
+  {
+   "h2": "What does CGM SKD mean?"
+  },
+  {
+   "p": "CGM SKD stands for \"Continuous Glucose Monitor Semi-Knocked-Down.\" It means that a CGM product leaves the original manufacturer's factory partly assembled instead of fully finished. The manufacturer builds and tests the core components, then ships them to your business where your staff complete the final steps: assembly, packaging, branding, and regulatory paperwork, all in your own market. Doing this lets your finished product qualify as locally made, which can open doors to government tenders, tax incentives, and lower import duties, while still carrying your own brand name."
+  },
+  {
+   "p": "It is different from a fully finished, ready-to-use CGM, and different from a fully knocked-down (CKD) kit where almost every part still needs to be put together on your end. Instead, SKD sits somewhere in the middle. Enough is done at the factory to keep things simple, but enough is left for your business to control branding and meet local rules."
+  },
+  {
+   "h2": "What is a CGM SKD kit? Definition and core components"
+  },
+  {
+   "p": "Picture ordering a bicycle online. It shows up with the frame, wheels, and handlebars already built and tested, but you still need to bolt them together before you can ride it. A CGM SKD kit works the same way. The tricky engineering is done at the factory — electrode fabrication, membrane coating, cytotoxicity testing, puncture needle loading, etc. — and your job is the final assembly of 2 to 5 major components."
+  },
+  {
+   "p": "We, as the CGM manufacturer, ship most of the pieces already made and tested. Your team — whether a distribution partner, a hospital's biomedical department, or a healthcare brand's operations team — then puts on the finishing touches: packaging, labeling, and paperwork, before the product reaches its final user."
+  },
+  {
+   "p": "The exact configuration depends on the regulatory needs of the regional market, and is often confirmed before a deal is signed. Here's what a typical CGM SKD kit looks like. <a href=\"/cgm-skd/\">See the full SKD kit specification on our dedicated page</a>."
+  },
+  {
+   "h3": "Sensor and transmitter"
+  },
+  {
+   "p": "The sensor and transmitter are the electronic heart of the device. They usually arrive pre-calibrated, meaning they're already tested to give accurate readings. But they still need final assembly. In most kits, snap-fit connections make this easy, with an audible click confirming each part is seated correctly."
+  },
+  {
+   "h3": "Adhesive and insertion parts"
+  },
+  {
+   "p": "The adhesive patch and applicator are disposable. They're designed for one-time use, so a fresh set comes with every kit. Because these parts touch the skin directly, your local assembly area needs to stay clean and controlled — typically a cleanroom rated Class 10,000 (ISO 8) or higher."
+  },
+  {
+   "h3": "Packaging and documentation"
+  },
+  {
+   "p": "Manuals and boxes often arrive in a generic, unbranded form. That's actually a good thing. It means your business can add its own language, logo, and instructions without starting from scratch."
+  },
+  {
+   "figure": "/blog/cgm-skd-b2b-guide-images/target-customers.webp",
+   "alt": "Four types of B2B healthcare businesses that use CGM SKD"
+  },
+  {
+   "h2": "Who is CGM SKD for?"
+  },
+  {
+   "p": "Consumer-facing CGM articles almost always assume the reader is a distributor. In reality, at least four types of B2B healthcare businesses use the SKD model, each for a different reason."
+  },
+  {
+   "h3": "Pharmacy chains and retail health networks"
+  },
+  {
+   "p": "Pharmacies are the single largest CGM distribution channel worldwide, generating more revenue than any other sales route. If your business already runs a pharmacy network, simply stocking someone else's CGM brand on the shelf means your margin ends where the manufacturer's begins. <a href=\"/cgm-distribution/\">SKD lets you assemble and sell your own branded line instead</a>, so the CGM revenue stays inside your business rather than passing through to an upstream brand."
+  },
+  {
+   "h3": "Telehealth and digital health platforms"
+  },
+  {
+   "p": "Hardware and software are converging in the CGM space, with more companies pairing sensors to subscription apps, remote monitoring dashboards, and clinician portals to create recurring revenue. If your business already runs a chronic-disease app or virtual care platform, reselling a competitor's hardware means someone else owns the device layer of your ecosystem. SKD lets you <a href=\"/cgm-patient-app/\">brand your own CGM sensor</a> and pair it to your existing software stack instead."
+  },
+  {
+   "h3": "Health systems and hospital procurement teams"
+  },
+  {
+   "p": "Institutional buyers are becoming a bigger part of CGM demand, especially as national and regional health payers begin covering sensors under chronic-disease benefit programs, similar to steps already taken in Japan and Germany. If your organization handles bulk procurement for patient care, sourcing directly through SKD can secure steadier long-term supply and pricing than routing every order through a third-party reseller."
+  },
+  {
+   "h3": "National and regional health program operators"
+  },
+  {
+   "p": "Governments in several markets are investing directly in diabetes care infrastructure as part of broader healthcare modernization plans, including funding CGM adoption across hospitals and outpatient clinics. Local assembly through SKD can help <a href=\"/cgm-skd-tenders/\">meet local-content goals</a> while keeping per-unit costs manageable at scale."
+  },
+  {
+   "p": "<strong>Decision tip:</strong> If your business fits more than one of these profiles — say a distributor that also wants to bid on government tenders — SKD can usually support both goals at once, since the underlying process is the same. We have worked with many regional distributors to support their tender bidding. <a href=\"/contact/\">Contact us</a> for details."
+  },
+  {
+   "figure": "/blog/cgm-skd-b2b-guide-images/process-steps.webp",
+   "alt": "Five-step CGM SKD partnership process timeline"
+  },
+  {
+   "h2": "How does the CGM SKD model work? A step-by-step process"
+  },
+  {
+   "p": "Understanding the SKD workflow helps any B2B healthcare business plan its timeline and budget. Here's the process, step by step."
+  },
+  {
+   "p": "The CGM SKD model involves component production, quality inspection, kit preparation, shipment, local assembly, branding, and distribution. Each step matters, and skipping one can cause delays or compliance problems. The exact steps can shift depending on your country's rules and the manufacturer you work with."
+  },
+  {
+   "p": "<strong>Decision tip:</strong> If you want full control over branding and local regulatory compliance, SKD is preferable to OEM."
+  },
+  {
+   "h3": "Step 1: requirement alignment & feasibility assessment"
+  },
+  {
+   "p": "You share your company profile, target market plan, and available resources. The manufacturer evaluates whether SKD is a realistic fit for your business."
+  },
+  {
+   "h3": "Step 2: NDA & in-depth assessment"
+  },
+  {
+   "p": "Once both sides sign a non-disclosure agreement, you evaluate a sample kit and the manufacturer helps assess local regulatory feasibility."
+  },
+  {
+   "h3": "Step 3: formal agreement"
+  },
+  {
+   "p": "You and the manufacturer define the kit configuration, pricing, minimum order quantity, branding scope, assembly standards, and support boundaries in writing."
+  },
+  {
+   "h3": "Step 4: initial shipment & capability enablement"
+  },
+  {
+   "p": "The manufacturer ships your first SKD kits along with training materials, regulatory documentation, and assembly SOPs (standard operating procedures)."
+  },
+  {
+   "h3": "Step 5: local certification & ongoing supply"
+  },
+  {
+   "p": "Your business leads the local regulatory approval process using the documentation provided, then launches. The manufacturer continues to supply components on an ongoing basis as you scale."
+  },
+  {
+   "p": "Every country has its own rules for medical devices. Regulatory requirements vary by country and must be confirmed with local authorities before you launch. For reference, the <a href=\"https://www.fda.gov/medical-devices/consumer-products/continuous-glucose-monitoring\" target=\"_blank\" rel=\"noopener\">FDA provides specific guidance for CGM device classification</a>, and in the EU, CGMs are <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC11802390/\" target=\"_blank\" rel=\"noopener\">classified under MDR as Class IIb devices</a> requiring Notified Body involvement."
+  },
+  {
+   "p": "In one real project, a healthcare business used our SKD model to enter a new market where full imports faced heavy tariffs. By assembling locally, they cut their landed cost by an estimated 15 to 25 percent and shaved roughly two months off their time-to-market compared to importing finished devices. <a href=\"/contact/\">Contact us</a> to discuss how SKD could work for your market."
+  },
+  {
+   "figure": "/blog/cgm-skd-b2b-guide-images/key-benefits.webp",
+   "alt": "Key benefits of CGM SKD model for B2B healthcare businesses"
+  },
+  {
+   "h2": "Key benefits of the CGM SKD model for B2B healthcare businesses"
+  },
+  {
+   "p": "The CGM SKD model offers flexible procurement options, potentially shorter time-to-market, and may reduce total landed costs in markets where local assembly provides tariff advantages. If you prioritize brand control and local compliance, SKD is a strong choice. Results depend on your specific market and setup, so it's smart to run the numbers for your own situation."
+  },
+  {
+   "h3": "Flexible procurement and lower entry barriers"
+  },
+  {
+   "p": "SKD is designed for committed, long-term partnerships. The manufacturer will support you in setting up a local assembly line, training your team, and handing over documentation for registration. In return, they expect a partner with a clear plan, the resources to execute it, and meaningful annual purchase volume."
+  },
+  {
+   "h3": "Branding and localization control"
+  },
+  {
+   "p": "Because packaging arrives in a generic form, your business can customize the box, the app, and the manual to match your brand and your patients' language."
+  },
+  {
+   "h3": "Regulatory and tariff advantages"
+  },
+  {
+   "p": "In some countries, local assembly may qualify your company as locally manufactured, which can simplify product registration and reduce import duties. This can make your final product more competitive on price."
+  },
+  {
+   "h3": "A full support package, not just parts"
+  },
+  {
+   "p": "A good SKD partnership includes more than components. A reliable CGM manufacturer also provides documentation support (performance verification reports, <a href=\"/certifications/\">ISO 13485 certificates</a>, clinical study data), software access (a patient or doctor app available via API or SDK), and a quality control framework."
+  },
+  {
+   "h3": "Territory exclusivity"
+  },
+  {
+   "p": "Because SKD partnerships involve real investment on both sides, many manufacturers structure SKD agreements with regional or country-level exclusivity — commonly one partner per country, sometimes up to two — to protect each partner's market position. Ask about this upfront."
+  },
+  {
+   "p": "One healthcare business we worked with lowered its total landed cost significantly by shifting from finished-goods import to the SKD model. Proof that the savings can be real, not just theoretical."
+  },
+  {
+   "figure": "/blog/cgm-skd-b2b-guide-images/choose-manufacturer.webp",
+   "alt": "Factory training and technical support from CGM SKD manufacturer"
+  },
+  {
+   "h2": "How to choose a reliable CGM SKD manufacturer?"
+  },
+  {
+   "p": "Picking the right CGM SKD supplier can make or break your launch. Here's what to look for."
+  },
+  {
+   "h3": "Manufacturing capability and capacity"
+  },
+  {
+   "p": "Does the manufacturer own its factory, or do they outsource? Look for a partner with large-scale production capacity, ideally able to produce millions of units a year, so unexpected shortages don't stall your business as you grow."
+  },
+  {
+   "h3": "Quality certifications and compliance"
+  },
+  {
+   "p": "Look for certifications like <a href=\"/certifications/\">ISO 13485</a>, which demonstrates a recognized quality management standard. CE marking is different with SKD: since the finished product isn't complete until you assemble it locally, the manufacturer itself doesn't necessarily need a CE mark on file. What matters more is whether they can provide the clinical and technical reports you'll need for your own local registration."
+  },
+  {
+   "h3": "Technical support and training"
+  },
+  {
+   "p": "A good manufacturer won't just ship you a box and disappear. Prioritize manufacturers that offer training for your assembly team and ongoing support — ones that respond quickly when issues come up and are willing to grow the relationship as your volume increases."
+  },
+  {
+   "figure": "/blog/cgm-skd-b2b-guide-images/partnership-cta.webp",
+   "alt": "Healthcare business team collaborating on CGM SKD partnership"
+  },
+  {
+   "h2": "Are you ready to be an SKD partner?"
+  },
+  {
+   "p": "Before signing on, honestly assess your own setup. CGM manufacturers typically look for partners who have, or have a clear path to: a valid local medical device license, existing relationships with clinics or pharmacy chains, familiarity with local device registration, and access to a cleanroom for final assembly."
+  },
+  {
+   "p": "Typical manufacturing prerequisites include:"
+  },
+  {
+   "ul": [
+    "Cleanroom — Class 10,000 (ISO 8) or higher, for sensor housing assembly",
+    "Quality management — ISO 13485 certification or an equivalent quality system",
+    "Trained personnel — Basic cleanroom protocol knowledge is enough to start; full assembly training is provided by the manufacturer"
+   ]
+  },
+  {
+   "p": "Once you've sized up your own readiness, put these six questions on the table before you sign anything:"
+  },
+  {
+   "ul": [
+    "What exactly is included in the SKD kit?",
+    "What certifications do you hold?",
+    "Can you provide assembly training?",
+    "What documentation do you supply for local registration?",
+    "Can we start with a pilot order?",
+    "Do you limit the number of SKD partners in a single country?"
+   ]
+  },
+  {
+   "p": "This checklist comes straight from real supplier audits. It's the same list we'd run through before recommending any partner."
+  },
+  {
+   "h2": "Ready to explore CGM SKD partnerships?"
+  },
+  {
+   "p": "If your business is considering CGM SKD, <a href=\"/contact/\">contact our team</a> to request a sample kit, discuss your market requirements, or explore partnership options. Whether you're a government tender bidder, a healthcare brand, a medical manufacturer, or a distributor, we can help you see the product firsthand, talk through your country's regulations, and connect with our technical team."
+  },
+  {
+   "h2": "Conclusion"
+  },
+  {
+   "p": "The CGM SKD model offers B2B healthcare businesses a flexible, customizable path to market with potentially lower entry barriers, provided a reliable manufacturing partner is chosen. Whether you're bidding on a government tender, launching a healthcare brand, expanding an existing manufacturing line, or building your own product on top of a distribution network, SKD gives your organization room to start small without the heavy costs of building a device from scratch. The key is picking a manufacturer with the right capabilities, certifications, and support."
+  },
+  {
+   "p": "If you're ready to discuss your specific market, <a href=\"/contact/\">reach out to our team today</a>."
+  },
+  {
+   "hr": true
+  }
+ ],
+ "cgm-vs-bgm": [
+  {
+   "p": "Every medical manufacturer and distributor in glucose monitoring hits the same fork in the road: build around CGM, or build around BGM? While both lean on glucose oxidase or glucose dehydrogenase, the engineering is completely different."
+  },
+  {
+   "p": "In reality, it determines your R&D runway, regulatory budget, supply chain footprint, and the kind of revenue model you can sustain."
+  },
+  {
+   "p": "In this guide, we will cover everything between CGM and BGM for business needs only, and help you find a way to add CGM into your pipeline with the lowest efforts. Let’s get the ball rolling."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/01_hero_concept.webp",
+   "alt": ""
+  },
+  {
+   "h2": "CGM and BGM difference: what CGM vs BGM readings actually measure"
+  },
+  {
+   "p": "CGM measures interstitial fluid under the skin via an embedded enzyme electrode, generating <mark>288 readings/day</mark> over a 7–14 day wear period. BGM measures capillary blood via single-use test strips coated in glucose oxidase, providing a single snapshot in time."
+  },
+  {
+   "p": "As glucose takes time to diffuse from blood into interstitial fluid, BGM’s reading is often in real time, and CGMS would usually have a 5-15 minute lag. Therefore, a CGM will often read lower than a same-moment BGM taken right after a meal, when the blood sugar is climbing fast, and read higher after a dose of insulin, when the blood sugar is dropping. Same person, same instant, two different numbers — and both are \"correct\" for what they're measuring."
+  },
+  {
+   "p": "If you're manufacturing a CGM, you have to bake the lag into the calibration algorithm. If you're selling one, you have to train support staff and write user instructions in case of a support queue full of \"my CGM is wrong\" complaints."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/02_continuous_vs_point.webp",
+   "alt": ""
+  },
+  {
+   "h2": "CGM vs BGM accuracy: which is better for regulatory approval?"
+  },
+  {
+   "p": "One industry standard for measuring glucose monitor accuracy is MARD, Mean Absolute Relative Difference. This is a metric that measures, on average, how far a device's readings deviate from a laboratory reference value, expressed as a percentage. If a device has a MARD of 10%, its readings are off by 10% on average compared to a precise lab measurement. Lower MARD means higher point accuracy. A good MARD value is essential to every regulatory filing, clinical study, and marketing campaign."
+  },
+  {
+   "p": "By that measure, CGM systems typically report a MARD between 8-12%, compared with 5-6% for BGM. On paper, BGM is more accurate. However, regulators and clinicians have grown to accept the gap anyway. This is because continuous trend data from CGM can flag a rapid drop before it becomes an emergency, and that's worth more clinically than a single BGM reading being slightly more precise. CGM works best when your end users need early warning of rapid glucose swings, particularly drops into hypoglycemia."
+  },
+  {
+   "p": "In the U.S., CGM systems pursue the <a href=\"https://www.federalregister.gov/documents/2022/02/18/2022-03504/medical-devices-clinical-chemistry-and-clinical-toxicology-devices-classification-of-the-integrated\" target=\"_blank\" rel=\"noopener\">FDA's integrated continuous glucose monitor designation</a>, while BGM systems are generally classified as self-monitoring blood glucose systems, following a more established 510(k) pathway with accuracy benchmarked against ISO 15197."
+  },
+  {
+   "p": "That said, a BGM product can often reach market on a smaller clinical study and a leaner regulatory budget. A CGM product chasing iCGM status should plan for a longer timeline and a larger quality-system investment before the first dollar of revenue arrives."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/03_regulatory_timeline.webp",
+   "alt": ""
+  },
+  {
+   "h2": "CGM vs BGM reviews: what reddit and real users say"
+  },
+  {
+   "p": "Search \"cgm vs bgm reddit\" and the pattern is consistent across threads and product reviews. CGM users praise the trend data and the ability to catch a low before it becomes a crisis. They complain, just as often, about sensors detaching early, accuracy wobbling during exercise, and the recurring cost of keeping sensors stocked. BGM users describe their devices as \"boring but reliable\": cheap, accurate enough day-to-day, free of the wearable's failure modes."
+  },
+  {
+   "p": "Adherence studies generally show CGM users reporting higher satisfaction, driven by fewer fingersticks and the safety net of high/low alerts. But CGM dropout is not rare. Sensor adhesive failures, skin irritation, and the ongoing cost of replacement sensors are recurring reasons users abandon CGM and return to BGM or stop monitoring altogether. For a manufacturer, this is a direct line to your churn number: a CGM with a weak adhesive or an uncomfortable applicator will bleed users even if the sensing chemistry underneath is excellent."
+  },
+  {
+   "p": "If your target market is tech-savvy patients with diabetes, <mark>CGM is the future</mark>. If you serve cost-sensitive or low-resource settings, BGM remains essential and its \"boring reliability\" is itself a selling point."
+  },
+  {
+   "h2": "CGM and BGM devices in digital health: data integration compared"
+  },
+  {
+   "p": "The real divide between CGM and BGM isn't clinical accuracy, but what happens after the reading is taken. BGM tells you what your glucose was. CGM tells you where it's going."
+  },
+  {
+   "h3": "Data density and care model"
+  },
+  {
+   "p": "BGM produces 4–10 manually logged readings per day, supporting only reactive care. CGM generates roughly 288 continuous readings daily, enabling trend analysis, pattern recognition, AI-driven insights, and real-time threshold alerts that allow clinics to intervene immediately rather than at the next scheduled visit."
+  },
+  {
+   "h3": "Integration and B2B value"
+  },
+  {
+   "p": "CGM systems like Dexcom G7 offer APIs that push glucose data directly into modern healthcare infrastructure such as EHRs, remote monitoring platforms, and telehealth workflows., while BGM data often requires manual transcription, increasing error risk. For B2B buyers, a clean, well-documented CGM API makes the device a far more attractive partner for telehealth and remote monitoring platforms than any BGM, regardless of sensor accuracy."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/04_data_ecosystem.webp",
+   "alt": ""
+  },
+  {
+   "h2": "CGM vs BGM: a B2B decision framework for healthcare brands"
+  },
+  {
+   "p": "Choosing between CGM and BGM is a strategic bet on where your portfolio, margins, and channel fit are heading. This following framework cuts through the hype and breaks down the data, barriers, and business models to help you decide what's right for your brand."
+  },
+  {
+   "h3": "What the market data actually tells us"
+  },
+  {
+   "p": "Grand View Research values the global <a href=\"https://www.grandviewresearch.com/industry-analysis/continuous-glucose-monitoring-market\" target=\"_blank\" rel=\"noopener\">CGM device market at <mark>$13.4 billion</mark></a> in 2025, projecting growth to $41.4 billion by 2033 at a 15.1% CAGR, and <a href=\"https://www.grandviewresearch.com/industry-analysis/blood-glucose-monitoring-bgm-devices-market\" target=\"_blank\" rel=\"noopener\">estimates the global BGM device market at <mark>$15.53 billion</mark></a> in 2025, growing at a slower rate than CGM but still maintaining steady demand."
+  },
+  {
+   "h3": "The trade-offs in technology and margins"
+  },
+  {
+   "p": "Faster growth doesn't come free. Here's what each side actually costs to build, and what it pays back."
+  },
+  {
+   "h4": "CGM: High growth, but a steep hill to climb"
+  },
+  {
+   "p": "CGM's growth potential comes with real barriers: biosensor R&D, wireless transmitter engineering, and an <mark>iCGM regulatory pathway</mark> that demands substantial clinical investment. Those same barriers, however, protect margins once overcome. One CGM unit typically cost end users $30 to $100 and requires replacement every 7 to 14 days. This makes the CGM business structurally closer to a subscription than a one-time device sale."
+  },
+  {
+   "h4": "BGM: Steady demand, but a race to the bottom on price"
+  },
+  {
+   "p": "BGM remains essential in hospital tenders, low-resource markets, and price-sensitive consumer segments that do not need or cannot afford continuous monitoring. But the low barrier to entry invites heavy competition, and test strip pricing has been under sustained pressure for years. BGM test strips typically run $0.20 to $1.00 each, a fraction of CGM's per-unit cost, but also yield far thinner margins per sale."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/05_market_growth.webp",
+   "alt": ""
+  },
+  {
+   "h3": "What to weigh before choosing your path"
+  },
+  {
+   "p": "So which path should you take? Weigh these five factors against your organization's actual position."
+  },
+  {
+   "p": "<strong>Technology readiness.</strong> CGM means building a sensor, an app, alert logic, and a data-sharing backend, not just a sensor and a meter. If your team has never shipped regulated software, that reshapes your timeline and budget."
+  },
+  {
+   "p": "<strong>Capital investment.</strong> CGM development, clinical studies, and the iCGM pathway typically need a meaningfully larger budget than a comparable BGM launch."
+  },
+  {
+   "p": "<strong>Regulatory timeline.</strong> BGM reaches market faster on a standard 510(k). CGM's iCGM pathway takes longer and demands more clinical evidence."
+  },
+  {
+   "p": "<strong>Target market.</strong> Hospitals lean toward BGM's simplicity and track record. Retail and tech-engaged consumers are increasingly drawn to CGM."
+  },
+  {
+   "p": "<strong>Profit margins.</strong> CGM offers a recurring-revenue model with stronger margins but a steeper upfront cost. BGM offers thinner margins but a faster, cheaper route to revenue."
+  },
+  {
+   "p": "<strong>A rough rule of thumb:</strong> if your R&D budget clears roughly <mark>$5 million</mark> and you have genuine sensor expertise in-house, CGM is worth pursuing directly. If not, BGM, or a partnership into CGM technology, is the more sensible path than building capability from zero. For many manufacturers, the real answer is both: a hybrid strategy that serves hospital tenders with BGM while capturing the higher-margin CGM market under the same brand."
+  },
+  {
+   "h3": "Where the products are sold and how they are bought"
+  },
+  {
+   "p": "Hospital and clinic tenders still lean toward BGM. Cost, established reimbursement codes, and staff familiarity all favor BGM in institutional procurement, even as CGM adoption grows elsewhere. Tender evaluations in this channel weight upfront cost and supply reliability heavily — both of which favor BGM's simpler, more commoditized supply chain."
+  },
+  {
+   "p": "Retail and online channels are where CGM growth is concentrated. Expanding insurance coverage, direct-to-consumer and over-the-counter CGM products, and subscription-based sensor replacement are all pulling demand toward CGM in these channels. For distributors, the strategic signal is clear: CGM offers higher margins and recurring revenue from sensor replacement, while BGM remains essential for hospital tenders and price-sensitive markets."
+  },
+  {
+   "h3": "What to expect with regulations and tenders"
+  },
+  {
+   "p": "BGM typically follows a simpler regulatory path (Class II, 510(k)) and has established reimbursement codes in most major markets, which makes procurement and tender qualification relatively straightforward. CGM needs more extensive clinical data to support an iCGM or equivalent designation, but reimbursement coverage for CGM has been expanding steadily as insurers and national health systems recognize its clinical value for insulin-dependent patients."
+  },
+  {
+   "p": "A useful real-world illustration of this whole transition is Abbott. Abbott built its diabetes business as a traditional BGM manufacturer under the FreeStyle brand. Its first real attempt at a CGM was the <a href=\"https://www.abbott.com/en-us/corpnewsroom/products-and-innovation/how-a-diabetes-breakthrough-was-born\" target=\"_blank\" rel=\"noopener\">FreeStyle Navigator, launched in the U.S. around 2008</a>, a device that was technically ahead of its time but fell short commercially."
+  },
+  {
+   "p": "Abbott kept investing anyway, and in 2016-2017 launched FreeStyle Libre, a factory-calibrated CGM that did not require routine fingerstick calibration. Libre went on to become the most widely used CGM system in the world, with <a href=\"https://www.abbott.com/en-us/corpnewsroom/products-and-innovation/how-a-diabetes-breakthrough-was-born\" target=\"_blank\" rel=\"noopener\">roughly six million users globally</a>, and sustained investment through an early setback can still end in category leadership."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/06_decision_framework.webp",
+   "alt": ""
+  },
+  {
+   "h2": "Launch your CGM pipeline with low effort using <a href=\"/\">Refresh EverChek</a>"
+  },
+  {
+   "p": "Getting into CGM doesn't have to mean years of R&D and millions in upfront investment. Refresh EverChek comes with a sub-8% MARD accuracy profile and a full 14-day wear time."
+  },
+  {
+   "p": "Instead of building capability from zero, you can leverage our flexible <a href=\"/cgm-oem/\">OEM/ODM frameworks</a> or deploy <a href=\"/cgm-skd/\">Semi-Knocked Down (SKD)</a> solutions. This SKD model allows regional brands to localize assembly, a critical advantage for lowering import duties and meeting local procurement requirements."
+  },
+  {
+   "p": "Our global clients typically went from initial inquiry to a launched CGM product line in six to twelve months, well short of the multi-year build a from-scratch CGM program typically requires."
+  },
+  {
+   "p": "Backed by full API/SDK data integration and robust regulatory documentation (including ISO 13485 compliance and biocompatibility validations), we enables brand to launch high-tier, custom-branded CGM products in months rather than years."
+  },
+  {
+   "figure": "/blog/cgm-vs-bgm-images/07_partnership_supply_chain.webp",
+   "alt": ""
+  },
+  {
+   "hr": true
+  }
+ ],
+ "cgm-manufacturing-models": [
+  {
+   "h2": "Understanding Your Options",
+   "id": "understanding"
+  },
+  {
+   "p": "When entering the CGM market, healthcare brands face an important decision: which manufacturing and partnership model best suits their goals. The four primary models are OEM, ODM, SKD, and CKD, each offering different levels of involvement, investment, and control."
+  },
+  {
+   "p": "Understanding these options helps you make an informed decision that aligns with your business strategy, regulatory approach, and market goals."
+  },
+  {
+   "figure": "/images/blog-cover-2.webp",
+   "alt": "Comparison of OEM, SKD, and ODM CGM manufacturing models",
+   "cover": true
+  },
+  {
+   "h2": "OEM (Original Equipment Manufacturing)",
+   "id": "oem"
+  },
+  {
+   "p": "In an OEM model, EverChek manufactures the complete CGM product to your specifications. You receive a fully assembled, finished product with your branding, packaging, and labeling. This is ideal for companies that want to launch quickly with minimal operational complexity."
+  },
+  {
+   "p": "<strong>Best for:</strong> Healthcare brands with established distribution channels who want to add CGM to their product line without investing in manufacturing infrastructure."
+  },
+  {
+   "h2": "ODM (Original Design Manufacturing)",
+   "id": "odm"
+  },
+  {
+   "p": "ODM goes a step further, where the manufacturer handles both design and production. You select from existing designs and customize them to your brand. This model offers faster time-to-market since the product design is already validated."
+  },
+  {
+   "p": "<strong>Best for:</strong> Companies entering the CGM market for the first time who need a proven, market-ready solution with minor customization."
+  },
+  {
+   "h2": "SKD (Semi-Knocked Down)",
+   "id": "skd"
+  },
+  {
+   "p": "In the SKD model, you receive partially assembled CGM components and perform final assembly locally. This approach offers several strategic advantages including reduced import duties, qualification for local government tenders, lower per-unit costs at scale, and gradual technology transfer."
+  },
+  {
+   "p": "<strong>Best for:</strong> Regional healthcare businesses targeting government contracts or building long-term local manufacturing capacity."
+  },
+  {
+   "h2": "CKD (Completely Knocked Down)",
+   "id": "ckd"
+  },
+  {
+   "p": "CKD provides the highest level of local manufacturing. You receive individual components and assemble the complete product locally. This model maximizes local content and offers the greatest control over the production process."
+  },
+  {
+   "p": "<strong>Best for:</strong> Organizations with existing medical device manufacturing capabilities looking to expand."
+  },
+  {
+   "h2": "Choosing the Right Model",
+   "id": "choosing"
+  },
+  {
+   "p": "Your choice depends on several factors: market size, regulatory requirements, local content rules, available investment, and long-term strategy. EverChek offers flexible partnership models that can evolve as your business grows."
+  }
+ ],
+ "cgm-skd-tenders": [
+  {
+   "h2": "The Government Tender Opportunity",
+   "id": "opportunity"
+  },
+  {
+   "p": "Government healthcare tenders represent a significant opportunity for medical device companies. Many countries, particularly in Southeast Asia, the Middle East, Africa, and Latin America, are investing heavily in diabetes care infrastructure, including CGM systems."
+  },
+  {
+   "p": "However, winning these tenders requires meeting specific qualification criteria, including local content requirements, technology transfer commitments, and after-sales service capabilities."
+  },
+  {
+   "figure": "/images/blog-cover-3.webp",
+   "alt": "Government healthcare tender and SKD manufacturing partnership",
+   "cover": true
+  },
+  {
+   "h2": "The SKD Advantage",
+   "id": "skd-advantage"
+  },
+  {
+   "p": "The Semi-Knocked Down (SKD) manufacturing model offers a unique competitive edge in government tender bidding."
+  },
+  {
+   "h3": "Local Value-Add Requirements"
+  },
+  {
+   "p": "Many government tenders require a minimum percentage of local value-add. By importing CGM components through the SKD model and performing final assembly locally, you can meet these requirements without building a full manufacturing facility from scratch."
+  },
+  {
+   "h3": "Reduced Import Duties"
+  },
+  {
+   "p": "Importing components rather than finished products typically qualifies for lower tariff rates. This cost advantage can be reflected in more competitive tender pricing, improving your bid position."
+  },
+  {
+   "h3": "Local Job Creation"
+  },
+  {
+   "p": "Government tender evaluation criteria often include local economic impact. SKD assembly operations create local jobs in manufacturing, quality control, and logistics, strengthening your tender application."
+  },
+  {
+   "h3": "Regulatory Pathway Support"
+  },
+  {
+   "p": "EverChek provides comprehensive technical documentation and regulatory support for SKD partners, including quality management system documentation, test reports, and compliance materials that simplify local regulatory approval."
+  },
+  {
+   "h2": "Case Study: SKD Success",
+   "id": "success"
+  },
+  {
+   "p": "A healthcare company in Southeast Asia partnered with EverChek through the SKD model to bid on a national diabetes management program. By establishing a local assembly line and demonstrating technology transfer commitment, they secured a three-year government contract worth over $5 million."
+  },
+  {
+   "h2": "Getting Started",
+   "id": "getting-started"
+  },
+  {
+   "p": "Entering government tender markets with SKD is a structured process: assess target market tender requirements, develop local assembly infrastructure, establish quality management system, prepare tender documentation with manufacturer support, and submit competitive bid with SKD cost advantage."
+  }
+ ],
+ "cgm-technology-guide-2026": [
+  {
+   "h2": "Introduction to CGM Technology",
+   "id": "intro"
+  },
+  {
+   "p": "Continuous Glucose Monitoring (CGM) has transformed diabetes management over the past decade. Unlike traditional fingerstick methods that provide a single glucose reading at a point in time, CGM systems deliver real-time glucose data every few minutes, giving users and healthcare providers a complete picture of glucose trends and patterns."
+  },
+  {
+   "p": "For healthcare brands looking to enter the diabetes management market, understanding the core technology behind CGM systems is essential."
+  },
+  {
+   "figure": "/images/blog-cover-1.webp",
+   "alt": "CGM sensor technology and digital health interface illustration",
+   "cover": true
+  },
+  {
+   "h2": "How CGM Sensors Work",
+   "id": "how-it-works"
+  },
+  {
+   "p": "Modern CGM systems use a thin, flexible sensor filament inserted just beneath the skin to measure glucose levels in the interstitial fluid. The sensor contains a glucose oxidase enzyme that reacts with glucose molecules, creating an electrical signal proportional to the glucose concentration."
+  },
+  {
+   "p": "Key components of a CGM system include:"
+  },
+  {
+   "ul": [
+    "<strong>Sensor:</strong> The disposable component worn for 7-14 days, containing the glucose-sensing element.",
+    "<strong>Transmitter:</strong> A reusable electronic module that powers the sensor and transmits data wirelessly.",
+    "<strong>Applicator:</strong> A device that inserts the sensor consistently and painlessly.",
+    "<strong>Mobile App:</strong> Software that displays glucose readings, trends, and alerts."
+   ]
+  },
+  {
+   "h2": "MARD: The Accuracy Standard",
+   "id": "mard"
+  },
+  {
+   "p": "MARD (Mean Absolute Relative Difference) is the primary metric used to evaluate CGM accuracy. It measures the average difference between CGM readings and reference blood glucose values:"
+  },
+  {
+   "ul": [
+    "<strong>Below 10% MARD:</strong> Considered excellent accuracy for clinical use",
+    "<strong>Below 8% MARD:</strong> State-of-the-art performance (EverChek standard)",
+    "<strong>Above 10% MARD:</strong> May require frequent calibration"
+   ]
+  },
+  {
+   "p": "EverChek achieves MARD values below 8%, among the most accurate CGM systems available for B2B partnerships."
+  },
+  {
+   "h2": "Key Features Healthcare Brands Should Look For",
+   "id": "features"
+  },
+  {
+   "ul": [
+    "<strong>Factory Calibration:</strong> No fingerstick calibration needed, improving user experience.",
+    "<strong>Waterproof (IPX8):</strong> Allows showering, swimming, and exercise without removal.",
+    "<strong>Wear Duration:</strong> 14-day wear time reduces sensor changes.",
+    "<strong>Data Integration:</strong> API/SDK access for integration with digital health platforms."
+   ]
+  },
+  {
+   "h2": "The Growing CGM Market",
+   "id": "market"
+  },
+  {
+   "p": "The global CGM market is projected to reach $16 billion by 2028. For healthcare brands, this represents a significant opportunity. By partnering with an experienced manufacturer like EverChek, businesses can bring branded CGM products to market faster with lower upfront investment."
+  }
+ ],
+ "terms-of-service": [
+  {
+   "h1": "Terms of Service"
+  },
+  {
+   "lede": "Last Updated: June 18, 2026"
+  },
+  {
+   "p": "These Terms of Service (\"Terms\") govern your access to and use of the EverChek website and any related services. By accessing or using our website, you agree to be bound by these Terms."
+  },
+  {
+   "h2": "1. Business Purpose"
+  },
+  {
+   "p": "EverChek is a B2B-focused CGM (Continuous Glucose Monitoring) manufacturer, providing OEM, ODM, SKD, and CKD solutions to healthcare businesses worldwide. Our website is intended for business-to-business interactions and professional inquiries."
+  },
+  {
+   "h2": "2. Intellectual Property"
+  },
+  {
+   "p": "All content on this website, including text, graphics, logos, images, product specifications, and software, is the property of EverChek or its licensors and is protected by applicable intellectual property laws. You may not reproduce, distribute, modify, or create derivative works without our prior written consent."
+  },
+  {
+   "h2": "3. Use of Website"
+  },
+  {
+   "p": "You agree to use this website only for lawful purposes and in a manner that does not infringe the rights of others. You may not:"
+  },
+  {
+   "ul": [
+    "Use the website for any unauthorized commercial purpose.",
+    "Attempt to gain unauthorized access to our systems.",
+    "Transmit any harmful code or interfere with the website's operation.",
+    "Misrepresent your identity or affiliation with any entity."
+   ]
+  },
+  {
+   "h2": "4. Product Information"
+  },
+  {
+   "p": "Product specifications, descriptions, and images on this website are for informational purposes and may be subject to change without notice. We strive to ensure accuracy but do not guarantee that all information is complete, current, or error-free. Formal product specifications will be provided in the context of our business agreements."
+  },
+  {
+   "h2": "5. Inquiries and Communications"
+  },
+  {
+   "p": "When you submit inquiries through our website, you agree to provide accurate and complete information. We reserve the right to decline any business engagement at our discretion."
+  },
+  {
+   "h2": "6. Limitation of Liability"
+  },
+  {
+   "p": "To the fullest extent permitted by law, EverChek shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of this website or any products or services described herein."
+  },
+  {
+   "h2": "7. Disclaimer"
+  },
+  {
+   "p": "This website and its content are provided on an \"as is\" and \"as available\" basis. EverChek makes no warranties, express or implied, regarding the website's operation, accuracy, or reliability."
+  },
+  {
+   "h2": "8. Regulatory Compliance"
+  },
+  {
+   "p": "Our CGM products are manufactured in compliance with applicable quality management standards. Customers and partners are responsible for ensuring compliance with local regulatory requirements for medical devices in their respective markets."
+  },
+  {
+   "h2": "9. Confidentiality"
+  },
+  {
+   "p": "Any information shared through business inquiries, including product specifications and pricing, is confidential and should not be disclosed to third parties without our written consent."
+  },
+  {
+   "h2": "10. Governing Law"
+  },
+  {
+   "p": "These Terms shall be governed by and construed in accordance with the laws of China. Any disputes arising from these Terms shall be resolved through friendly negotiation or through the courts of competent jurisdiction in China."
+  },
+  {
+   "h2": "11. Changes to Terms"
+  },
+  {
+   "p": "We reserve the right to modify these Terms at any time. Changes will be effective upon posting. Your continued use of the website after changes constitutes acceptance of the new Terms."
+  },
+  {
+   "h2": "12. Contact"
+  },
+  {
+   "p": "For questions about these Terms, please contact us at: <a href=\"/cdn-cgi/l/email-protection#b3d0dcddc7d2d0c7f3d6c5d6c19ed0dbd6d89dd0dcde\">[email protected]</a>"
+  }
+ ],
+ "privacy-policy": [
+  {
+   "h1": "Privacy Policy"
+  },
+  {
+   "lede": "Last Updated: June 18, 2026"
+  },
+  {
+   "p": "EverChek (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with us as a business partner."
+  },
+  {
+   "h2": "1. Information We Collect"
+  },
+  {
+   "p": "We collect information that you voluntarily provide when you contact us, fill out forms, or inquire about our products and services:"
+  },
+  {
+   "ul": [
+    "<strong>Contact Information:</strong> Name, email address, phone number, company name, and job title.",
+    "<strong>Business Information:</strong> Company details, industry, and information about your interest in our CGM products and services.",
+    "<strong>Communication Data:</strong> Records of your correspondence with us, including emails and inquiries."
+   ]
+  },
+  {
+   "h2": "2. How We Use Your Information"
+  },
+  {
+   "p": "We use the collected information for the following purposes:"
+  },
+  {
+   "ul": [
+    "To respond to your inquiries and provide information about our CGM products and services.",
+    "To evaluate potential business partnerships, OEM/ODM collaborations, and distribution relationships.",
+    "To improve our website, products, and customer service.",
+    "To send relevant business communications, including updates about our products and industry insights.",
+    "To comply with legal obligations and protect our rights."
+   ]
+  },
+  {
+   "h2": "3. Information Sharing"
+  },
+  {
+   "p": "We do not sell your personal information. We may share your information only in the following circumstances:"
+  },
+  {
+   "ul": [
+    "With our subsidiaries and affiliates for business operations.",
+    "With trusted service providers who assist us in operating our website and business, subject to confidentiality agreements.",
+    "When required by law, to comply with legal processes, or to protect our rights.",
+    "In connection with a business transaction such as a merger or acquisition."
+   ]
+  },
+  {
+   "h2": "4. Data Security"
+  },
+  {
+   "p": "We implement appropriate technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction."
+  },
+  {
+   "h2": "5. Data Retention"
+  },
+  {
+   "p": "We retain your information for as long as necessary to fulfill the purposes described in this policy, or as required by applicable law."
+  },
+  {
+   "h2": "6. Your Rights"
+  },
+  {
+   "p": "Depending on your jurisdiction, you may have the right to:"
+  },
+  {
+   "ul": [
+    "Access, correct, or delete your personal information.",
+    "Object to or restrict the processing of your information.",
+    "Withdraw consent at any time where processing is based on consent.",
+    "Request a copy of your data in a portable format."
+   ]
+  },
+  {
+   "p": "To exercise these rights, please contact us using the information below."
+  },
+  {
+   "h2": "7. Cookies"
+  },
+  {
+   "p": "Our website may use cookies and similar tracking technologies to enhance your browsing experience."
+  },
+  {
+   "h2": "8. Third-Party Links"
+  },
+  {
+   "p": "Our website may contain links to third-party websites. We are not responsible for their privacy practices."
+  },
+  {
+   "h2": "9. International Data Transfers"
+  },
+  {
+   "p": "As a global company, your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers."
+  },
+  {
+   "h2": "10. Changes to This Policy"
+  },
+  {
+   "p": "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated \"Last Updated\" date."
+  },
+  {
+   "h2": "11. Contact Us"
+  },
+  {
+   "p": "If you have any questions, please contact us at: <a href=\"/cdn-cgi/l/email-protection#b1d2dedfc5d0d2c5f1d4c7d4c39cd2d9d4da9fd2dedc\">[email protected]</a>"
+  }
+ ]
+}

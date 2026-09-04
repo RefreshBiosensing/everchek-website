@@ -64,3 +64,5 @@ sections:
       href: /fr/contact/
 
   - type: cta-banner
+
+    variant: link

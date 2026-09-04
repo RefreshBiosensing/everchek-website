@@ -104,7 +104,7 @@ const IMAGE_TEXT_LAYOUT: Record<string, 'top' | 'left' | 'right'> = {
     case 'faq':           return <Faq {...props} />;
     case 'link-pills':    return <LinkPills {...props} />;
     case 'contact-form':  return <ContactBlock {...props} locale={locale} />;
-    case 'cta-banner':    return <CtaBanner {...props} locale={locale} />;
+    case 'cta-banner':    return <CtaBanner {...props} variant={variant} locale={locale} />;
     case 'custom-html':   return <CustomHtml {...props} />;
     default:
       // Unknown type: fail loudly in dev, stay silent in production builds.

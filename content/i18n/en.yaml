@@ -59,6 +59,7 @@ cta:
   enquiry: Contact us
   quote: Contact us
 ctaBanner:
+  buttonLabel: Contact us
   title: Your long-term B2B CGM manufacturing partner
   sub: We combine self-developed CGM technologies with scalable manufacturing infrastructure to support healthcare brands worldwide.
   emailLabel: Work email

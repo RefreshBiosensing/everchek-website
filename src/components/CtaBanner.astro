@@ -6,40 +6,55 @@ import MiniForm from './MiniForm.astro';
 
 interface Props {
   locale?: string;
+  /** 'form' (default) shows the 3-field mini enquiry form.
+      'link' is the original site's footer CTA — heading, line, button — and is
+      what a page that already carries a real form should use, so a visitor is
+      never asked to fill in two different forms on one page. */
+  variant?: 'form' | 'link';
   title?: string;
   sub?: string;
   fullFormLink?: string;
+  /** Link variant only — defaults to the dictionary's contact CTA. */
+  buttonLabel?: string;
   fullFormHref?: string;
   messagePlaceholder?: string;
 }
 const {
   locale = 'en',
+  variant: variantProp,
   title,
   sub,
   fullFormLink,
+  buttonLabel,
   fullFormHref,
   messagePlaceholder,
 } = Astro.props;
 
+const variant = variantProp ?? 'form';
 const common = loadDict(locale);
-const { ctaBanner, footer } = common;
+const { ctaBanner, footer, cta } = common;
 const copy = {
   ...ctaBanner,
   ...(title ? { title } : {}),
   ...(sub ? { sub } : {}),
   ...(fullFormLink ? { fullFormLink } : {}),
+  ...(buttonLabel ? { buttonLabel } : {}),
   ...(fullFormHref ? { fullFormHref } : {}),
   ...(messagePlaceholder ? { messagePlaceholder } : {}),
 };
 ---
-<section class="cta-banner">
+<section class:list={['cta-banner', { 'cta-link-only': variant === 'link' }]}>
   <div class="container cta-inner">
     <div class="cta-copy">
       <h2 class="cta-title">{copy.title}</h2>
       <p class="cta-sub">{copy.sub}</p>
-      <a class="cta-full-link" href={copy.fullFormHref ?? '/contact/'}>{copy.fullFormLink} →</a>
+      {variant === 'link' ? (
+        <a class="btn primary cta-btn" href={copy.fullFormHref ?? '/contact/'}>{copy.buttonLabel ?? cta?.quote ?? 'Contact us'}</a>
+      ) : (
+        <a class="cta-full-link" href={copy.fullFormHref ?? '/contact/'}>{copy.fullFormLink} →</a>
+      )}
     </div>
-    <MiniForm t={copy} email={footer?.email} />
+    {variant === 'form' && <MiniForm t={copy} email={footer?.email} />}
   </div>
 </section>
 
@@ -48,6 +63,11 @@ const copy = {
     background: linear-gradient(135deg, var(--navy) 0%, #1d3a4d 100%);
     padding: clamp(56px, 7vw, 88px) 0;
   }
+  /* Link variant: one centred column, as the original footer CTA was. */
+  .cta-banner.cta-link-only .cta-inner { display: block; text-align: center; }
+  .cta-banner.cta-link-only .cta-copy { max-width: 680px; margin: 0 auto; }
+  .cta-banner.cta-link-only .cta-sub { margin-left: auto; margin-right: auto; }
+  .cta-btn { margin-top: 24px; }
   .cta-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;

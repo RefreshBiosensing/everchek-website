@@ -55,3 +55,4 @@ sections:
   - Marketing materials and regulatory documentation provided
   - Competitive pricing with volume-based incentives
 - type: cta-banner
+  variant: link

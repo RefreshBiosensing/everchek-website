@@ -16,7 +16,7 @@ from html.parser import HTMLParser
 MIRROR = '/private/tmp/claude-501/-Users-yanhuarong-Desktop-everchek/fa296c9c-c22c-4394-9355-776ac96e1dff/scratchpad/mirror'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-BLOCKS = {'h2', 'h3', 'h4', 'p', 'ul', 'ol', 'figure', 'hr', 'blockquote'}
+BLOCKS = {'h1', 'h2', 'h3', 'h4', 'p', 'ul', 'ol', 'figure', 'hr', 'blockquote'}
 INLINE_KEEP = {'strong', 'em', 'b', 'i', 'a', 'mark', 'sup', 'sub', 'br', 'code'}
 VOID = {'br', 'img', 'hr'}
 
@@ -149,6 +149,8 @@ class Body(HTMLParser):
         text = ' '.join(raw.replace('\x00LI\x00', '').split())
         if text:
             b = {tag: text}
+            if self.attrs.get('class') == 'last-updated':
+                b = {'lede': text}
             # The originals put explicit ids on some headings; keep them so old
             # in-page anchors and the contents list still resolve.
             if tag in ('h2', 'h3', 'h4') and self.attrs.get('id'):
@@ -167,10 +169,14 @@ def build(src_name, out_name, img_dir):
     src = re.sub(r'(?is)<script.*?</script>|<style.*?</style>|<!--.*?-->', '', src)
     i = src.find('<div class="article-body"')
     if i < 0:
+        # Legal pages use <section class="legal-page"> instead, same flat shape.
+        i = src.find('<section class="legal-page"')
+    if i < 0:
         raise SystemExit('cannot locate article body in ' + src_name)
     ends = [x for x in (src.find('<div class="faq-section"'),
                         src.find('<nav class="article-nav"'),
-                        src.find('<div id="article-nav"')) if x > i]
+                        src.find('<div id="article-nav"'),
+                        src.find('<div id="footer-placeholder"')) if x > i]
     body = src[i:min(ends)] if ends else src[i:]
     # Some pages wrap the cover image in a styled div rather than a <figure>.
     # Normalise it so the parser sees one figure, flagged as a cropped cover.
@@ -212,6 +218,8 @@ if __name__ == '__main__':
         ('../cgm-manufacturing-models.html', 'cgm-manufacturing-models', None),
         ('../cgm-skd-tenders.html', 'cgm-skd-tenders', None),
         ('../cgm-technology-guide-2026.html', 'cgm-technology-guide-2026', None),
+        ('../terms-of-service.html', 'terms-of-service', None),
+        ('../privacy-policy.html', 'privacy-policy', None),
     ]
     out = {}
     for s, n, d in spec:
