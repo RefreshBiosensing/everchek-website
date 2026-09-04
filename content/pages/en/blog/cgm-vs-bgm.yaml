@@ -81,18 +81,6 @@ sections:
         alt: ""
       - hr: true
 
-  - type: link-pills
-    label: Next steps
-    items:
-      - label: CGM OEM and ODM programmes
-        href: /cgm-oem/
-      - label: CGM SKD kits and local assembly
-        href: /cgm-skd/
-      - label: Compare OEM, ODM and SKD
-        href: /cgm-manufacturing-models/
-      - label: Talk to our team
-        href: /contact/
-
   - type: faq
     title: Frequently asked questions
     items:
@@ -126,5 +114,17 @@ sections:
       - q: How do I choose between CGM and BGM for my business?
         a: >-
           It depends on your target channel: hospitals often favor BGM for cost and familiarity, while retail and online channels are shifting toward CGM for higher margins and growing patient demand. That said, CGM is catching on as the new trend, and you shouldn't miss the chance. Consider going hybrid: keep BGM for institutional stability, but pilot CGM for consumer growth. With EverChek's SKD or OEM solutions, you can add CGM without heavy R&D, and test the CGM market quickly, scale at your own pace, and turn the hybrid model into a real competitive advantage, not a fallback.
+
+  - type: link-pills
+    label: Next steps
+    items:
+      - label: CGM OEM and ODM programmes
+        href: /cgm-oem/
+      - label: CGM SKD kits and local assembly
+        href: /cgm-skd/
+      - label: Compare OEM, ODM and SKD
+        href: /cgm-manufacturing-models/
+      - label: Talk to our team
+        href: /contact/
 
   - type: cta-banner

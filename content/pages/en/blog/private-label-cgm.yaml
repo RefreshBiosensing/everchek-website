@@ -118,18 +118,6 @@ sections:
       - p: "If you are weighing private label against OEM or SKD for your specific market and volume, just tell us where you are at. We will walk through it with you directly. Contact our team today."
       - hr: true
 
-  - type: link-pills
-    label: Next steps
-    items:
-      - label: CGM OEM and ODM programmes
-        href: /cgm-oem/
-      - label: CGM SKD kits and local assembly
-        href: /cgm-skd/
-      - label: Our CGM system
-        href: /continuous-glucose-monitor/
-      - label: Documentation and certifications
-        href: /certifications/
-
   - type: faq
     title: Frequently asked questions
     items:
@@ -157,5 +145,17 @@ sections:
       - q: How do I evaluate and choose the right manufacturing partner?
         a: >-
           Prioritize clinical accuracy metrics (MARD data under 9%), a verified track record of manufacturing consistency, the depth and organization of their regulatory technical files, and their willingness to provide long-term technical and software support.
+
+  - type: link-pills
+    label: Next steps
+    items:
+      - label: CGM OEM and ODM programmes
+        href: /cgm-oem/
+      - label: CGM SKD kits and local assembly
+        href: /cgm-skd/
+      - label: Our CGM system
+        href: /continuous-glucose-monitor/
+      - label: Documentation and certifications
+        href: /certifications/
 
   - type: cta-banner

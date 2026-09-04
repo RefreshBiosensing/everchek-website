@@ -20,18 +20,6 @@ sections:
     text: >-
       Ayant accompagné directement de nombreux acteurs de santé et distributeurs à travers le monde sur des projets CGM SKD, nous connaissons les questions qui comptent vraiment lorsqu'on évalue ce modèle. Entrons dans le vif du sujet.
 
-  - type: link-pills
-    label: À lire aussi
-    items:
-      - label: Kits CGM SKD et montage local
-        href: /fr/montage-local-cgm/
-      - label: CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Comparer OEM, ODM et SKD
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: Documentation et certifications
-        href: /fr/documentation/
-
   - type: richtext
     eyebrow: Définition
     title: Que signifie CGM SKD ?
@@ -281,20 +269,6 @@ sections:
       - text: >-
           Si vous êtes prêt à discuter de votre marché, contactez notre équipe dès aujourd'hui.
 
-  - type: link-pills
-    label: Étapes suivantes
-    items:
-      - label: Kits CGM SKD et montage local
-        href: /fr/montage-local-cgm/
-      - label: Le SKD pour les appels d'offres publics
-        href: /fr/appels-offres-cgm-skd/
-      - label: Partenariats de distribution CGM
-        href: /fr/distribution-cgm/
-      - label: Documentation et certifications
-        href: /fr/documentation/
-      - label: Contactez notre équipe dès aujourd'hui
-        href: /fr/contact/
-
   - type: faq
     title: Questions fréquentes
     items:
@@ -319,5 +293,17 @@ sections:
       - q: Puis-je obtenir l'exclusivité de marché sur un modèle CGM SKD ?
         a: >-
           Souvent, oui. De nombreux partenariats prévoient une exclusivité régionale ou nationale, le plus souvent un partenaire par pays.
+
+  - type: link-pills
+    label: À lire aussi
+    items:
+      - label: Kits CGM SKD et montage local
+        href: /fr/montage-local-cgm/
+      - label: CGM OEM et ODM
+        href: /fr/cgm-oem/
+      - label: Comparer OEM, ODM et SKD
+        href: /fr/modeles-de-fabrication-cgm/
+      - label: Documentation et certifications
+        href: /fr/documentation/
 
   - type: cta-banner

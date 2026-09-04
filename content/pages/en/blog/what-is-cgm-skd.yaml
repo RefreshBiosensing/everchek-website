@@ -111,20 +111,6 @@ sections:
       - p: "If you're ready to discuss your specific market, <a href=\"/contact/\">reach out to our team today</a>."
       - hr: true
 
-  - type: link-pills
-    label: Next steps
-    items:
-      - label: CGM SKD kits and local assembly
-        href: /cgm-skd/
-      - label: SKD for government tenders
-        href: /cgm-skd-tenders/
-      - label: CGM distribution partnerships
-        href: /cgm-distribution/
-      - label: Documentation and certifications
-        href: /certifications/
-      - label: Reach out to our team today
-        href: /contact/
-
   - type: faq
     title: Frequently asked questions
     items:
@@ -149,5 +135,19 @@ sections:
       - q: Can I get market exclusivity on a CGM SKD model?
         a: >-
           Often yes. Many partnerships offer regional or country-level exclusivity, commonly one partner per country.
+
+  - type: link-pills
+    label: Next steps
+    items:
+      - label: CGM SKD kits and local assembly
+        href: /cgm-skd/
+      - label: SKD for government tenders
+        href: /cgm-skd-tenders/
+      - label: CGM distribution partnerships
+        href: /cgm-distribution/
+      - label: Documentation and certifications
+        href: /certifications/
+      - label: Reach out to our team today
+        href: /contact/
 
   - type: cta-banner

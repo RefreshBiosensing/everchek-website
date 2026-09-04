@@ -1,0 +1,73 @@
+---
+// Previous/next article links at the foot of an article — the original site's
+// `.article-nav`. "Previous" is the next article down the blog index (older),
+// "Next" is the one above it (newer); the end of the list simply drops a side.
+import { loadDict } from '../lib/content';
+
+interface Link { title: string; href: string }
+interface Props {
+  prev?: Link;
+  next?: Link;
+  locale?: string;
+}
+const { prev, next, locale = 'en' } = Astro.props;
+const { articleNav } = loadDict(locale);
+---
+{(prev || next) && (
+  <nav class="article-nav" aria-label={articleNav.label}>
+    {prev ? (
+      <a class="nav-prev" href={prev.href}>
+        <span class="nav-label">{articleNav.previous}</span>
+        <span class="nav-title">{prev.title}</span>
+      </a>
+    ) : (
+      <div class="nav-none" aria-hidden="true"></div>
+    )}
+    {next ? (
+      <a class="nav-next" href={next.href}>
+        <span class="nav-label">{articleNav.next}</span>
+        <span class="nav-title">{next.title}</span>
+      </a>
+    ) : (
+      <div class="nav-none" aria-hidden="true"></div>
+    )}
+  </nav>
+)}
+
+<style>
+  .article-nav {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .article-nav a {
+    flex: 1;
+    display: flex; flex-direction: column; gap: 6px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid var(--ec-blue-100);
+    background: var(--ec-blue-50);
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  }
+  .article-nav a:hover {
+    border-color: var(--ec-blue-600);
+    background: #eaf3fb;
+    box-shadow: 0 4px 16px rgba(11, 95, 165, 0.12);
+  }
+  .nav-label {
+    font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--ec-blue-600);
+  }
+  .nav-title { font-size: 14px; font-weight: 600; color: var(--ink); line-height: 1.4; }
+  .nav-next { text-align: right; align-items: flex-end; }
+  .nav-none { flex: 1; visibility: hidden; }
+  @media (max-width: 600px) {
+    .article-nav { flex-direction: column; }
+    .nav-next { text-align: left; align-items: flex-start; }
+  }
+</style>

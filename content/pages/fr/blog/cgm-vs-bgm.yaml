@@ -20,18 +20,6 @@ sections:
     text: >-
       En pratique, ce choix détermine votre calendrier de R&D, votre budget réglementaire, l'implantation de votre chaîne d'approvisionnement et le modèle de revenus que vous pourrez tenir dans la durée. Ce guide passe en revue tout ce qui sépare le CGM du BGM du point de vue strictement commercial, et vous montre comment ajouter le CGM à votre gamme avec le minimum d'efforts. Entrons dans le vif du sujet.
 
-  - type: link-pills
-    label: À lire aussi
-    items:
-      - label: Notre système CGM
-        href: /fr/systeme-mesure-continue-glucose/
-      - label: CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Kits CGM SKD
-        href: /fr/montage-local-cgm/
-      - label: Qu'est-ce qu'un CGM ?
-        href: /fr/qu-est-ce-qu-un-cgm/
-
   - type: richtext
     eyebrow: Ce que mesure chaque dispositif
     title: La différence entre CGM et BGM
@@ -327,18 +315,6 @@ sections:
       Chaîne d'approvisionnement du partenariat CGM EverChek, de la fabrication des composants et de la fourniture des kits au montage local puis à la gamme lancée sous la marque du partenaire
     ratio: 1312/736
 
-  - type: link-pills
-    label: Étapes suivantes
-    items:
-      - label: Programmes CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Kits CGM SKD et montage local
-        href: /fr/montage-local-cgm/
-      - label: Comparer OEM, ODM et SKD
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: Parler à notre équipe
-        href: /fr/contact/
-
   - type: faq
     title: Questions fréquentes
     items:
@@ -372,5 +348,17 @@ sections:
       - q: Comment choisir entre CGM et BGM pour mon activité ?
         a: >-
           Tout dépend du circuit visé : les hôpitaux privilégient souvent le BGM pour son coût et sa familiarité, tandis que le circuit officinal et la vente en ligne se tournent vers le CGM, plus rémunérateur et porté par une demande croissante des patients. Cela dit, le CGM s'impose comme la nouvelle tendance et l'occasion mérite d'être saisie. Envisagez une approche hybride : conservez le BGM pour la stabilité institutionnelle, mais lancez un pilote CGM pour la croissance grand public. Avec les solutions SKD ou OEM d'EverChek, vous pouvez ajouter le CGM sans R&D lourde, tester rapidement le marché, monter en volume à votre rythme et faire du modèle hybride un véritable avantage concurrentiel plutôt qu'une position de repli.
+
+  - type: link-pills
+    label: À lire aussi
+    items:
+      - label: Notre système CGM
+        href: /fr/systeme-mesure-continue-glucose/
+      - label: CGM OEM et ODM
+        href: /fr/cgm-oem/
+      - label: Kits CGM SKD
+        href: /fr/montage-local-cgm/
+      - label: Qu'est-ce qu'un CGM ?
+        href: /fr/qu-est-ce-qu-un-cgm/
 
   - type: cta-banner

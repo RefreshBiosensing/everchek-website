@@ -20,18 +20,6 @@ sections:
     text: >-
       Ce n'est pourtant pas le cas. Peu importe que vous soyez un distributeur en quête d'une nouvelle catégorie à ajouter, une marque de diabétologie ou de santé métabolique qui veut enfin posséder son propre matériel au lieu de revendre celui d'un autre, un importateur qui déplace des produits de santé depuis des années mais jamais un dispositif médical, un laboratoire pharmaceutique qui complète sa gamme sur les maladies chroniques, ou un investisseur qui explore le marché du CGM avant d'engager des fonds. Vous pouvez lancer facilement votre propre marque de CGM avec un fabricant en marque blanche. Voici le guide complet.
 
-  - type: link-pills
-    label: À lire aussi
-    items:
-      - label: CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Kits CGM SKD
-        href: /fr/montage-local-cgm/
-      - label: Comparer tous les modèles
-        href: /fr/modeles-de-fabrication-cgm/
-      - label: Application patient en marque blanche
-        href: /fr/application-patient-cgm/
-
   - type: richtext
     eyebrow: Définition
     title: Qu'est-ce qu'un CGM en marque blanche ?
@@ -296,18 +284,6 @@ sections:
       href: /fr/contact/
     tint: true
 
-  - type: link-pills
-    label: Étapes suivantes
-    items:
-      - label: Programmes CGM OEM et ODM
-        href: /fr/cgm-oem/
-      - label: Kits CGM SKD et montage local
-        href: /fr/montage-local-cgm/
-      - label: Notre système CGM
-        href: /fr/systeme-mesure-continue-glucose/
-      - label: Documentation et certifications
-        href: /fr/documentation/
-
   - type: faq
     title: Questions fréquentes
     items:
@@ -335,5 +311,17 @@ sections:
       - q: Comment évaluer et choisir le bon partenaire industriel ?
         a: >-
           Privilégiez les indicateurs d'exactitude clinique (un MARD inférieur à 9 %, publié avec le protocole utilisé pour le mesurer), un historique avéré de régularité de fabrication, la profondeur et l'organisation du dossier technique réglementaire, ainsi que la volonté d'assurer un soutien technique et logiciel dans la durée.
+
+  - type: link-pills
+    label: À lire aussi
+    items:
+      - label: CGM OEM et ODM
+        href: /fr/cgm-oem/
+      - label: Kits CGM SKD
+        href: /fr/montage-local-cgm/
+      - label: Comparer tous les modèles
+        href: /fr/modeles-de-fabrication-cgm/
+      - label: Application patient en marque blanche
+        href: /fr/application-patient-cgm/
 
   - type: cta-banner

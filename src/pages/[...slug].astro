@@ -6,7 +6,8 @@
 import Base from '../layouts/Base.astro';
 import SectionRenderer from '../components/SectionRenderer.astro';
 import ArticleLayout from '../components/ArticleLayout.astro';
-import { loadAllPages, alternatesFor, type PageEntry } from '../lib/content';
+import ArticleNav from '../components/ArticleNav.astro';
+import { loadAllPages, alternatesFor, articleNeighbours, type PageEntry } from '../lib/content';
 
 export function getStaticPaths() {
   return loadAllPages().map((page) => {
@@ -22,6 +23,7 @@ export function getStaticPaths() {
 interface Props { page: PageEntry }
 const { page } = Astro.props;
 const alternates = alternatesFor(page);
+const neighbours = articleNeighbours(page.path, page.locale);
 const HERO_TYPES = ['hero', 'article-hero'];
 const hero = page.sections.find((section) => HERO_TYPES.includes(section?.type));
 const heroTitle = hero?.title ?? page.title;
@@ -123,6 +125,7 @@ const schema =
       <SectionRenderer sections={heroSection} locale={page.locale} />
       <ArticleLayout headings={tocHeadings}>
         <SectionRenderer sections={articleSections} locale={page.locale} />
+        <ArticleNav prev={neighbours.prev} next={neighbours.next} locale={page.locale} />
       </ArticleLayout>
       <SectionRenderer sections={tailSections} locale={page.locale} />
     </>

@@ -51,6 +51,10 @@ breadcrumb:
   homeHref: /
   blog: Blog
   blogHref: /cgm-blogs/
+articleNav:
+  label: Article navigation
+  previous: ← Previous
+  next: Next →
 cta:
   enquiry: Contact us
   quote: Contact us

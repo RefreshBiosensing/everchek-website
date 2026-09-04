@@ -138,6 +138,31 @@ export function loadAllPages(): PageEntry[] {
   return (pagesCache = out);
 }
 
+export interface ArticleNeighbours {
+  /** The next article down the list — older. */
+  prev?: { title: string; href: string };
+  /** The next article up the list — newer. */
+  next?: { title: string; href: string };
+}
+
+/**
+ * Previous/next article for the foot of an article page.
+ *
+ * The order is the blog index's own `posts` list, exactly as the original site
+ * drove its article nav from blog-data.json — so adding a post in the CMS moves
+ * the links on every neighbouring article without touching them.
+ */
+export function articleNeighbours(path: string, locale: string): ArticleNeighbours {
+  const index = loadAllPages().find(
+    (p) => p.locale === locale && p.sections.some((s: any) => s?.type === 'blog-index'),
+  );
+  const posts: any[] = index?.sections.find((s: any) => s?.type === 'blog-index')?.posts ?? [];
+  const i = posts.findIndex((post) => normalisePath(post?.href) === normalisePath(path));
+  if (i < 0) return {};
+  const link = (post: any) => (post ? { title: String(post.title), href: normalisePath(post.href) } : undefined);
+  return { prev: link(posts[i + 1]), next: link(posts[i - 1]) };
+}
+
 /** Sibling pages in other locales that share this page's translationKey. */
 export function alternatesFor(page: PageEntry): Alternate[] {
   if (!page.translationKey) return [];
